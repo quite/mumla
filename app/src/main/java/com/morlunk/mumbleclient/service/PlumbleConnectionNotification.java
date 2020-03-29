@@ -18,14 +18,19 @@
 package com.morlunk.mumbleclient.service;
 
 import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.os.Build;
 import android.support.v4.app.NotificationCompat;
+import android.util.Log;
 
+import com.morlunk.mumbleclient.Constants;
 import com.morlunk.mumbleclient.R;
 import com.morlunk.mumbleclient.app.DrawerAdapter;
 import com.morlunk.mumbleclient.app.PlumbleActivity;
@@ -129,11 +134,22 @@ public class PlumbleConnectionNotification {
      * Called to update/create the service's foreground Plumble notification.
      */
     private Notification createNotification() {
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(mService);
+        String channelId = "";
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            channelId = "PlumbleNotificationChannel";
+            String channelName = "Plumble connection";
+            NotificationChannel chan = new NotificationChannel(channelId, channelName, NotificationManager.IMPORTANCE_DEFAULT);
+            NotificationManager manager = (NotificationManager) mService.getApplication().getSystemService(Context.NOTIFICATION_SERVICE);
+            manager.createNotificationChannel(chan);
+        }
+        NotificationCompat.Builder builder =
+                new NotificationCompat.Builder(mService.getApplicationContext(), channelId);
+
         builder.setContentTitle(mService.getString(R.string.app_name));
         builder.setContentText(mCustomContentText);
         builder.setSmallIcon(R.drawable.ic_stat_notify);
         builder.setPriority(NotificationCompat.PRIORITY_DEFAULT);
+        builder.setCategory(NotificationCompat.CATEGORY_CALL);
         builder.setOngoing(true);
 
         if (mActionsShown) {
