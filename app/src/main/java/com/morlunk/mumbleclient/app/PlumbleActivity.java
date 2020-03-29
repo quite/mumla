@@ -36,7 +36,7 @@ import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.text.InputType;
 import android.view.KeyEvent;
@@ -91,7 +91,7 @@ import java.util.List;
 
 import info.guardianproject.netcipher.proxy.OrbotHelper;
 
-public class PlumbleActivity extends ActionBarActivity implements ListView.OnItemClickListener,
+public class PlumbleActivity extends AppCompatActivity implements ListView.OnItemClickListener,
         FavouriteServerListFragment.ServerConnectHandler, JumbleServiceProvider, DatabaseProvider,
         SharedPreferences.OnSharedPreferenceChangeListener, DrawerAdapter.DrawerDataProvider,
         ServerEditFragment.ServerEditListener {

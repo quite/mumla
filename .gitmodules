@@ -1,3 +1,4 @@
 [submodule "libraries/Jumble"]
 	path = libraries/Jumble
-	url = https://www.github.com/Morlunk/Jumble.git
+	url = https://gitlab.com/quite/humla.git
+	branch = wip
