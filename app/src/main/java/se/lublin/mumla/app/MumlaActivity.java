@@ -50,13 +50,13 @@ import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.morlunk.jumble.IJumbleService;
-import com.morlunk.jumble.IJumbleSession;
-import com.morlunk.jumble.model.Server;
-import com.morlunk.jumble.protobuf.Mumble;
-import com.morlunk.jumble.util.JumbleException;
-import com.morlunk.jumble.util.JumbleObserver;
-import com.morlunk.jumble.util.MumbleURLParser;
+import se.lublin.humla.IHumlaService;
+import se.lublin.humla.IHumlaSession;
+import se.lublin.humla.model.Server;
+import se.lublin.humla.protobuf.Mumble;
+import se.lublin.humla.util.HumlaException;
+import se.lublin.humla.util.HumlaObserver;
+import se.lublin.humla.util.MumbleURLParser;
 import se.lublin.mumla.BuildConfig;
 import se.lublin.mumla.R;
 import se.lublin.mumla.Settings;
@@ -75,8 +75,8 @@ import se.lublin.mumla.servers.PublicServerListFragment;
 import se.lublin.mumla.servers.ServerEditFragment;
 import se.lublin.mumla.service.IMumlaService;
 import se.lublin.mumla.service.MumlaService;
-import se.lublin.mumla.util.JumbleServiceFragment;
-import se.lublin.mumla.util.JumbleServiceProvider;
+import se.lublin.mumla.util.HumlaServiceFragment;
+import se.lublin.mumla.util.HumlaServiceProvider;
 import se.lublin.mumla.util.MumlaTrustStore;
 
 import org.spongycastle.util.encoders.Hex;
@@ -93,7 +93,7 @@ import java.util.List;
 import info.guardianproject.netcipher.proxy.OrbotHelper;
 
 public class MumlaActivity extends AppCompatActivity implements ListView.OnItemClickListener,
-        FavouriteServerListFragment.ServerConnectHandler, JumbleServiceProvider, DatabaseProvider,
+        FavouriteServerListFragment.ServerConnectHandler, HumlaServiceProvider, DatabaseProvider,
         SharedPreferences.OnSharedPreferenceChangeListener, DrawerAdapter.DrawerDataProvider,
         ServerEditFragment.ServerEditListener {
     /**
@@ -115,7 +115,7 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
     private AlertDialog.Builder mDisconnectPromptBuilder;
 
     /** List of fragments to be notified about service state changes. */
-    private List<JumbleServiceFragment> mServiceFragments = new ArrayList<JumbleServiceFragment>();
+    private List<HumlaServiceFragment> mServiceFragments = new ArrayList<HumlaServiceFragment>();
 
     private ServiceConnection mConnection = new ServiceConnection() {
         @Override
@@ -126,11 +126,11 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
             mService.clearChatNotifications(); // Clear chat notifications on resume.
             mDrawerAdapter.notifyDataSetChanged();
 
-            for(JumbleServiceFragment fragment : mServiceFragments)
+            for(HumlaServiceFragment fragment : mServiceFragments)
                 fragment.setServiceBound(true);
 
             // Re-show server list if we're showing a fragment that depends on the service.
-            if(getSupportFragmentManager().findFragmentById(R.id.content_frame) instanceof JumbleServiceFragment &&
+            if(getSupportFragmentManager().findFragmentById(R.id.content_frame) instanceof HumlaServiceFragment &&
                     !mService.isConnected()) {
                 loadDrawerFragment(DrawerAdapter.ITEM_FAVOURITES);
             }
@@ -143,7 +143,7 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
         }
     };
 
-    private JumbleObserver mObserver = new JumbleObserver() {
+    private HumlaObserver mObserver = new HumlaObserver() {
         @Override
         public void onConnected() {
             if (mSettings.shouldStartUpInPinnedMode()) {
@@ -164,9 +164,9 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
         }
 
         @Override
-        public void onDisconnected(JumbleException e) {
+        public void onDisconnected(HumlaException e) {
             // Re-show server list if we're showing a fragment that depends on the service.
-            if(getSupportFragmentManager().findFragmentById(R.id.content_frame) instanceof JumbleServiceFragment) {
+            if(getSupportFragmentManager().findFragmentById(R.id.content_frame) instanceof HumlaServiceFragment) {
                 loadDrawerFragment(DrawerAdapter.ITEM_FAVOURITES);
             }
             mDrawerAdapter.notifyDataSetChanged();
@@ -266,7 +266,7 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
                 super.onDrawerStateChanged(newState);
                 // Prevent push to talk from getting stuck on when the drawer is opened.
                 if (getService() != null && getService().isConnected()) {
-                    IJumbleSession session = getService().getSession();
+                    IHumlaSession session = getService().getSession();
                     if (session.isTalking() && !mSettings.isPushToTalkToggle()) {
                         session.setTalkingState(false);
                     }
@@ -355,7 +355,7 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
             mConnectingDialog.dismiss();
 
         if(mService != null) {
-            for (JumbleServiceFragment fragment : mServiceFragments) {
+            for (HumlaServiceFragment fragment : mServiceFragments) {
                 fragment.setServiceBound(false);
             }
             mService.unregisterObserver(mObserver);
@@ -536,9 +536,9 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     // Register an observer to reconnect to the new server once disconnected.
-                    mService.registerObserver(new JumbleObserver() {
+                    mService.registerObserver(new HumlaObserver() {
                         @Override
-                        public void onDisconnected(JumbleException e) {
+                        public void onDisconnected(HumlaException e) {
                             connectToServer(server);
                             mService.unregisterObserver(this);
                         }
@@ -604,9 +604,9 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
      * Will show reconnecting dialog if reconnecting, dismiss otherwise, etc.
      * Basically, this service will do catch-up if the activity wasn't bound to receive
      * connection state updates.
-     * @param service A bound IJumbleService.
+     * @param service A bound IHumlaService.
      */
-    private void updateConnectionState(IJumbleService service) {
+    private void updateConnectionState(IHumlaService service) {
         if (mConnectingDialog != null)
             mConnectingDialog.dismiss();
         if (mErrorDialog != null)
@@ -633,7 +633,7 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
             case CONNECTION_LOST:
                 // Only bother the user if the error hasn't already been shown.
                 if (!getService().isErrorShown()) {
-                    JumbleException error = getService().getConnectionError();
+                    HumlaException error = getService().getConnectionError();
                     AlertDialog.Builder ab = new AlertDialog.Builder(MumlaActivity.this);
                     ab.setTitle(R.string.connectionRefused);
                     if (mService.isReconnecting()) {
@@ -647,7 +647,7 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
                                 }
                             }
                         });
-                    } else if (error.getReason() == JumbleException.JumbleDisconnectReason.REJECT &&
+                    } else if (error.getReason() == HumlaException.HumlaDisconnectReason.REJECT &&
                                (error.getReject().getType() == Mumble.Reject.RejectType.WrongUserPW ||
                                 error.getReject().getType() == Mumble.Reject.RejectType.WrongServerPW)) {
                         // FIXME(acomminos): Long conditional.
@@ -712,12 +712,12 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
     }
 
     @Override
-    public void addServiceFragment(JumbleServiceFragment fragment) {
+    public void addServiceFragment(HumlaServiceFragment fragment) {
         mServiceFragments.add(fragment);
     }
 
     @Override
-    public void removeServiceFragment(JumbleServiceFragment fragment) {
+    public void removeServiceFragment(HumlaServiceFragment fragment) {
         mServiceFragments.remove(fragment);
     }
 

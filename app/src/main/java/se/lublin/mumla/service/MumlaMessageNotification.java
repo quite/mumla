@@ -25,7 +25,7 @@ import android.content.Intent;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
-import com.morlunk.jumble.model.IMessage;
+import se.lublin.humla.model.IMessage;
 import se.lublin.mumla.R;
 import se.lublin.mumla.app.DrawerAdapter;
 import se.lublin.mumla.app.MumlaActivity;

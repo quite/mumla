@@ -21,8 +21,8 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-import com.morlunk.jumble.IJumbleService;
-import com.morlunk.jumble.IJumbleSession;
+import se.lublin.humla.IHumlaService;
+import se.lublin.humla.IHumlaSession;
 
 /**
  * Created by andrew on 08/08/14.
@@ -34,9 +34,9 @@ public class TalkBroadcastReceiver extends BroadcastReceiver {
     public static final String TALK_STATUS_OFF = "off";
     public static final String TALK_STATUS_TOGGLE = "toggle";
 
-    private IJumbleService mService;
+    private IHumlaService mService;
 
-    public TalkBroadcastReceiver(IJumbleService service) {
+    public TalkBroadcastReceiver(IHumlaService service) {
         mService = service;
     }
 
@@ -45,7 +45,7 @@ public class TalkBroadcastReceiver extends BroadcastReceiver {
         if (BROADCAST_TALK.equals(intent.getAction())) {
             if (!mService.isConnected())
                 return;
-            IJumbleSession session = mService.getSession();
+            IHumlaSession session = mService.getSession();
             String status = intent.getStringExtra(EXTRA_TALK_STATUS);
             if (status == null) status = TALK_STATUS_TOGGLE;
             if (TALK_STATUS_ON.equals(status)) {

@@ -1,4 +1,4 @@
-[submodule "libraries/Jumble"]
-	path = libraries/Jumble
+[submodule "libraries/Humla"]
+	path = libraries/Humla
 	url = https://gitlab.com/quite/humla.git
 	branch = wip

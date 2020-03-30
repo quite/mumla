@@ -23,10 +23,10 @@ import android.view.View;
 
 import androidx.appcompat.widget.PopupMenu;
 
-import com.morlunk.jumble.IJumbleService;
-import com.morlunk.jumble.model.IChannel;
-import com.morlunk.jumble.util.IJumbleObserver;
-import com.morlunk.jumble.util.JumbleObserver;
+import se.lublin.humla.IHumlaService;
+import se.lublin.humla.model.IChannel;
+import se.lublin.humla.util.IHumlaObserver;
+import se.lublin.humla.util.HumlaObserver;
 
 /**
  * Encapsulates a menu requiring permissions.
@@ -35,11 +35,11 @@ import com.morlunk.jumble.util.JumbleObserver;
 public class PermissionsPopupMenu implements PopupMenu.OnDismissListener {
     private final Context mContext;
     private final IChannel mChannel;
-    private final IJumbleService mService;
+    private final IHumlaService mService;
     private final PopupMenu mMenu;
     private final IOnMenuPrepareListener mPrepareListener;
 
-    private final IJumbleObserver mPermissionsObserver = new JumbleObserver() {
+    private final IHumlaObserver mPermissionsObserver = new HumlaObserver() {
         @Override
         public void onChannelPermissionsUpdated(IChannel channel) {
             if (mChannel.equals(channel)) {
@@ -51,7 +51,7 @@ public class PermissionsPopupMenu implements PopupMenu.OnDismissListener {
     public PermissionsPopupMenu(Context context, View anchor, int menuRes,
                                 IOnMenuPrepareListener enforcer,
                                 PopupMenu.OnMenuItemClickListener itemClickListener,
-                                IChannel channel, IJumbleService service) {
+                                IChannel channel, IHumlaService service) {
         mContext = context;
         mChannel = channel;
         mService = service;

@@ -30,9 +30,9 @@ import android.widget.TabHost;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 
-import com.morlunk.jumble.IJumbleService;
+import se.lublin.humla.IHumlaService;
 import se.lublin.mumla.R;
-import se.lublin.mumla.util.JumbleServiceProvider;
+import se.lublin.mumla.util.HumlaServiceProvider;
 
 /**
  * Fragment to change your comment using basic WYSIWYG tools.
@@ -43,7 +43,7 @@ public abstract class AbstractCommentFragment extends DialogFragment {
     private TabHost mTabHost;
     private WebView mCommentView;
     private EditText mCommentEdit;
-    private JumbleServiceProvider mProvider;
+    private HumlaServiceProvider mProvider;
     private String mComment;
 
     @Override
@@ -57,9 +57,9 @@ public abstract class AbstractCommentFragment extends DialogFragment {
         super.onAttach(activity);
 
         try {
-            mProvider = (JumbleServiceProvider) activity;
+            mProvider = (HumlaServiceProvider) activity;
         } catch (ClassCastException e) {
-            throw new RuntimeException(activity.getClass().getName() + " must implement JumbleServiceProvider!");
+            throw new RuntimeException(activity.getClass().getName() + " must implement HumlaServiceProvider!");
         }
     }
 
@@ -134,14 +134,14 @@ public abstract class AbstractCommentFragment extends DialogFragment {
     /**
      * Requests a comment from the service. Will not be called if we already have a comment provided.
      * This method is expected to set a callback that will call {@link se.lublin.mumla.channel.comment.AbstractCommentFragment#loadComment(String comment)}.
-     * @param service The bound Jumble service to use for remote calls.
+     * @param service The bound Humla service to use for remote calls.
      */
-    public abstract void requestComment(IJumbleService service);
+    public abstract void requestComment(IHumlaService service);
 
     /**
      * Asks the service to replace the comment.
-     * @param service The bound Jumble service to use for remote calls.
+     * @param service The bound Humla service to use for remote calls.
      * @param comment The comment the user has defined.
      */
-    public abstract void editComment(IJumbleService service, String comment);
+    public abstract void editComment(IHumlaService service, String comment);
 }

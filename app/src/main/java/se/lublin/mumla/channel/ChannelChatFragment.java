@@ -41,18 +41,18 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 
-import com.morlunk.jumble.IJumbleService;
-import com.morlunk.jumble.IJumbleSession;
-import com.morlunk.jumble.model.IChannel;
-import com.morlunk.jumble.model.IMessage;
-import com.morlunk.jumble.model.IUser;
-import com.morlunk.jumble.model.User;
-import com.morlunk.jumble.util.IJumbleObserver;
-import com.morlunk.jumble.util.JumbleDisconnectedException;
-import com.morlunk.jumble.util.JumbleObserver;
+import se.lublin.humla.IHumlaService;
+import se.lublin.humla.IHumlaSession;
+import se.lublin.humla.model.IChannel;
+import se.lublin.humla.model.IMessage;
+import se.lublin.humla.model.IUser;
+import se.lublin.humla.model.User;
+import se.lublin.humla.util.IHumlaObserver;
+import se.lublin.humla.util.HumlaDisconnectedException;
+import se.lublin.humla.util.HumlaObserver;
 import se.lublin.mumla.R;
 import se.lublin.mumla.service.IChatMessage;
-import se.lublin.mumla.util.JumbleServiceFragment;
+import se.lublin.mumla.util.HumlaServiceFragment;
 import se.lublin.mumla.util.MumbleImageGetter;
 
 import java.text.DateFormat;
@@ -63,10 +63,10 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class ChannelChatFragment extends JumbleServiceFragment implements ChatTargetProvider.OnChatTargetSelectedListener {
+public class ChannelChatFragment extends HumlaServiceFragment implements ChatTargetProvider.OnChatTargetSelectedListener {
     private static final Pattern LINK_PATTERN = Pattern.compile("(https?://\\S+)");
 
-	private IJumbleObserver mServiceObserver = new JumbleObserver() {
+	private IHumlaObserver mServiceObserver = new HumlaObserver() {
 
         @Override
         public void onMessageLogged(IMessage message) {
@@ -90,9 +90,9 @@ public class ChannelChatFragment extends JumbleServiceFragment implements ChatTa
 
         @Override
         public void onUserJoinedChannel(IUser user, IChannel newChannel, IChannel oldChannel) {
-            IJumbleService service = getService();
+            IHumlaService service = getService();
             if (service.isConnected()) {
-                IJumbleSession session = service.getSession();
+                IHumlaSession session = service.getSession();
                 if (user != null && session.getSessionUser() != null &&
                         user.equals(session.getSessionUser()) &&
                         mTargetProvider.getChatTarget() == null) {
@@ -220,15 +220,15 @@ public class ChannelChatFragment extends JumbleServiceFragment implements ChatTa
     /**
      * Sends the message currently in {@link se.lublin.mumla.channel.ChannelChatFragment#mChatTextEdit}
      * to the remote server. Clears the message box if the message was sent successfully.
-     * @throws JumbleDisconnectedException If the service is disconnected.
+     * @throws HumlaDisconnectedException If the service is disconnected.
      */
-	private void sendMessage() throws JumbleDisconnectedException {
+	private void sendMessage() throws HumlaDisconnectedException {
         if(mChatTextEdit.length() == 0) return;
         String message = mChatTextEdit.getText().toString();
         String formattedMessage = markupOutgoingMessage(message);
         ChatTargetProvider.ChatTarget target = mTargetProvider.getChatTarget();
         IMessage responseMessage = null;
-        IJumbleSession session = getService().getSession();
+        IHumlaSession session = getService().getSession();
         if(target == null)
             responseMessage = session.sendChannelTextMessage(session.getSessionChannel().getId(), formattedMessage, false);
         else if(target.getUser() != null)
@@ -263,7 +263,7 @@ public class ChannelChatFragment extends JumbleServiceFragment implements ChatTa
 	public void updateChatTargetText(final ChatTargetProvider.ChatTarget target) {
         if(getService() == null || !getService().isConnected()) return;
 
-        IJumbleSession session = getService().getSession();
+        IHumlaSession session = getService().getSession();
         String hint = null;
         if(target == null && session.getSessionChannel() != null) {
             hint = getString(R.string.messageToChannel, session.getSessionChannel().getName());
@@ -278,7 +278,7 @@ public class ChannelChatFragment extends JumbleServiceFragment implements ChatTa
 
 
     @Override
-    public void onServiceBound(IJumbleService service) {
+    public void onServiceBound(IHumlaService service) {
         mChatAdapter = new ChannelChatAdapter(getActivity(), service, getService().getMessageLog());
         mChatList.setAdapter(mChatAdapter);
         mChatList.post(new Runnable() {
@@ -290,7 +290,7 @@ public class ChannelChatFragment extends JumbleServiceFragment implements ChatTa
     }
 
     @Override
-    public IJumbleObserver getServiceObserver() {
+    public IHumlaObserver getServiceObserver() {
         return mServiceObserver;
     }
 
@@ -301,10 +301,10 @@ public class ChannelChatFragment extends JumbleServiceFragment implements ChatTa
 
     private static class ChannelChatAdapter extends ArrayAdapter<IChatMessage> {
         private final MumbleImageGetter mImageGetter;
-        private final IJumbleService mService;
+        private final IHumlaService mService;
         private final DateFormat mDateFormat;
 
-        public ChannelChatAdapter(Context context, IJumbleService service, List<IChatMessage> messages) {
+        public ChannelChatAdapter(Context context, IHumlaService service, List<IChatMessage> messages) {
             super(context, 0, new ArrayList<>(messages));
             mService = service;
             mImageGetter = new MumbleImageGetter(context);
@@ -332,7 +332,7 @@ public class ChannelChatFragment extends JumbleServiceFragment implements ChatTa
                     boolean selfAuthored;
                     try {
                         selfAuthored = textMessage.getActor() == mService.getSession().getSessionId();
-                    } catch (JumbleDisconnectedException e) {
+                    } catch (HumlaDisconnectedException e) {
                         selfAuthored = false;
                     }
 

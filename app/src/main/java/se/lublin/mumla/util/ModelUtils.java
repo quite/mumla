@@ -17,7 +17,7 @@
 
 package se.lublin.mumla.util;
 
-import com.morlunk.jumble.model.IChannel;
+import se.lublin.humla.model.IChannel;
 
 import java.util.LinkedList;
 import java.util.List;

@@ -20,7 +20,7 @@ package se.lublin.mumla.servers;
 import android.content.Context;
 import android.view.MenuItem;
 
-import com.morlunk.jumble.model.Server;
+import se.lublin.humla.model.Server;
 import se.lublin.mumla.R;
 
 import java.util.List;

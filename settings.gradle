@@ -21,4 +21,4 @@
 
 
 
-include ':libraries:Jumble', ':app'
+include ':libraries:Humla', ':app'

@@ -17,9 +17,9 @@
 
 package se.lublin.mumla.channel.comment;
 
-import com.morlunk.jumble.IJumbleService;
-import com.morlunk.jumble.model.IChannel;
-import com.morlunk.jumble.util.JumbleObserver;
+import se.lublin.humla.IHumlaService;
+import se.lublin.humla.model.IChannel;
+import se.lublin.humla.util.HumlaObserver;
 
 /**
  * Created by andrew on 03/03/14.
@@ -27,10 +27,10 @@ import com.morlunk.jumble.util.JumbleObserver;
 public class ChannelDescriptionFragment extends AbstractCommentFragment {
 
     @Override
-    public void requestComment(final IJumbleService service) {
+    public void requestComment(final IHumlaService service) {
         if (!service.isConnected())
             return;
-        service.registerObserver(new JumbleObserver() {
+        service.registerObserver(new HumlaObserver() {
             @Override
             public void onChannelStateUpdated(IChannel channel) {
                 if(channel.getId() == getChannelId() &&
@@ -44,7 +44,7 @@ public class ChannelDescriptionFragment extends AbstractCommentFragment {
     }
 
     @Override
-    public void editComment(IJumbleService service, String comment) {
+    public void editComment(IHumlaService service, String comment) {
         // TODO
     }
 

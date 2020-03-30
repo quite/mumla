@@ -30,8 +30,8 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 
-import com.morlunk.jumble.Constants;
-import com.morlunk.jumble.model.Server;
+import se.lublin.humla.Constants;
+import se.lublin.humla.model.Server;
 import se.lublin.mumla.R;
 import se.lublin.mumla.Settings;
 

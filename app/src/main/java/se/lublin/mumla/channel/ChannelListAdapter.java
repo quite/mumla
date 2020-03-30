@@ -36,13 +36,13 @@ import android.widget.TextView;
 import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.morlunk.jumble.IJumbleService;
-import com.morlunk.jumble.IJumbleSession;
-import com.morlunk.jumble.JumbleService;
-import com.morlunk.jumble.model.IChannel;
-import com.morlunk.jumble.model.IUser;
-import com.morlunk.jumble.model.Server;
-import com.morlunk.jumble.model.TalkState;
+import se.lublin.humla.IHumlaService;
+import se.lublin.humla.IHumlaSession;
+import se.lublin.humla.HumlaService;
+import se.lublin.humla.model.IChannel;
+import se.lublin.humla.model.IUser;
+import se.lublin.humla.model.Server;
+import se.lublin.humla.model.TalkState;
 import se.lublin.mumla.R;
 import se.lublin.mumla.db.MumlaDatabase;
 import se.lublin.mumla.drawable.CircleDrawable;
@@ -69,7 +69,7 @@ public class ChannelListAdapter extends RecyclerView.Adapter implements UserMenu
     private static final long FLIP_DURATION = 350;
 
     private Context mContext;
-    private IJumbleService mService;
+    private IHumlaService mService;
     private MumlaDatabase mDatabase;
     private List<Integer> mRootChannels;
     private List<Node> mNodes;
@@ -83,7 +83,7 @@ public class ChannelListAdapter extends RecyclerView.Adapter implements UserMenu
     private boolean mShowChannelUserCount;
     private final FragmentManager mFragmentManager;
 
-    public ChannelListAdapter(Context context, IJumbleService service, MumlaDatabase database,
+    public ChannelListAdapter(Context context, IHumlaService service, MumlaDatabase database,
                               FragmentManager fragmentManager, boolean showPinnedOnly,
                               boolean showChannelUserCount) throws RemoteException {
         setHasStableIds(true);
@@ -155,7 +155,7 @@ public class ChannelListAdapter extends RecyclerView.Adapter implements UserMenu
 
             int nameTypeface = Typeface.NORMAL;
             if (mService != null && mService.isConnected()) {
-                IJumbleSession session = mService.getSession();
+                IHumlaSession session = mService.getSession();
                 if (channel.equals(session.getSessionChannel())) {
                     nameTypeface |= Typeface.BOLD;
                     // Always italicize our current channel if it has a link.
@@ -299,7 +299,7 @@ public class ChannelListAdapter extends RecyclerView.Adapter implements UserMenu
         if (!mService.isConnected())
             return;
 
-        IJumbleSession session = mService.getSession();
+        IHumlaSession session = mService.getSession();
         mNodes.clear();
         for (int cid : mRootChannels) {
             IChannel channel = session.getChannel(cid);
@@ -460,9 +460,9 @@ public class ChannelListAdapter extends RecyclerView.Adapter implements UserMenu
      * Changes the service backing the adapter. Updates the list as well.
      * @param service The new service to retrieve channels from.
      */
-    public void setService(IJumbleService service) {
+    public void setService(IHumlaService service) {
         mService = service;
-        if (service.getConnectionState() == JumbleService.ConnectionState.CONNECTED) {
+        if (service.getConnectionState() == HumlaService.ConnectionState.CONNECTED) {
             updateChannels();
             notifyDataSetChanged();
         }

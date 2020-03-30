@@ -1,13 +1,13 @@
 package se.lublin.mumla.service;
 
-import com.morlunk.jumble.IJumbleService;
+import se.lublin.humla.IHumlaService;
 
 import java.util.List;
 
 /**
  * Created by andrew on 28/02/17.
  */
-public interface IMumlaService extends IJumbleService {
+public interface IMumlaService extends IHumlaService {
     void setOverlayShown(boolean showOverlay);
 
     boolean isOverlayShown();

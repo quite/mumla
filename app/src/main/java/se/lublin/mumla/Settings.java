@@ -25,7 +25,7 @@ import android.util.Log;
 import android.view.Gravity;
 import android.widget.Toast;
 
-import com.morlunk.jumble.Constants;
+import se.lublin.humla.Constants;
 import se.lublin.mumla.db.DatabaseCertificate;
 import se.lublin.mumla.db.MumlaSQLiteDatabase;
 
@@ -237,10 +237,10 @@ public class Settings {
     }
 
     /**
-     * Converts the preference input method value to the one used to connect to a server via Jumble.
-     * @return An input method value used to instantiate a Jumble service.
+     * Converts the preference input method value to the one used to connect to a server via Humla.
+     * @return An input method value used to instantiate a Humla service.
      */
-    public int getJumbleInputMethod() {
+    public int getHumlaInputMethod() {
         String inputMethod = getInputMethod();
         if (ARRAY_INPUT_METHOD_VOICE.equals(inputMethod)) {
             return Constants.TRANSMIT_VOICE_ACTIVITY;
@@ -249,7 +249,7 @@ public class Settings {
         } else if (ARRAY_INPUT_METHOD_CONTINUOUS.equals(inputMethod)) {
             return Constants.TRANSMIT_CONTINUOUS;
         }
-        throw new RuntimeException("Could not convert input method '" + inputMethod + "' to a Jumble input method id!");
+        throw new RuntimeException("Could not convert input method '" + inputMethod + "' to a Humla input method id!");
     }
 
     public void setInputMethod(String inputMethod) {

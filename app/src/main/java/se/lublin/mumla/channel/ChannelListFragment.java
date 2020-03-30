@@ -44,23 +44,23 @@ import androidx.core.view.MenuItemCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.morlunk.jumble.IJumbleService;
-import com.morlunk.jumble.IJumbleSession;
-import com.morlunk.jumble.model.IChannel;
-import com.morlunk.jumble.model.IUser;
-import com.morlunk.jumble.util.IJumbleObserver;
-import com.morlunk.jumble.util.JumbleException;
-import com.morlunk.jumble.util.JumbleObserver;
+import se.lublin.humla.IHumlaService;
+import se.lublin.humla.IHumlaSession;
+import se.lublin.humla.model.IChannel;
+import se.lublin.humla.model.IUser;
+import se.lublin.humla.util.IHumlaObserver;
+import se.lublin.humla.util.HumlaException;
+import se.lublin.humla.util.HumlaObserver;
 import se.lublin.mumla.R;
 import se.lublin.mumla.Settings;
 import se.lublin.mumla.db.DatabaseProvider;
-import se.lublin.mumla.util.JumbleServiceFragment;
+import se.lublin.mumla.util.HumlaServiceFragment;
 
-public class ChannelListFragment extends JumbleServiceFragment implements OnChannelClickListener, OnUserClickListener, SharedPreferences.OnSharedPreferenceChangeListener {
+public class ChannelListFragment extends HumlaServiceFragment implements OnChannelClickListener, OnUserClickListener, SharedPreferences.OnSharedPreferenceChangeListener {
 
-	private IJumbleObserver mServiceObserver = new JumbleObserver() {
+	private IHumlaObserver mServiceObserver = new HumlaObserver() {
         @Override
-        public void onDisconnected(JumbleException e) {
+        public void onDisconnected(HumlaException e) {
             mChannelView.setAdapter(null);
         }
 
@@ -191,12 +191,12 @@ public class ChannelListFragment extends JumbleServiceFragment implements OnChan
     }
 
     @Override
-    public IJumbleObserver getServiceObserver() {
+    public IHumlaObserver getServiceObserver() {
         return mServiceObserver;
     }
 
     @Override
-    public void onServiceBound(IJumbleService service) {
+    public void onServiceBound(IHumlaService service) {
         try {
             if (mChannelListAdapter == null) {
                 setupChannelList();
@@ -216,7 +216,7 @@ public class ChannelListFragment extends JumbleServiceFragment implements OnChan
         MenuItem deafenItem = menu.findItem(R.id.menu_deafen_button);
 
         if(getService() != null && getService().isConnected()) {
-            IJumbleSession session = getService().getSession();
+            IHumlaSession session = getService().getSession();
 
             // Color the action bar icons to the primary text color of the theme, TODO move this elsewhere
             int foregroundColor = getActivity().getTheme().obtainStyledAttributes(new int[]{android.R.attr.textColorPrimaryInverse}).getColor(0, -1);
@@ -257,7 +257,7 @@ public class ChannelListFragment extends JumbleServiceFragment implements OnChan
                 String itemType = cursor.getString(typeColumn);
                 int itemId = cursor.getInt(dataIdColumn);
 
-                IJumbleSession session = getService().getSession();
+                IHumlaSession session = getService().getSession();
                 if(ChannelSearchProvider.INTENT_DATA_CHANNEL.equals(itemType)) {
                     if(session.getSessionChannel().getId() != itemId) {
                         session.joinChannel(itemId);
@@ -279,7 +279,7 @@ public class ChannelListFragment extends JumbleServiceFragment implements OnChan
         if (getService() == null || !getService().isConnected())
             return super.onOptionsItemSelected(item);
 
-        IJumbleSession session = getService().getSession();
+        IHumlaSession session = getService().getSession();
         switch (item.getItemId()) {
             case R.id.menu_mute_button: {
                 IUser self = session.getSessionUser();

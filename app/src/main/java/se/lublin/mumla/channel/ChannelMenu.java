@@ -33,13 +33,13 @@ import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
-import com.morlunk.jumble.IJumbleService;
-import com.morlunk.jumble.IJumbleSession;
-import com.morlunk.jumble.model.IChannel;
-import com.morlunk.jumble.model.Server;
-import com.morlunk.jumble.model.WhisperTargetChannel;
-import com.morlunk.jumble.net.Permissions;
-import com.morlunk.jumble.util.VoiceTargetMode;
+import se.lublin.humla.IHumlaService;
+import se.lublin.humla.IHumlaSession;
+import se.lublin.humla.model.IChannel;
+import se.lublin.humla.model.Server;
+import se.lublin.humla.model.WhisperTargetChannel;
+import se.lublin.humla.net.Permissions;
+import se.lublin.humla.util.VoiceTargetMode;
 import se.lublin.mumla.R;
 import se.lublin.mumla.channel.comment.ChannelDescriptionFragment;
 import se.lublin.mumla.db.MumlaDatabase;
@@ -50,11 +50,11 @@ import se.lublin.mumla.db.MumlaDatabase;
 public class ChannelMenu implements PermissionsPopupMenu.IOnMenuPrepareListener, PopupMenu.OnMenuItemClickListener {
     private final Context mContext;
     private final IChannel mChannel;
-    private final IJumbleService mService;
+    private final IHumlaService mService;
     private final MumlaDatabase mDatabase;
     private final FragmentManager mFragmentManager;
 
-    public ChannelMenu(Context context, IChannel channel, IJumbleService service,
+    public ChannelMenu(Context context, IChannel channel, IHumlaService service,
                        MumlaDatabase database, FragmentManager fragmentManager) {
         mContext = context;
         mChannel = channel;
@@ -168,7 +168,7 @@ public class ChannelMenu implements PermissionsPopupMenu.IOnMenuPrepareListener,
                         if (!mService.isConnected())
                             return;
 
-                        IJumbleSession session = mService.getSession();
+                        IHumlaSession session = mService.getSession();
 
                         // Unregister any existing voice target.
                         if (session.getVoiceTargetMode() == VoiceTargetMode.WHISPER) {

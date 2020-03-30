@@ -17,7 +17,7 @@
 
 package se.lublin.mumla.service;
 
-import com.morlunk.jumble.model.IMessage;
+import se.lublin.humla.model.IMessage;
 
 import java.util.Date;
 

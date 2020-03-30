@@ -32,14 +32,14 @@ import android.view.WindowManager;
 
 import androidx.appcompat.app.AlertDialog;
 
-import com.morlunk.jumble.Constants;
-import com.morlunk.jumble.JumbleService;
-import com.morlunk.jumble.exception.AudioException;
-import com.morlunk.jumble.model.IMessage;
-import com.morlunk.jumble.model.IUser;
-import com.morlunk.jumble.model.TalkState;
-import com.morlunk.jumble.util.JumbleException;
-import com.morlunk.jumble.util.JumbleObserver;
+import se.lublin.humla.Constants;
+import se.lublin.humla.HumlaService;
+import se.lublin.humla.exception.AudioException;
+import se.lublin.humla.model.IMessage;
+import se.lublin.humla.model.IUser;
+import se.lublin.humla.model.TalkState;
+import se.lublin.humla.util.HumlaException;
+import se.lublin.humla.util.HumlaObserver;
 import se.lublin.mumla.R;
 import se.lublin.mumla.Settings;
 import se.lublin.mumla.service.ipc.TalkBroadcastReceiver;
@@ -54,10 +54,10 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * An extension of the Jumble service with some added Mumla-exclusive non-standard Mumble features.
+ * An extension of the Humla service with some added Mumla-exclusive non-standard Mumble features.
  * Created by andrew on 28/07/13.
  */
-public class MumlaService extends JumbleService implements
+public class MumlaService extends HumlaService implements
         SharedPreferences.OnSharedPreferenceChangeListener,
         MumlaConnectionNotification.OnActionListener,
         MumlaReconnectNotification.OnActionListener, IMumlaService {
@@ -111,7 +111,7 @@ public class MumlaService extends JumbleService implements
 
     private BroadcastReceiver mTalkReceiver;
 
-    private JumbleObserver mObserver = new JumbleObserver() {
+    private HumlaObserver mObserver = new HumlaObserver() {
 
         @Override
         public void onConnecting() {
@@ -141,7 +141,7 @@ public class MumlaService extends JumbleService implements
         }
 
         @Override
-        public void onDisconnected(JumbleException e) {
+        public void onDisconnected(HumlaException e) {
             if (mNotification != null) {
                 mNotification.hide();
                 mNotification = null;
@@ -348,7 +348,7 @@ public class MumlaService extends JumbleService implements
     }
 
     @Override
-    public void onConnectionDisconnected(JumbleException e) {
+    public void onConnectionDisconnected(HumlaException e) {
         super.onConnectionDisconnected(e);
         try {
             unregisterReceiver(mTalkReceiver);
@@ -376,18 +376,18 @@ public class MumlaService extends JumbleService implements
         boolean requiresReconnect = false;
         switch (key) {
             case Settings.PREF_INPUT_METHOD:
-                /* Convert input method defined in settings to an integer format used by Jumble. */
-                int inputMethod = mSettings.getJumbleInputMethod();
-                changedExtras.putInt(JumbleService.EXTRAS_TRANSMIT_MODE, inputMethod);
+                /* Convert input method defined in settings to an integer format used by Humla. */
+                int inputMethod = mSettings.getHumlaInputMethod();
+                changedExtras.putInt(HumlaService.EXTRAS_TRANSMIT_MODE, inputMethod);
                 mChannelOverlay.setPushToTalkShown(inputMethod == Constants.TRANSMIT_PUSH_TO_TALK);
                 break;
             case Settings.PREF_HANDSET_MODE:
                 setProximitySensorOn(isConnectionEstablished() && mSettings.isHandsetMode());
-                changedExtras.putInt(JumbleService.EXTRAS_AUDIO_STREAM, mSettings.isHandsetMode() ?
+                changedExtras.putInt(HumlaService.EXTRAS_AUDIO_STREAM, mSettings.isHandsetMode() ?
                                      AudioManager.STREAM_VOICE_CALL : AudioManager.STREAM_MUSIC);
                 break;
             case Settings.PREF_THRESHOLD:
-                changedExtras.putFloat(JumbleService.EXTRAS_DETECTION_THRESHOLD,
+                changedExtras.putFloat(HumlaService.EXTRAS_DETECTION_THRESHOLD,
                         mSettings.getDetectionThreshold());
                 break;
             case Settings.PREF_HOT_CORNER_KEY:

@@ -26,11 +26,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.morlunk.jumble.IJumbleService;
-import com.morlunk.jumble.IJumbleSession;
-import com.morlunk.jumble.net.JumbleUDPMessageType;
+import se.lublin.humla.IHumlaService;
+import se.lublin.humla.IHumlaSession;
+import se.lublin.humla.net.HumlaUDPMessageType;
 import se.lublin.mumla.R;
-import se.lublin.mumla.util.JumbleServiceFragment;
+import se.lublin.mumla.util.HumlaServiceFragment;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -41,7 +41,7 @@ import java.util.concurrent.TimeUnit;
  * A fragment that displays known information from the remote server.
  * Created by andrew on 28/08/13.
  */
-public class ServerInfoFragment extends JumbleServiceFragment {
+public class ServerInfoFragment extends HumlaServiceFragment {
 
     private static final int POLL_RATE = 1000;
 
@@ -79,7 +79,7 @@ public class ServerInfoFragment extends JumbleServiceFragment {
         if(getService() == null || !getService().isConnected())
             return;
 
-        IJumbleSession session = getService().getSession();
+        IHumlaSession session = getService().getSession();
 
         mProtocolView.setText(getString(R.string.server_info_protocol, session.getServerRelease()));
         mOSVersionView.setText(getString(R.string.server_info_version, session.getServerOSName(), session.getServerOSVersion()));
@@ -88,7 +88,7 @@ public class ServerInfoFragment extends JumbleServiceFragment {
         mHostView.setText(getString(R.string.server_info_host, getService().getTargetServer().getHost(), getService().getTargetServer().getPort()));
 
         String codecName;
-        JumbleUDPMessageType codecType = session.getCodec();
+        HumlaUDPMessageType codecType = session.getCodec();
         switch (codecType) {
             case UDPVoiceOpus:
                 codecName = "Opus";
@@ -112,7 +112,7 @@ public class ServerInfoFragment extends JumbleServiceFragment {
     }
 
     @Override
-    public void onServiceBound(IJumbleService service) {
+    public void onServiceBound(IHumlaService service) {
         // wow this is ugly
         mPollFuture = mExecutorService.scheduleAtFixedRate(new Runnable() {
             @Override

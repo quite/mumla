@@ -23,17 +23,17 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.morlunk.jumble.IJumbleService;
-import com.morlunk.jumble.util.IJumbleObserver;
+import se.lublin.humla.IHumlaService;
+import se.lublin.humla.util.IHumlaObserver;
 import se.lublin.mumla.service.IMumlaService;
 
 /**
- * Fragment class intended to make binding the Jumble service to fragments easier.
+ * Fragment class intended to make binding the Humla service to fragments easier.
  * Created by andrew on 04/08/13.
  */
-public abstract class JumbleServiceFragment extends Fragment {
+public abstract class HumlaServiceFragment extends Fragment {
 
-    private JumbleServiceProvider mServiceProvider;
+    private HumlaServiceProvider mServiceProvider;
 
     /** State boolean to make sure we don't double initialize a fragment once a service has been bound. */
     private boolean mBound;
@@ -43,9 +43,9 @@ public abstract class JumbleServiceFragment extends Fragment {
         super.onAttach(activity);
 
         try {
-            mServiceProvider = (JumbleServiceProvider) activity;
+            mServiceProvider = (HumlaServiceProvider) activity;
         } catch (ClassCastException e) {
-            throw new ClassCastException(activity.toString() + " must implement JumbleServiceProvider");
+            throw new ClassCastException(activity.toString() + " must implement HumlaServiceProvider");
         }
     }
 
@@ -66,16 +66,16 @@ public abstract class JumbleServiceFragment extends Fragment {
     }
 
     /** The definitive place where data from the service will be used to initialize the fragment. Only called once per bind, whether the fragment loads first or the service. */
-    public void onServiceBound(IJumbleService service) { }
+    public void onServiceBound(IHumlaService service) { }
 
     public void onServiceUnbound() { }
 
     /** If implemented, will register the returned observer to the service upon binding. */
-    public IJumbleObserver getServiceObserver() {
+    public IHumlaObserver getServiceObserver() {
         return null;
     }
 
-    private void onServiceAttached(IJumbleService service) {
+    private void onServiceAttached(IHumlaService service) {
         mBound = true;
         if(getServiceObserver() != null)
             service.registerObserver(getServiceObserver());
@@ -83,7 +83,7 @@ public abstract class JumbleServiceFragment extends Fragment {
         onServiceBound(service);
     }
 
-    private void onServiceDetached(IJumbleService service) {
+    private void onServiceDetached(IHumlaService service) {
         mBound = false;
         if(getServiceObserver() != null)
             service.unregisterObserver(getServiceObserver());

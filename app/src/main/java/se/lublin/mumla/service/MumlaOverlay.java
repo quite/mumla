@@ -27,9 +27,9 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.ListView;
 
-import com.morlunk.jumble.model.IChannel;
-import com.morlunk.jumble.model.IUser;
-import com.morlunk.jumble.util.JumbleObserver;
+import se.lublin.humla.model.IChannel;
+import se.lublin.humla.model.IUser;
+import se.lublin.humla.util.HumlaObserver;
 import se.lublin.mumla.R;
 import se.lublin.mumla.Settings;
 import se.lublin.mumla.channel.ChannelAdapter;
@@ -43,7 +43,7 @@ public class MumlaOverlay {
     public static final int DEFAULT_WIDTH = 200;
     public static final int DEFAULT_HEIGHT = 240;
 
-    private JumbleObserver mObserver = new JumbleObserver() {
+    private HumlaObserver mObserver = new HumlaObserver() {
         @Override
         public void onUserTalkStateUpdated(IUser user) {
             mChannelAdapter.notifyDataSetChanged();

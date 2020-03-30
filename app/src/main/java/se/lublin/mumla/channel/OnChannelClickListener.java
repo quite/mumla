@@ -17,7 +17,7 @@
 
 package se.lublin.mumla.channel;
 
-import com.morlunk.jumble.model.IChannel;
+import se.lublin.humla.model.IChannel;
 
 /**
  * Created by andrew on 20/10/14.

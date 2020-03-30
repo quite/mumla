@@ -48,7 +48,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
-import com.morlunk.jumble.model.Server;
+import se.lublin.humla.model.Server;
 import se.lublin.mumla.R;
 import se.lublin.mumla.Settings;
 import se.lublin.mumla.db.DatabaseProvider;
@@ -350,7 +350,7 @@ public class PublicServerListFragment extends Fragment implements OnItemClickLis
                 if(serverInfoResponse == null) {
                     // TODO handle bad responses
                 } else if(serverInfoResponse.getCurrentUsers() == 0 &&
-                        serverInfoResponse.getVersion() == com.morlunk.jumble.Constants.PROTOCOL_VERSION) {
+                        serverInfoResponse.getVersion() == se.lublin.humla.Constants.PROTOCOL_VERSION) {
                     mGoodResponses.add(serverInfoResponse);
                 }
 

@@ -22,7 +22,7 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.widget.Toast;
 
-import com.morlunk.jumble.net.JumbleCertificateGenerator;
+import se.lublin.humla.net.HumlaCertificateGenerator;
 import se.lublin.mumla.R;
 import se.lublin.mumla.db.DatabaseCertificate;
 import se.lublin.mumla.db.MumlaDatabase;
@@ -57,7 +57,7 @@ public class MumlaCertificateGenerateTask extends AsyncTask<Void, Void, Database
 	protected DatabaseCertificate doInBackground(Void... params) {
 		try {
 			ByteArrayOutputStream baos = new ByteArrayOutputStream();
-			JumbleCertificateGenerator.generateCertificate(baos);
+			HumlaCertificateGenerator.generateCertificate(baos);
 
 			SimpleDateFormat dateFormat = new SimpleDateFormat(DATE_FORMAT, Locale.getDefault());
 			String fileName = context.getString(R.string.certificate_export_format, dateFormat.format(new Date()));

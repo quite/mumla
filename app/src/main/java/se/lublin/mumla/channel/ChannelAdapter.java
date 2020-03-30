@@ -25,10 +25,10 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.morlunk.jumble.model.IChannel;
-import com.morlunk.jumble.model.IUser;
-import com.morlunk.jumble.model.TalkState;
-import com.morlunk.jumble.model.User;
+import se.lublin.humla.model.IChannel;
+import se.lublin.humla.model.IUser;
+import se.lublin.humla.model.TalkState;
+import se.lublin.humla.model.User;
 import se.lublin.mumla.R;
 
 /**

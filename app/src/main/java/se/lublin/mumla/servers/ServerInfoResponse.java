@@ -17,7 +17,7 @@
 
 package se.lublin.mumla.servers;
 
-import com.morlunk.jumble.model.Server;
+import se.lublin.humla.model.Server;
 
 import java.nio.ByteBuffer;
 

@@ -23,7 +23,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.morlunk.jumble.model.Server;
+import se.lublin.humla.model.Server;
 import se.lublin.mumla.R;
 import se.lublin.mumla.db.PublicServer;
 

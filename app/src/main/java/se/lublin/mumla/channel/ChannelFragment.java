@@ -40,17 +40,17 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.PagerTabStrip;
 import androidx.viewpager.widget.ViewPager;
 
-import com.morlunk.jumble.IJumbleService;
-import com.morlunk.jumble.IJumbleSession;
-import com.morlunk.jumble.JumbleService;
-import com.morlunk.jumble.model.IUser;
-import com.morlunk.jumble.model.WhisperTarget;
-import com.morlunk.jumble.util.IJumbleObserver;
-import com.morlunk.jumble.util.JumbleObserver;
-import com.morlunk.jumble.util.VoiceTargetMode;
+import se.lublin.humla.IHumlaService;
+import se.lublin.humla.IHumlaSession;
+import se.lublin.humla.HumlaService;
+import se.lublin.humla.model.IUser;
+import se.lublin.humla.model.WhisperTarget;
+import se.lublin.humla.util.IHumlaObserver;
+import se.lublin.humla.util.HumlaObserver;
+import se.lublin.humla.util.VoiceTargetMode;
 import se.lublin.mumla.R;
 import se.lublin.mumla.Settings;
-import se.lublin.mumla.util.JumbleServiceFragment;
+import se.lublin.mumla.util.HumlaServiceFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -59,7 +59,7 @@ import java.util.List;
  * Class to encapsulate both a ChannelListFragment and ChannelChatFragment.
  * Created by andrew on 02/08/13.
  */
-public class ChannelFragment extends JumbleServiceFragment implements SharedPreferences.OnSharedPreferenceChangeListener, ChatTargetProvider {
+public class ChannelFragment extends HumlaServiceFragment implements SharedPreferences.OnSharedPreferenceChangeListener, ChatTargetProvider {
 
     private ViewPager mViewPager;
     private PagerTabStrip mTabStrip;
@@ -77,11 +77,11 @@ public class ChannelFragment extends JumbleServiceFragment implements SharedPref
     /** True iff the talk button has been hidden (e.g. when muted) */
     private boolean mTalkButtonHidden;
 
-    private JumbleObserver mObserver = new JumbleObserver() {
+    private HumlaObserver mObserver = new HumlaObserver() {
         @Override
         public void onUserTalkStateUpdated(IUser user) {
             if (getService().isConnected()) {
-                IJumbleSession session = getService().getSession();
+                IHumlaSession session = getService().getSession();
                 if (user != null && user.getSession() == session.getSessionId()) {
                     // Manually set button selection colour when we receive a talk state update.
                     // This allows representation of talk state when using hot corners and PTT toggle.
@@ -102,7 +102,7 @@ public class ChannelFragment extends JumbleServiceFragment implements SharedPref
         @Override
         public void onUserStateUpdated(IUser user) {
             if (getService().isConnected()) {
-                IJumbleSession session = getService().getSession();
+                IHumlaSession session = getService().getSession();
                 if (user != null && user.getSession() == session.getSessionId()) {
                     configureInput();
                 }
@@ -164,7 +164,7 @@ public class ChannelFragment extends JumbleServiceFragment implements SharedPref
                 if (getService() == null || !getService().isConnected())
                     return;
 
-                IJumbleSession session = getService().getSession();
+                IHumlaSession session = getService().getSession();
                 if (session.getVoiceTargetMode() == VoiceTargetMode.WHISPER) {
                     byte target = session.getVoiceTargetId();
                     session.setVoiceTargetId((byte) 0);
@@ -243,14 +243,14 @@ public class ChannelFragment extends JumbleServiceFragment implements SharedPref
     }
 
     @Override
-    public IJumbleObserver getServiceObserver() {
+    public IHumlaObserver getServiceObserver() {
         return mObserver;
     }
 
     @Override
-    public void onServiceBound(IJumbleService service) {
+    public void onServiceBound(IHumlaService service) {
         super.onServiceBound(service);
-        if (service.getConnectionState() == JumbleService.ConnectionState.CONNECTED) {
+        if (service.getConnectionState() == HumlaService.ConnectionState.CONNECTED) {
             configureTargetPanel();
             configureInput();
         }
@@ -260,7 +260,7 @@ public class ChannelFragment extends JumbleServiceFragment implements SharedPref
         if (!getService().isConnected())
             return;
 
-        IJumbleSession session = getService().getSession();
+        IHumlaSession session = getService().getSession();
         VoiceTargetMode mode = session.getVoiceTargetMode();
         if (mode == VoiceTargetMode.WHISPER) {
             WhisperTarget target = session.getWhisperTarget();

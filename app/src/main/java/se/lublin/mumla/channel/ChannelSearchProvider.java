@@ -29,10 +29,10 @@ import android.net.Uri;
 import android.os.IBinder;
 import android.util.Log;
 
-import com.morlunk.jumble.IJumbleService;
-import com.morlunk.jumble.IJumbleSession;
-import com.morlunk.jumble.model.IChannel;
-import com.morlunk.jumble.model.IUser;
+import se.lublin.humla.IHumlaService;
+import se.lublin.humla.IHumlaSession;
+import se.lublin.humla.model.IChannel;
+import se.lublin.humla.model.IUser;
 import se.lublin.mumla.Constants;
 import se.lublin.mumla.R;
 import se.lublin.mumla.service.MumlaService;
@@ -46,7 +46,7 @@ public class ChannelSearchProvider extends ContentProvider {
 	public static final String INTENT_DATA_CHANNEL = "channel";
 	public static final String INTENT_DATA_USER = "user";
 
-    private IJumbleService mService;
+    private IHumlaService mService;
     private final Object mServiceLock = new Object();
 
 	private ServiceConnection mConn = new ServiceConnection() {
@@ -114,7 +114,7 @@ public class ChannelSearchProvider extends ContentProvider {
         if (!mService.isConnected())
             return null;
 
-        IJumbleSession session = mService.getSession();
+        IHumlaSession session = mService.getSession();
 		
 		String query = "";
 		for(int x=0;x<selectionArgs.length;x++) {

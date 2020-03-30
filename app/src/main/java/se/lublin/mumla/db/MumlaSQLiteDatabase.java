@@ -24,7 +24,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-import com.morlunk.jumble.model.Server;
+import se.lublin.humla.model.Server;
 import se.lublin.mumla.Constants;
 
 import java.util.ArrayList;

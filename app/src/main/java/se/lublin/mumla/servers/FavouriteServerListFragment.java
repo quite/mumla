@@ -37,7 +37,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
-import com.morlunk.jumble.model.Server;
+import se.lublin.humla.model.Server;
 import se.lublin.mumla.BuildConfig;
 import se.lublin.mumla.R;
 import se.lublin.mumla.db.DatabaseProvider;

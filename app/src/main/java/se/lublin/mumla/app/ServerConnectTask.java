@@ -24,8 +24,8 @@ import android.media.AudioManager;
 import android.media.MediaRecorder;
 import android.os.AsyncTask;
 
-import com.morlunk.jumble.JumbleService;
-import com.morlunk.jumble.model.Server;
+import se.lublin.humla.HumlaService;
+import se.lublin.humla.model.Server;
 import se.lublin.mumla.R;
 import se.lublin.mumla.Settings;
 import se.lublin.mumla.db.MumlaDatabase;
@@ -53,8 +53,8 @@ public class ServerConnectTask extends AsyncTask<Server, Void, Intent> {
     protected Intent doInBackground(Server... params) {
         Server server = params[0];
 
-        /* Convert input method defined in settings to an integer format used by Jumble. */
-        int inputMethod = mSettings.getJumbleInputMethod();
+        /* Convert input method defined in settings to an integer format used by Humla. */
+        int inputMethod = mSettings.getHumlaInputMethod();
 
         int audioSource = mSettings.isHandsetMode() ?
                 MediaRecorder.AudioSource.DEFAULT : MediaRecorder.AudioSource.MIC;
@@ -69,43 +69,43 @@ public class ServerConnectTask extends AsyncTask<Server, Void, Intent> {
         }
 
         Intent connectIntent = new Intent(mContext, MumlaService.class);
-        connectIntent.putExtra(JumbleService.EXTRAS_SERVER, server);
-        connectIntent.putExtra(JumbleService.EXTRAS_CLIENT_NAME, mContext.getString(R.string.app_name)+" "+applicationVersion);
-        connectIntent.putExtra(JumbleService.EXTRAS_TRANSMIT_MODE, inputMethod);
-        connectIntent.putExtra(JumbleService.EXTRAS_DETECTION_THRESHOLD, mSettings.getDetectionThreshold());
-        connectIntent.putExtra(JumbleService.EXTRAS_AMPLITUDE_BOOST, mSettings.getAmplitudeBoostMultiplier());
-        connectIntent.putExtra(JumbleService.EXTRAS_AUTO_RECONNECT, mSettings.isAutoReconnectEnabled());
-        connectIntent.putExtra(JumbleService.EXTRAS_AUTO_RECONNECT_DELAY, MumlaService.RECONNECT_DELAY);
-        connectIntent.putExtra(JumbleService.EXTRAS_USE_OPUS, !mSettings.isOpusDisabled());
-        connectIntent.putExtra(JumbleService.EXTRAS_INPUT_RATE, mSettings.getInputSampleRate());
-        connectIntent.putExtra(JumbleService.EXTRAS_INPUT_QUALITY, mSettings.getInputQuality());
-        connectIntent.putExtra(JumbleService.EXTRAS_FORCE_TCP, mSettings.isTcpForced());
-        connectIntent.putExtra(JumbleService.EXTRAS_USE_TOR, mSettings.isTorEnabled());
-        connectIntent.putStringArrayListExtra(JumbleService.EXTRAS_ACCESS_TOKENS, (ArrayList<String>) mDatabase.getAccessTokens(server.getId()));
-        connectIntent.putExtra(JumbleService.EXTRAS_AUDIO_SOURCE, audioSource);
-        connectIntent.putExtra(JumbleService.EXTRAS_AUDIO_STREAM, audioStream);
-        connectIntent.putExtra(JumbleService.EXTRAS_FRAMES_PER_PACKET, mSettings.getFramesPerPacket());
-        connectIntent.putExtra(JumbleService.EXTRAS_TRUST_STORE, MumlaTrustStore.getTrustStorePath(mContext));
-        connectIntent.putExtra(JumbleService.EXTRAS_TRUST_STORE_PASSWORD, MumlaTrustStore.getTrustStorePassword());
-        connectIntent.putExtra(JumbleService.EXTRAS_TRUST_STORE_FORMAT, MumlaTrustStore.getTrustStoreFormat());
-        connectIntent.putExtra(JumbleService.EXTRAS_HALF_DUPLEX, mSettings.isHalfDuplex());
-        connectIntent.putExtra(JumbleService.EXTRAS_ENABLE_PREPROCESSOR, mSettings.isPreprocessorEnabled());
+        connectIntent.putExtra(HumlaService.EXTRAS_SERVER, server);
+        connectIntent.putExtra(HumlaService.EXTRAS_CLIENT_NAME, mContext.getString(R.string.app_name)+" "+applicationVersion);
+        connectIntent.putExtra(HumlaService.EXTRAS_TRANSMIT_MODE, inputMethod);
+        connectIntent.putExtra(HumlaService.EXTRAS_DETECTION_THRESHOLD, mSettings.getDetectionThreshold());
+        connectIntent.putExtra(HumlaService.EXTRAS_AMPLITUDE_BOOST, mSettings.getAmplitudeBoostMultiplier());
+        connectIntent.putExtra(HumlaService.EXTRAS_AUTO_RECONNECT, mSettings.isAutoReconnectEnabled());
+        connectIntent.putExtra(HumlaService.EXTRAS_AUTO_RECONNECT_DELAY, MumlaService.RECONNECT_DELAY);
+        connectIntent.putExtra(HumlaService.EXTRAS_USE_OPUS, !mSettings.isOpusDisabled());
+        connectIntent.putExtra(HumlaService.EXTRAS_INPUT_RATE, mSettings.getInputSampleRate());
+        connectIntent.putExtra(HumlaService.EXTRAS_INPUT_QUALITY, mSettings.getInputQuality());
+        connectIntent.putExtra(HumlaService.EXTRAS_FORCE_TCP, mSettings.isTcpForced());
+        connectIntent.putExtra(HumlaService.EXTRAS_USE_TOR, mSettings.isTorEnabled());
+        connectIntent.putStringArrayListExtra(HumlaService.EXTRAS_ACCESS_TOKENS, (ArrayList<String>) mDatabase.getAccessTokens(server.getId()));
+        connectIntent.putExtra(HumlaService.EXTRAS_AUDIO_SOURCE, audioSource);
+        connectIntent.putExtra(HumlaService.EXTRAS_AUDIO_STREAM, audioStream);
+        connectIntent.putExtra(HumlaService.EXTRAS_FRAMES_PER_PACKET, mSettings.getFramesPerPacket());
+        connectIntent.putExtra(HumlaService.EXTRAS_TRUST_STORE, MumlaTrustStore.getTrustStorePath(mContext));
+        connectIntent.putExtra(HumlaService.EXTRAS_TRUST_STORE_PASSWORD, MumlaTrustStore.getTrustStorePassword());
+        connectIntent.putExtra(HumlaService.EXTRAS_TRUST_STORE_FORMAT, MumlaTrustStore.getTrustStoreFormat());
+        connectIntent.putExtra(HumlaService.EXTRAS_HALF_DUPLEX, mSettings.isHalfDuplex());
+        connectIntent.putExtra(HumlaService.EXTRAS_ENABLE_PREPROCESSOR, mSettings.isPreprocessorEnabled());
         if (server.isSaved()) {
             ArrayList<Integer> muteHistory = (ArrayList<Integer>) mDatabase.getLocalMutedUsers(server.getId());
             ArrayList<Integer> ignoreHistory = (ArrayList<Integer>) mDatabase.getLocalIgnoredUsers(server.getId());
-            connectIntent.putExtra(JumbleService.EXTRAS_LOCAL_MUTE_HISTORY, muteHistory);
-            connectIntent.putExtra(JumbleService.EXTRAS_LOCAL_IGNORE_HISTORY, ignoreHistory);
+            connectIntent.putExtra(HumlaService.EXTRAS_LOCAL_MUTE_HISTORY, muteHistory);
+            connectIntent.putExtra(HumlaService.EXTRAS_LOCAL_IGNORE_HISTORY, ignoreHistory);
         }
 
         if (mSettings.isUsingCertificate()) {
             long certificateId = mSettings.getDefaultCertificate();
             byte[] certificate = mDatabase.getCertificateData(certificateId);
             if (certificate != null)
-                connectIntent.putExtra(JumbleService.EXTRAS_CERTIFICATE, certificate);
+                connectIntent.putExtra(HumlaService.EXTRAS_CERTIFICATE, certificate);
             // TODO(acomminos): handle the case where a certificate's data is unavailable.
         }
 
-        connectIntent.setAction(JumbleService.ACTION_CONNECT);
+        connectIntent.setAction(HumlaService.ACTION_CONNECT);
         return connectIntent;
     }
 

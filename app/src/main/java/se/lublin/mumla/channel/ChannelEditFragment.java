@@ -29,18 +29,18 @@ import android.widget.TextView;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 
-import com.morlunk.jumble.IJumbleSession;
-import com.morlunk.jumble.model.IChannel;
-import com.morlunk.jumble.net.Permissions;
+import se.lublin.humla.IHumlaSession;
+import se.lublin.humla.model.IChannel;
+import se.lublin.humla.net.Permissions;
 import se.lublin.mumla.R;
-import se.lublin.mumla.util.JumbleServiceProvider;
+import se.lublin.mumla.util.HumlaServiceProvider;
 
 /**
  * Created by andrew on 23/11/13.
  */
 public class ChannelEditFragment extends DialogFragment {
 
-    private JumbleServiceProvider mServiceProvider;
+    private HumlaServiceProvider mServiceProvider;
     private TextView mNameField;
     private TextView mDescriptionField;
     private TextView mPositionField;
@@ -51,9 +51,9 @@ public class ChannelEditFragment extends DialogFragment {
         super.onAttach(activity);
 
         try {
-            mServiceProvider = (JumbleServiceProvider) activity;
+            mServiceProvider = (HumlaServiceProvider) activity;
         } catch (ClassCastException e) {
-            throw new ClassCastException(activity.toString() + " must implement JumbleServiceProvider");
+            throw new ClassCastException(activity.toString() + " must implement HumlaServiceProvider");
         }
     }
 
@@ -69,7 +69,7 @@ public class ChannelEditFragment extends DialogFragment {
         // If we can only make temporary channels, remove the option.
         if (mServiceProvider.getService().isConnected()) {
             // TODO: we probably should just stop this dialog in its tracks if we're disconnected.
-            IJumbleSession session = mServiceProvider.getService().getSession();
+            IHumlaSession session = mServiceProvider.getService().getSession();
             IChannel parentChannel = session.getChannel(getParent());
             int combinedPermissions = session.getPermissions() | parentChannel.getPermissions();
             boolean canMakeChannel = (combinedPermissions & Permissions.MakeChannel) > 0;

@@ -22,8 +22,8 @@ import se.lublin.mumla.service.IMumlaService;
 /**
  * Created by andrew on 03/08/13.
  */
-public interface JumbleServiceProvider {
+public interface HumlaServiceProvider {
     IMumlaService getService();
-    void addServiceFragment(JumbleServiceFragment fragment);
-    void removeServiceFragment(JumbleServiceFragment fragment);
+    void addServiceFragment(HumlaServiceFragment fragment);
+    void removeServiceFragment(HumlaServiceFragment fragment);
 }

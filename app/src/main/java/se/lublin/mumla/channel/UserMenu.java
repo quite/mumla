@@ -30,9 +30,9 @@ import androidx.appcompat.widget.PopupMenu;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
-import com.morlunk.jumble.model.IChannel;
-import com.morlunk.jumble.model.IUser;
-import com.morlunk.jumble.net.Permissions;
+import se.lublin.humla.model.IChannel;
+import se.lublin.humla.model.IUser;
+import se.lublin.humla.net.Permissions;
 import se.lublin.mumla.R;
 import se.lublin.mumla.channel.comment.UserCommentFragment;
 import se.lublin.mumla.service.MumlaService;

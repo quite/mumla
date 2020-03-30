@@ -20,7 +20,7 @@ package se.lublin.mumla.servers;
 import android.os.AsyncTask;
 import android.util.Log;
 
-import com.morlunk.jumble.model.Server;
+import se.lublin.humla.model.Server;
 import se.lublin.mumla.Constants;
 
 import java.net.DatagramPacket;

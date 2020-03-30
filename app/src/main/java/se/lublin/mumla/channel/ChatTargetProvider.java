@@ -17,8 +17,8 @@
 
 package se.lublin.mumla.channel;
 
-import com.morlunk.jumble.model.IChannel;
-import com.morlunk.jumble.model.IUser;
+import se.lublin.humla.model.IChannel;
+import se.lublin.humla.model.IUser;
 import se.lublin.mumla.BuildConfig;
 
 public interface ChatTargetProvider {

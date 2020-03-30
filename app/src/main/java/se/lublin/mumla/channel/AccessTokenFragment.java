@@ -37,12 +37,12 @@ import android.widget.TextView.OnEditorActionListener;
 import se.lublin.mumla.Constants;
 import se.lublin.mumla.R;
 import se.lublin.mumla.db.DatabaseProvider;
-import se.lublin.mumla.util.JumbleServiceFragment;
+import se.lublin.mumla.util.HumlaServiceFragment;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class AccessTokenFragment extends JumbleServiceFragment {
+public class AccessTokenFragment extends HumlaServiceFragment {
 
     public interface AccessTokenListener {
         public void onAccessTokenAdded(long serverId, String token);
