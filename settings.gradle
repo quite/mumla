@@ -21,4 +21,4 @@
 
 
 
-include ':libraries:Humla', ':app'
+include ':libraries:humla', ':app'
