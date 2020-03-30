@@ -18,7 +18,7 @@
 package com.morlunk.mumbleclient.channel;
 
 import android.content.Context;
-import android.support.v7.widget.PopupMenu;
+import androidx.appcompat.widget.PopupMenu;
 import android.view.Menu;
 import android.view.View;
 

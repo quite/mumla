@@ -27,16 +27,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Build;
-import android.support.v4.app.NotificationCompat;
-import android.util.Log;
+import androidx.core.app.NotificationCompat;
 
-import com.morlunk.mumbleclient.Constants;
 import com.morlunk.mumbleclient.R;
 import com.morlunk.mumbleclient.app.DrawerAdapter;
 import com.morlunk.mumbleclient.app.PlumbleActivity;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Wrapper to create Plumble notifications.

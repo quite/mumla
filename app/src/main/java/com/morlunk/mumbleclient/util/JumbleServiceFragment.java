@@ -19,15 +19,13 @@ package com.morlunk.mumbleclient.util;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.os.RemoteException;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.view.View;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 import com.morlunk.jumble.IJumbleService;
 import com.morlunk.jumble.util.IJumbleObserver;
 import com.morlunk.mumbleclient.service.IPlumbleService;
-import com.morlunk.mumbleclient.service.PlumbleService;
 
 /**
  * Fragment class intended to make binding the Jumble service to fragments easier.
