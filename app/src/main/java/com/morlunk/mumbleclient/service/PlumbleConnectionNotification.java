@@ -150,6 +150,7 @@ public class PlumbleConnectionNotification {
         builder.setSmallIcon(R.drawable.ic_stat_notify);
         builder.setPriority(NotificationCompat.PRIORITY_DEFAULT);
         builder.setCategory(NotificationCompat.CATEGORY_CALL);
+        builder.setShowWhen(false);
         builder.setOngoing(true);
 
         if (mActionsShown) {
