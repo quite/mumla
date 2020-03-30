@@ -20,8 +20,6 @@ package se.lublin.mumla.servers;
 import android.os.AsyncTask;
 import android.util.Xml;
 
-import se.lublin.mumla.db.PublicServer;
-
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
@@ -33,6 +31,8 @@ import java.net.ProtocolException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+
+import se.lublin.mumla.db.PublicServer;
 
 /**
  * Created by andrew on 05/05/14.

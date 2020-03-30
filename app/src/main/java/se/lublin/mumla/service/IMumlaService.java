@@ -1,8 +1,8 @@
 package se.lublin.mumla.service;
 
-import se.lublin.humla.IHumlaService;
-
 import java.util.List;
+
+import se.lublin.humla.IHumlaService;
 
 /**
  * Created by andrew on 28/02/17.

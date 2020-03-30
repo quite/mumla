@@ -25,8 +25,8 @@ import androidx.appcompat.widget.PopupMenu;
 
 import se.lublin.humla.IHumlaService;
 import se.lublin.humla.model.IChannel;
-import se.lublin.humla.util.IHumlaObserver;
 import se.lublin.humla.util.HumlaObserver;
+import se.lublin.humla.util.IHumlaObserver;
 
 /**
  * Encapsulates a menu requiring permissions.

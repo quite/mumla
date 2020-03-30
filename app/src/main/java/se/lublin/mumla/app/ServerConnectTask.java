@@ -24,6 +24,8 @@ import android.media.AudioManager;
 import android.media.MediaRecorder;
 import android.os.AsyncTask;
 
+import java.util.ArrayList;
+
 import se.lublin.humla.HumlaService;
 import se.lublin.humla.model.Server;
 import se.lublin.mumla.R;
@@ -31,8 +33,6 @@ import se.lublin.mumla.Settings;
 import se.lublin.mumla.db.MumlaDatabase;
 import se.lublin.mumla.service.MumlaService;
 import se.lublin.mumla.util.MumlaTrustStore;
-
-import java.util.ArrayList;
 
 /**
  * Constructs an intent for connection to a MumlaService and executes it.

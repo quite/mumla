@@ -19,9 +19,9 @@ package se.lublin.mumla.test;
 
 import android.test.AndroidTestCase;
 
-import se.lublin.mumla.db.MumlaSQLiteDatabase;
-
 import java.util.UUID;
+
+import se.lublin.mumla.db.MumlaSQLiteDatabase;
 
 /**
  * Test case designed to test operations of Mumla's database.

@@ -17,10 +17,10 @@
 
 package se.lublin.mumla.util;
 
-import se.lublin.humla.model.IChannel;
-
 import java.util.LinkedList;
 import java.util.List;
+
+import se.lublin.humla.model.IChannel;
 
 /**
  * Tools for dealing with the recursive user-channel hierarchy.

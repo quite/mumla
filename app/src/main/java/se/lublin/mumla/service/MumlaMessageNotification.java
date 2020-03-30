@@ -25,13 +25,13 @@ import android.content.Intent;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import se.lublin.humla.model.IMessage;
 import se.lublin.mumla.R;
 import se.lublin.mumla.app.DrawerAdapter;
 import se.lublin.mumla.app.MumlaActivity;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * A notification indicating that new messages have been received.

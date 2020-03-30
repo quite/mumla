@@ -30,6 +30,8 @@ import androidx.appcompat.widget.PopupMenu;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
+import java.util.List;
+
 import se.lublin.humla.model.IChannel;
 import se.lublin.humla.model.IUser;
 import se.lublin.humla.net.Permissions;
@@ -37,8 +39,6 @@ import se.lublin.mumla.R;
 import se.lublin.mumla.channel.comment.UserCommentFragment;
 import se.lublin.mumla.service.MumlaService;
 import se.lublin.mumla.util.ModelUtils;
-
-import java.util.List;
 
 /**
  * Created by andrew on 19/11/15.

@@ -26,16 +26,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ScheduledFuture;
+import java.util.concurrent.TimeUnit;
+
 import se.lublin.humla.IHumlaService;
 import se.lublin.humla.IHumlaSession;
 import se.lublin.humla.net.HumlaUDPMessageType;
 import se.lublin.mumla.R;
 import se.lublin.mumla.util.HumlaServiceFragment;
-
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.ScheduledFuture;
-import java.util.concurrent.TimeUnit;
 
 /**
  * A fragment that displays known information from the remote server.

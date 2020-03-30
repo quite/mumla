@@ -17,9 +17,9 @@
 
 package se.lublin.mumla.servers;
 
-import se.lublin.humla.model.Server;
-
 import java.nio.ByteBuffer;
+
+import se.lublin.humla.model.Server;
 
 /**
  * Response from server pings.

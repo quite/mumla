@@ -27,8 +27,6 @@ import android.text.Html;
 import android.util.Base64;
 import android.util.DisplayMetrics;
 
-import se.lublin.mumla.Settings;
-
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
@@ -37,6 +35,8 @@ import java.net.URLConnection;
 import java.net.URLDecoder;
 import java.util.HashMap;
 import java.util.Map;
+
+import se.lublin.mumla.Settings;
 
 /**
  * Implementation of ImageGetter designed for Mumble MOTDs and messages.

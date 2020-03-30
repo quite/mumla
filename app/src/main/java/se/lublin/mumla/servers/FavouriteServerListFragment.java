@@ -37,13 +37,13 @@ import android.widget.TextView;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
+import java.util.List;
+
 import se.lublin.humla.model.Server;
 import se.lublin.mumla.BuildConfig;
 import se.lublin.mumla.R;
 import se.lublin.mumla.db.DatabaseProvider;
 import se.lublin.mumla.db.PublicServer;
-
-import java.util.List;
 
 /**
  * Displays a list of servers, and allows the user to connect and edit them.

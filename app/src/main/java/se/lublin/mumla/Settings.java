@@ -25,10 +25,6 @@ import android.util.Log;
 import android.view.Gravity;
 import android.widget.Toast;
 
-import se.lublin.humla.Constants;
-import se.lublin.mumla.db.DatabaseCertificate;
-import se.lublin.mumla.db.MumlaSQLiteDatabase;
-
 import org.spongycastle.jce.provider.BouncyCastleProvider;
 
 import java.io.ByteArrayOutputStream;
@@ -42,6 +38,10 @@ import java.security.NoSuchAlgorithmException;
 import java.security.cert.CertificateException;
 import java.util.HashSet;
 import java.util.Set;
+
+import se.lublin.humla.Constants;
+import se.lublin.mumla.db.DatabaseCertificate;
+import se.lublin.mumla.db.MumlaSQLiteDatabase;
 
 /**
  * Singleton settings class for universal access to the app's preferences.

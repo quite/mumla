@@ -23,13 +23,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import se.lublin.humla.model.Server;
-import se.lublin.mumla.R;
-import se.lublin.mumla.db.PublicServer;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+
+import se.lublin.humla.model.Server;
+import se.lublin.mumla.R;
+import se.lublin.mumla.db.PublicServer;
 
 /**
 * Created by andrew on 07/05/14.

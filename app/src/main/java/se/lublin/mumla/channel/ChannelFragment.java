@@ -40,20 +40,20 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.PagerTabStrip;
 import androidx.viewpager.widget.ViewPager;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import se.lublin.humla.HumlaService;
 import se.lublin.humla.IHumlaService;
 import se.lublin.humla.IHumlaSession;
-import se.lublin.humla.HumlaService;
 import se.lublin.humla.model.IUser;
 import se.lublin.humla.model.WhisperTarget;
-import se.lublin.humla.util.IHumlaObserver;
 import se.lublin.humla.util.HumlaObserver;
+import se.lublin.humla.util.IHumlaObserver;
 import se.lublin.humla.util.VoiceTargetMode;
 import se.lublin.mumla.R;
 import se.lublin.mumla.Settings;
 import se.lublin.mumla.util.HumlaServiceFragment;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Class to encapsulate both a ChannelListFragment and ChannelChatFragment.

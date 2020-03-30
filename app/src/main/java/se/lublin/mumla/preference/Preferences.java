@@ -32,12 +32,11 @@ import android.preference.PreferenceCategory;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceScreen;
 
-import se.lublin.mumla.R;
-import se.lublin.mumla.Settings;
-
 import java.util.List;
 
 import info.guardianproject.netcipher.proxy.OrbotHelper;
+import se.lublin.mumla.R;
+import se.lublin.mumla.Settings;
 
 /**
  * This entire class is a mess.

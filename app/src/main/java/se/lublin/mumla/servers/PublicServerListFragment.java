@@ -48,13 +48,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
-import se.lublin.humla.model.Server;
-import se.lublin.mumla.R;
-import se.lublin.mumla.Settings;
-import se.lublin.mumla.db.DatabaseProvider;
-import se.lublin.mumla.db.MumlaDatabase;
-import se.lublin.mumla.db.PublicServer;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -65,6 +58,13 @@ import java.util.List;
 import java.util.Locale;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+
+import se.lublin.humla.model.Server;
+import se.lublin.mumla.R;
+import se.lublin.mumla.Settings;
+import se.lublin.mumla.db.DatabaseProvider;
+import se.lublin.mumla.db.MumlaDatabase;
+import se.lublin.mumla.db.PublicServer;
 
 /**
  * Displays a list of public servers that can be connected to, sorted, and favourited.

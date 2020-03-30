@@ -24,11 +24,11 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-import se.lublin.humla.model.Server;
-import se.lublin.mumla.Constants;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import se.lublin.humla.model.Server;
+import se.lublin.mumla.Constants;
 
 public class MumlaSQLiteDatabase extends SQLiteOpenHelper implements MumlaDatabase {
     public static final String DATABASE_NAME = "mumble.db";

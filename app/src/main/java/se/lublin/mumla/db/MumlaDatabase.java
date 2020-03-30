@@ -17,9 +17,9 @@
 
 package se.lublin.mumla.db;
 
-import se.lublin.humla.model.Server;
-
 import java.util.List;
+
+import se.lublin.humla.model.Server;
 
 /**
  * An interface for persistent storage services (i.e. databases, cloud) to implement.

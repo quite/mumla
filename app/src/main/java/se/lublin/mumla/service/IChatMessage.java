@@ -17,9 +17,9 @@
 
 package se.lublin.mumla.service;
 
-import se.lublin.humla.model.IMessage;
-
 import java.util.Date;
+
+import se.lublin.humla.model.IMessage;
 
 /**
  * A general chat message, either a text message from a user or an

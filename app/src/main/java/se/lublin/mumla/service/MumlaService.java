@@ -32,6 +32,14 @@ import android.view.WindowManager;
 
 import androidx.appcompat.app.AlertDialog;
 
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 import se.lublin.humla.Constants;
 import se.lublin.humla.HumlaService;
 import se.lublin.humla.exception.AudioException;
@@ -44,14 +52,6 @@ import se.lublin.mumla.R;
 import se.lublin.mumla.Settings;
 import se.lublin.mumla.service.ipc.TalkBroadcastReceiver;
 import se.lublin.mumla.util.HtmlUtils;
-
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 /**
  * An extension of the Humla service with some added Mumla-exclusive non-standard Mumble features.

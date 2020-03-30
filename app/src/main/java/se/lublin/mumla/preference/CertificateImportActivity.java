@@ -30,10 +30,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import se.lublin.mumla.R;
-import se.lublin.mumla.db.MumlaDatabase;
-import se.lublin.mumla.db.MumlaSQLiteDatabase;
-
 import org.spongycastle.jce.provider.BouncyCastleProvider;
 
 import java.io.ByteArrayOutputStream;
@@ -45,6 +41,10 @@ import java.security.KeyStoreException;
 import java.security.NoSuchAlgorithmException;
 import java.security.cert.CertificateException;
 import java.util.UUID;
+
+import se.lublin.mumla.R;
+import se.lublin.mumla.db.MumlaDatabase;
+import se.lublin.mumla.db.MumlaSQLiteDatabase;
 
 /**
  * Created by andrew on 11/01/16.

@@ -25,17 +25,17 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import se.lublin.mumla.R;
-import se.lublin.mumla.db.DatabaseCertificate;
-import se.lublin.mumla.db.MumlaDatabase;
-import se.lublin.mumla.db.MumlaSQLiteDatabase;
-
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
+
+import se.lublin.mumla.R;
+import se.lublin.mumla.db.DatabaseCertificate;
+import se.lublin.mumla.db.MumlaDatabase;
+import se.lublin.mumla.db.MumlaSQLiteDatabase;
 
 /**
  * Created by andrew on 12/01/16.

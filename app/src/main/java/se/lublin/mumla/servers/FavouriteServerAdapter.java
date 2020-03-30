@@ -20,10 +20,10 @@ package se.lublin.mumla.servers;
 import android.content.Context;
 import android.view.MenuItem;
 
+import java.util.List;
+
 import se.lublin.humla.model.Server;
 import se.lublin.mumla.R;
-
-import java.util.List;
 
 /**
  * Created by andrew on 11/05/14.

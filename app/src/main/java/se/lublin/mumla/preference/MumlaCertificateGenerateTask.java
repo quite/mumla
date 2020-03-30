@@ -22,16 +22,16 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.widget.Toast;
 
+import java.io.ByteArrayOutputStream;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
 import se.lublin.humla.net.HumlaCertificateGenerator;
 import se.lublin.mumla.R;
 import se.lublin.mumla.db.DatabaseCertificate;
 import se.lublin.mumla.db.MumlaDatabase;
 import se.lublin.mumla.db.MumlaSQLiteDatabase;
-
-import java.io.ByteArrayOutputStream;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
 
 public class MumlaCertificateGenerateTask extends AsyncTask<Void, Void, DatabaseCertificate> {
 	private static final String DATE_FORMAT = "yyyy-MM-dd-HH-mm-ss";

@@ -41,20 +41,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 
-import se.lublin.humla.IHumlaService;
-import se.lublin.humla.IHumlaSession;
-import se.lublin.humla.model.IChannel;
-import se.lublin.humla.model.IMessage;
-import se.lublin.humla.model.IUser;
-import se.lublin.humla.model.User;
-import se.lublin.humla.util.IHumlaObserver;
-import se.lublin.humla.util.HumlaDisconnectedException;
-import se.lublin.humla.util.HumlaObserver;
-import se.lublin.mumla.R;
-import se.lublin.mumla.service.IChatMessage;
-import se.lublin.mumla.util.HumlaServiceFragment;
-import se.lublin.mumla.util.MumbleImageGetter;
-
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -62,6 +48,20 @@ import java.util.Date;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import se.lublin.humla.IHumlaService;
+import se.lublin.humla.IHumlaSession;
+import se.lublin.humla.model.IChannel;
+import se.lublin.humla.model.IMessage;
+import se.lublin.humla.model.IUser;
+import se.lublin.humla.model.User;
+import se.lublin.humla.util.HumlaDisconnectedException;
+import se.lublin.humla.util.HumlaObserver;
+import se.lublin.humla.util.IHumlaObserver;
+import se.lublin.mumla.R;
+import se.lublin.mumla.service.IChatMessage;
+import se.lublin.mumla.util.HumlaServiceFragment;
+import se.lublin.mumla.util.MumbleImageGetter;
 
 public class ChannelChatFragment extends HumlaServiceFragment implements ChatTargetProvider.OnChatTargetSelectedListener {
     private static final Pattern LINK_PATTERN = Pattern.compile("(https?://\\S+)");

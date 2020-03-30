@@ -20,13 +20,13 @@ package se.lublin.mumla.servers;
 import android.os.AsyncTask;
 import android.util.Log;
 
-import se.lublin.humla.model.Server;
-import se.lublin.mumla.Constants;
-
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.nio.ByteBuffer;
+
+import se.lublin.humla.model.Server;
+import se.lublin.mumla.Constants;
 
 /**
  * Pings the requested server and returns a ServerInfoResponse.

@@ -30,13 +30,13 @@ import android.widget.TextView;
 
 import androidx.appcompat.widget.PopupMenu;
 
-import se.lublin.humla.model.Server;
-import se.lublin.mumla.R;
-
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+
+import se.lublin.humla.model.Server;
+import se.lublin.mumla.R;
 
 /**
  * Created by andrew on 05/05/14.

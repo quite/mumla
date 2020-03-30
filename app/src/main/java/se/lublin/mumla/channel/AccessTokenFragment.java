@@ -34,13 +34,13 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import se.lublin.mumla.Constants;
 import se.lublin.mumla.R;
 import se.lublin.mumla.db.DatabaseProvider;
 import se.lublin.mumla.util.HumlaServiceFragment;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class AccessTokenFragment extends HumlaServiceFragment {
 

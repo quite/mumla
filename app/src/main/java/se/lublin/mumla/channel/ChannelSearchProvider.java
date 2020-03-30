@@ -29,6 +29,10 @@ import android.net.Uri;
 import android.os.IBinder;
 import android.util.Log;
 
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Locale;
+
 import se.lublin.humla.IHumlaService;
 import se.lublin.humla.IHumlaSession;
 import se.lublin.humla.model.IChannel;
@@ -36,10 +40,6 @@ import se.lublin.humla.model.IUser;
 import se.lublin.mumla.Constants;
 import se.lublin.mumla.R;
 import se.lublin.mumla.service.MumlaService;
-
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Locale;
 
 public class ChannelSearchProvider extends ContentProvider {
 	

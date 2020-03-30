@@ -36,9 +36,14 @@ import android.widget.TextView;
 import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+
+import se.lublin.humla.HumlaService;
 import se.lublin.humla.IHumlaService;
 import se.lublin.humla.IHumlaSession;
-import se.lublin.humla.HumlaService;
 import se.lublin.humla.model.IChannel;
 import se.lublin.humla.model.IUser;
 import se.lublin.humla.model.Server;
@@ -49,11 +54,6 @@ import se.lublin.mumla.drawable.CircleDrawable;
 import se.lublin.mumla.drawable.FlipDrawable;
 import se.lublin.mumla.service.MumlaService;
 import se.lublin.mumla.util.TalkingIndicatorView;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
 
 /**
  * Created by andrew on 31/07/13.
