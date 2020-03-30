@@ -27,16 +27,12 @@ import android.database.Cursor;
 import android.database.MatrixCursor;
 import android.net.Uri;
 import android.os.IBinder;
-import android.os.RemoteException;
 import android.util.Log;
 
 import com.morlunk.jumble.IJumbleService;
 import com.morlunk.jumble.IJumbleSession;
-import com.morlunk.jumble.JumbleService;
-import com.morlunk.jumble.model.Channel;
 import com.morlunk.jumble.model.IChannel;
 import com.morlunk.jumble.model.IUser;
-import com.morlunk.jumble.model.User;
 import com.morlunk.mumbleclient.Constants;
 import com.morlunk.mumbleclient.R;
 import com.morlunk.mumbleclient.service.PlumbleService;

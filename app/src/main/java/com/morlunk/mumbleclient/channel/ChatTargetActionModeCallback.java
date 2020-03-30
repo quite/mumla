@@ -17,9 +17,10 @@
 
 package com.morlunk.mumbleclient.channel;
 
-import androidx.appcompat.view.ActionMode;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import androidx.appcompat.view.ActionMode;
 
 import com.morlunk.mumbleclient.R;
 

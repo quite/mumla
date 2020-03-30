@@ -17,9 +17,7 @@
 
 package com.morlunk.mumbleclient.util;
 
-import com.morlunk.jumble.IJumbleService;
 import com.morlunk.mumbleclient.service.IPlumbleService;
-import com.morlunk.mumbleclient.service.PlumbleService;
 
 /**
  * Created by andrew on 03/08/13.

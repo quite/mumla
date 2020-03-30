@@ -19,9 +19,10 @@ package com.morlunk.mumbleclient.preference;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
+
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import android.widget.ArrayAdapter;
 
 import com.morlunk.mumbleclient.R;
 import com.morlunk.mumbleclient.Settings;

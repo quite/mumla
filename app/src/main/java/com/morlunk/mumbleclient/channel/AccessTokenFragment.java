@@ -20,7 +20,6 @@ package com.morlunk.mumbleclient.channel;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
-import android.os.RemoteException;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;

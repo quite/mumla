@@ -20,9 +20,10 @@ package com.morlunk.mumbleclient.preference;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.Environment;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import android.widget.Toast;
 
 import com.morlunk.mumbleclient.R;
 import com.morlunk.mumbleclient.db.DatabaseCertificate;

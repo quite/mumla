@@ -28,8 +28,9 @@ import android.os.IBinder;
 import android.os.PowerManager;
 import android.preference.PreferenceManager;
 import android.speech.tts.TextToSpeech;
-import androidx.appcompat.app.AlertDialog;
 import android.view.WindowManager;
+
+import androidx.appcompat.app.AlertDialog;
 
 import com.morlunk.jumble.Constants;
 import com.morlunk.jumble.JumbleService;

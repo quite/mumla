@@ -20,7 +20,6 @@ package com.morlunk.mumbleclient.channel;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
-import android.os.RemoteException;
 import android.text.Editable;
 import android.text.Html;
 import android.text.TextWatcher;

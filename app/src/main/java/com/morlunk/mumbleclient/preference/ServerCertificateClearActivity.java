@@ -18,8 +18,9 @@
 package com.morlunk.mumbleclient.preference;
 
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.morlunk.mumbleclient.R;
 import com.morlunk.mumbleclient.util.PlumbleTrustStore;

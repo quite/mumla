@@ -19,7 +19,6 @@ package com.morlunk.mumbleclient.servers;
 
 import android.content.Context;
 import android.os.Build;
-import androidx.appcompat.widget.PopupMenu;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -28,6 +27,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import androidx.appcompat.widget.PopupMenu;
 
 import com.morlunk.jumble.model.Server;
 import com.morlunk.mumbleclient.R;

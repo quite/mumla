@@ -20,7 +20,6 @@ package com.morlunk.mumbleclient;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
-import android.media.AudioManager;
 import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.Gravity;

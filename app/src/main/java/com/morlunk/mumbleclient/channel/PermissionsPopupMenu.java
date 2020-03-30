@@ -18,9 +18,10 @@
 package com.morlunk.mumbleclient.channel;
 
 import android.content.Context;
-import androidx.appcompat.widget.PopupMenu;
 import android.view.Menu;
 import android.view.View;
+
+import androidx.appcompat.widget.PopupMenu;
 
 import com.morlunk.jumble.IJumbleService;
 import com.morlunk.jumble.model.IChannel;

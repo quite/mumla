@@ -28,8 +28,6 @@ import android.widget.TextView;
 
 import com.morlunk.jumble.IJumbleService;
 import com.morlunk.jumble.IJumbleSession;
-import com.morlunk.jumble.JumbleService;
-import com.morlunk.jumble.net.JumbleConnection;
 import com.morlunk.jumble.net.JumbleUDPMessageType;
 import com.morlunk.mumbleclient.R;
 import com.morlunk.mumbleclient.util.JumbleServiceFragment;

@@ -17,8 +17,6 @@
 
 package com.morlunk.mumbleclient.service;
 
-import android.os.RemoteException;
-
 import com.morlunk.jumble.model.IMessage;
 
 import java.util.Date;

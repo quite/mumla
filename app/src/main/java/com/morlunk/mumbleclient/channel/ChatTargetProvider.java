@@ -17,10 +17,8 @@
 
 package com.morlunk.mumbleclient.channel;
 
-import com.morlunk.jumble.model.Channel;
 import com.morlunk.jumble.model.IChannel;
 import com.morlunk.jumble.model.IUser;
-import com.morlunk.jumble.model.User;
 import com.morlunk.mumbleclient.BuildConfig;
 
 public interface ChatTargetProvider {

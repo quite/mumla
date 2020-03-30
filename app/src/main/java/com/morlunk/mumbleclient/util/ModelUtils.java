@@ -17,10 +17,6 @@
 
 package com.morlunk.mumbleclient.util;
 
-import android.os.RemoteException;
-
-import com.morlunk.jumble.IJumbleService;
-import com.morlunk.jumble.model.Channel;
 import com.morlunk.jumble.model.IChannel;
 
 import java.util.LinkedList;

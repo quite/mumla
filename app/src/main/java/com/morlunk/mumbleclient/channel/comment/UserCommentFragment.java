@@ -17,11 +17,8 @@
 
 package com.morlunk.mumbleclient.channel.comment;
 
-import android.os.RemoteException;
-
 import com.morlunk.jumble.IJumbleService;
 import com.morlunk.jumble.model.IUser;
-import com.morlunk.jumble.model.User;
 import com.morlunk.jumble.util.JumbleObserver;
 
 /**

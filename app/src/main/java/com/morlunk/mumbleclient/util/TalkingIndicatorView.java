@@ -17,9 +17,6 @@
 
 package com.morlunk.mumbleclient.util;
 
-import android.animation.Animator;
-import android.animation.AnimatorSet;
-import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -30,14 +27,9 @@ import android.graphics.RectF;
 import android.os.Build;
 import android.util.AttributeSet;
 import android.view.View;
-import android.view.animation.AccelerateDecelerateInterpolator;
-import android.view.animation.AnticipateOvershootInterpolator;
 import android.view.animation.LinearInterpolator;
-import android.view.animation.OvershootInterpolator;
 
 import com.morlunk.mumbleclient.R;
-
-import java.util.Objects;
 
 /**
  * Created by andrew on 30/11/15.

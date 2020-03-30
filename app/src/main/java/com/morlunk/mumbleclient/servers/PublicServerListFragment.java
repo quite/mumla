@@ -26,8 +26,6 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Build.VERSION;
 import android.os.Bundle;
-import androidx.fragment.app.Fragment;
-import androidx.appcompat.app.AlertDialog;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -46,6 +44,9 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.fragment.app.Fragment;
 
 import com.morlunk.jumble.model.Server;
 import com.morlunk.mumbleclient.R;

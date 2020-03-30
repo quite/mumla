@@ -18,7 +18,6 @@
 package com.morlunk.mumbleclient.channel;
 
 import android.content.Context;
-import android.os.RemoteException;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,7 +25,6 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.morlunk.jumble.model.Channel;
 import com.morlunk.jumble.model.IChannel;
 import com.morlunk.jumble.model.IUser;
 import com.morlunk.jumble.model.TalkState;
