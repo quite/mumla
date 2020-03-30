@@ -16,9 +16,10 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
-    <item android:id="@+id/menu_save_button" android:title="@string/save" android:icon="@drawable/ic_action_save" android:showAsAction="ifRoom"></item>
-    <item android:id="@+id/menu_delete_button" android:title="@string/delete" android:icon="@drawable/ic_action_delete_dark" android:showAsAction="ifRoom"></item>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menu_save_button" android:title="@string/save" android:icon="@drawable/ic_action_save" app:showAsAction="ifRoom"></item>
+    <item android:id="@+id/menu_delete_button" android:title="@string/delete" android:icon="@drawable/ic_action_delete_dark" app:showAsAction="ifRoom"></item>
     
 
 </menu>

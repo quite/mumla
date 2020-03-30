@@ -17,16 +17,14 @@
 
 package com.morlunk.mumbleclient.preference;
 
-import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.res.AssetFileDescriptor;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.ParcelFileDescriptor;
 import android.provider.OpenableColumns;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -37,13 +35,10 @@ import com.morlunk.mumbleclient.db.PlumbleSQLiteDatabase;
 
 import org.spongycastle.jce.provider.BouncyCastleProvider;
 
-import java.io.BufferedInputStream;
-import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.security.KeyStore;
 import java.security.KeyStoreException;
 import java.security.NoSuchAlgorithmException;
@@ -53,7 +48,7 @@ import java.util.UUID;
 /**
  * Created by andrew on 11/01/16.
  */
-public class CertificateImportActivity extends Activity {
+public class CertificateImportActivity extends AppCompatActivity {
     public static final int REQUEST_FILE = 0;
 
     @Override

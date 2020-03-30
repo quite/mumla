@@ -25,7 +25,7 @@
         <item name="android:textColorPrimaryInverse">#FFF</item>
         <item name="android:textColorSecondaryInverse">#AAA</item>
 
-        <item name="android:actionBarStyle">@style/PlumbleDarkActionBar</item>
+        <item name="actionBarStyle">@style/PlumbleDarkActionBar</item>
         <item name="actionBarStyle">@style/PlumbleDarkActionBar</item>
 
         <item name="colorPrimary">#454D5E</item>
@@ -45,14 +45,14 @@
         <item name="android:textColorSecondaryInverse">#AAA</item>
 
 
-        <item name="android:actionBarStyle">@style/PlumbleDarkActionBar</item>
+        <item name="actionBarStyle">@style/PlumbleDarkActionBar</item>
         <item name="actionBarStyle">@style/PlumbleDarkActionBar</item>
 
         <item name="cardStyle">@style/Theme.Plumble.Dark.CardView</item>
     </style>
 
     <style name="PlumbleDarkActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid">
-        <item name="android:titleTextStyle">@style/PlumbleDarkActionBarText</item>
+        <item name="titleTextStyle">@style/PlumbleDarkActionBarText</item>
         <item name="titleTextStyle">@style/PlumbleDarkActionBarText</item>
     </style>
 
@@ -77,7 +77,7 @@
         <item name="android:windowBackground">@color/solarized_base3</item>
         <item name="android:colorBackground">@color/solarized_base3</item>
 
-        <item name="android:actionBarStyle">@style/SolarizedLightActionBar</item>
+        <item name="actionBarStyle">@style/SolarizedLightActionBar</item>
         <item name="actionBarStyle">@style/SolarizedLightActionBar</item>
 
         <item name="colorPrimary">@color/solarized_base2</item>
@@ -88,9 +88,9 @@
     </style>
 
     <style name="SolarizedLightActionBar" parent="@style/Widget.AppCompat.ActionBar">
-        <item name="android:background">@color/solarized_base2</item>
         <item name="background">@color/solarized_base2</item>
-        <item name="android:titleTextStyle">@style/SolarizedLightActionBarText</item>
+        <item name="background">@color/solarized_base2</item>
+        <item name="titleTextStyle">@style/SolarizedLightActionBarText</item>
         <item name="titleTextStyle">@style/SolarizedLightActionBarText</item>
     </style>
 
@@ -113,7 +113,7 @@
         <item name="android:windowBackground">@color/solarized_base03</item>
         <item name="android:colorBackground">@color/solarized_base03</item>
 
-        <item name="android:actionBarStyle">@style/SolarizedDarkActionBar</item>
+        <item name="actionBarStyle">@style/SolarizedDarkActionBar</item>
         <item name="actionBarStyle">@style/SolarizedDarkActionBar</item>
 
         <item name="colorPrimary">@color/solarized_base02</item>
@@ -124,9 +124,9 @@
     </style>
 
     <style name="SolarizedDarkActionBar" parent="@style/Widget.AppCompat.ActionBar">
-        <item name="android:background">@color/solarized_base02</item>
         <item name="background">@color/solarized_base02</item>
-        <item name="android:titleTextStyle">@style/SolarizedDarkActionBarText</item>
+        <item name="background">@color/solarized_base02</item>
+        <item name="titleTextStyle">@style/SolarizedDarkActionBarText</item>
         <item name="titleTextStyle">@style/SolarizedDarkActionBarText</item>
     </style>
 

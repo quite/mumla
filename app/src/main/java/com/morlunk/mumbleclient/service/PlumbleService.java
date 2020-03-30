@@ -17,7 +17,6 @@
 
 package com.morlunk.mumbleclient.service;
 
-import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -29,6 +28,7 @@ import android.os.IBinder;
 import android.os.PowerManager;
 import android.preference.PreferenceManager;
 import android.speech.tts.TextToSpeech;
+import android.support.v7.app.AlertDialog;
 import android.view.WindowManager;
 
 import com.morlunk.jumble.Constants;
@@ -43,6 +43,7 @@ import com.morlunk.mumbleclient.R;
 import com.morlunk.mumbleclient.Settings;
 import com.morlunk.mumbleclient.service.ipc.TalkBroadcastReceiver;
 import com.morlunk.mumbleclient.util.HtmlUtils;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;

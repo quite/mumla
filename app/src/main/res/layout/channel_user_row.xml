@@ -50,7 +50,7 @@
             android:id="@+id/user_row_talk_highlight"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/outline_circle_talking_off"/>
+            custom:srcCompat="@drawable/outline_circle_talking_off"/>
     </FrameLayout>
 
     <TextView
@@ -68,7 +68,7 @@
         android:id="@+id/user_row_more"
         android:layout_width="32dp"
         android:layout_height="match_parent"
-        android:src="@drawable/ic_more_vert_black_24dp"
+        custom:srcCompat="@drawable/ic_more_vert_black_24dp"
         android:layout_gravity="center"
         android:paddingLeft="8dp"
         android:tint="?android:textColorSecondary"

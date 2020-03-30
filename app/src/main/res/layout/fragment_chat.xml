@@ -18,12 +18,13 @@
 
 <LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
 	android:orientation="vertical"
 	android:layout_height="fill_parent"
 	android:layout_width="fill_parent"
     tools:ignore="NewApi" 
-    android:divider="?android:attr/dividerVertical"
+    android:divider="?attr/dividerVertical"
     android:showDividers="middle" >
 
     <ListView
@@ -50,7 +51,7 @@
 	<LinearLayout
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
-    	android:divider="?android:attr/dividerHorizontal"
+    	android:divider="?attr/dividerHorizontal"
     	android:showDividers="middle">
 
 		<EditText
@@ -71,7 +72,7 @@
 		    android:id="@+id/chatTextSend"
 		    android:layout_width="48dp"
 		    android:layout_height="match_parent"
-		    android:src="@drawable/ic_action_send"
+		    app:srcCompat="@drawable/ic_action_send"
             android:tint="?android:attr/textColorPrimary"
 		    android:enabled="false"
             android:layout_gravity="bottom"

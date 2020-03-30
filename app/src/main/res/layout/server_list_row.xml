@@ -18,6 +18,7 @@
 
 <android.support.v7.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -118,7 +119,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginRight="5dp"
-                    android:src="@drawable/ic_user_light"
+                    app:srcCompat="@drawable/ic_user_light"
                     android:tint="?android:attr/textColorPrimary" />
 
                 <TextView
@@ -138,7 +139,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginRight="5dp"
-                    android:src="@drawable/ic_server_light"
+                    app:srcCompat="@drawable/ic_server_light"
                     android:tint="?android:attr/textColorPrimary" />
 
                 <TextView
@@ -161,7 +162,7 @@
         android:paddingTop="4dp"
         android:layout_alignTop="@id/server_card"
         android:layout_alignRight="@id/server_card"
-        android:src="@drawable/ic_card_overflow" />
+        app:srcCompat="@drawable/ic_card_overflow" />
 
 </RelativeLayout>
 </android.support.v7.widget.CardView>

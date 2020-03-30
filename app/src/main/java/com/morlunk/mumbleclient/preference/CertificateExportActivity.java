@@ -17,11 +17,11 @@
 
 package com.morlunk.mumbleclient.preference;
 
-import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.Environment;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 import com.morlunk.mumbleclient.R;
@@ -39,7 +39,7 @@ import java.util.List;
 /**
  * Created by andrew on 12/01/16.
  */
-public class CertificateExportActivity extends Activity implements DialogInterface.OnClickListener {
+public class CertificateExportActivity extends AppCompatActivity implements DialogInterface.OnClickListener {
     /**
      * The name of the directory to export to on external storage.
      */

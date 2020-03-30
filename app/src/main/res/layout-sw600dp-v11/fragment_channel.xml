@@ -17,12 +17,13 @@
   -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginLeft="16dp"
     android:layout_marginRight="16dp"
-    android:divider="?android:attr/dividerHorizontal"
+    android:divider="?attr/dividerHorizontal"
     android:orientation="horizontal"
     android:showDividers="middle"
     tools:context=".ChannelActivity" >
@@ -81,7 +82,7 @@
                 android:id="@+id/target_panel_cancel"
                 android:layout_width="24dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/ic_action_delete_dark"
+                app:srcCompat="@drawable/ic_action_delete_dark"
                 android:tint="?android:textColorPrimary"
                 android:layout_gravity="center_vertical|end"
                 android:background="?attr/selectableItemBackgroundBorderless"/>

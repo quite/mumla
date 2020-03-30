@@ -17,10 +17,10 @@
 
 package com.morlunk.mumbleclient.preference;
 
-import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
 
 import com.morlunk.mumbleclient.R;
 import com.morlunk.mumbleclient.Settings;
@@ -29,7 +29,7 @@ import com.morlunk.mumbleclient.db.DatabaseCertificate;
 /**
  * Created by andrew on 12/01/16.
  */
-public class CertificateGenerateActivity extends Activity {
+public class CertificateGenerateActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

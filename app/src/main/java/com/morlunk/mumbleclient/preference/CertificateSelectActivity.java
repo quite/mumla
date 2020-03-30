@@ -17,10 +17,10 @@
 
 package com.morlunk.mumbleclient.preference;
 
-import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ArrayAdapter;
 
 import com.morlunk.mumbleclient.R;
@@ -35,7 +35,7 @@ import java.util.List;
 /**
  * Created by andrew on 11/01/16.
  */
-public class CertificateSelectActivity extends Activity implements DialogInterface.OnClickListener, DialogInterface.OnDismissListener {
+public class CertificateSelectActivity extends AppCompatActivity implements DialogInterface.OnClickListener, DialogInterface.OnDismissListener {
     private List<ICertificateItem> mCertificates;
 
     @Override

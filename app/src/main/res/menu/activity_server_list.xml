@@ -16,6 +16,7 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
-    <item android:id="@+id/menu_preferences" android:title="@string/preferences" android:showAsAction="ifRoom" android:icon="@drawable/ic_action_settings" android:orderInCategory="100"></item>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menu_preferences" android:title="@string/preferences" app:showAsAction="ifRoom" android:icon="@drawable/ic_action_settings" android:orderInCategory="100"></item>
 </menu>
