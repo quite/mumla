@@ -17,7 +17,7 @@
   -->
 
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-      xmlns:plumble="http://schemas.android.com/apk/res-auto">
-    <item android:id="@+id/menu_add_server_item" android:title="@string/add" android:icon="@drawable/ic_action_add_dark" plumble:showAsAction="ifRoom" android:orderInCategory="0" />
-    <item android:id="@+id/menu_quick_connect" android:title="@string/quickConnect" android:icon="@drawable/ic_action_quick_connect" plumble:showAsAction="ifRoom" android:orderInCategory="1" />
+      xmlns:mumla="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_add_server_item" android:title="@string/add" android:icon="@drawable/ic_action_add_dark" mumla:showAsAction="ifRoom" android:orderInCategory="0" />
+    <item android:id="@+id/menu_quick_connect" android:title="@string/quickConnect" android:icon="@drawable/ic_action_quick_connect" mumla:showAsAction="ifRoom" android:orderInCategory="1" />
 </menu>

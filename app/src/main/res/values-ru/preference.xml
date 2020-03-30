@@ -21,12 +21,12 @@
   <string name="about">О программе</string>
   <string name="aboutSum">Юридическая информация и благодарности</string>
   <string name="acknowledgements">Благодарности</string>
-  <string name="acknowledgementsSum">Посмотреть кто способствовали развитию Plumble.</string>
+  <string name="acknowledgementsSum">Посмотреть кто способствовали развитию Mumla.</string>
   <string name="licenses">Лицензии</string>
   <string name="authentication">Идентификация</string>
   <string name="authenticationSum">Управление и создание сертификатов</string>
   <string name="certificateFile">Файл сертификата</string>
-  <string name="certificateFileSum">Файл P12 сертификата который вы хотите использовать, размещенные в папке \"Plumble\".</string>
+  <string name="certificateFileSum">Файл P12 сертификата который вы хотите использовать, размещенные в папке \"Mumla\".</string>
   <string name="certificatePassword">Пароль сертификата</string>
   <string name="certificatePasswordSum">Пароль к вашему PKCS12 сертификату. (опционально)</string>
   <string name="audioInput">Аудио вход</string>
@@ -35,7 +35,7 @@
   <string name="audioInputVolume">Громкость микрофона</string>
   <string name="audioInputVolumeSum">Коэффициент громкости микрофона используется для искусственной нормализации звука.</string>
   <string name="callMode">Режим вызова</string>
-  <string name="callModeSum">Режим вызова Plumble, выступать в качестве громкой связи или голосовой динамик.</string>
+  <string name="callModeSum">Режим вызова Mumla, выступать в качестве громкой связи или голосовой динамик.</string>
   <string name="detectionThreshold">Уровень улавливания</string>
   <string name="detectionThresholdSum">Минимальная амплитуда требуемая для голоса (только для голосовой активации).</string>
   <string name="pttKey">Кнопка для активации</string>
@@ -59,9 +59,9 @@
   <string name="chatNotificationsSum">Показывать уведомления когда пользователь пишет в чат.</string>
   <string name="defaultUsername">Имя по-умолчанию</string>
   <string name="defaultUsernameSum">Имя пользователя по-умолчанию, используемое при подключении к серверам.</string>
-  <string name="defaultUsernameDefault">Пользователь_Plumble</string>
+  <string name="defaultUsernameDefault">Пользователь_Mumla</string>
   <string name="certificateGenerate">Создать сертификат</string>
-  <string name="certificateGenerateSum">Создать новый само-заверенный Plumble сертификат. Рекомендуется для начинающих.</string>
+  <string name="certificateGenerateSum">Создать новый само-заверенный Mumla сертификат. Рекомендуется для начинающих.</string>
   <string name="pttSettings">Настройки кнопки</string>
   <string name="pttSettingsSum">Настройки кнопки активации голосом (если включено).</string>
   <string name="voiceActivitySettings">Настройки голосовой активности</string>
@@ -86,7 +86,7 @@
   <string name="loadImagesSum">Разрешить загрузку изображений в чате.</string>
   <string name="loadImages">Загружать изображения</string>
   <string name="clearServerCertificates">Очистить серверные сертификаты.</string>
-  <string name="clearServerCertificatesSum">Очистить все разрешенные серверные сертификаты из доверенной базы данных Plumble.</string>
+  <string name="clearServerCertificatesSum">Очистить все разрешенные серверные сертификаты из доверенной базы данных Mumla.</string>
   <string name="version">Версия</string>
   <string name="halfDuplex">Полудуплекс</string>
   <string name="halfDuplexSum">Приглушать звук, когда активирована кнопка вызова, удалить аудио метку для пользователей канала</string>

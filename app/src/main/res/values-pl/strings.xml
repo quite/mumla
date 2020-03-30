@@ -76,8 +76,8 @@
   <string name="offline">Offline</string>
   <string name="clearChat">Clear Chat</string>
   <string name="connected">Connected</string>
-  <string name="plumbleConnected">Plumble Connected</string>
-  <string name="plumbleDisconnected">Plumble Disconnected</string>
+  <string name="mumlaConnected">Mumla Connected</string>
+  <string name="mumlaDisconnected">Mumla Disconnected</string>
   <string name="lostConnection">Lost connection to the server.</string>
   <string name="resume">Resume</string>
   <string name="channel">Channel</string>
@@ -104,7 +104,7 @@
   <string name="name">Name</string>
   <string name="country">Country</string>
   <string name="share">Share</string>
-  <string name="shareMessage">Join this Mumble server with Plumble! %s</string>
+  <string name="shareMessage">Join this Mumble server with Mumla! %s</string>
   <string name="noServerInfo">Ping to fetch info</string>
   <string name="status_notify_muted_and_deafened">Muted and deafened.</string>
   <string name="status_notify_muted">Muted.</string>
@@ -129,7 +129,7 @@
   <string name="tapToReconnect">Tap to reconnect</string>
   <string name="hint_ptt">Push to Talk</string>
   <string name="hint_ptt_summary">Simply press this button down to talk. Double-tap to toggle it.</string>
-  <string name="hint_server_add">Welcome to Plumble</string>
+  <string name="hint_server_add">Welcome to Mumla</string>
   <string name="hint_server_add_summary">To begin, add a favourite server by pressing the add button on the action bar.</string>
   <string name="hint_switching">Switching Between Views</string>
   <string name="hint_switching_summary">Switch between the chat and channel views by using the buttons in the top left, or swiping.</string>

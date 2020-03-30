@@ -32,7 +32,7 @@
         android:title="@string/pref_show_user_count"
         android:summary="@string/pref_show_user_count_summary" />
 
-	<com.morlunk.mumbleclient.preference.SeekBarDialogPreference
+	<se.lublin.mumla.preference.SeekBarDialogPreference
 		android:key="pttButtonHeight"
 		android:title="@string/pttButtonHeight"
 		android:summary="@string/pttButtonHeightSum"

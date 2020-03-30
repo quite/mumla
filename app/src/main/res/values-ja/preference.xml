@@ -21,12 +21,12 @@
   <string name="about">アプリについて</string>
   <string name="aboutSum">法律と謝辞</string>
   <string name="acknowledgements">謝辞</string>
-  <string name="acknowledgementsSum">Plumble の貢献者を参照</string>
+  <string name="acknowledgementsSum">Mumla の貢献者を参照</string>
   <string name="licenses">ライセンス</string>
   <string name="authentication">認証</string>
   <string name="authenticationSum">証明書の管理と作成</string>
   <string name="certificateFile">証明書ファイル</string>
-  <string name="certificateFileSum">外部ストレージの \"Plumble\" フォルダに配置した、使用したい P12 証明書のパス。</string>
+  <string name="certificateFileSum">外部ストレージの \"Mumla\" フォルダに配置した、使用したい P12 証明書のパス。</string>
   <string name="certificatePassword">証明書パスワード</string>
   <string name="certificatePasswordSum">PKCS12 証明書のパスワード (オプション)</string>
   <string name="audioInput">音声入力</string>
@@ -35,7 +35,7 @@
   <string name="audioInputVolume">マイクボリューム</string>
   <string name="audioInputVolumeSum">音声を標準化するために使用する、マイクボリュームの乗数。</string>
   <string name="callMode">通話モード</string>
-  <string name="callModeSum">Plumble の通話モード、音声通話またはスピーカーフォンのどちらかの機能。</string>
+  <string name="callModeSum">Mumla の通話モード、音声通話またはスピーカーフォンのどちらかの機能。</string>
   <string name="detectionThreshold">検出閾値</string>
   <string name="detectionThresholdSum">音声の検出に必要な最小振幅 (音声機能にのみ適用可能)。</string>
   <string name="pttKey">プッシュツートーク キー</string>
@@ -60,9 +60,9 @@
   <string name="chatNotificationsSum">ユーザーがチャットに投稿した時に、通知を表示します。</string>
   <string name="defaultUsername">デフォルトのユーザー名</string>
   <string name="defaultUsernameSum">サーバへ接続する時に使用するデフォルトのユーザー名。</string>
-  <string name="defaultUsernameDefault">Plumble_User</string>
+  <string name="defaultUsernameDefault">Mumla_User</string>
   <string name="certificateGenerate">証明書を生成</string>
-  <string name="certificateGenerateSum">新しい自己署名の Plumble 証明書を生成します。初心者におすすめです。</string>
+  <string name="certificateGenerateSum">新しい自己署名の Mumla 証明書を生成します。初心者におすすめです。</string>
   <string name="pttSettings">プッシュツートーク設定</string>
   <string name="pttSettingsSum">有効な場合、プッシュツートークを設定します。</string>
   <string name="voiceActivitySettings">音声機能設定</string>
@@ -87,7 +87,7 @@
   <string name="loadImagesSum">チャットで外部の画像をロードするかどうか。</string>
   <string name="loadImages">外部の画像をロード</string>
   <string name="clearServerCertificates">サーバー証明書をクリア</string>
-  <string name="clearServerCertificatesSum">Plumble トラストデータベースから、許可されたサーバ証明書をすべてクリアします。</string>
+  <string name="clearServerCertificatesSum">Mumla トラストデータベースから、許可されたサーバ証明書をすべてクリアします。</string>
   <string name="version">バージョン</string>
   <string name="halfDuplex">半二重モード</string>
   <string name="halfDuplexSum">プッシュツートークを使用する時に、デバイスのサウンドをミュートします。チャンネルのユーザーに対して音声フィードバックを除去します。</string>
@@ -100,5 +100,5 @@
   <string name="audio_per_packet">パケット当たりの音声</string>
   <string name="audio_per_packet_sum">音声パケットあたりの音声の長さ。</string>
   <string name="stay_awake">画面をオフにしない</string>
-  <string name="stay_awake_sum">Plumble が開かれているときは、画面をオフにしません。</string>
+  <string name="stay_awake_sum">Mumla が開かれているときは、画面をオフにしません。</string>
 </resources>

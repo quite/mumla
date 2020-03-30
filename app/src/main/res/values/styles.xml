@@ -19,54 +19,54 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     tools:ignore="NewApi">
     
-    <style name="Theme.Plumble" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+    <style name="Theme.Mumla" parent="@style/Theme.AppCompat.Light.DarkActionBar">
         <item name="android:textColorPrimary">#000</item>
         <item name="android:textColorSecondary">#666</item>
         <item name="android:textColorPrimaryInverse">#FFF</item>
         <item name="android:textColorSecondaryInverse">#AAA</item>
 
-        <item name="actionBarStyle">@style/PlumbleDarkActionBar</item>
-        <item name="actionBarStyle">@style/PlumbleDarkActionBar</item>
+        <item name="actionBarStyle">@style/MumlaDarkActionBar</item>
+        <item name="actionBarStyle">@style/MumlaDarkActionBar</item>
 
         <item name="colorPrimary">#454D5E</item>
         <item name="colorPrimaryDark">#2F3440</item>
         <item name="colorAccent">#454D5E</item>
 
-        <item name="cardStyle">@style/Theme.Plumble.CardView</item>
+        <item name="cardStyle">@style/Theme.Mumla.CardView</item>
     </style>
 
-    <style name="Theme.Plumble.CardView" parent="CardView">
+    <style name="Theme.Mumla.CardView" parent="CardView">
     </style>
 
-    <style name="Theme.Plumble.Dark" parent="@style/Theme.AppCompat">
+    <style name="Theme.Mumla.Dark" parent="@style/Theme.AppCompat">
         <item name="android:textColorPrimary">#FFF</item>
         <item name="android:textColorSecondary">#DDD</item>
         <item name="android:textColorPrimaryInverse">#FFF</item>
         <item name="android:textColorSecondaryInverse">#AAA</item>
 
 
-        <item name="actionBarStyle">@style/PlumbleDarkActionBar</item>
-        <item name="actionBarStyle">@style/PlumbleDarkActionBar</item>
+        <item name="actionBarStyle">@style/MumlaDarkActionBar</item>
+        <item name="actionBarStyle">@style/MumlaDarkActionBar</item>
 
-        <item name="cardStyle">@style/Theme.Plumble.Dark.CardView</item>
+        <item name="cardStyle">@style/Theme.Mumla.Dark.CardView</item>
     </style>
 
-    <style name="PlumbleDarkActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid">
-        <item name="titleTextStyle">@style/PlumbleDarkActionBarText</item>
-        <item name="titleTextStyle">@style/PlumbleDarkActionBarText</item>
+    <style name="MumlaDarkActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="titleTextStyle">@style/MumlaDarkActionBarText</item>
+        <item name="titleTextStyle">@style/MumlaDarkActionBarText</item>
     </style>
 
-    <style name="PlumbleDarkActionBarText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+    <style name="MumlaDarkActionBarText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
         <item name="android:textColor">#FFFFFF</item>
     </style>
 
-    <style name="Theme.Plumble.Dark.CardView" parent="CardView">
+    <style name="Theme.Mumla.Dark.CardView" parent="CardView">
         <item name="cardBackgroundColor">#333</item>
     </style>
 
     <!-- Solarized theme sets based off of Ethan Schoonover's work: http://ethanschoonover.com/solarized -->
 
-    <style name="Theme.Plumble.Solarized.Light" parent="@style/Theme.AppCompat.Light">
+    <style name="Theme.Mumla.Solarized.Light" parent="@style/Theme.AppCompat.Light">
         <item name="android:textColor">?android:textColorPrimary</item>
         <item name="android:textColorPrimary">@color/solarized_base00</item>
         <item name="android:textColorSecondary">@color/solarized_base01</item>
@@ -84,7 +84,7 @@
         <item name="colorPrimaryDark">@color/solarized_base3</item>
         <item name="colorAccent">@color/solarized_base2</item>
 
-        <item name="cardStyle">@style/Theme.Plumble.Solarized.Light.CardView</item>
+        <item name="cardStyle">@style/Theme.Mumla.Solarized.Light.CardView</item>
     </style>
 
     <style name="SolarizedLightActionBar" parent="@style/Widget.AppCompat.ActionBar">
@@ -98,11 +98,11 @@
         <item name="android:textColor">@color/solarized_base00</item>
     </style>
 
-    <style name="Theme.Plumble.Solarized.Light.CardView" parent="CardView">
+    <style name="Theme.Mumla.Solarized.Light.CardView" parent="CardView">
         <item name="cardBackgroundColor">@color/solarized_base2</item>
     </style>
 
-    <style name="Theme.Plumble.Solarized.Dark" parent="@style/Theme.AppCompat">
+    <style name="Theme.Mumla.Solarized.Dark" parent="@style/Theme.AppCompat">
         <item name="android:textColor">?android:textColorPrimary</item>
         <item name="android:textColorPrimary">@color/solarized_base0</item>
         <item name="android:textColorSecondary">@color/solarized_base1</item>
@@ -120,7 +120,7 @@
         <item name="colorPrimaryDark">@color/solarized_base03</item>
         <item name="colorAccent">@color/solarized_base02</item>
 
-        <item name="cardStyle">@style/Theme.Plumble.Solarized.Dark.CardView</item>
+        <item name="cardStyle">@style/Theme.Mumla.Solarized.Dark.CardView</item>
     </style>
 
     <style name="SolarizedDarkActionBar" parent="@style/Widget.AppCompat.ActionBar">
@@ -134,7 +134,7 @@
         <item name="android:textColor">@color/solarized_base0</item>
     </style>
 
-    <style name="Theme.Plumble.Solarized.Dark.CardView" parent="CardView">
+    <style name="Theme.Mumla.Solarized.Dark.CardView" parent="CardView">
         <item name="cardBackgroundColor">@color/solarized_base02</item>
     </style>
 </resources>

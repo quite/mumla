@@ -42,7 +42,7 @@
     <string name="about">About</string>
     <string name="aboutSum">Legal and acknowledgements</string>
     <string name="acknowledgements">Acknowledgements</string>
-    <string name="acknowledgementsSum">See who contributed to Plumble</string>
+    <string name="acknowledgementsSum">See who contributed to Mumla</string>
     <string name="licenses">Licenses</string>
 
 	<string name="authentication">Authentication</string>
@@ -53,7 +53,7 @@
     <string name="audioInputVolume">Microphone Volume</string>
     <string name="audioInputVolumeSum">Microphone volume multiplier used to artificially normalize audio.</string>
 	<string name="callMode">Call Mode</string>
-	<string name="callModeSum">The call mode of Plumble, whether to act as a voice call or speakerphone.</string>
+	<string name="callModeSum">The call mode of Mumla, whether to act as a voice call or speakerphone.</string>
 	<string name="detectionThreshold">Detection Threshold</string>
 	<string name="detectionThresholdSum">The minimum amplitude required for voice to be detected (only applicable for voice activity).</string>
 	<string name="pttKey">Push to Talk Key</string>
@@ -78,9 +78,9 @@
 	<string name="chatNotificationsSum">Show notifications when a user posts in chat.</string>
     <string name="defaultUsername">Default Username</string>
     <string name="defaultUsernameSum">The default username to use when connecting to servers.</string>
-    <string name="defaultUsernameDefault">Plumble_User</string>
+    <string name="defaultUsernameDefault">Mumla_User</string>
 	<string name="certificateGenerate">Generate Certificate</string>
-	<string name="certificateGenerateSum">Generates a new self-signed Plumble certificate. Recommended for beginners.</string>
+	<string name="certificateGenerateSum">Generates a new self-signed Mumla certificate. Recommended for beginners.</string>
 	<string name="pttSettings">Push to Talk Settings</string>
 	<string name="pttSettingsSum">Configure Push to Talk if it is enabled.</string>
 	<string name="voiceActivitySettings">Voice Activity Settings</string>
@@ -109,7 +109,7 @@
     <string name="loadImagesSum">Whether to load external images in chat.</string>
     <string name="loadImages">Load External Images</string>
     <string name="clearServerCertificates">Clear Server Certificates</string>
-    <string name="clearServerCertificatesSum">Clear all allowed server certificates from Plumble\'s trust database.</string>
+    <string name="clearServerCertificatesSum">Clear all allowed server certificates from Mumla\'s trust database.</string>
     <string name="version">Version</string>
     <string name="halfDuplex">Half Duplex Mode</string>
     <string name="halfDuplexSum">Mutes device sound when using push to talk, removing audio feedback for channel users.</string>
@@ -122,7 +122,7 @@
     <string name="audio_per_packet">Audio per packet</string>
     <string name="audio_per_packet_sum">The length of audio per voice packet.</string>
     <string name="stay_awake">Stay Awake</string>
-    <string name="stay_awake_sum">When Plumble is open, the screen will not be turned off.</string>
+    <string name="stay_awake_sum">When Mumla is open, the screen will not be turned off.</string>
     <string name="pref_certificate_title">Certificate</string>
     <string name="pref_certificate_summary">The default certificate to use when connecting to a server.</string>
     <string name="pref_import_certificate_title">Import Certificate</string>

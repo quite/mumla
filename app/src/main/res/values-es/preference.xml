@@ -21,12 +21,12 @@
   <string name="about">Acerca de</string>
   <string name="aboutSum">Legal y agradecimientos</string>
   <string name="acknowledgements">Agradecimientos</string>
-  <string name="acknowledgementsSum">Mira quién ha contribuido a Plumble</string>
+  <string name="acknowledgementsSum">Mira quién ha contribuido a Mumla</string>
   <string name="licenses">Licencias</string>
   <string name="authentication">Autenticación</string>
   <string name="authenticationSum">Gestiona y crea certificados</string>
   <string name="certificateFile">Archivo de certificado</string>
-  <string name="certificateFileSum">La ruta del certificado P12 que desee usar, situado en la carpeta \"Plumble\" o en el almacenamiento externo</string>
+  <string name="certificateFileSum">La ruta del certificado P12 que desee usar, situado en la carpeta \"Mumla\" o en el almacenamiento externo</string>
   <string name="certificatePassword">Contraseña del certificado</string>
   <string name="certificatePasswordSum">La contraseña de tu certificado PKCS12 (opcional)</string>
   <string name="audioInput">Entrada de audio</string>
@@ -35,7 +35,7 @@
   <string name="audioInputVolume">Volumen del micrófono</string>
   <string name="audioInputVolumeSum">Multiplicador del volumen del micrófono utilizado para normalizar el audio artificialmente.</string>
   <string name="callMode">Modo de llamada</string>
-  <string name="callModeSum">El modo de llamada del Plumble, se comportará como una llamada de voz o  un altavoz.</string>
+  <string name="callModeSum">El modo de llamada del Mumla, se comportará como una llamada de voz o  un altavoz.</string>
   <string name="detectionThreshold">Umbral de detección</string>
   <string name="detectionThresholdSum">La amplitud mínima requerida para que la voz sea detectada( solo aplicable para el modo de transmisión por actividad de voz )</string>
   <string name="pttKey">Tecla de Presionar-para-hablar</string>
@@ -60,9 +60,9 @@
   <string name="chatNotificationsSum">Mostrar notificaciones cuando un usuario escriba en el chat</string>
   <string name="defaultUsername">Nombre de usuario predeterminado</string>
   <string name="defaultUsernameSum">El nombre de usuario predeterminado que se usará al conectar a los servidores.</string>
-  <string name="defaultUsernameDefault">Plumble_User</string>
+  <string name="defaultUsernameDefault">Mumla_User</string>
   <string name="certificateGenerate">Generar certificado</string>
-  <string name="certificateGenerateSum">Genera un nuevo certificado de Plumble auto-firmado. Recomendado para principiantes.</string>
+  <string name="certificateGenerateSum">Genera un nuevo certificado de Mumla auto-firmado. Recomendado para principiantes.</string>
   <string name="pttSettings">Opciones de Presionar-para-hablar</string>
   <string name="pttSettingsSum">Configúrelo si Presionar-para-hablar está habilitado.</string>
   <string name="voiceActivitySettings">Opciones de actividad de voz</string>
@@ -87,7 +87,7 @@
   <string name="loadImagesSum">Elegir si cargar imágenes externas en el chat o no.</string>
   <string name="loadImages">Cargar imágenes externas</string>
   <string name="clearServerCertificates">Eliminar certificados de servidores</string>
-  <string name="clearServerCertificatesSum">Eliminar los certificados de todos los servidores permitidos de la base de datos de confianza de Plumble.</string>
+  <string name="clearServerCertificatesSum">Eliminar los certificados de todos los servidores permitidos de la base de datos de confianza de Mumla.</string>
   <string name="version">Versión</string>
   <string name="halfDuplex">Modo Semi-dúplex</string>
   <string name="halfDuplexSum">Silencia el audio del dispositivo cuando se activa Presionar-para-hablar, evitando que se produzca eco para los otros usuarios.</string>
@@ -100,5 +100,5 @@
   <string name="audio_per_packet">Audio por paquete</string>
   <string name="audio_per_packet_sum">La cantidad de audio por paquete de voz.</string>
   <string name="stay_awake">Mantener pantalla encendida</string>
-  <string name="stay_awake_sum">La pantalla no se apagará mientras Plumble esté abierto.</string>
+  <string name="stay_awake_sum">La pantalla no se apagará mientras Mumla esté abierto.</string>
 </resources>

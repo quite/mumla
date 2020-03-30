@@ -22,32 +22,32 @@
         android:key="certificateGenerate"
         android:summary="@string/certificateGenerateSum"
         android:title="@string/certificateGenerate">
-        <intent android:action="com.morlunk.mumbleclient.app.CERTIFICATE_GENERATE" />
+        <intent android:action="se.lublin.mumla.app.CERTIFICATE_GENERATE" />
     </Preference>
 
     <Preference
         android:summary="@string/pref_certificate_summary"
         android:title="@string/pref_certificate_title">
-        <intent android:action="com.morlunk.mumbleclient.app.CERTIFICATE_SELECT" />
+        <intent android:action="se.lublin.mumla.app.CERTIFICATE_SELECT" />
     </Preference>
 
     <Preference
         android:summary="@string/pref_import_certificate_summary"
         android:title="@string/pref_import_certificate_title">
-        <intent android:action="com.morlunk.mumbleclient.app.CERTIFICATE_IMPORT" />
+        <intent android:action="se.lublin.mumla.app.CERTIFICATE_IMPORT" />
     </Preference>
 
     <Preference
         android:summary="@string/pref_export_certificate_summary"
         android:title="@string/pref_export_certificate_title">
-        <intent android:action="com.morlunk.mumbleclient.app.CERTIFICATE_EXPORT" />
+        <intent android:action="se.lublin.mumla.app.CERTIFICATE_EXPORT" />
     </Preference>
 
     <Preference
         android:key="clearTrust"
         android:title="@string/clearServerCertificates"
         android:summary="@string/clearServerCertificatesSum">
-        <intent android:action="com.morlunk.mumbleclient.app.CLEAR_SERVER_CERTIFICATES" />
+        <intent android:action="se.lublin.mumla.app.CLEAR_SERVER_CERTIFICATES" />
     </Preference>
 
     <EditTextPreference

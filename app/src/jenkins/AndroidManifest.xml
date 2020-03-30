@@ -21,8 +21,8 @@
 
     <application>
         <provider
-            android:name="com.morlunk.mumbleclient.channel.ChannelSearchProvider"
-            android:authorities="com.morlunk.mumbleclient.jenkins.channel.ChannelSearchProvider"
+            android:name="se.lublin.mumla.channel.ChannelSearchProvider"
+            android:authorities="se.lublin.mumla.jenkins.channel.ChannelSearchProvider"
             android:exported="false" />
     </application>
 

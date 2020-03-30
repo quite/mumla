@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
         android:textStyle="italic"
-        android:text="If you already have a certificate you would like to use with Plumble, you can put it in the Plumble folder on your external storage and load it in settings later."
+        android:text="If you already have a certificate you would like to use with Mumla, you can put it in the Mumla folder on your external storage and load it in settings later."
         android:padding="4dp"
         android:gravity="right"/>
 </LinearLayout>

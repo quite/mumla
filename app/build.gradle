@@ -52,7 +52,7 @@ android {
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 28
-        applicationId "com.morlunk.mumbleclient"
+        applicationId "se.lublin.mumla"
         versionCode 73
         versionName "3.3.0-rc1"
         testInstrumentationRunner "android.test.InstrumentationTestRunner"
@@ -63,11 +63,11 @@ android {
     productFlavors {
         official {
             dimension "version"
-            applicationId "com.morlunk.mumbleclient"
+            applicationId "se.lublin.mumla"
         }
         free {
             dimension "version"
-            applicationId "com.morlunk.mumbleclient.free"
+            applicationId "se.lublin.mumla.free"
             buildConfigField "boolean", "DONATE_NAG", "true"
         }
         jenkins {
@@ -81,7 +81,7 @@ android {
                 versionCode 1
                 versionName "Unknown Nightly"
             }
-            applicationId "com.morlunk.mumbleclient.jenkins"
+            applicationId "se.lublin.mumla.jenkins"
         }
     }
 

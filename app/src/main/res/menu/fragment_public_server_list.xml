@@ -17,10 +17,10 @@
   -->
 
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-      xmlns:plumble="http://schemas.android.com/apk/res-auto" >
+      xmlns:mumla="http://schemas.android.com/apk/res-auto" >
 
-    <item android:id="@+id/menu_match_server" android:title="@string/server_match" android:icon="@drawable/ic_action_match" plumble:showAsAction="ifRoom" android:orderInCategory="0"/>
-    <item android:id="@+id/menu_sort_server_item" android:title="@string/sort" android:icon="@drawable/ic_action_sort" plumble:showAsAction="ifRoom" android:orderInCategory="2"></item>
-    <item android:id="@+id/menu_search_server_item" android:title="@string/search" android:icon="@drawable/ic_action_search" plumble:showAsAction="ifRoom" android:orderInCategory="1"></item>
+    <item android:id="@+id/menu_match_server" android:title="@string/server_match" android:icon="@drawable/ic_action_match" mumla:showAsAction="ifRoom" android:orderInCategory="0"/>
+    <item android:id="@+id/menu_sort_server_item" android:title="@string/sort" android:icon="@drawable/ic_action_sort" mumla:showAsAction="ifRoom" android:orderInCategory="2"></item>
+    <item android:id="@+id/menu_search_server_item" android:title="@string/search" android:icon="@drawable/ic_action_search" mumla:showAsAction="ifRoom" android:orderInCategory="1"></item>
 
 </menu>

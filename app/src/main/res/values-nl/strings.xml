@@ -59,7 +59,7 @@
   <string name="server_match_not_found">Server niet gevonden</string>
   <string name="server_match_expand_country">Kon geen optimale servers in uw land vinden. Zoekopdracht wereldwijd uitbreiden?</string>
   <string name="server_match_info">Naam: %1$s\nHost: %2$s:%3$d\nGebruikers: %4$d / %5$d\nVersie: %6$s \nLand: %7$s \nLatency: %8$d ms</string>
-  <string name="server_match_description">Plumble kan automatisch een lege server zoeken, geoptimaliseerd aan de hand van locatie, versie en latency.</string>
+  <string name="server_match_description">Mumla kan automatisch een lege server zoeken, geoptimaliseerd aan de hand van locatie, versie en latency.</string>
   <!--Common-->
   <string name="channels">Kanalen</string>
   <string name="no_servers">Geen servers toegevoegd.\nDruk op \'toevoegen\' in the taakbalk om te beginnen.</string>
@@ -126,9 +126,9 @@
   <string name="offline">Offline</string>
   <string name="clearChat">Chat Legen</string>
   <string name="connected">Verbonden</string>
-  <string name="plumbleConnected">Plumble Verbonden</string>
-  <string name="plumbleConnecting">Plumble Verbindt</string>
-  <string name="plumbleDisconnected">Plumble Verbinding Verbroken</string>
+  <string name="mumlaConnected">Mumla Verbonden</string>
+  <string name="mumlaConnecting">Mumla Verbindt</string>
+  <string name="mumlaDisconnected">Mumla Verbinding Verbroken</string>
   <string name="lostConnection">Verbinding met de server verloren.</string>
   <string name="resume">Hervatten</string>
   <string name="channel">Kanaal</string>
@@ -156,7 +156,7 @@
   <string name="country">Land</string>
   <string name="share">Delen</string>
   <string name="description">Beschrijving</string>
-  <string name="shareMessage">Verbind met deze Mumble server met Plumble! %s</string>
+  <string name="shareMessage">Verbind met deze Mumble server met Mumla! %s</string>
   <string name="noServerInfo">Ping naar info</string>
   <string name="status_notify_muted_and_deafened">Gedempt en doof gemaakt.</string>
   <string name="status_notify_muted">Gedempt.</string>
@@ -183,7 +183,7 @@
   <string name="hint_reason">Reden</string>
   <string name="hint_ptt">Push to Talk</string>
   <string name="hint_ptt_summary">Houd deze knop ingedrukt om te spreken. Dubbel-tik om aan/uit te schakelen.</string>
-  <string name="hint_server_add">Welkom bij Plumble</string>
+  <string name="hint_server_add">Welkom bij Mumla</string>
   <string name="hint_server_add_summary">Om te beginnen, voeg een favoriete server toe door op de toevoegen knop te drukken in de taakbalk.</string>
   <string name="hint_switching">Wisselen Van Weergave</string>
   <string name="hint_switching_summary">Wissel tussen de chat en kanaal weergave met de knoppen links boven, of door te vegen.</string>
@@ -199,7 +199,7 @@
   <string name="channel_add">Kanaal Toevoegen</string>
   <string name="tts_failed">TTS initialiseren mislukt</string>
   <string name="mumble_url_parse_failed">Mumble URL kon niet worden ontleed!</string>
-  <string name="first_run_generate_certificate_title">Welkom bij Plumble!</string>
+  <string name="first_run_generate_certificate_title">Welkom bij Mumla!</string>
   <string name="first_run_generate_certificate">Certificaat generen is ten zeerste aangeraden en nodig voor verbinden met bepaalde servers.</string>
   <string name="generate">Genereer</string>
   <string name="certificate_not_valid">Kon certificaat \'%s\' niet laden!</string>
