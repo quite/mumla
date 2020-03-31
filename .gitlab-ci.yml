@@ -1,0 +1,40 @@
+image: quite/android-sdk-ndk:latest
+
+variables:
+  # get those pesky submodules
+  GIT_SUBMODULE_STRATEGY: recursive
+
+before_script:
+  - export GRADLE_USER_HOME=$(pwd)/.gradle
+  - chmod +x ./gradlew
+
+cache:
+  key: ${CI_PROJECT_ID}
+  paths:
+  - .gradle/
+
+stages:
+  - build
+
+# lintDebug:
+#   stage: build
+#   script:
+#     - ./gradlew -Pci --console=plain -PbuildDir=lint :app:lintDebug
+
+assembleDebug:
+  stage: build
+  script:
+    - ./gradlew assembleDebug
+  artifacts:
+    paths:
+    - app/build/outputs/
+
+# debugTests:
+#   stage: test
+#   script:
+#     - ./gradlew -Pci --console=plain :app:testDebugUnitTest
+
+# coverageTests:
+#   stage: test
+#   script:
+#     - ./gradlew -Pci --console=plain jacocoTestReport coveralls
