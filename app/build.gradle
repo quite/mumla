@@ -64,13 +64,13 @@ android {
         official {
             dimension "version"
             applicationId "se.lublin.mumla"
-            signingConfig signingConfigs.official
+            if (signingFile.exists()) signingConfig signingConfigs.official
         }
         free {
             dimension "version"
             applicationId "se.lublin.mumla.free"
             buildConfigField "boolean", "DONATE_NAG", "true"
-            signingConfig signingConfigs.free
+            if (signingFile.exists()) signingConfig signingConfigs.free
         }
         jenkins {
             dimension "version"
