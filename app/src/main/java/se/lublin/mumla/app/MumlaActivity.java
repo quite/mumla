@@ -17,12 +17,14 @@
 
 package se.lublin.mumla.app;
 
+import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.ComponentName;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
@@ -32,6 +34,7 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.preference.PreferenceManager;
 import android.text.InputType;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -42,9 +45,12 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
@@ -70,6 +76,7 @@ import se.lublin.humla.util.HumlaException;
 import se.lublin.humla.util.HumlaObserver;
 import se.lublin.humla.util.MumbleURLParser;
 import se.lublin.mumla.BuildConfig;
+import se.lublin.mumla.Constants;
 import se.lublin.mumla.R;
 import se.lublin.mumla.Settings;
 import se.lublin.mumla.channel.AccessTokenFragment;
@@ -108,6 +115,9 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerList;
     private DrawerAdapter mDrawerAdapter;
+
+    private static final int PERMISSIONS_REQUEST_RECORD_AUDIO = 1;
+    private Server mServerPendingPerm = null;
 
     private ProgressDialog mConnectingDialog;
     private AlertDialog mErrorDialog;
@@ -527,6 +537,16 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
     }
 
     public void connectToServer(final Server server) {
+        if (ContextCompat.checkSelfPermission(MumlaActivity.this,
+                Manifest.permission.RECORD_AUDIO)
+                != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(MumlaActivity.this,
+                    new String[]{Manifest.permission.RECORD_AUDIO},
+                    PERMISSIONS_REQUEST_RECORD_AUDIO);
+            mServerPendingPerm = server;
+            return;
+        }
+
         // Check if we're already connected to a server; if so, inform user.
         if(mService != null && mService.isConnected()) {
             AlertDialog.Builder adb = new AlertDialog.Builder(this);
@@ -561,6 +581,25 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
 
         ServerConnectTask connectTask = new ServerConnectTask(this, mDatabase);
         connectTask.execute(server);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
+                                           @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == PERMISSIONS_REQUEST_RECORD_AUDIO) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                if (mServerPendingPerm != null) {
+                    connectToServer(mServerPendingPerm);
+                } else {
+                    Log.w(Constants.TAG, "Strange, no pending server when granting permission");
+                }
+            } else {
+                Toast.makeText(MumlaActivity.this, getString(R.string.grant_perm_microphone),
+                        Toast.LENGTH_LONG).show();
+            }
+            mServerPendingPerm = null;
+        }
     }
 
     public void connectToPublicServer(final PublicServer server) {
