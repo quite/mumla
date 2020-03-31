@@ -39,7 +39,7 @@ import se.lublin.mumla.db.PublicServer;
  */
 class PublicServerFetchTask extends AsyncTask<Void, Void, List<PublicServer>> {
 
-    private static final String MUMBLE_PUBLIC_URL = "http://mumble.info/list2.cgi";
+    private static final String MUMBLE_PUBLIC_URL = "https://mumble.info/list2.cgi";
 
     @Override
     protected List<PublicServer> doInBackground(Void... params) {
