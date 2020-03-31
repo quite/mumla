@@ -100,7 +100,7 @@
         <item>6</item>
     </string-array>
 
-    <string name="copyright">Mumla is a fork of Plumble\nCopyright &#169; Andrew Comminos 2014\nMaintained by Daniel Lublin  mumla@lublin.se\nCode &amp; issues: https://gitlab.com/quite/mumla</string>
+    <string name="copyright">Mumla is a fork of Plumble\nCopyright &#169; 2014 Andrew Comminos\nCopyright &#169; 2020 Daniel Lublin mumla@lublin.se\n\nProject page: https://gitlab.com/quite/mumla</string>
     <string name="project_link">https://gitlab.com/quite/mumla</string>
     <string name="acknowledgements_link">https://gitlab.com/quite/mumla/-/graphs/master</string>
     <string name="license_gplv3">GNU General Public License v3.0</string>
