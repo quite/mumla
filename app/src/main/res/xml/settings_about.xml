@@ -21,6 +21,10 @@
     <Preference
         android:title="@string/app_name"
         android:summary="@string/copyright"/>
+    <!-- TODO why doesn't this intent link work? -->
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="@string/project_link"/>
     <Preference
         android:key="version"
         android:title="@string/version"/>
