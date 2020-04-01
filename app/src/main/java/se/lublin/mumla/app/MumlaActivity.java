@@ -592,7 +592,7 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
                 if (mServerPendingPerm != null) {
                     connectToServer(mServerPendingPerm);
                 } else {
-                    Log.w(Constants.TAG, "Strange, no pending server when granting permission");
+                    Log.w(Constants.TAG, "No pending server after permission was granted");
                 }
             } else {
                 Toast.makeText(MumlaActivity.this, getString(R.string.grant_perm_microphone),

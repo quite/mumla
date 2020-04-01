@@ -17,13 +17,19 @@
 
 package se.lublin.mumla.preference;
 
+import android.Manifest;
 import android.content.DialogInterface;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Environment;
+import android.util.Log;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -32,6 +38,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 
+import se.lublin.mumla.Constants;
 import se.lublin.mumla.R;
 import se.lublin.mumla.db.DatabaseCertificate;
 import se.lublin.mumla.db.MumlaDatabase;
@@ -48,6 +55,9 @@ public class CertificateExportActivity extends AppCompatActivity implements Dial
 
     private MumlaDatabase mDatabase;
     private List<DatabaseCertificate> mCertificates;
+
+    private static final int PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE = 2;
+    private DatabaseCertificate mCertificatePendingPerm = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,6 +95,16 @@ public class CertificateExportActivity extends AppCompatActivity implements Dial
     }
 
     private void saveCertificate(DatabaseCertificate certificate) {
+        if (ContextCompat.checkSelfPermission(CertificateExportActivity.this,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(CertificateExportActivity.this,
+                    new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                    PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE);
+            mCertificatePendingPerm = certificate;
+            return;
+        }
+
         byte[] data = mDatabase.getCertificateData(certificate.getId());
         if (!Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
             showErrorDialog(R.string.externalStorageUnavailable);
@@ -111,6 +131,25 @@ public class CertificateExportActivity extends AppCompatActivity implements Dial
         } catch (IOException e) {
             e.printStackTrace();
             showErrorDialog(R.string.error_writing_to_storage);
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
+                                           @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                if (mCertificatePendingPerm != null) {
+                    saveCertificate(mCertificatePendingPerm);
+                } else {
+                    Log.w(Constants.TAG, "No pending certificate after permission was granted");
+                }
+            } else {
+                Toast.makeText(CertificateExportActivity.this, getString(R.string.grant_perm_microphone),
+                        Toast.LENGTH_LONG).show();
+            }
+            mCertificatePendingPerm = null;
         }
     }
 
