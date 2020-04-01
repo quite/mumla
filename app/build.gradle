@@ -60,18 +60,22 @@ android {
         buildConfigField "boolean", "DONATE_NAG", "false"
     }
 
+    buildTypes {
+        release {
+            if (signingFile.exists()) signingConfig signingConfigs.release
+        }
+    }
+
     flavorDimensions "version"
     productFlavors {
         official {
             dimension "version"
             applicationId "se.lublin.mumla"
-            if (signingFile.exists()) signingConfig signingConfigs.official
         }
         free {
             dimension "version"
             applicationId "se.lublin.mumla.free"
             buildConfigField "boolean", "DONATE_NAG", "true"
-            if (signingFile.exists()) signingConfig signingConfigs.free
         }
         jenkins {
             dimension "version"
