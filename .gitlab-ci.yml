@@ -28,6 +28,7 @@ assembleDebug:
   artifacts:
     paths:
     - app/build/outputs/apk/
+    expire_in: 3 months
 
 # debugTests:
 #   stage: test
