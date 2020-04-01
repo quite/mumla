@@ -27,7 +27,7 @@ assembleDebug:
     - ./gradlew assembleDebug
   artifacts:
     paths:
-    - app/build/outputs/
+    - app/build/outputs/apk/
 
 # debugTests:
 #   stage: test
