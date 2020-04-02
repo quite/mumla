@@ -40,13 +40,13 @@ public class ServerEditFragment extends DialogFragment {
     private static final String ARGUMENT_ACTION = "action";
     private static final String ARGUMENT_IGNORE_TITLE = "ignore_title";
 
-	private EditText mNameEdit;
-	private EditText mHostEdit;
-	private EditText mPortEdit;
-	private EditText mUsernameEdit;
+    private EditText mNameEdit;
+    private EditText mHostEdit;
+    private EditText mPortEdit;
+    private EditText mUsernameEdit;
     private EditText mPasswordEdit;
-	
-	private ServerEditListener mListener;
+
+    private ServerEditListener mListener;
 
     /**
      * Creates a new {@link ServerEditFragment} dialog. Results will be delivered to the parent
@@ -57,8 +57,8 @@ public class ServerEditFragment extends DialogFragment {
      *                    connect dialogs)
      */
     public static DialogFragment createServerEditDialog(Context context, Server server,
-                                                  Action action,
-                                                  boolean ignoreTitle) {
+                                                        Action action,
+                                                        boolean ignoreTitle) {
         Bundle args = new Bundle();
         args.putParcelable(ARGUMENT_SERVER, server);
         args.putInt(ARGUMENT_ACTION, action.ordinal());
@@ -73,14 +73,14 @@ public class ServerEditFragment extends DialogFragment {
     }
 
     @Override
-	public void onAttach(Activity activity) {
-		super.onAttach(activity);
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
         try {
             mListener = (ServerEditListener) activity;
         } catch (ClassCastException e) {
             throw new ClassCastException(activity.toString() + " must implement ServerEditListener!");
         }
-	}
+    }
 
     @Override
     public void onStart() {
@@ -110,7 +110,7 @@ public class ServerEditFragment extends DialogFragment {
                 actionName = getString(R.string.add);
                 break;
             case EDIT_ACTION:
-                actionName = getString(R.string.edit);
+                actionName = getString(android.R.string.ok);
                 break;
             case CONNECT_ACTION:
                 actionName = getString(R.string.connect);
@@ -154,7 +154,7 @@ public class ServerEditFragment extends DialogFragment {
         return adb.create();
     }
 
-	public Server createServer() {
+    public Server createServer() {
         String name = (mNameEdit).getText().toString().trim();
         String host = (mHostEdit).getText().toString().trim();
 
@@ -180,7 +180,7 @@ public class ServerEditFragment extends DialogFragment {
         }
 
         return new Server(id, name, host, port, username, password);
-	}
+    }
 
     /**
      * Checks all fields in this ServerEditFragment for validity.
