@@ -62,8 +62,11 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled true
+            minifyEnabled false
             if (signingFile.exists()) signingConfig signingConfigs.release
+        }
+        debug {
+            minifyEnabled false
         }
     }
 
