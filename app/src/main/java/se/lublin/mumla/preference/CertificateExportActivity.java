@@ -146,7 +146,7 @@ public class CertificateExportActivity extends AppCompatActivity implements Dial
                     Log.w(Constants.TAG, "No pending certificate after permission was granted");
                 }
             } else {
-                Toast.makeText(CertificateExportActivity.this, getString(R.string.grant_perm_microphone),
+                Toast.makeText(CertificateExportActivity.this, getString(R.string.grant_perm_storage),
                         Toast.LENGTH_LONG).show();
             }
             mCertificatePendingPerm = null;
