@@ -268,6 +268,6 @@
     <string name="shout_failed">Failed to create voice target!</string>
     <string name="shout_target">Shouting to %s</string>
     <string name="shout_configure">Configure Voice Target</string>
-    <string name="grant_perm_microphone">Please grant permission to the microphone</string>
-    <string name="grant_perm_storage">Please grant permission to external storage</string>
+    <string name="grant_perm_microphone">Please grant permission to the microphone.</string>
+    <string name="grant_perm_storage">Please grant permission to external storage.</string>
 </resources>
