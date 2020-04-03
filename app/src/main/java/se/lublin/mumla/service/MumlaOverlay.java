@@ -19,6 +19,7 @@ package se.lublin.mumla.service;
 
 import android.content.Context;
 import android.graphics.PixelFormat;
+import android.os.Build;
 import android.util.DisplayMetrics;
 import android.view.Gravity;
 import android.view.MotionEvent;
@@ -182,7 +183,9 @@ public class MumlaOverlay {
         DisplayMetrics metrics = mService.getResources().getDisplayMetrics();
         mOverlayParams = new WindowManager.LayoutParams((int)(DEFAULT_WIDTH*metrics.density),
                 (int)(DEFAULT_HEIGHT*metrics.density),
-                WindowManager.LayoutParams.TYPE_SYSTEM_ALERT,
+                Build.VERSION.SDK_INT >= Build.VERSION_CODES.O
+                        ? WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY
+                        : WindowManager.LayoutParams.TYPE_SYSTEM_ALERT,
                 WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE
                         | WindowManager.LayoutParams.FLAG_WATCH_OUTSIDE_TOUCH
                         | WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL,

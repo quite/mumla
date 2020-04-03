@@ -22,13 +22,16 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.media.AudioManager;
+import android.net.Uri;
 import android.os.Binder;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.os.PowerManager;
 import android.preference.PreferenceManager;
 import android.speech.tts.TextToSpeech;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 
@@ -488,10 +491,28 @@ public class MumlaService extends HumlaService implements
     @Override
     public void onOverlayToggled() {
         if (!mChannelOverlay.isShown()) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                if (!android.provider.Settings.canDrawOverlays(getApplicationContext())) {
+                    Intent showSetting = new Intent(android.provider.Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
+                            Uri.parse("package:" + getPackageName()));
+                    // TODO maybe if we could get hold of an activity, we could
+                    //  fire the show-permission-setting intent using
+                    //  startActivityForResult() and be notified when user is
+                    //  done through an override onActivityResult(), and then
+                    //  retry showing the overlay
+                    showSetting.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(showSetting);
+                    Toast.makeText(this, R.string.grant_perm_draw_over_apps, Toast.LENGTH_LONG).show();
+                    return;
+                }
+            }
             mChannelOverlay.show();
         } else {
             mChannelOverlay.hide();
         }
+        // ditch the notification shade so overlay presence is visible
+        Intent close = new Intent(Intent.ACTION_CLOSE_SYSTEM_DIALOGS);
+        getApplicationContext().sendBroadcast(close);
     }
 
     @Override

@@ -270,4 +270,5 @@
     <string name="shout_configure">Configure Voice Target</string>
     <string name="grant_perm_microphone">Please grant permission to the microphone.</string>
     <string name="grant_perm_storage">Please grant permission to external storage.</string>
+    <string name="grant_perm_draw_over_apps">Please try again after granting permission to draw over other apps.</string>
 </resources>
