@@ -15,6 +15,13 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+// How to enable lints at compile time:
+// allprojects {
+//     tasks.withType(JavaCompile) {
+//         options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+//     }
+// }
+
 buildscript {
     repositories {
         jcenter()
