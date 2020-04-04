@@ -70,12 +70,12 @@ public class MumlaConnectionNotification {
      * @return A new MumlaNotification instance.
      */
     public static MumlaConnectionNotification create(Service service, String ticker, String contentText,
-                                                       OnActionListener listener) {
+                                                     OnActionListener listener) {
         return new MumlaConnectionNotification(service, ticker, contentText, listener);
     }
 
     private MumlaConnectionNotification(Service service, String ticker, String contentText,
-                                          OnActionListener listener) {
+                                        OnActionListener listener) {
         mService = service;
         mListener = listener;
         mCustomTicker = ticker;
@@ -132,16 +132,20 @@ public class MumlaConnectionNotification {
     private Notification createNotification() {
         String channelId = "";
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            channelId = "MumlaNotificationChannel";
-            String channelName = "Mumla connection";
-            NotificationChannel chan = new NotificationChannel(channelId, channelName, NotificationManager.IMPORTANCE_DEFAULT);
-            NotificationManager manager = (NotificationManager) mService.getApplication().getSystemService(Context.NOTIFICATION_SERVICE);
+            channelId = "connected_channel";
+            String channelName = mService.getString(R.string.connected);
+            NotificationChannel chan = new NotificationChannel(channelId, channelName,
+                    NotificationManager.IMPORTANCE_DEFAULT);
+            NotificationManager manager = mService.getSystemService(NotificationManager.class);
             manager.createNotificationChannel(chan);
         }
         NotificationCompat.Builder builder =
-                new NotificationCompat.Builder(mService.getApplicationContext(), channelId);
+                new NotificationCompat.Builder(mService, channelId);
 
-        builder.setContentTitle(mService.getString(R.string.app_name));
+        // app name is always displayed in notification on >= O
+        if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.M) {
+            builder.setContentTitle(mService.getString(R.string.app_name));
+        }
         builder.setContentText(mCustomContentText);
         builder.setSmallIcon(R.drawable.ic_stat_notify);
         builder.setPriority(NotificationCompat.PRIORITY_DEFAULT);

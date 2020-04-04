@@ -17,11 +17,14 @@
 
 package se.lublin.mumla.service;
 
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.os.Build;
 
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
@@ -56,9 +59,9 @@ public class MumlaReconnectNotification {
     };
 
     public static MumlaReconnectNotification show(Context context,
-                                                    String error,
-                                                    boolean autoReconnect,
-                                                    OnActionListener listener) {
+                                                  String error,
+                                                  boolean autoReconnect,
+                                                  OnActionListener listener) {
         MumlaReconnectNotification notification = new MumlaReconnectNotification(context, listener);
         notification.show(error, autoReconnect);
         return notification;
@@ -80,7 +83,20 @@ public class MumlaReconnectNotification {
             // Thrown if receiver is already registered.
             e.printStackTrace();
         }
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(mContext);
+
+        String channelId = "";
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            channelId = "reconnecting_channel";
+            // TODO this is not used
+            String channelName = "Reconnecting";
+            NotificationChannel chan = new NotificationChannel(channelId, channelName,
+                    NotificationManager.IMPORTANCE_DEFAULT);
+            NotificationManager manager = mContext.getSystemService(NotificationManager.class);
+            manager.createNotificationChannel(chan);
+        }
+        NotificationCompat.Builder builder =
+                new NotificationCompat.Builder(mContext, channelId);
+
         builder.setSmallIcon(R.drawable.ic_stat_notify);
         builder.setPriority(NotificationCompat.PRIORITY_MAX);
         builder.setDefaults(NotificationCompat.DEFAULT_VIBRATE | NotificationCompat.DEFAULT_LIGHTS);

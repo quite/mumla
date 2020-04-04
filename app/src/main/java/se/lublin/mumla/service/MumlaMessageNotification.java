@@ -18,9 +18,12 @@
 package se.lublin.mumla.service;
 
 import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
@@ -71,8 +74,19 @@ public class MumlaMessageNotification {
         // FLAG_CANCEL_CURRENT ensures that the extra always gets sent.
         PendingIntent pendingIntent = PendingIntent.getActivity(mContext, 0, channelListIntent, PendingIntent.FLAG_CANCEL_CURRENT);
 
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(mContext)
-                .setPriority(NotificationCompat.PRIORITY_HIGH)
+        String channelId = "";
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            channelId = "message_channel";
+            String channelName = mContext.getString(R.string.messageReceived);
+            NotificationChannel chan = new NotificationChannel(channelId, channelName,
+                    NotificationManager.IMPORTANCE_DEFAULT);
+            NotificationManager manager = mContext.getSystemService(NotificationManager.class);
+            manager.createNotificationChannel(chan);
+        }
+        NotificationCompat.Builder builder =
+                new NotificationCompat.Builder(mContext, channelId);
+
+        builder.setPriority(NotificationCompat.PRIORITY_HIGH)
                 .setSmallIcon(R.drawable.ic_stat_notify)
                 .setContentIntent(pendingIntent)
                 .setAutoCancel(true)
