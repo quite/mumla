@@ -38,7 +38,7 @@
             android:id="@+id/server_info_protocol"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Protocol 1.2.4."
+            android:text="Protocol 0.0.0"
             android:layout_marginBottom="8dp"
             />
 
@@ -46,7 +46,7 @@
             android:id="@+id/server_info_os_version"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Debian GNU/Linux 7.0 (wheezy)"
+            android:text="Some operating system"
             android:layout_marginBottom="8dp"
             />
 
@@ -69,14 +69,14 @@
             android:id="@+id/server_info_tcp_latency"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="108.51 ms average latency (69.84 deviation)"
+            android:text="0.0 ms average latency (0.0 deviation)"
             android:layout_marginBottom="8dp"
             />
         <TextView
             android:id="@+id/server_info_host"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Remote host www.morlunk.com (port 64738)"
+            android:text="Remote host www.example.com (port 0)"
             android:layout_marginBottom="8dp"
             />
 
@@ -99,7 +99,7 @@
             android:id="@+id/server_info_udp_latency"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="105.76 ms average latency (20.34 deviation)"
+            android:text="0.0 ms average latency (0.0 deviation)"
             android:layout_marginBottom="8dp"
             />
 
@@ -115,7 +115,7 @@
             android:id="@+id/server_info_max_bandwidth"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Maximum 72.0kbit/s"
+            android:text="Maximum 0.0kbit/s"
             android:layout_marginBottom="8dp"
             />
 
@@ -123,7 +123,7 @@
             android:id="@+id/server_info_current_bandwidth"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Current 54.8kbit/s"
+            android:text="Current 0.0kbit/s"
             android:layout_marginBottom="8dp"
             />
 
@@ -131,7 +131,7 @@
             android:id="@+id/server_info_codec"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Codec: Opus"
+            android:text="Codec: Some codec"
             android:layout_marginBottom="8dp"
             />
 
