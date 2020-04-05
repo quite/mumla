@@ -115,7 +115,6 @@ public class MumlaService extends HumlaService implements
     private BroadcastReceiver mTalkReceiver;
 
     private HumlaObserver mObserver = new HumlaObserver() {
-
         @Override
         public void onConnecting() {
             // Remove old notification left from reconnect,
@@ -286,6 +285,9 @@ public class MumlaService extends HumlaService implements
         // XML <application> theme does NOT do this!
         setTheme(R.style.Theme_Mumla);
 
+        mMessageLog = new ArrayList<>();
+        mMessageNotification = new MumlaMessageNotification(MumlaService.this);
+
         // Instantiate overlay view
         mChannelOverlay = new MumlaOverlay(this);
         mHotCorner = new MumlaHotCorner(this, mSettings.getHotCornerGravity(), mHotCornerListener);
@@ -295,8 +297,6 @@ public class MumlaService extends HumlaService implements
             mTTS = new TextToSpeech(this, mTTSInitListener);
 
         mTalkReceiver = new TalkBroadcastReceiver(this);
-        mMessageLog = new ArrayList<>();
-        mMessageNotification = new MumlaMessageNotification(MumlaService.this);
     }
 
     @Override
