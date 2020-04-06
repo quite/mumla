@@ -1,0 +1,13 @@
+This is a continuation (a fork) of Andrew Comminos' Plumble.
+
+* Opus, CELT, and Speex codec support
+* Certificates
+* Voice activity
+* Bluetooth
+* Public servers
+* Comments
+* Administration
+* Overlay
+* Theming
+* Notifications
+* Orbot integration
