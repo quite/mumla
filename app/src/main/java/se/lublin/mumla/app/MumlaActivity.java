@@ -292,12 +292,6 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
 
-        // Tint logo to theme
-        int iconColor = getTheme().obtainStyledAttributes(new int[] { android.R.attr.textColorPrimaryInverse }).getColor(0, -1);
-        Drawable logo = getResources().getDrawable(R.drawable.ic_home);
-        logo.setColorFilter(iconColor, PorterDuff.Mode.MULTIPLY);
-        getSupportActionBar().setLogo(logo);
-
         AlertDialog.Builder dadb = new AlertDialog.Builder(this);
         dadb.setMessage(R.string.disconnectSure);
         dadb.setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener() {
