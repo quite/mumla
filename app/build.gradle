@@ -60,8 +60,8 @@ android {
         minSdkVersion 14
         targetSdkVersion 29
         applicationId "se.lublin.mumla"
-        versionCode 73
-        versionName "3.3.0-rc1"
+        versionCode 74
+        versionName "3.4.0"
         setProperty("archivesBaseName", "mumla")
         testInstrumentationRunner "android.test.InstrumentationTestRunner"
         buildConfigField "boolean", "DONATE_NAG", "false"
