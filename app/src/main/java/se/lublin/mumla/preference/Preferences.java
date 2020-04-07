@@ -58,7 +58,6 @@ public class Preferences extends PreferenceActivity {
         super.onCreate(savedInstanceState);
 
         // Legacy preference section handling
-
         String action = getIntent().getAction();
         if (action != null) {
             if (ACTION_PREFS_GENERAL.equals(action)) {
@@ -75,8 +74,6 @@ public class Preferences extends PreferenceActivity {
                 addPreferencesFromResource(R.xml.settings_about);
                 configureAboutPreferences(this, getPreferenceScreen());
             }
-        } else if (Build.VERSION.SDK_INT < Build.VERSION_CODES.HONEYCOMB) {
-            addPreferencesFromResource(R.xml.preference_headers_legacy);
         }
     }
 

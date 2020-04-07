@@ -122,13 +122,7 @@ public abstract class ServerAdapter<E extends Server> extends ArrayAdapter<E> {
                     notifyDataSetChanged();
                 }
             };
-
-            // Execute on parallel threads if API >= 11.
-            if(Build.VERSION.SDK_INT >= 11) {
-                task.executeOnExecutor(mPingExecutor, server);
-            } else {
-                task.execute(server);
-            }
+            task.executeOnExecutor(mPingExecutor, server);
         }
 
         return view;

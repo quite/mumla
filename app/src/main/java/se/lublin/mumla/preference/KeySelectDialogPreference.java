@@ -117,11 +117,7 @@ public class KeySelectDialogPreference extends DialogPreference implements OnKey
 		if(keyCode == 0) {
 			valueTextView.setText("No Key");
 		} else {
-			if(android.os.Build.VERSION.SDK_INT >= 12) {
-				valueTextView.setText(KeyEvent.keyCodeToString(keyCode));
-			} else {
-				valueTextView.setText("Key code: "+keyCode);
-			}
+			valueTextView.setText(KeyEvent.keyCodeToString(keyCode));
 		}
 	}
 
@@ -130,12 +126,7 @@ public class KeySelectDialogPreference extends DialogPreference implements OnKey
 	public boolean onKey(DialogInterface dialog, int keyCode, KeyEvent event) {
 		if(keyCode != KeyEvent.KEYCODE_BACK) {
 			this.keyCode = keyCode;
-			
-			if(android.os.Build.VERSION.SDK_INT >= 12) {
-				valueTextView.setText(KeyEvent.keyCodeToString(keyCode));
-			} else {
-				valueTextView.setText("Key code: "+keyCode);
-			}
+			valueTextView.setText(KeyEvent.keyCodeToString(keyCode));
 		} else {
 			dialog.dismiss();
 		}

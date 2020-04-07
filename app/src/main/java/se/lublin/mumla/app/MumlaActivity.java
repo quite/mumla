@@ -757,13 +757,7 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
         if(Settings.PREF_THEME.equals(key)) {
             // Recreate activity when theme is changed
-            if(Build.VERSION.SDK_INT >= 11)
-                recreate();
-            else {
-                Intent intent = new Intent(this, MumlaActivity.class);
-                finish();
-                startActivity(intent);
-            }
+            recreate();
         } else if (Settings.PREF_STAY_AWAKE.equals(key)) {
             setStayAwake(mSettings.shouldStayAwake());
         } else if (Settings.PREF_HANDSET_MODE.equals(key)) {

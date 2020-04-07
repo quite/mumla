@@ -122,7 +122,7 @@ public class PublicServerListFragment extends Fragment implements OnItemClickLis
     @Override
     public void onPrepareOptionsMenu(Menu menu) {
         super.onPrepareOptionsMenu(menu);
-        menu.findItem(R.id.menu_match_server).setVisible(VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB); // Executors only supported on Honeycomb +
+        menu.findItem(R.id.menu_match_server).setVisible(true);
     }
 
     @Override
