@@ -70,7 +70,7 @@
   <string name="server_host">アドレス</string>
   <string name="server_label">ラベル</string>
   <string name="connecting">接続中</string>
-  <string name="connecting_to_server">%1$s:%2$s に接続中</string>
+  <string name="connecting_to_server">%1$s:%2$d に接続中</string>
   <string name="fragment_chat">チャット</string>
   <string name="fragment_channel">チャンネル</string>
   <string name="menu_settings">設定</string>

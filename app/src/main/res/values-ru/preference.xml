@@ -25,10 +25,6 @@
   <string name="licenses">Лицензии</string>
   <string name="authentication">Идентификация</string>
   <string name="authenticationSum">Управление и создание сертификатов</string>
-  <string name="certificateFile">Файл сертификата</string>
-  <string name="certificateFileSum">Файл P12 сертификата который вы хотите использовать, размещенные в папке \"Mumla\".</string>
-  <string name="certificatePassword">Пароль сертификата</string>
-  <string name="certificatePasswordSum">Пароль к вашему PKCS12 сертификату. (опционально)</string>
   <string name="audioInput">Аудио вход</string>
   <string name="audioInputMethodSum">Способ ввода звука.</string>
   <string name="audioInputMethod">Режим передачи</string>

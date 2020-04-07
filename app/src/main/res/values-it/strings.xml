@@ -41,7 +41,7 @@
   <string name="server_port">Porta</string>
   <string name="server_host">Indirizzo</string>
   <string name="connecting">Connessione</string>
-  <string name="connecting_to_server">Connessione a %1$s:%2$s</string>
+  <string name="connecting_to_server">Connessione a %1$s:%2$d</string>
   <string name="fragment_chat">Chat</string>
   <string name="fragment_channel">Canale</string>
   <string name="menu_settings">Impostazioni</string>

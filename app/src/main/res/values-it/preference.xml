@@ -9,8 +9,6 @@
   <string name="licenses">Licenze</string>
   <string name="authentication">Autenticazione</string>
   <string name="authenticationSum">Gestisci e crea certificati</string>
-  <string name="certificateFile">File certificato</string>
-  <string name="certificatePassword">Password certificato</string>
   <string name="audioInput">Input audio</string>
   <string name="audioInputVolume">Volume microfono</string>
   <string name="general">Generale</string>

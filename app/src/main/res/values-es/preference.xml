@@ -25,10 +25,6 @@
   <string name="licenses">Licencias</string>
   <string name="authentication">Autenticación</string>
   <string name="authenticationSum">Gestiona y crea certificados</string>
-  <string name="certificateFile">Archivo de certificado</string>
-  <string name="certificateFileSum">La ruta del certificado P12 que desee usar, situado en la carpeta \"Mumla\" o en el almacenamiento externo</string>
-  <string name="certificatePassword">Contraseña del certificado</string>
-  <string name="certificatePasswordSum">La contraseña de tu certificado PKCS12 (opcional)</string>
   <string name="audioInput">Entrada de audio</string>
   <string name="audioInputMethodSum">El método de entrada de audio</string>
   <string name="audioInputMethod">Modo de transmisión</string>

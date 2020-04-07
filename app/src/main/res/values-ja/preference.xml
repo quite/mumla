@@ -25,10 +25,6 @@
   <string name="licenses">ライセンス</string>
   <string name="authentication">認証</string>
   <string name="authenticationSum">証明書の管理と作成</string>
-  <string name="certificateFile">証明書ファイル</string>
-  <string name="certificateFileSum">外部ストレージの \"Mumla\" フォルダに配置した、使用したい P12 証明書のパス。</string>
-  <string name="certificatePassword">証明書パスワード</string>
-  <string name="certificatePasswordSum">PKCS12 証明書のパスワード (オプション)</string>
   <string name="audioInput">音声入力</string>
   <string name="audioInputMethodSum">音声入力の方法。</string>
   <string name="audioInputMethod">送信モード</string>

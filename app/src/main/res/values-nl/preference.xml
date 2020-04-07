@@ -25,10 +25,6 @@
   <string name="licenses">Licenties</string>
   <string name="authentication">Authenticatie</string>
   <string name="authenticationSum">Beheer en creeer certificaten</string>
-  <string name="certificateFile">Certificaat Bestand</string>
-  <string name="certificateFileSum">Het pad van het P12 certificaat dat u wenst te gebruiken, in de \"Mumla\" folder op externe opslag.</string>
-  <string name="certificatePassword">Certificaat Wachtwoord</string>
-  <string name="certificatePasswordSum">Het wachtwoord voor uw PKCS12 certificaat. (optioneel)</string>
   <string name="audioInput">Audio Invoer</string>
   <string name="audioInputMethodSum">De methode van audio invoer.</string>
   <string name="audioInputMethod">Doorstuur Methode</string>

@@ -70,7 +70,7 @@
   <string name="server_host">Adresse</string>
   <string name="server_label">Beschriftung</string>
   <string name="connecting">Verbinden</string>
-  <string name="connecting_to_server">Zu Server %1$s:%2$s verbinden</string>
+  <string name="connecting_to_server">Zu Server %1$s:%2$d verbinden</string>
   <string name="fragment_chat">Chat</string>
   <string name="fragment_channel">Kanal</string>
   <string name="menu_settings">Einstellungen</string>

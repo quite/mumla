@@ -462,7 +462,7 @@ public class MumlaService extends HumlaService implements
     private void setProximitySensorOn(boolean on) {
         if(on) {
             PowerManager pm = (PowerManager) getSystemService(POWER_SERVICE);
-            mProximityLock = pm.newWakeLock(PROXIMITY_SCREEN_OFF_WAKE_LOCK, "mumla_proximity");
+            mProximityLock = pm.newWakeLock(PROXIMITY_SCREEN_OFF_WAKE_LOCK, "Mumla:Proximity");
             mProximityLock.acquire();
         } else {
             if(mProximityLock != null) mProximityLock.release();

@@ -104,7 +104,17 @@ android {
     }
 
     lintOptions {
-        abortOnError false
-        disable "ExtraTranslation"
+        quiet false
+
+        disable "MissingSuperCall"
+        disable "DuplicateDefinition"
+        disable "WrongThread"
+        disable "InvalidPackage"
+        disable "EllipsizeMaxLines"
+
+        disable "MissingTranslation"
+
+        ignoreWarnings false
+        abortOnError true
     }
 }
