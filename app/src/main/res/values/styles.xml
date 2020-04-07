@@ -26,7 +26,6 @@
         <item name="android:textColorSecondaryInverse">#AAA</item>
 
         <item name="actionBarStyle">@style/MumlaDarkActionBar</item>
-        <item name="actionBarStyle">@style/MumlaDarkActionBar</item>
 
         <item name="colorPrimary">#454D5E</item>
         <item name="colorPrimaryDark">#2F3440</item>
@@ -44,15 +43,12 @@
         <item name="android:textColorPrimaryInverse">#FFF</item>
         <item name="android:textColorSecondaryInverse">#AAA</item>
 
-
-        <item name="actionBarStyle">@style/MumlaDarkActionBar</item>
         <item name="actionBarStyle">@style/MumlaDarkActionBar</item>
 
         <item name="cardStyle">@style/Theme.Mumla.Dark.CardView</item>
     </style>
 
     <style name="MumlaDarkActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid">
-        <item name="titleTextStyle">@style/MumlaDarkActionBarText</item>
         <item name="titleTextStyle">@style/MumlaDarkActionBarText</item>
     </style>
 
@@ -78,7 +74,6 @@
         <item name="android:colorBackground">@color/solarized_base3</item>
 
         <item name="actionBarStyle">@style/SolarizedLightActionBar</item>
-        <item name="actionBarStyle">@style/SolarizedLightActionBar</item>
 
         <item name="colorPrimary">@color/solarized_base2</item>
         <item name="colorPrimaryDark">@color/solarized_base3</item>
@@ -89,8 +84,6 @@
 
     <style name="SolarizedLightActionBar" parent="@style/Widget.AppCompat.ActionBar">
         <item name="background">@color/solarized_base2</item>
-        <item name="background">@color/solarized_base2</item>
-        <item name="titleTextStyle">@style/SolarizedLightActionBarText</item>
         <item name="titleTextStyle">@style/SolarizedLightActionBarText</item>
     </style>
 
@@ -114,7 +107,6 @@
         <item name="android:colorBackground">@color/solarized_base03</item>
 
         <item name="actionBarStyle">@style/SolarizedDarkActionBar</item>
-        <item name="actionBarStyle">@style/SolarizedDarkActionBar</item>
 
         <item name="colorPrimary">@color/solarized_base02</item>
         <item name="colorPrimaryDark">@color/solarized_base03</item>
@@ -125,8 +117,6 @@
 
     <style name="SolarizedDarkActionBar" parent="@style/Widget.AppCompat.ActionBar">
         <item name="background">@color/solarized_base02</item>
-        <item name="background">@color/solarized_base02</item>
-        <item name="titleTextStyle">@style/SolarizedDarkActionBarText</item>
         <item name="titleTextStyle">@style/SolarizedDarkActionBarText</item>
     </style>
 
