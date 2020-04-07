@@ -24,6 +24,9 @@ stages:
 assembleDebug:
   stage: build
   script:
+    - pushd libraries/humla/libs/humla-spongycastle
+    - ../../gradlew jar
+    - popd
     - ./gradlew assembleDebug
   artifacts:
     paths:
