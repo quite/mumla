@@ -54,7 +54,7 @@
   <string name="server_info_current_bandwidth">Huidig %.1f kbit/s</string>
   <!--Server matching-->
   <string name="server_match">Zoek Server</string>
-  <string name="server_match_progress">Server zoeken...</string>
+  <string name="server_match_progress">Server zoeken…</string>
   <string name="server_match_found">Server gevonden</string>
   <string name="server_match_not_found">Server niet gevonden</string>
   <string name="server_match_expand_country">Kon geen optimale servers in uw land vinden. Zoekopdracht wereldwijd uitbreiden?</string>
@@ -90,7 +90,7 @@
   <string name="confirm_delete_channel">Bent u zeker dat u dit kanaal wilt verwijderen?</string>
   <string name="disconnected">Verbinding verbroken</string>
   <string name="kicked_message">Gekicked van server.\nReden: %s</string>
-  <string name="loading">Laden...</string>
+  <string name="loading">Laden…</string>
   <string name="reset_key">Reset Knop</string>
   <string name="externalStorageUnavailable">Externe opslag niet bereikbaar, kan certificaat niet laden</string>
   <string name="addFavorite">Favoriet Toevoegen</string>
@@ -107,7 +107,7 @@
   <string name="generateCert">Certificaat Genereren</string>
   <string name="generateCertSuccess">Uw certificaat is ingesteld en opgeslagen als %s!</string>
   <string name="generateCertFailure">Certificaat genereren mislukt.</string>
-  <string name="generateCertProgress">Certificaat genereren...</string>
+  <string name="generateCertProgress">Certificaat genereren…</string>
   <string name="search">Zoeken</string>
   <string name="searchHint">Zoeken in kanalen en gebruikers</string>
   <string name="undocumentedWakeLock">Het lijkt er helaas op dat uw toestel geen nabijheidssensor heeft of scherm dimmen niet ondersteunt. Gelieve over te schakelen naar luidspreker.</string>
@@ -151,7 +151,7 @@
   <string name="server_list_title_public_internet">Openbaar Internet</string>
   <string name="ping">Ping</string>
   <string name="sort">Sorteren</string>
-  <string name="sortBy">Sorteren op...</string>
+  <string name="sortBy">Sorteren op…</string>
   <string name="name">Naam</string>
   <string name="country">Land</string>
   <string name="share">Delen</string>
@@ -162,7 +162,7 @@
   <string name="status_notify_muted">Gedempt.</string>
   <string name="comment">Commentaar</string>
   <string name="close">Sluit</string>
-  <string name="retrieving">Ophalen...</string>
+  <string name="retrieving">Ophalen…</string>
   <string name="search_name">Naam</string>
   <string name="search_country">Land</string>
   <string name="preferences_immutable">Deze instelling kan niet worden aangepast wanneer verbonden met een server.</string>

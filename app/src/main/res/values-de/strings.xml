@@ -54,7 +54,7 @@
   <string name="server_info_current_bandwidth">Aktuell %.1f kbit/s</string>
   <!--Server matching-->
   <string name="server_match">Server suchen</string>
-  <string name="server_match_progress">Einen Server finden...</string>
+  <string name="server_match_progress">Einen Server finden…</string>
   <string name="server_match_found">Server gefunden</string>
   <string name="server_match_not_found">Server nicht gefunden</string>
   <string name="server_match_expand_country">Konnte keinen optimalen Server in Ihrem Land finden. Suche auf die ganze Welt ausweiten?</string>
@@ -217,7 +217,7 @@
   <string name="channel_join">Betreten</string>
   <string name="certificate_info">Allgemeiner Name:\n%1$s\n\nGültig von:\n%2$s\n\nGültig bis:\n%3$s\n\nDigest (SHA-1):\n%4$s</string>
   <string name="invalid_host">Ungültiger Host</string>
-  <string name="invalid_port_range">Ungültiger Port (0-65535)</string>
+  <string name="invalid_port_range">Ungültiger Port (0–65535)</string>
   <string name="invalid_username">Ungültiger Benutzername</string>
   <string name="cancel_reconnect">Neuverbinden abbrechen</string>
   <string name="attempting_reconnect">Fehler: %s.\n\n Versuche erneut zu verbinden.</string>

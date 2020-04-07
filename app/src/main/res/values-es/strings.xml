@@ -54,7 +54,7 @@
   <string name="server_info_current_bandwidth">Actual %.1f kbit/s</string>
   <!--Server matching-->
   <string name="server_match">Buscar servidor</string>
-  <string name="server_match_progress">Buscando servidor...</string>
+  <string name="server_match_progress">Buscando servidor…</string>
   <string name="server_match_found">Servidor encontrado</string>
   <string name="server_match_not_found">No se pudo conectar al servidor</string>
   <string name="server_match_expand_country">No se pudo encontrar ningún servidor óptimo en tu país, ¿Desea ampliar el rango de búsqueda a mundial?</string>
@@ -151,7 +151,7 @@
   <string name="server_list_title_public_internet">Públicos</string>
   <string name="ping">Ping</string>
   <string name="sort">Ordenar</string>
-  <string name="sortBy">Ordenar por...</string>
+  <string name="sortBy">Ordenar por…</string>
   <string name="name">Nombre</string>
   <string name="country">País</string>
   <string name="share">Compartir</string>
@@ -162,7 +162,7 @@
   <string name="status_notify_muted">Mudo.</string>
   <string name="comment">Comentar</string>
   <string name="close">Cerrar</string>
-  <string name="retrieving">Obteniendo...</string>
+  <string name="retrieving">Obteniendo…</string>
   <string name="search_name">Nombre</string>
   <string name="search_country">País</string>
   <string name="preferences_immutable">Esta opción no puede ser cambiada mientras se esté conectado a un servidor.</string>
@@ -217,7 +217,7 @@
   <string name="channel_join">Unirse</string>
   <string name="certificate_info">Asunto:\n%1$s\n\nVálido desde:\n%2$s\n\nVálido hasta:\n%3$s\n\nDigest (SHA-1):\n%4$s</string>
   <string name="invalid_host">Host inválido</string>
-  <string name="invalid_port_range">Puerto inválido (0-65535)</string>
+  <string name="invalid_port_range">Puerto inválido (0–65535)</string>
   <string name="invalid_username">Nombre de usuario inválido</string>
   <string name="cancel_reconnect">Cancelar reconexión</string>
   <string name="attempting_reconnect">Error: %s.\n\nIntentando reconectar.</string>

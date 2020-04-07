@@ -57,7 +57,7 @@
   <string name="confirm_delete_server">Sei sicuro di voler eliminare questo server?</string>
   <string name="confirm_delete_channel">Sei sicuro di voler eliminare questo canale?</string>
   <string name="disconnected">Disconnesso.</string>
-  <string name="loading">Caricamento...</string>
+  <string name="loading">Caricamento…</string>
   <string name="addFavorite">Aggiungi preferito</string>
   <string name="removeFavorite">Rimuovi preferito</string>
   <string name="viewFavorites">Mostra preferiti</string>
@@ -67,7 +67,7 @@
   <string name="noFavorites">Nessun canale preferito.</string>
   <string name="messageReceived">Nuovo messaggio</string>
   <string name="generateCert">Genera certificato</string>
-  <string name="generateCertProgress">Generazione certificato...</string>
+  <string name="generateCertProgress">Generazione certificato…</string>
   <string name="search">Cerca</string>
   <string name="searchHint">Cerca canali e utenti</string>
   <string name="bluetooth">Bluetooth</string>
@@ -95,7 +95,7 @@
   <string name="server_list_title_lan">LAN</string>
   <string name="ping">Ping</string>
   <string name="sort">Ordine</string>
-  <string name="sortBy">Ordina per...</string>
+  <string name="sortBy">Ordina per…</string>
   <string name="name">Nome</string>
   <string name="country">Nazione</string>
   <string name="share">Condividi</string>
