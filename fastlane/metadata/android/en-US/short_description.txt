@@ -1,1 +1,1 @@
-Voice chat for Mumble servers.
+Voice chat on Mumble servers
