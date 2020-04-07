@@ -109,7 +109,6 @@ android {
         disable "MissingSuperCall"
         disable "WrongThread"
         disable "InvalidPackage"
-        disable "EllipsizeMaxLines"
 
         disable "MissingTranslation"
 

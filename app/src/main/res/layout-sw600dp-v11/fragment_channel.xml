@@ -72,8 +72,7 @@
                 android:text="Shouting to Channel"
                 android:textSize="6pt"
                 android:textColor="?android:textColorPrimary"
-                android:ellipsize="marquee"
-                android:maxLines="1"
+                android:singleLine="true"
                 android:gravity="left|center_vertical"
                 android:textStyle="italic"
                 android:padding="8dp"/>
