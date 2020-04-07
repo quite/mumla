@@ -17,6 +17,7 @@
 
 package se.lublin.mumla.servers;
 
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -388,6 +389,8 @@ public class PublicServerListFragment extends Fragment implements OnItemClickLis
             });
         }
 
+        // TODO? suppress for the executeOnExecutor() below
+        @SuppressLint("WrongThread")
         @Override
         protected ServerInfoResponse doInBackground(String... params) {
             final String country = params.length > 0 ? params[0] : null; // If a country is provided, search within country
