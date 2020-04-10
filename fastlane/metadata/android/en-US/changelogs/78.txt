@@ -1,0 +1,1 @@
+Connecting over Tor using Orbot should work better, and several messages in the UI now indicate that Tor is being used. Connecting to Hidden Services .onion address also works; DNS resolving is left to the Tor SOCKS proxy.
