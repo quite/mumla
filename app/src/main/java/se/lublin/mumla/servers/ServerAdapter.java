@@ -18,7 +18,6 @@
 package se.lublin.mumla.servers;
 
 import android.content.Context;
-import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;

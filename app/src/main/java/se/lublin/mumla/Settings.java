@@ -381,6 +381,9 @@ public class Settings {
     public boolean isTorEnabled() {
         return preferences.getBoolean(PREF_USE_TOR, DEFAULT_USE_TOR);
     }
+    public void disableTor() {
+        preferences.edit().putBoolean(PREF_USE_TOR, false).apply();
+    }
 
     public boolean isMuted() {
         return preferences.getBoolean(PREF_MUTED, DEFAULT_MUTED);

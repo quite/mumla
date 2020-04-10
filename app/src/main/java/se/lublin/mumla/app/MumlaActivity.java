@@ -29,7 +29,6 @@ import android.content.res.Configuration;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.media.AudioManager;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.preference.PreferenceManager;
@@ -58,7 +57,9 @@ import androidx.fragment.app.FragmentTransaction;
 
 import org.spongycastle.util.encoders.Hex;
 
+import java.net.InetSocketAddress;
 import java.net.MalformedURLException;
+import java.net.Socket;
 import java.security.KeyStore;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -66,11 +67,13 @@ import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 import info.guardianproject.netcipher.proxy.OrbotHelper;
 import se.lublin.humla.IHumlaService;
 import se.lublin.humla.IHumlaSession;
 import se.lublin.humla.model.Server;
+import se.lublin.humla.net.HumlaConnection;
 import se.lublin.humla.protobuf.Mumble;
 import se.lublin.humla.util.HumlaException;
 import se.lublin.humla.util.HumlaObserver;
@@ -564,17 +567,53 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
             return;
         }
 
-        // Prompt to start Orbot if enabled but not running
-        // TODO(acomminos): possibly detect onion address before connecting?
         if (mSettings.isTorEnabled()) {
-            if (!OrbotHelper.isOrbotRunning(this)) {
-                OrbotHelper.requestShowOrbotStart(this);
+            if (!OrbotHelper.isOrbotInstalled(this)) {
+                mSettings.disableTor();
+                AlertDialog.Builder adb = new AlertDialog.Builder(MumlaActivity.this);
+                adb.setMessage(R.string.orbot_not_installed);
+                adb.setPositiveButton(android.R.string.ok, null);
+                adb.show();
                 return;
+            } else {
+                if (!isPortOpen(HumlaConnection.TOR_HOST, HumlaConnection.TOR_PORT, 2000)) {
+                    AlertDialog.Builder adb = new AlertDialog.Builder(MumlaActivity.this);
+                    adb.setMessage(getString(R.string.orbot_tor_failed, HumlaConnection.TOR_PORT));
+                    adb.setPositiveButton(android.R.string.ok, null);
+                    adb.show();
+                    return;
+                }
             }
         }
 
         ServerConnectTask connectTask = new ServerConnectTask(this, mDatabase);
         connectTask.execute(server);
+    }
+
+    private boolean isPortOpen(final String host, final int port, final int timeout) {
+        final AtomicBoolean open = new AtomicBoolean(false);
+        try {
+            Thread thread = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        Socket socket = new Socket();
+                        socket.connect(new InetSocketAddress(host, port), timeout);
+                        socket.close();
+                        open.set(true);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+            thread.start();
+            thread.join();
+            return open.get();
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 
     @Override
@@ -658,8 +697,8 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
                                 Toast.LENGTH_SHORT).show();
                     }
                 });
-                mConnectingDialog.setMessage(getString(R.string.connecting_to_server, server.getHost(),
-                        server.getPort()));
+                mConnectingDialog.setMessage(getString(R.string.connecting_to_server,
+                        server.getHost(), server.getPort()) + " (Tor)");
                 mConnectingDialog.show();
                 break;
             case CONNECTION_LOST:
@@ -667,7 +706,7 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
                 if (!getService().isErrorShown()) {
                     HumlaException error = getService().getConnectionError();
                     AlertDialog.Builder ab = new AlertDialog.Builder(MumlaActivity.this);
-                    ab.setTitle(R.string.connectionRefused);
+                    ab.setTitle(getString(R.string.connectionRefused) + " (Tor)");
                     if (mService.isReconnecting()) {
                         ab.setMessage(getString(R.string.attempting_reconnect, error.getMessage()));
                         ab.setPositiveButton(R.string.cancel_reconnect, new DialogInterface.OnClickListener() {
@@ -682,7 +721,6 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
                     } else if (error.getReason() == HumlaException.HumlaDisconnectReason.REJECT &&
                                (error.getReject().getType() == Mumble.Reject.RejectType.WrongUserPW ||
                                 error.getReject().getType() == Mumble.Reject.RejectType.WrongServerPW)) {
-                        // FIXME(acomminos): Long conditional.
                         final EditText passwordField = new EditText(this);
                         passwordField.setInputType(InputType.TYPE_CLASS_TEXT |
                                 InputType.TYPE_TEXT_VARIATION_PASSWORD);
