@@ -125,7 +125,7 @@ public class MumlaService extends HumlaService implements
 
             mNotification = MumlaConnectionNotification.create(MumlaService.this,
                     getString(R.string.mumlaConnecting),
-                    getString(R.string.connecting) + " (Tor)",
+                    getString(R.string.connecting) + (mSettings.isTorEnabled() ? " (Tor)" : ""),
                     MumlaService.this);
             mNotification.show();
 
@@ -136,7 +136,7 @@ public class MumlaService extends HumlaService implements
         public void onConnected() {
             if (mNotification != null) {
                 mNotification.setCustomTicker(getString(R.string.mumlaConnected));
-                mNotification.setCustomContentText(getString(R.string.connected) + " (Tor)");
+                mNotification.setCustomContentText(getString(R.string.connected) + (mSettings.isTorEnabled() ? " (Tor)" : ""));
                 mNotification.setActionsShown(true);
                 mNotification.show();
             }
@@ -150,9 +150,9 @@ public class MumlaService extends HumlaService implements
             }
             if (e != null && !mSuppressNotifications) {
                 mReconnectNotification =
-                        MumlaReconnectNotification.show(MumlaService.this, e.getMessage() + " (Tor)",
-                                isReconnecting(),
-                                MumlaService.this);
+                        MumlaReconnectNotification.show(MumlaService.this,
+                                e.getMessage() + (mSettings.isTorEnabled() ? " (Tor)" : ""),
+                                isReconnecting(), MumlaService.this);
             }
         }
 

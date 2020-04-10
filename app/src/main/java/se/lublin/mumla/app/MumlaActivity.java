@@ -698,7 +698,7 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
                     }
                 });
                 mConnectingDialog.setMessage(getString(R.string.connecting_to_server,
-                        server.getHost(), server.getPort()) + " (Tor)");
+                        server.getHost(), server.getPort()) + (mSettings.isTorEnabled() ? " (Tor)" : ""));
                 mConnectingDialog.show();
                 break;
             case CONNECTION_LOST:
@@ -706,7 +706,7 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
                 if (!getService().isErrorShown()) {
                     HumlaException error = getService().getConnectionError();
                     AlertDialog.Builder ab = new AlertDialog.Builder(MumlaActivity.this);
-                    ab.setTitle(getString(R.string.connectionRefused) + " (Tor)");
+                    ab.setTitle(getString(R.string.connectionRefused) + (mSettings.isTorEnabled() ? " (Tor)" : ""));
                     if (mService.isReconnecting()) {
                         ab.setMessage(getString(R.string.attempting_reconnect, error.getMessage()));
                         ab.setPositiveButton(R.string.cancel_reconnect, new DialogInterface.OnClickListener() {
