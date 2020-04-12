@@ -25,8 +25,7 @@
               android:layout_marginRight="16dp"
               android:divider="?attr/dividerHorizontal"
               android:orientation="horizontal"
-              android:showDividers="middle"
-              tools:context=".ChannelActivity" >
+              android:showDividers="middle">
 
     <LinearLayout
         android:id="@+id/left_split"
