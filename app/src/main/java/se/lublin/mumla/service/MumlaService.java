@@ -490,6 +490,10 @@ public class MumlaService extends HumlaService implements
 
     @Override
     public void onOverlayToggled() {
+        // ditch notification shade/panel to make overlay presence/permission request visible
+        Intent close = new Intent(Intent.ACTION_CLOSE_SYSTEM_DIALOGS);
+        getApplicationContext().sendBroadcast(close);
+
         if (!mChannelOverlay.isShown()) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                 if (!android.provider.Settings.canDrawOverlays(getApplicationContext())) {
@@ -510,9 +514,6 @@ public class MumlaService extends HumlaService implements
         } else {
             mChannelOverlay.hide();
         }
-        // ditch the notification shade so overlay presence is visible
-        Intent close = new Intent(Intent.ACTION_CLOSE_SYSTEM_DIALOGS);
-        getApplicationContext().sendBroadcast(close);
     }
 
     @Override
