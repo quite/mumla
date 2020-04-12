@@ -113,5 +113,6 @@ android {
 
         ignoreWarnings false
         abortOnError true
+        explainIssues true
     }
 }
