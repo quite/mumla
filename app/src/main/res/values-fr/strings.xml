@@ -70,7 +70,7 @@
   <string name="server_host">Adresse</string>
   <string name="server_label">Libellé</string>
   <string name="connecting">Connexion</string>
-  <string name="connecting_to_server">Connexion à %1$s:%2$d</string>
+  <string name="connecting_to_server">Connexion à %s</string>
   <string name="fragment_chat">Chat</string>
   <string name="fragment_channel">canal</string>
   <string name="menu_settings">Paramètres</string>
@@ -221,4 +221,5 @@
   <string name="invalid_username">Nom d\'utilisateur invalide</string>
   <string name="cancel_reconnect">Annuler la reconnexion</string>
   <string name="attempting_reconnect">Erreur: %s.\n\nTentative de reconnexion.</string>
+  <string name="default_">Défaut</string>
 </resources>

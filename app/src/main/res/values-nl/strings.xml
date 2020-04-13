@@ -70,7 +70,7 @@
   <string name="server_host">Adres</string>
   <string name="server_label">Label</string>
   <string name="connecting">Verbinden</string>
-  <string name="connecting_to_server">Verbinden met %1$s:%2$d</string>
+  <string name="connecting_to_server">Verbinden met %s</string>
   <string name="fragment_chat">Chat</string>
   <string name="fragment_channel">Kanaal</string>
   <string name="menu_settings">Instellingen</string>
@@ -220,4 +220,5 @@
   <string name="invalid_port_range">Ongeldige poort (1-65535)</string>
   <string name="invalid_username">Ongeldige Gebruikersnaam</string>
   <string name="cancel_reconnect">Herverbinden annuleren </string>
+  <string name="default_">Standaard</string>
 </resources>

@@ -96,7 +96,7 @@
     <string name="server_host">Address</string>
     <string name="server_label">Label</string>
     <string name="connecting">Connecting</string>
-    <string name="connecting_to_server">Connecting to %1$s:%2$d</string>
+    <string name="connecting_to_server">Connecting to %s</string>
     <string name="fragment_chat">Chat</string>
     <string name="fragment_channel">Channel</string>
     <string name="menu_settings">Settings</string>
@@ -273,4 +273,5 @@
     <string name="grant_perm_draw_over_apps">Please try again after granting permission to draw over other apps.</string>
     <string name="orbot_not_installed">Orbot app is not installed. Disabling Tor!</string>
     <string name="orbot_tor_failed">Failed to connect to local Tor proxy on port %d (SOCKS).\n\nPlease ensure that Orbot app is running properly.</string>
+    <string name="default_">Default</string>
 </resources>

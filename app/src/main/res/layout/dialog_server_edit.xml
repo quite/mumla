@@ -33,52 +33,59 @@
         android:layout_height="wrap_content"
         android:inputType="text" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/server_host" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/server_host" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/server_port" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <EditText
             android:id="@+id/server_edit_host"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:inputType="textUri" />
-
         <EditText
             android:id="@+id/server_edit_port"
             android:layout_width="wrap_content"
+            android:maxEms="5"
             android:layout_height="wrap_content"
-            android:hint="@string/default_server_port"
-            android:inputType="number">
-
+            android:hint="@string/default_"
+            android:inputType="number"
+            android:maxLength="5">
         </EditText>
-
     </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/server_username"></TextView>
+        android:text="@string/server_username" />
 
     <EditText
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:id="@+id/server_edit_username"
-        android:inputType="text"></EditText>
+        android:inputType="text" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/server_password"></TextView>
+        android:text="@string/server_password" />
 
     <EditText
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:id="@+id/server_edit_password"
-        android:inputType="textPassword"></EditText>
+        android:inputType="textPassword" />
 </LinearLayout>

@@ -48,6 +48,7 @@ public class ServerInfoTask extends AsyncTask<Server, Void, ServerInfoResponse> 
 			ByteBuffer buffer = ByteBuffer.allocate(12);
 			buffer.putInt(0); // Request type
 			buffer.putLong(server.getId()); // Identifier
+			// TODO SRV use looked up port here.
 			DatagramPacket requestPacket = new DatagramPacket(buffer.array(), 12, host, server.getPort());
 			
 			// Send packet and wait for response

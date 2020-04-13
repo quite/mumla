@@ -30,7 +30,6 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 
-import se.lublin.humla.Constants;
 import se.lublin.humla.model.Server;
 import se.lublin.mumla.R;
 import se.lublin.mumla.Settings;
@@ -136,7 +135,9 @@ public class ServerEditFragment extends DialogFragment {
         if (oldServer != null) {
             mNameEdit.setText(oldServer.getName());
             mHostEdit.setText(oldServer.getHost());
-            mPortEdit.setText(String.valueOf(oldServer.getPort()));
+            if (oldServer.getPort() != 0) {
+                mPortEdit.setText(String.valueOf(oldServer.getPort()));
+            }
             mUsernameEdit.setText(oldServer.getUsername());
             mPasswordEdit.setText(oldServer.getPassword());
         }
@@ -162,7 +163,10 @@ public class ServerEditFragment extends DialogFragment {
         try {
             port = Integer.parseInt((mPortEdit).getText().toString());
         } catch (final NumberFormatException ex) {
-            port = Constants.DEFAULT_PORT;
+            // Setting 0, meaning that port isn't configured. Consumers of
+            // Server.getPort() will have to deal with that. Like displaying
+            // nothing, looking up SRV record, using Constants.DEFAULT_PORT.
+            port = 0;
         }
 
         String username = (mUsernameEdit).getText().toString().trim();

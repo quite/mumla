@@ -80,7 +80,10 @@ public abstract class ServerAdapter<E extends Server> extends ArrayAdapter<E> {
         nameText.setText(server.getName());
 
         if(userText != null) userText.setText(server.getUsername());
-        if(addressText != null) addressText.setText(server.getHost()+":"+server.getPort());
+        if (addressText != null) {
+            addressText.setText(server.getHost()
+                                + (server.getPort() == 0 ? "" : ":" + server.getPort()));
+        }
 
         final ImageView moreButton = (ImageView) view.findViewById(R.id.server_row_more);
         if(moreButton != null) {

@@ -135,7 +135,8 @@ public class FavouriteServerListFragment extends Fragment implements OnItemClick
 
     public void shareServer(Server server) {
         // Build Mumble server URL
-        String serverUrl = "mumble://"+server.getHost()+":"+server.getPort()+"/";
+        String serverUrl = "mumble://" + server.getHost()
+            + (server.getPort() == 0 ? "" : ":" + server.getPort()) + "/";
 
         Intent intent = new Intent();
         intent.setAction(Intent.ACTION_SEND);

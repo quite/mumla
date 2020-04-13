@@ -697,8 +697,9 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
                                 Toast.LENGTH_SHORT).show();
                     }
                 });
-                mConnectingDialog.setMessage(getString(R.string.connecting_to_server,
-                        server.getHost(), server.getPort()) + (mSettings.isTorEnabled() ? " (Tor)" : ""));
+                // TODO SRV ? we no longer display port, as we might not know
+                mConnectingDialog.setMessage(getString(R.string.connecting_to_server, server.getHost())
+                        + (mSettings.isTorEnabled() ? " (Tor)" : ""));
                 mConnectingDialog.show();
                 break;
             case CONNECTION_LOST:
