@@ -79,7 +79,6 @@ import se.lublin.humla.util.HumlaException;
 import se.lublin.humla.util.HumlaObserver;
 import se.lublin.humla.util.MumbleURLParser;
 import se.lublin.mumla.BuildConfig;
-import se.lublin.mumla.Constants;
 import se.lublin.mumla.R;
 import se.lublin.mumla.Settings;
 import se.lublin.mumla.channel.AccessTokenFragment;
@@ -100,6 +99,8 @@ import se.lublin.mumla.service.MumlaService;
 import se.lublin.mumla.util.HumlaServiceFragment;
 import se.lublin.mumla.util.HumlaServiceProvider;
 import se.lublin.mumla.util.MumlaTrustStore;
+
+import static se.lublin.mumla.Constants.TAG;
 
 public class MumlaActivity extends AppCompatActivity implements ListView.OnItemClickListener,
         FavouriteServerListFragment.ServerConnectHandler, HumlaServiceProvider, DatabaseProvider,
@@ -602,7 +603,7 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
                         socket.close();
                         open.set(true);
                     } catch (Exception e) {
-                        e.printStackTrace();
+                        Log.d(TAG, "isPortOpen() run()" + e);
                     }
                 }
             });
@@ -611,7 +612,7 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
             return open.get();
         }
         catch (Exception e) {
-            e.printStackTrace();
+            Log.d(TAG, "isPortOpen() " + e);
         }
         return false;
     }
@@ -625,7 +626,7 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
                 if (mServerPendingPerm != null) {
                     connectToServer(mServerPendingPerm);
                 } else {
-                    Log.w(Constants.TAG, "No pending server after permission was granted");
+                    Log.w(TAG, "No pending server after permission was granted");
                 }
             } else {
                 Toast.makeText(MumlaActivity.this, getString(R.string.grant_perm_microphone),

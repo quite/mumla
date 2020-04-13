@@ -43,6 +43,8 @@ import se.lublin.humla.Constants;
 import se.lublin.mumla.db.DatabaseCertificate;
 import se.lublin.mumla.db.MumlaSQLiteDatabase;
 
+import static se.lublin.mumla.Constants.TAG;
+
 /**
  * Singleton settings class for universal access to the app's preferences.
  * @author morlunk
@@ -189,7 +191,7 @@ public class Settings {
             String certPath = preferences.getString(PREF_CERT_DEPRECATED, "");
             String certPassword = preferences.getString(PREF_CERT_PASSWORD_DEPRECATED, "");
 
-            Log.d(se.lublin.mumla.Constants.TAG, "Migrating certificate from " + certPath);
+            Log.d(TAG, "Migrating certificate from " + certPath);
             try {
                 File certFile = new File(certPath);
                 FileInputStream certInput = new FileInputStream(certFile);

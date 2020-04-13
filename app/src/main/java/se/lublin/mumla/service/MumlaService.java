@@ -30,6 +30,7 @@ import android.os.IBinder;
 import android.os.PowerManager;
 import android.preference.PreferenceManager;
 import android.speech.tts.TextToSpeech;
+import android.util.Log;
 import android.view.WindowManager;
 import android.widget.Toast;
 
@@ -55,6 +56,8 @@ import se.lublin.mumla.R;
 import se.lublin.mumla.Settings;
 import se.lublin.mumla.service.ipc.TalkBroadcastReceiver;
 import se.lublin.mumla.util.HtmlUtils;
+
+import static se.lublin.mumla.Constants.TAG;
 
 /**
  * An extension of the Humla service with some added Mumla-exclusive non-standard Mumble features.
