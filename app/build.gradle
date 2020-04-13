@@ -39,6 +39,7 @@ repositories {
 }
 
 dependencies {
+    implementation 'androidx.multidex:multidex:2.0.1'
     implementation project(":libraries:humla")
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.cardview:cardview:1.0.0'
@@ -59,21 +60,23 @@ android {
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 29
+        multiDexEnabled true
+
         applicationId "se.lublin.mumla"
         versionCode 78
         versionName "3.4.4"
+
         setProperty("archivesBaseName", "mumla")
+
         testInstrumentationRunner "android.test.InstrumentationTestRunner"
         buildConfigField "boolean", "DONATE_NAG", "false"
     }
 
     buildTypes {
         release {
-            minifyEnabled false
             if (signingFile.exists()) signingConfig signingConfigs.release
         }
         debug {
-            minifyEnabled false
         }
     }
 
