@@ -194,7 +194,7 @@ public class ServerEditFragment extends DialogFragment {
         } else if (mPortEdit.getText().length() > 0) {
             try {
                 int port = Integer.parseInt(mPortEdit.getText().toString());
-                if (port < 0 || port > 65535) {
+                if (port < 1 || port > 65535) {
                     mPortEdit.setError(getString(R.string.invalid_port_range));
                     return false;
                 }

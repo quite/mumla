@@ -217,7 +217,7 @@
   <string name="channel_join">参加</string>
   <string name="certificate_info">サブジェクト:\n%1$s\n\n有効期限開始:\n%2$s\n\n有効期限終了:\n%3$s\n\nダイジェスト (SHA-1):\n%4$s</string>
   <string name="invalid_host">ホストが正しくありません</string>
-  <string name="invalid_port_range">ポートが正しくありません (0–65535)</string>
+  <string name="invalid_port_range">ポートが正しくありません (1-65535)</string>
   <string name="invalid_username">ユーザー名が</string>
   <string name="cancel_reconnect">再接続をキャンセル</string>
   <string name="attempting_reconnect">エラー: %s.\n\n再接続の試行中.</string>
