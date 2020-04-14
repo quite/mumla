@@ -85,10 +85,10 @@ public class ServerInfoFragment extends HumlaServiceFragment {
         mOSVersionView.setText(getString(R.string.server_info_version, session.getServerOSName(), session.getServerOSVersion()));
         mTCPLatencyView.setText(getString(R.string.server_info_latency, (float)session.getTCPLatency()*Math.pow(10, -3)));
         mUDPLatencyView.setText(getString(R.string.server_info_latency, (float)session.getUDPLatency()*Math.pow(10, -3)));
-        // TODO SRV should figure out port we're actually connected to
+        // TODO SRV note also getHost,Port?
         mHostView.setText(getString(R.string.server_info_host,
-                getService().getTargetServer().getHost(),
-                getService().getTargetServer().getPort()));
+                getService().getTargetServer().getSrvHost(),
+                getService().getTargetServer().getSrvPort()));
 
         String codecName;
         HumlaUDPMessageType codecType = session.getCodec();

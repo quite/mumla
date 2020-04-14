@@ -698,7 +698,8 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
                                 Toast.LENGTH_SHORT).show();
                     }
                 });
-                // TODO SRV ? we no longer display port, as we might not know
+                // SRV lookup is done later, so we no longer show the port (and
+                // only the configured hostname)
                 mConnectingDialog.setMessage(getString(R.string.connecting_to_server, server.getHost())
                         + (mSettings.isTorEnabled() ? " (Tor)" : ""));
                 mConnectingDialog.show();
