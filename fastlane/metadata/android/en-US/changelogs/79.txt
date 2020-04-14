@@ -1,0 +1,1 @@
+Implement lookup of SRV records for server address. Enables simple server addresses such as `example.net`, where a SRV record for the domain in DNS indicates the server host and port to connect to. See: https://wiki.mumble.info/wiki/SRV_Record
