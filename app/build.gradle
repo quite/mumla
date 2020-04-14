@@ -63,8 +63,8 @@ android {
         multiDexEnabled true
 
         applicationId "se.lublin.mumla"
-        versionCode 78
-        versionName "3.4.4"
+        versionCode 79
+        versionName "3.5.0-beta1"
 
         setProperty("archivesBaseName", "mumla")
 
