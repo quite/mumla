@@ -9,6 +9,10 @@ Mumla should run on Android 4.0 (IceCreamSandwich) and later (API Level 14+).
 
 More to come...
 
+## Download
+
+[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/se.lublin.mumla/)
+
 ## Building on GNU/Linux
 
     git submodule update --init --recursive
