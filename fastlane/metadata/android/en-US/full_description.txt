@@ -1,5 +1,4 @@
-Mumble is a free, open source, low latency, high quality voice chat
-application. This is a continuation (a fork) of Andrew Comminos' app Plumble.
+Mumla is a client for Mumble -- the free, open source voice chat system. This is a continuation (a fork) of Andrew Comminos' app Plumble.
 
 * Opus, CELT, and Speex codec support
 * Certificates
