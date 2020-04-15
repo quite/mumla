@@ -15,10 +15,14 @@ More to come...
 
 ## Building on GNU/Linux
 
+TODO: humla-spongycastle should be built as a sub-project of Humla's Gradle,
+but currently isn't.
+
+    pushd libraries/humla/libs/humla-spongycastle
+    ../../gradlew jar
+    popd
     git submodule update --init --recursive
     ./gradlew assembleDebug
-
-It's that simple!
 
 ## License
 
