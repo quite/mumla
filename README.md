@@ -18,10 +18,12 @@ More to come...
 TODO: humla-spongycastle should be built as a sub-project of Humla's Gradle,
 but currently isn't.
 
+    git submodule update --init --recursive
+
     pushd libraries/humla/libs/humla-spongycastle
     ../../gradlew jar
     popd
-    git submodule update --init --recursive
+
     ./gradlew assembleDebug
 
 ## License
