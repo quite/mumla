@@ -56,6 +56,8 @@ public class ServerConnectTask extends AsyncTask<Server, Void, Intent> {
         /* Convert input method defined in settings to an integer format used by Humla. */
         int inputMethod = mSettings.getHumlaInputMethod();
 
+        // TODO AcousticEchoCanceler should perhaps be paired with
+        //  this AudioSource.VOICE_COMMUNICATION, if available on platform
         int audioSource = mSettings.isHandsetMode() ?
                 MediaRecorder.AudioSource.DEFAULT : MediaRecorder.AudioSource.MIC;
         int audioStream = mSettings.isHandsetMode() ?
