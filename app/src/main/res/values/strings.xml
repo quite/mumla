@@ -270,7 +270,7 @@
     <string name="shout_configure">Configure Voice Target</string>
     <string name="grant_perm_microphone">Please grant permission to the microphone.</string>
     <string name="grant_perm_storage">Please grant permission to external storage.</string>
-    <string name="grant_perm_draw_over_apps">Please try again after granting permission to draw over other apps.</string>
+    <string name="grant_perm_draw_over_apps">Please grant permission to display over other apps.</string>
     <string name="orbot_not_installed">Orbot app is not installed. Disabling Tor!</string>
     <string name="orbot_tor_failed">Failed to connect to local Tor proxy on port %d (SOCKS).\n\nPlease ensure that Orbot app is running properly.</string>
     <string name="default_">Default</string>

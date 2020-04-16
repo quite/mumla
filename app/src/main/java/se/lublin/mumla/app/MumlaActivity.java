@@ -29,8 +29,6 @@ import android.content.res.Configuration;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.media.AudioManager;
-import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.preference.PreferenceManager;
@@ -547,19 +545,6 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
                     PERMISSIONS_REQUEST_RECORD_AUDIO);
             mServerPendingPerm = server;
             return;
-        }
-
-        if (mSettings.isHotCornerEnabled()) {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                if (!android.provider.Settings.canDrawOverlays(this)) {
-                    Intent showSetting = new Intent(android.provider.Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
-                            Uri.parse("package:" + getPackageName()));
-                    showSetting.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    startActivity(showSetting);
-                    Toast.makeText(this, R.string.grant_perm_draw_over_apps, Toast.LENGTH_LONG).show();
-                    return;
-                }
-            }
         }
 
         // Check if we're already connected to a server; if so, inform user.

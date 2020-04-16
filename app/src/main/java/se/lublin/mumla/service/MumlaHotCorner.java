@@ -18,12 +18,15 @@
 package se.lublin.mumla.service;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.PixelFormat;
+import android.net.Uri;
 import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import se.lublin.mumla.R;
 
@@ -87,8 +90,20 @@ public class MumlaHotCorner implements View.OnTouchListener {
     }
 
     public void setShown(boolean shown) {
-        if(shown == mShown) return;
-        if(shown) {
+        if (shown == mShown) {
+            return;
+        }
+        if (shown) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                if (!android.provider.Settings.canDrawOverlays(mContext)) {
+                    Intent showSetting = new Intent(android.provider.Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
+                            Uri.parse("package:" + mContext.getPackageName()));
+                    showSetting.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    mContext.startActivity(showSetting);
+                    Toast.makeText(mContext, R.string.grant_perm_draw_over_apps, Toast.LENGTH_LONG).show();
+                    return;
+                }
+            }
             mWindowManager.addView(mView, mParams);
         } else {
             mWindowManager.removeView(mView);
