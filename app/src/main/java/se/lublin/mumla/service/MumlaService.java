@@ -30,7 +30,6 @@ import android.os.IBinder;
 import android.os.PowerManager;
 import android.preference.PreferenceManager;
 import android.speech.tts.TextToSpeech;
-import android.util.Log;
 import android.view.WindowManager;
 import android.widget.Toast;
 
@@ -56,8 +55,6 @@ import se.lublin.mumla.R;
 import se.lublin.mumla.Settings;
 import se.lublin.mumla.service.ipc.TalkBroadcastReceiver;
 import se.lublin.mumla.util.HtmlUtils;
-
-import static se.lublin.mumla.Constants.TAG;
 
 /**
  * An extension of the Humla service with some added Mumla-exclusive non-standard Mumble features.
@@ -502,11 +499,6 @@ public class MumlaService extends HumlaService implements
                 if (!android.provider.Settings.canDrawOverlays(getApplicationContext())) {
                     Intent showSetting = new Intent(android.provider.Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
                             Uri.parse("package:" + getPackageName()));
-                    // TODO maybe if we could get hold of an activity, we could
-                    //  fire the show-permission-setting intent using
-                    //  startActivityForResult() and be notified when user is
-                    //  done through an override onActivityResult(), and then
-                    //  retry showing the overlay
                     showSetting.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(showSetting);
                     Toast.makeText(this, R.string.grant_perm_draw_over_apps, Toast.LENGTH_LONG).show();
