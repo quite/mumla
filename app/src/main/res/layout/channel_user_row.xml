@@ -37,15 +37,6 @@
             <!--android:layout_margin="2dp"-->
             <!--android:scaleType="centerCrop"/>-->
 
-        <se.lublin.mumla.util.TalkingIndicatorView
-            android:id="@+id/user_row_talk_indicator"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            custom:arcColor="@color/ripple_talk_state_on"
-            custom:arcWidth="2dp"
-            custom:cyclePeriod="1200"
-            custom:arcLength="70dp"/>
-
         <ImageView
             android:id="@+id/user_row_talk_highlight"
             android:layout_width="match_parent"

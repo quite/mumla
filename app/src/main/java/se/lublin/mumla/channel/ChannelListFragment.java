@@ -117,7 +117,7 @@ public class ChannelListFragment extends HumlaServiceFragment implements OnChann
 
         @Override
         public void onUserTalkStateUpdated(IUser user) {
-            mChannelListAdapter.animateUserTalkStateUpdate(user, mChannelView);
+            mChannelListAdapter.animateUserStateUpdate(user, mChannelView);
         }
 	};
 
