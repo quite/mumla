@@ -297,7 +297,6 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
         getSupportActionBar().setHomeButtonEnabled(true);
 
         AlertDialog.Builder dadb = new AlertDialog.Builder(this);
-        dadb.setMessage(R.string.disconnectSure);
         dadb.setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -447,6 +446,8 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
     @Override
     public void onBackPressed() {
         if(mService != null && mService.isConnected()) {
+            mDisconnectPromptBuilder.setMessage(getString(R.string.disconnectSure,
+                    mService.getTargetServer().getName()));
             mDisconnectPromptBuilder.show();
             return;
         }

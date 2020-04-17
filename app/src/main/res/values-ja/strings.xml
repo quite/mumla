@@ -78,7 +78,7 @@
   <string name="mute">ミュート</string>
   <string name="deafen">防音</string>
   <string name="disconnect">切断</string>
-  <string name="disconnectSure">Mumble から切断してもよろしいですか?</string>
+  <string name="disconnectSure">%s から切断してもよろしいですか?</string>
   <string name="save">保存</string>
   <string name="add">追加</string>
   <string name="preferences">プリファレンス</string>

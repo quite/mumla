@@ -96,7 +96,7 @@
     <string name="server_host">Address</string>
     <string name="server_label">Label</string>
     <string name="connecting">Connecting</string>
-    <string name="connecting_to_server">Connecting to %s…</string>
+    <string name="connecting_to_server">Connecting to %s</string>
     <string name="fragment_chat">Chat</string>
     <string name="fragment_channel">Channel</string>
     <string name="menu_settings">Settings</string>
@@ -153,7 +153,7 @@
     <string name="clearChat">Clear Chat</string>
     <string name="connected">Connected</string>
     <string name="mumlaConnected">Mumla connected</string>
-    <string name="mumlaConnecting">Mumla connecting…</string>
+    <string name="mumlaConnecting">Mumla connecting</string>
     <string name="mumlaDisconnected">Mumla disconnected</string>
     <string name="lostConnection">Lost connection to server %s.</string>
     <string name="resume">Resume</string>

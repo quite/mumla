@@ -78,7 +78,7 @@
   <string name="mute">Dempen</string>
   <string name="deafen">Doof maken</string>
   <string name="disconnect">Verbinding verbreken</string>
-  <string name="disconnectSure">Bent u zeker dat u de verbinding met Mumble wilt verbreken?</string>
+  <string name="disconnectSure">Bent u zeker dat u de verbinding met %s wilt verbreken?</string>
   <string name="save">Opslaan</string>
   <string name="add">Toevoegen</string>
   <string name="preferences">Voorkeuren</string>

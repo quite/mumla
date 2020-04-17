@@ -78,7 +78,7 @@
   <string name="mute">Stumm stellen</string>
   <string name="deafen">Taub stellen</string>
   <string name="disconnect">Verbindung trennen</string>
-  <string name="disconnectSure">Sind Sie sicher, dass Sie die Verbindung trennen möchten?</string>
+  <string name="disconnectSure">Sind Sie sicher, dass Sie die Verbindung mit %s trennen möchten?</string>
   <string name="save">Speichern</string>
   <string name="add">Hinzufügen</string>
   <string name="preferences">Einstellungen</string>

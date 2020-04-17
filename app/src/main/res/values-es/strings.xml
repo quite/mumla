@@ -78,7 +78,7 @@
   <string name="mute">Enmudecerse</string>
   <string name="deafen">Ensordecerse</string>
   <string name="disconnect">Desconectar</string>
-  <string name="disconnectSure">¿Está seguro de que desea desconectarse de este servidor de Mumble?</string>
+  <string name="disconnectSure">¿Está seguro de que desea desconectarse del servidor %s?</string>
   <string name="save">Guardar</string>
   <string name="add">Añadir</string>
   <string name="preferences">Preferencias</string>
