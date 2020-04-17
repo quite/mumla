@@ -22,8 +22,8 @@
   <!--Channel menu-->
   <string name="channel_menu_pin">Pin</string>
   <!--Comment Fragment-->
-  <string name="comment_edit_source">MODIFICA SORGENTE</string>
-  <string name="comment_view_source">MOSTRA SORGENTE</string>
+  <string name="comment_edit_source">Modifica sorgente</string>
+  <string name="comment_view_source">Mostra sorgente</string>
   <!--Server Info Fragment-->
   <string name="server_info_protocol">Protocollo %s.</string>
   <string name="server_info_version">%1$s (%2$s)</string>

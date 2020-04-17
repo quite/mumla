@@ -35,9 +35,9 @@
   <!--Channel menu-->
   <string name="channel_menu_pin">Fijar</string>
   <!--Comment Fragment-->
-  <string name="comment_view">MOSTRAR</string>
-  <string name="comment_edit_source">EDITAR FUENTE</string>
-  <string name="comment_view_source">VER FUENTE</string>
+  <string name="comment_view">Mostrar</string>
+  <string name="comment_edit_source">Editar fuente</string>
+  <string name="comment_view_source">Ver fuente</string>
   <!--Server Info Fragment-->
   <string name="control_channel">Controlar canal</string>
   <string name="tcp_encryption_mode">Cifrado con AES256-SHA de 256 bits</string>
@@ -73,7 +73,7 @@
   <string name="fragment_chat">Chat</string>
   <string name="fragment_channel">Canal</string>
   <string name="menu_settings">Opciones</string>
-  <string name="ptt">PRESIONAR-PARA-HABLAR</string>
+  <string name="ptt">Presionar-para-hablar</string>
   <string name="mute">Enmudecerse</string>
   <string name="deafen">Ensordecerse</string>
   <string name="disconnect">Desconectar</string>

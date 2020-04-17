@@ -35,9 +35,9 @@
   <!--Channel menu-->
   <string name="channel_menu_pin">Prik op</string>
   <!--Comment Fragment-->
-  <string name="comment_view">WEERGEVEN</string>
-  <string name="comment_edit_source">BEWERK BRON</string>
-  <string name="comment_view_source">BEKIJK BRON</string>
+  <string name="comment_view">Weergeven</string>
+  <string name="comment_edit_source">Bewerk bron</string>
+  <string name="comment_view_source">Bekijk bron</string>
   <!--Server Info Fragment-->
   <string name="control_channel">Controle Kanaal</string>
   <string name="tcp_encryption_mode">Versleuteld met 256 bit AES256-SHA</string>
@@ -73,7 +73,7 @@
   <string name="fragment_chat">Chat</string>
   <string name="fragment_channel">Kanaal</string>
   <string name="menu_settings">Instellingen</string>
-  <string name="ptt">PUSH TO TALK</string>
+  <string name="ptt">Push-to-talk</string>
   <string name="mute">Dempen</string>
   <string name="deafen">Doof maken</string>
   <string name="disconnect">Verbinding verbreken</string>

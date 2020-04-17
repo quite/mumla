@@ -35,9 +35,9 @@
   <!--Channel menu-->
   <string name="channel_menu_pin">Épingle</string>
   <!--Comment Fragment-->
-  <string name="comment_view">AFFICHAGE</string>
-  <string name="comment_edit_source">ÉDITER LA SOURCE</string>
-  <string name="comment_view_source">VOIR LA SOURCE</string>
+  <string name="comment_view">Affichage</string>
+  <string name="comment_edit_source">Éditer la source</string>
+  <string name="comment_view_source">Voir la source</string>
   <!--Server Info Fragment-->
   <string name="control_channel">Canal de contrôle</string>
   <string name="tcp_encryption_mode">Chiffré en AES256-SHA 256 bit</string>
@@ -73,7 +73,7 @@
   <string name="fragment_chat">Chat</string>
   <string name="fragment_channel">canal</string>
   <string name="menu_settings">Paramètres</string>
-  <string name="ptt">APPUYER POUR PARLER</string>
+  <string name="ptt">Appuyer pour parler</string>
   <string name="mute">Muet</string>
   <string name="deafen">Sourd</string>
   <string name="disconnect">Déconnecter</string>

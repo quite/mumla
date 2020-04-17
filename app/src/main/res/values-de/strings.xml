@@ -35,9 +35,9 @@
   <!--Channel menu-->
   <string name="channel_menu_pin">Pin</string>
   <!--Comment Fragment-->
-  <string name="comment_view">ANZEIGEN</string>
-  <string name="comment_edit_source">QUELLTEXT BEARBEITEN</string>
-  <string name="comment_view_source">QUELLTEXT ANZEIGEN</string>
+  <string name="comment_view">Anzeigen</string>
+  <string name="comment_edit_source">Quelltext bearbeiten</string>
+  <string name="comment_view_source">Quelltext anzeigen</string>
   <!--Server Info Fragment-->
   <string name="control_channel">Steuerkanal</string>
   <string name="tcp_encryption_mode">Verschlüsselt mit 256 Bit AES256-SHA</string>
