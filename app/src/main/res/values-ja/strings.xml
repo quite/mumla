@@ -5,7 +5,6 @@
   <string name="drawer_close">ドロワーを閉じる</string>
   <string name="drawer_not_connected">接続されていません</string>
   <string name="drawer_server">サーバー</string>
-  <string name="drawer_info">情報</string>
   <string name="drawer_tokens">アクセストークン</string>
   <string name="drawer_pinned">ピンドチャンネル</string>
   <string name="drawer_header_servers">サーバー</string>

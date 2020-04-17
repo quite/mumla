@@ -5,7 +5,6 @@
   <string name="drawer_close">Drawer schließen</string>
   <string name="drawer_not_connected">Nicht verbunden</string>
   <string name="drawer_server">Server</string>
-  <string name="drawer_info">Informationen</string>
   <string name="drawer_tokens">Zugriffscodes</string>
   <string name="drawer_pinned">Gepinnte Kanäle</string>
   <string name="drawer_header_servers">Server</string>

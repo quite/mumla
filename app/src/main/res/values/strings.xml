@@ -23,7 +23,6 @@
     <string name="drawer_close">Close Drawer</string>
     <string name="drawer_not_connected">Not Connected</string>
     <string name="drawer_server">All Channels</string>
-    <string name="drawer_info">Information</string>
     <string name="drawer_tokens">Access Tokens</string>
     <string name="drawer_pinned">Pinned Channels</string>
     <string name="drawer_header_servers">Servers</string>

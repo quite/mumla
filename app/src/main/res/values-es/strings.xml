@@ -5,7 +5,6 @@
   <string name="drawer_close">Cerrar barra de navegación</string>
   <string name="drawer_not_connected">No conectado</string>
   <string name="drawer_server">Servidor</string>
-  <string name="drawer_info">Información</string>
   <string name="drawer_tokens">Tokens de acceso</string>
   <string name="drawer_pinned">Canales fijados</string>
   <string name="drawer_header_servers">Servidores</string>

@@ -3,7 +3,6 @@
   <!--Drawer pane-->
   <string name="drawer_not_connected">Non connesso</string>
   <string name="drawer_server">Server</string>
-  <string name="drawer_info">Informazioni</string>
   <string name="drawer_header_servers">Server</string>
   <string name="drawer_favorites">Favoriti</string>
   <string name="drawer_lan">LAN</string>
