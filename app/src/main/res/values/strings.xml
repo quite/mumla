@@ -154,7 +154,7 @@
     <string name="mumlaConnected">Mumla connected</string>
     <string name="mumlaConnecting">Mumla connecting</string>
     <string name="mumlaDisconnected">Mumla disconnected</string>
-    <string name="lostConnection">Lost connection to server %s.</string>
+    <string name="lostConnection">Lost connection to the server.</string>
     <string name="resume">Resume</string>
     <string name="channel">Channel</string>
     <string name="user">User</string>
