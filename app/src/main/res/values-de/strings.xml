@@ -219,6 +219,6 @@
   <string name="invalid_port_range">Ungültiger Port (1-65535)</string>
   <string name="invalid_username">Ungültiger Benutzername</string>
   <string name="cancel_reconnect">Neuverbinden abbrechen</string>
-  <string name="attempting_reconnect">Fehler: %s.\n\n Versuche erneut zu verbinden.</string>
+  <string name="attempting_reconnect">Fehler: %s.\n\n Versuche erneut zu verbinden…</string>
   <string name="default_">Standard</string>
 </resources>

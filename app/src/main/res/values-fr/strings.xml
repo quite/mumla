@@ -219,6 +219,6 @@
   <string name="invalid_port_range">Port invalide (1-65535)</string>
   <string name="invalid_username">Nom d\'utilisateur invalide</string>
   <string name="cancel_reconnect">Annuler la reconnexion</string>
-  <string name="attempting_reconnect">Erreur: %s.\n\nTentative de reconnexion.</string>
+  <string name="attempting_reconnect">Erreur: %s.\n\nTentative de reconnexion…</string>
   <string name="default_">Défaut</string>
 </resources>

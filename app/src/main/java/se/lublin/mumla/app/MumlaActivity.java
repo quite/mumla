@@ -724,7 +724,9 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
                     AlertDialog.Builder ab = new AlertDialog.Builder(MumlaActivity.this);
                     ab.setTitle(getString(R.string.connectionRefused) + (mSettings.isTorEnabled() ? " (Tor)" : ""));
                     if (mService.isReconnecting()) {
-                        ab.setMessage(getString(R.string.attempting_reconnect, error.getMessage()));
+                        ab.setMessage(error.getMessage() + "\n\n"
+                                + getString(R.string.attempting_reconnect,
+                                error.getCause() != null ? error.getCause().getMessage() : "unknown"));
                         ab.setPositiveButton(R.string.cancel_reconnect, new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {

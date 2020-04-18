@@ -245,7 +245,7 @@
     <string name="invalid_port_range">Invalid port (1-65535)</string>
     <string name="invalid_username">Invalid username</string>
     <string name="cancel_reconnect">Cancel reconnect</string>
-    <string name="attempting_reconnect">%s. Reconnecting…</string>
+    <string name="attempting_reconnect">Error: %s.\n\nReconnecting…</string>
     <string name="change_requires_reconnect">Reconnect for change to take effect.</string>
     <string name="no_certificate">No Certificate</string>
     <string name="certificates">Certificates</string>
