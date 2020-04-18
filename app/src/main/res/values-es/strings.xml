@@ -214,7 +214,7 @@
   <string name="transmit_mode">Modo de transmisión</string>
   <string name="current_chat_target">Objetivo actual de chat</string>
   <string name="channel_join">Unirse</string>
-  <string name="certificate_info">Asunto:\n%1$s\n\nVálido desde:\n%2$s\n\nVálido hasta:\n%3$s\n\nDigest (SHA-1):\n%4$s</string>
+  <string name="certificate_info">Asunto:\n%1$s\n\nVálido desde:\n%2$s\n\nVálido hasta:\n%3$s\n\nDigest (SHA-1):\n%4$s\n\nDigest (SHA-256):\n%5$s</string>
   <string name="invalid_host">Host inválido</string>
   <string name="invalid_port_range">Puerto inválido (1-65535)</string>
   <string name="invalid_username">Nombre de usuario inválido</string>

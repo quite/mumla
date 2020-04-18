@@ -214,7 +214,7 @@
   <string name="transmit_mode">Doorstuur Modus</string>
   <string name="current_chat_target">Huidig chat doelwit</string>
   <string name="channel_join">Aansluiten</string>
-  <string name="certificate_info">Onderwerp:\n%1$s\n\nGeldig van:\n%2$s\n\nGeldig tot:\n%3$s\n\nDigest (SHA-1):\n%4$s</string>
+  <string name="certificate_info">Onderwerp:\n%1$s\n\nGeldig van:\n%2$s\n\nGeldig tot:\n%3$s\n\nDigest (SHA-1):\n%4$s\n\nDigest (SHA-256):\n%5$s</string>
   <string name="invalid_host">Ongeldige host</string>
   <string name="invalid_port_range">Ongeldige poort (1-65535)</string>
   <string name="invalid_username">Ongeldige Gebruikersnaam</string>

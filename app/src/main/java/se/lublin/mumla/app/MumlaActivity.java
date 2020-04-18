@@ -38,10 +38,12 @@ import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -200,15 +202,24 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
 
                 AlertDialog.Builder adb = new AlertDialog.Builder(MumlaActivity.this);
                 adb.setTitle(R.string.untrusted_certificate);
+                View layout = getLayoutInflater().inflate(R.layout.certificate_info,
+                        (ViewGroup) findViewById(R.id.certificate_info_text));
+                adb.setView(layout);
+                TextView text = layout.findViewById(R.id.certificate_info_text);
                 try {
-                    MessageDigest digest = MessageDigest.getInstance("SHA-1");
-                    byte[] certDigest = digest.digest(x509.getEncoded());
-                    String hexDigest = new String(Hex.encode(certDigest));
-                    adb.setMessage(getString(R.string.certificate_info,
+                    MessageDigest digest1 = MessageDigest.getInstance("SHA-1");
+                    MessageDigest digest2 = MessageDigest.getInstance("SHA-256");
+                    String hexDigest1 = new String(Hex.encode(digest1.digest(x509.getEncoded())))
+                            .replaceAll("(..)", "$1:");
+                    String hexDigest2 = new String(Hex.encode(digest2.digest(x509.getEncoded())))
+                            .replaceAll("(..)", "$1:");
+
+                    text.setText(getString(R.string.certificate_info,
                             x509.getSubjectDN().getName(),
                             x509.getNotBefore().toString(),
                             x509.getNotAfter().toString(),
-                            hexDigest));
+                            hexDigest1.substring(0, hexDigest1.length() - 1),
+                            hexDigest2.substring(0, hexDigest2.length() - 1)));
                 } catch (NoSuchAlgorithmException e) {
                     e.printStackTrace();
                     adb.setMessage(x509.toString());

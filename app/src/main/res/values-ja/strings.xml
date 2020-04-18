@@ -214,7 +214,7 @@
   <string name="transmit_mode">送信モード</string>
   <string name="current_chat_target">現在のチャット対象</string>
   <string name="channel_join">参加</string>
-  <string name="certificate_info">サブジェクト:\n%1$s\n\n有効期限開始:\n%2$s\n\n有効期限終了:\n%3$s\n\nダイジェスト (SHA-1):\n%4$s</string>
+  <string name="certificate_info">サブジェクト:\n%1$s\n\n有効期限開始:\n%2$s\n\n有効期限終了:\n%3$s\n\nダイジェスト (SHA-1):\n%4$sダイジェスト (SHA-256):\n%5$s</string>
   <string name="invalid_host">ホストが正しくありません</string>
   <string name="invalid_port_range">ポートが正しくありません (1-65535)</string>
   <string name="invalid_username">ユーザー名が</string>

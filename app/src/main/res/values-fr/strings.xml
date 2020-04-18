@@ -214,7 +214,7 @@
   <string name="transmit_mode">Mode de transmission</string>
   <string name="current_chat_target">Discussion cible actuelle</string>
   <string name="channel_join">Joindre</string>
-  <string name="certificate_info">Sujet:\n%1$s\n\nDébut de validité:\n%2$s\n\nFin de validité:\n%3$s\n\n empreinte (SHA-1):\n%4$s</string>
+  <string name="certificate_info">Sujet:\n%1$s\n\nDébut de validité:\n%2$s\n\nFin de validité:\n%3$s\n\nEmpreinte (SHA-1):\n%4$s\n\nEmpreinte (SHA-256):\n%5$s</string>
   <string name="invalid_host">Hôte invalide</string>
   <string name="invalid_port_range">Port invalide (1-65535)</string>
   <string name="invalid_username">Nom d\'utilisateur invalide</string>
