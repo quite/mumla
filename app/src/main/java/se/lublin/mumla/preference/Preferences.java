@@ -17,6 +17,7 @@
 
 package se.lublin.mumla.preference;
 
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.pm.PackageInfo;
@@ -32,7 +33,10 @@ import android.preference.PreferenceCategory;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceScreen;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
+import java.util.TimeZone;
 
 import info.guardianproject.netcipher.proxy.OrbotHelper;
 import se.lublin.mumla.BuildConfig;
@@ -130,7 +134,11 @@ public class Preferences extends PreferenceActivity {
             PackageInfo info = context.getPackageManager().getPackageInfo(context.getPackageName(), 0);
             version = info.versionName;
             if (BuildConfig.FLAVOR.equals("beta")) {
-                version += ("\nBeta versioncode: " + info.versionCode);
+                @SuppressLint("SimpleDateFormat")
+                SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                f.setTimeZone(TimeZone.getTimeZone("UTC"));
+                version += ("\nBeta flavor, versioncode: " + info.versionCode
+                        + "\nbuildtime: " + f.format(new Date(BuildConfig.TIMESTAMP)) + " UTC");
             }
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();

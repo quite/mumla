@@ -66,6 +66,7 @@ android {
         versionName gitDescribe()
 
         setProperty("archivesBaseName", "mumla")
+        buildConfigField "long", "TIMESTAMP", System.currentTimeMillis() + "L"
 
         testInstrumentationRunner "android.test.InstrumentationTestRunner"
     }
