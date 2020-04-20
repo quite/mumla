@@ -30,10 +30,7 @@ import android.os.IBinder;
 import android.os.PowerManager;
 import android.preference.PreferenceManager;
 import android.speech.tts.TextToSpeech;
-import android.view.WindowManager;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AlertDialog;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -451,13 +448,7 @@ public class MumlaService extends HumlaService implements
         }
 
         if (requiresReconnect && isConnectionEstablished()) {
-            AlertDialog ad = new AlertDialog.Builder(this)
-                    .setTitle(R.string.information)
-                    .setMessage(R.string.change_requires_reconnect)
-                    .setPositiveButton(android.R.string.ok, null)
-                    .create();
-            ad.getWindow().setType(WindowManager.LayoutParams.TYPE_SYSTEM_ALERT);
-            ad.show();
+            Toast.makeText(this, R.string.change_requires_reconnect, Toast.LENGTH_LONG).show();
         }
     }
 
