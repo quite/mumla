@@ -20,19 +20,16 @@ package se.lublin.mumla.servers;
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
@@ -40,7 +37,6 @@ import androidx.fragment.app.Fragment;
 import java.util.List;
 
 import se.lublin.humla.model.Server;
-import se.lublin.mumla.BuildConfig;
 import se.lublin.mumla.R;
 import se.lublin.mumla.db.DatabaseProvider;
 import se.lublin.mumla.db.PublicServer;
@@ -82,16 +78,6 @@ public class FavouriteServerListFragment extends Fragment implements OnItemClick
         mServerGrid = (GridView) view.findViewById(R.id.server_list_grid);
         mServerGrid.setOnItemClickListener(this);
         mServerGrid.setEmptyView(view.findViewById(R.id.server_list_grid_empty));
-
-        TextView donateText = (TextView) view.findViewById(R.id.donate_box);
-        donateText.setVisibility(BuildConfig.DONATE_NAG ? View.VISIBLE : View.GONE);
-        donateText.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent playIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=se.lublin.mumla"));
-                startActivity(playIntent);
-            }
-        });
 
         registerForContextMenu(mServerGrid);
         return view;

@@ -35,8 +35,7 @@
 		android:stretchMode="columnWidth"
         android:clipToPadding="false"
 		android:fastScrollEnabled="true"
-        android:listSelector="@android:color/transparent"
-        android:layout_above="@+id/donate_box" />
+        android:listSelector="@android:color/transparent" />
 
     <TextView
         android:id="@+id/server_list_grid_empty"
@@ -47,16 +46,4 @@
         android:gravity="center"
         android:visibility="gone"
         android:layout_centerInParent="true"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:text="Mumla development is possible thanks to donations! Click here to get the donator edition."
-        android:textAppearance="?android:textAppearanceSmallInverse"
-        android:minHeight="48dp"
-        android:background="?colorPrimary"
-        android:gravity="center"
-        android:layout_alignParentBottom="true"
-        android:id="@+id/donate_box" />
 </RelativeLayout>

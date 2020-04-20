@@ -35,6 +35,7 @@ import android.preference.PreferenceScreen;
 import java.util.List;
 
 import info.guardianproject.netcipher.proxy.OrbotHelper;
+import se.lublin.mumla.BuildConfig;
 import se.lublin.mumla.R;
 import se.lublin.mumla.Settings;
 
@@ -128,6 +129,9 @@ public class Preferences extends PreferenceActivity {
         try {
             PackageInfo info = context.getPackageManager().getPackageInfo(context.getPackageName(), 0);
             version = info.versionName;
+            if (BuildConfig.FLAVOR.equals("beta")) {
+                version += ("\nBeta versioncode: " + info.versionCode);
+            }
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
         }
