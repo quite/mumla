@@ -7,7 +7,7 @@ It uses the [Humla](https://gitlab.com/quite/humla) protocol implementation
 
 Mumla should run on Android 4.0 (IceCreamSandwich) and later (API Level 14+).
 
-More to come...
+There is a small page for Mumla here: [https://mumla-app.gitlab.io/](https://mumla-app.gitlab.io/)
 
 ## Download
 
