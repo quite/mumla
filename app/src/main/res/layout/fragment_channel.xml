@@ -78,6 +78,7 @@
             android:layout_height="50dp"
             android:text="@string/ptt"
             android:textColor="?android:attr/textColorPrimaryInverse"
+            android:textAllCaps="true"
             android:textStyle="bold"
             android:textSize="12sp"
             android:background="?attr/selectableItemBackground"/>
