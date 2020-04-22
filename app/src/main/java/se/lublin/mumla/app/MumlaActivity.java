@@ -33,12 +33,12 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.preference.PreferenceManager;
 import android.text.InputType;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.EditText;
@@ -202,9 +202,7 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
 
                 AlertDialog.Builder adb = new AlertDialog.Builder(MumlaActivity.this);
                 adb.setTitle(R.string.untrusted_certificate);
-                View layout = getLayoutInflater().inflate(R.layout.certificate_info,
-                        (ViewGroup) findViewById(R.id.certificate_info_text));
-                adb.setView(layout);
+                View layout = getLayoutInflater().inflate(R.layout.certificate_info, null);
                 TextView text = layout.findViewById(R.id.certificate_info_text);
                 try {
                     MessageDigest digest1 = MessageDigest.getInstance("SHA-1");
@@ -224,8 +222,8 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
                     e.printStackTrace();
                     adb.setMessage(x509.toString());
                 }
+                adb.setView(layout);
                 adb.setPositiveButton(R.string.allow, new DialogInterface.OnClickListener() {
-
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // Try to add to trust store
