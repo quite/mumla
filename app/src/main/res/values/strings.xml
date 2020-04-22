@@ -61,7 +61,7 @@
     <string name="comment_view">View</string>
     <string name="comment_edit_source">Edit source</string>
     <string name="comment_view_source">View source</string>
-    
+
     <!-- Server Info Fragment -->
     <string name="control_channel">Control channel</string>
     <string name="tcp_encryption_mode">Encrypted with 256 bit AES-256-SHA</string>
@@ -209,7 +209,7 @@
     <string name="hint_ptt">Push-to-talk</string>
     <string name="hint_ptt_summary">Simply press this button to talk. Double-tap to toggle it.</string>
     <string name="hint_server_add">Welcome to Mumla</string>
-    <string name="hint_server_add_summary">Add a favourite server by pressing \'Add\' from the action bar.</string>
+    <string name="hint_server_add_summary">Add a favorite server by pressing \'Add\' from the action bar.</string>
     <string name="hint_switching">Switching Between Views</string>
     <string name="hint_switching_summary">Switch between the chat and channel views by using the top left buttons, or swiping.</string>
     <string name="action_settings">Settings</string>
@@ -236,7 +236,7 @@
     <string name="trust_added">Added certificate to trust store</string>
     <string name="trust_add_failed">Could not add certificate to trust store!</string>
     <string name="trust_cleared">Trust database cleared</string>
-    <string name="cancelled">Cancelled</string>
+    <string name="cancelled">Canceled</string>
     <string name="transmit_mode">Transmit Mode</string>
     <string name="current_chat_target">Current chat target</string>
     <string name="channel_join">Join</string>
