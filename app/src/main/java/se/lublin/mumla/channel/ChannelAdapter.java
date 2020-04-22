@@ -76,20 +76,20 @@ public class ChannelAdapter extends BaseAdapter {
 
         ImageView state = (ImageView) v.findViewById(R.id.user_row_state);
         if (user.isSelfDeafened())
-            state.setImageResource(R.drawable.ic_deafened);
+            state.setImageResource(R.drawable.outline_circle_deafened);
         else if (user.isSelfMuted())
-            state.setImageResource(R.drawable.ic_muted);
+            state.setImageResource(R.drawable.outline_circle_muted);
         else if (user.isDeafened())
-            state.setImageResource(R.drawable.ic_server_deafened);
+            state.setImageResource(R.drawable.outline_circle_server_deafened);
         else if (user.isMuted())
-            state.setImageResource(R.drawable.ic_server_muted);
+            state.setImageResource(R.drawable.outline_circle_server_muted);
         else if (user.isSuppressed())
-            state.setImageResource(R.drawable.ic_suppressed);
+            state.setImageResource(R.drawable.outline_circle_suppressed);
         else
         if (user.getTalkState() == TalkState.TALKING)
-            state.setImageResource(R.drawable.ic_talking_on);
+            state.setImageResource(R.drawable.outline_circle_talking_on);
         else
-            state.setImageResource(R.drawable.ic_talking_off);
+            state.setImageResource(R.drawable.outline_circle_talking_off);
 
         return v;
     }
