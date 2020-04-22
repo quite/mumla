@@ -1,0 +1,14 @@
+- Implement lookup of SRV records for server address. Enables simple server addresses such as `example.net`, where a SRV record for the domain in DNS indicate
+s the server host and port to connect to. See: https://wiki.mumble.info/wiki/SRV_Record .
+
+- Fix permission request for hot-corner push-to-talk, stop crashing.
+
+- Display also SHA-256 digest in certificate accept dialog, and make the text selectable.
+
+- Allan Nordhøy reworked the English source strings.
+
+- Remove talking state animation which was broken in different ways.
+
+- Use the same user state icons in the overlay as in the main channel list
+
+- Correct token fragment icons for dark theme
