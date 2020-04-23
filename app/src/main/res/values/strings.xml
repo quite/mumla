@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!--
-  ~ Copyright (C) 2014 Andrew Comminos
-  ~
-  ~ This program is free software: you can redistribute it and/or modify
-  ~ it under the terms of the GNU General Public License as published by
-  ~ the Free Software Foundation, either version 3 of the License, or
-  ~ (at your option) any later version.
-  ~
-  ~ This program is distributed in the hope that it will be useful,
-  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
-  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  ~ GNU General Public License for more details.
-  ~
-  ~ You should have received a copy of the GNU General Public License
-  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
-  -->
+    ~ Copyright (C) 2014 Andrew Comminos
+    ~
+    ~ This program is free software: you can redistribute it and/or modify
+    ~ it under the terms of the GNU General Public License as published by
+    ~ the Free Software Foundation, either version 3 of the License, or
+    ~ (at your option) any later version.
+    ~
+    ~ This program is distributed in the hope that it will be useful,
+    ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+    ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    ~ GNU General Public License for more details.
+    ~
+    ~ You should have received a copy of the GNU General Public License
+    ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    -->
 
 <resources>
     <!-- Drawer pane -->
@@ -201,8 +201,6 @@
     <string name="registerSelfSuccess">Sent registration request</string>
     <string name="error_fetching_servers">Could not fetch servers.\nAre you connected to the Internet?</string>
     <string name="coming_soon">Feature coming soon.</string>
-    <string name="search_channel_users">%d users</string>
-    <string name="reconnecting">Reconnecting in %d seconds.</string>
     <string name="tapToReconnect">Tap to reconnect</string>
     <string name="overlay">Overlay</string>
     <string name="hint_reason">Reason</string>
@@ -258,7 +256,6 @@
     <string name="migration_certificate_success">Certificate migrated.</string>
     <string name="error_writing_to_storage">Could not write to external storage.</string>
     <string name="export_success">Certificate exported to %s.</string>
-    <string name="notification_unread_many">%d new messages</string>
     <string name="context_channel_link">Link</string>
     <string name="context_channel_unlink_all">Unlink All</string>
     <string name="context_channel_shout">Set Voice Target</string>
@@ -273,4 +270,17 @@
     <string name="orbot_not_installed">The Orbot app is not installed. Not using Tor.</string>
     <string name="orbot_tor_failed">Could not connect to local Tor proxy on port %d (SOCKS).\n\nPlease ensure that the Orbot app is running.</string>
     <string name="default_">Default</string>
+
+    <plurals name="search_channel_users">
+        <item quantity="one">%d user</item>
+        <item quantity="other">%d users</item>
+    </plurals>
+    <plurals name="reconnecting">
+        <item quantity="one">Reconnecting in %d second.</item>
+        <item quantity="other">Reconnecting in %d seconds.</item>
+    </plurals>
+    <plurals name="notification_unread_many">
+        <item quantity="one">%d new message</item>
+        <item quantity="other">%d new messages</item>
+    </plurals>
 </resources>

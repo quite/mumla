@@ -118,6 +118,7 @@
     <string name="search">Поиск</string>
     <string name="searchHint">Поиск каналов и пользователей</string>
     <string name="undocumentedWakeLock">Пробуждение от датчика приближения не поддерживается на вашем устройстве. Пожалуйста, измените режим вызова на громкую связь.</string>
+    <!-- <string name="bluetooth">Bluetooth</string> -->
     <string name="recordingVolume">Усиление громкости записи</string>
     <string name="quickConnect">Быстрое подключение</string>
     <string name="connect">Подключиться</string>
@@ -182,8 +183,6 @@
     <string name="registerSelfSuccess">Отправить запрос на регистрацию</string>
     <string name="error_fetching_servers">Не удалось получить список.\nВы подключены к интернету?</string>
     <string name="coming_soon">Опция скоро будет доступна.</string>
-    <string name="search_channel_users">%d пользователей</string>
-    <string name="reconnecting">Переподключение через %d секунд(у/ы).</string>
     <string name="tapToReconnect">Нажмите чтобы переподключиться</string>
     <string name="overlay">Оверлей</string>
     <string name="hint_reason">Причина</string>
@@ -239,7 +238,6 @@
     <string name="migration_certificate_success">Сертификат перенесен.</string>
     <string name="error_writing_to_storage">Не удается записать на внешнее хранилище.</string>
     <string name="export_success">Сертификат экспортирован в %s.</string>
-    <string name="notification_unread_many">%d новых сообщений</string>
     <string name="context_channel_link">Связать</string>
     <string name="context_channel_unlink_all">Отвязать все</string>
     <string name="context_channel_shout">Установить целью для голоса</string>
@@ -254,4 +252,20 @@
     <string name="orbot_not_installed">Приложение Orbot не установлено. Tor не используется.</string>
     <string name="orbot_tor_failed">Не удалось подключиться к к локальному прокси Tor на порту %d (SOCKS).\n\nPПожалуйста убедитесь что приложение Orbot запущено.</string>
     <string name="default_">По умолчанию</string>
+
+    <plurals name="search_channel_users">
+        <item quantity="one">%d пользователь</item>
+        <item quantity="few">%d пользователя</item>
+        <item quantity="other">%d пользователей</item>
+    </plurals>
+    <plurals name="reconnecting">
+        <item quantity="one">Переподключение через %d секунду.</item>
+        <item quantity="few">Переподключение через %d секунды.</item>
+        <item quantity="other">Переподключение через %d секунд.</item>
+    </plurals>
+    <plurals name="notification_unread_many">
+        <item quantity="one">%d новое сообщение</item>
+        <item quantity="few">%d новых сообщения</item>
+        <item quantity="other">%d новых сообщений</item>
+    </plurals>
 </resources>

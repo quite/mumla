@@ -132,7 +132,7 @@ public class ChannelSearchProvider extends ContentProvider {
 
         for(int x=0;x<channels.size();x++) {
             IChannel channel = channels.get(x);
-            cursor.addRow(new Object[] { x, INTENT_DATA_CHANNEL, channel.getName(), R.drawable.ic_action_channels, getContext().getString(R.string.search_channel_users, channel.getSubchannelUserCount()), channel.getId() });
+            cursor.addRow(new Object[] { x, INTENT_DATA_CHANNEL, channel.getName(), R.drawable.ic_action_channels, getContext().getResources().getQuantityString(R.plurals.search_channel_users, channel.getSubchannelUserCount(), channel.getSubchannelUserCount()), channel.getId() });
         }
 
         for(int x=0;x<users.size();x++) {

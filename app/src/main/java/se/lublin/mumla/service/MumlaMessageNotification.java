@@ -63,7 +63,7 @@ public class MumlaMessageNotification {
         mUnreadMessages.add(message);
 
         NotificationCompat.InboxStyle style = new NotificationCompat.InboxStyle();
-        style.setBigContentTitle(mContext.getString(R.string.notification_unread_many, mUnreadMessages.size()));
+        style.setBigContentTitle(mContext.getResources().getQuantityString(R.plurals.notification_unread_many, mUnreadMessages.size(), mUnreadMessages.size()));
         for (IMessage m : mUnreadMessages) {
             String line = mContext.getString(R.string.notification_message, m.getActorName(), m.getMessage());
             style.addLine(line);
