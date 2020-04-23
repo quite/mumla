@@ -60,6 +60,7 @@ public class Preferences extends PreferenceActivity {
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
+        setTheme(Settings.getInstance(this).getTheme());
         super.onCreate(savedInstanceState);
 
         // Legacy preference section handling
