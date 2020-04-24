@@ -26,6 +26,7 @@ import android.os.StrictMode;
 import android.text.Html;
 import android.util.Base64;
 import android.util.DisplayMetrics;
+import android.util.Log;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -36,6 +37,7 @@ import java.net.URLDecoder;
 import java.util.HashMap;
 import java.util.Map;
 
+import se.lublin.mumla.Constants;
 import se.lublin.mumla.Settings;
 
 /**
@@ -82,8 +84,8 @@ public class MumbleImageGetter implements Html.ImageGetter {
             } else if(mSettings.shouldLoadExternalImages()) {
                 bitmap = getURLImage(decodedSource);
             }
-        } catch (IllegalArgumentException e) {
-            e.printStackTrace();
+        } catch (IllegalArgumentException | ArrayIndexOutOfBoundsException e) {
+            Log.w(Constants.TAG, "MumbleImageGetter, exception when decoding data:image: " + e.toString());
             return null;
         }
         if(bitmap == null) return null;
