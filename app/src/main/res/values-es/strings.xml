@@ -235,8 +235,8 @@
         <item quantity="one">Reconectando en %d segundo</item>
         <item quantity="other">Reconectando en %d segundos</item>
     </plurals>
-    <!-- <plurals name="notification_unread_many">
-        <item quantity="one">%d new message</item>
-        <item quantity="other">%d new messages</item>
-    </plurals> -->
+    <plurals name="notification_unread_many">
+        <item quantity="one">%d mensaje nuevo</item>
+        <item quantity="other">%d mensajes nuevos</item>
+    </plurals>
 </resources>

@@ -234,8 +234,8 @@
         <item quantity="one">Herverbinden over %d seconde.</item>
         <item quantity="other">Herverbinden over %d seconden.</item>
     </plurals>
-    <!-- <plurals name="notification_unread_many">
-        <item quantity="one">%d new message</item>
-        <item quantity="other">%d new messages</item>
-    </plurals> -->
+    <plurals name="notification_unread_many">
+        <item quantity="one">%d nieuw bericht</item>
+        <item quantity="other">%d nieuwe berichten</item>
+    </plurals>
 </resources>

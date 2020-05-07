@@ -235,8 +235,8 @@
         <item quantity="one">Wiederverbinden in %d Sekunde.</item>
         <item quantity="other">Wiederverbinden in %d Sekunden.</item>
     </plurals>
-    <!-- <plurals name="notification_unread_many">
-        <item quantity="one">%d new message</item>
-        <item quantity="other">%d new messages</item>
-    </plurals> -->
+    <plurals name="notification_unread_many">
+        <item quantity="one">%d neue Nachricht</item>
+        <item quantity="other">%d neue Nachrichten</item>
+    </plurals>
 </resources>

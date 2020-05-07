@@ -137,12 +137,12 @@
         <item quantity="one">%d utente</item>
         <item quantity="other">%d utenti</item>
     </plurals>
-    <!-- <plurals name="reconnecting">
-        <item quantity="one">Reconnecting in %d second.</item>
-        <item quantity="other">Reconnecting in %d seconds.</item>
-    </plurals> -->
-    <!-- <plurals name="notification_unread_many">
-        <item quantity="one">%d new message</item>
-        <item quantity="other">%d new messages</item>
-    </plurals> -->
+    <plurals name="reconnecting">
+        <item quantity="one">Riconnessione in %d secondo.</item>
+        <item quantity="other">Riconnessione in %d secondi.</item>
+    </plurals>
+    <plurals name="notification_unread_many">
+        <item quantity="one">%d nuovo messaggio</item>
+        <item quantity="other">%d nuovi messaggi</item>
+    </plurals>
 </resources>
