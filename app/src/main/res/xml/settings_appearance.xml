@@ -32,15 +32,15 @@
         android:title="@string/pref_show_user_count"
         android:summary="@string/pref_show_user_count_summary" />
 
-	<se.lublin.mumla.preference.SeekBarDialogPreference
-		android:key="pttButtonHeight"
-		android:title="@string/pttButtonHeight"
-		android:summary="@string/pttButtonHeightSum"
-		multiplier="10"
-		max="100"
-		min="15"
-		android:defaultValue="15"
-		android:text=" dp"/>
+    <se.lublin.mumla.preference.SeekBarDialogPreference
+        android:key="pttButtonHeight"
+        android:title="@string/pttButtonHeight"
+        android:summary="@string/pttButtonHeightSum"
+        multiplier="10"
+        max="100"
+        min="15"
+        android:defaultValue="15"
+        android:text=" dp"/>
 
     <!--
     <ListPreference

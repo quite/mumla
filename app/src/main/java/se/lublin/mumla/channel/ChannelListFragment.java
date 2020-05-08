@@ -58,7 +58,7 @@ import se.lublin.mumla.util.HumlaServiceFragment;
 
 public class ChannelListFragment extends HumlaServiceFragment implements OnChannelClickListener, OnUserClickListener, SharedPreferences.OnSharedPreferenceChangeListener {
 
-	private IHumlaObserver mServiceObserver = new HumlaObserver() {
+    private IHumlaObserver mServiceObserver = new HumlaObserver() {
         @Override
         public void onDisconnected(HumlaException e) {
             mChannelView.setAdapter(null);
@@ -75,16 +75,16 @@ public class ChannelListFragment extends HumlaServiceFragment implements OnChann
         }
 
         @Override
-		public void onChannelAdded(IChannel channel) {
+        public void onChannelAdded(IChannel channel) {
             mChannelListAdapter.updateChannels();
-			mChannelListAdapter.notifyDataSetChanged();
-		}
+            mChannelListAdapter.notifyDataSetChanged();
+        }
 
-		@Override
-		public void onChannelRemoved(IChannel channel) {
+        @Override
+        public void onChannelRemoved(IChannel channel) {
             mChannelListAdapter.updateChannels();
-			mChannelListAdapter.notifyDataSetChanged();
-		}
+            mChannelListAdapter.notifyDataSetChanged();
+        }
 
         @Override
         public void onChannelStateUpdated(IChannel channel) {
@@ -119,7 +119,7 @@ public class ChannelListFragment extends HumlaServiceFragment implements OnChann
         public void onUserTalkStateUpdated(IUser user) {
             mChannelListAdapter.animateUserStateUpdate(user, mChannelView);
         }
-	};
+    };
 
     private BroadcastReceiver mBluetoothReceiver = new BroadcastReceiver() {
         @Override
@@ -129,8 +129,8 @@ public class ChannelListFragment extends HumlaServiceFragment implements OnChann
         }
     };
 
-	private RecyclerView mChannelView;
-	private ChannelListAdapter mChannelListAdapter;
+    private RecyclerView mChannelView;
+    private ChannelListAdapter mChannelListAdapter;
     private ChatTargetProvider mTargetProvider;
     private DatabaseProvider mDatabaseProvider;
     private ActionMode mActionMode;
@@ -324,22 +324,22 @@ public class ChannelListFragment extends HumlaServiceFragment implements OnChann
         mChannelListAdapter.setOnUserClickListener(this);
         mChannelView.setAdapter(mChannelListAdapter);
         mChannelListAdapter.notifyDataSetChanged();
-	}
+    }
 
-	/**
-	 * Scrolls to the passed channel.
-	 */
-	public void scrollToChannel(int channelId) {
-		int channelPosition = mChannelListAdapter.getChannelPosition(channelId);
+    /**
+     * Scrolls to the passed channel.
+     */
+    public void scrollToChannel(int channelId) {
+        int channelPosition = mChannelListAdapter.getChannelPosition(channelId);
         mChannelView.scrollToPosition(channelPosition);
     }
-	/**
-	 * Scrolls to the passed user.
-	 */
-	public void scrollToUser(int userId) {
-		int userPosition = mChannelListAdapter.getUserPosition(userId);
-		mChannelView.scrollToPosition(userPosition);
-	}
+    /**
+     * Scrolls to the passed user.
+     */
+    public void scrollToUser(int userId) {
+        int userPosition = mChannelListAdapter.getUserPosition(userId);
+        mChannelView.scrollToPosition(userPosition);
+    }
 
     private boolean isShowingPinnedChannels() {
         return getArguments().getBoolean("pinned");

@@ -17,10 +17,10 @@
 
 /* The following code was written by Matthew Wiggins
  * and is released under the Apache 2.0 license
- * 
+ *
  * http://www.apache.org/licenses/LICENSE-2.0
- * 
- * I added some extra functionality like a multiplier + better persistence. 
+ *
+ * I added some extra functionality like a multiplier + better persistence.
  * - Andrew Comminos
  */
 package se.lublin.mumla.preference;

@@ -72,25 +72,25 @@ import se.lublin.mumla.db.PublicServer;
  *
  */
 public class PublicServerListFragment extends Fragment implements OnItemClickListener, PublicServerAdapter.PublicServerAdapterMenuListener {
-    
+
     private FavouriteServerListFragment.ServerConnectHandler mConnectHandler;
     private DatabaseProvider mDatabaseProvider;
     private List<PublicServer> mServers;
     private GridView mServerGrid;
     private ProgressBar mServerProgress;
     private PublicServerAdapter mServerAdapter;
-    
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        
+
         setHasOptionsMenu(true);
     }
-    
+
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
-        
+
         try {
             mConnectHandler = (FavouriteServerListFragment.ServerConnectHandler)activity;
             mDatabaseProvider = (DatabaseProvider) activity;
@@ -129,7 +129,7 @@ public class PublicServerListFragment extends Fragment implements OnItemClickLis
         super.onCreateOptionsMenu(menu, inflater);
         inflater.inflate(R.menu.fragment_public_server_list, menu);
     }
-    
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (isFilled()) {
@@ -171,14 +171,14 @@ public class PublicServerListFragment extends Fragment implements OnItemClickLis
         adb.setNegativeButton(android.R.string.cancel, null);
         adb.show();
     }
-    
+
     public void setServers(List<PublicServer> servers) {
         mServers = servers;
         mServerProgress.setVisibility(View.GONE);
         mServerAdapter = new PublicServerAdapter(getActivity(), servers, this);
         mServerGrid.setAdapter(mServerAdapter);
     }
-    
+
     public boolean isFilled() {
         return mServerAdapter != null;
     }
@@ -208,12 +208,12 @@ public class PublicServerListFragment extends Fragment implements OnItemClickLis
         alertBuilder.setItems(new String[] { getString(R.string.name), getString(R.string.country)}, new SortClickListener());
         alertBuilder.show();
     }
-    
+
     private void showFilterDialog() {
         View dialogView = ((LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE)).inflate(R.layout.dialog_server_search, null);
         final EditText nameText = (EditText) dialogView.findViewById(R.id.server_search_name);
         final EditText countryText = (EditText) dialogView.findViewById(R.id.server_search_country);
-                
+
         final AlertDialog dlg = new AlertDialog.Builder(getActivity()).
             setTitle(R.string.search).
             setView(dialogView).
@@ -226,7 +226,7 @@ public class PublicServerListFragment extends Fragment implements OnItemClickLis
                     dialog.dismiss();
                 }
             }).create();
-        
+
         nameText.setImeOptions(EditorInfo.IME_ACTION_SEARCH);
         nameText.setOnEditorActionListener(new OnEditorActionListener() {
             @Override
@@ -239,7 +239,7 @@ public class PublicServerListFragment extends Fragment implements OnItemClickLis
                 return true;
             }
         });
-        
+
         countryText.setImeOptions(EditorInfo.IME_ACTION_SEARCH);
         countryText.setOnEditorActionListener(new OnEditorActionListener() {
             @Override
@@ -252,7 +252,7 @@ public class PublicServerListFragment extends Fragment implements OnItemClickLis
                 return true;
             }
         });
-        
+
         // Show keyboard automatically
         nameText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
@@ -262,7 +262,7 @@ public class PublicServerListFragment extends Fragment implements OnItemClickLis
                 }
             }
         });
-        
+
         dlg.show();
     }
 
@@ -292,7 +292,7 @@ public class PublicServerListFragment extends Fragment implements OnItemClickLis
 
         private static final int SORT_NAME = 0;
         private static final int SORT_COUNTRY = 1;
-        
+
         private Comparator<PublicServer> nameComparator = new Comparator<PublicServer>() {
             @Override
             public int compare(PublicServer lhs, PublicServer rhs) {
@@ -308,8 +308,8 @@ public class PublicServerListFragment extends Fragment implements OnItemClickLis
                 return lhs.getCountry().compareTo(rhs.getCountry());
             }
         };
-        
-        
+
+
         @Override
         public void onClick(DialogInterface dialog, int which) {
             ArrayAdapter<PublicServer> arrayAdapter = mServerAdapter;

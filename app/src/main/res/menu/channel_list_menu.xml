@@ -20,7 +20,4 @@
     xmlns:android="http://schemas.android.com/apk/res/android" >
     <item android:id="@+id/menu_chat_item" android:title="@string/chat" app:showAsAction="always|withText"></item>
     <item android:id="@+id/menu_disconnect_item" android:title="@string/disconnect"></item>
-    
-    
-
 </menu>

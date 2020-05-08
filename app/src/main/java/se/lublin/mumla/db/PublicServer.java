@@ -22,44 +22,44 @@ import se.lublin.humla.model.Server;
 
 public class PublicServer extends Server {
 
-	private String mCA;
-	private String mContinentCode;
-	private String mCountry;
-	private String mCountryCode;
-	private String mRegion;
-	private String mUrl;
-	
-	public PublicServer(String name, String ca, String continentCode, String country, String countryCode, String ip, Integer port, String region, String url) {
+    private String mCA;
+    private String mContinentCode;
+    private String mCountry;
+    private String mCountryCode;
+    private String mRegion;
+    private String mUrl;
+
+    public PublicServer(String name, String ca, String continentCode, String country, String countryCode, String ip, Integer port, String region, String url) {
         super(-1, name, ip, port, "", "");
-		mCA = ca;
-		mContinentCode = continentCode;
-		mCountry = country;
-		mCountryCode = countryCode;
-		mRegion = region;
-		mUrl = url;
-	}
-	
-	public String getCA() {
-		return mCA;
-	}
+        mCA = ca;
+        mContinentCode = continentCode;
+        mCountry = country;
+        mCountryCode = countryCode;
+        mRegion = region;
+        mUrl = url;
+    }
 
-	public String getContinentCode() {
-		return mContinentCode;
-	}
+    public String getCA() {
+        return mCA;
+    }
 
-	public String getCountry() {
-		return mCountry;
-	}
+    public String getContinentCode() {
+        return mContinentCode;
+    }
 
-	public String getCountryCode() {
-		return mCountryCode;
-	}
+    public String getCountry() {
+        return mCountry;
+    }
 
-	public String getRegion() {
-		return mRegion;
-	}
+    public String getCountryCode() {
+        return mCountryCode;
+    }
 
-	public String getUrl() {
-		return mUrl;
-	}
+    public String getRegion() {
+        return mRegion;
+    }
+
+    public String getUrl() {
+        return mUrl;
+    }
 }

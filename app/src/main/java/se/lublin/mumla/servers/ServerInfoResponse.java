@@ -28,66 +28,66 @@ import se.lublin.humla.model.Server;
  */
 public class ServerInfoResponse {
 
-	private long mIdentifier;
-	private int mVersion;
-	private int mCurrentUsers;
-	private int mMaximumUsers;
-	private int mAllowedBandwidth;
-	private int mLatency;
+    private long mIdentifier;
+    private int mVersion;
+    private int mCurrentUsers;
+    private int mMaximumUsers;
+    private int mAllowedBandwidth;
+    private int mLatency;
     private Server mServer;
 
-	/**
-	 * Whether or not this server info response represents a failure to retrieve a response. Used to efficiently denote failed responses.
-	 */
-	private boolean mDummy = false;
-		
-	/**
-	 * Creates a ServerInfoResponse object with the bytes obtained from the server.
-	 * @param response The response to the UDP pings sent by the server.
-	 * @see http://mumble.sourceforge.net/Protocol
-	 */
-	public ServerInfoResponse(Server server, byte[] response, int latency) {
-		ByteBuffer buffer = ByteBuffer.wrap(response);
-		mVersion = buffer.getInt();
-		mIdentifier = buffer.getLong();
-		mCurrentUsers = buffer.getInt();
-		mMaximumUsers = buffer.getInt();
-		mAllowedBandwidth = buffer.getInt();
+    /**
+     * Whether or not this server info response represents a failure to retrieve a response. Used to efficiently denote failed responses.
+     */
+    private boolean mDummy = false;
+
+    /**
+     * Creates a ServerInfoResponse object with the bytes obtained from the server.
+     * @param response The response to the UDP pings sent by the server.
+     * @see http://mumble.sourceforge.net/Protocol
+     */
+    public ServerInfoResponse(Server server, byte[] response, int latency) {
+        ByteBuffer buffer = ByteBuffer.wrap(response);
+        mVersion = buffer.getInt();
+        mIdentifier = buffer.getLong();
+        mCurrentUsers = buffer.getInt();
+        mMaximumUsers = buffer.getInt();
+        mAllowedBandwidth = buffer.getInt();
         mLatency = latency;
         mServer = server;
-	}
+    }
 
-	/**
-	 * Instantiating a ServerInfoResponse with no data will cause it to be considered a 'dummy' response by its handler.
-	 */
-	public ServerInfoResponse() {
-		this.mDummy = true;
-	}
-	
-	public long getIdentifier() {
-		return mIdentifier;
-	}
+    /**
+     * Instantiating a ServerInfoResponse with no data will cause it to be considered a 'dummy' response by its handler.
+     */
+    public ServerInfoResponse() {
+        this.mDummy = true;
+    }
 
-	public int getVersion() {
-		return mVersion;
-	}
-	
-	public String getVersionString() {
-		byte[] versionBytes = ByteBuffer.allocate(4).putInt(mVersion).array();
-		return String.format("%d.%d.%d", (int)versionBytes[1], (int)versionBytes[2], (int)versionBytes[3]);
-	}
+    public long getIdentifier() {
+        return mIdentifier;
+    }
 
-	public int getCurrentUsers() {
-		return mCurrentUsers;
-	}
+    public int getVersion() {
+        return mVersion;
+    }
 
-	public int getMaximumUsers() {
-		return mMaximumUsers;
-	}
+    public String getVersionString() {
+        byte[] versionBytes = ByteBuffer.allocate(4).putInt(mVersion).array();
+        return String.format("%d.%d.%d", (int)versionBytes[1], (int)versionBytes[2], (int)versionBytes[3]);
+    }
 
-	public int getAllowedBandwidth() {
-		return mAllowedBandwidth;
-	}
+    public int getCurrentUsers() {
+        return mCurrentUsers;
+    }
+
+    public int getMaximumUsers() {
+        return mMaximumUsers;
+    }
+
+    public int getAllowedBandwidth() {
+        return mAllowedBandwidth;
+    }
 
     public int getLatency() {
         return mLatency;
@@ -98,6 +98,6 @@ public class ServerInfoResponse {
     }
 
     public boolean isDummy() {
-		return mDummy;
-	}
+        return mDummy;
+    }
 }

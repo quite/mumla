@@ -24,7 +24,7 @@
 
     <color name="popup_menu_item_background">#555555</color>
     <color name="popup_menu_item_disabled_mask">#66000000</color>
-    
+
     <!-- A light Holo shade of blue -->
     <color name="holo_blue_light">#ff33b5e5</color>
     <!-- A light Holo shade of green -->

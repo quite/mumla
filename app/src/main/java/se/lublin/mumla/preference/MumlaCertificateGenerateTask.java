@@ -34,51 +34,51 @@ import se.lublin.mumla.db.MumlaDatabase;
 import se.lublin.mumla.db.MumlaSQLiteDatabase;
 
 public class MumlaCertificateGenerateTask extends AsyncTask<Void, Void, DatabaseCertificate> {
-	private static final String DATE_FORMAT = "yyyy-MM-dd-HH-mm-ss";
+    private static final String DATE_FORMAT = "yyyy-MM-dd-HH-mm-ss";
 
-	private Context context;
-	private ProgressDialog loadingDialog;
-	
-	public MumlaCertificateGenerateTask(Context context) {
-		this.context = context;
-	}
-	
-	@Override
-	protected void onPreExecute() {
-		super.onPreExecute();
-		
-		loadingDialog = new ProgressDialog(context);
-		loadingDialog.setIndeterminate(true);
-		loadingDialog.setMessage(context.getString(R.string.generateCertProgress));
-		loadingDialog.setCancelable(false);
-		loadingDialog.show();
-	}
-	@Override
-	protected DatabaseCertificate doInBackground(Void... params) {
-		try {
-			ByteArrayOutputStream baos = new ByteArrayOutputStream();
-			HumlaCertificateGenerator.generateCertificate(baos);
+    private Context context;
+    private ProgressDialog loadingDialog;
 
-			SimpleDateFormat dateFormat = new SimpleDateFormat(DATE_FORMAT, Locale.getDefault());
-			String fileName = context.getString(R.string.certificate_export_format, dateFormat.format(new Date()));
+    public MumlaCertificateGenerateTask(Context context) {
+        this.context = context;
+    }
 
-			MumlaDatabase database = new MumlaSQLiteDatabase(context);
-			DatabaseCertificate dc = database.addCertificate(fileName, baos.toByteArray());
-			database.close();
-			return dc;
-		} catch (Exception e) {
-			e.printStackTrace();
-			return null;
-		}
-	}
-	
-	@Override
-	protected void onPostExecute(DatabaseCertificate result) {
-		super.onPostExecute(result);
-		if(result == null) {
-			Toast.makeText(context, R.string.generateCertFailure, Toast.LENGTH_SHORT).show();
-		}
-		
-		loadingDialog.dismiss();
-	}
+    @Override
+    protected void onPreExecute() {
+        super.onPreExecute();
+
+        loadingDialog = new ProgressDialog(context);
+        loadingDialog.setIndeterminate(true);
+        loadingDialog.setMessage(context.getString(R.string.generateCertProgress));
+        loadingDialog.setCancelable(false);
+        loadingDialog.show();
+    }
+    @Override
+    protected DatabaseCertificate doInBackground(Void... params) {
+        try {
+            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+            HumlaCertificateGenerator.generateCertificate(baos);
+
+            SimpleDateFormat dateFormat = new SimpleDateFormat(DATE_FORMAT, Locale.getDefault());
+            String fileName = context.getString(R.string.certificate_export_format, dateFormat.format(new Date()));
+
+            MumlaDatabase database = new MumlaSQLiteDatabase(context);
+            DatabaseCertificate dc = database.addCertificate(fileName, baos.toByteArray());
+            database.close();
+            return dc;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    @Override
+    protected void onPostExecute(DatabaseCertificate result) {
+        super.onPostExecute(result);
+        if(result == null) {
+            Toast.makeText(context, R.string.generateCertFailure, Toast.LENGTH_SHORT).show();
+        }
+
+        loadingDialog.dismiss();
+    }
 }

@@ -42,60 +42,60 @@ import se.lublin.mumla.R;
 import se.lublin.mumla.service.MumlaService;
 
 public class ChannelSearchProvider extends ContentProvider {
-	
-	public static final String INTENT_DATA_CHANNEL = "channel";
-	public static final String INTENT_DATA_USER = "user";
+
+    public static final String INTENT_DATA_CHANNEL = "channel";
+    public static final String INTENT_DATA_USER = "user";
 
     private IHumlaService mService;
     private final Object mServiceLock = new Object();
 
-	private ServiceConnection mConn = new ServiceConnection() {
-		@Override
-		public void onServiceConnected(ComponentName name, IBinder service) {
-			mService = ((MumlaService.MumlaBinder) service).getService();
+    private ServiceConnection mConn = new ServiceConnection() {
+        @Override
+        public void onServiceConnected(ComponentName name, IBinder service) {
+            mService = ((MumlaService.MumlaBinder) service).getService();
             synchronized (mServiceLock) {
                 mServiceLock.notify();
             }
-		}
+        }
 
-		@Override
-		public void onServiceDisconnected(ComponentName name) {
-			mService = null;
-		}
-	};
-	
-	@Override
-	public int delete(Uri uri, String selection, String[] selectionArgs) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+        @Override
+        public void onServiceDisconnected(ComponentName name) {
+            mService = null;
+        }
+    };
 
-	@Override
-	public String getType(Uri uri) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    @Override
+    public int delete(Uri uri, String selection, String[] selectionArgs) {
+        // TODO Auto-generated method stub
+        return 0;
+    }
 
-	@Override
-	public Uri insert(Uri uri, ContentValues values) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    @Override
+    public String getType(Uri uri) {
+        // TODO Auto-generated method stub
+        return null;
+    }
 
-	@Override
-	public boolean onCreate() {
-		return true;
-	}
-	
+    @Override
+    public Uri insert(Uri uri, ContentValues values) {
+        // TODO Auto-generated method stub
+        return null;
+    }
 
-	@Override
-	public Cursor query(Uri uri, String[] projection, String selection,
-			String[] selectionArgs, String sortOrder) {	
-		
-		// Try to connect to the service. Wait for conn to establish.
-		if(mService == null) {
-			Intent serviceIntent = new Intent(getContext(), MumlaService.class);
-			getContext().bindService(serviceIntent, mConn, 0);
+    @Override
+    public boolean onCreate() {
+        return true;
+    }
+
+
+    @Override
+    public Cursor query(Uri uri, String[] projection, String selection,
+            String[] selectionArgs, String sortOrder) {
+
+        // Try to connect to the service. Wait for conn to establish.
+        if(mService == null) {
+            Intent serviceIntent = new Intent(getContext(), MumlaService.class);
+            getContext().bindService(serviceIntent, mConn, 0);
 
             synchronized (mServiceLock) {
                 try {
@@ -109,23 +109,23 @@ public class ChannelSearchProvider extends ContentProvider {
                     return null;
                 }
             }
-		}
+        }
 
         if (!mService.isConnected())
             return null;
 
         IHumlaSession session = mService.getSession();
-		
-		String query = "";
-		for(int x=0;x<selectionArgs.length;x++) {
-			query += selectionArgs[x];
-			if(x != selectionArgs.length-1)
-				query += " ";
-		}
-		
-		query = query.toLowerCase(Locale.getDefault());
-		
-		MatrixCursor cursor = new MatrixCursor(new String[] { "_ID", SearchManager.SUGGEST_COLUMN_INTENT_EXTRA_DATA, SearchManager.SUGGEST_COLUMN_TEXT_1, SearchManager.SUGGEST_COLUMN_ICON_1, SearchManager.SUGGEST_COLUMN_TEXT_2, SearchManager.SUGGEST_COLUMN_INTENT_DATA });
+
+        String query = "";
+        for(int x=0;x<selectionArgs.length;x++) {
+            query += selectionArgs[x];
+            if(x != selectionArgs.length-1)
+                query += " ";
+        }
+
+        query = query.toLowerCase(Locale.getDefault());
+
+        MatrixCursor cursor = new MatrixCursor(new String[] { "_ID", SearchManager.SUGGEST_COLUMN_INTENT_EXTRA_DATA, SearchManager.SUGGEST_COLUMN_TEXT_1, SearchManager.SUGGEST_COLUMN_ICON_1, SearchManager.SUGGEST_COLUMN_TEXT_2, SearchManager.SUGGEST_COLUMN_INTENT_DATA });
 
         List<IChannel> channels = channelSearch(session.getRootChannel(), query);
         List<IUser> users = userSearch(session.getRootChannel(), query);
@@ -139,8 +139,8 @@ public class ChannelSearchProvider extends ContentProvider {
             IUser user = users.get(x);
             cursor.addRow(new Object[] { x, INTENT_DATA_USER, user.getName(), R.drawable.ic_action_user_dark, getContext().getString(R.string.user), user.getSession() });
         }
-		return cursor;
-	}
+        return cursor;
+    }
 
     /**
      * Recursively searches the channel tree for a user with a name containing the given string,
@@ -205,11 +205,11 @@ public class ChannelSearchProvider extends ContentProvider {
         }
     }
 
-	@Override
-	public int update(Uri uri, ContentValues values, String selection,
-			String[] selectionArgs) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+    @Override
+    public int update(Uri uri, ContentValues values, String selection,
+            String[] selectionArgs) {
+        // TODO Auto-generated method stub
+        return 0;
+    }
 
 }
