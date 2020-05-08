@@ -347,7 +347,7 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
                             targetMessage = getContext().getString(R.string.chat_message_to, textMessage.getActorName(), currentChannel.getName());
                         }
                     } else if (textMessage.getTargetUsers() != null && !textMessage.getTargetUsers().isEmpty()) {
-                        User user = (User) textMessage.getTargetUsers().get(0);
+                        User user = textMessage.getTargetUsers().get(0);
                         if (user != null && user.getName() != null) {
                             targetMessage = getContext().getString(R.string.chat_message_to, textMessage.getActorName(), user.getName());
                         }

@@ -51,7 +51,7 @@ public class FavouriteServerListFragment extends Fragment implements OnItemClick
     private ServerConnectHandler mConnectHandler;
     private DatabaseProvider mDatabaseProvider;
     private GridView mServerGrid;
-    private ServerAdapter mServerAdapter;
+    private ServerAdapter<Server> mServerAdapter;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -160,7 +160,7 @@ public class FavouriteServerListFragment extends Fragment implements OnItemClick
 
     @Override
     public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-        mConnectHandler.connectToServer((Server) mServerAdapter.getItem(arg2));
+        mConnectHandler.connectToServer(mServerAdapter.getItem(arg2));
     }
 
     public static interface ServerConnectHandler {

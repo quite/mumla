@@ -413,9 +413,9 @@ public class PublicServerListFragment extends Fragment implements OnItemClickLis
             // If there are less servers than the value of our range, deal with it.
             mResponsesToSend = Math.min(SEARCH_RANGE, servers.size());
 
-            Iterator iterator = servers.iterator();
+            Iterator<PublicServer> iterator = servers.iterator();
             while(iterator.hasNext() && mGoodResponses.size() < mResponsesToSend) {
-                PublicServer server = (PublicServer) iterator.next();
+                PublicServer server = iterator.next();
                 new MatchServerInfoTask().executeOnExecutor(mPingExecutor, server);
             }
             try {

@@ -333,7 +333,7 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
                 Server server = MumbleURLParser.parseURL(url);
 
                 // Open a dialog prompting the user to connect to the Mumble server.
-                DialogFragment fragment = (DialogFragment) ServerEditFragment.createServerEditDialog(
+                DialogFragment fragment = ServerEditFragment.createServerEditDialog(
                         MumlaActivity.this, server, ServerEditFragment.Action.CONNECT_ACTION, true);
                 fragment.show(getSupportFragmentManager(), "url_edit");
             } catch (MalformedURLException e) {

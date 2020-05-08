@@ -128,10 +128,12 @@ public class DrawerAdapter extends ArrayAdapter<DrawerAdapter.DrawerRow> {
 
             switch((int) getItemId(position)) {
                 case HEADER_CONNECTED_SERVER:
-                    if(mProvider.isConnected()) {
+                    if (mProvider.isConnected()) {
                         title.setText(mProvider.getConnectedServerName());
-                        break;
+                    } else {
+                        title.setText(header.title);
                     }
+                    break;
                 default:
                     title.setText(header.title);
                     break;

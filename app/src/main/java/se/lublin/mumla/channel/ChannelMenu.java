@@ -85,6 +85,7 @@ public class ChannelMenu implements PermissionsPopupMenu.IOnMenuPrepareListener,
     }
 
     @Override
+    @SuppressWarnings("fallthrough")
     public boolean onMenuItemClick(MenuItem item) {
         if (!mService.isConnected())
             return false;
@@ -96,11 +97,15 @@ public class ChannelMenu implements PermissionsPopupMenu.IOnMenuPrepareListener,
                 break;
             case R.id.context_channel_add:
                 adding = true;
+                // fallthrough!
             case R.id.context_channel_edit:
                 ChannelEditFragment addFragment = new ChannelEditFragment();
                 Bundle args = new Bundle();
-                if (adding) args.putInt("parent", mChannel.getId());
-                else args.putInt("channel", mChannel.getId());
+                if (adding) {
+                    args.putInt("parent", mChannel.getId());
+                } else {
+                    args.putInt("channel", mChannel.getId());
+                }
                 args.putBoolean("adding", adding);
                 addFragment.setArguments(args);
                 addFragment.show(mFragmentManager, "ChannelAdd");

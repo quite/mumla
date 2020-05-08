@@ -162,13 +162,13 @@ public class ChannelSearchProvider extends ContentProvider {
         if (root == null) {
             return;
         }
-        for (IUser user : (List<IUser>) root.getUsers()) {
+        for (IUser user : root.getUsers()) {
             if (user != null && user.getName() != null
                     && user.getName().toLowerCase().contains(str.toLowerCase())) {
                 users.add(user);
             }
         }
-        for (IChannel subc : (List<IChannel>) root.getSubchannels()) {
+        for (IChannel subc : root.getSubchannels()) {
             if (subc != null)
                 userSearch(subc, str, users);
         }
@@ -199,7 +199,7 @@ public class ChannelSearchProvider extends ContentProvider {
             channels.add(root);
         }
 
-        for (IChannel subc : (List<IChannel>) root.getSubchannels()) {
+        for (IChannel subc : root.getSubchannels()) {
             if (subc != null)
                 channelSearch(subc, str, channels);
         }

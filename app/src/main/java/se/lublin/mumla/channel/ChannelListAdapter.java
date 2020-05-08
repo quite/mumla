@@ -56,7 +56,7 @@ import se.lublin.mumla.service.MumlaService;
 /**
  * Created by andrew on 31/07/13.
  */
-public class ChannelListAdapter extends RecyclerView.Adapter implements UserMenu.IUserLocalStateListener {
+public class ChannelListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements UserMenu.IUserLocalStateListener {
     // Set particular bits to make the integer-based model item ids unique.
     public static final long CHANNEL_ID_MASK = (0x1L << 32);
     public static final long USER_ID_MASK = (0x1L << 33);
@@ -409,13 +409,13 @@ public class ChannelListAdapter extends RecyclerView.Adapter implements UserMenu
             return; // Skip adding children of contracted/empty channels.
         }
 
-        for (IUser user : (List<IUser>) channel.getUsers()) {
+        for (IUser user : channel.getUsers()) {
             if (user == null) {
                 continue;
             }
             nodes.add(new Node(channelNode, depth, user));
         }
-        for (IChannel subc : (List<IChannel>) channel.getSubchannels()) {
+        for (IChannel subc : channel.getSubchannels()) {
             constructNodes(channelNode, subc, depth + 1, nodes);
         }
     }
