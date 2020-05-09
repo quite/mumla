@@ -15,13 +15,6 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-allprojects {
-    tasks.withType(JavaCompile) {
-        // TODO include deprecations at some point, but currently they are *many*
-        options.compilerArgs << "-Xlint:all" << "-Xlint:-deprecation" << "-Xlint:-dep-ann"
-    }
-}
-
 buildscript {
     repositories {
         jcenter()
@@ -51,6 +44,13 @@ def signingFile = file 'signing.gradle'
 if (signingFile.exists()) apply from: signingFile
 def signingBetaFile = file 'signing-beta.gradle'
 if (signingBetaFile.exists()) apply from: signingBetaFile
+
+allprojects {
+    tasks.withType(JavaCompile) {
+        // TODO include deprecations at some point, but currently they are *many*
+        options.compilerArgs << "-Xlint:all" << "-Xlint:-deprecation" << "-Xlint:-dep-ann"
+    }
+}
 
 android {
     compileSdkVersion 29
