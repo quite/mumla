@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wizard_next">下一步</string>
+    <string name="wizard_back">上一步</string>
+    <string name="wizard_cancel">取消</string>
+    <string name="wizard_finish">完成</string>
+    <string name="wizard_confirm_close">您确定要退出安装向导吗？您可以随时在应用设置内重新打开。</string>
+
+    <!-- Welcome screen -->
+    <string name="wizard_welcome_title">欢迎使用 Mumla</string>
+
+    <!-- Certificate setup -->
+    <string name="wizard_certificate_title">创建证书</string>
+
+    <!-- AudioHandler setup -->
+    <string name="wizard_audio_title">音频设置</string>
+
+    <!-- General settings -->
+    <string name="wizard_general_title">实用选项</string>
+</resources>
