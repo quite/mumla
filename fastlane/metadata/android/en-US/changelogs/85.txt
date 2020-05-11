@@ -1,0 +1,4 @@
+- deluxghost translated Mumla to simplified Chinese.
+- Public server list retrieval works again.
+- Fixed a crash bug related to image with data-URI.
+
