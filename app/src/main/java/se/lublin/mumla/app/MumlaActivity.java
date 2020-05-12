@@ -478,7 +478,11 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
         if(mSettings.isUsingCertificate()) return;
         AlertDialog.Builder adb = new AlertDialog.Builder(this);
         adb.setTitle(R.string.first_run_generate_certificate_title);
-        adb.setMessage(R.string.first_run_generate_certificate);
+        String msg = getString(R.string.first_run_generate_certificate);
+        if (BuildConfig.FLAVOR.equals("donation")) {
+            msg = getString(R.string.donation_thanks) + "\n\n" + msg;
+        }
+        adb.setMessage(msg);
         adb.setPositiveButton(R.string.generate, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {

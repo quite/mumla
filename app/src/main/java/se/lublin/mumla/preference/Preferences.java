@@ -140,6 +140,8 @@ public class Preferences extends PreferenceActivity {
                 f.setTimeZone(TimeZone.getTimeZone("UTC"));
                 version += ("\nBeta flavor, versioncode: " + info.versionCode
                         + "\nbuildtime: " + f.format(new Date(BuildConfig.TIMESTAMP)) + " UTC");
+            } else if (BuildConfig.FLAVOR.equals("donation")) {
+                version += "\n\n*) " + context.getString(R.string.donation_thanks);
             }
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
