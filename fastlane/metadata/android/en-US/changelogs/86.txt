@@ -1,0 +1,17 @@
+This is the first release on Googel Play store.
+
+- Many bugs fixed, especially related to permission requests.
+
+- Connect over Tor (Orbot) works better and supports Hidden Services (.onion).
+
+- Support DNS SRV record for server address lookup.
+
+- Certificate dialog displays SHA-256 digest and text can be copied.
+
+- Allan Nordhøy reworked the English source strings.
+
+- R4SAS translated Mumla to Russian.
+
+- deluxghost translated Mumla to simplified Chinese.
+
+- Public server list retrieval works again.

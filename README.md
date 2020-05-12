@@ -3,7 +3,7 @@
 Mumla is a fork and continuation of [Plumble](https://github.com/acomminos/Plumble),
 a robust GPLv3 Mumble client for Android originally written by Andrew Comminos.
 It uses the [Humla](https://gitlab.com/quite/humla) protocol implementation
-(forked from Comminos' [Jumble](https://github.com/acomminos/Jumble)).
+(forked from Comminos's [Jumble](https://github.com/acomminos/Jumble)).
 
 Mumla should run on Android 4.0 (IceCreamSandwich, API 14) and later.
 
