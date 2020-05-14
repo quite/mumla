@@ -59,6 +59,10 @@ public class Settings {
     /** Continuous transmits always. */
     public static final String ARRAY_INPUT_METHOD_CONTINUOUS = "continuous";
 
+    // NOTE: When changing DEFAULTs, the default value in the corresponding
+    // widget in settings_PAGE.xml must also be changed. It doesn't pick this
+    // up itself...
+
     public static final String PREF_THRESHOLD = "vadThreshold";
     public static final int DEFAULT_THRESHOLD = 50;
 
@@ -80,7 +84,7 @@ public class Settings {
     public static final Boolean DEFAULT_PTT_TOGGLE = false;
 
     public static final String PREF_INPUT_RATE = "input_quality";
-    public static final String DEFAULT_RATE = "48000";
+    public static final String DEFAULT_RATE = "44100";
 
     public static final String PREF_INPUT_QUALITY = "input_bitrate";
     public static final int DEFAULT_INPUT_QUALITY = 40000;
