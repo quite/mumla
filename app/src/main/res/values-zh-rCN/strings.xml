@@ -55,15 +55,15 @@
     <string name="server_info_latency">%.2f 毫秒延迟</string>
     <string name="server_info_host">远程主机 %1$s（端口 %2$d）</string>
     <string name="server_info_codec">编解码器：%s</string>
-    <string name="server_info_max_bandwidth">最大 %.1f 千比特/秒</string>
-    <string name="server_info_current_bandwidth">当前 %.1f 千比特/秒</string>
+    <string name="server_info_max_bandwidth">最大 %.1f kbit/s</string>
+    <string name="server_info_current_bandwidth">当前 %.1f kbit/s</string>
 
     <!-- Server matching -->
     <string name="server_match">查找服务器</string>
     <string name="server_match_progress">正在查找服务器…</string>
     <string name="server_match_found">找到服务器</string>
     <string name="server_match_not_found">无法找到服务器</string>
-    <string name="server_match_expand_country">无法在您的区域找到最佳服务器。在全球范围内搜索？</string>
+    <string name="server_match_expand_country">无法在您的区域找到最佳服务器。是否在全球范围内搜索？</string>
     <string name="server_match_info">名称：%1$s\n主机：%2$s:%3$d\n用户：%4$d / %5$d\n版本：%6$s \区域：%7$s \n延迟：%8$d 毫秒</string>
     <string name="server_match_description">Mumla 可以根据区域、版本与延迟自动为您寻找最佳的空服务器。</string>
 
@@ -81,7 +81,7 @@
     <string name="fragment_chat">聊天</string>
     <string name="fragment_channel">频道</string>
     <string name="menu_settings">设置</string>
-    <string name="ptt">按键发言</string>
+    <string name="ptt">按住说话</string>
     <string name="mute">开关麦克风</string>
     <string name="deafen">开关扬声器</string>
     <string name="disconnect">断开连接</string>
@@ -186,7 +186,7 @@
     <string name="tapToReconnect">点击以重新连接</string>
     <string name="overlay">浮窗</string>
     <string name="hint_reason">原因</string>
-    <string name="hint_ptt">按键发言</string>
+    <string name="hint_ptt">按住说话</string>
     <string name="hint_ptt_summary">按下此按钮以发言，双击按钮以切换状态。</string>
     <string name="hint_server_add">欢迎使用 Mumla</string>
     <string name="hint_server_add_summary">点击操作栏上的“添加”按钮添加一个服务器。</string>
