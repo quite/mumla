@@ -7,9 +7,10 @@ It uses the [Humla](https://gitlab.com/quite/humla) protocol implementation
 
 Mumla should run on Android 4.0 (IceCreamSandwich, API 14) and later.
 
-There is a small page for Mumla here: [https://mumla-app.gitlab.io/](https://mumla-app.gitlab.io/)
+Mumla is available [on F-Droid](https://f-droid.org/packages/se.lublin.mumla/).
 
-[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/se.lublin.mumla/)
+There is a small [landing page](https://mumla-app.gitlab.io/), that also has
+information about [Beta releases](https://mumla-app.gitlab.io/beta/).
 
 ## Building on GNU/Linux
 
@@ -26,4 +27,4 @@ but currently isn't.
 
 ## License
 
-Mumla's [LICENSE](LICENSE) is GNU GPL v3+.
+Mumla's [LICENSE](LICENSE) is GNU GPL v3.
