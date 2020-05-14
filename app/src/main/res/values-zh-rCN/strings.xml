@@ -63,7 +63,7 @@
     <string name="server_match_progress">正在查找服务器…</string>
     <string name="server_match_found">找到服务器</string>
     <string name="server_match_not_found">无法找到服务器</string>
-    <string name="server_match_expand_country">无法在您的区域找到最佳服务器。在全球范围内搜索？</string>
+    <string name="server_match_expand_country">无法在您的区域找到最佳服务器。是否在全球范围内搜索？</string>
     <string name="server_match_info">名称：%1$s\n主机：%2$s:%3$d\n用户：%4$d / %5$d\n版本：%6$s \区域：%7$s \n延迟：%8$d 毫秒</string>
     <string name="server_match_description">Mumla 可以根据区域、版本与延迟自动为您寻找最佳的空服务器。</string>
 
