@@ -39,7 +39,9 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/Theme.Mumla" >
+        android:theme="@style/Theme.Mumla"
+        android:requestLegacyExternalStorage="true" >
+
         <activity android:name=".wizard.WizardActivity" />
         <activity
             android:name=".preference.Preferences"

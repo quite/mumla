@@ -58,6 +58,8 @@ android {
 
     defaultConfig {
         minSdkVersion 14
+        // TODO bumping to 30 will break writing to external storage, see
+        // requestLegacyExternalStorage in app/src/main/AndroidManifest.xml
         targetSdkVersion 29
         multiDexEnabled true
 
