@@ -347,11 +347,14 @@ public class ChannelListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
             if (user.getTexture() != null) {
                 // FIXME: cache bitmaps
                 Bitmap bitmap = BitmapFactory.decodeByteArray(user.getTexture(), 0, user.getTexture().length);
-                return new CircleDrawable(mContext.getResources(), bitmap);
-            } else {
-                return resources.getDrawable(R.drawable.outline_circle_talking_off);
+                // yes, decoding can fail
+                if (bitmap != null) {
+                    return new CircleDrawable(mContext.getResources(), bitmap);
+                }
             }
         }
+        // "default" symbol, used also if bitmap decoding fails
+        return resources.getDrawable(R.drawable.outline_circle_talking_off);
     }
 
     public int getUserPosition(int session) {
