@@ -24,6 +24,7 @@ import android.text.Editable;
 import android.text.Html;
 import android.text.TextWatcher;
 import android.text.method.LinkMovementMethod;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -58,6 +59,7 @@ import se.lublin.humla.model.User;
 import se.lublin.humla.util.HumlaDisconnectedException;
 import se.lublin.humla.util.HumlaObserver;
 import se.lublin.humla.util.IHumlaObserver;
+import se.lublin.mumla.Constants;
 import se.lublin.mumla.R;
 import se.lublin.mumla.service.IChatMessage;
 import se.lublin.mumla.util.HumlaServiceFragment;
@@ -148,14 +150,22 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
         mSendButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                sendMessage();
+                try {
+                    sendMessage();
+                } catch (HumlaDisconnectedException e) {
+                    Log.d(Constants.TAG, "ChannelChatFragment, exception from sendMessage: " + e);
+                }
             }
         });
 
         mChatTextEdit.setOnEditorActionListener(new OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                sendMessage();
+                try {
+                    sendMessage();
+                } catch (HumlaDisconnectedException e) {
+                    Log.d(Constants.TAG, "ChannelChatFragment, exception from sendMessage: " + e);
+                }
                 return true;
             }
         });
