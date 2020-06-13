@@ -20,6 +20,7 @@ package se.lublin.mumla.channel;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -40,6 +41,7 @@ import se.lublin.humla.model.Server;
 import se.lublin.humla.model.WhisperTargetChannel;
 import se.lublin.humla.net.Permissions;
 import se.lublin.humla.util.VoiceTargetMode;
+import se.lublin.mumla.Constants;
 import se.lublin.mumla.R;
 import se.lublin.mumla.channel.comment.ChannelDescriptionFragment;
 import se.lublin.mumla.db.MumlaDatabase;
@@ -79,8 +81,15 @@ public class ChannelMenu implements PermissionsPopupMenu.IOnMenuPrepareListener,
                     .setChecked(mDatabase.isChannelPinned(server.getId(), mChannel.getId()));
         }
         if (mService.isConnected()) {
-            menu.findItem(R.id.context_channel_link)
-                    .setChecked(mChannel.getLinks().contains(mService.getSession().getSessionChannel()));
+            IChannel ourChan = null;
+            try {
+                ourChan = mService.getSession().getSessionChannel();
+            } catch(IllegalStateException e) {
+                Log.d(Constants.TAG, "ChannelMenu, exception in onMenuPrepare: " + e);
+            }
+            if (ourChan != null) {
+                menu.findItem(R.id.context_channel_link).setChecked(mChannel.getLinks().contains(ourChan));
+            }
         }
     }
 

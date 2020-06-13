@@ -300,11 +300,15 @@ public class ChannelListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
 
         IHumlaSession session = mService.getSession();
         mNodes.clear();
-        for (int cid : mRootChannels) {
-            IChannel channel = session.getChannel(cid);
-            if (channel != null) {
-                constructNodes(null, channel, 0, mNodes);
+        try {
+            for (int cid : mRootChannels) {
+                IChannel channel = session.getChannel(cid);
+                if (channel != null) {
+                    constructNodes(null, channel, 0, mNodes);
+                }
             }
+        } catch (IllegalStateException e) {
+            Log.d(Constants.TAG, "ChannelListAdapter, exception in updateChannels: " + e);
         }
     }
 

@@ -22,6 +22,7 @@ import android.content.SharedPreferences;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -51,6 +52,7 @@ import se.lublin.humla.model.WhisperTarget;
 import se.lublin.humla.util.HumlaObserver;
 import se.lublin.humla.util.IHumlaObserver;
 import se.lublin.humla.util.VoiceTargetMode;
+import se.lublin.mumla.Constants;
 import se.lublin.mumla.R;
 import se.lublin.mumla.Settings;
 import se.lublin.mumla.util.HumlaServiceFragment;
@@ -82,6 +84,14 @@ public class ChannelFragment extends HumlaServiceFragment implements SharedPrefe
         public void onUserTalkStateUpdated(IUser user) {
             if (getService().isConnected()) {
                 IHumlaSession session = getService().getSession();
+                boolean self;
+                try {
+                    self = (user != null) && user.getSession() == session.getSessionId();
+                } catch (IllegalStateException e) {
+                    Log.d(Constants.TAG, "ChannelFragment, exception in onUserTalkStateUpdated: " + e);
+                    return;
+                }
+
                 if (user != null && user.getSession() == session.getSessionId()) {
                     // Manually set button selection colour when we receive a talk state update.
                     // This allows representation of talk state when using hot corners and PTT toggle.

@@ -20,6 +20,7 @@ package se.lublin.mumla.channel;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -35,6 +36,7 @@ import java.util.List;
 import se.lublin.humla.model.IChannel;
 import se.lublin.humla.model.IUser;
 import se.lublin.humla.net.Permissions;
+import se.lublin.mumla.Constants;
 import se.lublin.mumla.R;
 import se.lublin.mumla.channel.comment.UserCommentFragment;
 import se.lublin.mumla.service.MumlaService;
@@ -62,7 +64,13 @@ public class UserMenu implements PermissionsPopupMenu.IOnMenuPrepareListener, Po
     @Override
     public void onMenuPrepare(Menu menu, int permissions) {
         // Use permission data to determine the actions available.
-        boolean self = mUser.getSession() == mService.getSessionId();
+        boolean self;
+        try {
+            self = mUser.getSession() == mService.getSessionId();
+        } catch (IllegalStateException e) {
+            Log.d(Constants.TAG, "UserMenu, exception in onMenuPrepare: " + e);
+            return;
+        }
         int perms = mService.getPermissions();
         IChannel channel = mUser.getChannel();
         int channelPerms = channel.getId() != 0 ? channel.getPermissions() : perms;
