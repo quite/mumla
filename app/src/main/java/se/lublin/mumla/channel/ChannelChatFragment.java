@@ -253,7 +253,9 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
     }
 
     public void clear() {
-        mChatAdapter.clear();
+        if (mChatAdapter != null) {
+            mChatAdapter.clear();
+        }
         getService().clearMessageLog();
     }
 

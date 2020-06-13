@@ -364,7 +364,7 @@ public class MumlaService extends HumlaService implements
 
         setProximitySensorOn(false);
 
-        mMessageLog.clear();
+        clearMessageLog();
         mMessageNotification.dismiss();
     }
 
@@ -594,7 +594,9 @@ public class MumlaService extends HumlaService implements
 
     @Override
     public void clearMessageLog() {
-        mMessageLog.clear();
+        if (mMessageLog != null) {
+            mMessageLog.clear();
+        }
     }
 
     /**
