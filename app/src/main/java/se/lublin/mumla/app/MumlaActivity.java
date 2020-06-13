@@ -721,7 +721,11 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
                 break;
             case CONNECTION_LOST:
                 // Only bother the user if the error hasn't already been shown.
-                if (!getService().isErrorShown()) {
+                if (getService() != null && !getService().isErrorShown()) {
+                    // TODO? bail out if service gone -- it is happening!
+                    if (getService() == null) {
+                        break;
+                    }
                     HumlaException error = getService().getConnectionError();
                     AlertDialog.Builder ab = new AlertDialog.Builder(MumlaActivity.this);
                     ab.setTitle(getString(R.string.connectionRefused) + (mSettings.isTorEnabled() ? " (Tor)" : ""));
