@@ -25,6 +25,7 @@ import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.os.RemoteException;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -48,6 +49,7 @@ import se.lublin.humla.model.IChannel;
 import se.lublin.humla.model.IUser;
 import se.lublin.humla.model.Server;
 import se.lublin.humla.model.TalkState;
+import se.lublin.mumla.Constants;
 import se.lublin.mumla.R;
 import se.lublin.mumla.db.MumlaDatabase;
 import se.lublin.mumla.drawable.CircleDrawable;
@@ -149,16 +151,24 @@ public class ChannelListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
             int nameTypeface = Typeface.NORMAL;
             if (mService != null && mService.isConnected()) {
                 IHumlaSession session = mService.getSession();
-                if (channel.equals(session.getSessionChannel())) {
-                    nameTypeface |= Typeface.BOLD;
-                    // Always italicize our current channel if it has a link.
-                    if (channel.getLinks().size() > 0) {
+                IChannel ourChan = null;
+                try {
+                    ourChan = session.getSessionChannel();
+                } catch(IllegalStateException e) {
+                    Log.d(Constants.TAG, "ChannelListAdapter, exception in onBindViewHolder: " + e);
+                }
+                if (ourChan != null) {
+                    if (channel.equals(ourChan)) {
+                        nameTypeface |= Typeface.BOLD;
+                        // Always italicize our current channel if it has a link.
+                        if (channel.getLinks().size() > 0) {
+                            nameTypeface |= Typeface.ITALIC;
+                        }
+                    }
+                    // Italicize channels in a link with our current channel.
+                    if (channel.getLinks().contains(ourChan)) {
                         nameTypeface |= Typeface.ITALIC;
                     }
-                }
-                // Italicize channels in a link with our current channel.
-                if (channel.getLinks().contains(session.getSessionChannel())) {
-                    nameTypeface |= Typeface.ITALIC;
                 }
             }
             cvh.mChannelName.setTypeface(null, nameTypeface);
