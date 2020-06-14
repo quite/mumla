@@ -1,4 +1,4 @@
-Mumla is a client for the voice chat system Mumble. It is a continuation (a fork) of Plumble by Andrew Comminos.
+Mumla is a client for the voice chat system Mumble. You can run a Mumble server yourself, and there are clients for most common platforms. For more information see https://www.mumble.info. Mumla is an updated and maintained version (a fork) of the app Plumble.
 
 Some of the features:
 
@@ -14,6 +14,6 @@ Some of the features:
 * Text-to-speech for messages (turned on by default)  
 * Light and dark theme  
 
-Voice activated transmission works best when using a headset. Echo cancellation and noise reduction needs better implementations. You may try tweaking the Detection threshold in the settings.
+Voice activated transmission currently works best when using a headset. The echo cancellation and noise reduction need better implementations. You may also try tweaking the Detection threshold in the settings.
 
-Like the Mumble server and desktop applications, Mumla is also free and open source software. Find out more at https://mumla-app.gitlab.io/
+Mumla is free and open source software. Find out more at: https://mumla-app.gitlab.io/

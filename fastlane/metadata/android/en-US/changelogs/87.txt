@@ -1,0 +1,6 @@
+- Jackal Zhao helped refine translation to simpl. Chinese
+- Correctly display the default 48kHz sample-rate in GUI
+- Fix fetching of long (> 127 bytes) user comments
+- Fix resetting of short user comments
+- Fix export of certificate to external storage on Android 10
+- Fix a dozen possible and actual crash bugs

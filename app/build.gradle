@@ -64,7 +64,7 @@ android {
         multiDexEnabled true
 
         applicationId "se.lublin.mumla"
-        versionCode 86
+        versionCode 87
         versionName gitDescribe()
 
         setProperty("archivesBaseName", "mumla")
