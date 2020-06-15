@@ -1,4 +1,4 @@
-Mumla is a client for the voice chat system Mumble. You can run a Mumble server yourself, and there are clients for most common platforms. For more information see https://www.mumble.info. Mumla is an updated and maintained version (a fork) of the app Plumble.
+Mumla is a client for the voice chat system Mumble. Connect to one of the many public Mumble-servers run by the community, or host one yourself (see https://www.mumble.info for more info). Mumla is an updated and maintained version (a fork) of the app Plumble.
 
 Some of the features:
 
