@@ -17,6 +17,7 @@
 
 package se.lublin.mumla.servers;
 
+import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Xml;
 
@@ -25,6 +26,7 @@ import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.lang.ref.WeakReference;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.ProtocolException;
@@ -38,8 +40,12 @@ import se.lublin.mumla.db.PublicServer;
  * Created by andrew on 05/05/14.
  */
 class PublicServerFetchTask extends AsyncTask<Void, Void, List<PublicServer>> {
-
+    protected WeakReference<Context> contextRef;
     private static final String MUMBLE_PUBLIC_URL = "https://mumble.info/list2.cgi";
+
+    public PublicServerFetchTask(Context context) {
+        contextRef = new WeakReference<>(context);
+    }
 
     @Override
     protected List<PublicServer> doInBackground(Void... params) {

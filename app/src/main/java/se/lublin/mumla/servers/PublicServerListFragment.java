@@ -272,13 +272,15 @@ public class PublicServerListFragment extends Fragment implements OnItemClickLis
     }
 
     private void fillPublicList() {
-        new PublicServerFetchTask() {
+        new PublicServerFetchTask(getActivity()) {
             protected void onPostExecute(List<PublicServer> result) {
                 super.onPostExecute(result);
 
                 if (result == null) {
-                    // Handle error
-                    Toast.makeText(getActivity(), R.string.error_fetching_servers, Toast.LENGTH_SHORT).show();
+                    Context context = contextRef.get();
+                    if (context != null) {
+                        Toast.makeText(context, R.string.error_fetching_servers, Toast.LENGTH_SHORT).show();
+                    }
                     return;
                 }
 
