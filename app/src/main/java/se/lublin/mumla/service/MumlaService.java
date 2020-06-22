@@ -30,6 +30,7 @@ import android.os.IBinder;
 import android.os.PowerManager;
 import android.preference.PreferenceManager;
 import android.speech.tts.TextToSpeech;
+import android.util.Log;
 import android.widget.Toast;
 
 import org.jsoup.Jsoup;
@@ -331,7 +332,22 @@ public class MumlaService extends HumlaService implements
 
     @Override
     public void onConnectionSynchronized() {
-        super.onConnectionSynchronized();
+        // TODO? We seem to be getting a RuntimeException here, from the call
+        //  to the superclass function (in HumlaService). In there,
+        //  mConnect.getSession() finds that isSynchronized==false and throws
+        //  NotSynchronizedException (which is re-thrown as the
+        //  RuntimeException). But how can it be !isSynchronized? -- A server
+        //  msg triggers HumlaConnection.messageServerSync(), which sets up
+        //  mSession and mSynchronized==true and then proceeds to call us from
+        //  a Runnable post()ed to a Handler. The reason could only be that
+        //  HumlaConnect.connect() or disconnect() is called again in the
+        //  middle of all this? And it's made possible by the Handler?
+        try {
+            super.onConnectionSynchronized();
+        } catch (RuntimeException e) {
+            Log.d(Constants.TAG, "HumlaService, exception in onConnectionSynchronized: " + e);
+            return;
+        }
 
         // Restore mute/deafen state
         if(mSettings.isMuted() || mSettings.isDeafened()) {
