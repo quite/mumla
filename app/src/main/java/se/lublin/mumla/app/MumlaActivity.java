@@ -33,7 +33,6 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.preference.PreferenceManager;
 import android.text.InputType;
-import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -726,10 +725,10 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
                     if (getService() == null) {
                         break;
                     }
-                    HumlaException error = getService().getConnectionError();
                     AlertDialog.Builder ab = new AlertDialog.Builder(MumlaActivity.this);
                     ab.setTitle(getString(R.string.connectionRefused) + (mSettings.isTorEnabled() ? " (Tor)" : ""));
-                    if (mService.isReconnecting()) {
+                    HumlaException error = getService().getConnectionError();
+                    if (error != null && mService.isReconnecting()) {
                         ab.setMessage(error.getMessage() + "\n\n"
                                 + getString(R.string.attempting_reconnect,
                                 error.getCause() != null ? error.getCause().getMessage() : "unknown"));
@@ -742,7 +741,8 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
                                 }
                             }
                         });
-                    } else if (error.getReason() == HumlaException.HumlaDisconnectReason.REJECT &&
+                    } else if (error != null &&
+                               error.getReason() == HumlaException.HumlaDisconnectReason.REJECT &&
                                (error.getReject().getType() == Mumble.Reject.RejectType.WrongUserPW ||
                                 error.getReject().getType() == Mumble.Reject.RejectType.WrongServerPW)) {
                         final EditText passwordField = new EditText(this);
@@ -773,7 +773,8 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
                             }
                         });
                     } else {
-                        ab.setMessage(error.getMessage());
+                        String msg = error != null ? error.getMessage() : getString(R.string.unknown);
+                        ab.setMessage(msg);
                         ab.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
