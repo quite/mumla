@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="inputMethodVoice">Aktywność głosowa</string>
+    <string name="inputMethodPtt">Naciśnij i mów</string>
+    <string name="inputMethodContinuous">Ciągle</string>
+
+    <!-- Theme names -->
+    <string name="theme_light">Jasny</string>
+    <string name="theme_dark">Ciemny</string>
+    <string name="theme_solarized_light">Słoneczny jasny</string>
+    <string name="theme_solarized_dark">Słoneczny ciemny</string>
+
+    <!-- Call modes -->
+    <string name="call_mode_speakerphone">Zestaw głośnomówiący</string>
+    <string name="call_mode_voice_call">Połączenie głosowe</string>
+
+    <!-- Hot corner -->
+    <string name="hot_corner_none">Brak</string>
+    <string name="hot_corner_top_left">Lewy górny</string>
+    <string name="hot_corner_bottom_left">Lewy dolny</string>
+    <string name="hot_corner_top_right">Prawy górny</string>
+    <string name="hot_corner_bottom_right">Prawy dolny</string>
+
+    <!-- About -->
+    <string name="about">O programie</string>
+    <string name="aboutSum">Informacje prawne i podziękowania</string>
+    <string name="acknowledgements">Podziękowania</string>
+    <string name="acknowledgementsSum">Zobacz, kto wniósł wkład w Mumla</string>
+    <string name="licenses">Licencje</string>
+
+    <string name="authentication">Uwierzytelnianie</string>
+    <string name="authenticationSum">Zarządzaj certyfikatami i je twórz</string>
+    <string name="audioInput">Wejście audio</string>
+    <string name="audioInputMethodSum">Metoda wejściowa audio.</string>
+    <string name="audioInputMethod">Tryb transmisji</string>
+    <string name="audioInputVolume">Głośność mikrofonu</string>
+    <string name="audioInputVolumeSum">Mnożnik głośności mikrofonu służący do sztucznego znormalizowania dźwięku.</string>
+    <string name="callMode">Tryb połączenia</string>
+    <string name="callModeSum">Tryb połączenia Mumla, czy ma działać jako połączenie głosowe czy zestaw głośnomówiący.</string>
+    <string name="detectionThreshold">Próg wykrywania</string>
+    <string name="detectionThresholdSum">Minimalna amplituda wymagana do wykrycia głosu (dotyczy tylko aktywności głosowej).</string>
+    <string name="pttKey">Klawisz Naciśnij i mów</string>
+    <string name="pttKeySum">Klawisz sprzętowy do powiązania z funkcją Naciśnij i mów.</string>
+    <string name="hotCorner">Gorący narożnik Naciśnij i mów</string>
+    <string name="hotCornerSum">Określony róg ekranu, który po naciśnięciu aktywuje Naciśnij i mów na Androidzie.</string>
+    <string name="general">Ogólne</string>
+    <string name="generalSum">Dostosuj ustawienia ogólne</string>
+    <string name="appearance">Wygląd</string>
+    <string name="appearanceSum">Dostosuj efekty wizualne aplikacji</string>
+    <string name="themeSum">Motyw dla całej aplikacji.</string>
+    <string name="theme">Motyw</string>
+    <string name="advancedAudio">Zaawansowane</string>
+    <string name="forceTcp">Wymuś TCP</string>
+    <string name="forceTcpSum">Czy wymusić komunikację TCP (wyłącza UDP).</string>
+    <string name="audio">Audio</string>
+    <string name="audioSum">Dostosuj wejście i wyjście audio</string>
+    <string name="audioSampleRate">Wejściowa częstotliwość próbkowania</string>
+    <string name="audioSampleRateSum">Preferowana częstotliwość próbkowania dźwięku. Nie wszystkie częstotliwości są obsługiwane przez wszystkie urządzenia.</string>
+    <string name="noCert">Brak certyfikatu</string>
+    <string name="chatNotifications">Powiadomienia na czacie</string>
+    <string name="chatNotificationsSum">Pokaż powiadomienia, gdy użytkownik publikuje na czacie.</string>
+    <string name="defaultUsername">Domyślna nazwa użytkownika</string>
+    <string name="defaultUsernameSum">Domyślna nazwa użytkownika używana podczas łączenia się z serwerami.</string>
+    <string name="defaultUsernameDefault">Użytkownik_Mumla</string>
+    <string name="certificateGenerate">Wygeneruj certyfikat</string>
+    <string name="certificateGenerateSum">Generuje nowy samopodpisany certyfikat Mumla. Zalecane dla początkujących.</string>
+    <string name="pttSettings">Ustawienia funkcji Naciśnij i mów</string>
+    <string name="pttSettingsSum">Skonfiguruj funkcję Naciśnij i mów, jeśli jest włączona.</string>
+    <string name="voiceActivitySettings">Ustawienia aktywności głosowej</string>
+    <string name="voiceActivitySettingsSum">Skonfiguruj aktywność głosową, jeśli jest włączona.</string>
+    <string name="audioOutput">Wyjście audio</string>
+    <string name="disableOpus">Wyłącz kodek Opus</string>
+    <string name="disableOpusSum">Wyłącz obsługę Opus dla serwerów Mumble 1.2.4.</string>
+    <string name="hidePtt">Ukryj przycisk Naciśnij i mów</string>
+    <string name="hidePttSum">Ukrywa przycisk Naciśnij i mów w trybie Naciśnij i mów. Przydatne, jeśli używasz wyłącznie gorących narożników lub klawisza sprzętowego.</string>
+    <string name="useTts">Tekst na mowę</string>
+    <string name="useTtsSum">Włącz funkcję Tekst na mowę dla wiadomości przychodzących.</string>
+    <string name="shortTtsMessages">Krótkie wiadomości Tekst na mowę</string>
+    <string name="shortTtsMessagesSum">Skróć wiadomości Tekst na mowę, zastępując linki ich nazwami domen.</string>
+    <string name="togglePtt">Przełącz Naciśnij i mów</string>
+    <string name="togglePttSum">Włącza i wyłącza funkcję Naciśnij i mów po naciśnięciu.</string>
+    <string name="autoReconnect">Automatyczne wznowienie połączenia</string>
+    <string name="autoReconnectSum">Automatycznie spróbuj ponownie nawiązać połączenie, gdy połączenie z serwerem zostanie utracone.</string>
+    <string name="useTor">Połącz przez Tor</string>
+    <string name="useTorSum">Wymaga aplikacji Orbot</string>
+    <string name="inputQuality">Jakość wejściowa</string>
+    <string name="inputQualitySum">Docelowa jakość wejściowa w bps.</string>
+    <string name="pttButtonHeight">Wysokość przycisku Naciśnij i mów</string>
+    <string name="pttButtonHeightSum">Zmień wysokość przycisku Naciśnij i mów.</string>
+    <string name="pressKey">Naciśnij klawisz sprzętowy, aby połączyć się z funkcją Naciśnij i mów.</string>
+    <string name="pressKeyInfo">Uwaga: z powodu ograniczeń w Androidzie aplikacja musi być otwarta, aby móc używać klawisza sprzętowego Naciśnij i mów.</string>
+    <string name="loadImagesSum">Czy ładować obrazy zewnętrzne na czacie.</string>
+    <string name="loadImages">Załaduj obrazy zewnętrzne</string>
+    <string name="clearServerCertificates">Wyczyść certyfikaty serwera</string>
+    <string name="clearServerCertificatesSum">Usuń wszystkie dozwolone certyfikaty serwera z bazy danych zaufania Mumla.</string>
+    <string name="version">Wersja</string>
+    <string name="halfDuplex">Tryb półdupleksowy</string>
+    <string name="halfDuplexSum">Wycisza dźwięk urządzenia podczas korzystania z funkcji Naciśnij i mów, usuwając informacje zwrotne dla użytkowników kanału.</string>
+    <string name="handsetMode">Tryb słuchawki</string>
+    <string name="handsetModeSum">Używa przedniego głośnika i czujnika zbliżeniowego do symulacji tradycyjnego połączenia telefonicznego.</string>
+    <string name="pttSound">Dźwięk Naciśnij i mów</string>
+    <string name="pttSoundSum">Odtwórz efekt dźwiękowy po naciśnięciu przycisku Naciśnij i mów.</string>
+    <string name="preprocessor_enabled">Włącz preprocesor wejściowy</string>
+    <string name="preprocessor_enabled_sum">Włącz preprocesor Speex dla tłumienia hałasu otoczenia i normalizacji głośności.</string>
+    <string name="audio_per_packet">Audio na pakiet</string>
+    <string name="audio_per_packet_sum">Długość audio na pakiet głosowy.</string>
+    <string name="stay_awake">Nie usypiaj</string>
+    <string name="stay_awake_sum">Gdy Mumla jest otwarty, ekran nie zostanie wyłączony.</string>
+    <string name="pref_certificate_title">Certyfikat</string>
+    <string name="pref_certificate_summary">Domyślny certyfikat używany podczas łączenia się z serwerem.</string>
+    <string name="pref_import_certificate_title">Importuj certyfikat</string>
+    <string name="pref_import_certificate_summary">Zaimportuj certyfikat z pamięci zewnętrznej.</string>
+    <string name="pref_export_certificate_title">Eksportuj certyfikat</string>
+    <string name="pref_export_certificate_summary">Eksportuje certyfikat do pamięci zewnętrznej.</string>
+    <string name="pref_show_user_count">Pokaż liczbę użytkowników kanału</string>
+    <string name="pref_show_user_count_summary">Pokaż licznik z liczbą użytkowników w poddrzewie kanału.</string>
+    <string name="pref_start_up_in_pinned_mode">Uruchom w trybie przypiętym</string>
+    <string name="pref_start_upIn_pinned_mode_sum">Podczas łączenia z serwerem będą wyświetlane tylko przypięte kanały.</string>
+</resources>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wizard_next">Dalej</string>
+    <string name="wizard_back">Wstecz</string>
+    <string name="wizard_cancel">Anuluj</string>
+    <string name="wizard_finish">Zakończ</string>
+    <string name="wizard_confirm_close">Czy na pewno chcesz wyjść z kreatora konfiguracji? Możesz go wznowić w dowolnym momencie w ustawieniach aplikacji.</string>
+
+    <!-- Welcome screen -->
+    <string name="wizard_welcome_title">Witaj w Mumla</string>
+
+    <!-- Certificate setup -->
+    <string name="wizard_certificate_title">Utwórz certyfikat</string>
+
+    <!-- AudioHandler setup -->
+    <string name="wizard_audio_title">Ustawienia audio</string>
+
+    <!-- General settings -->
+    <string name="wizard_general_title">Przydatne opcje</string>
+</resources>
