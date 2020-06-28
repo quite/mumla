@@ -16,7 +16,7 @@
     <string name="chat_message_tree">(Drzewo)</string>
     <string name="chat_message_channel">(kanał)</string>
     <string name="chat_message_to">%1$s → %2$s</string>
-    <string name="chat_message_tts_short_link">(Link do %1$s)</string>
+    <string name="chat_message_tts_short_link">(Łącze do %1$s)</string>
 
     <!-- User menu -->
     <string name="user_menu_admin">Administrator</string>
@@ -63,9 +63,9 @@
     <string name="server_match_progress">Znajdowanie serwera…</string>
     <string name="server_match_found">Znaleziono serwer</string>
     <string name="server_match_not_found">Nie można znaleźć serwera</string>
-    <string name="server_match_expand_country">Nie można znaleźć optymalnych serwerów w twoim kraju. Szukać na całym świecie?</string>
+    <string name="server_match_expand_country">Nie można znaleźć optymalnych serwerów w Twoim kraju. Szukać na całym świecie?</string>
     <string name="server_match_info">Nazwa: %1$s\nHost: %2$s:%3$d\nUżytkownicy: %4$d / %5$d\nWersja: %6$s \nKraj: %7$s \nOpóźnienie: %8$d ms</string>
-    <string name="server_match_description">Mumla może automatycznie znaleźć ci pusty serwer, optymalizując lokalizację, wersję i opóźnienie.</string>
+    <string name="server_match_description">Mumla może automatycznie znaleźć Ci pusty serwer, optymalizując lokalizację, wersję i opóźnienie.</string>
 
     <!-- Common -->
     <string name="channels">Kanały</string>
@@ -83,7 +83,7 @@
     <string name="menu_settings">Ustawienia</string>
     <string name="ptt">Naciśnij i mów</string>
     <string name="mute">Wycisz</string>
-    <string name="deafen">Zagłusz</string>
+    <string name="deafen">Ogłusz</string>
     <string name="disconnect">Rozłącz</string>
     <string name="disconnectSure">Czy na pewno chcesz rozłączyć się z %s?</string>
     <string name="save">Zapisz</string>
@@ -220,7 +220,7 @@
     <string name="transmit_mode">Tryb transmisji</string>
     <string name="current_chat_target">Bieżący cel czatu</string>
     <string name="channel_join">Dołącz</string>
-    <string name="certificate_info">Podmiot:\n%1$s\n\nWażny od:\n%2$s\n\nWażny do:\n%3$s\n\nDeklaracja (SHA-1):\n%4$s\n\nDeklaracja (SHA-256):\n%5$s</string>
+    <string name="certificate_info">Podmiot:\n%1$s\n\nWażny od:\n%2$s\n\nWażny do:\n%3$s\n\nSkrót (SHA-1):\n%4$s\n\nSkrót (SHA-256):\n%5$s</string>
     <string name="invalid_host">Niepoprawny host</string>
     <string name="invalid_port_range">Nieprawidłowy port (1-65535)</string>
     <string name="invalid_username">Niepoprawna nazwa użytkownika</string>
@@ -238,7 +238,7 @@
     <string name="migration_certificate_success">Certyfikat migrowany.</string>
     <string name="error_writing_to_storage">Nie można zapisać w pamięci zewnętrznej.</string>
     <string name="export_success">Certyfikat wyeksportowany do %s.</string>
-    <string name="context_channel_link">Link</string>
+    <string name="context_channel_link">Złącz</string>
     <string name="context_channel_unlink_all">Rozłącz wszystkie</string>
     <string name="context_channel_shout">Ustaw cel głosu</string>
     <string name="shout_include_linked">Krzycz do połączonych kanałów</string>

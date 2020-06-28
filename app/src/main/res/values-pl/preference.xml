@@ -2,7 +2,7 @@
 <resources>
     <string name="inputMethodVoice">Aktywność głosowa</string>
     <string name="inputMethodPtt">Naciśnij i mów</string>
-    <string name="inputMethodContinuous">Ciągle</string>
+    <string name="inputMethodContinuous">Ciągły</string>
 
     <!-- Theme names -->
     <string name="theme_light">Jasny</string>
@@ -39,8 +39,8 @@
     <string name="callModeSum">Tryb połączenia Mumla, czy ma działać jako połączenie głosowe czy zestaw głośnomówiący.</string>
     <string name="detectionThreshold">Próg wykrywania</string>
     <string name="detectionThresholdSum">Minimalna amplituda wymagana do wykrycia głosu (dotyczy tylko aktywności głosowej).</string>
-    <string name="pttKey">Klawisz Naciśnij i mów</string>
-    <string name="pttKeySum">Klawisz sprzętowy do powiązania z funkcją Naciśnij i mów.</string>
+    <string name="pttKey">Przycisk Naciśnij i mów</string>
+    <string name="pttKeySum">Przycisk sprzętowy do powiązania z funkcją Naciśnij i mów.</string>
     <string name="hotCorner">Gorący narożnik Naciśnij i mów</string>
     <string name="hotCornerSum">Określony róg ekranu, który po naciśnięciu aktywuje Naciśnij i mów na Androidzie.</string>
     <string name="general">Ogólne</string>
@@ -72,23 +72,23 @@
     <string name="disableOpus">Wyłącz kodek Opus</string>
     <string name="disableOpusSum">Wyłącz obsługę Opus dla serwerów Mumble 1.2.4.</string>
     <string name="hidePtt">Ukryj przycisk Naciśnij i mów</string>
-    <string name="hidePttSum">Ukrywa przycisk Naciśnij i mów w trybie Naciśnij i mów. Przydatne, jeśli używasz wyłącznie gorących narożników lub klawisza sprzętowego.</string>
+    <string name="hidePttSum">Ukrywa przycisk Naciśnij i mów w trybie Naciśnij i mów. Przydatne, jeśli używasz wyłącznie gorących narożników lub przycisku sprzętowego.</string>
     <string name="useTts">Tekst na mowę</string>
     <string name="useTtsSum">Włącz funkcję Tekst na mowę dla wiadomości przychodzących.</string>
     <string name="shortTtsMessages">Krótkie wiadomości Tekst na mowę</string>
-    <string name="shortTtsMessagesSum">Skróć wiadomości Tekst na mowę, zastępując linki ich nazwami domen.</string>
+    <string name="shortTtsMessagesSum">Skróć wiadomości Tekst na mowę, zastępując łącza ich nazwami domen.</string>
     <string name="togglePtt">Przełącz Naciśnij i mów</string>
     <string name="togglePttSum">Włącza i wyłącza funkcję Naciśnij i mów po naciśnięciu.</string>
     <string name="autoReconnect">Automatyczne wznowienie połączenia</string>
     <string name="autoReconnectSum">Automatycznie spróbuj ponownie nawiązać połączenie, gdy połączenie z serwerem zostanie utracone.</string>
     <string name="useTor">Połącz przez Tor</string>
-    <string name="useTorSum">Wymaga aplikacji Orbot</string>
+    <string name="useTorSum">Wymaga aplikacji Orbot.</string>
     <string name="inputQuality">Jakość wejściowa</string>
     <string name="inputQualitySum">Docelowa jakość wejściowa w bps.</string>
     <string name="pttButtonHeight">Wysokość przycisku Naciśnij i mów</string>
     <string name="pttButtonHeightSum">Zmień wysokość przycisku Naciśnij i mów.</string>
-    <string name="pressKey">Naciśnij klawisz sprzętowy, aby połączyć się z funkcją Naciśnij i mów.</string>
-    <string name="pressKeyInfo">Uwaga: z powodu ograniczeń w Androidzie aplikacja musi być otwarta, aby móc używać klawisza sprzętowego Naciśnij i mów.</string>
+    <string name="pressKey">Naciśnij przycisk sprzętowy, aby połączyć się z funkcją Naciśnij i mów.</string>
+    <string name="pressKeyInfo">Uwaga: z powodu ograniczeń w Androidzie aplikacja musi być otwarta, aby móc używać przycisku sprzętowego Naciśnij i mów.</string>
     <string name="loadImagesSum">Czy ładować obrazy zewnętrzne na czacie.</string>
     <string name="loadImages">Załaduj obrazy zewnętrzne</string>
     <string name="clearServerCertificates">Wyczyść certyfikaty serwera</string>
