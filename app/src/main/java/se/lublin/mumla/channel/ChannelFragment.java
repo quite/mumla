@@ -82,40 +82,46 @@ public class ChannelFragment extends HumlaServiceFragment implements SharedPrefe
     private HumlaObserver mObserver = new HumlaObserver() {
         @Override
         public void onUserTalkStateUpdated(IUser user) {
-            if (getService().isConnected()) {
-                IHumlaSession session = getService().getSession();
-                boolean self;
-                try {
-                    self = (user != null) && user.getSession() == session.getSessionId();
-                } catch (IllegalStateException e) {
-                    Log.d(Constants.TAG, "ChannelFragment, exception in onUserTalkStateUpdated: " + e);
-                    return;
-                }
-
-                if (user != null && user.getSession() == session.getSessionId()) {
-                    // Manually set button selection colour when we receive a talk state update.
-                    // This allows representation of talk state when using hot corners and PTT toggle.
-                    switch (user.getTalkState()) {
-                        case TALKING:
-                        case SHOUTING:
-                        case WHISPERING:
-                            mTalkButton.setPressed(true);
-                            break;
-                        case PASSIVE:
-                            mTalkButton.setPressed(false);
-                            break;
-                    }
+            if (!getService().isConnected()) {
+                return;
+            }
+            int selfSession;
+            try {
+                selfSession = getService().getSession().getSessionId();
+            } catch (IllegalStateException e) {
+                Log.d(Constants.TAG, "ChannelFragment, exception in onUserTalkStateUpdated: " + e);
+                return;
+            }
+            if (user != null && user.getSession() == selfSession) {
+                // Manually set button selection colour when we receive a talk state update.
+                // This allows representation of talk state when using hot corners and PTT toggle.
+                switch (user.getTalkState()) {
+                case TALKING:
+                case SHOUTING:
+                case WHISPERING:
+                    mTalkButton.setPressed(true);
+                    break;
+                case PASSIVE:
+                    mTalkButton.setPressed(false);
+                    break;
                 }
             }
         }
 
         @Override
         public void onUserStateUpdated(IUser user) {
-            if (getService().isConnected()) {
-                IHumlaSession session = getService().getSession();
-                if (user != null && user.getSession() == session.getSessionId()) {
-                    configureInput();
-                }
+            if (!getService().isConnected()) {
+                return;
+            }
+            int selfSession;
+            try {
+                selfSession = getService().getSession().getSessionId();
+            } catch (IllegalStateException e) {
+                Log.d(Constants.TAG, "ChannelFragment, exception in onUserStateUpdated: " + e);
+                return;
+            }
+            if (user != null && user.getSession() == selfSession) {
+                configureInput();
             }
         }
 
