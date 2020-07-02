@@ -287,7 +287,7 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
                 super.onDrawerStateChanged(newState);
                 // Prevent push to talk from getting stuck on when the drawer is opened.
                 if (getService() != null && getService().isConnected()) {
-                    IHumlaSession session = getService().getSession();
+                    IHumlaSession session = getService().HumlaSession();
                     if (session.isTalking() && !mSettings.isPushToTalkToggle()) {
                         session.setTalkingState(false);
                     }

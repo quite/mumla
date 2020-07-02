@@ -83,7 +83,7 @@ public class ChannelMenu implements PermissionsPopupMenu.IOnMenuPrepareListener,
         if (mService.isConnected()) {
             IChannel ourChan = null;
             try {
-                ourChan = mService.getSession().getSessionChannel();
+                ourChan = mService.HumlaSession().getSessionChannel();
             } catch(IllegalStateException e) {
                 Log.d(Constants.TAG, "ChannelMenu, exception in onMenuPrepare: " + e);
             }
@@ -102,7 +102,7 @@ public class ChannelMenu implements PermissionsPopupMenu.IOnMenuPrepareListener,
         boolean adding = false;
         switch(item.getItemId()) {
             case R.id.context_channel_join:
-                mService.getSession().joinChannel(mChannel.getId());
+                mService.HumlaSession().joinChannel(mChannel.getId());
                 break;
             case R.id.context_channel_add:
                 adding = true;
@@ -127,7 +127,7 @@ public class ChannelMenu implements PermissionsPopupMenu.IOnMenuPrepareListener,
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         if (mService.isConnected()) {
-                            mService.getSession().removeChannel(mChannel.getId());
+                            mService.HumlaSession().removeChannel(mChannel.getId());
                         }
                     }
                 });
@@ -150,16 +150,16 @@ public class ChannelMenu implements PermissionsPopupMenu.IOnMenuPrepareListener,
                 else mDatabase.removePinnedChannel(serverId, mChannel.getId());
                 break;
             case R.id.context_channel_link: {
-                IChannel channel = mService.getSession().getSessionChannel();
+                IChannel channel = mService.HumlaSession().getSessionChannel();
                 if (!item.isChecked()) {
-                    mService.getSession().linkChannels(channel, mChannel);
+                    mService.HumlaSession().linkChannels(channel, mChannel);
                 } else {
-                    mService.getSession().unlinkChannels(channel, mChannel);
+                    mService.HumlaSession().unlinkChannels(channel, mChannel);
                 }
                 break;
             }
             case R.id.context_channel_unlink_all:
-                mService.getSession().unlinkAllChannels(mChannel);
+                mService.HumlaSession().unlinkAllChannels(mChannel);
                 break;
             case R.id.context_channel_shout: {
                 AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
@@ -182,7 +182,7 @@ public class ChannelMenu implements PermissionsPopupMenu.IOnMenuPrepareListener,
                         if (!mService.isConnected())
                             return;
 
-                        IHumlaSession session = mService.getSession();
+                        IHumlaSession session = mService.HumlaSession();
 
                         // Unregister any existing voice target.
                         if (session.getVoiceTargetMode() == VoiceTargetMode.WHISPER) {

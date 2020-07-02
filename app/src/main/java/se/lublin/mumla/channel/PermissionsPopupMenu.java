@@ -64,7 +64,7 @@ public class PermissionsPopupMenu implements PopupMenu.OnDismissListener {
 
     private int getPermissions() {
         if (mService.isConnected()) {
-            return mChannel.getId() == 0 ? mService.getSession().getPermissions()
+            return mChannel.getId() == 0 ? mService.HumlaSession().getPermissions()
                                          : mChannel.getPermissions();
         }
         return 0;
@@ -75,7 +75,7 @@ public class PermissionsPopupMenu implements PopupMenu.OnDismissListener {
         if (getPermissions() == 0) {
             // onMenuPrepare will be called once more once permissions have loaded.
             if (mService.isConnected()) {
-                mService.getSession().requestPermissions(mChannel.getId());
+                mService.HumlaSession().requestPermissions(mChannel.getId());
             }
         } else {
             mPrepareListener.onMenuPrepare(mMenu.getMenu(), getPermissions());

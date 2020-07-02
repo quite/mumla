@@ -40,7 +40,7 @@ public class ChannelDescriptionFragment extends AbstractCommentFragment {
                 }
             }
         });
-        service.getSession().requestChannelDescription(getChannelId());
+        service.HumlaSession().requestChannelDescription(getChannelId());
     }
 
     @Override

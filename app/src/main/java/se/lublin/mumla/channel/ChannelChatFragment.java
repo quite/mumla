@@ -94,7 +94,7 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
         public void onUserJoinedChannel(IUser user, IChannel newChannel, IChannel oldChannel) {
             IHumlaService service = getService();
             if (service.isConnected()) {
-                IHumlaSession session = service.getSession();
+                IHumlaSession session = service.HumlaSession();
                 if (user != null && session.getSessionUser() != null &&
                         user.equals(session.getSessionUser()) &&
                         mTargetProvider.getChatTarget() == null) {
@@ -238,7 +238,7 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
         String formattedMessage = markupOutgoingMessage(message);
         ChatTargetProvider.ChatTarget target = mTargetProvider.getChatTarget();
         IMessage responseMessage = null;
-        IHumlaSession session = getService().getSession();
+        IHumlaSession session = getService().HumlaSession();
         if(target == null)
             responseMessage = session.sendChannelTextMessage(session.getSessionChannel().getId(), formattedMessage, false);
         else if(target.getUser() != null)
@@ -275,7 +275,7 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
     public void updateChatTargetText(final ChatTargetProvider.ChatTarget target) {
         if(getService() == null || !getService().isConnected()) return;
 
-        IHumlaSession session = getService().getSession();
+        IHumlaSession session = getService().HumlaSession();
         String hint = null;
         if(target == null && session.getSessionChannel() != null) {
             hint = getString(R.string.messageToChannel, session.getSessionChannel().getName());
@@ -343,7 +343,7 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
                     String targetMessage = getContext().getString(R.string.unknown);
                     boolean selfAuthored;
                     try {
-                        selfAuthored = textMessage.getActor() == mService.getSession().getSessionId();
+                        selfAuthored = textMessage.getActor() == mService.HumlaSession().getSessionId();
                     } catch (HumlaDisconnectedException e) {
                         selfAuthored = false;
                     }

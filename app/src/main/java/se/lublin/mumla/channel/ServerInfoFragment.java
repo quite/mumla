@@ -79,7 +79,7 @@ public class ServerInfoFragment extends HumlaServiceFragment {
         if(getService() == null || !getService().isConnected())
             return;
 
-        IHumlaSession session = getService().getSession();
+        IHumlaSession session = getService().HumlaSession();
 
         mProtocolView.setText(getString(R.string.server_info_protocol, session.getServerRelease()));
         mOSVersionView.setText(getString(R.string.server_info_version, session.getServerOSName(), session.getServerOSVersion()));

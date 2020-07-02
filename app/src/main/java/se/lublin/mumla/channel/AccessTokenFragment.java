@@ -120,7 +120,7 @@ public class AccessTokenFragment extends HumlaServiceFragment {
         mTokenList.smoothScrollToPosition(mTokens.size() - 1);
         mProvider.getDatabase().addAccessToken(getServerId(), tokenText);
         if (getService().isConnected()) {
-            getService().getSession().sendAccessTokens(mTokens);
+            getService().HumlaSession().sendAccessTokens(mTokens);
         }
     }
 
@@ -160,7 +160,7 @@ public class AccessTokenFragment extends HumlaServiceFragment {
                     notifyDataSetChanged();
                     mProvider.getDatabase().removeAccessToken(getServerId(), token);
                     if (getService().isConnected()) {
-                        getService().getSession().sendAccessTokens(mTokens);
+                        getService().HumlaSession().sendAccessTokens(mTokens);
                     }
                 }
             });

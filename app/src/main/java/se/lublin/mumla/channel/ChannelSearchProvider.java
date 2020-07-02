@@ -114,7 +114,7 @@ public class ChannelSearchProvider extends ContentProvider {
         if (!mService.isConnected())
             return null;
 
-        IHumlaSession session = mService.getSession();
+        IHumlaSession session = mService.HumlaSession();
 
         String query = "";
         for(int x=0;x<selectionArgs.length;x++) {

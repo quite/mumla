@@ -87,7 +87,7 @@ public class ChannelFragment extends HumlaServiceFragment implements SharedPrefe
             }
             int selfSession;
             try {
-                selfSession = getService().getSession().getSessionId();
+                selfSession = getService().HumlaSession().getSessionId();
             } catch (IllegalStateException e) {
                 Log.d(Constants.TAG, "ChannelFragment, exception in onUserTalkStateUpdated: " + e);
                 return;
@@ -115,7 +115,7 @@ public class ChannelFragment extends HumlaServiceFragment implements SharedPrefe
             }
             int selfSession;
             try {
-                selfSession = getService().getSession().getSessionId();
+                selfSession = getService().HumlaSession().getSessionId();
             } catch (IllegalStateException e) {
                 Log.d(Constants.TAG, "ChannelFragment, exception in onUserStateUpdated: " + e);
                 return;
@@ -180,7 +180,7 @@ public class ChannelFragment extends HumlaServiceFragment implements SharedPrefe
                 if (getService() == null || !getService().isConnected())
                     return;
 
-                IHumlaSession session = getService().getSession();
+                IHumlaSession session = getService().HumlaSession();
                 if (session.getVoiceTargetMode() == VoiceTargetMode.WHISPER) {
                     byte target = session.getVoiceTargetId();
                     session.setVoiceTargetId((byte) 0);
@@ -247,7 +247,7 @@ public class ChannelFragment extends HumlaServiceFragment implements SharedPrefe
             !Settings.getInstance(getActivity()).isPushToTalkToggle()) {
             // XXX: This ensures that push to talk is disabled when we pause.
             // We don't want to leave the talk state active if the fragment is paused while pressed.
-            getService().getSession().setTalkingState(false);
+            getService().HumlaSession().setTalkingState(false);
         }
     }
 
@@ -276,7 +276,7 @@ public class ChannelFragment extends HumlaServiceFragment implements SharedPrefe
         if (!getService().isConnected())
             return;
 
-        IHumlaSession session = getService().getSession();
+        IHumlaSession session = getService().HumlaSession();
         VoiceTargetMode mode = session.getVoiceTargetMode();
         if (mode == VoiceTargetMode.WHISPER) {
             WhisperTarget target = session.getWhisperTarget();
@@ -307,7 +307,7 @@ public class ChannelFragment extends HumlaServiceFragment implements SharedPrefe
 
         boolean muted = false;
         if (getService() != null && getService().isConnected()) {
-            IUser user = getService().getSession().getSessionUser();
+            IUser user = getService().HumlaSession().getSessionUser();
             muted = user.isMuted() || user.isSuppressed() || user.isSelfMuted();
         }
         boolean showPttButton =

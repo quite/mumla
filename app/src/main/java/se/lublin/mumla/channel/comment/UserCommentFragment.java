@@ -40,14 +40,14 @@ public class UserCommentFragment extends AbstractCommentFragment {
                 }
             }
         });
-        service.getSession().requestComment(getSession());
+        service.HumlaSession().requestComment(getSession());
     }
 
     @Override
     public void editComment(IHumlaService service, String comment) {
         if (!service.isConnected())
             return;
-        service.getSession().setUserComment(getSession(), comment);
+        service.HumlaSession().setUserComment(getSession(), comment);
     }
 
     public int getSession() {

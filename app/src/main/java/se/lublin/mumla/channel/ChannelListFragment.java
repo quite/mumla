@@ -69,7 +69,7 @@ public class ChannelListFragment extends HumlaServiceFragment implements OnChann
             mChannelListAdapter.updateChannels();
             mChannelListAdapter.notifyDataSetChanged();
             if(getService().isConnected() &&
-                    getService().getSession().getSessionId() == user.getSession()) {
+                    getService().HumlaSession().getSessionId() == user.getSession()) {
                 scrollToChannel(newChannel.getId());
             }
         }
@@ -216,7 +216,7 @@ public class ChannelListFragment extends HumlaServiceFragment implements OnChann
         MenuItem deafenItem = menu.findItem(R.id.menu_deafen_button);
 
         if(getService() != null && getService().isConnected()) {
-            IHumlaSession session = getService().getSession();
+            IHumlaSession session = getService().HumlaSession();
 
             // Color the action bar icons to the primary text color of the theme, TODO move this elsewhere
             int foregroundColor = getActivity().getTheme().obtainStyledAttributes(new int[]{android.R.attr.textColorPrimaryInverse}).getColor(0, -1);
@@ -257,7 +257,7 @@ public class ChannelListFragment extends HumlaServiceFragment implements OnChann
                 String itemType = cursor.getString(typeColumn);
                 int itemId = cursor.getInt(dataIdColumn);
 
-                IHumlaSession session = getService().getSession();
+                IHumlaSession session = getService().HumlaSession();
                 if(ChannelSearchProvider.INTENT_DATA_CHANNEL.equals(itemType)) {
                     if(session.getSessionChannel().getId() != itemId) {
                         session.joinChannel(itemId);
@@ -279,7 +279,7 @@ public class ChannelListFragment extends HumlaServiceFragment implements OnChann
         if (getService() == null || !getService().isConnected())
             return super.onOptionsItemSelected(item);
 
-        IHumlaSession session = getService().getSession();
+        IHumlaSession session = getService().HumlaSession();
         switch (item.getItemId()) {
             case R.id.menu_mute_button: {
                 IUser self = session.getSessionUser();

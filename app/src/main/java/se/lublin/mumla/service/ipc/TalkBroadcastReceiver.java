@@ -45,7 +45,7 @@ public class TalkBroadcastReceiver extends BroadcastReceiver {
         if (BROADCAST_TALK.equals(intent.getAction())) {
             if (!mService.isConnected())
                 return;
-            IHumlaSession session = mService.getSession();
+            IHumlaSession session = mService.HumlaSession();
             String status = intent.getStringExtra(EXTRA_TALK_STATUS);
             if (status == null) status = TALK_STATUS_TOGGLE;
             if (TALK_STATUS_ON.equals(status)) {

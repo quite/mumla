@@ -150,7 +150,7 @@ public class ChannelListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
 
             int nameTypeface = Typeface.NORMAL;
             if (mService != null && mService.isConnected()) {
-                IHumlaSession session = mService.getSession();
+                IHumlaSession session = mService.HumlaSession();
                 IChannel ourChan = null;
                 try {
                     ourChan = session.getSessionChannel();
@@ -193,7 +193,7 @@ public class ChannelListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
                 @Override
                 public void onClick(View v) {
                     if (mService.isConnected())
-                        mService.getSession().joinChannel(channel.getId());
+                        mService.HumlaSession().joinChannel(channel.getId());
                 }
             });
 
@@ -227,7 +227,7 @@ public class ChannelListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
             uvh.mUserName.setText(user.getName());
 
             final int typefaceStyle;
-            if (mService.isConnected() && mService.getSession().getSessionId() == user.getSession()) {
+            if (mService.isConnected() && mService.HumlaSession().getSessionId() == user.getSession()) {
                 typefaceStyle = Typeface.BOLD;
             } else {
                 typefaceStyle = Typeface.NORMAL;
@@ -298,7 +298,7 @@ public class ChannelListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
         if (!mService.isConnected())
             return;
 
-        IHumlaSession session = mService.getSession();
+        IHumlaSession session = mService.HumlaSession();
         mNodes.clear();
         try {
             for (int cid : mRootChannels) {
