@@ -252,6 +252,7 @@
     <string name="orbot_not_installed">未安装 Orbot 应用。将不会使用 Tor。</string>
     <string name="orbot_tor_failed">无法连接到端口为 %d 的本地 Tor 代理服务器（SOCKS）。\n\n请确认 Orbot 已运行。</string>
     <string name="default_">默认</string>
+    <string name="donation_thanks">感谢您的无私捐赠。</string>
 
     <plurals name="search_channel_users">
         <item quantity="other">%d 名用户</item>
