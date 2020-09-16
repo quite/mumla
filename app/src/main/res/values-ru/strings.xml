@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Drawer pane -->
     <string name="drawer_open">Открыть меню</string>
@@ -11,13 +11,11 @@
     <string name="drawer_favorites">Избранное</string>
     <string name="drawer_lan">Локальные</string>
     <string name="drawer_public">Публичные сервера</string>
-
     <!-- Chat formatting -->
     <string name="chat_message_tree">(Дерево)</string>
     <string name="chat_message_channel">(Канал)</string>
     <string name="chat_message_to">%1$s → %2$s</string>
     <string name="chat_message_tts_short_link">(Ссылка на %1$s)</string>
-
     <!-- User menu -->
     <string name="user_menu_admin">Администратор</string>
     <string name="user_menu_kick">Кикнуть</string>
@@ -35,15 +33,12 @@
     <string name="user_menu_information">Информация</string>
     <string name="user_menu_register">Регистрация</string>
     <string name="user_menu_registered">Зарегистрирован</string>
-
     <!-- Channel menu -->
     <string name="channel_menu_pin">Закрепить</string>
-
     <!-- Comment Fragment -->
     <string name="comment_view">Просмотреть</string>
     <string name="comment_edit_source">Изменить исходник</string>
     <string name="comment_view_source">Просмотреть исходник</string>
-
     <!-- Server Info Fragment -->
     <string name="control_channel">Канал управления</string>
     <string name="tcp_encryption_mode">Зашифровано с помощью 256 битного AES-256-SHA</string>
@@ -57,7 +52,6 @@
     <string name="server_info_codec">Кодек: %s</string>
     <string name="server_info_max_bandwidth">Максимальная %.1f kbit/s</string>
     <string name="server_info_current_bandwidth">Текущая %.1f kbit/s</string>
-
     <!-- Server matching -->
     <string name="server_match">Найти сервер</string>
     <string name="server_match_progress">Поиск сервера…</string>
@@ -66,7 +60,6 @@
     <string name="server_match_expand_country">Не удалось найти оптимальный сервер в вашей стране. Искать во всем мире?</string>
     <string name="server_match_info">Имя: %1$s\nАдрес: %2$s:%3$d\nПользователей: %4$d / %5$d\nВерсия: %6$s \nСтрана: %7$s \nЗадержка: %8$d ms</string>
     <string name="server_match_description">Mumla может автоматически найти пустой сервер, основываясь на местоположении, версии, и задержке.</string>
-
     <!-- Common -->
     <string name="channels">Каналы</string>
     <string name="no_servers">Для начала нажмите \'Добавить\' в панели управления чтобы добавить сервер.</string>
@@ -81,7 +74,7 @@
     <string name="fragment_chat">Чат</string>
     <string name="fragment_channel">Канал</string>
     <string name="menu_settings">Настройки</string>
-    <string name="ptt">Push-to-talk</string>
+    <string name="ptt">Нажать-чтобы-говорить</string>
     <string name="mute">Мут</string>
     <string name="deafen">Приглушить</string>
     <string name="disconnect">Отключиться</string>
@@ -152,7 +145,7 @@
     <string name="chat_notify_now_unmuted_undeafened">%s включил(а) звук и микрофон.</string>
     <string name="chat_notify_connected">%s соединен(а).</string>
     <string name="chat_notify_disconnected">%s отключен(а).</string>
-    <string name="unknown">Unknown</string>
+    <string name="unknown">Неизвестный</string>
     <string name="server_list_title_favorite">Избранное</string>
     <string name="server_list_title_lan">Локальные</string>
     <string name="server_list_title_public_internet">Публичные</string>
@@ -225,7 +218,9 @@
     <string name="invalid_port_range">Некорректный порт (1-65535)</string>
     <string name="invalid_username">Не верное имя пользователя</string>
     <string name="cancel_reconnect">Отменить переподключение</string>
-    <string name="attempting_reconnect">Ошибка: %s.\n\Переподключение…</string>
+    <string name="attempting_reconnect">Ошибка: %s.
+\n
+\nПереподключение…</string>
     <string name="change_requires_reconnect">Переподключитесь чтобы изменения вступили в силу.</string>
     <string name="no_certificate">Без сертификата</string>
     <string name="certificates">Сертификаты</string>
@@ -252,7 +247,6 @@
     <string name="orbot_not_installed">Приложение Orbot не установлено. Tor не используется.</string>
     <string name="orbot_tor_failed">Не удалось подключиться к к локальному прокси Tor на порту %d (SOCKS).\n\nPПожалуйста убедитесь что приложение Orbot запущено.</string>
     <string name="default_">По умолчанию</string>
-
     <plurals name="search_channel_users">
         <item quantity="one">%d пользователь</item>
         <item quantity="few">%d пользователя</item>
@@ -268,4 +262,6 @@
         <item quantity="few">%d новых сообщения</item>
         <item quantity="other">%d новых сообщений</item>
     </plurals>
+    <string name="donation_thanks">Спасибо за пожертвование.</string>
+    <string name="bluetooth">Bluetooth</string>
 </resources>
