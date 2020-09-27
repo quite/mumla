@@ -1,19 +1,20 @@
-Mumla is a client for the voice chat system Mumble. Connect to one of the many public Mumble-servers run by the community, or host one yourself (see https://www.mumble.info for more info). Mumla is an updated and maintained version (a fork) of the app Plumble.
+A client for the Mumble voice chat system. Host or connect to one of the many community run public servers (see https://www.mumble.info). Mumla is an updated and maintained version (a fork) of the app Plumble.
 
 Some of the features:
 
-* Certificate generation, import and export  
-* Browse public servers  
-* Voice activated transmission (the default), or different Push-to-talk buttons  
-* Bluetooth headset support  
-* Self-registration on server  
-* Access tokens  
-* Opus, CELT, and Speex codec support  
-* Automatic reconnection  
-* Tor support through the Orbot app  
-* Text-to-speech for messages (turned on by default)  
-* Light and dark theme  
+* Certificate generation, import and export
+* Browse public servers
+* Voice activated transmission (the default), or different Push-to-talk buttons
+* Bluetooth headset support
+* Self-registration on server
+* Access tokens
+* Opus, CELT, and Speex codec support
+* Automatic reconnection
+* Tor support through the Orbot app
+* Text-to-speech for messages (turned on by default)
+* Light and dark theme
 
-Voice activated transmission currently works best when using a headset. The echo cancellation and noise reduction need better implementations. You may also try tweaking the Detection threshold in the settings.
+Voice activated transmission currently works best when using a headset. Echo cancellation and noise reduction needs work.
+Tweaking the Detection threshold in the settings helps.
 
-Mumla is free and open source software. Find out more at: https://mumla-app.gitlab.io/
+Mumla is copylefted libre software. Find out more at: https://mumla-app.gitlab.io/
