@@ -11,13 +11,11 @@
     <string name="drawer_favorites">收藏</string>
     <string name="drawer_lan">局域网</string>
     <string name="drawer_public">公共服务器</string>
-
     <!-- Chat formatting -->
     <string name="chat_message_tree">(频道树)</string>
     <string name="chat_message_channel">(频道)</string>
     <string name="chat_message_to">%1$s → %2$s</string>
     <string name="chat_message_tts_short_link">(链接到 %1$s)</string>
-
     <!-- User menu -->
     <string name="user_menu_admin">管理</string>
     <string name="user_menu_kick">踢出</string>
@@ -35,15 +33,12 @@
     <string name="user_menu_information">信息</string>
     <string name="user_menu_register">注册</string>
     <string name="user_menu_registered">已注册</string>
-
     <!-- Channel menu -->
     <string name="channel_menu_pin">钉选</string>
-
     <!-- Comment Fragment -->
     <string name="comment_view">查看</string>
     <string name="comment_edit_source">编辑源代码</string>
     <string name="comment_view_source">查看源代码</string>
-
     <!-- Server Info Fragment -->
     <string name="control_channel">控制信道</string>
     <string name="tcp_encryption_mode">使用 256 位 AES-256-SHA 算法加密</string>
@@ -57,16 +52,19 @@
     <string name="server_info_codec">编解码器：%s</string>
     <string name="server_info_max_bandwidth">最大 %.1f 千比特/秒</string>
     <string name="server_info_current_bandwidth">当前 %.1f 千比特/秒</string>
-
     <!-- Server matching -->
     <string name="server_match">查找服务器</string>
     <string name="server_match_progress">正在查找服务器…</string>
     <string name="server_match_found">找到服务器</string>
     <string name="server_match_not_found">无法找到服务器</string>
     <string name="server_match_expand_country">无法在您的区域找到最佳服务器。是否在全球范围内搜索？</string>
-    <string name="server_match_info">名称：%1$s\n主机：%2$s:%3$d\n用户：%4$d / %5$d\n版本：%6$s \区域：%7$s \n延迟：%8$d 毫秒</string>
+    <string name="server_match_info">名称：%1$s
+\n主机：%2$s:%3$d
+\n用户：%4$d / %5$d
+\n版本：%6$s
+\n区域：%7$s
+\n延迟：%8$d 毫秒</string>
     <string name="server_match_description">Mumla 可以根据区域、版本与延迟自动为您寻找最佳的空服务器。</string>
-
     <!-- Common -->
     <string name="channels">频道</string>
     <string name="no_servers">请先点击操作栏上的“添加”按钮添加一个服务器。</string>
@@ -158,7 +156,7 @@
     <string name="server_list_title_public_internet">互联网</string>
     <string name="ping">延迟</string>
     <string name="sort">排序</string>
-    <string name="sortBy">排序方式</string>
+    <string name="sortBy">排序方式…</string>
     <string name="name">名称</string>
     <string name="country">区域</string>
     <string name="share">分享</string>
@@ -253,7 +251,6 @@
     <string name="orbot_tor_failed">无法连接到端口为 %d 的本地 Tor 代理服务器（SOCKS）。\n\n请确认 Orbot 已运行。</string>
     <string name="default_">默认</string>
     <string name="donation_thanks">感谢您的无私捐赠。</string>
-
     <plurals name="search_channel_users">
         <item quantity="other">%d 名用户</item>
     </plurals>
