@@ -1,0 +1,20 @@
+Mumla er en klient for stemmesludringssystemet Mumble. Driv eller koble til en av de mange gemenskapsdrevne Mumble-tjenerne (sjekk https://www.mumble.info).
+Mumla er en oppdatert og vedlikeholdt versjon (forgrening) av programmet Plumble.
+
+Noen av funksjonene:
+
+* Sertifikatsgenerering, import og eksport
+* Utforsk offentlige tjenere  
+* Stemmeaktivert forsendelse (forvalg), eller forskjellige trykk-for-å-snakke- knapper
+* Støtte for Blåtannshodesett 
+* Selvbetjent registrering på tjenere
+* Tilgangssymboler
+* Opus, CELT, og Speex-kodekstøtte
+* Automatisk gjenkjennelse  
+* Tor-støtte gjennom Orbot-programmet
+* Tekst-til-tale for meldinger (skrudd på som forvalg)
+* Lys og mørk drakt
+
+Stemmeaktivert forsendelse fungerer best med hodesett. Ekkokansellering og støyreduksjon trenger litt jobb. Justering av «Oppdagelsesterskel» i innstillingene hjelper.
+
+Mumla er gemenhetslig fri programvare: Finn ut mer på: https://mumla-app.gitlab.io/
