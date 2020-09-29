@@ -1,0 +1,8 @@
+- Zaimplementowano wyszukiwanie rekordów SRV dla adresu serwera. Umożliwia proste adresy serwerów, takie jak `example.net`, gdzie rekord SRV domeny w DNS wskazuje
+hosta serwera i port, z którym należy się połączyć. Zobacz: https://wiki.mumble.info/wiki/SRV_Record
+
+- Allan Nordhøy przerobił angielskie napisy źródłowe.
+
+- Naprawa prośby o pozwolenie funkcji Gorący narożnik Naciśnij i mów.
+
+- Usunięcie animacji stanu rozmowy, która była zepsuta na różne sposoby.

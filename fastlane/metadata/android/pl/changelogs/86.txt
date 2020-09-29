@@ -1,0 +1,17 @@
+To jest pierwsze wydanie w Google Play.
+
+- Naprawiono wiele błędów, szczególnie związanych z zezwoleniami.
+
+- Połącz przez Tor (Orbot) działa lepiej i obsługuje usługi ukryte (.onion).
+
+- Obsługa rekordu DNS SRV do wyszukiwania adresu serwera.
+
+- Okno certyfikatu wyświetla skrót SHA-256, a tekst można skopiować.
+
+- Allan Nordhøy przerobił ang. napisy źródłowe.
+
+- R4SAS przetłumaczył Mumlę na rosyjski.
+
+- deluxghost przetłumaczył Mumlę na chiński uproszczony.
+
+- Pobieranie listy serwerów działa.

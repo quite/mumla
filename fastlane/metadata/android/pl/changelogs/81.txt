@@ -1,0 +1,9 @@
+- Dodano wyszukiwanie rekordów SRV dla adresu serwera.
+
+- Allan Nordhøy przerobił angielskie napisy źródłowe.
+
+- Naprawa prośby o zezwolenie Naciśnij i mów w gorącym narożniku.
+
+- Usunięto animację stanu rozmowy, która była zepsuta.
+
+- Okno certyfikatu wyświetla skrót SHA-256, a tekst można skopiować.

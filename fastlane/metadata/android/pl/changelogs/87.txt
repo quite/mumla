@@ -1,0 +1,6 @@
+- Jackal Zhao pomógł ulepszyć tłumaczenie na chiński uproszczony
+- Prawidłowe wyświetlanie domyślnej częstotliwość próbkowania 48 kHz w graficznym interfejsie użytkownika
+- Naprawa pobierania długich (> 127 bajtów) komentarzy użytkowników
+- Naprawa resetowania krótkich komentarzy użytkowników
+- Naprawa eksportu certyfikatu do pamięci zewnętrznej w systemie Android 10
+- Naprawa kilkunastu możliwych i rzeczywistych błędów powodujących awarie

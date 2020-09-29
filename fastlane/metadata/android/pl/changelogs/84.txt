@@ -1,0 +1,17 @@
+- Dodano wyszukiwanie rekordów SRV dla adresu serwera.
+
+- Naprawa prośby o zezwolenie Naciśnij i mów w gorącym narożniku, przestała się zawieszać.
+
+- Okno certyfikatu wyświetla skrót SHA-256, a tekst można skopiować.
+
+- Stosowanie motywu do ustawień.
+
+- Allan Nordhøy przerobił ang. napisy źródłowe.
+
+- R4SAS przetłumaczył na rosyjski.
+
+- Usunięto animację stanu rozmowy, która była zepsuta.
+
+- Użycie tych samych ikon stanu użytkownika w nakładce, co na głównej liście kanałów.
+
+- Inne.

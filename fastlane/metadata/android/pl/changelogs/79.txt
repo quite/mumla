@@ -1,0 +1,1 @@
+Zaimplementowano wyszukiwanie rekordów SRV dla adresu serwera. Umożliwia proste adresy serwerów, takie jak `example.net`, gdzie rekord SRV domeny w DNS wskazuje hosta serwera i port, z którym należy się połączyć. Zobacz: https://wiki.mumble.info/wiki/SRV_Record

@@ -1,0 +1,1 @@
+Łączenie się przez sieć Tor przy użyciu Orbota powinno działać lepiej, a kilka komunikatów w interfejsie użytkownika wskazuje teraz, że używany jest Tor. Łączenie się z ukrytymi usługami .onion również działa; Rozwiązywanie DNS jest pozostawione proxy Tor SOCKS.
