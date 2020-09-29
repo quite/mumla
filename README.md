@@ -15,8 +15,8 @@ information about [Beta releases](https://mumla-app.gitlab.io/beta/).
 ## Translations
 
 If you want to help out translating Mumla, the project is [on
-Weblate](https://hosted.weblate.org/engage/mumla/) (Thanks for free hosting of
-libre project!)
+Weblate](https://hosted.weblate.org/engage/mumla/) -- thanks for free hosting
+of libre project!
 
 ## Building on GNU/Linux
 
