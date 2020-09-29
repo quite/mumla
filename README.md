@@ -12,6 +12,12 @@ Mumla is available [on F-Droid](https://f-droid.org/packages/se.lublin.mumla/).
 There is a small [landing page](https://mumla-app.gitlab.io/), that also has
 information about [Beta releases](https://mumla-app.gitlab.io/beta/).
 
+## Translations
+
+If you want to help out translating Mumla, the project is [on
+Weblate](https://hosted.weblate.org/engage/mumla/) (Thanks for free hosting of
+libre project!)
+
 ## Building on GNU/Linux
 
 TODO: humla-spongycastle should be built as a sub-project of Humla's Gradle,
