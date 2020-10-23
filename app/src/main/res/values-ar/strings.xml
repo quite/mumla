@@ -1,2 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="voice_channel">قناة صوتية</string>
+    <string name="comment_view_source">اعرض المصدر</string>
+    <string name="comment_edit_source">حرر المصدر</string>
+    <string name="comment_view">اعرض</string>
+    <string name="channel_menu_pin">ثبت</string>
+    <string name="user_menu_registered">مسجل</string>
+    <string name="user_menu_register">سجل</string>
+    <string name="user_menu_information">معلومات</string>
+    <string name="user_menu_send_message">أرسل رسالة</string>
+    <string name="user_menu_reset_comment">أعد تعيين التعليق</string>
+    <string name="user_menu_view_comment">اعرض التعليق</string>
+    <string name="user_menu_change_comment">غيّر التعليق</string>
+    <string name="user_menu_ignore_messages">تجاهل الرسائل</string>
+    <string name="user_menu_move">أنقل</string>
+    <string name="user_menu_mute">أكتم</string>
+    <string name="user_menu_ban">أحظر</string>
+    <string name="user_menu_kick">أطرد</string>
+    <string name="user_menu_admin">مدير</string>
+    <string name="chat_message_to">%1$s ← %2$s</string>
+    <string name="chat_message_channel">(قناة)</string>
+    <string name="chat_message_tree">(شجرة)</string>
+    <string name="drawer_public">الخوادم العامة</string>
+    <string name="drawer_favorites">المفضلة</string>
+    <string name="drawer_header_servers">الخوادم</string>
+    <string name="drawer_pinned">القنوات المثبتة</string>
+    <string name="drawer_tokens">رمز المصادقة</string>
+    <string name="drawer_server">كل القنوات</string>
+    <string name="drawer_not_connected">لست متصلا</string>
+    <string name="drawer_close">أغلق الدرج</string>
+    <string name="drawer_open">افتح الدرج</string>
+</resources>
