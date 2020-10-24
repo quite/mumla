@@ -1,0 +1,6 @@
+- Jackal Zhao on auttanut kääntämään ohjelmiston Kiinaksi (yksinkertaistettu).
+- Näytetään nyt oletuksena oleva 48kHz näytteenottotaajuus käyttöliittymässä oikein.
+- Korjattu pitkien kommenttien (> 127 bittiä) haku.
+- Korjattu lyhyiden kommenttien nollautuminen.
+- Korjattu sertifikaatin vieminen ulkoiseen tallennustilaan Android 10:llä.
+- Korjattu useita mahdollisia sekä todellisia ohjelmiston kaatumisen aiheuttavia ongelmia

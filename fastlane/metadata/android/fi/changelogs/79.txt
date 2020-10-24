@@ -1,0 +1,1 @@
+- Yksinkertaisten osoitteiden kuten 'esim.net' käyttö mahdollista, SRV Recordin avulla

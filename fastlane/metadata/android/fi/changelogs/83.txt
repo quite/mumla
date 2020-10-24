@@ -1,0 +1,17 @@
+- Yksinkertaisten osoitteiden kuten 'esim.net' käyttö mahdollista, SRV Recordin avulla.
+
+- Ohjelmisto ei kaadu pyydettäessä näytön PTT-nappia.
+
+- SHA-256 yhteenveto sertifikaattiasetuksissa, voidaan valita teksti.
+
+- Teeman valinta asetuksissa.
+
+- Allan Nordhøy parannellut Englannin käännöstä.
+
+- R4SAS kääntänyt kokonaan Venäjäksi.
+
+- Poistettu rikkinäinen puheanimaatio.
+
+- Käytetään samoja kuvakkeita myös Overlayssa kuin pääkanavalistalla.
+
+- Oikeat merkkifragmenttikuvakkeet tummalla teemalla

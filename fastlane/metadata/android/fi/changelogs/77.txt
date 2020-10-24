@@ -1,0 +1,1 @@
+Yhdistäminen TOR-verkon yli pitäisi toimia paremmin, ja useat viestit käyttöliittymässä kertovat kun TOR on käytössä. Yhdistäminen Hidden Servicejen .onion osoitteisiin myös toimii; DNS selvityksestä vastaa TOR SOCKS välityspalvelin.

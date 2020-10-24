@@ -1,0 +1,3 @@
+-deluxghost kääntänyt Mumlan Kiinaksi (yksink.)
+-Julkisten palvelimien listahaku toimii taas.
+-Korjattu bugi liittyen kuviin data-URI:lla.

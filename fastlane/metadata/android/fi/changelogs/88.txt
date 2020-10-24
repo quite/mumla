@@ -1,0 +1,1 @@
+- Korjattu muutamia bugeja, jotka aiheuttivat sovelluksen kaatumisen

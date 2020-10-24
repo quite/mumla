@@ -1,0 +1,20 @@
+Käyttöliittymä Mumble puhepalvelua varten. Perusta oma tai yhdistä yhteen monista yhteisön itse perustetuista palvelimista. (Katso lisää https://www.mumble.info). Mumla on päivitetty ja ylläpidetty versio (fork) Plumble-sovelluksesta.
+
+Ominaisuuksia:
+
+*Tuo, vie ja tee omia sertifikaatteja.
+*Selaa julkisia palvelimia
+*Käytä puheaktivoitua lähetystä (oletus) tai erillistä puhepikanäppäintä (Push-to-talk).
+*Bluetooth headset tuki.
+*Itse-rekisteröinti palvelimella.
+*Pääsyavaimet.
+*OPUS,CELT ja Speex koodekki tuki.
+*Automaattinen uudelleenyhdistäminen.
+*TOR tuki Orbot-sovelluksen avulla.
+*Teksti-puheeksi viesteille (päällä oletuksena)
+*Vaalea ja tumma teema
+
+Puheaktivoitu lähetys toimii tällä hetkellä parhaiten käytettäessä headsettiä. Kaiunpoisto ja melun vaimennus kaipaavat vielä työtä.
+Muokkaamalla puheentunnistamisen arvoja asetuksissa auttaa.
+
+Mumla on copylefted libre ohjelmisto. Lisätietoa osoitteesta: https://mumla-app.gitlab.io/ (Englanniksi)

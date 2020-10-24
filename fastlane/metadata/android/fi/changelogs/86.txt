@@ -1,0 +1,17 @@
+Ensimmäinen julkaisu Google Play Storessa
+
+-Useita bugeja korjattu, erityisesti liittyen käyttöoikeuksien pyytämiseen
+
+-Yhdistä TOR-verkon ylitse ja tukee .onionia
+
+-Tukee DNS SRV resurssitallennuksia palvelimen osoitetta etsiessä
+
+-Sertifikaatin valinta-asetus näyttää SHA-256 yhteenvedon ja teksti voidaan kopioida
+
+-Allan Nordhøy parannellut käännöspohjaa (Englannista)
+
+-R4SAS kääntänyt Mumlan Venäjäksi
+
+-deluxghost kääntänyt Mumlan Kiinaksi (Yksink)
+
+-Julkisten palvelimien haku toimii taas.

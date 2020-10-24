@@ -1,0 +1,7 @@
+- Yksinkertaisten osoitteiden kuten 'esim.net' käyttö mahdollista, SRV Recordin avulla.
+
+- Allan Nordhøy parannellut Englannin käännöstä.
+
+- Korjattu käyttöoikeuksien pyyntö näyttö PTT-näppäimelle.
+
+- Poistettu rikkinäinen puheanimaatio.
