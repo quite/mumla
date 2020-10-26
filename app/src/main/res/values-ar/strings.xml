@@ -30,4 +30,50 @@
     <string name="drawer_not_connected">لست متصلا</string>
     <string name="drawer_close">أغلق الدرج</string>
     <string name="drawer_open">افتح الدرج</string>
+    <string name="loading">يحمل…</string>
+    <string name="kicked_message">طرد من الخادم.
+\nبسبب: %s</string>
+    <string name="disconnected">قُطع الاتصال</string>
+    <string name="confirm_delete_channel">أمتأكد من حذف هذه القناة؟</string>
+    <string name="confirm_delete_server">أمتأكد من حذف هذا الخادم؟</string>
+    <string name="connectionRefused">رُفض الاتصال</string>
+    <string name="perm_denied">رُفض الإذن!</string>
+    <string name="chat">محادثة</string>
+    <string name="preferences">التفضيلات</string>
+    <string name="add">أضف</string>
+    <string name="save">احفظ</string>
+    <string name="disconnectSure">أمتأكد من قطع الاتصال عن %s؟</string>
+    <string name="disconnect">اقطع الاتصال</string>
+    <string name="mute">أكتم</string>
+    <string name="ptt">اضغط للتحدث</string>
+    <string name="menu_settings">إعدادات</string>
+    <string name="fragment_channel">قناة</string>
+    <string name="fragment_chat">محادثة</string>
+    <string name="connecting_to_server">يتصل ب %s</string>
+    <string name="connecting">يتصل</string>
+    <string name="server_label">التسمية</string>
+    <string name="server_host">العنوان</string>
+    <string name="server_port">منفذ</string>
+    <string name="server_username">اسم المستخدم</string>
+    <string name="server_password">كلمة المرور</string>
+    <string name="server_add">أضف خادما</string>
+    <string name="no_servers">أولا أضف خادما عن طريق \'أضف\' من شريط الإجراءات.</string>
+    <string name="channels">قنوات</string>
+    <string name="server_match_info">الاسم: %1$s
+\nالمضيف: %2$s:%3$d
+\nالمستخدمون: %4$d \\ %5$d
+\nالإصدار: %6$s
+\nالبلد: %7$s
+\nزمن الوصول: %8$d مثا</string>
+    <string name="server_match_not_found">تعذر العثور على خادم</string>
+    <string name="server_match_found">عُثر على خادم</string>
+    <string name="server_match">ابحث عن خادم</string>
+    <string name="server_match_progress">يبحث عن خادم…</string>
+    <string name="server_info_current_bandwidth">الحالي %.1f كب\\ثا</string>
+    <string name="server_info_max_bandwidth">الأقصى %.1f كب\\ثا</string>
+    <string name="server_info_codec">ترميز: %s</string>
+    <string name="server_info_latency">زمن الوصول %.2f مثا</string>
+    <string name="server_info_version">%1$s (%2$s)</string>
+    <string name="server_info_protocol">ميفاق %s.</string>
+    <string name="user_menu_local_mute">كتم محلي</string>
 </resources>
