@@ -1,0 +1,20 @@
+Un client per il sistema di chat vocale Mumble. Ospita o connettiti a uno dei numerosi server pubblici gestiti dalla comunità (https://www.mumble.info). Mumla è un fork aggiornato e mantenuto dell'app Plumble.
+
+Alcune caratteristiche:
+
+* Generazione, importazione ed esportazione certificati
+* Sfoglia server pubblici
+* Trasmissione ad attivazione vocale (predefinita) o modalità "Premi per Parlare"
+* Supporto cuffie Bluetooth
+* Auto-registrazione sui server
+* Token d'accesso
+* Supporto codec Opus, CELT e Speex
+* Riconnessione automatica
+* Supporto Tor tramite l'app Orbot
+* Sintesi vocale (TTS) per i messaggi (attivata per impostazione predefinita)
+* Temi chiaro e scuro
+
+Al momento la trasmissione ad attivazione vocale funziona meglio quando si utilizzano le cuffie. La cancellazione dell'eco e la riduzione del rumore devono funzionare.
+Potrebbe essere utile regolare la soglia di rilevamento nelle impostazioni.
+
+Mumla è un software copylefted libero. Ulteriori informazioni su https://mumla-app.gitlab.io/
