@@ -1,49 +1,42 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--Drawer pane-->
-    <string name="drawer_not_connected">Non connesso</string>
-    <string name="drawer_server">Server</string>
+    <string name="drawer_not_connected">Non Connesso</string>
+    <string name="drawer_server">Tutti i Canali</string>
     <string name="drawer_header_servers">Server</string>
-    <string name="drawer_favorites">Favoriti</string>
+    <string name="drawer_favorites">Preferiti</string>
     <string name="drawer_lan">LAN</string>
-    <string name="drawer_public">Server pubblici</string>
-
+    <string name="drawer_public">Server Pubblici</string>
     <!--Chat formatting-->
     <string name="chat_message_to">%1$s → %2$s</string>
-
     <!--User menu-->
     <string name="user_menu_admin">Admin</string>
     <string name="user_menu_mute">Muto</string>
-    <string name="user_menu_ignore_messages">Ignora messaggi</string>
-    <string name="user_menu_change_comment">Cambia commento</string>
-    <string name="user_menu_view_comment">Mostra commento</string>
-    <string name="user_menu_send_message">Invia messaggio</string>
+    <string name="user_menu_ignore_messages">Ignora Messaggi</string>
+    <string name="user_menu_change_comment">Cambia Commento</string>
+    <string name="user_menu_view_comment">Mostra Commento</string>
+    <string name="user_menu_send_message">Invia Messaggio</string>
     <string name="user_menu_information">Informazioni</string>
     <string name="user_menu_register">Registra</string>
     <string name="user_menu_registered">Registrato</string>
-
     <!--Channel menu-->
-    <string name="channel_menu_pin">Pin</string>
-
+    <string name="channel_menu_pin">Fissa</string>
     <!--Comment Fragment-->
     <string name="comment_edit_source">Modifica sorgente</string>
     <string name="comment_view_source">Mostra sorgente</string>
-
     <!--Server Info Fragment-->
-    <string name="server_info_protocol">Protocollo %s.</string>
+    <string name="server_info_protocol">Protocollo: %s</string>
     <string name="server_info_version">%1$s (%2$s)</string>
     <string name="server_info_codec">Codec: %s</string>
-
     <!--Server matching-->
-    <string name="server_match">Cerca server</string>
+    <string name="server_match">Trova Server</string>
     <string name="server_match_found">Server trovato</string>
     <string name="server_match_not_found">Impossibile trovare server</string>
-
     <!--Common-->
     <string name="channels">Canali</string>
-    <string name="server_add">Aggiungi server</string>
+    <string name="server_add">Aggiungi Server</string>
     <string name="server_password">Password</string>
-    <string name="server_username">Nome utente</string>
+    <string name="server_username">Nome Utente</string>
     <string name="server_port">Porta</string>
     <string name="server_host">Indirizzo</string>
     <string name="connecting">Connessione</string>
@@ -53,40 +46,40 @@
     <string name="menu_settings">Impostazioni</string>
     <string name="mute">Muto</string>
     <string name="disconnect">Disconetti</string>
-    <string name="disconnectSure">Sei sicuro di voler disconneterti dal server %s?</string>
+    <string name="disconnectSure">Disconnettersi da \"%s\"\?</string>
     <string name="save">Salva</string>
-    <string name="add">Agg.</string>
+    <string name="add">Aggiungi</string>
     <string name="preferences">Preferenze</string>
     <string name="chat">Chat</string>
     <string name="perm_denied">Permesso negato!</string>
     <string name="connectionRefused">Connessione rifiutata</string>
-    <string name="confirm_delete_server">Sei sicuro di voler eliminare questo server?</string>
-    <string name="confirm_delete_channel">Sei sicuro di voler eliminare questo canale?</string>
-    <string name="disconnected">Disconnesso.</string>
+    <string name="confirm_delete_server">Eliminare questo server\?</string>
+    <string name="confirm_delete_channel">Eliminare questo canale\?</string>
+    <string name="disconnected">Disconnesso</string>
     <string name="loading">Caricamento…</string>
-    <string name="addFavorite">Aggiungi preferito</string>
-    <string name="removeFavorite">Rimuovi preferito</string>
-    <string name="viewFavorites">Mostra preferiti</string>
+    <string name="addFavorite">Aggiungi Preferito</string>
+    <string name="removeFavorite">Rimuovi Preferito</string>
+    <string name="viewFavorites">Mostra Preferiti</string>
     <string name="favorites">Preferiti</string>
     <string name="favoriteRemoved">Preferito rimosso.</string>
     <string name="favoriteAdded">Preferito aggiunto.</string>
     <string name="noFavorites">Nessun canale preferito.</string>
-    <string name="messageReceived">Nuovo messaggio</string>
-    <string name="generateCert">Genera certificato</string>
+    <string name="messageReceived">Nuovo Messaggio</string>
+    <string name="generateCert">Genera Certificato</string>
     <string name="generateCertProgress">Generazione certificato…</string>
     <string name="search">Cerca</string>
     <string name="searchHint">Cerca canali e utenti</string>
     <string name="bluetooth">Bluetooth</string>
-    <string name="quickConnect">Connessione veloce</string>
+    <string name="quickConnect">Connessione Rapida</string>
     <string name="connect">Connetti</string>
-    <string name="connectToServer">Connetti al server</string>
+    <string name="connectToServer">Connetti al Server</string>
     <string name="edit">Modifica</string>
     <string name="remove">Rimuovi</string>
     <string name="delete">Elimina</string>
     <string name="retry">Riprova</string>
-    <string name="online">Online</string>
-    <string name="offline">Offline</string>
-    <string name="clearChat">Pulisci chat</string>
+    <string name="online">In Linea</string>
+    <string name="offline">Non in Linea</string>
+    <string name="clearChat">Pulisci Chat</string>
     <string name="connected">Connesso</string>
     <string name="mumlaConnected">Mumla connesso</string>
     <string name="mumlaConnecting">Mumla in connessione</string>
@@ -97,26 +90,26 @@
     <string name="user">Utente</string>
     <string name="server">Server</string>
     <string name="unknown">Sconosciuto</string>
-    <string name="server_list_title_favorite">Favoriti</string>
+    <string name="server_list_title_favorite">Preferiti</string>
     <string name="server_list_title_lan">LAN</string>
     <string name="ping">Ping</string>
     <string name="sort">Ordine</string>
     <string name="sortBy">Ordina per…</string>
     <string name="name">Nome</string>
-    <string name="country">Nazione</string>
+    <string name="country">Paese</string>
     <string name="share">Condividi</string>
     <string name="description">Descrizione</string>
     <string name="comment">Commento</string>
     <string name="close">Chiudi</string>
     <string name="search_name">Nome</string>
-    <string name="search_country">Nazione</string>
-    <string name="fullscreen">Tutto schermo</string>
+    <string name="search_country">Paese</string>
+    <string name="fullscreen">Schermo Intero</string>
     <string name="fullscreen_chat">Chat</string>
     <string name="fullscreen_channel">Canale</string>
     <string name="information">Informazioni</string>
-    <string name="userControl">Controllo utente</string>
-    <string name="coming_soon">Questa caratteristica arriverà presto.</string>
-    <string name="hint_reason">Ragione</string>
+    <string name="userControl">Controllo Utente</string>
+    <string name="coming_soon">Questa funzione arriverà presto.</string>
+    <string name="hint_reason">Motivo</string>
     <string name="hint_server_add">Benvenuto su Mumla</string>
     <string name="action_settings">Impostazioni</string>
     <string name="reconnect">Riconnetti</string>
@@ -124,15 +117,14 @@
     <string name="expand">Espandi</string>
     <string name="temporary">Temporaneo</string>
     <string name="position">Posizione</string>
-    <string name="channel_edit">Modifica canale</string>
-    <string name="channel_add">Aggiungi canale</string>
+    <string name="channel_edit">Modifica Canale</string>
+    <string name="channel_add">Aggiungi Canale</string>
     <string name="first_run_generate_certificate_title">Benvenuto su Mumla!</string>
     <string name="generate">Genera</string>
-    <string name="invalid_password">Password non valida.</string>
-    <string name="send_message">Invia messaggio</string>
-    <string name="channel_menu_view_description">Mostra descrizione</string>
-    <string name="allow">Permetti</string>
-
+    <string name="invalid_password">Password errata.</string>
+    <string name="send_message">Invia Messaggio</string>
+    <string name="channel_menu_view_description">Mostra Descrizione</string>
+    <string name="allow">Consenti</string>
     <plurals name="search_channel_users">
         <item quantity="one">%d utente</item>
         <item quantity="other">%d utenti</item>
@@ -145,4 +137,149 @@
         <item quantity="one">%d nuovo messaggio</item>
         <item quantity="other">%d nuovi messaggi</item>
     </plurals>
+    <string name="chat_notify_disconnected">%s disconnesso.</string>
+    <string name="chat_notify_moved">\"%1$s\" è arrivato da \"%2$s\" tramite \"%3$s\".</string>
+    <string name="chat_notify_connected">\"%s\" connesso.</string>
+    <string name="decrypt_certificate">Decrittografa Certificato</string>
+    <string name="current_chat_target">Destinazione Chat Attuale</string>
+    <string name="shout_target">Destinazione Voce: %s</string>
+    <string name="shout_include_subchannels">Voce nei Sotto-Canali</string>
+    <string name="shout_include_linked">Voce nei Canali Collegati</string>
+    <string name="shout_configure">Configura Destinazione Voce</string>
+    <string name="shout_failed">Impossibile creare destinazione voce!</string>
+    <string name="deafen">Escluso</string>
+    <string name="context_channel_shout">Imposta Destinazione Voce</string>
+    <string name="overlay">In Sovrimpressione</string>
+    <string name="register">Registrati</string>
+    <string name="recordingVolume">Aumento Volume Registrazioni</string>
+    <string name="status_notify_muted_and_deafened">Muto ed Escluso.</string>
+    <string name="chat_notify_now_unmuted_undeafened">%s non è muto né escluso.</string>
+    <string name="chat_notify_unmuted_undeafened">Né Muto né Escluso.</string>
+    <string name="chat_notify_now_muted_deafened">%s è muto ed escluso.</string>
+    <string name="chat_notify_muted_deafened">Muto ed Escluso.</string>
+    <string name="user_menu_deafen">Escluditi</string>
+    <string name="undocumentedWakeLock">Il wakelock del sensore di prossimità non è supportato sul tuo dispositivo. Modificare la modalità di chiamata in \"Vivavoce\".</string>
+    <string name="user_menu_priority_speaker">Altoparlante Prioritario</string>
+    <string name="donation_thanks">Grazie per la donazione.</string>
+    <string name="default_">Predefinito</string>
+    <string name="orbot_tor_failed">Impossibile connettersi al proxy locale Tor sulla porta %d (SOCKS).
+\n
+\nAssicurarsi che l\'app Orbot sia in esecuzione.</string>
+    <string name="orbot_not_installed">App Orbot non installata. Tor non verrà utilizzato.</string>
+    <string name="grant_perm_draw_over_apps">Fornire l\'autorizzazione per la visualizzazione sopra le altre app.</string>
+    <string name="grant_perm_storage">Fornire l\'autorizzazione per al memoria esterna.</string>
+    <string name="grant_perm_microphone">Fornire l\'autorizzazione per il microfono.</string>
+    <string name="context_channel_unlink_all">Scollega Tutti</string>
+    <string name="context_channel_link">Collega</string>
+    <string name="export_success">Certificato esportato in \"%s\".</string>
+    <string name="error_writing_to_storage">Impossibile scrivere sulla memoria esterna.</string>
+    <string name="migration_certificate_success">Certificato migrato.</string>
+    <string name="migration_certificate_begin">Avvio migrazione certificato…</string>
+    <string name="certificate_import_success">Certificato importato \"%s\".</string>
+    <string name="certificate_load_failed">Impossibile memorizzare certificato!</string>
+    <string name="invalid_certificate">Certificato non valido, impossibile caricare.</string>
+    <string name="password">Password</string>
+    <string name="certificates">Certificati</string>
+    <string name="no_certificate">Nessun Certificato</string>
+    <string name="change_requires_reconnect">Riconnettiti per applicare le modifiche.</string>
+    <string name="attempting_reconnect">Errore: %s.
+\n
+\nRiconnessione…</string>
+    <string name="cancel_reconnect">Annulla Riconnessione</string>
+    <string name="invalid_username">Nome utente non valido</string>
+    <string name="channel_join">Unisciti</string>
+    <string name="invalid_port_range">Porta non valida (1-65535)</string>
+    <string name="invalid_host">Host non valido</string>
+    <string name="certificate_info">Soggetto:
+\n%1$s
+\n
+\nValido da:
+\n%2$s
+\n
+\nValido fino:
+\n%3$s
+\n
+\nDigest (SHA-1):
+\n%4$s
+\n
+\nDigest (SHA-256):
+\n%5$s</string>
+    <string name="transmit_mode">Modalità Trasmissione</string>
+    <string name="cancelled">Annullato</string>
+    <string name="trust_cleared">Database dei certificati attendibili pulito</string>
+    <string name="trust_add_failed">Impossibile aggiungere il certificato tra quelli attendibili!</string>
+    <string name="trust_added">Certificato aggiunto tra quelli attendibili</string>
+    <string name="untrusted_certificate">Certificato non Attendibile</string>
+    <string name="certificate_not_valid">Impossibile caricare il certificato %s!</string>
+    <string name="first_run_generate_certificate">La generazione di un certificato è altamente consigliata e necessaria per la connessione ad alcuni server.</string>
+    <string name="mumble_url_parse_failed">L\'URL Mumble non è valido.</string>
+    <string name="tts_failed">Impossibile avviare il TTS</string>
+    <string name="confirm_reset_comment">Ripristinare il commento dell\'utente \"%s\"\?</string>
+    <string name="reconnect_dialog_message">Sei già connesso a un server. Connettersi a questo\?</string>
+    <string name="hint_switching_summary">Cambia tra la schermata della chat e quella del canale utilizzando i pulsanti in alto a sinistra oppure scorrendo.</string>
+    <string name="hint_switching">Cambia Schermata</string>
+    <string name="hint_server_add_summary">Aggiungi un server preferito premento \"Aggiungi\" sulla barra delle azioni.</string>
+    <string name="hint_ptt_summary">Premi questo pulsante mentre parli. Doppio tocco per mantenere la funzione attiva o disattivata.</string>
+    <string name="hint_ptt">Premi per Parlare</string>
+    <string name="tapToReconnect">Premi per Riconnetterti</string>
+    <string name="error_fetching_servers">Impossibile recuperare i server.
+\nSei connesso a Internet\?</string>
+    <string name="registerSelfSuccess">Richiesta di registrazione inviata</string>
+    <string name="fetchingServers">Recupero della lista dei server pubblici…</string>
+    <string name="preferences_immutable">Questa impostazione non può essere modificata mentre si è connessi a un server.</string>
+    <string name="retrieving">Ricezione…</string>
+    <string name="status_notify_muted">Muto.</string>
+    <string name="noServerInfo">Pinga per Ottenere Informazioni</string>
+    <string name="shareMessage">Unisciti a questo server Mumble tramite Mumla! %s</string>
+    <string name="server_list_title_public_internet">Pubblici</string>
+    <string name="chat_notify_now_unmuted">%s non è muto.</string>
+    <string name="chat_notify_now_muted">%s è muto.</string>
+    <string name="chat_notify_unmuted">Non Muto.</string>
+    <string name="messageToChannel">Scrivi un messaggio al canale \"%s\"</string>
+    <string name="messageToUser">Scrivi un messaggio all\'utente \"%s\"</string>
+    <string name="pushToTalkHint">(spunta per attivare la modalità attiva/disattiva)</string>
+    <string name="reset_key">Ripristina Tasto</string>
+    <string name="user_menu_ban">Bandisci</string>
+    <string name="user_menu_kick">Caccia</string>
+    <string name="drawer_pinned">Canali Fissati</string>
+    <string name="drawer_tokens">Token d\'Accesso</string>
+    <string name="drawer_close">Chiudi Barra Laterale</string>
+    <string name="drawer_open">Apri Barra Laterale</string>
+    <string name="chat_notify_muted">Muto.</string>
+    <string name="generateCertFailure">Impossibile generare il certificato.</string>
+    <string name="generateCertSuccess">Il certificato è stato impostato e salvato come: \"%s\"!</string>
+    <string name="accessAdd">Aggiungi Token d\'Accesso</string>
+    <string name="accessTokens">Token d\'Accesso</string>
+    <string name="externalStorageUnavailable">Archiviazione esterna non disponibile, impossibile caricare il certificato</string>
+    <string name="kicked_message">Sei stato cacciato dal server.
+\nMotivo: %s</string>
+    <string name="togglelocalmute">Attiva/Disattiva Muto Locale</string>
+    <string name="ptt">Premi per Parlare</string>
+    <string name="server_label">Etichetta</string>
+    <string name="no_servers">Aggiungere un server premendo \"Aggiungi\" dalla barra delle azioni.</string>
+    <string name="server_match_description">Mumla può trovare automaticamente un server vuoto, con posizione, versione e latenza ideali.</string>
+    <string name="server_match_info">Nome: %1$s
+\nHost: %2$s:%3$d
+\nUtenti: %4$d / %5$d
+\nVersione: %6$s
+\nPaese: %7$s
+\nLatenza: %8$d ms</string>
+    <string name="server_match_expand_country">Non è stato possibile trovare server ideali per il tuo Paese. Cercare in tutto il mondo\?</string>
+    <string name="server_match_progress">Ricerca server…</string>
+    <string name="voice_channel">Canale Voce</string>
+    <string name="control_channel">Canale di Controllo</string>
+    <string name="audio_bandwidth">Larghezza di Banda Audio</string>
+    <string name="server_info_max_bandwidth">Massima: %.1f kbit/s</string>
+    <string name="server_info_current_bandwidth">Attuale: %.1f kbit/s</string>
+    <string name="server_info_host">Host Remoto: %1$s (Porta: %2$d)</string>
+    <string name="server_info_latency">Latenza: %.2f ms</string>
+    <string name="udp_encryption_mode">Crittografia 128 bit OCB-AES-128</string>
+    <string name="tcp_encryption_mode">Crittografia 256 bit AES-256-SHA</string>
+    <string name="comment_view">Mostra</string>
+    <string name="user_menu_reset_comment">Ripristina Commento</string>
+    <string name="user_menu_local_mute">Muto Locale</string>
+    <string name="user_menu_move">Sposta</string>
+    <string name="chat_message_tts_short_link">(Collegamento a %1$s)</string>
+    <string name="chat_message_channel">(Canale)</string>
+    <string name="chat_message_tree">(Albero)</string>
 </resources>
