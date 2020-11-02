@@ -37,7 +37,7 @@
     <string name="clearChat">Neteja xat</string>
     <string name="online">En línia</string>
     <string name="retry">Reintenta</string>
-    <string name="remove"></string>
+    <string name="remove"/>
     <string name="edit">Edita</string>
     <string name="connect">Connecta</string>
     <string name="searchHint">Busca canals i usuaris</string>
@@ -68,7 +68,7 @@
     <string name="fragment_chat">Xat</string>
     <string name="connecting_to_server">Connectant a %s</string>
     <string name="connecting">Connectant</string>
-    <string name="server_label">Títol</string>
+    <string name="server_label">Etiqueta</string>
     <string name="server_host">Adreça</string>
     <string name="server_username">Nom d\'usuari</string>
     <string name="server_add">Afegeix servidor</string>
