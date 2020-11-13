@@ -1,0 +1,3 @@
+- Traduzione cinese semplificato (da deluxghost).
+- Lista server pubblici funzionante.
+- Correzione legata a immagini con data-URI.

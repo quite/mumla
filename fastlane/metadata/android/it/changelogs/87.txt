@@ -1,0 +1,6 @@
+- Traduzione cinese semplificato migliorata (da Jackal Zhao)
+- Frequenza di campionamento predefinita 48kHz mostrata correttamente
+- Aggiustato recupero commenti utente lunghi (> 127 byte)
+- Aggiustato ripristino commenti utente brevi
+- Aggiustata esportazione certificato nell'archiviazione esterna su Android 10
+- Correzioni e miglioramenti

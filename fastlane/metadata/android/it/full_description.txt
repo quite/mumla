@@ -17,4 +17,4 @@ Alcune caratteristiche:
 Al momento la trasmissione ad attivazione vocale funziona meglio quando si utilizzano le cuffie. La cancellazione dell'eco e la riduzione del rumore devono funzionare.
 Potrebbe essere utile regolare la soglia di rilevamento nelle impostazioni.
 
-Mumla è un software copylefted libero. Ulteriori informazioni su https://mumla-app.gitlab.io/
+Mumla è un software libero con licenza copyleft. Ulteriori informazioni su https://mumla-app.gitlab.io/
