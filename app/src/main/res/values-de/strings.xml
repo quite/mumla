@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--Drawer pane-->
     <string name="drawer_open">Drawer öffnen</string>
@@ -11,12 +11,10 @@
     <string name="drawer_favorites">Favoriten</string>
     <string name="drawer_lan">LAN</string>
     <string name="drawer_public">Öffentliche Server</string>
-
     <!--Chat formatting-->
     <string name="chat_message_tree">(Baum)</string>
     <string name="chat_message_channel">(Kanal)</string>
     <string name="chat_message_to">%1$s → %2$s</string>
-
     <!--User menu-->
     <string name="user_menu_admin">Admin</string>
     <string name="user_menu_kick">Kicken</string>
@@ -34,15 +32,12 @@
     <string name="user_menu_information">Informationen</string>
     <string name="user_menu_register">Registrieren</string>
     <string name="user_menu_registered">Registriert</string>
-
     <!--Channel menu-->
     <string name="channel_menu_pin">Pin</string>
-
     <!--Comment Fragment-->
     <string name="comment_view">Anzeigen</string>
     <string name="comment_edit_source">Quelltext bearbeiten</string>
     <string name="comment_view_source">Quelltext anzeigen</string>
-
     <!--Server Info Fragment-->
     <string name="control_channel">Steuerkanal</string>
     <string name="tcp_encryption_mode">Verschlüsselt mit 256 Bit AES256-SHA</string>
@@ -56,7 +51,6 @@
     <string name="server_info_codec">Codec: %s</string>
     <string name="server_info_max_bandwidth">Maximum %.1f kbit/s</string>
     <string name="server_info_current_bandwidth">Aktuell %.1f kbit/s</string>
-
     <!--Server matching-->
     <string name="server_match">Server suchen</string>
     <string name="server_match_progress">Einen Server finden…</string>
@@ -65,7 +59,6 @@
     <string name="server_match_expand_country">Konnte keinen optimalen Server in Ihrem Land finden. Suche auf die ganze Welt ausweiten?</string>
     <string name="server_match_info">Name: %1$s\nHost: %2$s:%3$d\nBenutzer: %4$d / %5$d\nVersion: %6$s \nLand: %7$s \nLatenz: %8$d ms</string>
     <string name="server_match_description">Mumla kann automatisch nach einem leeren Server suchen, optimiert nach Serverstandort, Version und Latenz.</string>
-
     <!--Common-->
     <string name="channels">Kanäle</string>
     <string name="no_servers">Keine Server hinzugefügt.\nDrücken Sie den \'Hinzufügen\' Knopf in der Action Bar, um zu beginnen.</string>
@@ -226,7 +219,6 @@
     <string name="cancel_reconnect">Neuverbinden abbrechen</string>
     <string name="attempting_reconnect">Fehler: %s.\n\n Versuche erneut zu verbinden…</string>
     <string name="default_">Standard</string>
-
     <plurals name="search_channel_users">
         <item quantity="one">%d Benutzer</item>
         <item quantity="other">%d Benutzer</item>
@@ -239,4 +231,27 @@
         <item quantity="one">%d neue Nachricht</item>
         <item quantity="other">%d neue Nachrichten</item>
     </plurals>
+    <string name="context_channel_unlink_all">Alle Links aufheben</string>
+    <string name="context_channel_link">Link</string>
+    <string name="migration_certificate_success">Zertifikat transferiert.</string>
+    <string name="migration_certificate_begin">Starte Zertifikat-Transfer…</string>
+    <string name="change_requires_reconnect">Verbinde dich neu, um die Änderung wirksam zu machen.</string>
+    <string name="chat_message_tts_short_link">(Link zu %1$s)</string>
+    <string name="error_writing_to_storage">Konnte nicht auf externen Speicher schreiben.</string>
+    <string name="donation_thanks">Danke für die Spende.</string>
+    <string name="orbot_tor_failed">Konnte mit lokalem Tor-Proxy auf SOCKS-Port %d nicht verbinden.
+\n
+\nBitte stelle sicher, dass die Orbot-App läuft.</string>
+    <string name="orbot_not_installed">Die Orbot-App ist nicht installiert. Tor wird nicht benutzt.</string>
+    <string name="grant_perm_draw_over_apps">Bitte setze die Berechtigung, dass die App über anderen Apps angezeigt werden darf.</string>
+    <string name="grant_perm_storage">Bitte Zugriff auf externen Speicher erlauben.</string>
+    <string name="grant_perm_microphone">Bitte Zugriff auf das Mikrofon erlauben.</string>
+    <string name="export_success">Zertifikat exportiert nach %s.</string>
+    <string name="certificate_import_success">Zertifikat %s importiert.</string>
+    <string name="certificate_load_failed">Konnte Zertifikat nicht abspeichern!</string>
+    <string name="invalid_certificate">Ungültiges Zertifikat, konnte nicht geladen werden.</string>
+    <string name="password">Passwort</string>
+    <string name="decrypt_certificate">Zertifikate entschlüsseln</string>
+    <string name="certificates">Zertifikate</string>
+    <string name="no_certificate">Kein Zertifikat</string>
 </resources>
