@@ -8,13 +8,13 @@
     <string name="connect">Koble til</string>
     <string name="quickConnect">Hurtigtilkobling</string>
     <string name="recordingVolume">Opptakslydstyrkeforhøyelse</string>
-    <string name="undocumentedWakeLock">Oppvekning fra lås med nærhetssensor støttes ikke på din enhet. Endre ringemodus til høyttaler.</string>
+    <string name="undocumentedWakeLock">Oppvåkning fra låst tilstand med nærhetssensor støttes ikke på din enhet. Endre ringemodus til høyttaler.</string>
     <string name="bluetooth">Blåtann</string>
     <string name="searchHint">Søk i kanaler og brukere</string>
     <string name="search">Søk</string>
     <string name="generateCertProgress">Genererer sertifikat …</string>
     <string name="generateCertFailure">Kunne ikke generere sertifikat.</string>
-    <string name="generateCertSuccess">Sertifikatet ditt har blitt satt og lagret som %s.</string>
+    <string name="generateCertSuccess">Sertifikatet ditt har blitt satt og lagret som %s!</string>
     <string name="generateCert">Generer sertifikat</string>
     <string name="messageReceived">Ny melding</string>
     <string name="pushToTalkHint">(huk av i avkryssningsboksen for å skru på veksling)</string>
@@ -51,7 +51,7 @@
     <string name="fragment_channel">Kanal</string>
     <string name="fragment_chat">Sludre</string>
     <string name="connecting_to_server">Kobler til %s</string>
-    <string name="connecting">Kobler til …</string>
+    <string name="connecting">Kobler til</string>
     <string name="server_label">Etikett</string>
     <string name="server_host">Adresse</string>
     <string name="server_port">Port</string>
@@ -225,7 +225,7 @@
     <string name="resume">Gjenoppta</string>
     <string name="lostConnection">Mistet tilknytningen til tjeneren.</string>
     <string name="mumlaDisconnected">Mumla er frakoblet</string>
-    <string name="mumlaConnecting">Mumla kobler til …</string>
+    <string name="mumlaConnecting">Mumla kobler til</string>
     <string name="mumlaConnected">Mumla er tilkoblet</string>
     <string name="connected">Tilkoblet</string>
     <string name="clearChat">Tøm sludring</string>
