@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Drawer pane -->
     <string name="drawer_open">Otwórz szufladę</string>
@@ -11,13 +11,11 @@
     <string name="drawer_favorites">Ulubione</string>
     <string name="drawer_lan">LAN</string>
     <string name="drawer_public">Serwery publiczne</string>
-
     <!-- Chat formatting -->
     <string name="chat_message_tree">(Drzewo)</string>
     <string name="chat_message_channel">(kanał)</string>
     <string name="chat_message_to">%1$s → %2$s</string>
     <string name="chat_message_tts_short_link">(Łącze do %1$s)</string>
-
     <!-- User menu -->
     <string name="user_menu_admin">Administrator</string>
     <string name="user_menu_kick">Wykop</string>
@@ -35,15 +33,12 @@
     <string name="user_menu_information">Informacje</string>
     <string name="user_menu_register">Zarejestruj się</string>
     <string name="user_menu_registered">Zarejestrowany</string>
-
     <!-- Channel menu -->
     <string name="channel_menu_pin">Przypnij</string>
-
     <!-- Comment Fragment -->
     <string name="comment_view">Widok</string>
     <string name="comment_edit_source">Edytuj źródło</string>
     <string name="comment_view_source">Widok źródła</string>
-
     <!-- Server Info Fragment -->
     <string name="control_channel">Kanał sterowania</string>
     <string name="tcp_encryption_mode">Zaszyfrowane 256-bitowym AES-256-SHA</string>
@@ -57,16 +52,14 @@
     <string name="server_info_codec">Kodek: %s</string>
     <string name="server_info_max_bandwidth">Maksymalnie %.1f kbit/s</string>
     <string name="server_info_current_bandwidth">Obecnie %.1f kbit/s</string>
-
     <!-- Server matching -->
     <string name="server_match">Znajdź serwer</string>
     <string name="server_match_progress">Znajdowanie serwera…</string>
     <string name="server_match_found">Znaleziono serwer</string>
-    <string name="server_match_not_found">Nie można znaleźć serwera</string>
-    <string name="server_match_expand_country">Nie można znaleźć optymalnych serwerów w Twoim kraju. Szukać na całym świecie?</string>
+    <string name="server_match_not_found">Nie udało się znaleźć serwera</string>
+    <string name="server_match_expand_country">Nie udało się znaleźć optymalnych serwerów w Twoim kraju. Szukać na całym świecie\?</string>
     <string name="server_match_info">Nazwa: %1$s\nHost: %2$s:%3$d\nUżytkownicy: %4$d / %5$d\nWersja: %6$s \nKraj: %7$s \nOpóźnienie: %8$d ms</string>
     <string name="server_match_description">Mumla może automatycznie znaleźć Ci pusty serwer, optymalizując lokalizację, wersję i opóźnienie.</string>
-
     <!-- Common -->
     <string name="channels">Kanały</string>
     <string name="no_servers">Naciśnij \'Dodaj\' z paska akcji, aby najpierw dodać serwer.</string>
@@ -77,7 +70,7 @@
     <string name="server_host">Adres</string>
     <string name="server_label">Etykieta</string>
     <string name="connecting">Łączenie</string>
-    <string name="connecting_to_server">Łączenie z %s</string>
+    <string name="connecting_to_server">Łączenie z %s…</string>
     <string name="fragment_chat">Czat</string>
     <string name="fragment_channel">Kanał</string>
     <string name="menu_settings">Ustawienia</string>
@@ -91,7 +84,7 @@
     <string name="preferences">Preferencje</string>
     <string name="togglelocalmute">Przełącz wyciszenie lokalne</string>
     <string name="chat">Czat</string>
-    <string name="perm_denied">Odmowa dostępu!</string>
+    <string name="perm_denied">Odmowa dostępu.</string>
     <string name="connectionRefused">Połączenie odrzucone</string>
     <string name="confirm_delete_server">Czy na pewno chcesz usunąć ten serwer?</string>
     <string name="confirm_delete_channel">Czy na pewno chcesz usunąć ten kanał?</string>
@@ -113,7 +106,7 @@
     <string name="messageReceived">Nowa wiadomość</string>
     <string name="generateCert">Wygeneruj certyfikat</string>
     <string name="generateCertSuccess">Twój certyfikat został ustawiony i zapisany jako %s!</string>
-    <string name="generateCertFailure">Nie można wygenerować certyfikatu.</string>
+    <string name="generateCertFailure">Nie udało się wygenerować certyfikatu.</string>
     <string name="generateCertProgress">Generowanie certyfikatu…</string>
     <string name="search">Wyszukaj</string>
     <string name="searchHint">Wyszukaj kanały i użytkowników</string>
@@ -134,7 +127,7 @@
     <string name="clearChat">Wyczyść czat</string>
     <string name="connected">Połączono</string>
     <string name="mumlaConnected">Mumla połoczony</string>
-    <string name="mumlaConnecting">Mumla łączy się</string>
+    <string name="mumlaConnecting">Mumla łączy się…</string>
     <string name="mumlaDisconnected">Mumla rozłączony</string>
     <string name="lostConnection">Utracono połączenie z serwerem.</string>
     <string name="resume">Wznów</string>
@@ -163,7 +156,7 @@
     <string name="country">Kraj</string>
     <string name="share">Udostępnij</string>
     <string name="description">Opis</string>
-    <string name="shareMessage">Dołącz do tego serwera Mumble z Mumla! %s</string>
+    <string name="shareMessage">Dołącz do tego serwera Mumble z Mumla. %s</string>
     <string name="noServerInfo">Ping, aby pobrać informacje</string>
     <string name="status_notify_muted_and_deafened">Wyciszony i ogłuszony.</string>
     <string name="status_notify_muted">Wyciszony.</string>
@@ -181,7 +174,8 @@
     <string name="register">Zarejestruj się</string>
     <string name="userControl">Kontrola użytkownika</string>
     <string name="registerSelfSuccess">Wysłano prośbę o rejestrację</string>
-    <string name="error_fetching_servers">Nie można pobrać serwerów.\nCzy masz połączenie z internetem?</string>
+    <string name="error_fetching_servers">Nie udało się pobrać serwerów.
+\nCzy masz połączenie z internetem\?</string>
     <string name="coming_soon">Funkcja już wkrótce.</string>
     <string name="tapToReconnect">Naciśnij, aby ponownie połączyć</string>
     <string name="overlay">Nakładka</string>
@@ -202,58 +196,59 @@
     <string name="position">Pozycja</string>
     <string name="channel_edit">Edytuj kanał</string>
     <string name="channel_add">Dodaj kanał</string>
-    <string name="tts_failed">Nie można uruchomić TTS</string>
+    <string name="tts_failed">Nie udało się uruchomić TTS</string>
     <string name="mumble_url_parse_failed">Adres URL Mumble jest nieprawidłowy.</string>
-    <string name="first_run_generate_certificate_title">Witaj w Mumla!</string>
+    <string name="first_run_generate_certificate_title">Witaj w Mumla.</string>
     <string name="first_run_generate_certificate">Generowanie certyfikatu jest wysoce zalecane i konieczne do połączenia z niektórymi serwerami.</string>
     <string name="generate">Wygeneruj</string>
-    <string name="certificate_not_valid">Nie można załadować certyfikatu %s!</string>
+    <string name="certificate_not_valid">Nie udało się załadować certyfikatu %s.</string>
     <string name="invalid_password">Błędne hasło.</string>
     <string name="send_message">Wyślij wiadomość</string>
     <string name="channel_menu_view_description">Wyświetl opis</string>
     <string name="untrusted_certificate">Niezaufany certyfikat</string>
     <string name="allow">Zezwól</string>
     <string name="trust_added">Dodano certyfikat do magazynu zaufanych certyfikatów</string>
-    <string name="trust_add_failed">Nie można dodać certyfikatu do magazynu zaufanych certyfikatów!</string>
+    <string name="trust_add_failed">Nie udało się dodać certyfikatu do magazynu zaufanych certyfikatów.</string>
     <string name="trust_cleared">Wyczyszczono bazę danych zaufania</string>
     <string name="cancelled">Anulowano</string>
     <string name="transmit_mode">Tryb transmisji</string>
     <string name="current_chat_target">Bieżący cel czatu</string>
     <string name="channel_join">Dołącz</string>
     <string name="certificate_info">Podmiot:\n%1$s\n\nWażny od:\n%2$s\n\nWażny do:\n%3$s\n\nSkrót (SHA-1):\n%4$s\n\nSkrót (SHA-256):\n%5$s</string>
-    <string name="invalid_host">Niepoprawny host</string>
+    <string name="invalid_host">Nieprawidłowy host</string>
     <string name="invalid_port_range">Nieprawidłowy port (1-65535)</string>
-    <string name="invalid_username">Niepoprawna nazwa użytkownika</string>
+    <string name="invalid_username">Nieprawidłowa nazwa użytkownika</string>
     <string name="cancel_reconnect">Anuluj ponownie połącz</string>
     <string name="attempting_reconnect">Błąd: %s.\n\nPonowne połączenie…</string>
-    <string name="change_requires_reconnect">Połącz ponownie, aby zmiany odniosły skutek.</string>
+    <string name="change_requires_reconnect">Połącz ponownie, aby użyć nowych ustawień.</string>
     <string name="no_certificate">Brak certyfikatu</string>
     <string name="certificates">Certyfikaty</string>
     <string name="decrypt_certificate">Deszyfruj certyfikat</string>
     <string name="password">Hasło</string>
-    <string name="invalid_certificate">Niepoprawny certyfikat, nie można załadować.</string>
-    <string name="certificate_load_failed">Nie można zapisać certyfikatu!</string>
+    <string name="invalid_certificate">Nieprawidłowy certyfikat nie mógł zostać załadowany.</string>
+    <string name="certificate_load_failed">Nie udało się zapisać certyfikatu.</string>
     <string name="certificate_import_success">Zaimportowany certyfikat %s.</string>
     <string name="migration_certificate_begin">Rozpoczęcie migracji certyfikatu…</string>
     <string name="migration_certificate_success">Certyfikat migrowany.</string>
-    <string name="error_writing_to_storage">Nie można zapisać w pamięci zewnętrznej.</string>
+    <string name="error_writing_to_storage">Nie udało się zapisać w pamięci zewnętrznej.</string>
     <string name="export_success">Certyfikat wyeksportowany do %s.</string>
     <string name="context_channel_link">Złącz</string>
     <string name="context_channel_unlink_all">Rozłącz wszystkie</string>
     <string name="context_channel_shout">Ustaw cel głosu</string>
     <string name="shout_include_linked">Krzycz do połączonych kanałów</string>
     <string name="shout_include_subchannels">Krzycz do podkanałów</string>
-    <string name="shout_failed">Nie można utworzyć celu głosu!</string>
+    <string name="shout_failed">Nie udało się utworzyć celu głosu.</string>
     <string name="shout_target">Krzyczenie do %s</string>
     <string name="shout_configure">Konfiguruj cel głosu</string>
     <string name="grant_perm_microphone">Proszę udzielić pozwolenia na mikrofon.</string>
     <string name="grant_perm_storage">Proszę udzielić pozwolenia na pamięć zewnętrzną.</string>
     <string name="grant_perm_draw_over_apps">Proszę udzielić pozwolenia na wyświetlanie w innych aplikacjach.</string>
     <string name="orbot_not_installed">Aplikacja Orbot nie jest zainstalowana. Nie używam sieci Tor.</string>
-    <string name="orbot_tor_failed">Nie można połączyć się z lokalnym serwerem proxy Tor na porcie %d (SOCKS).\n\nUpewnij się, że aplikacja Orbot jest uruchomiona.</string>
+    <string name="orbot_tor_failed">Nie udało się połączyć z lokalnym serwerem proxy Tor na porcie %d (SOCKS).
+\n
+\nUpewnij się, że aplikacja Orbot jest uruchomiona.</string>
     <string name="default_">Domyślnie</string>
     <string name="donation_thanks">Dziękujemy za darowiznę.</string>
-
     <plurals name="search_channel_users">
         <item quantity="one">%d użytkownik</item>
         <item quantity="few">%d użytkowników</item>
