@@ -1,0 +1,3 @@
+- deluxghost traduziu Mumla para chinês simplificado.
+- A recuperação da lista de servidores públicos funciona novamente.
+- Corrigido um bug de crash relacionado com imagem com data-URI.

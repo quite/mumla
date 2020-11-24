@@ -1,0 +1,6 @@
+- Jackal Zhao ajudou a refinar a tradução para simplificar. Chinês
+- Mostrar correctamente a taxa de amostra padrão de 48kHz na GUI
+- Fix fetching de longos (> 127 bytes) comentários do utilizador
+- Reposição fixa de comentários curtos dos utilizadores
+- Fixar exportação de certificado para armazenamento externo no Android 10
+- Corrigir uma dúzia de possíveis e reais crash bugs

@@ -1,0 +1,1 @@
+A ligação sobre Tor usando Orbot deve funcionar melhor, e várias mensagens na IU indicam agora que Tor está a ser usado. A ligação ao endereço .onion dos Serviços Ocultos também funciona; a resolução do DNS é deixada ao proxy Tor SOCKS.
