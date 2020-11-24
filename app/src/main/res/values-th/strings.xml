@@ -1,2 +1,274 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <plurals name="notification_unread_many">
+        <item quantity="other">%d ข้อความใหม่</item>
+    </plurals>
+    <plurals name="reconnecting">
+        <item quantity="other">กำลังเชื่อมต่อใหม่ใน %d วินาที.</item>
+    </plurals>
+    <plurals name="search_channel_users">
+        <item quantity="other">%d ชื่อผู้ใช้</item>
+    </plurals>
+    <string name="donation_thanks">ขอบคุณที่บริจาค.</string>
+    <string name="default_">ค่าปกติ</string>
+    <string name="orbot_tor_failed">ไม่สามารถเชื่อมต่อ local Tor proxy on port %d (SOCKS).
+\n
+\nกรุณาตรวจสอบว่า Orbot กำลังทำงานอยู่หรือไม่.</string>
+    <string name="orbot_not_installed">ไม่ได้ติดตั้งแอพ Orbot. ใช้ Tor ไม่ได้</string>
+    <string name="grant_perm_draw_over_apps">กรุณาอนุญาตให้แสดง Mumla เหนือแอพอื่นๆ</string>
+    <string name="grant_perm_storage">กรุณาอนุญาติให้ใช้พื้นที่จัดเก็บภายนอก</string>
+    <string name="grant_perm_microphone">กรุณาอนุญาตให้ใช้ไมโครโฟน</string>
+    <string name="shout_configure">ปรับแต่งเป้าหมายการส่งเสียง</string>
+    <string name="shout_target">ตะโกนไปยัง %s</string>
+    <string name="shout_failed">ไม่สามารถสร้างเป้าหมายการส่งเสียง</string>
+    <string name="shout_include_subchannels">ตะโกนไปยังแชนเนลรอง</string>
+    <string name="shout_include_linked">ตะโกนไปยังแชนเนลที่ลิ้งค์</string>
+    <string name="context_channel_shout">ตั้งเป้าหมายเสียง</string>
+    <string name="context_channel_unlink_all">ยกเลิกการลิ้งค์ทั้งหมด</string>
+    <string name="context_channel_link">ลิ้งค์</string>
+    <string name="export_success">ส่งออกใบรับรองไปยัง %s.</string>
+    <string name="error_writing_to_storage">ไม่สามารถเขียนข้อมูลไปยังที่จัดเก็บข้อมูลภายนอก</string>
+    <string name="migration_certificate_success">ย้ายใบรับรองแล้ว</string>
+    <string name="migration_certificate_begin">กำลังเริ่มต้นการย้ายใบรับรอง …</string>
+    <string name="certificate_import_success">นำเข้าใบรับรอง %s.</string>
+    <string name="certificate_load_failed">ไม่สามารถจัดเก็บใบรับรองได้</string>
+    <string name="invalid_certificate">ใบรับรองไม่ถูกต้องไม่สามารถใช้งานได้</string>
+    <string name="password">รหัสผ่าน</string>
+    <string name="decrypt_certificate">ถอดรหัสใบรับรอง</string>
+    <string name="certificates">ใบรับรอง</string>
+    <string name="no_certificate">ไม่มีใบรับรอง</string>
+    <string name="change_requires_reconnect">กำลังเชื่อมต่อจากการตั้งค่าใหม่</string>
+    <string name="attempting_reconnect">Error: %s.
+\n
+\nกำลังเชื่อมต่อใหม่…</string>
+    <string name="cancel_reconnect">ยกเลิกการเชื่อมต่อ</string>
+    <string name="invalid_username">ชื่อผู้ใช้ไม่ถูกต้อง</string>
+    <string name="invalid_port_range">พอร์ตไม่ถูกต้อง (1-65535)</string>
+    <string name="invalid_host">โฮสต์ไม่ถูกต้อง</string>
+    <string name="certificate_info">Subject:
+\n%1$s
+\n
+\nValid from:
+\n%2$s
+\n
+\nValid to:
+\n%3$s
+\n
+\nDigest (SHA-1):
+\n%4$s
+\n
+\nDigest (SHA-256):
+\n%5$s</string>
+    <string name="channel_join">เข้าร่วม</string>
+    <string name="current_chat_target">เป้าหมายแชทปัจจุบัน</string>
+    <string name="transmit_mode">โหมดการสื่อสาร</string>
+    <string name="cancelled">ยกเลิก</string>
+    <string name="trust_cleared">ล้างฐานข้อมูลความน่าเชื่อถือ</string>
+    <string name="trust_add_failed">ไม่สามารถเพิ่มใบรับรองไปยังที่เก็บที่เชื่อถือได้</string>
+    <string name="trust_added">เพิ่มใบรับรองไปยังที่เก็บที่เชื่อถือได้</string>
+    <string name="allow">อนุญาต</string>
+    <string name="untrusted_certificate">ใบรับรองไม่น่าเชื่อถือ</string>
+    <string name="channel_menu_view_description">ดูรายละเอียด</string>
+    <string name="send_message">ส่งข้อความ</string>
+    <string name="invalid_password">รหัสผ่านผิด</string>
+    <string name="certificate_not_valid">ไม่สามารถโหลดใบรับรอง %s.</string>
+    <string name="generate">สร้าง</string>
+    <string name="first_run_generate_certificate">ขอแนะนำให้สร้างใบรับรอง และมันจำเป็นสำหรับการเชื่อมต่อกับบางเซิร์ฟเวอร์</string>
+    <string name="first_run_generate_certificate_title">ยินดีต้อนรับสู่ Mumla</string>
+    <string name="mumble_url_parse_failed">Mumble URL ไม่ถูกต้อง.</string>
+    <string name="tts_failed">ไม่สามารถเริ่ม TTS</string>
+    <string name="channel_add">เพิ่มแชนเนล</string>
+    <string name="channel_edit">แก้ไขแชนเนล</string>
+    <string name="position">ตำแหน่ง</string>
+    <string name="temporary">ชั่วคราว</string>
+    <string name="expand">ขยาย</string>
+    <string name="confirm">ยืนยัน</string>
+    <string name="confirm_reset_comment">ต้องการลบคอมเมนท์กับผู้ใช้ %s\?</string>
+    <string name="reconnect_dialog_message">คุณได้เชื่อมต่อกับเซิร์ฟเวอร์แล้ว เชื่อมต่อกับเซิร์ฟเวอร์นี้แทนหรือไม่\?</string>
+    <string name="reconnect">เชื่อมต่อใหม่</string>
+    <string name="action_settings">ตั้งค่า</string>
+    <string name="hint_switching_summary">สลับระหว่างมุมมองแชทและแชนเนลโดยใช้ปุ่มซ้ายบนหรือปัด</string>
+    <string name="hint_switching">การสลับระหว่างมุมมอง</string>
+    <string name="hint_server_add_summary">เพิ่มเซิร์ฟเวอร์โปรดโดยกด \'เพิ่ม\' จากแถบการทำงาน</string>
+    <string name="hint_server_add">ยินดีต้อนรับสู่ Mumla</string>
+    <string name="hint_ptt_summary">เพียงกดปุ่มนี้เพื่อพูดคุย แตะสองครั้งเพื่อสลับค้าง</string>
+    <string name="hint_ptt">กดพูด</string>
+    <string name="hint_reason">เหตุผล</string>
+    <string name="overlay">โอเวอร์เลย์</string>
+    <string name="tapToReconnect">แตะเพื่อเชื่อมต่อใหม่</string>
+    <string name="coming_soon">ฟีเจอร์เร็ว ๆ นี้.</string>
+    <string name="error_fetching_servers">ไม่สามารถดึงข้อมูลเซิฟเวอร์.
+\nเชื่อมต่ออินเตอร์เน็ตแล้วหรือยัง\?</string>
+    <string name="registerSelfSuccess">ส่งคำขอการลงทะเบียน</string>
+    <string name="userControl">ควบคุมผู้ใช้งาน</string>
+    <string name="register">ลงทะเบียนตัวเอง</string>
+    <string name="information">ข้อมูล</string>
+    <string name="fetchingServers">โปรดรอสักครู่กำลังดึงรายการเซิร์ฟเวอร์สาธารณะ …</string>
+    <string name="fullscreen_channel">แชนเนล</string>
+    <string name="fullscreen_chat">แชท</string>
+    <string name="fullscreen">เต็มจอ</string>
+    <string name="preferences_immutable">ไม่สามารถเปลี่ยนแปลงการตั้งค่านี้ได้ในขณะที่เชื่อมต่อกับเซิร์ฟเวอร์</string>
+    <string name="search_country">ประเทศ</string>
+    <string name="search_name">ชื่อ</string>
+    <string name="retrieving">กำลังดึงข้อมูล …</string>
+    <string name="close">ปิด</string>
+    <string name="comment">คอมเมนท์</string>
+    <string name="status_notify_muted">ปิดไมค์</string>
+    <string name="status_notify_muted_and_deafened">ปิดไมค์และปิดเสียง</string>
+    <string name="noServerInfo">ปิงเพื่อดึงข้อมูล</string>
+    <string name="shareMessage">เข้าร่วมเซิฟเวอร์ Mumble ด้วย Mumla. %s</string>
+    <string name="description">รายละเอียด</string>
+    <string name="share">แชร์</string>
+    <string name="country">ประเทศ</string>
+    <string name="name">ชื่อ</string>
+    <string name="sortBy">จัดเรียงโดย…</string>
+    <string name="sort">จัดเรียง</string>
+    <string name="ping">ปิง</string>
+    <string name="server_list_title_public_internet">สาธารณะ</string>
+    <string name="server_list_title_lan">แลน</string>
+    <string name="server_list_title_favorite">รายการโปรด</string>
+    <string name="unknown">ไม่ระบุ</string>
+    <string name="chat_notify_disconnected">%s ออกจากระบบแล้ว</string>
+    <string name="chat_notify_connected">%s เชื่อมต่อแล้ว</string>
+    <string name="chat_notify_now_unmuted_undeafened">%s เปิดไมค์และเปิดเสียงทั้งหมดแล้ว</string>
+    <string name="chat_notify_now_unmuted">%s เปิดไมค์แล้ว</string>
+    <string name="chat_notify_now_muted">%s ปิดไมค์แล้ว</string>
+    <string name="chat_notify_now_muted_deafened">%s เงียบและปิดเสียงทั้งหมด</string>
+    <string name="chat_notify_unmuted_undeafened">เปิดเสียงทั้งหมด</string>
+    <string name="chat_notify_unmuted">เปิดเสียง</string>
+    <string name="chat_notify_muted">เงียบเสียงแล้ว</string>
+    <string name="chat_notify_muted_deafened">เงียบและปิดเสียง</string>
+    <string name="chat_notify_moved">%1$s ย้ายมาจาก %2$s โดย %3$s.</string>
+    <string name="server">เซิฟเวอร์</string>
+    <string name="user">ผู้ใช้</string>
+    <string name="channel">แชทเนล</string>
+    <string name="resume">กลับคืน</string>
+    <string name="lostConnection">การเชื่อมต่อมีปัญหากับเซิฟเวอร์</string>
+    <string name="mumlaDisconnected">Mumla ออกจากระบบ</string>
+    <string name="mumlaConnecting">Mumla กำลังเชื่อมต่อ…</string>
+    <string name="mumlaConnected">Mumla เชื่อมต่อแล้ว</string>
+    <string name="connected">เชื่อมต่อแล้ว</string>
+    <string name="clearChat">ล้างแชท</string>
+    <string name="offline">ออฟไลน์</string>
+    <string name="online">ออนไลน์</string>
+    <string name="messageToChannel">พิมพ์ข้อความไปยังแชนเนล \'%s\'</string>
+    <string name="messageToUser">พิมพ์ข้อความไปยังผู้ใช้ \'%s\'</string>
+    <string name="retry">ลองใหม่</string>
+    <string name="delete">ลบ</string>
+    <string name="remove">ลบ</string>
+    <string name="edit">แก้ไข</string>
+    <string name="connectToServer">เชื่อมต่อเซิฟเวอร์</string>
+    <string name="connect">เชื่อมต่อ</string>
+    <string name="quickConnect">เชื่อมต่อแบบรวดเร็ว</string>
+    <string name="recordingVolume">เพิ่มเสียงบันทึก</string>
+    <string name="bluetooth">บลูทูธ</string>
+    <string name="undocumentedWakeLock">อุปกรณ์ของคุณไม่รองรับการล็อกจอแบบพร็อกซิมิตีเซ็นเซอร์ โปรดเปลี่ยนโหมดการโทรเป็นลำโพง</string>
+    <string name="searchHint">ค้นหาแชนเนลและผู้ใช้</string>
+    <string name="search">ค้นหา</string>
+    <string name="generateCertProgress">กำลังสร้างใบรับรอง…</string>
+    <string name="generateCertFailure">สร้างใบรับรองไม่ได้</string>
+    <string name="generateCertSuccess">ใบรับรองของคุณสร้างและบันทึกแล้ว %s!</string>
+    <string name="generateCert">สร้างใบรับรอง</string>
+    <string name="messageReceived">ข้อความใหม่</string>
+    <string name="pushToTalkHint">(ติ๊กช่องทำเครื่องหมายเพื่อเปิดใช้งานการสลับค้าง)</string>
+    <string name="accessAdd">เพิ่มโทเค็นการเข้าถึง</string>
+    <string name="accessTokens">เข้าถึงโทเค็น</string>
+    <string name="noFavorites">ไม่มีแชนเนลโปรด</string>
+    <string name="favoriteAdded">เพิ่มรายการโปรดแล้ว</string>
+    <string name="favoriteRemoved">ลบรายการโปรดแล้ว</string>
+    <string name="favorites">รายการโปรด</string>
+    <string name="viewFavorites">ดูรายการโปรด</string>
+    <string name="removeFavorite">ลบรายการโปรด</string>
+    <string name="addFavorite">เพิ่มรายการโปรด</string>
+    <string name="externalStorageUnavailable">ที่เก็บข้อมูลภายนอกไม่พร้อมใช้งาน. ไม่สามารถโหลดใบรับรองได้</string>
+    <string name="reset_key">รีเซ็ทคีย์</string>
+    <string name="loading">กำลังโหลด…</string>
+    <string name="kicked_message">ถูกเตะออกจากเซิฟเวอร์.
+\nเพราะ: %s</string>
+    <string name="disconnected">ออกจากระบบ</string>
+    <string name="confirm_delete_channel">แน่ใจไหมว่าต้องการลบแชนเนลนี้\?</string>
+    <string name="confirm_delete_server">แน่ใจไหมว่าต้องการลบเซิร์ฟเวอร์\?</string>
+    <string name="connectionRefused">การเชื่อมต่อถูกปฏิเสธ</string>
+    <string name="perm_denied">ไม่มีสิทธิ์</string>
+    <string name="chat">แชท</string>
+    <string name="togglelocalmute">สลับค้างเงียบเฉพาะฉัน</string>
+    <string name="preferences">แก้ไข</string>
+    <string name="add">เพิ่ม</string>
+    <string name="save">บันทึก</string>
+    <string name="disconnectSure">คุณต้องการออกจาก %s\?</string>
+    <string name="disconnect">ออกจากระบบ</string>
+    <string name="deafen">ปิดเสียง</string>
+    <string name="mute">เงียบ</string>
+    <string name="ptt">กดพูด</string>
+    <string name="menu_settings">ตั้งค่า</string>
+    <string name="fragment_channel">แชนเนล</string>
+    <string name="fragment_chat">แชท</string>
+    <string name="connecting_to_server">กำลังเชื่อมต่อ %s…</string>
+    <string name="connecting">กำลังเชื่อมต่อ</string>
+    <string name="server_label">ชื่อเซิฟเวอร์</string>
+    <string name="server_host">ไอพีแอดเดรส</string>
+    <string name="server_port">พอร์ต</string>
+    <string name="server_username">ชื่อผู้ใช้</string>
+    <string name="server_password">รหัสผ่าน</string>
+    <string name="server_add">เพิ่มเซิฟเวอร์</string>
+    <string name="no_servers">กด \"Add\" จาก action bar เพื่อเพิ่มเซิฟเวอร์ก่อน</string>
+    <string name="channels">แชนเนล</string>
+    <string name="server_match_description">Mumla สามารถค้นหาเซิร์ฟเวอร์ที่ว่างให้คุณโดยอัตโนมัติ, ปรับแต่งตำแหน่ง, เวอร์ชัน, และเวลาในการตอบสนอง</string>
+    <string name="server_match_info">Name: %1$s
+\nHost: %2$s:%3$d
+\nUsers: %4$d / %5$d
+\nVersion: %6$s
+\nCountry: %7$s
+\nLatency: %8$d ms</string>
+    <string name="server_match_expand_country">ไม่พบเซิฟเวอร์ในประเทศ. ลองค้นหาทั่วโลก\?</string>
+    <string name="server_match_not_found">ไม่พบเซิฟเวอร์</string>
+    <string name="server_match_found">เซิฟเวอร์ที่พบ</string>
+    <string name="server_match_progress">กำลังค้นหาเซิฟเวอร์…</string>
+    <string name="server_match">ค้นหาเซิฟเวอร์</string>
+    <string name="server_info_current_bandwidth">Current %.1f kbit/s</string>
+    <string name="server_info_max_bandwidth">Maximum %.1f kbit/s</string>
+    <string name="server_info_codec">Codec: %s</string>
+    <string name="server_info_host">Remote host %1$s (port %2$d)</string>
+    <string name="server_info_latency">%.2f ms latency</string>
+    <string name="server_info_version">%1$s (%2$s)</string>
+    <string name="server_info_protocol">Protocol %s.</string>
+    <string name="audio_bandwidth">Audio bandwidth</string>
+    <string name="udp_encryption_mode">เข้ารหัสด้วย 128 bit OCB-AES-128</string>
+    <string name="voice_channel">แชนเนลเสียง</string>
+    <string name="tcp_encryption_mode">เข้าระหัสด้วย 256 bit AES-256-SHA</string>
+    <string name="control_channel">ควบคุมแชนเนล</string>
+    <string name="comment_view_source">ดูแหล่งที่มา</string>
+    <string name="comment_edit_source">แก้ไขแหล่งที่มา</string>
+    <string name="comment_view">ดู</string>
+    <string name="channel_menu_pin">ปัก</string>
+    <string name="user_menu_registered">ลงทะเบียนแล้ว</string>
+    <string name="user_menu_register">ลงทะเบียน</string>
+    <string name="user_menu_information">ข้อมูล</string>
+    <string name="user_menu_send_message">ส่งข้อความ</string>
+    <string name="user_menu_reset_comment">ลบคอมเมนท์</string>
+    <string name="user_menu_view_comment">ดูคอมเมนท์</string>
+    <string name="user_menu_change_comment">แก้ไขคอมเมนท์</string>
+    <string name="user_menu_ignore_messages">ไม่รับข้อความ</string>
+    <string name="user_menu_local_mute">ปิดเสียงเฉพาะเรา</string>
+    <string name="user_menu_priority_speaker">เน้นเสียง</string>
+    <string name="user_menu_move">ย้าย</string>
+    <string name="user_menu_deafen">ปิดเสียง</string>
+    <string name="user_menu_mute">เงียบ</string>
+    <string name="user_menu_ban">แบน</string>
+    <string name="user_menu_kick">เตะ</string>
+    <string name="user_menu_admin">แอดมิน</string>
+    <string name="chat_message_tts_short_link">(ลิงค์ถึง %1$s)</string>
+    <string name="chat_message_to">%1$s → %2$s</string>
+    <string name="chat_message_channel">(แชนเนล)</string>
+    <string name="chat_message_tree">(แยก)</string>
+    <string name="drawer_public">เซิฟเวอร์สาธารณะ</string>
+    <string name="drawer_lan">แลน</string>
+    <string name="drawer_favorites">เซิฟเวอร์ที่ชอบ</string>
+    <string name="drawer_header_servers">เซิฟเวอร์</string>
+    <string name="drawer_pinned">แชนเนลที่ปักไว้</string>
+    <string name="drawer_tokens">เข้าถึงโทเคน</string>
+    <string name="drawer_server">ทุกแชนเนล</string>
+    <string name="drawer_not_connected">เชื่อมต่อไม่ได้</string>
+    <string name="drawer_close">ปิดดรอเวอร์</string>
+    <string name="drawer_open">เปิดดรอเวอร์</string>
+</resources>
