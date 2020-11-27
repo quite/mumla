@@ -1,0 +1,6 @@
+In this release we have lots of new translations of Mumla into different
+languages. Including complete translations into Thai and Finnish! Thank you all
+-- Abidin Toumi, Alfonso Montero López, Allan Nordhøy, Carlos Pinto, Nikita
+Epifanov, SamiR, Torkel, WLJ, deluxghost, kityn, mv87, pjammo.
+
+Translating is done here: https://hosted.weblate.org/projects/mumla/
