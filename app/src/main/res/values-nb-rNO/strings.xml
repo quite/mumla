@@ -35,7 +35,7 @@
     <string name="disconnected">Frakoblet</string>
     <string name="confirm_delete_channel">Er du sikker på at du vil slette denne kanalen\?</string>
     <string name="confirm_delete_server">Er du sikker på at du vil slette denne tjeneren\?</string>
-    <string name="perm_denied">Tilgang nektet!</string>
+    <string name="perm_denied">Tilgang nektet.</string>
     <string name="connectionRefused">Tilkobling nektet</string>
     <string name="togglelocalmute">Veksle lokal forstumming</string>
     <string name="chat">Sludring</string>
@@ -50,7 +50,7 @@
     <string name="menu_settings">Innstillinger</string>
     <string name="fragment_channel">Kanal</string>
     <string name="fragment_chat">Sludre</string>
-    <string name="connecting_to_server">Kobler til %s</string>
+    <string name="connecting_to_server">Kobler til %s …</string>
     <string name="connecting">Kobler til</string>
     <string name="server_label">Etikett</string>
     <string name="server_host">Adresse</string>
@@ -144,7 +144,7 @@
     <string name="transmit_mode">Overføringsmodus</string>
     <string name="cancelled">Avbrutt</string>
     <string name="trust_cleared">Tillitsbunke tømt</string>
-    <string name="trust_add_failed">Kunne ikke legge til sertifikat i tillitsbunken!</string>
+    <string name="trust_add_failed">Kunne ikke legge til sertifikat i tillitsbunken.</string>
     <string name="trust_added">Sertifikat lagt til i tillitsbunken</string>
     <string name="allow">Tillat</string>
     <string name="untrusted_certificate">Ubetrodd sertifikat</string>
@@ -225,7 +225,7 @@
     <string name="resume">Gjenoppta</string>
     <string name="lostConnection">Mistet tilknytningen til tjeneren.</string>
     <string name="mumlaDisconnected">Mumla er frakoblet</string>
-    <string name="mumlaConnecting">Mumla kobler til</string>
+    <string name="mumlaConnecting">Mumla kobler til …</string>
     <string name="mumlaConnected">Mumla er tilkoblet</string>
     <string name="connected">Tilkoblet</string>
     <string name="clearChat">Tøm sludring</string>
