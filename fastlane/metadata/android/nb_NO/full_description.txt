@@ -4,13 +4,13 @@ Mumla er en oppdatert og vedlikeholdt versjon (forgrening) av programmet Plumble
 Noen av funksjonene:
 
 * Sertifikatsgenerering, import og eksport
-* Utforsk offentlige tjenere  
+* Utforsk offentlige tjenere
 * Stemmeaktivert forsendelse (forvalg), eller forskjellige trykk-for-å-snakke- knapper
 * Støtte for Blåtannshodesett 
 * Selvbetjent registrering på tjenere
 * Tilgangssymboler
 * Opus, CELT, og Speex-kodekstøtte
-* Automatisk gjenkjennelse  
+* Automatisk gjenkjennelse
 * Tor-støtte gjennom Orbot-programmet
 * Tekst-til-tale for meldinger (skrudd på som forvalg)
 * Lys og mørk drakt

@@ -1,0 +1,6 @@
+- Jackal Zhao hjalp til å forbedre oversettelsen til forenklet kinesisk
+- Korrekt visning av forvalgt 48 kHz-samplingsrate i grensesnittet
+- Fikset henting av lange (> 127 byte) brukerkommentarer
+- Fikset tilbakestilling av korte kommentarer
+- Fikset eksport av sertifikat til eksternlagring på Android 10
+- Fikset mange mulige og eksisterende kræsjfeil
