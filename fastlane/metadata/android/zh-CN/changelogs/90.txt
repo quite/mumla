@@ -1,6 +1,3 @@
-此版本 Mumla 包含多种语言的大量新翻译。包括泰语和芬兰语的完整翻译！
-感谢你们所有人：Abidin Toumi、Alfonso Montero López、Allan Nordhøy、
-Carlos Pinto、Nikita、Epifanov、SamiR、Torkel、WLJ、deluxghost、kityn、
-mv87、pjammo。
+此版本 Mumla 包含多种语言的大量新翻译。包括泰语和芬兰语的完整翻译！感谢你们所有人：Abidin Toumi、Alfonso Montero López、Allan Nordhøy、Carlos Pinto、Nikita、Epifanov、SamiR、Torkel、WLJ、deluxghost、kityn、mv87、pjammo。
 
 前往这里贡献翻译：https://hosted.weblate.org/projects/mumla/
