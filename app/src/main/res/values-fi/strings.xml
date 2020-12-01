@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="sortBy">Järjestä…</string>
-    <string name="connecting_to_server">Yhdistetään %s</string>
+    <string name="connecting_to_server">Yhdistetään %s…</string>
     <string name="connecting">Yhdistetään</string>
     <plurals name="notification_unread_many">
         <item quantity="one">%d uusi viesti</item>
@@ -26,7 +26,7 @@
     <string name="grant_perm_microphone">Anna mikrofonin käyttöoikeus.</string>
     <string name="shout_configure">Määritä äänikohde</string>
     <string name="shout_target">Huudetaan henkilölle %s</string>
-    <string name="shout_failed">Äänikohdetta ei voitu luoda!</string>
+    <string name="shout_failed">Äänikohdetta ei voitu luoda.</string>
     <string name="shout_include_subchannels">Huutaa alikanaville</string>
     <string name="shout_include_linked">Huuda linkitetyille kanaville</string>
     <string name="context_channel_shout">Aseta äänikohde</string>
@@ -37,13 +37,13 @@
     <string name="migration_certificate_success">Sertifikaatti on siirretty.</string>
     <string name="migration_certificate_begin">Aloitetaan sertifikaatin siirto…</string>
     <string name="certificate_import_success">Ladattu sertifikaatti %s.</string>
-    <string name="certificate_load_failed">Sertifikaattia ei voitu ladata!</string>
+    <string name="certificate_load_failed">Sertifikaattia ei voitu ladata.</string>
     <string name="invalid_certificate">Virheellinen sertifikaatti, lataaminen epäonnistui.</string>
     <string name="password">Salasana</string>
     <string name="decrypt_certificate">Pura Sertifikaatti</string>
     <string name="certificates">Sertifikaatit</string>
     <string name="no_certificate">Ei sertifikaattia</string>
-    <string name="change_requires_reconnect">Yhdistä uudelleen, jotta muutos tulee voimaan.</string>
+    <string name="change_requires_reconnect">Muodosta yhteys uudelleen käyttääksesi uusia asetuksia.</string>
     <string name="attempting_reconnect">Virhe: %s.
 \n
 \nYhdistetään uudelleen…</string>
@@ -70,17 +70,17 @@
     <string name="transmit_mode">Lähetystila</string>
     <string name="cancelled">Peruutettu</string>
     <string name="trust_cleared">Luottamustietokanta tyhjennetty</string>
-    <string name="trust_add_failed">Sertifikaattia ei voitu lisätä luottamussäilöön!</string>
+    <string name="trust_add_failed">Sertifikaattia ei voitu lisätä luottamussäilöön.</string>
     <string name="trust_added">Lisätty sertifikaatti luottamussäilöön</string>
     <string name="allow">Salli</string>
     <string name="untrusted_certificate">Epäluotettava sertifikaatti</string>
     <string name="channel_menu_view_description">Näytä kuvaus</string>
     <string name="send_message">Lähetä viesti</string>
     <string name="invalid_password">Väärä salasana.</string>
-    <string name="certificate_not_valid">Sertifikaattia %s ei voitu ladata!</string>
+    <string name="certificate_not_valid">Sertifikaattia %s ei voitu ladata.</string>
     <string name="generate">Luo</string>
     <string name="first_run_generate_certificate">Sertifikaatin luominen on erittäin suositeltavaa ja välttämätöntä yhteyden muodostamiseksi joihinkin palvelimiin.</string>
-    <string name="first_run_generate_certificate_title">Tervetuloa Mumlaan!</string>
+    <string name="first_run_generate_certificate_title">Tervetuloa Mumlaan.</string>
     <string name="mumble_url_parse_failed">Mumblen URL-osoite ei kelpaa.</string>
     <string name="tts_failed">TTS: n käynnistäminen epäonnistui</string>
     <string name="channel_add">Lisää kanava</string>
@@ -100,7 +100,7 @@
     <string name="hint_ptt_summary">Paina vain tätä painiketta puhuaksesi. Vaihda se kaksoisnapauttamalla.</string>
     <string name="hint_ptt">Puhepikanäppäin</string>
     <string name="hint_reason">Syy</string>
-    <string name="overlay">Overlay</string>
+    <string name="overlay">Päällys</string>
     <string name="tapToReconnect">Muodosta yhteys uudelleen napauttamalla</string>
     <string name="coming_soon">Ominaisuus on tulossa pian.</string>
     <string name="error_fetching_servers">Palvelimia ei voitu noutaa.
@@ -122,7 +122,7 @@
     <string name="status_notify_muted">Mykistetty.</string>
     <string name="status_notify_muted_and_deafened">Mykistetty ja hiljennetty.</string>
     <string name="noServerInfo">Ping tietojen hakemiseksi</string>
-    <string name="shareMessage">Liity tähän Mumble-palvelimeen Mumlan kanssa! %s</string>
+    <string name="shareMessage">Liity tähän Mumble-palvelimeen Mumlan kanssa. %s</string>
     <string name="description">Kuvaus</string>
     <string name="share">Jaa</string>
     <string name="country">Maa</string>
@@ -139,7 +139,7 @@
     <string name="resume">Jatka</string>
     <string name="lostConnection">Yhteys palvelimeen katkesi.</string>
     <string name="mumlaDisconnected">Mumla katkaisi yhteyden</string>
-    <string name="mumlaConnecting">Mumla-yhteyden muodostaminen</string>
+    <string name="mumlaConnecting">Mumla-yhteyden muodostaminen…</string>
     <string name="mumlaConnected">Mumla yhdistetty</string>
     <string name="connected">Yhdistetty</string>
     <string name="clearChat">Tyhjennä chat</string>
@@ -183,7 +183,7 @@
     <string name="confirm_delete_channel">Haluatko varmasti poistaa tämän kanavan\?</string>
     <string name="confirm_delete_server">Haluatko varmasti poistaa tämän palvelimen\?</string>
     <string name="connectionRefused">Yhteys evätty</string>
-    <string name="perm_denied">Käyttöoikeus evätty!</string>
+    <string name="perm_denied">Käyttöoikeus evätty.</string>
     <string name="chat">Chatti</string>
     <string name="togglelocalmute">Aseta paikallinen mykistys</string>
     <string name="preferences">Asetukset</string>
