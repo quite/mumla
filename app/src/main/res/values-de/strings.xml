@@ -61,7 +61,7 @@
     <string name="server_match_description">Mumla kann automatisch nach einem leeren Server suchen, optimiert nach Serverstandort, Version und Latenz.</string>
     <!--Common-->
     <string name="channels">Kanäle</string>
-    <string name="no_servers">Keine Server hinzugefügt.\nDrücken Sie den \'Hinzufügen\' Knopf in der Action Bar, um zu beginnen.</string>
+    <string name="no_servers">Drücken Sie den „Hinzufüg en“-Knopf in der Aktionsleiste, um zu beginnen.</string>
     <string name="server_add">Server hinzufügen</string>
     <string name="server_password">Passwort</string>
     <string name="server_username">Benutzername</string>
@@ -69,7 +69,7 @@
     <string name="server_host">Adresse</string>
     <string name="server_label">Beschriftung</string>
     <string name="connecting">Verbinden</string>
-    <string name="connecting_to_server">Zu Server %s verbinden</string>
+    <string name="connecting_to_server">Zu Server %s verbinden …</string>
     <string name="fragment_chat">Chat</string>
     <string name="fragment_channel">Kanal</string>
     <string name="menu_settings">Einstellungen</string>
@@ -83,7 +83,7 @@
     <string name="preferences">Einstellungen</string>
     <string name="togglelocalmute">lokale Stummschaltung wechseln</string>
     <string name="chat">Chat</string>
-    <string name="perm_denied">Zugriff verweigert!</string>
+    <string name="perm_denied">Zugriff verweigert.</string>
     <string name="connectionRefused">Verbindung abgelehnt</string>
     <string name="confirm_delete_server">Sind sie sicher, dass Sie diesen Server entfernen möchten?</string>
     <string name="confirm_delete_channel">Sind Sie sicher, dass Sie diesen Kanal entfernen möchten?</string>
@@ -126,7 +126,7 @@
     <string name="clearChat">Chatverlauf löschen</string>
     <string name="connected">Verbunden</string>
     <string name="mumlaConnected">Mumla ist verbunden</string>
-    <string name="mumlaConnecting">Mumla verbindet</string>
+    <string name="mumlaConnecting">Mumla verbindet …</string>
     <string name="mumlaDisconnected">Mumla wurde getrennt</string>
     <string name="lostConnection">Verbindung zum Server wurde unterbrochen.</string>
     <string name="resume">Wiederaufnehmen</string>
@@ -138,8 +138,8 @@
     <string name="chat_notify_muted">Stumm.</string>
     <string name="chat_notify_unmuted">Nicht stumm.</string>
     <string name="chat_notify_unmuted_undeafened">Nicht stumm und nicht taub.</string>
-    <string name="chat_notify_now_muted_deafened">%s ist jetzt stumm und taub.</string>
-    <string name="chat_notify_now_muted">%s ist jetzt stumm.</string>
+    <string name="chat_notify_now_muted_deafened">%s ist nun stumm und taub.</string>
+    <string name="chat_notify_now_muted">%s ist jetzt stumm gestellt.</string>
     <string name="chat_notify_now_unmuted">%s ist jetzt nicht mehr stumm.</string>
     <string name="chat_notify_now_unmuted_undeafened">%s ist jetzt nicht mehr stumm und nicht mehr taub.</string>
     <string name="chat_notify_connected">%s ist verbunden.</string>
@@ -155,7 +155,7 @@
     <string name="country">Land</string>
     <string name="share">Teilen</string>
     <string name="description">Beschreibung</string>
-    <string name="shareMessage">Treten Sie diesem Server mit Mumla bei! %s</string>
+    <string name="shareMessage">Treten Sie diesem Server mit Mumla bei. %s</string>
     <string name="noServerInfo">Pingen um Informationen abzurufen</string>
     <string name="status_notify_muted_and_deafened">Stumm und taub.</string>
     <string name="status_notify_muted">Stumm.</string>
@@ -168,15 +168,16 @@
     <string name="fullscreen">Vollbild</string>
     <string name="fullscreen_chat">Chat</string>
     <string name="fullscreen_channel">Kanal</string>
-    <string name="fetchingServers">Bitte warten, die Liste der öffentlichen Server wird abgerufen.</string>
+    <string name="fetchingServers">Bitte warten, die Liste der öffentlichen Server wird abgerufen …</string>
     <string name="information">Informationen</string>
     <string name="register">Selbst registrieren</string>
     <string name="userControl">Benutzersteuerung</string>
     <string name="registerSelfSuccess">Registrierungsanfrage gesendet</string>
-    <string name="error_fetching_servers">Fehler beim Abrufen der Server!\nÜberprüfen Sie ihre Internetverbindung.</string>
+    <string name="error_fetching_servers">Fehler beim Abrufen der Server.
+\nÜberprüfen Sie ihre Internetverbindung.</string>
     <string name="coming_soon">Diese Funktion ist demnächst verfügbar.</string>
     <string name="tapToReconnect">Zum Wiederverbinden drücken</string>
-    <string name="overlay">Overlay</string>
+    <string name="overlay">Überlagerung</string>
     <string name="hint_reason">Grund</string>
     <string name="hint_ptt">Push-To-Talk</string>
     <string name="hint_ptt_summary">Drücken Sie diese Taste zum Sprechen. Doppelt drücken zum Einrasten.</string>
@@ -195,18 +196,18 @@
     <string name="channel_edit">Kanal bearbeiten</string>
     <string name="channel_add">Kanal hinzufügen</string>
     <string name="tts_failed">TTS konnte nicht gestartet werden</string>
-    <string name="mumble_url_parse_failed">Konnte Mumble URL nicht verarbeiten!</string>
-    <string name="first_run_generate_certificate_title">Willkommen in Mumla!</string>
+    <string name="mumble_url_parse_failed">Konnte Mumble URL nicht verarbeiten.</string>
+    <string name="first_run_generate_certificate_title">Willkommen in Mumla.</string>
     <string name="first_run_generate_certificate">Es wird sehr empfohlen ein Zertifikat zu generieren. Manche Server setzen ein Zertifikat voraus.</string>
     <string name="generate">Generieren</string>
-    <string name="certificate_not_valid">Zertifikat \'%s\' konnte nicht geladen werden!</string>
+    <string name="certificate_not_valid">Zertifikat %s konnte nicht geladen werden.</string>
     <string name="invalid_password">Ungültiges Passwort.</string>
-    <string name="send_message">Nachricht senden.</string>
+    <string name="send_message">Nachricht senden</string>
     <string name="channel_menu_view_description">Beschreibung anzeigen</string>
     <string name="untrusted_certificate">Nicht vertrauenswürdiges Zertifikat</string>
     <string name="allow">Erlauben</string>
     <string name="trust_added">Zertifikat zur Vertrauensdatenbank hinzugefügt</string>
-    <string name="trust_add_failed">Fehler beim Hinzufügen des Zertifikats zur Vertrauensdatenbank!</string>
+    <string name="trust_add_failed">Fehler beim Hinzufügen des Zertifikats zur Vertrauensdatenbank.</string>
     <string name="trust_cleared">Vertrauensdatenbank geleert</string>
     <string name="cancelled">Abgebrochen</string>
     <string name="transmit_mode">Übertragungsmethode</string>
@@ -235,23 +236,29 @@
     <string name="context_channel_link">Link</string>
     <string name="migration_certificate_success">Zertifikat transferiert.</string>
     <string name="migration_certificate_begin">Starte Zertifikat-Transfer…</string>
-    <string name="change_requires_reconnect">Verbinde dich neu, um die Änderung wirksam zu machen.</string>
+    <string name="change_requires_reconnect">Stellen Sie die Verbindung wieder her, um neue Einstellungen zu verwenden.</string>
     <string name="chat_message_tts_short_link">(Link zu %1$s)</string>
     <string name="error_writing_to_storage">Konnte nicht auf externen Speicher schreiben.</string>
     <string name="donation_thanks">Danke für die Spende.</string>
     <string name="orbot_tor_failed">Konnte mit lokalem Tor-Proxy auf SOCKS-Port %d nicht verbinden.
 \n
-\nBitte stelle sicher, dass die Orbot-App läuft.</string>
+\nBitte stelle sicher, dass die Orbot-Anwendundg läuft.</string>
     <string name="orbot_not_installed">Die Orbot-App ist nicht installiert. Tor wird nicht benutzt.</string>
     <string name="grant_perm_draw_over_apps">Bitte setze die Berechtigung, dass die App über anderen Apps angezeigt werden darf.</string>
     <string name="grant_perm_storage">Bitte Zugriff auf externen Speicher erlauben.</string>
     <string name="grant_perm_microphone">Bitte Zugriff auf das Mikrofon erlauben.</string>
     <string name="export_success">Zertifikat exportiert nach %s.</string>
     <string name="certificate_import_success">Zertifikat %s importiert.</string>
-    <string name="certificate_load_failed">Konnte Zertifikat nicht abspeichern!</string>
+    <string name="certificate_load_failed">Konnte Zertifikat nicht abspeichern.</string>
     <string name="invalid_certificate">Ungültiges Zertifikat, konnte nicht geladen werden.</string>
     <string name="password">Passwort</string>
     <string name="decrypt_certificate">Zertifikate entschlüsseln</string>
     <string name="certificates">Zertifikate</string>
     <string name="no_certificate">Kein Zertifikat</string>
+    <string name="shout_include_linked">Stimme zu verknüpften Kanälen</string>
+    <string name="shout_configure">Sprachziel konfigurieren</string>
+    <string name="shout_target">Stimme zu %s</string>
+    <string name="shout_failed">Sprachziel konnte nicht erstellt werden.</string>
+    <string name="shout_include_subchannels">Stimme zu Unterkanälen</string>
+    <string name="context_channel_shout">Sprachziel festlegen</string>
 </resources>
