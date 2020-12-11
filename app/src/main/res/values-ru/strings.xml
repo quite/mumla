@@ -70,7 +70,7 @@
     <string name="server_host">Адрес</string>
     <string name="server_label">Название</string>
     <string name="connecting">Подключение</string>
-    <string name="connecting_to_server">Подключение к %s</string>
+    <string name="connecting_to_server">Подключение к %s…</string>
     <string name="fragment_chat">Чат</string>
     <string name="fragment_channel">Канал</string>
     <string name="menu_settings">Настройки</string>
@@ -84,7 +84,7 @@
     <string name="preferences">Параметры</string>
     <string name="togglelocalmute">Переключть локальный мут</string>
     <string name="chat">Чат</string>
-    <string name="perm_denied">Доступ запрещен!</string>
+    <string name="perm_denied">Доступ запрещён.</string>
     <string name="connectionRefused">Подключение отклонено</string>
     <string name="confirm_delete_server">Вы действительно хотите удалить этот сервер?</string>
     <string name="confirm_delete_channel">Вы действительно хотите удалить этот канал?</string>
@@ -127,7 +127,7 @@
     <string name="clearChat">Очистить чат</string>
     <string name="connected">Подключено</string>
     <string name="mumlaConnected">Mumla подключен</string>
-    <string name="mumlaConnecting">Mumla подключается</string>
+    <string name="mumlaConnecting">Mumla подключается…</string>
     <string name="mumlaDisconnected">Mumla отключен</string>
     <string name="lostConnection">Потеряно подключение к серверу.</string>
     <string name="resume">Продолжить</string>
@@ -144,7 +144,7 @@
     <string name="chat_notify_now_unmuted">%s включил(а) микрофон.</string>
     <string name="chat_notify_now_unmuted_undeafened">%s включил(а) звук и микрофон.</string>
     <string name="chat_notify_connected">%s соединен(а).</string>
-    <string name="chat_notify_disconnected">%s отключен(а).</string>
+    <string name="chat_notify_disconnected">%s отсоединен(а).</string>
     <string name="unknown">Неизвестный</string>
     <string name="server_list_title_favorite">Избранное</string>
     <string name="server_list_title_lan">Локальные</string>
@@ -156,7 +156,7 @@
     <string name="country">Страна</string>
     <string name="share">Поделиться</string>
     <string name="description">Описание</string>
-    <string name="shareMessage">Присоединяйся к этому Mumble серверу с помощью Mumla! %s</string>
+    <string name="shareMessage">Присоединяйся к этому Mumble серверу с помощью Mumla. %s</string>
     <string name="noServerInfo">Отправить ping чтобы получить информацию</string>
     <string name="status_notify_muted_and_deafened">Звук и микрофон отключен.</string>
     <string name="status_notify_muted">Микрофон отключен.</string>
@@ -197,17 +197,17 @@
     <string name="channel_add">Добавить канал</string>
     <string name="tts_failed">Не удалось запустить TTS</string>
     <string name="mumble_url_parse_failed">Mumble URL не верный.</string>
-    <string name="first_run_generate_certificate_title">Добро пожаловать в Mumla!</string>
+    <string name="first_run_generate_certificate_title">Добро пожаловать в Mumla.</string>
     <string name="first_run_generate_certificate">Создание сертификата очень рекомендуется, и требуется некоторыми для подключения некоторыми серверами.</string>
     <string name="generate">Создать</string>
-    <string name="certificate_not_valid">Не удалось загрузить сертификат %s!</string>
+    <string name="certificate_not_valid">Не удалось загрузить сертификат %s.</string>
     <string name="invalid_password">Не верный пароль.</string>
     <string name="send_message">Отправить сообщение</string>
     <string name="channel_menu_view_description">Просмотреть описание</string>
     <string name="untrusted_certificate">Не доверенный сертификат</string>
     <string name="allow">Разрешить</string>
     <string name="trust_added">Сертификат добавлен в хранилище доверенных сертификатов</string>
-    <string name="trust_add_failed">Не удалось добавить сертификат в хранилище доверенных сертификатов!</string>
+    <string name="trust_add_failed">Не удалось добавить сертификат в хранилище доверенных сертификатов.</string>
     <string name="trust_cleared">Хранилище доверенных сертификатов очищено</string>
     <string name="cancelled">Отменено</string>
     <string name="transmit_mode">Режим передачи</string>
@@ -221,13 +221,13 @@
     <string name="attempting_reconnect">Ошибка: %s.
 \n
 \nПереподключение…</string>
-    <string name="change_requires_reconnect">Переподключитесь чтобы изменения вступили в силу.</string>
+    <string name="change_requires_reconnect">Переподключитесь, чтобы использовать новые настройки.</string>
     <string name="no_certificate">Без сертификата</string>
     <string name="certificates">Сертификаты</string>
     <string name="decrypt_certificate">Расшифровать сертификат</string>
     <string name="password">Пароль</string>
-    <string name="invalid_certificate">Неверный сертификат, не удалось загрузить.</string>
-    <string name="certificate_load_failed">Не удалось сохранить сертификат!</string>
+    <string name="invalid_certificate">Недействительный сертификат не может быть загружен.</string>
+    <string name="certificate_load_failed">Не удалось сохранить сертификат.</string>
     <string name="certificate_import_success">Импортирован сертификат %s.</string>
     <string name="migration_certificate_begin">Начало переноса сертификата…</string>
     <string name="migration_certificate_success">Сертификат перенесен.</string>
@@ -238,14 +238,16 @@
     <string name="context_channel_shout">Установить целью для голоса</string>
     <string name="shout_include_linked">Транслировать в связанные каналы</string>
     <string name="shout_include_subchannels">Транслировать в подканалы</string>
-    <string name="shout_failed">Не удалось создать цель для передачи!</string>
+    <string name="shout_failed">Не удалось создать цель для передачи.</string>
     <string name="shout_target">Говорим в %s</string>
     <string name="shout_configure">Настроить цели голосового сообщения</string>
     <string name="grant_perm_microphone">Пожалуйста разрешите использование микрофона.</string>
     <string name="grant_perm_storage">Пожалуйста разрешите запись в внешнее хранилище.</string>
     <string name="grant_perm_draw_over_apps">Пожалуйста разрешите отображение окон поверх других приложений.</string>
     <string name="orbot_not_installed">Приложение Orbot не установлено. Tor не используется.</string>
-    <string name="orbot_tor_failed">Не удалось подключиться к к локальному прокси Tor на порту %d (SOCKS).\n\nPПожалуйста убедитесь что приложение Orbot запущено.</string>
+    <string name="orbot_tor_failed">Не удалось подключиться к к локальному прокси Tor на порту %d (SOCKS).
+\n
+\nПожалуйста убедитесь что приложение Orbot запущено.</string>
     <string name="default_">По умолчанию</string>
     <plurals name="search_channel_users">
         <item quantity="one">%d пользователь</item>
