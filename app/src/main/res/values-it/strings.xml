@@ -17,7 +17,7 @@
     <string name="user_menu_view_comment">Mostra Commento</string>
     <string name="user_menu_send_message">Invia Messaggio</string>
     <string name="user_menu_information">Informazioni</string>
-    <string name="user_menu_register">Registra</string>
+    <string name="user_menu_register">Registrati</string>
     <string name="user_menu_registered">Registrato</string>
     <!--Channel menu-->
     <string name="channel_menu_pin">Fissa</string>
@@ -45,7 +45,7 @@
     <string name="fragment_channel">Canale</string>
     <string name="menu_settings">Impostazioni</string>
     <string name="mute">Muto</string>
-    <string name="disconnect">Disconetti</string>
+    <string name="disconnect">Disconnetti</string>
     <string name="disconnectSure">Disconnettersi da \"%s\"\?</string>
     <string name="save">Salva</string>
     <string name="add">Aggiungi</string>
