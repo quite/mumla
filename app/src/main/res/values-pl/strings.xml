@@ -13,7 +13,7 @@
     <string name="drawer_public">Serwery publiczne</string>
     <!-- Chat formatting -->
     <string name="chat_message_tree">(Drzewo)</string>
-    <string name="chat_message_channel">(kanał)</string>
+    <string name="chat_message_channel">(Kanał)</string>
     <string name="chat_message_to">%1$s → %2$s</string>
     <string name="chat_message_tts_short_link">(Łącze do %1$s)</string>
     <!-- User menu -->
@@ -126,7 +126,7 @@
     <string name="offline">Offline</string>
     <string name="clearChat">Wyczyść czat</string>
     <string name="connected">Połączono</string>
-    <string name="mumlaConnected">Mumla połoczony</string>
+    <string name="mumlaConnected">Mumla połączony</string>
     <string name="mumlaConnecting">Mumla łączy się…</string>
     <string name="mumlaDisconnected">Mumla rozłączony</string>
     <string name="lostConnection">Utracono połączenie z serwerem.</string>
@@ -218,7 +218,7 @@
     <string name="invalid_host">Nieprawidłowy host</string>
     <string name="invalid_port_range">Nieprawidłowy port (1-65535)</string>
     <string name="invalid_username">Nieprawidłowa nazwa użytkownika</string>
-    <string name="cancel_reconnect">Anuluj ponownie połącz</string>
+    <string name="cancel_reconnect">Anuluj ponowne połączenie</string>
     <string name="attempting_reconnect">Błąd: %s.\n\nPonowne połączenie…</string>
     <string name="change_requires_reconnect">Połącz ponownie, aby użyć nowych ustawień.</string>
     <string name="no_certificate">Brak certyfikatu</string>
@@ -247,7 +247,7 @@
     <string name="orbot_tor_failed">Nie udało się połączyć z lokalnym serwerem proxy Tor na porcie %d (SOCKS).
 \n
 \nUpewnij się, że aplikacja Orbot jest uruchomiona.</string>
-    <string name="default_">Domyślnie</string>
+    <string name="default_">Domyślny</string>
     <string name="donation_thanks">Dziękujemy za darowiznę.</string>
     <plurals name="search_channel_users">
         <item quantity="one">%d użytkownik</item>
