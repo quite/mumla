@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="chat_message_channel">(Kanal)</string>
+    <string name="chat_message_tree">(Ağaç)</string>
+    <string name="drawer_public">Genel Sunucular</string>
+    <string name="drawer_lan">LAN</string>
+    <string name="drawer_favorites">Favoriler</string>
+    <string name="drawer_header_servers">Sunucular</string>
+    <string name="drawer_server">Tüm Kanallar</string>
+    <string name="drawer_not_connected">Bağlı Değil</string>
+    <string name="drawer_close">Yan Menüyü Kapat</string>
+    <string name="drawer_open">Yan menüyü aç</string>
+</resources>
