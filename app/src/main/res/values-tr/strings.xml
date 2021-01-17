@@ -4,10 +4,274 @@
     <string name="chat_message_tree">(Ağaç)</string>
     <string name="drawer_public">Genel Sunucular</string>
     <string name="drawer_lan">LAN</string>
-    <string name="drawer_favorites">Favoriler</string>
+    <string name="drawer_favorites">Sık Kullanılanlar</string>
     <string name="drawer_header_servers">Sunucular</string>
     <string name="drawer_server">Tüm Kanallar</string>
     <string name="drawer_not_connected">Bağlı Değil</string>
     <string name="drawer_close">Yan Menüyü Kapat</string>
-    <string name="drawer_open">Yan menüyü aç</string>
+    <string name="drawer_open">Yan Menüyü Aç</string>
+    <string name="overlay">Kaplama</string>
+    <plurals name="notification_unread_many">
+        <item quantity="one">%d yeni mesaj</item>
+        <item quantity="other">%d yeni mesaj</item>
+    </plurals>
+    <plurals name="reconnecting">
+        <item quantity="one">%d saniye içinde yeniden bağlanılıyor.</item>
+        <item quantity="other">%d saniye içinde yeniden bağlanılıyor.</item>
+    </plurals>
+    <plurals name="search_channel_users">
+        <item quantity="one">%d kullanıcı</item>
+        <item quantity="other">%d kullanıcı</item>
+    </plurals>
+    <string name="donation_thanks">Bağış için teşekkürler.</string>
+    <string name="default_">Öntanımlı</string>
+    <string name="orbot_tor_failed">%d bağlantı noktasındaki yerel Tor vekil sunucusuna (SOCKS) bağlanılamadı.
+\n
+\nLütfen Orbot uygulamasının çalıştığından emin olun.</string>
+    <string name="orbot_not_installed">Orbot uygulaması kurulu değil. Tor kullanılmıyor.</string>
+    <string name="grant_perm_draw_over_apps">Lütfen diğer uygulamaların üzerinde görüntüleme izni verin.</string>
+    <string name="grant_perm_storage">Lütfen harici depolama izni verin.</string>
+    <string name="grant_perm_microphone">Lütfen mikrofon izni verin.</string>
+    <string name="shout_configure">Ses Hedefini Yapılandır</string>
+    <string name="shout_target">%s\'ye sesleniliyor</string>
+    <string name="shout_failed">Ses hedefi oluşturulamadı.</string>
+    <string name="shout_include_subchannels">Alt kanallara seslen</string>
+    <string name="shout_include_linked">Bağlı kanallara seslen</string>
+    <string name="context_channel_shout">Ses Hedefini Ayarla</string>
+    <string name="context_channel_unlink_all">Tümünün Bağlantısını Kaldır</string>
+    <string name="context_channel_link">Bağla</string>
+    <string name="export_success">Sertifika %s konumuna aktarıldı.</string>
+    <string name="error_writing_to_storage">Harici depolamaya yazılamadı.</string>
+    <string name="migration_certificate_success">Sertifika taşındı.</string>
+    <string name="migration_certificate_begin">Sertifika taşıma başlatılıyor…</string>
+    <string name="certificate_import_success">%s sertifikası içe aktarıldı.</string>
+    <string name="certificate_load_failed">Sertifika saklanamadı.</string>
+    <string name="invalid_certificate">Geçersiz sertifika yüklenemedi.</string>
+    <string name="password">Parola</string>
+    <string name="decrypt_certificate">Sertifikanın Şifresini Çöz</string>
+    <string name="certificates">Sertifikalar</string>
+    <string name="no_certificate">Sertifika Yok</string>
+    <string name="change_requires_reconnect">Yeni ayarları kullanmak için yeniden bağlanın.</string>
+    <string name="attempting_reconnect">Hata: %s.
+\n
+\nYeniden bağlanılıyor…</string>
+    <string name="cancel_reconnect">Yeniden bağlanmayı iptal et</string>
+    <string name="invalid_username">Geçersiz kullanıcı adı</string>
+    <string name="invalid_port_range">Geçersiz bağlantı noktası (1-65535)</string>
+    <string name="invalid_host">Geçersiz ana makine</string>
+    <string name="certificate_info">Sahibi:
+\n%1$s
+\n
+\nGeçerlilik başlangıcı:
+\n%2$s
+\n
+\nGeçerlilik bitişi:
+\n%3$s
+\n
+\nÖzet (SHA-1):
+\n%4$s
+\n
+\nÖzet (SHA-256):
+\n%5$s</string>
+    <string name="channel_join">Katıl</string>
+    <string name="current_chat_target">Geçerli sohbet hedefi</string>
+    <string name="transmit_mode">İletim Modu</string>
+    <string name="cancelled">İptal edildi</string>
+    <string name="trust_cleared">Güven veri tabanı temizlendi</string>
+    <string name="trust_add_failed">Sertifika güven deposuna eklenemedi.</string>
+    <string name="trust_added">Sertifika güven deposuna eklendi</string>
+    <string name="allow">İzin Ver</string>
+    <string name="untrusted_certificate">Güvenilmeyen Sertifika</string>
+    <string name="channel_menu_view_description">Açıklamayı Görüntüle</string>
+    <string name="send_message">Mesaj gönder</string>
+    <string name="invalid_password">Yanlış parola.</string>
+    <string name="certificate_not_valid">%s sertifikası yüklenemedi.</string>
+    <string name="generate">Oluştur</string>
+    <string name="first_run_generate_certificate">Sertifika oluşturulması şiddetle tavsiye edilir ve bazı sunuculara bağlanmak için gereklidir.</string>
+    <string name="first_run_generate_certificate_title">Mumla\'ya hoş geldiniz.</string>
+    <string name="mumble_url_parse_failed">Mumble URL\'si geçerli değil.</string>
+    <string name="tts_failed">TTS başlatılamadı</string>
+    <string name="channel_add">Kanal Ekle</string>
+    <string name="channel_edit">Kanalı Düzenle</string>
+    <string name="position">Konum</string>
+    <string name="temporary">Geçici</string>
+    <string name="expand">Genişlet</string>
+    <string name="confirm">Doğrula</string>
+    <string name="confirm_reset_comment">%s kullanıcısının yorumunu sıfırlamak istediğinizden emin misiniz\?</string>
+    <string name="reconnect_dialog_message">Zaten bir sunucuya bağlısınız. Onun yerine bu sunucuya bağlanılsın mı\?</string>
+    <string name="reconnect">Yeniden Bağlan</string>
+    <string name="action_settings">Ayarlar</string>
+    <string name="hint_switching_summary">Sol üst düğmeleri kullanarak veya kaydırarak sohbet ve kanal görünümleri arasında geçiş yapın.</string>
+    <string name="hint_switching">Görünümler Arasında Geçiş</string>
+    <string name="hint_server_add">Mumla\'ya hoş geldiniz</string>
+    <string name="hint_ptt_summary">Konuşmak için bu düğmeye basmanız yeterlidir. Değiştirmek için iki defa dokunun.</string>
+    <string name="hint_ptt">Bas-konuş</string>
+    <string name="hint_reason">Neden</string>
+    <string name="tapToReconnect">Yeniden bağlanmak için dokunun</string>
+    <string name="coming_soon">Özellik yakında gelecek.</string>
+    <string name="error_fetching_servers">Sunucular alınamadı.
+\nİnternete bağlı mısınız\?</string>
+    <string name="registerSelfSuccess">Kayıt isteği gönderildi</string>
+    <string name="userControl">Kullanıcı Denetimi</string>
+    <string name="register">Kendini Kaydet</string>
+    <string name="information">Bilgi</string>
+    <string name="fetchingServers">Lütfen bekleyin, genel sunucuların listesi alınıyor…</string>
+    <string name="fullscreen_channel">Kanal</string>
+    <string name="fullscreen_chat">Sohbet</string>
+    <string name="fullscreen">Tam Ekran</string>
+    <string name="preferences_immutable">Bu ayar, bir sunucuya bağlıyken değiştirilemez.</string>
+    <string name="search_country">Ülke</string>
+    <string name="search_name">Ad</string>
+    <string name="retrieving">Alınıyor…</string>
+    <string name="close">Kapat</string>
+    <string name="comment">Yorum Yap</string>
+    <string name="status_notify_muted">Sesi kapatıldı.</string>
+    <string name="status_notify_muted_and_deafened">Sesi kapatıldı ve duyması engellendi.</string>
+    <string name="noServerInfo">Bilgi almak için ping at</string>
+    <string name="shareMessage">Bu Mumble sunucusuna Mumla ile katılın. %s</string>
+    <string name="description">Açıklama</string>
+    <string name="share">Paylaş</string>
+    <string name="country">Ülke</string>
+    <string name="name">Ad</string>
+    <string name="sortBy">Sıralama ölçütü…</string>
+    <string name="sort">Sırala</string>
+    <string name="ping">Ping</string>
+    <string name="server_list_title_public_internet">Genel İnternet</string>
+    <string name="server_list_title_lan">LAN</string>
+    <string name="unknown">Bilinmeyen</string>
+    <string name="user">Kullanıcı</string>
+    <string name="channel">Kanal</string>
+    <string name="resume">Devam Ettir</string>
+    <string name="lostConnection">Sunucuyla bağlantı kesildi.</string>
+    <string name="mumlaDisconnected">Mumla bağlantısı kesildi</string>
+    <string name="mumlaConnecting">Mumla bağlanıyor…</string>
+    <string name="mumlaConnected">Mumla bağlandı</string>
+    <string name="connected">Bağlandı</string>
+    <string name="clearChat">Sohbeti Temizle</string>
+    <string name="offline">Çevrim dışı</string>
+    <string name="online">Çevrim içi</string>
+    <string name="messageToChannel">\'%s\' kanalına mesaj yazın</string>
+    <string name="messageToUser">\'%s\' kullanıcısına bir mesaj yazın</string>
+    <string name="retry">Yeniden Dene</string>
+    <string name="delete">Sil</string>
+    <string name="remove">Kaldır</string>
+    <string name="edit">Düzenle</string>
+    <string name="connectToServer">Sunucuya Bağlan</string>
+    <string name="connect">Bağlan</string>
+    <string name="quickConnect">Hızlı Bağlan</string>
+    <string name="recordingVolume">Kayıt Sesi Yükseltme</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="undocumentedWakeLock">Yakınlık sensörü uyandırma kilidi aygıtınızda desteklenmiyor. Lütfen arama modunu hoparlör olarak değiştirin.</string>
+    <string name="searchHint">Kanalları ve kullanıcıları arayın</string>
+    <string name="search">Ara</string>
+    <string name="generateCertProgress">Sertifika oluşturuluyor…</string>
+    <string name="generateCertFailure">Sertifika oluşturulamadı.</string>
+    <string name="generateCertSuccess">Sertifikanız ayarlandı ve %s olarak kaydedildi!</string>
+    <string name="generateCert">Sertifika Oluştur</string>
+    <string name="messageReceived">Yeni mesaj</string>
+    <string name="pushToTalkHint">(değiştirmeyi etkinleştirmek için onay kutusunu işaretleyin)</string>
+    <string name="accessAdd">Erişim Belirteci Ekle</string>
+    <string name="accessTokens">Erişim Belirteçleri</string>
+    <string name="hint_server_add_summary">Eylem çubuğundan \'Ekle\' düğmesine basarak sık kullanılanlara bir sunucu ekleyin.</string>
+    <string name="server_list_title_favorite">Sık Kullanılanlar</string>
+    <string name="noFavorites">Sık kullanılanlara eklenen kanal yok.</string>
+    <string name="favoriteAdded">Sık kullanılanlara eklendi.</string>
+    <string name="favoriteRemoved">Sık kullanılanlardan kaldırıldı.</string>
+    <string name="favorites">Sık Kullanılanlar</string>
+    <string name="viewFavorites">Sık Kullanılanları Gürüntüle</string>
+    <string name="removeFavorite">Sık Kullanılanlardan Kaldır</string>
+    <string name="addFavorite">Sık Kullanılanlara Ekle</string>
+    <string name="externalStorageUnavailable">Harici depolama kullanılabilir değil, sertifika yüklenemiyor</string>
+    <string name="reset_key">Sıfırlama Tuşu</string>
+    <string name="loading">Yükleniyor…</string>
+    <string name="kicked_message">Sunucudan atıldı.
+\nNeden: %s</string>
+    <string name="disconnected">Bağlantı kesildi</string>
+    <string name="confirm_delete_channel">Bu kanalı silmek istediğinizden emin misiniz\?</string>
+    <string name="confirm_delete_server">Bu sunucuyu silmek istediğinizden emin misiniz\?</string>
+    <string name="connectionRefused">Bağlantı reddedildi</string>
+    <string name="chat">Sohbet</string>
+    <string name="togglelocalmute">Yerel Ses Kapatmayı Değiştir</string>
+    <string name="preferences">Tercihler</string>
+    <string name="add">Ekle</string>
+    <string name="save">Kaydet</string>
+    <string name="disconnectSure">%s ile bağlantıyı kesmek istediğinizden emin misiniz\?</string>
+    <string name="disconnect">Bağlantıyı Kes</string>
+    <string name="deafen">Duymasını Engelle</string>
+    <string name="mute">Sesini Kapat</string>
+    <string name="ptt">Bas-konuş</string>
+    <string name="menu_settings">Ayarlar</string>
+    <string name="fragment_channel">Kanal</string>
+    <string name="fragment_chat">Sohbet</string>
+    <string name="connecting_to_server">%s ile bağlantı kuruluyor…</string>
+    <string name="connecting">Bağlanıyor</string>
+    <string name="server_label">Etiket</string>
+    <string name="server_host">Adres</string>
+    <string name="server_port">Bağlantı Noktası</string>
+    <string name="server_username">Kullanıcı Adı</string>
+    <string name="server_password">Parola</string>
+    <string name="server_add">Sunucu Ekle</string>
+    <string name="no_servers">Önce bir sunucu eklemek için eylem çubuğundan \'Ekle\' düğmesine basın.</string>
+    <string name="channels">Kanallar</string>
+    <string name="server_match_description">Mumla konuma, sürüme ve gecikmeye göre sizin için en iyi boş sunucuyu otomatik olarak bulabilir.</string>
+    <string name="chat_message_tts_short_link">(%1$s için bağlantı)</string>
+    <string name="server">Sunucu</string>
+    <string name="perm_denied">İzin reddedildi.</string>
+    <string name="chat_notify_disconnected">%s bağlantısı kesildi.</string>
+    <string name="chat_notify_connected">%s bağlandı.</string>
+    <string name="chat_notify_now_unmuted_undeafened">%s kişisinin sesi açıldı ve duyma engeli kaldırıldı.</string>
+    <string name="chat_notify_now_unmuted">%s kişisinin sesi açıldı.</string>
+    <string name="chat_notify_now_muted">%s kişisinin sesi kapatıldı.</string>
+    <string name="chat_notify_now_muted_deafened">%s kişisinin sesi kapatıldı ve duyması engellendi.</string>
+    <string name="chat_notify_unmuted_undeafened">Sesi açıldı ve duyma engeli kaldırıldı.</string>
+    <string name="chat_notify_unmuted">Sesi açıldı.</string>
+    <string name="chat_notify_muted">Sesi kapatıldı.</string>
+    <string name="chat_notify_muted_deafened">Sesi kapatıldı ve duyması engellendi.</string>
+    <string name="chat_notify_moved">%1$s, %3$s tarafından %2$s konumundan taşındı.</string>
+    <string name="server_match_info">Ad: %1$s
+\nAna Makine: %2$s:%3$d
+\nKullanıcılar: %4$d / %5$d
+\nSürüm: %6$s
+\nÜlke: %7$s
+\nGecikme: %8$d ms</string>
+    <string name="server_match_expand_country">Ülkenizde uygun bir sunucu bulunamadı. Dünya genelinde aransın mı\?</string>
+    <string name="server_match_not_found">Sunucu bulunamadı</string>
+    <string name="server_match_found">Sunucu bulundu</string>
+    <string name="server_match_progress">Sunucu bulunuyor…</string>
+    <string name="server_match">Sunucu Bul</string>
+    <string name="server_info_current_bandwidth">Şu anda %.1f kbit/s</string>
+    <string name="server_info_max_bandwidth">En fazla %.1f kbit/s</string>
+    <string name="server_info_codec">Codec: %s</string>
+    <string name="server_info_host">%1$s uzak ana makinesi (%2$d bağlantı noktası)</string>
+    <string name="server_info_latency">%.2f ms gecikme</string>
+    <string name="server_info_version">%1$s (%2$s)</string>
+    <string name="server_info_protocol">%s protokolü.</string>
+    <string name="audio_bandwidth">Ses bant genişliği</string>
+    <string name="udp_encryption_mode">128 bit OCB-AES-128 ile şifrelendi</string>
+    <string name="voice_channel">Ses kanalı</string>
+    <string name="tcp_encryption_mode">256 bit AES-256-SHA ile şifrelendi</string>
+    <string name="control_channel">Denetim kanalı</string>
+    <string name="comment_view_source">Kaynağı görüntüle</string>
+    <string name="comment_edit_source">Kaynağı düzenle</string>
+    <string name="comment_view">Görüntüle</string>
+    <string name="channel_menu_pin">Sabitle</string>
+    <string name="user_menu_registered">Kayıtlı</string>
+    <string name="user_menu_register">Kaydol</string>
+    <string name="user_menu_information">Bilgi</string>
+    <string name="user_menu_send_message">Mesaj Gönder</string>
+    <string name="user_menu_reset_comment">Yorumu Sıfırla</string>
+    <string name="user_menu_view_comment">Yorumu Görüntüle</string>
+    <string name="user_menu_change_comment">Yorumu Değiştir</string>
+    <string name="user_menu_ignore_messages">Mesajları Yok Say</string>
+    <string name="user_menu_local_mute">Yerel Olarak Sesini Kapat</string>
+    <string name="user_menu_priority_speaker">Öncelikli Konuşmacı</string>
+    <string name="user_menu_move">Taşı</string>
+    <string name="user_menu_deafen">Duymasını Engelle</string>
+    <string name="user_menu_mute">Sesini Kapat</string>
+    <string name="user_menu_ban">Yasakla</string>
+    <string name="user_menu_kick">At</string>
+    <string name="user_menu_admin">Yönetici</string>
+    <string name="chat_message_to">%1$s → %2$s</string>
+    <string name="drawer_pinned">Sabitlenmiş Kanallar</string>
+    <string name="drawer_tokens">Erişim Belirteçleri</string>
 </resources>
