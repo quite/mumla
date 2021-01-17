@@ -1,0 +1,6 @@
+- Jackal Zhao, basitleştirilmiş Çince çevirisinin iyileştirilmesine yardımcı oldu.
+- GUI'de öntanımlı 48kHz örnekleme hızını doğru şekilde görüntüle
+- Uzun (127 bayttan fazla) kullanıcı yorumlarının getirilmesi düzeltildi
+- Kısa kullanıcı yorumlarının sıfırlanması düzeltildi
+- Android 10'da sertifikanın harici depolamaya aktarılması düzeltildi
+- Bir düzine olası ve gerçek çökme hatası düzeltildi

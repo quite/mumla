@@ -1,0 +1,3 @@
+Bu sürümde, Mumla'nın birçok farklı yeni dilde çevirisine sahibiz. Tayca ve Fince'ye tam çeviriler dahil! Hepinize teşekkür ederiz -- Abidin Toumi, Alfonso Montero López, Allan Nordhøy, Carlos Pinto, Nikita Epifanov, SamiR, Torkel, WLJ, deluxghost, kityn, mv87, pjammo.
+
+Çeviriler şu adreste yapılmaktadır: https://hosted.weblate.org/projects/mumla/

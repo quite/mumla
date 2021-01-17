@@ -1,0 +1,3 @@
+- deluxghost, Mumla'yı basitleştirilmiş Çince'ye çevirdi.
+- Genel sunucu listesi alımı tekrar çalışıyor.
+- data-URI'si olan görüntüyle ilgili bir çökme hatası düzeltildi.

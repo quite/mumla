@@ -1,0 +1,20 @@
+Mumble sesli sohbet sistemi için bir istemci. Barındırdığınız veya topluluk tarafından çalıştırılan birçok genel sunuculardan birine bağlanın (https://www.mumble.info sayfasına bakın). Mumla, Plumble uygulamasının güncellenen ve devam ettirilen bir (çatalı) sürümüdür.
+
+Özelliklerden bazıları:
+
+* Sertifika üretimi, içe ve dışa aktarımı
+* Genel sunuculara göz atın
+* Sesle etkinleştirilen iletim (öntanımlı) veya farklı bas-konuş düğmeleri
+* Bluetooth kulaklık desteği
+* Sunucuda kendi kendine kayıt
+* Erişim belirteçleri
+* Opus, CELT ve Speex codec desteği
+* Otomatik yeniden bağlanma
+* Orbot uygulaması aracılığıyla Tor desteği
+* Mesajlar için metinden konuşmaya dönüşüm (öntanımlı olarak etkindir)
+* Açık ve koyu tema
+
+Sesle etkinleştirilen iletim şu anda en iyi kulaklık kullanırken çalışır. Yankı giderme ve gürültü azaltma üzerinde çalışılması gerekiyor.
+Ayarlarda tespit eşiğini ayarlamak yardımcı olur.
+
+Mumla, copyleft lisanslı özgür yazılımdır. Daha fazla bilgi için: https://mumla-app.gitlab.io/
