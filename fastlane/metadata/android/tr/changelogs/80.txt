@@ -1,0 +1,8 @@
+- Sunucu adresi için SRV kayıtlarının aranması uygulandı. DNS'deki etki alanı için bir SRV kaydının bağlanılacak sunucu ana makinesini ve bağlantı noktasını gösterdiği
+`example.net` gibi basit sunucu adreslerini etkinleştirir. Ayrıntılı bilgi için https://wiki.mumble.info/wiki/SRV_Record adresine bakın.
+
+- Allan Nordhøy, İngilizce kaynak dizgelerini yeniden düzenledi.
+
+- Sıcak köşe bas konuş için izin isteği düzeltildi.
+
+- Farklı şekillerde bozuk olan konuşma durumu animasyonu kaldırıldı.

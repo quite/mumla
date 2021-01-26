@@ -1,0 +1,15 @@
+- Özellikle izin istekleriyle ilgili birçok hata düzeltildi.
+
+- Tor üzerinden bağlan (Orbot) daha iyi çalışıyor ve gizli hizmetleri (.onion) destekliyor.
+
+- Sunucu adresi araması için DNS SRV kaydını destekle.
+
+- Sertifika iletişim kutusu SHA-256 özetini görüntülüyor ve metin kopyalanabilir.
+
+- Allan Nordhøy, İngilizce kaynak dizgelerini yeniden düzenledi.
+
+- R4SAS Mumla'yı Rusça'ya çevirdi.
+
+- deluxghost Mumla'yı basitleştirilmiş Çince'ye çevirdi.
+
+- Genel sunucu listesi alımı tekrar çalışıyor.

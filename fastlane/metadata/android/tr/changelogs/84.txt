@@ -1,0 +1,15 @@
+- Sıcak köşe bas konuş için izin isteği düzeltildi, çökme durduruldu.
+
+- Sertifika kabul iletişim kutusunda SHA-256 özetini de görüntüle ve metni seçilebilir yap.
+
+- Temayı ayarlara uygula.
+
+- Allan Nordhøy, İngilizce kaynak dizgelerini yeniden düzenledi.
+
+- R4SAS, tamamen Rusça'ya çevirdi.
+
+- Farklı şekillerde bozuk olan konuşma durumu animasyonu kaldırıldı.
+
+- Kaplamada, ana kanal listesindekiyle aynı kullanıcı durumu simgelerini kullan.
+
+- Koyu tema için belirteç parçası simgeleri düzeltildi.

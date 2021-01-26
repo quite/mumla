@@ -1,0 +1,1 @@
+Orbot kullanarak Tor üzerinden bağlanmak daha iyi çalışıyor ve kullanıcı arayüzündeki birkaç mesaj Tor'un kullanıldığını gösteriyor. Gizli hizmetlerin .onion adresine bağlanmak de çalışıyor; DNS çözümleme Tor SOCKS vekil sunucusuna bırakıldı.

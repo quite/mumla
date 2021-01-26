@@ -1,0 +1,9 @@
+- Sunucu adresi için SRV kayıtlarının aranması uygulandı. Ayrıntılı bilgi için https://wiki.mumble.info/wiki/SRV_Record adresine bakın.
+
+- Allan Nordhøy, İngilizce kaynak dizgelerini yeniden düzenledi.
+
+- Sıcak köşe bas konuş için izin isteği düzeltildi.
+
+- Farklı şekillerde bozuk olan konuşma durumu animasyonu kaldırıldı.
+
+- Sertifika kabul iletişim kutusunda SHA-256 özetini de görüntüle ve metni seçilebilir yap.

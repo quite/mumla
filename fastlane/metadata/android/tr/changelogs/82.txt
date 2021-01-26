@@ -1,0 +1,13 @@
+- Sunucu adresi için SRV kayıtlarının aranması uygulandı.
+
+- Sıcak köşe bas konuş için izin isteği düzeltildi, çökme durduruldu.
+
+- Sertifika kabul iletişim kutusunda SHA-256 özetini de görüntüle ve metni seçilebilir yap.
+
+- Allan Nordhøy, İngilizce kaynak dizgelerini yeniden düzenledi.
+
+- Farklı şekillerde bozuk olan konuşma durumu animasyonu kaldırıldı.
+
+- Kaplamada, ana kanal listesindekiyle aynı kullanıcı durumu simgelerini kullan.
+
+- Koyu tema için belirteç parçası simgeleri düzeltildi.
