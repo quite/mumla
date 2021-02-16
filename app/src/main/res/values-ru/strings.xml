@@ -143,7 +143,7 @@
     <string name="chat_notify_now_muted">%s выключил(а) микрофон.</string>
     <string name="chat_notify_now_unmuted">%s включил(а) микрофон.</string>
     <string name="chat_notify_now_unmuted_undeafened">%s включил(а) звук и микрофон.</string>
-    <string name="chat_notify_connected">%s соединен(а).</string>
+    <string name="chat_notify_connected">%s соеденен(а).</string>
     <string name="chat_notify_disconnected">%s отсоединен(а).</string>
     <string name="unknown">Неизвестный</string>
     <string name="server_list_title_favorite">Избранное</string>
