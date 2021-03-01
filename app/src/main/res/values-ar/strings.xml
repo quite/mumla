@@ -37,7 +37,7 @@
     <string name="confirm_delete_channel">أمتأكد من حذف هذه القناة؟</string>
     <string name="confirm_delete_server">أمتأكد من حذف هذا الخادم؟</string>
     <string name="connectionRefused">رُفض الاتصال</string>
-    <string name="perm_denied">رُفض الإذن!</string>
+    <string name="perm_denied">رُفض الإذن.</string>
     <string name="chat">محادثة</string>
     <string name="preferences">التفضيلات</string>
     <string name="add">أضف</string>
@@ -49,7 +49,7 @@
     <string name="menu_settings">إعدادات</string>
     <string name="fragment_channel">قناة</string>
     <string name="fragment_chat">محادثة</string>
-    <string name="connecting_to_server">يتصل ب %s</string>
+    <string name="connecting_to_server">يتصل ب %s…</string>
     <string name="connecting">يتصل</string>
     <string name="server_label">التسمية</string>
     <string name="server_host">العنوان</string>
@@ -76,4 +76,12 @@
     <string name="server_info_version">%1$s (%2$s)</string>
     <string name="server_info_protocol">ميفاق %s.</string>
     <string name="user_menu_local_mute">كتم محلي</string>
+    <string name="favorites">المفضّلة</string>
+    <string name="viewFavorites">اعرض المفضلة</string>
+    <string name="removeFavorite">أزل من المفضلة</string>
+    <string name="addFavorite">أضفها للمفضلة</string>
+    <string name="externalStorageUnavailable">وحدة التخزين الخارجية غير متوفرة ، لا يمكن تحميل الشهادة</string>
+    <string name="reset_key">أعد تعيين المفاتيح</string>
+    <string name="server_match_expand_country">لم يُعثر على خادم مثالي في بلدك. أتريد البحث عالميا؟</string>
+    <string name="chat_message_tts_short_link">(رابط لـ %1$s)</string>
 </resources>
