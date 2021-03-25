@@ -104,4 +104,6 @@
     <string name="drawer_server">Tots els canals</string>
     <string name="drawer_not_connected">No connectat</string>
     <string name="allow">Permet</string>
+    <string name="drawer_close">Tancar barra de navegació</string>
+    <string name="drawer_open">Obrir barra de navegació</string>
 </resources>
