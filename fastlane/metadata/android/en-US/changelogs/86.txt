@@ -1,4 +1,4 @@
-This is the first release on Googel Play store.
+This is the first release on the Google Play store.
 
 - Many bugs fixed, especially related to permission requests.
 
