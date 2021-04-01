@@ -55,7 +55,7 @@
     <string name="loading">Carregant…</string>
     <string name="disconnected">Desconnectat</string>
     <string name="connectionRefused">Connexió refusada</string>
-    <string name="perm_denied">Permís denegat!</string>
+    <string name="perm_denied">Permís denegat.</string>
     <string name="chat">Xat</string>
     <string name="preferences">Preferències</string>
     <string name="add">Afegeix</string>
@@ -136,4 +136,13 @@
     <string name="chat_message_tts_short_link">(Enllaç cap a %1$s)</string>
     <string name="chat_message_to">%1$s → %2$s</string>
     <string name="drawer_lan">LAN</string>
+    <string name="chat_notify_connected">%s s\'ha connectat.</string>
+    <string name="chat_notify_now_unmuted_undeafened">%s està ara sense silenciar i sense ensordir.</string>
+    <string name="chat_notify_now_unmuted">%s està ara sense silenciar.</string>
+    <string name="chat_notify_now_muted">%s està silenciat ara.</string>
+    <string name="chat_notify_now_muted_deafened">%s està silenciat i ensordit ara.</string>
+    <string name="chat_notify_unmuted_undeafened">Sense silenciar i sense ensordir.</string>
+    <string name="chat_notify_unmuted">Sense silenciar.</string>
+    <string name="chat_notify_muted_deafened">Silenciat i ensordit.</string>
+    <string name="chat_notify_moved">%1$s s\'ha mogut de %2$s per part de %3$s.</string>
 </resources>
