@@ -107,4 +107,33 @@
     <string name="drawer_close">Tancar barra de navegació</string>
     <string name="drawer_open">Obrir barra de navegació</string>
     <string name="drawer_tokens">Tokens d\'accés</string>
+    <string name="deafen">Ensordir</string>
+    <string name="server_port">Port</string>
+    <string name="server_password">Contrasenya</string>
+    <string name="no_servers">Premeu «Afegir» des de la barra d\'acció per afegir un servidor per començar.</string>
+    <string name="server_match_info">Nom: %1$s
+\nAmfitrió: %2$s:%3$d
+\nUsuaris: %4$d / %5$d
+\nVersió: %6$s
+\nPaís: %7$s
+\nLatència: %8$d ms</string>
+    <string name="server_match_progress">Buscant un servidor…</string>
+    <string name="server_info_codec">Còdec: %s</string>
+    <string name="server_info_latency">%.2f ms de latència</string>
+    <string name="server_info_version">%1$s (%2$s)</string>
+    <string name="server_info_protocol">Protocol %s.</string>
+    <string name="voice_channel">Canal de veu</string>
+    <string name="control_channel">Canal de control</string>
+    <string name="comment_view_source">Veure la font</string>
+    <string name="comment_edit_source">Edita la font</string>
+    <string name="user_menu_registered">Registrat</string>
+    <string name="user_menu_register">Registrar</string>
+    <string name="user_menu_local_mute">Silenciar localment</string>
+    <string name="user_menu_priority_speaker">Orador prioritari</string>
+    <string name="user_menu_deafen">Ensordir</string>
+    <string name="user_menu_ban">Bandejar</string>
+    <string name="user_menu_admin">Administrador</string>
+    <string name="chat_message_tts_short_link">(Enllaç cap a %1$s)</string>
+    <string name="chat_message_to">%1$s → %2$s</string>
+    <string name="drawer_lan">LAN</string>
 </resources>
