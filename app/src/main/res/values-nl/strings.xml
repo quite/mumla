@@ -5,7 +5,7 @@
     <string name="drawer_close">Sluit Luik</string>
     <string name="drawer_not_connected">Niet Verbonden</string>
     <string name="drawer_server">Server</string>
-    <string name="drawer_tokens">Access Tokens</string>
+    <string name="drawer_tokens">Toegangssleutels</string>
     <string name="drawer_pinned">Opgeprikte Kanalen</string>
     <string name="drawer_header_servers">Servers</string>
     <string name="drawer_favorites">Favorieten</string>
@@ -17,7 +17,7 @@
     <string name="chat_message_to">%1$s → %2$s</string>
     <!--User menu-->
     <string name="user_menu_admin">Admin</string>
-    <string name="user_menu_kick">Kick</string>
+    <string name="user_menu_kick">Schoppen</string>
     <string name="user_menu_ban">Verban</string>
     <string name="user_menu_mute">Dempen</string>
     <string name="user_menu_deafen">Doof maken</string>
@@ -46,10 +46,10 @@
     <string name="audio_bandwidth">Audio bandbreedte</string>
     <string name="server_info_protocol">Protocol %s.</string>
     <string name="server_info_version">%1$s (%2$s)</string>
-    <string name="server_info_latency">%.2f ms latency</string>
+    <string name="server_info_latency">%.2f ms latentie</string>
     <string name="server_info_host">Externe host %1$s (port %2$d)</string>
     <string name="server_info_codec">Codec: %s</string>
-    <string name="server_info_max_bandwidth">Maximum %.1f kbit/s</string>
+    <string name="server_info_max_bandwidth">Maximale %.1f kbit/s</string>
     <string name="server_info_current_bandwidth">Huidig %.1f kbit/s</string>
     <!--Server matching-->
     <string name="server_match">Zoek Server</string>
@@ -61,7 +61,7 @@
     <string name="server_match_description">Mumla kan automatisch een lege server zoeken, geoptimaliseerd aan de hand van locatie, versie en latency.</string>
     <!--Common-->
     <string name="channels">Kanalen</string>
-    <string name="no_servers">Geen servers toegevoegd.\nDruk op \'toevoegen\' in the taakbalk om te beginnen.</string>
+    <string name="no_servers">Geen servers toegevoegd. Druk op \'toevoegen\' in the taakbalk om te beginnen.</string>
     <string name="server_add">Server toevoegen</string>
     <string name="server_password">Wachtwoord</string>
     <string name="server_username">Gebruikersnaam</string>
@@ -73,7 +73,7 @@
     <string name="fragment_chat">Chat</string>
     <string name="fragment_channel">Kanaal</string>
     <string name="menu_settings">Instellingen</string>
-    <string name="ptt">Push-to-talk</string>
+    <string name="ptt">Push-To-talk</string>
     <string name="mute">Dempen</string>
     <string name="deafen">Doof maken</string>
     <string name="disconnect">Verbinding verbreken</string>
@@ -88,7 +88,8 @@
     <string name="confirm_delete_server">Bent u zeker dat u deze server wilt verwijderen?</string>
     <string name="confirm_delete_channel">Bent u zeker dat u dit kanaal wilt verwijderen?</string>
     <string name="disconnected">Verbinding verbroken</string>
-    <string name="kicked_message">Gekicked van server.\nReden: %s</string>
+    <string name="kicked_message">Van de server geschopt.
+\nReden: %s</string>
     <string name="loading">Laden…</string>
     <string name="reset_key">Reset Knop</string>
     <string name="externalStorageUnavailable">Externe opslag niet bereikbaar, kan certificaat niet laden</string>
@@ -99,8 +100,8 @@
     <string name="favoriteRemoved">Favoriet verwijderd.</string>
     <string name="favoriteAdded">Favoriet toegevoegd.</string>
     <string name="noFavorites">Geen favoriete kanalen.</string>
-    <string name="accessTokens">Access Tokens</string>
-    <string name="accessAdd">Access Token Toevoegen</string>
+    <string name="accessTokens">Toegangssleutels</string>
+    <string name="accessAdd">Toevoegen toegangssleutels</string>
     <string name="pushToTalkHint">(vink aan om aan/uit functie te gebruiken)</string>
     <string name="messageReceived">Nieuw bericht</string>
     <string name="generateCert">Certificaat Genereren</string>
@@ -168,12 +169,13 @@
     <string name="fullscreen">Volledig scherm</string>
     <string name="fullscreen_chat">Chat</string>
     <string name="fullscreen_channel">Kanaal</string>
-    <string name="fetchingServers">Een ogenblik, lijst met openbare servers ophalen.</string>
+    <string name="fetchingServers">Een ogenblik, lijst met openbare servers ophalen…</string>
     <string name="information">Informatie</string>
     <string name="register">Registreer Jezelf</string>
     <string name="userControl">Gebruiker Beheer</string>
     <string name="registerSelfSuccess">Registratie verzoek verzonden</string>
-    <string name="error_fetching_servers">Error servers ophalen!\nControleer internet verbinding.</string>
+    <string name="error_fetching_servers">Error servers ophalen.
+\nControleer internet verbinding.</string>
     <string name="coming_soon">Deze functie is binnenkort beschhikbaar.</string>
     <string name="tapToReconnect">Tik om te herverbinden</string>
     <string name="overlay">Overlay</string>
@@ -195,7 +197,7 @@
     <string name="channel_edit">Bewerk Kanaal</string>
     <string name="channel_add">Kanaal Toevoegen</string>
     <string name="tts_failed">TTS initialiseren mislukt</string>
-    <string name="mumble_url_parse_failed">Mumble URL kon niet worden ontleed!</string>
+    <string name="mumble_url_parse_failed">Mumble URL kon niet worden ontleed.</string>
     <string name="first_run_generate_certificate_title">Welkom bij Mumla.</string>
     <string name="first_run_generate_certificate">Certificaat generen is ten zeerste aangeraden en nodig voor verbinden met bepaalde servers.</string>
     <string name="generate">Genereer</string>
