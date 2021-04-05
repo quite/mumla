@@ -173,7 +173,7 @@
     <string name="register">Registrarse</string>
     <string name="userControl">Control de usuario</string>
     <string name="registerSelfSuccess">Enviar solicitud de registro</string>
-    <string name="error_fetching_servers">¡Error obteniendo servidores!
+    <string name="error_fetching_servers">Error obteniendo servidores.
 \nCompruebe su conexión a Internet.</string>
     <string name="coming_soon">Esta característica estará disponible pronto.</string>
     <string name="tapToReconnect">Toque para reconectar</string>
@@ -225,7 +225,7 @@
         <item quantity="other">%d usuarios</item>
     </plurals>
     <plurals name="reconnecting">
-        <item quantity="one">Reconectando en %d segundo</item>
+        <item quantity="one">Reconectando en %d segundo.</item>
         <item quantity="other">Reconectando en %d segundos.</item>
     </plurals>
     <plurals name="notification_unread_many">
