@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--Drawer pane-->
     <string name="drawer_open">Open Luik</string>
@@ -11,12 +11,10 @@
     <string name="drawer_favorites">Favorieten</string>
     <string name="drawer_lan">LAN</string>
     <string name="drawer_public">Openbare Servers</string>
-
     <!--Chat formatting-->
     <string name="chat_message_tree">(Vertakt)</string>
     <string name="chat_message_channel">(Kanaal)</string>
     <string name="chat_message_to">%1$s → %2$s</string>
-
     <!--User menu-->
     <string name="user_menu_admin">Admin</string>
     <string name="user_menu_kick">Kick</string>
@@ -34,15 +32,12 @@
     <string name="user_menu_information">Informatie</string>
     <string name="user_menu_register">Registreer</string>
     <string name="user_menu_registered">Geregistreerd</string>
-
     <!--Channel menu-->
     <string name="channel_menu_pin">Prik op</string>
-
     <!--Comment Fragment-->
     <string name="comment_view">Weergeven</string>
     <string name="comment_edit_source">Bewerk bron</string>
     <string name="comment_view_source">Bekijk bron</string>
-
     <!--Server Info Fragment-->
     <string name="control_channel">Controle Kanaal</string>
     <string name="tcp_encryption_mode">Versleuteld met 256 bit AES256-SHA</string>
@@ -56,7 +51,6 @@
     <string name="server_info_codec">Codec: %s</string>
     <string name="server_info_max_bandwidth">Maximum %.1f kbit/s</string>
     <string name="server_info_current_bandwidth">Huidig %.1f kbit/s</string>
-
     <!--Server matching-->
     <string name="server_match">Zoek Server</string>
     <string name="server_match_progress">Server zoeken…</string>
@@ -65,7 +59,6 @@
     <string name="server_match_expand_country">Kon geen optimale servers in uw land vinden. Zoekopdracht wereldwijd uitbreiden?</string>
     <string name="server_match_info">Naam: %1$s\nHost: %2$s:%3$d\nGebruikers: %4$d / %5$d\nVersie: %6$s \nLand: %7$s \nLatency: %8$d ms</string>
     <string name="server_match_description">Mumla kan automatisch een lege server zoeken, geoptimaliseerd aan de hand van locatie, versie en latency.</string>
-
     <!--Common-->
     <string name="channels">Kanalen</string>
     <string name="no_servers">Geen servers toegevoegd.\nDruk op \'toevoegen\' in the taakbalk om te beginnen.</string>
@@ -76,7 +69,7 @@
     <string name="server_host">Adres</string>
     <string name="server_label">Label</string>
     <string name="connecting">Verbinden</string>
-    <string name="connecting_to_server">Verbinden met %s</string>
+    <string name="connecting_to_server">Verbinden met %s…</string>
     <string name="fragment_chat">Chat</string>
     <string name="fragment_channel">Kanaal</string>
     <string name="menu_settings">Instellingen</string>
@@ -90,7 +83,7 @@
     <string name="preferences">Voorkeuren</string>
     <string name="togglelocalmute">Lokaal Dempen Aan/Uit</string>
     <string name="chat">Chat</string>
-    <string name="perm_denied">Geen toelating!</string>
+    <string name="perm_denied">Geen toelating.</string>
     <string name="connectionRefused">Verbinding Geweigerd</string>
     <string name="confirm_delete_server">Bent u zeker dat u deze server wilt verwijderen?</string>
     <string name="confirm_delete_channel">Bent u zeker dat u dit kanaal wilt verwijderen?</string>
@@ -133,7 +126,7 @@
     <string name="clearChat">Chat Legen</string>
     <string name="connected">Verbonden</string>
     <string name="mumlaConnected">Mumla Verbonden</string>
-    <string name="mumlaConnecting">Mumla Verbindt</string>
+    <string name="mumlaConnecting">Mumla verbindt…</string>
     <string name="mumlaDisconnected">Mumla Verbinding Verbroken</string>
     <string name="lostConnection">Verbinding met de server verloren.</string>
     <string name="resume">Hervatten</string>
@@ -162,7 +155,7 @@
     <string name="country">Land</string>
     <string name="share">Delen</string>
     <string name="description">Beschrijving</string>
-    <string name="shareMessage">Verbind met deze Mumble server met Mumla! %s</string>
+    <string name="shareMessage">Verbind met deze Mumble server met Mumla. %s</string>
     <string name="noServerInfo">Ping naar info</string>
     <string name="status_notify_muted_and_deafened">Gedempt en doof gemaakt.</string>
     <string name="status_notify_muted">Gedempt.</string>
@@ -203,17 +196,17 @@
     <string name="channel_add">Kanaal Toevoegen</string>
     <string name="tts_failed">TTS initialiseren mislukt</string>
     <string name="mumble_url_parse_failed">Mumble URL kon niet worden ontleed!</string>
-    <string name="first_run_generate_certificate_title">Welkom bij Mumla!</string>
+    <string name="first_run_generate_certificate_title">Welkom bij Mumla.</string>
     <string name="first_run_generate_certificate">Certificaat generen is ten zeerste aangeraden en nodig voor verbinden met bepaalde servers.</string>
     <string name="generate">Genereer</string>
-    <string name="certificate_not_valid">Kon certificaat \'%s\' niet laden!</string>
+    <string name="certificate_not_valid">Kon certificaat %s niet laden.</string>
     <string name="invalid_password">Ongeldig wachtwoord.</string>
     <string name="send_message">Verstuur bericht</string>
     <string name="channel_menu_view_description">Bekijk Beschrijving</string>
     <string name="untrusted_certificate">Onvertrouwd Certificaat</string>
     <string name="allow">Toestaan</string>
     <string name="trust_added">Certificaat toegevoegd aan vertrouwde opslag</string>
-    <string name="trust_add_failed">Certificaat kon niet toegevoegd worden aan vertrouwde opslag!</string>
+    <string name="trust_add_failed">Certificaat kon niet toegevoegd worden aan vertrouwde opslag.</string>
     <string name="trust_cleared">Vertrouwde opslag database geleegd</string>
     <string name="cancelled">Geannuleerd</string>
     <string name="transmit_mode">Doorstuur Modus</string>
@@ -225,7 +218,6 @@
     <string name="invalid_username">Ongeldige Gebruikersnaam</string>
     <string name="cancel_reconnect">Herverbinden annuleren </string>
     <string name="default_">Standaard</string>
-
     <plurals name="search_channel_users">
         <item quantity="one">%d gebruiker</item>
         <item quantity="other">%d gebruikers</item>
@@ -238,4 +230,36 @@
         <item quantity="one">%d nieuw bericht</item>
         <item quantity="other">%d nieuwe berichten</item>
     </plurals>
+    <string name="donation_thanks">Bedankt voor de donatie.</string>
+    <string name="orbot_tor_failed">Kon geen verbinding maken met lokale Tor proxy op SOCKS-poort %d.
+\n
+\nZorg ervoor dat de Orbot-app actief is.</string>
+    <string name="orbot_not_installed">De Orbot-app is niet geïnstalleerd. Tor niet gebruiken.</string>
+    <string name="grant_perm_draw_over_apps">Geef toestemming voor weergave over andere apps.</string>
+    <string name="grant_perm_storage">Geef toestemming voor externe opslag.</string>
+    <string name="grant_perm_microphone">Geef toestemming voor de microfoon.</string>
+    <string name="shout_configure">Spraakdoel configureren</string>
+    <string name="shout_target">Schreeuwen naar %s</string>
+    <string name="context_channel_shout">Spraakdoel instellen</string>
+    <string name="shout_failed">Spraakdoel kan niet worden gemaakt.</string>
+    <string name="shout_include_subchannels">Naar sub-kanalen schreeuwen</string>
+    <string name="shout_include_linked">Naar gekoppelde kanalen schreeuwen</string>
+    <string name="context_channel_unlink_all">Alles ontkoppelen</string>
+    <string name="context_channel_link">Koppeling</string>
+    <string name="export_success">Certificaat geëxporteerd naar %s.</string>
+    <string name="error_writing_to_storage">Kon niet schrijven naar externe opslag.</string>
+    <string name="migration_certificate_success">Certificaat overgedragen.</string>
+    <string name="migration_certificate_begin">Certificaatoverdracht starten…</string>
+    <string name="certificate_import_success">Geïmporteerd certificaat %s.</string>
+    <string name="certificate_load_failed">Kon het certificaat niet opslaan.</string>
+    <string name="invalid_certificate">Ongeldig certificaat kon niet worden geladen.</string>
+    <string name="password">Wachtwoord</string>
+    <string name="decrypt_certificate">Decodeer certificaat</string>
+    <string name="certificates">Certificaten</string>
+    <string name="no_certificate">Geen certificaat</string>
+    <string name="change_requires_reconnect">Maak opnieuw verbinding om de nieuwe instellingen te gebruiken.</string>
+    <string name="attempting_reconnect">Fout: %s.
+\n
+\nOpnieuw verbinden…</string>
+    <string name="chat_message_tts_short_link">(Link naar %1$s)</string>
 </resources>
