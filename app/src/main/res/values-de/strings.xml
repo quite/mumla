@@ -242,7 +242,7 @@
     <string name="donation_thanks">Danke für die Spende.</string>
     <string name="orbot_tor_failed">Konnte mit lokalem Tor-Proxy auf SOCKS-Port %d nicht verbinden.
 \n
-\nBitte stelle sicher, dass die Orbot-Anwendundg läuft.</string>
+\nBitte stelle sicher, dass die Orbot-app läuft.</string>
     <string name="orbot_not_installed">Die Orbot-App ist nicht installiert. Tor wird nicht benutzt.</string>
     <string name="grant_perm_draw_over_apps">Bitte setze die Berechtigung, dass die App über anderen Apps angezeigt werden darf.</string>
     <string name="grant_perm_storage">Bitte Zugriff auf externen Speicher erlauben.</string>
