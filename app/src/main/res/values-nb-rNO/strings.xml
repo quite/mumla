@@ -151,7 +151,7 @@
     <string name="channel_menu_view_description">Vis beskrivelse</string>
     <string name="send_message">Send melding</string>
     <string name="invalid_password">Feil passord.</string>
-    <string name="certificate_not_valid">Kunne laste inn sertifikat %s!</string>
+    <string name="certificate_not_valid">Kunne laste inn sertifikat %s.</string>
     <string name="generate">Generer</string>
     <string name="first_run_generate_certificate">Generering av sertifikat anbefales sterkt, og er påkrevd for tilkobling til noen tjenere.</string>
     <string name="first_run_generate_certificate_title">Velkommen</string>
