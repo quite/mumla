@@ -164,4 +164,23 @@
     <string name="confirm_delete_server">Segur que voleu esborrar aquest servidor\?</string>
     <string name="togglelocalmute">Canviar a silenciar localment</string>
     <string name="disconnectSure">Segur que desitja desconnectar-se de %s\?</string>
+    <string name="error_fetching_servers">Error a l\'accedir al servidor.
+\nComproveu la connexió a Internet.</string>
+    <string name="registerSelfSuccess">Sol·licitut de registre enviada</string>
+    <string name="userControl">Control de l\'usuari</string>
+    <string name="register">Registrar-se</string>
+    <string name="fetchingServers">Espereu, s\'està accedint a la llista de servidors públics…</string>
+    <string name="preferences_immutable">Aquesta configuració no pot modificar-se mentre estigueu connectat a un servidor.</string>
+    <string name="retrieving">Rebent…</string>
+    <string name="status_notify_muted">Silenciat.</string>
+    <string name="status_notify_muted_and_deafened">Silenciat i ensordit.</string>
+    <string name="noServerInfo">Feu ping per a recuperar informació</string>
+    <string name="shareMessage">Accediu a aquest servidor amb Mumla. %s</string>
+    <string name="share">Compartir</string>
+    <string name="ping">Ping</string>
+    <string name="server_list_title_lan">LAN</string>
+    <string name="recordingVolume">Volum d\'enregistrament Boost</string>
+    <string name="undocumentedWakeLock">Malauradament, en el vostre dispositiu no es pot usar el sensor de proximitat per evitar el mode standby. Canvieu el mode a \"Mans lliures\'.</string>
+    <string name="generateCertSuccess">El vostre certificat s\'ha generat y s\'ha guardar com a %s!</string>
+    <string name="pushToTalkHint">(marqueu la casella de verificació per habilitar la conmutació)</string>
 </resources>
