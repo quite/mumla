@@ -165,7 +165,7 @@
     <string name="togglelocalmute">Canviar a silenciar localment</string>
     <string name="disconnectSure">Segur que desitja desconnectar-se de %s\?</string>
     <string name="error_fetching_servers">Error a l\'accedir al servidor.
-\nComproveu la connexió a Internet.</string>
+\nEsteu connectat a Internet\?</string>
     <string name="registerSelfSuccess">Sol·licitut de registre enviada</string>
     <string name="userControl">Control de l\'usuari</string>
     <string name="register">Registrar-se</string>
@@ -210,4 +210,68 @@
     <string name="hint_ptt_summary">Premeu aquesta tecla per parlar. Premeu dues vegades per conmutar-la.</string>
     <string name="overlay">Superposició</string>
     <string name="coming_soon">Aquesta funció estarà disponible aviat.</string>
+    <plurals name="notification_unread_many">
+        <item quantity="one">%d nou missatge</item>
+        <item quantity="other">%d nous missatges</item>
+    </plurals>
+    <string name="orbot_tor_failed">No s\'ha pogut connectar amb el proxy local de Tor al port SOCKS %d (SOCKS).
+\n
+\nFeu segur que l\'aplicació Orbot funciona.</string>
+    <string name="shout_target">Cridant a %s</string>
+    <string name="shout_include_subchannels">Crida als subcanals</string>
+    <string name="shout_include_linked">Crida als canals enllaçats</string>
+    <plurals name="reconnecting">
+        <item quantity="one">Reconnectant en %d segon.</item>
+        <item quantity="other">Reconnectant en %d segons.</item>
+    </plurals>
+    <plurals name="search_channel_users">
+        <item quantity="one">%d usuari</item>
+        <item quantity="other">%d usuaris</item>
+    </plurals>
+    <string name="donation_thanks">Gràcies per la donació.</string>
+    <string name="default_">Predeterminat</string>
+    <string name="orbot_not_installed">L\'apliació Orbot no està instal·lada. No s\'usa Tor.</string>
+    <string name="grant_perm_draw_over_apps">Garantiu el permís per a mostrar l\'aplicació a través d\'altres aplicacions.</string>
+    <string name="grant_perm_storage">Permeteu l\'accés a l\'emmagatzemament extern.</string>
+    <string name="grant_perm_microphone">Garantiu el permís al micròfon.</string>
+    <string name="shout_configure">Configurar destí de veu</string>
+    <string name="shout_failed">No s\'ha pogut crear el destí de veu.</string>
+    <string name="context_channel_shout">Establir destí de veu</string>
+    <string name="context_channel_unlink_all">Anul·lar tots els enllaços</string>
+    <string name="context_channel_link">Enllaç</string>
+    <string name="export_success">Certificat exportat a %s.</string>
+    <string name="error_writing_to_storage">No s\'ha pogut guardar a l\'emmagatzemament extern.</string>
+    <string name="migration_certificate_success">Certificat transferit.</string>
+    <string name="migration_certificate_begin">Iniciant transferència de certificat…</string>
+    <string name="certificate_import_success">Certificat %s importat.</string>
+    <string name="certificate_load_failed">No s\'ha pogut guardar el certificat.</string>
+    <string name="invalid_certificate">Certificat no vàlid, no s\'ha pogut carregar.</string>
+    <string name="password">Contrasenya</string>
+    <string name="decrypt_certificate">Desxifrar certificat</string>
+    <string name="certificates">Certificats</string>
+    <string name="no_certificate">Cap certificat</string>
+    <string name="change_requires_reconnect">Torneu a establir la connexió per a fer servir la nova configuració.</string>
+    <string name="attempting_reconnect">Error: %s.
+\n
+\n Proveu de tornar-vos a connectar…</string>
+    <string name="cancel_reconnect">Cancel·lar reconnexió</string>
+    <string name="invalid_username">Nom d\'usuari no vàlid</string>
+    <string name="invalid_port_range">Port no vàlid (1-65535)</string>
+    <string name="invalid_host">Host no vàlid</string>
+    <string name="certificate_info">Nom general:
+\n%1$s
+\n
+\nVàlid del:
+\n%2$s
+\n
+\nVàlid fins a:
+\n%3$s
+\n
+\nDigest (SHA-1):
+\n%4$s
+\n
+\nDigest (SHA-256):
+\n%5$s</string>
+    <string name="channel_join">Unir-se</string>
+    <string name="current_chat_target">Destí actual</string>
 </resources>
