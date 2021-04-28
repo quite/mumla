@@ -1,0 +1,1 @@
+Traduït al polonès per Kityn. Més bugs de crash corregits,

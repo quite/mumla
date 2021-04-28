@@ -1,0 +1,8 @@
+- Cercar els registres de SRV per a l'adreça del servidor. Permet adreces de servidor simples com `example.net`, en la que un registre de SRV per al domini a DNS indica
+el host del servidor i el port de connexió. Vegeu: https://wiki.mumble.info/wiki/SRV_Record.
+
+- Allan Nordhøy ha reeditat les cadenes del text en anglès.
+
+- Corregir la sol·licitud de permís per a prémer per parlar de la cantonada activa.
+
+- Eliminar l'animació d'estat de conversa que s'ha trencat de diverses maneres.

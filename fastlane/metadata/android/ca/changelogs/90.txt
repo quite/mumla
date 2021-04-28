@@ -1,0 +1,3 @@
+En aquesta nova versió tenim moltes traduccions noves de Mumla a diverses llengües. S'inclouen les traduccions completes al tailandès i finès! Gràcies a tothom -- Abidin Toumi, Alfonso Montero López, Allan Nordhøy, Carlos Pinto, Nikita Epifanov, SamiR, Torkel, WLJ, deluxghost, kityn, mv87, pjammo.
+
+La traducció es fa aqui: https://hosted.weblate.org/projects/mumla/

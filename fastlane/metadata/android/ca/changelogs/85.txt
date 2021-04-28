@@ -1,0 +1,3 @@
+- deluxghost ha traduït Mumla al xinès simplific.
+- La recuperació de la llista de servidors públics torna a funciona.
+- S'ha corregit un bug de crash relacionat amb la imatge amb data-URI.

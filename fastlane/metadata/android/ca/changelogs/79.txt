@@ -1,0 +1,1 @@
+Realitzar la cerca dels registres de SRV per a l'adreça del servidor. Permet adreces de servidor simples com `example.net`, en la que un registre de SRV per al domini a DNS indica el host del servidor i el port que s'ha de connectar. Vegeu: https://wiki.mumble.info/wiki/SRV_Record

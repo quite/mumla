@@ -1,0 +1,1 @@
+La connexió a través de Tor fent us d'Orbot deu funcionar millor, i diversos missatges de la IU indique que ara s'usa Tor. La connexió a l'adreça .onion dels Serveis Ocults també funciona; la resolució del DNS s'encarrega del proxy de Tor SOCKS.

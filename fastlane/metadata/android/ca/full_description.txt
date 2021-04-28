@@ -2,9 +2,9 @@ Un client per al sistema de xat de veu de Mumble. Allotgeu-vos o connecteu-vos a
 
 Algunes de les característiques:
 
-* Generació, importació y exportació de certificats
+* Generació, importació i exportació de certificats
 * Navegació per servidors públics
-* Transmissió activada per veu (predeterminada), o altres botons que es premen per parlar
+* Transmissió activada per veu (predeterminada), o altres botons que es premen per a parlar
 * Compatible amb cascs Bluetooth
 * Registre automàtic al servidor
 * Tokens d'accés
