@@ -1,0 +1,3 @@
+Bu bir hata düzeltmesi ve çeviri sürümüdür. Özellikle, Mumla artık tamamen Katalanca'ya çevrildi! Bir sürü Katalanca için teşekkürler Emma Farreras Compte. Ve teşekkürler abidin toumi, Allan Nordhøy, deluxghost, J. Lavoie, Matthaiks, Nikita Epifanov, Oğuz Ersen, pjammo, retiolus, salaman TK, Suleyman Bi̇lgi̇n.
+
+Çevirilere katkıda bulunmak için: https://hosted.weblate.org/projects/mumla/
