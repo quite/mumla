@@ -1,0 +1,3 @@
+此版本仅包含错误修复和翻译更新。特别是，Mumla 现已拥有完整加泰罗尼亚语翻译！感谢 Emma Farreras Compte 为加泰罗尼亚语翻译的贡献。也感谢 abidin toumi、Allan Nordhøy、deluxghost、J. Lavoie、Matthaiks、Nikita Epifanov、Oğuz Ersen、pjammo、retiolus、salaman TK 和 Suleyman Bi̇lgi̇n。
+
+您可以在这里参与翻译：https://hosted.weblate.org/projects/mumla/
