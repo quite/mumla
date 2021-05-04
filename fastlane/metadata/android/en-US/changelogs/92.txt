@@ -1,0 +1,3 @@
+This is a bugfix and translation release. In particular, Mumla is now completely translated into Catalan! Thank you Emma Farreras Compte for a lot of Catalan. And thank you abidin toumi, Allan Nordhøy, deluxghost, J. Lavoie, Matthaiks, Nikita Epifanov, Oğuz Ersen, pjammo, retiolus, salaman TK, Suleyman Bi̇lgi̇n.
+
+Translating is done here: https://hosted.weblate.org/projects/mumla/
