@@ -25,7 +25,7 @@
     <string name="comment_edit_source">Modifica sorgente</string>
     <string name="comment_view_source">Mostra sorgente</string>
     <!--Server Info Fragment-->
-    <string name="server_info_protocol">Protocollo: %s</string>
+    <string name="server_info_protocol">Protocollo %s.</string>
     <string name="server_info_version">%1$s (%2$s)</string>
     <string name="server_info_codec">Codec: %s</string>
     <!--Server matching-->
@@ -234,7 +234,7 @@
     <string name="server_list_title_public_internet">Pubblici</string>
     <string name="chat_notify_now_unmuted">%s non è muto.</string>
     <string name="chat_notify_now_muted">%s è muto.</string>
-    <string name="chat_notify_unmuted">Non Muto.</string>
+    <string name="chat_notify_unmuted">Non muto.</string>
     <string name="messageToChannel">Scrivi un messaggio al canale \"%s\"</string>
     <string name="messageToUser">Scrivi un messaggio all\'utente \"%s\"</string>
     <string name="pushToTalkHint">(spunta per attivare la modalità attiva/disattiva)</string>
