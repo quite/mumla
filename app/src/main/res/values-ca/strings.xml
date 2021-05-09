@@ -216,7 +216,7 @@
     </plurals>
     <string name="orbot_tor_failed">No s\'ha pogut connectar amb el proxy local de Tor al port SOCKS %d (SOCKS).
 \n
-\nFeu segur que l\'aplicació Orbot funciona.</string>
+\nAssegureu-vos que l\'aplicació Orbot funciona.</string>
     <string name="shout_target">Cridant a %s</string>
     <string name="shout_include_subchannels">Crida als subcanals</string>
     <string name="shout_include_linked">Crida als canals enllaçats</string>
@@ -231,9 +231,9 @@
     <string name="donation_thanks">Gràcies per la donació.</string>
     <string name="default_">Predeterminat</string>
     <string name="orbot_not_installed">L\'apliació Orbot no està instal·lada. No s\'usa Tor.</string>
-    <string name="grant_perm_draw_over_apps">Garantiu el permís per a mostrar l\'aplicació a través d\'altres aplicacions.</string>
+    <string name="grant_perm_draw_over_apps">Permeteu a l\'aplicació mostrar-se per sobre d\'altres aplicacions.</string>
     <string name="grant_perm_storage">Permeteu l\'accés a l\'emmagatzemament extern.</string>
-    <string name="grant_perm_microphone">Garantiu el permís al micròfon.</string>
+    <string name="grant_perm_microphone">Permeteu l\'accés al micròfon.</string>
     <string name="shout_configure">Configurar destí de veu</string>
     <string name="shout_failed">No s\'ha pogut crear el destí de veu.</string>
     <string name="context_channel_shout">Establir destí de veu</string>
