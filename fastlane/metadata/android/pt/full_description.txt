@@ -1,0 +1,20 @@
+Um cliente para o sistema de conversas em voz Mumble. Hospede ou conecte-se a um dos vários servidores públicos mantidos pela comunidade (veja em https://www.mumble.info). Mumla é uma versão atualizada e mantida (fork) do aplicativo Plumble.
+
+Alguns dos recursos:
+
+* Geração de certificado, importação e exportação
+* Navegação em servidores públicos
+* Transmissão por atividade de voz (padrão) ou diferente botões de Pressione-para-falar
+* Suporte a headsets Bluetooth
+* Autoregistro em servidor
+* Tokens de acesso
+* Suporte a codecs Opus, CELT e Speex
+* Reconexão automática
+* Suporte a rede Tor pelo aplicativo Orbot
+* Texto-para-voz para mensagens (ativado por padrão)
+* Temas claro e escuro
+
+Transmissão por atividade de voz atualmente funciona melhor quando usando um headset. Cancelamento de eco e redução de ruído requer melhoria.
+Configurar o limite de detecção nas opções ajuda.
+
+Mumla é software livre copleft. Saiba mais em: https://mumla-app.gitlab.io/
