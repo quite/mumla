@@ -214,25 +214,25 @@
     <string name="no_servers">กด \"Add\" จาก action bar เพื่อเพิ่มเซิฟเวอร์ก่อน</string>
     <string name="channels">แชนเนล</string>
     <string name="server_match_description">Mumla สามารถค้นหาเซิร์ฟเวอร์ที่ว่างให้คุณโดยอัตโนมัติ, ปรับแต่งตำแหน่ง, เวอร์ชัน, และเวลาในการตอบสนอง</string>
-    <string name="server_match_info">Name: %1$s
-\nHost: %2$s:%3$d
-\nUsers: %4$d / %5$d
-\nVersion: %6$s
-\nCountry: %7$s
-\nLatency: %8$d ms</string>
+    <string name="server_match_info">ชื่อ: %1$s
+\nที่อยู่: %2$s:%3$d
+\nผู้ใช้: %4$d / %5$d
+\nเวอร์ชั่: %6$s
+\nประเทศ: %7$s
+\nหน่วง: %8$d ms</string>
     <string name="server_match_expand_country">ไม่พบเซิฟเวอร์ในประเทศ. ลองค้นหาทั่วโลก\?</string>
     <string name="server_match_not_found">ไม่พบเซิฟเวอร์</string>
     <string name="server_match_found">เซิฟเวอร์ที่พบ</string>
     <string name="server_match_progress">กำลังค้นหาเซิฟเวอร์…</string>
     <string name="server_match">ค้นหาเซิฟเวอร์</string>
-    <string name="server_info_current_bandwidth">Current %.1f kbit/s</string>
-    <string name="server_info_max_bandwidth">Maximum %.1f kbit/s</string>
+    <string name="server_info_current_bandwidth">ปัจจุบัน %.1f kbit/s</string>
+    <string name="server_info_max_bandwidth">ขีดจำกัด %.1f kbit/s</string>
     <string name="server_info_codec">Codec: %s</string>
-    <string name="server_info_host">Remote host %1$s (port %2$d)</string>
+    <string name="server_info_host">โฮสต์ปลายทาง %1$s (port %2$d)</string>
     <string name="server_info_latency">%.2f ms latency</string>
     <string name="server_info_version">%1$s (%2$s)</string>
-    <string name="server_info_protocol">Protocol %s.</string>
-    <string name="audio_bandwidth">Audio bandwidth</string>
+    <string name="server_info_protocol">โปรโตคอล %s.</string>
+    <string name="audio_bandwidth">ออดิโอ แบนด์วิธ</string>
     <string name="udp_encryption_mode">เข้ารหัสด้วย 128 bit OCB-AES-128</string>
     <string name="voice_channel">แชนเนลเสียง</string>
     <string name="tcp_encryption_mode">เข้าระหัสด้วย 256 bit AES-256-SHA</string>
