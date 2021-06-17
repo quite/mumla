@@ -1,2 +1,280 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="server_info_max_bandwidth">Maximálně %.1f kbit/s</string>
+    <string name="user_menu_reset_comment">Obnovit komentář</string>
+    <plurals name="notification_unread_many">
+        <item quantity="one">%d nová zpráva</item>
+        <item quantity="few">%d nové zprávy</item>
+        <item quantity="other">%d nových zpráv</item>
+    </plurals>
+    <plurals name="reconnecting">
+        <item quantity="one">Opětovné připojení za %d sekundu.</item>
+        <item quantity="few">Opětovné připojení za %d sekundy.</item>
+        <item quantity="other">Opětovné připojení za %d sekund.</item>
+    </plurals>
+    <plurals name="search_channel_users">
+        <item quantity="one">%d uživatel</item>
+        <item quantity="few">%d uživatelé</item>
+        <item quantity="other">%d uživatelů</item>
+    </plurals>
+    <string name="donation_thanks">Děkujeme vám za váš dar.</string>
+    <string name="default_">Výchozí</string>
+    <string name="orbot_tor_failed">Nepodařilo se připojit k místnímu Tor proxy serveru na portu %d (SOCKS).
+\n
+\nZkontrolujte, zda je spuštěna aplikace Orbot.</string>
+    <string name="orbot_not_installed">Aplikace Orbot není nainstalována. Nepoužívá se Tor.</string>
+    <string name="grant_perm_draw_over_apps">Udělte prosím oprávnění k zobrazování nad ostatními aplikacemi.</string>
+    <string name="grant_perm_storage">Udělte prosím oprávnění k používání externího úložiště.</string>
+    <string name="grant_perm_microphone">Udělte prosím oprávnění na používání mikrofonu.</string>
+    <string name="shout_configure">Konfigurovat hlasový cíl</string>
+    <string name="shout_target">Křik do %s</string>
+    <string name="shout_failed">Hlasový cíl se nepodařilo vytvořit.</string>
+    <string name="shout_include_subchannels">Křičet do podkanálů</string>
+    <string name="shout_include_linked">Křičet do propojených kanálů</string>
+    <string name="context_channel_shout">Nastavit hlasový cíl</string>
+    <string name="context_channel_unlink_all">Rozpojit vše</string>
+    <string name="context_channel_link">Odkaz</string>
+    <string name="export_success">Certifikát exportován do %s.</string>
+    <string name="error_writing_to_storage">Nepodařilo se zapsat na externí úložiště.</string>
+    <string name="migration_certificate_success">Certifikát byl migrován.</string>
+    <string name="migration_certificate_begin">Zahájení migrace certifikátu…</string>
+    <string name="certificate_import_success">Importován certifikát %s.</string>
+    <string name="certificate_load_failed">Certifikát se nepodařilo uložit.</string>
+    <string name="invalid_certificate">Neplatný certifikát nelze načíst.</string>
+    <string name="password">Heslo</string>
+    <string name="decrypt_certificate">Dešifrovat certifikát</string>
+    <string name="certificates">Certifikáty</string>
+    <string name="no_certificate">Žádný certifikát</string>
+    <string name="change_requires_reconnect">Pro použití nových nastavení se znovu připojte.</string>
+    <string name="attempting_reconnect">Chyba: %s.
+\n
+\nOpětovné připojování…</string>
+    <string name="cancel_reconnect">Zrušit opětovné připojení</string>
+    <string name="invalid_username">Neplatné uživatelské jméno</string>
+    <string name="invalid_port_range">Neplatný port (1-65535)</string>
+    <string name="invalid_host">Neplatný hostitel</string>
+    <string name="certificate_info">Předmět:
+\n%1$s
+\n
+\nPlatnost od:
+\n%2$s
+\n
+\nPlatnost do:
+\n%3$s
+\n
+\nDigest (SHA-1):
+\n%4$s
+\n
+\nDigest (SHA-256):
+\n%5$s</string>
+    <string name="channel_join">Připojit</string>
+    <string name="current_chat_target">Aktuální cíl chatu</string>
+    <string name="transmit_mode">Režim vysílání</string>
+    <string name="cancelled">Zrušeno</string>
+    <string name="trust_cleared">Databáze důvěryhodných údajů vymazána</string>
+    <string name="trust_add_failed">Nepodařilo se přidat certifikát do úložiště důvěryhodných certifikátů.</string>
+    <string name="trust_added">Certifikát přidán do úložiště důvěryhodných certifikátů</string>
+    <string name="allow">Povolit</string>
+    <string name="untrusted_certificate">Nedůvěryhodný certifikát</string>
+    <string name="channel_menu_view_description">Zobrazit popis</string>
+    <string name="send_message">Odeslat zprávu</string>
+    <string name="invalid_password">Nesprávné heslo.</string>
+    <string name="certificate_not_valid">Nelze načíst certifikát %s.</string>
+    <string name="generate">Vygenerovat</string>
+    <string name="first_run_generate_certificate">Generování certifikátu se důrazně doporučuje a je nezbytné pro připojení k některým serverům.</string>
+    <string name="first_run_generate_certificate_title">Vítejte v Mumla.</string>
+    <string name="mumble_url_parse_failed">Adresa URL služby Mumble není platná.</string>
+    <string name="tts_failed">Nelze spustit převodník textu na řeč</string>
+    <string name="channel_add">Přidat kanál</string>
+    <string name="channel_edit">Upravit kanál</string>
+    <string name="position">Pozice</string>
+    <string name="temporary">Dočasný</string>
+    <string name="expand">Rozbalit</string>
+    <string name="confirm">Potvrdit</string>
+    <string name="confirm_reset_comment">Jste si jisti, že chcete resetovat komentář uživatele %s\?</string>
+    <string name="reconnect_dialog_message">Jste již připojeni k serveru. Chcete se místo toho připojit k tomuto serveru\?</string>
+    <string name="reconnect">Znovu se připojit</string>
+    <string name="action_settings">Nastavení</string>
+    <string name="hint_switching_summary">Mezi zobrazením chatu a kanálu můžete přepínat pomocí tlačítek vlevo nahoře nebo přejetím prstem.</string>
+    <string name="hint_switching">Přepínání mezi zobrazeními</string>
+    <string name="hint_server_add_summary">Přidejte oblíbený server stisknutím tlačítka „Přidat“ na horním panelu.</string>
+    <string name="hint_server_add">Vítejte v Mumla</string>
+    <string name="hint_ptt_summary">Jednoduše stiskněte toto tlačítko a můžete mluvit. Dvojitým klepnutím jej přepnete.</string>
+    <string name="hint_ptt">Mluvení při stisku klávesy</string>
+    <string name="hint_reason">Důvod</string>
+    <string name="overlay">Překryv</string>
+    <string name="tapToReconnect">Klepnutím se znovu připojíte</string>
+    <string name="coming_soon">Funkce bude brzy k dispozici.</string>
+    <string name="error_fetching_servers">Nelze načíst servery.
+\nJste připojeni k internetu\?</string>
+    <string name="registerSelfSuccess">Odeslána žádost o registraci</string>
+    <string name="userControl">Uživatelské ovládání</string>
+    <string name="register">Registrovat sám sebe</string>
+    <string name="information">Informace</string>
+    <string name="fetchingServers">Počkejte prosím, načítání seznamu veřejných serverů…</string>
+    <string name="fullscreen_channel">Kanál</string>
+    <string name="fullscreen_chat">Chat</string>
+    <string name="fullscreen">Celá obrazovka</string>
+    <string name="preferences_immutable">Toto nastavení nelze změnit, když jste připojeni k serveru.</string>
+    <string name="search_country">Země</string>
+    <string name="search_name">Název</string>
+    <string name="retrieving">Získávání…</string>
+    <string name="close">Zavřít</string>
+    <string name="comment">Komentář</string>
+    <string name="status_notify_muted">Ztlumen.</string>
+    <string name="status_notify_muted_and_deafened">Ztlumen a ohlušen.</string>
+    <string name="noServerInfo">Ping pro získání informací</string>
+    <string name="shareMessage">Připojte se k tomuto Mumble serveru pomocí Mumla. %s</string>
+    <string name="description">Popis</string>
+    <string name="share">Sdílet</string>
+    <string name="country">Země</string>
+    <string name="name">Název</string>
+    <string name="sort">Seřadit</string>
+    <string name="sortBy">Seřadit podle…</string>
+    <string name="ping">Odezva</string>
+    <string name="server_list_title_public_internet">Veřejný Internet</string>
+    <string name="server_list_title_lan">LAN</string>
+    <string name="server_list_title_favorite">Oblíbené</string>
+    <string name="unknown">Neznámé</string>
+    <string name="chat_notify_disconnected">%s se odpojil.</string>
+    <string name="chat_notify_connected">%s se připojil.</string>
+    <string name="chat_notify_now_unmuted_undeafened">%s zrušil ohlušení a je nyní zesílen.</string>
+    <string name="chat_notify_now_unmuted">%s je nyní zesílen.</string>
+    <string name="chat_notify_now_muted">%s je nyní zeslaben.</string>
+    <string name="chat_notify_now_muted_deafened">%s je nyní zeslaben a ohlušen.</string>
+    <string name="chat_notify_unmuted_undeafened">Zrušeno ohlušení a zesílen.</string>
+    <string name="chat_notify_unmuted">Zesílen.</string>
+    <string name="chat_notify_muted">Ztlumen.</string>
+    <string name="chat_notify_muted_deafened">Ztlumen a ohlušen.</string>
+    <string name="chat_notify_moved">%1$s přesunut z %2$s uživatelem %3$s.</string>
+    <string name="server">Server</string>
+    <string name="user">Uživatel</string>
+    <string name="channel">Kanál</string>
+    <string name="resume">Pokračovat</string>
+    <string name="lostConnection">Ztráta spojení se serverem.</string>
+    <string name="mumlaDisconnected">Mumla odpojen</string>
+    <string name="mumlaConnecting">Mumla se připojuje…</string>
+    <string name="mumlaConnected">Mumla připojen</string>
+    <string name="connected">Připojeno</string>
+    <string name="clearChat">Vyčistit chat</string>
+    <string name="offline">Offline</string>
+    <string name="online">Online</string>
+    <string name="messageToChannel">Napište zprávu do kanálu „%s“</string>
+    <string name="messageToUser">Napište zprávu uživateli „%s“</string>
+    <string name="retry">Zkusit znovu</string>
+    <string name="delete">Odstranit</string>
+    <string name="remove">Odebrat</string>
+    <string name="edit">Upravit</string>
+    <string name="connectToServer">Připojit k serveru</string>
+    <string name="connect">Připojit</string>
+    <string name="quickConnect">Rychlé připojení</string>
+    <string name="recordingVolume">Zvýšení hlasitosti nahrávání</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="undocumentedWakeLock">Zámek probuzení senzorem přiblížení není v zařízení podporován. Změňte režim hovoru na hlasitý odposlech.</string>
+    <string name="searchHint">Prohledat kanály a uživatele</string>
+    <string name="search">Hledat</string>
+    <string name="generateCertProgress">Generování certifikátu…</string>
+    <string name="generateCertFailure">Certifikát se nepodařilo vygenerovat.</string>
+    <string name="generateCertSuccess">Váš certifikát byl nastaven a uložen jako %s!</string>
+    <string name="generateCert">Generovat certifikát</string>
+    <string name="messageReceived">Nová zpráva</string>
+    <string name="pushToTalkHint">(zaškrtnutím políčka povolíte přepínání)</string>
+    <string name="accessAdd">Přidat přístupový token</string>
+    <string name="accessTokens">Přístupové tokeny</string>
+    <string name="noFavorites">Žádné oblíbené kanály.</string>
+    <string name="favoriteAdded">Přidáno do oblíbených.</string>
+    <string name="favoriteRemoved">Odstraněno z oblíbených.</string>
+    <string name="favorites">Oblíbené</string>
+    <string name="viewFavorites">Zobrazit oblíbené</string>
+    <string name="removeFavorite">Odstranit z oblíbených</string>
+    <string name="addFavorite">Přidat do oblíbených</string>
+    <string name="externalStorageUnavailable">Externí úložiště není dostupné, certifikát nelze načíst</string>
+    <string name="reset_key">Tlačítko pro reset</string>
+    <string name="loading">Načítaní…</string>
+    <string name="kicked_message">Byli jste vyhozeni ze serveru.
+\nDůvod: %s</string>
+    <string name="disconnected">Odpojeno</string>
+    <string name="confirm_delete_channel">Jste si jisti, že tento kanál chcete odstranit\?</string>
+    <string name="confirm_delete_server">Jste si jisti, že tento server chcete odstranit\?</string>
+    <string name="connectionRefused">Přístup odepřen</string>
+    <string name="perm_denied">Přístup zamítnut.</string>
+    <string name="chat">Chat</string>
+    <string name="togglelocalmute">Zapnout/vypnout místní ztlumení</string>
+    <string name="preferences">Předvolby</string>
+    <string name="add">Přidat</string>
+    <string name="save">Uložit</string>
+    <string name="disconnectSure">Jste si jisti, že se chcete odpojit od %s\?</string>
+    <string name="disconnect">Odpojit</string>
+    <string name="deafen">Ohlušit</string>
+    <string name="mute">Ztlumit</string>
+    <string name="ptt">Mluvení při stisku tlačítka</string>
+    <string name="menu_settings">Nastavení</string>
+    <string name="fragment_channel">Kanál</string>
+    <string name="fragment_chat">Chat</string>
+    <string name="connecting_to_server">Připojování na %s…</string>
+    <string name="connecting">Připojování</string>
+    <string name="server_label">Popisek</string>
+    <string name="server_host">Adresa</string>
+    <string name="server_port">Port</string>
+    <string name="server_username">Uživatelské jméno</string>
+    <string name="server_password">Heslo</string>
+    <string name="server_add">Přidat server</string>
+    <string name="no_servers">Stiskněte „Přidat“ v horním panelu pro přidání serveru.</string>
+    <string name="channels">Kanály</string>
+    <string name="server_match_description">Mumla pro vás automaticky může najít prázdný server s optimální lokací, verzí a latencí.</string>
+    <string name="server_match_info">Jméno: %1$s
+\nHost: %2$s:%3$d
+\nUživatelé: %4$d / %5$d
+\nVerze: %6$s
+\nZemě: %7$s
+\nLatence: %8$d ms</string>
+    <string name="server_match_expand_country">Nebylo možné najít žádné optimální servery ve vaší zemi. Hledat celosvětově\?</string>
+    <string name="server_match_not_found">Server nenalezen</string>
+    <string name="server_match_found">Server nalezen</string>
+    <string name="server_match_progress">Vyhledávání serveru…</string>
+    <string name="server_match">Najít server</string>
+    <string name="server_info_current_bandwidth">Aktuální %.1f kbit/s</string>
+    <string name="server_info_codec">Kodek: %s</string>
+    <string name="server_info_host">Vzdálený host %1$s (port %2$d)</string>
+    <string name="server_info_latency">latence %.2f ms</string>
+    <string name="server_info_version">%1$s (%2$s)</string>
+    <string name="server_info_protocol">Protokol %s.</string>
+    <string name="audio_bandwidth">Propustnost audia</string>
+    <string name="udp_encryption_mode">Zašifrováno 128 bitovým OCB-AES-128</string>
+    <string name="voice_channel">Hlasový kanál</string>
+    <string name="tcp_encryption_mode">Zašifrováno 256 bitovým AES-256-SHA</string>
+    <string name="control_channel">Upravit kanál</string>
+    <string name="comment_view_source">Zobrazit zdroj</string>
+    <string name="comment_edit_source">Editovat zdroj</string>
+    <string name="comment_view">Zobrazit</string>
+    <string name="channel_menu_pin">Připnout</string>
+    <string name="user_menu_registered">Zaregistrován</string>
+    <string name="user_menu_register">Zaregistrovat</string>
+    <string name="user_menu_information">Informace</string>
+    <string name="user_menu_send_message">Poslat zprávu</string>
+    <string name="user_menu_view_comment">Zobrazit komentář</string>
+    <string name="user_menu_change_comment">Změnit komentář</string>
+    <string name="drawer_lan">LAN</string>
+    <string name="drawer_favorites">Oblíbené</string>
+    <string name="drawer_header_servers">Servery</string>
+    <string name="drawer_pinned">Připnuté kanály</string>
+    <string name="drawer_tokens">Přístupové tokeny</string>
+    <string name="drawer_server">Všechny kanály</string>
+    <string name="drawer_not_connected">Nepřipojeno</string>
+    <string name="drawer_close">Zavřít nabídku</string>
+    <string name="drawer_open">Otevřít nabídku</string>
+    <string name="user_menu_ignore_messages">Ignorovat zprávy</string>
+    <string name="user_menu_local_mute">Místní ztlumení</string>
+    <string name="user_menu_priority_speaker">Přednostní řečník</string>
+    <string name="user_menu_move">Přesunout</string>
+    <string name="user_menu_deafen">Ohlušit</string>
+    <string name="user_menu_mute">Ztlumit</string>
+    <string name="user_menu_ban">Zabanovat</string>
+    <string name="user_menu_kick">Vyhodit</string>
+    <string name="user_menu_admin">Admin</string>
+    <string name="chat_message_tts_short_link">(Odkaz na %1$s)</string>
+    <string name="chat_message_to">%1$s → %2$s</string>
+    <string name="chat_message_channel">(Kanál)</string>
+    <string name="chat_message_tree">(Strom)</string>
+    <string name="drawer_public">Veřejné servery</string>
+</resources>
