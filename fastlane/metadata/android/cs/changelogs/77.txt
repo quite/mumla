@@ -1,0 +1,1 @@
+Připojení přes Tor pomocí Orbotu by mělo fungovat lépe a několik zpráv v uživatelském rozhraní nyní ukazuje, že se používá Tor. Připojení k Hidden Services .onion adrese také funguje; překládání DNS je ponecháno na proxy serveru Tor SOCKS.

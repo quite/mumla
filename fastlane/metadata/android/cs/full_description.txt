@@ -1,0 +1,20 @@
+Klient pro systém hlasového chatu Mumble. Hostujte nebo se připojte k jednomu z mnoha veřejných serverů provozovaných komunitou (viz https://www.mumble.info). Mumla je aktualizovaná a udržovaná verze (fork) aplikace Plumble.
+
+Některé z funkcí:
+
+* Generování, import a export certifikátů
+* Procházení veřejných serverů
+* Přenos aktivovaný hlasem (výchozí nastavení) nebo různá nastavení mluvení při stisku tlačítka.
+* Podpora Bluetooth headsetů
+* Samoobslužná registrace na serveru
+* Přístupové tokeny
+* Podpora kodeků Opus, CELT a Speex
+* Automatické opětovné připojení
+* Podpora sítě Tor prostřednictvím aplikace Orbot
+* Převod textu na řeč pro zprávy (ve výchozím nastavení zapnuto)
+* Světlé a tmavé téma
+
+Hlasem aktivovaný přenos v současné době funguje nejlépe při použití headsetu či sluchátek. Na potlačení ozvěny a redukci šumu je třeba zapracovat.
+Úprava prahu detekce v nastavení může pomoci.
+
+Mumla je svobodný software chráněný copyleftem. Více informací najdete na adrese: https://mumla-app.gitlab.io/

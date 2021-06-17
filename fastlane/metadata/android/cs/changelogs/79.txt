@@ -1,0 +1,1 @@
+Implementace vyhledávání záznamů SRV pro adresu serveru. Umožňuje jednoduché adresy serverů, jako je „ukazka.net“, kde záznam SRV pro doménu v DNS označuje hostitele serveru a port, ke kterému se lze připojit. Viz: https://wiki.mumble.info/wiki/SRV_Record
