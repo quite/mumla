@@ -1,9 +1,17 @@
-- Primo rilascio su Google Play Store.
+- Primo rilascio su Play Store.
+
 - Correzioni e migliormenti, soprattutto per richieste permessi.
+
 - Migliorata connessione tramite Tor (Orbot) e supporto Hidden Services (.onion).
+
 - Supporto registrazione DNS SRV per server address lookup.
+
 - Possibilità di visualizzare e copiare digest SHA-256 del certificato.
+
 - Migliorate stringhe sorgente inglesi (da Allan Nordhøy).
+
 - Traduzione russa (da R4SAS).
+
 - Traduzione cinese semplificato (da deluxghost).
+
 - Lista server pubblici funzionante.
