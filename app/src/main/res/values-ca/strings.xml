@@ -51,7 +51,7 @@
     <string name="viewFavorites">Mostra preferits</string>
     <string name="removeFavorite">Esborra preferit</string>
     <string name="addFavorite">Afegir preferit</string>
-    <string name="reset_key">Reinicia clau</string>
+    <string name="reset_key">Reinicia tecla</string>
     <string name="loading">Carregant…</string>
     <string name="disconnected">Desconnectat</string>
     <string name="connectionRefused">Connexió refusada</string>
