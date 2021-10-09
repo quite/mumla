@@ -4,9 +4,9 @@
     <string name="comment_view_source">اعرض المصدر</string>
     <string name="comment_edit_source">حرر المصدر</string>
     <string name="comment_view">اعرض</string>
-    <string name="channel_menu_pin">ثبت</string>
+    <string name="channel_menu_pin">ثبّت</string>
     <string name="user_menu_registered">مسجل</string>
-    <string name="user_menu_register">سجل</string>
+    <string name="user_menu_register">سجِّل</string>
     <string name="user_menu_information">معلومات</string>
     <string name="user_menu_send_message">أرسل رسالة</string>
     <string name="user_menu_reset_comment">أعد تعيين التعليق</string>
@@ -14,9 +14,9 @@
     <string name="user_menu_change_comment">غيّر التعليق</string>
     <string name="user_menu_ignore_messages">تجاهل الرسائل</string>
     <string name="user_menu_move">أنقل</string>
-    <string name="user_menu_mute">أكتم</string>
-    <string name="user_menu_ban">أحظر</string>
-    <string name="user_menu_kick">أطرد</string>
+    <string name="user_menu_mute">اكتم</string>
+    <string name="user_menu_ban">احظر</string>
+    <string name="user_menu_kick">اطرد</string>
     <string name="user_menu_admin">مدير</string>
     <string name="chat_message_to">%1$s ← %2$s</string>
     <string name="chat_message_channel">(قناة)</string>
@@ -79,9 +79,149 @@
     <string name="favorites">المفضّلة</string>
     <string name="viewFavorites">اعرض المفضلة</string>
     <string name="removeFavorite">أزل من المفضلة</string>
-    <string name="addFavorite">أضفها للمفضلة</string>
+    <string name="addFavorite">أضفه للمفضلة</string>
     <string name="externalStorageUnavailable">وحدة التخزين الخارجية غير متوفرة ، لا يمكن تحميل الشهادة</string>
     <string name="reset_key">أعد تعيين المفاتيح</string>
     <string name="server_match_expand_country">لم يُعثر على خادم مثالي في بلدك. أتريد البحث عالميا؟</string>
     <string name="chat_message_tts_short_link">(رابط لـ %1$s)</string>
+    <string name="drawer_lan">الشبكة المحلية</string>
+    <string name="user_menu_priority_speaker">المتحدث ذو الأولوية</string>
+    <string name="server_info_host">الخادم البعيد %1$s (المنفذ %2$d)</string>
+    <string name="control_channel">قناة التحكم</string>
+    <string name="tcp_encryption_mode">مشفر بـ AES-256-SHA 256 بت</string>
+    <string name="udp_encryption_mode">مشفر بـ OCB-AES-128 128 بت</string>
+    <string name="audio_bandwidth">سعة نطاق الصوت</string>
+    <string name="deafen">أصم</string>
+    <string name="togglelocalmute">بدّل حالة الكتم المحلي</string>
+    <string name="favoriteRemoved">أُزيل من المفضلة.</string>
+    <string name="favoriteAdded">أُضيف للمفضلة.</string>
+    <string name="noFavorites">لا قنوات مفضلة.</string>
+    <string name="accessTokens">رموز الوصول</string>
+    <string name="accessAdd">أضف رمز وصول</string>
+    <string name="messageReceived">رسالة جديدة</string>
+    <string name="generateCert">ولّد شهادة</string>
+    <string name="generateCertSuccess">عُينة الشهادة وحُفظت كـ %s!</string>
+    <string name="generateCertFailure">تعذر توليد الشهادة.</string>
+    <string name="generateCertProgress">يولد الشهادة…</string>
+    <string name="search">ابحث</string>
+    <string name="searchHint">ابحث عن قنوات أو مستخدمين</string>
+    <string name="quickConnect">الاتصال السريع</string>
+    <string name="edit">عدّل</string>
+    <string name="retry">أعد المحاولة</string>
+    <string name="messageToUser">اكتب رسالة لـ \'%s\'</string>
+    <string name="messageToChannel">اكتب رسال في \'%s\'</string>
+    <string name="online">متصل</string>
+    <string name="offline">غير متصل</string>
+    <string name="clearChat">امسح المحادثة</string>
+    <string name="resume">استأنف</string>
+    <string name="channel">قناة</string>
+    <string name="user">مستخدم</string>
+    <string name="server">خادم</string>
+    <string name="chat_notify_moved">%3$s نَقل %1$s من %2$s</string>
+    <string name="chat_notify_muted_deafened">كُتم وأُصمّ</string>
+    <string name="chat_notify_muted">كُتم.</string>
+    <string name="chat_notify_unmuted">فُك كتمه.</string>
+    <string name="chat_notify_connected">%s متصل.</string>
+    <string name="chat_notify_disconnected">%s غير متصل.</string>
+    <string name="unknown">مجهول</string>
+    <string name="server_list_title_favorite">المفضلة</string>
+    <string name="name">الاسم</string>
+    <string name="country">البلد</string>
+    <string name="share">شارك</string>
+    <string name="description">الوصف</string>
+    <string name="sort">افرز</string>
+    <string name="sortBy">افرز حسب…</string>
+    <string name="preferences_immutable">لا يمكن تغيير هذا الإعداد أثناء الاتصال.</string>
+    <string name="fullscreen">ملء الشاشة</string>
+    <string name="fullscreen_chat">محادثة</string>
+    <string name="fullscreen_channel">قناة</string>
+    <string name="fetchingServers">يرجى الانتظار، يجلب قائمة الوادم العمومية…</string>
+    <string name="information">المعلومات</string>
+    <string name="userControl">التحكم بالمستخدم</string>
+    <string name="registerSelfSuccess">أُرسل طلب التسجيل</string>
+    <string name="error_fetching_servers">تعذر جلب الخوادم.
+\nهل أنت متصل؟</string>
+    <string name="coming_soon">ميزة قادمة قريبًا.</string>
+    <string name="tapToReconnect">أنقر لإعادة الاتصال</string>
+    <string name="hint_reason">السبب</string>
+    <string name="hint_switching">التبديل بين طرق العرض</string>
+    <string name="action_settings">الإعدادات</string>
+    <string name="reconnect">أعد الاتصال</string>
+    <string name="hint_server_add">مرحبًا في موملا</string>
+    <string name="hint_server_add_summary">أضف خادمًا للمفضلة بضغط زر \'أضف\' من شريط الإجراءات.</string>
+    <string name="reconnect_dialog_message">أنت متصل بخادم. أتريد الاتصال بهذا الخادم عوضًا عنه؟</string>
+    <string name="confirm">أكّد</string>
+    <string name="expand">وسّع</string>
+    <string name="temporary">مؤقت</string>
+    <string name="channel_edit">عدّل القناة</string>
+    <string name="first_run_generate_certificate_title">مرحبًا غي موملا.</string>
+    <string name="first_run_generate_certificate">يُنصح بتوليد شهادة، فهي إلزامية في بعض الخوادم.</string>
+    <string name="generate">ولّد</string>
+    <string name="certificate_not_valid">تعذر توليد الشهادة %s.</string>
+    <string name="invalid_password">كلمة السر خاطئة.</string>
+    <string name="send_message">أرسل رسالة</string>
+    <string name="channel_menu_view_description">اعرض الوصف</string>
+    <string name="untrusted_certificate">شهادة غير موثوقة</string>
+    <string name="allow">اسمح</string>
+    <string name="cancelled">أُلغي</string>
+    <string name="channel_join">انضم</string>
+    <string name="certificate_info">الموضوع:
+\n%1$s
+\n
+\nصالح من:
+\n%2$s
+\n
+\nصالح الى:
+\n%3$s
+\n
+\nحصيلة (SHA-1):
+\n%4$s
+\n
+\nحصيلة (SHA-256):
+\n%5$s</string>
+    <string name="invalid_host">مستضيف غير صالح</string>
+    <string name="invalid_port_range">منفذ غير صالح (1-65535)</string>
+    <string name="invalid_username">اسم المسخدم غير صالح</string>
+    <string name="cancel_reconnect">ألغ إعادة الاتصال</string>
+    <string name="attempting_reconnect">خطأ: %s
+\n
+\nيعيد الاتصال…</string>
+    <string name="change_requires_reconnect">أعد الاتصال لتطبيق الاعدادات الجديدة.</string>
+    <string name="no_certificate">بدون شهادة</string>
+    <string name="certificates">الشهادات</string>
+    <string name="decrypt_certificate">فك تشفير الشهادة</string>
+    <string name="password">كلمة السر</string>
+    <string name="invalid_certificate">شهادة غير صالة، تعذر التحميل.</string>
+    <string name="context_channel_link">اربط</string>
+    <string name="context_channel_unlink_all">فك الربط</string>
+    <string name="default_">الافتراضي</string>
+    <string name="donation_thanks">شكرًا على التبرع.</string>
+    <plurals name="search_channel_users">
+        <item quantity="zero">لا مستخدمين</item>
+        <item quantity="one">مستخدم واحد</item>
+        <item quantity="two">مستخدمان</item>
+        <item quantity="few">%d مستخدمين</item>
+        <item quantity="many">%d مستخدمًا</item>
+        <item quantity="other">%d مستخدم</item>
+    </plurals>
+    <string name="mumlaConnected">موملا متصلة</string>
+    <string name="connect">اتصل</string>
+    <string name="retrieving">يجلب…</string>
+    <string name="search_name">الاسم</string>
+    <string name="bluetooth">بلوتوث</string>
+    <string name="connectToServer">اتصل بخادم</string>
+    <string name="remove">أزل</string>
+    <string name="delete">احذف</string>
+    <string name="connected">متصل</string>
+    <string name="mumlaConnecting">موملا يتصل…</string>
+    <string name="mumlaDisconnected">موملا غير متصل</string>
+    <string name="lostConnection">فُقد الاتصال بالخادم.</string>
+    <string name="server_list_title_lan">الشبكة المحلية</string>
+    <string name="status_notify_muted">مكتوم.</string>
+    <string name="comment">علّق</string>
+    <string name="status_notify_muted_and_deafened">مكتوم وأصم.</string>
+    <string name="close">أغلق</string>
+    <string name="search_country">البلد</string>
+    <string name="channel_add">أضف قناة</string>
+    <string name="tts_failed">تعذر بدأ TTS</string>
 </resources>
