@@ -224,4 +224,9 @@
     <string name="search_country">البلد</string>
     <string name="channel_add">أضف قناة</string>
     <string name="tts_failed">تعذر بدأ TTS</string>
+    <string name="user_menu_deafen">أصم</string>
+    <string name="pushToTalkHint">(أشِّر مربع الاختيار لتمكين التبديل)</string>
+    <string name="chat_notify_now_muted">%s مكتوم.</string>
+    <string name="chat_notify_now_unmuted">%s غير مكتوم.</string>
+    <string name="server_list_title_public_internet">الإنترنت العمومي</string>
 </resources>
