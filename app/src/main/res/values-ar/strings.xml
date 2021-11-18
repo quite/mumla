@@ -25,7 +25,7 @@
     <string name="drawer_favorites">المفضلة</string>
     <string name="drawer_header_servers">الخوادم</string>
     <string name="drawer_pinned">القنوات المثبتة</string>
-    <string name="drawer_tokens">رمز المصادقة</string>
+    <string name="drawer_tokens">رمز الوصول</string>
     <string name="drawer_server">كل القنوات</string>
     <string name="drawer_not_connected">لست متصلا</string>
     <string name="drawer_close">أغلق الدرج</string>
