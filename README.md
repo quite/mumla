@@ -31,6 +31,20 @@ but currently isn't.
 
     ./gradlew assembleDebug
 
+### Notes
+
+According to https://developer.android.com/studio/releases/gradle-plugin
+default NDK for Android Gradle Plugin 7.x is 21.4.7075529. It should be
+installed automatically (by Android Studio and/or the plugin right), but for me
+it wasn't.
+
+I had to Bring up SDK Manager in Android Studio.
+- Click SDK Tools tab.
+- Check "Show Package Details"
+- In the list view, expand "NDK (Side by side)"
+- Check 21.4.7075529
+- Click OK
+
 ## License
 
 Mumla's [LICENSE](LICENSE) is GNU GPL v3.
