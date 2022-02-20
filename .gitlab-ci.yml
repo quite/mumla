@@ -1,4 +1,4 @@
-image: quite/android-sdk-ndk:latest
+image: quite/android-sdk-ndk:4
 
 variables:
   # get those pesky submodules
