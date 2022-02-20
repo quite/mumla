@@ -17,25 +17,33 @@
 
 package se.lublin.mumla.preference;
 
+import static android.os.Build.VERSION.SDK_INT;
+
 import android.Manifest;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
 import android.widget.Toast;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts.CreateDocument;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.documentfile.provider.DocumentFile;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.util.List;
 
 import se.lublin.mumla.Constants;
@@ -56,8 +64,10 @@ public class CertificateExportActivity extends AppCompatActivity implements Dial
     private MumlaDatabase mDatabase;
     private List<DatabaseCertificate> mCertificates;
 
+    private final ActivityResultLauncher<String> documentCreator =
+            registerForActivityResult(new CreateDocument(), this::onDocumentCreated);
     private static final int PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE = 2;
-    private DatabaseCertificate mCertificatePendingPerm = null;
+    private DatabaseCertificate mCertificatePending = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,26 +101,46 @@ public class CertificateExportActivity extends AppCompatActivity implements Dial
     @Override
     public void onClick(DialogInterface dialog, int which) {
         DatabaseCertificate certificate = mCertificates.get(which);
-        saveCertificate(certificate);
+        if (SDK_INT >= Build.VERSION_CODES.R) {
+            // TODO Should always use this method?
+            mCertificatePending = certificate;
+            documentCreator.launch(certificate.getName());
+        } else {
+            saveCertificateClassic(certificate);
+        }
     }
 
-    private void saveCertificate(DatabaseCertificate certificate) {
+    private void onDocumentCreated(Uri uri) {
+        if (uri != null && mCertificatePending != null) {
+            try {
+                OutputStream os = getContentResolver().openOutputStream(uri);
+                DocumentFile df = DocumentFile.fromSingleUri(this, uri);
+                writeCertificate(os, mCertificatePending, df != null ? df.getName() : "<unknown>");
+            } catch (FileNotFoundException e) {
+                showErrorDialog(R.string.externalStorageUnavailable);
+                Log.w(Constants.TAG, "FileNotFound on output file picked by user?!");
+            }
+        } else if (mCertificatePending == null) {
+            Log.w(Constants.TAG, "No pending certificate after user picked output file");
+        }
+        finish();
+    }
+
+    private void saveCertificateClassic(DatabaseCertificate certificate) {
         if (ContextCompat.checkSelfPermission(CertificateExportActivity.this,
                 Manifest.permission.WRITE_EXTERNAL_STORAGE)
                 != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(CertificateExportActivity.this,
                     new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
                     PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE);
-            mCertificatePendingPerm = certificate;
+            mCertificatePending = certificate;
             return;
         }
 
-        byte[] data = mDatabase.getCertificateData(certificate.getId());
         if (!Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
             showErrorDialog(R.string.externalStorageUnavailable);
             return;
         }
-
         File storageDirectory = Environment.getExternalStorageDirectory();
         File mumlaDirectory = new File(storageDirectory, EXTERNAL_STORAGE_DIR);
         if (!mumlaDirectory.exists() && !mumlaDirectory.mkdir()) {
@@ -118,20 +148,15 @@ public class CertificateExportActivity extends AppCompatActivity implements Dial
             return;
         }
         File outputFile = new File(mumlaDirectory, certificate.getName());
+        FileOutputStream fos;
         try {
-            FileOutputStream fos = new FileOutputStream(outputFile);
-            BufferedOutputStream bos = new BufferedOutputStream(fos);
-            bos.write(data);
-            bos.close();
-
-            Toast.makeText(this, getString(R.string.export_success, outputFile.getAbsolutePath()), Toast.LENGTH_LONG).show();
-            finish();
+            fos = new FileOutputStream(outputFile);
         } catch (FileNotFoundException e) {
             showErrorDialog(R.string.externalStorageUnavailable);
-        } catch (IOException e) {
-            e.printStackTrace();
-            showErrorDialog(R.string.error_writing_to_storage);
+            return;
         }
+        writeCertificate(fos, certificate, outputFile.getAbsolutePath());
+        finish();
     }
 
     @Override
@@ -140,8 +165,8 @@ public class CertificateExportActivity extends AppCompatActivity implements Dial
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE) {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                if (mCertificatePendingPerm != null) {
-                    saveCertificate(mCertificatePendingPerm);
+                if (mCertificatePending != null) {
+                    saveCertificateClassic(mCertificatePending);
                 } else {
                     Log.w(Constants.TAG, "No pending certificate after permission was granted");
                 }
@@ -149,7 +174,20 @@ public class CertificateExportActivity extends AppCompatActivity implements Dial
                 Toast.makeText(CertificateExportActivity.this, getString(R.string.grant_perm_storage),
                         Toast.LENGTH_LONG).show();
             }
-            mCertificatePendingPerm = null;
+            mCertificatePending = null;
+        }
+    }
+
+    private void writeCertificate(OutputStream fos, DatabaseCertificate cert, String path) {
+        byte[] data = mDatabase.getCertificateData(cert.getId());
+        try {
+            BufferedOutputStream bos = new BufferedOutputStream(fos);
+            bos.write(data);
+            bos.close();
+            Toast.makeText(this, getString(R.string.export_success, path), Toast.LENGTH_LONG).show();
+        } catch (IOException e) {
+            e.printStackTrace();
+            showErrorDialog(R.string.error_writing_to_storage);
         }
     }
 

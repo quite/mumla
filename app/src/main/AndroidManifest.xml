@@ -17,7 +17,7 @@
   -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     android:installLocation="auto"
-    package="se.lublin.mumla" >
+    package="se.lublin.mumla">
 
     <uses-feature
         android:name="android.hardware.microphone"
@@ -26,7 +26,9 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -45,13 +47,13 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/Theme.Mumla"
-        android:requestLegacyExternalStorage="true" >
-        <!-- TODO ^^^ fix, on sdk 30, no more requestlegacyexternalstorage ! -->
+        android:requestLegacyExternalStorage="true">
+        <!-- requestLegacyExternalStorage still true: we keep using old code if Android < 30 -->
 
         <activity android:name=".wizard.WizardActivity" />
         <activity
             android:name=".preference.Preferences"
-            android:parentActivityName=".app.MumlaActivity" >
+            android:parentActivityName=".app.MumlaActivity">
             <intent-filter>
                 <action android:name="se.lublin.mumla.app.PREFS_GENERAL" />
 
