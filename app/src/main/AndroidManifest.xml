@@ -41,6 +41,7 @@
         android:label="@string/app_name"
         android:theme="@style/Theme.Mumla"
         android:requestLegacyExternalStorage="true" >
+        <!-- TODO ^^^ fix, on sdk 30, no more requestlegacyexternalstorage ! -->
 
         <activity android:name=".wizard.WizardActivity" />
         <activity
