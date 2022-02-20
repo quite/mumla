@@ -24,6 +24,8 @@ stages:
 assembleDebug:
   stage: build
   script:
+    - printf  >local.properties 'sdk.dir=/sdk\n'
+    - printf >>local.properties 'ndk.dir=/sdk/ndk-bundle\n'
     - pushd libraries/humla/libs/humla-spongycastle
     - ../../gradlew jar
     - popd
