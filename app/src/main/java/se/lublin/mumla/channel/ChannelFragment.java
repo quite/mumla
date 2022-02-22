@@ -226,16 +226,16 @@ public class ChannelFragment extends HumlaServiceFragment implements SharedPrefe
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         Settings settings = Settings.getInstance(getActivity());
-        switch (item.getItemId()) {
-            case R.id.menu_input_voice:
-                settings.setInputMethod(Settings.ARRAY_INPUT_METHOD_VOICE);
-                return true;
-            case R.id.menu_input_ptt:
-                settings.setInputMethod(Settings.ARRAY_INPUT_METHOD_PTT);
-                return true;
-            case R.id.menu_input_continuous:
-                settings.setInputMethod(Settings.ARRAY_INPUT_METHOD_CONTINUOUS);
-                return true;
+        int itemId = item.getItemId();
+        if (itemId == R.id.menu_input_voice) {
+            settings.setInputMethod(Settings.ARRAY_INPUT_METHOD_VOICE);
+            return true;
+        } else if (itemId == R.id.menu_input_ptt) {
+            settings.setInputMethod(Settings.ARRAY_INPUT_METHOD_PTT);
+            return true;
+        } else if (itemId == R.id.menu_input_continuous) {
+            settings.setInputMethod(Settings.ARRAY_INPUT_METHOD_CONTINUOUS);
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }

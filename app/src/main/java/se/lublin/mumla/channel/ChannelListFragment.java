@@ -280,37 +280,35 @@ public class ChannelListFragment extends HumlaServiceFragment implements OnChann
             return super.onOptionsItemSelected(item);
 
         IHumlaSession session = getService().HumlaSession();
-        switch (item.getItemId()) {
-            case R.id.menu_mute_button: {
-                IUser self = session.getSessionUser();
+        int itemId = item.getItemId();
+        if (itemId == R.id.menu_mute_button) {
+            IUser self = session.getSessionUser();
 
-                boolean muted = !self.isSelfMuted();
-                boolean deafened = self.isSelfDeafened();
-                deafened &= muted; // Undeafen if mute is off
-                session.setSelfMuteDeafState(muted, deafened);
+            boolean muted = !self.isSelfMuted();
+            boolean deafened = self.isSelfDeafened();
+            deafened &= muted; // Undeafen if mute is off
+            session.setSelfMuteDeafState(muted, deafened);
 
-                getActivity().supportInvalidateOptionsMenu();
-                return true;
+            getActivity().supportInvalidateOptionsMenu();
+            return true;
+        } else if (itemId == R.id.menu_deafen_button) {
+            IUser self = session.getSessionUser();
+
+            boolean deafened = !self.isSelfDeafened();
+            session.setSelfMuteDeafState(deafened, deafened);
+
+            getActivity().supportInvalidateOptionsMenu();
+            return true;
+        } else if (itemId == R.id.menu_search) {
+            return false;
+        } else if (itemId == R.id.menu_bluetooth) {
+            item.setChecked(!item.isChecked());
+            if (item.isChecked()) {
+                session.enableBluetoothSco();
+            } else {
+                session.disableBluetoothSco();
             }
-            case R.id.menu_deafen_button: {
-                IUser self = session.getSessionUser();
-
-                boolean deafened = !self.isSelfDeafened();
-                session.setSelfMuteDeafState(deafened, deafened);
-
-                getActivity().supportInvalidateOptionsMenu();
-                return true;
-            }
-            case R.id.menu_search:
-                return false;
-            case R.id.menu_bluetooth:
-                item.setChecked(!item.isChecked());
-                if (item.isChecked()) {
-                    session.enableBluetoothSco();
-                } else {
-                    session.disableBluetoothSco();
-                }
-                return true;
+            return true;
         }
 
         return super.onOptionsItemSelected(item);

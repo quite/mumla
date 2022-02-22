@@ -133,16 +133,15 @@ public class PublicServerListFragment extends Fragment implements OnItemClickLis
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (isFilled()) {
-            switch(item.getItemId()) {
-                case R.id.menu_match_server:
-                    showMatchDialog();
-                    break;
-                case R.id.menu_sort_server_item:
-                    showSortDialog();
-                    return true;
-                case R.id.menu_search_server_item:
-                    showFilterDialog();
-                    return true;
+            int itemId = item.getItemId();
+            if (itemId == R.id.menu_match_server) {
+                showMatchDialog();
+            } else if (itemId == R.id.menu_sort_server_item) {
+                showSortDialog();
+                return true;
+            } else if (itemId == R.id.menu_search_server_item) {
+                showFilterDialog();
+                return true;
             }
         }
         return super.onOptionsItemSelected(item);

@@ -417,13 +417,10 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
     public boolean onOptionsItemSelected(MenuItem item) {
         if(mDrawerToggle.onOptionsItemSelected(item))
             return true;
-
-        switch (item.getItemId()) {
-            case R.id.action_disconnect:
-                getService().disconnect();
-                return true;
+        if (item.getItemId() == R.id.action_disconnect) {
+            getService().disconnect();
+            return true;
         }
-
         return false;
     }
 

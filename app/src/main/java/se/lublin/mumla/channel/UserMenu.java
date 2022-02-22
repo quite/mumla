@@ -116,69 +116,56 @@ public class UserMenu implements PermissionsPopupMenu.IOnMenuPrepareListener, Po
 
     @Override
     public boolean onMenuItemClick(final MenuItem menuItem) {
-        switch (menuItem.getItemId()) {
-            case R.id.context_ban:
-            case R.id.context_kick:
-                AlertDialog.Builder alertBuilder = new AlertDialog.Builder(mContext);
-                alertBuilder.setTitle(R.string.user_menu_kick);
-                final EditText reasonField = new EditText(mContext);
-                reasonField.setHint(R.string.hint_reason);
-                alertBuilder.setView(reasonField);
-                alertBuilder.setPositiveButton(R.string.user_menu_kick, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        mService.kickBanUser(mUser.getSession(),
-                                reasonField.getText().toString(), menuItem.getItemId() == R.id.context_ban);
-                    }
-                });
-                alertBuilder.setNegativeButton(android.R.string.cancel, null);
-                alertBuilder.show();
-                break;
-            case R.id.context_mute:
-                mService.setMuteDeafState(mUser.getSession(), !(mUser.isMuted() || mUser.isSuppressed()), mUser.isDeafened());
-                break;
-            case R.id.context_deafen:
-                mService.setMuteDeafState(mUser.getSession(), mUser.isMuted(), !mUser.isDeafened());
-                break;
-            case R.id.context_move:
-                showChannelMoveDialog();
-                break;
-            case R.id.context_priority:
-                mService.setPrioritySpeaker(mUser.getSession(), !mUser.isPrioritySpeaker());
-                break;
-            case R.id.context_local_mute:
-                mUser.setLocalMuted(!mUser.isLocalMuted());
-                mStateListener.onLocalUserStateUpdated(mUser);
-                break;
-            case R.id.context_ignore_messages:
-                mUser.setLocalIgnored(!mUser.isLocalIgnored());
-                mStateListener.onLocalUserStateUpdated(mUser);
-                break;
-            case R.id.context_change_comment:
-                showUserComment(true);
-                break;
-            case R.id.context_view_comment:
-                showUserComment(false);
-                break;
-            case R.id.context_reset_comment:
-                new AlertDialog.Builder(mContext)
-                        .setMessage(mContext.getString(R.string.confirm_reset_comment, mUser.getName()))
-                        .setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                mService.setUserComment(mUser.getSession(), "");
-                            }
-                        })
-                        .setNegativeButton(android.R.string.cancel, null)
-                        .show();
-                break;
-//                case R.id.context_info:
-//                    break;
-            case R.id.context_register:
-                mService.registerUser(mUser.getSession());
-                break;
-            default:
-                return false;
+        int itemId = menuItem.getItemId();
+        if (itemId == R.id.context_ban || itemId == R.id.context_kick) {
+            AlertDialog.Builder alertBuilder = new AlertDialog.Builder(mContext);
+            alertBuilder.setTitle(R.string.user_menu_kick);
+            final EditText reasonField = new EditText(mContext);
+            reasonField.setHint(R.string.hint_reason);
+            alertBuilder.setView(reasonField);
+            alertBuilder.setPositiveButton(R.string.user_menu_kick, new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    mService.kickBanUser(mUser.getSession(),
+                            reasonField.getText().toString(), menuItem.getItemId() == R.id.context_ban);
+                }
+            });
+            alertBuilder.setNegativeButton(android.R.string.cancel, null);
+            alertBuilder.show();
+        } else if (itemId == R.id.context_mute) {
+            mService.setMuteDeafState(mUser.getSession(), !(mUser.isMuted() || mUser.isSuppressed()), mUser.isDeafened());
+        } else if (itemId == R.id.context_deafen) {
+            mService.setMuteDeafState(mUser.getSession(), mUser.isMuted(), !mUser.isDeafened());
+        } else if (itemId == R.id.context_move) {
+            showChannelMoveDialog();
+        } else if (itemId == R.id.context_priority) {
+            mService.setPrioritySpeaker(mUser.getSession(), !mUser.isPrioritySpeaker());
+        } else if (itemId == R.id.context_local_mute) {
+            mUser.setLocalMuted(!mUser.isLocalMuted());
+            mStateListener.onLocalUserStateUpdated(mUser);
+        } else if (itemId == R.id.context_ignore_messages) {
+            mUser.setLocalIgnored(!mUser.isLocalIgnored());
+            mStateListener.onLocalUserStateUpdated(mUser);
+        } else if (itemId == R.id.context_change_comment) {
+            showUserComment(true);
+        } else if (itemId == R.id.context_view_comment) {
+            showUserComment(false);
+        } else if (itemId == R.id.context_reset_comment) {
+            new AlertDialog.Builder(mContext)
+                    .setMessage(mContext.getString(R.string.confirm_reset_comment, mUser.getName()))
+                    .setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            mService.setUserComment(mUser.getSession(), "");
+                        }
+                    })
+                    .setNegativeButton(android.R.string.cancel, null)
+                    .show();
+//        } else if (itemId == R.id.context_info) {
+        } else if (itemId == R.id.context_register) {
+            mService.registerUser(mUser.getSession());
+        } else {
+            return false;
         }
         return true;
     }

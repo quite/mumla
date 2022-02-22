@@ -75,13 +75,11 @@ public class PublicServerAdapter extends ServerAdapter<PublicServer> {
 
     @Override
     public boolean onPopupItemClick(Server server, MenuItem menuItem) {
-        switch (menuItem.getItemId()) {
-            case R.id.menu_server_favourite:
-                mListener.favouriteServer(server);
-                return true;
-            default:
-                return false;
+        if (menuItem.getItemId() == R.id.menu_server_favourite) {
+            mListener.favouriteServer(server);
+            return true;
         }
+        return false;
     }
 
     public static interface PublicServerAdapterMenuListener {
