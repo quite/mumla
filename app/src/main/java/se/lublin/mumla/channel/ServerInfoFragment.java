@@ -90,23 +90,25 @@ public class ServerInfoFragment extends HumlaServiceFragment {
                 getService().getTargetServer().getSrvHost(),
                 getService().getTargetServer().getSrvPort()));
 
-        String codecName;
+        String codecName = "<null>";
         HumlaUDPMessageType codecType = session.getCodec();
-        switch (codecType) {
-            case UDPVoiceOpus:
-                codecName = "Opus";
-                break;
-            case UDPVoiceCELTBeta:
-                codecName = "CELT 0.11.0";
-                break;
-            case UDPVoiceCELTAlpha:
-                codecName = "CELT 0.7.0";
-                break;
-            case UDPVoiceSpeex:
-                codecName = "Speex";
-                break;
-            default:
-                codecName = "???";
+        if (codecType != null) {
+            switch (codecType) {
+                case UDPVoiceOpus:
+                    codecName = "Opus";
+                    break;
+                case UDPVoiceCELTBeta:
+                    codecName = "CELT 0.11.0";
+                    break;
+                case UDPVoiceCELTAlpha:
+                    codecName = "CELT 0.7.0";
+                    break;
+                case UDPVoiceSpeex:
+                    codecName = "Speex";
+                    break;
+                default:
+                    codecName = "???";
+            }
         }
 
         mMaxBandwidthView.setText(getString(R.string.server_info_max_bandwidth, (float)session.getMaxBandwidth()/1000f));
