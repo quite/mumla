@@ -57,7 +57,7 @@ android {
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 30
+        targetSdkVersion 31
         multiDexEnabled true
 
         applicationId "se.lublin.mumla"

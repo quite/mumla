@@ -17,6 +17,9 @@
 
 package se.lublin.mumla.service;
 
+import static android.app.PendingIntent.FLAG_CANCEL_CURRENT;
+import static android.app.PendingIntent.FLAG_IMMUTABLE;
+
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -161,19 +164,20 @@ public class MumlaConnectionNotification {
 
             builder.addAction(R.drawable.ic_action_microphone,
                     mService.getString(R.string.mute), PendingIntent.getBroadcast(mService, 1,
-                            muteIntent, PendingIntent.FLAG_CANCEL_CURRENT));
+                            muteIntent, FLAG_CANCEL_CURRENT | FLAG_IMMUTABLE));
             builder.addAction(R.drawable.ic_action_audio,
                     mService.getString(R.string.deafen), PendingIntent.getBroadcast(mService, 1,
-                            deafenIntent, PendingIntent.FLAG_CANCEL_CURRENT));
+                            deafenIntent, FLAG_CANCEL_CURRENT | FLAG_IMMUTABLE));
             builder.addAction(R.drawable.ic_action_channels,
                     mService.getString(R.string.overlay), PendingIntent.getBroadcast(mService, 2,
-                            overlayIntent, PendingIntent.FLAG_CANCEL_CURRENT));
+                            overlayIntent, FLAG_CANCEL_CURRENT | FLAG_IMMUTABLE));
         }
 
         Intent channelListIntent = new Intent(mService, MumlaActivity.class);
         channelListIntent.putExtra(MumlaActivity.EXTRA_DRAWER_FRAGMENT, DrawerAdapter.ITEM_SERVER);
         // FLAG_CANCEL_CURRENT ensures that the extra always gets sent.
-        PendingIntent pendingIntent = PendingIntent.getActivity(mService, 0, channelListIntent, PendingIntent.FLAG_CANCEL_CURRENT);
+        PendingIntent pendingIntent = PendingIntent.getActivity(mService, 0,
+                channelListIntent, FLAG_CANCEL_CURRENT | FLAG_IMMUTABLE);
         builder.setContentIntent(pendingIntent);
 
         Notification notification = builder.build();

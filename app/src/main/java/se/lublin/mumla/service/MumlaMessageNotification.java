@@ -17,6 +17,9 @@
 
 package se.lublin.mumla.service;
 
+import static android.app.PendingIntent.FLAG_CANCEL_CURRENT;
+import static android.app.PendingIntent.FLAG_IMMUTABLE;
+
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -72,7 +75,8 @@ public class MumlaMessageNotification {
         Intent channelListIntent = new Intent(mContext, MumlaActivity.class);
         channelListIntent.putExtra(MumlaActivity.EXTRA_DRAWER_FRAGMENT, DrawerAdapter.ITEM_SERVER);
         // FLAG_CANCEL_CURRENT ensures that the extra always gets sent.
-        PendingIntent pendingIntent = PendingIntent.getActivity(mContext, 0, channelListIntent, PendingIntent.FLAG_CANCEL_CURRENT);
+        PendingIntent pendingIntent = PendingIntent.getActivity(mContext, 0,
+                channelListIntent, FLAG_CANCEL_CURRENT | FLAG_IMMUTABLE);
 
         String channelId = "";
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {

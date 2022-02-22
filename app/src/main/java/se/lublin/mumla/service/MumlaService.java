@@ -499,9 +499,12 @@ public class MumlaService extends HumlaService implements
 
     @Override
     public void onOverlayToggled() {
-        // ditch notification shade/panel to make overlay presence/permission request visible
-        Intent close = new Intent(Intent.ACTION_CLOSE_SYSTEM_DIALOGS);
-        getApplicationContext().sendBroadcast(close);
+        // Ditch notification shade/panel to make overlay presence/permission request visible.
+        // But on Android 12 that's no longer allowed.
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.S) {
+            Intent close = new Intent(Intent.ACTION_CLOSE_SYSTEM_DIALOGS);
+            getApplicationContext().sendBroadcast(close);
+        }
 
         if (!mChannelOverlay.isShown()) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
