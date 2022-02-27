@@ -144,4 +144,5 @@
     <string name="no_certificate">Intet certifikat</string>
     <string name="certificates">Certifikater</string>
     <string name="certificate_import_success">Importérede certifikat %s.</string>
+    <string name="comment_view">Se</string>
 </resources>
