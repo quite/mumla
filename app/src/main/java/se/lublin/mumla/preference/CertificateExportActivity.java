@@ -46,7 +46,6 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.List;
 
-import se.lublin.mumla.Constants;
 import se.lublin.mumla.R;
 import se.lublin.mumla.db.DatabaseCertificate;
 import se.lublin.mumla.db.MumlaDatabase;
@@ -56,6 +55,8 @@ import se.lublin.mumla.db.MumlaSQLiteDatabase;
  * Created by andrew on 12/01/16.
  */
 public class CertificateExportActivity extends AppCompatActivity implements DialogInterface.OnClickListener {
+    private static final String TAG = CertificateExportActivity.class.getName();
+
     /**
      * The name of the directory to export to on external storage.
      */
@@ -118,10 +119,10 @@ public class CertificateExportActivity extends AppCompatActivity implements Dial
                 writeCertificate(os, mCertificatePending, df != null ? df.getName() : "<unknown>");
             } catch (FileNotFoundException e) {
                 showErrorDialog(R.string.externalStorageUnavailable);
-                Log.w(Constants.TAG, "FileNotFound on output file picked by user?!");
+                Log.w(TAG, "FileNotFound on output file picked by user?!");
             }
         } else if (mCertificatePending == null) {
-            Log.w(Constants.TAG, "No pending certificate after user picked output file");
+            Log.w(TAG, "No pending certificate after user picked output file");
         }
         finish();
     }
@@ -168,7 +169,7 @@ public class CertificateExportActivity extends AppCompatActivity implements Dial
                 if (mCertificatePending != null) {
                     saveCertificateClassic(mCertificatePending);
                 } else {
-                    Log.w(Constants.TAG, "No pending certificate after permission was granted");
+                    Log.w(TAG, "No pending certificate after permission was granted");
                 }
             } else {
                 Toast.makeText(CertificateExportActivity.this, getString(R.string.grant_perm_storage),

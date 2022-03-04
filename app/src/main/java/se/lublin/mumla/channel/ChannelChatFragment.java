@@ -59,13 +59,14 @@ import se.lublin.humla.model.User;
 import se.lublin.humla.util.HumlaDisconnectedException;
 import se.lublin.humla.util.HumlaObserver;
 import se.lublin.humla.util.IHumlaObserver;
-import se.lublin.mumla.Constants;
 import se.lublin.mumla.R;
 import se.lublin.mumla.service.IChatMessage;
 import se.lublin.mumla.util.HumlaServiceFragment;
 import se.lublin.mumla.util.MumbleImageGetter;
 
 public class ChannelChatFragment extends HumlaServiceFragment implements ChatTargetProvider.OnChatTargetSelectedListener {
+    private static final String TAG = ChannelChatFragment.class.getName();
+
     private static final Pattern LINK_PATTERN = Pattern.compile("(https?://\\S+)");
 
     private IHumlaObserver mServiceObserver = new HumlaObserver() {
@@ -153,7 +154,7 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
                 try {
                     sendMessage();
                 } catch (HumlaDisconnectedException e) {
-                    Log.d(Constants.TAG, "ChannelChatFragment, exception from sendMessage: " + e);
+                    Log.d(TAG, "exception from sendMessage: " + e);
                 }
             }
         });
@@ -164,7 +165,7 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
                 try {
                     sendMessage();
                 } catch (HumlaDisconnectedException e) {
-                    Log.d(Constants.TAG, "ChannelChatFragment, exception from sendMessage: " + e);
+                    Log.d(TAG, "exception from sendMessage: " + e);
                 }
                 return true;
             }

@@ -49,7 +49,6 @@ import se.lublin.humla.model.IChannel;
 import se.lublin.humla.model.IUser;
 import se.lublin.humla.model.Server;
 import se.lublin.humla.model.TalkState;
-import se.lublin.mumla.Constants;
 import se.lublin.mumla.R;
 import se.lublin.mumla.db.MumlaDatabase;
 import se.lublin.mumla.drawable.CircleDrawable;
@@ -59,6 +58,8 @@ import se.lublin.mumla.service.MumlaService;
  * Created by andrew on 31/07/13.
  */
 public class ChannelListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements UserMenu.IUserLocalStateListener {
+    private static final String TAG = ChannelListAdapter.class.getName();
+
     // Set particular bits to make the integer-based model item ids unique.
     public static final long CHANNEL_ID_MASK = (0x1L << 32);
     public static final long USER_ID_MASK = (0x1L << 33);
@@ -155,7 +156,7 @@ public class ChannelListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
                 try {
                     ourChan = session.getSessionChannel();
                 } catch(IllegalStateException e) {
-                    Log.d(Constants.TAG, "ChannelListAdapter, exception in onBindViewHolder: " + e);
+                    Log.d(TAG, "exception in onBindViewHolder: " + e);
                 }
                 if (ourChan != null) {
                     if (channel.equals(ourChan)) {
@@ -308,7 +309,7 @@ public class ChannelListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
                 }
             }
         } catch (IllegalStateException e) {
-            Log.d(Constants.TAG, "ChannelListAdapter, exception in updateChannels: " + e);
+            Log.d(TAG, "exception in updateChannels: " + e);
         }
     }
 

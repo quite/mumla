@@ -41,7 +41,6 @@ import se.lublin.humla.model.Server;
 import se.lublin.humla.model.WhisperTargetChannel;
 import se.lublin.humla.net.Permissions;
 import se.lublin.humla.util.VoiceTargetMode;
-import se.lublin.mumla.Constants;
 import se.lublin.mumla.R;
 import se.lublin.mumla.channel.comment.ChannelDescriptionFragment;
 import se.lublin.mumla.db.MumlaDatabase;
@@ -50,6 +49,8 @@ import se.lublin.mumla.db.MumlaDatabase;
  * Created by andrew on 22/11/15.
  */
 public class ChannelMenu implements PermissionsPopupMenu.IOnMenuPrepareListener, PopupMenu.OnMenuItemClickListener {
+    private static final String TAG = ChannelMenu.class.getName();
+
     private final Context mContext;
     private final IChannel mChannel;
     private final IHumlaService mService;
@@ -85,7 +86,7 @@ public class ChannelMenu implements PermissionsPopupMenu.IOnMenuPrepareListener,
             try {
                 ourChan = mService.HumlaSession().getSessionChannel();
             } catch(IllegalStateException e) {
-                Log.d(Constants.TAG, "ChannelMenu, exception in onMenuPrepare: " + e);
+                Log.d(TAG, "exception in onMenuPrepare: " + e);
             }
             if (ourChan != null) {
                 menu.findItem(R.id.context_channel_link).setChecked(mChannel.getLinks().contains(ourChan));

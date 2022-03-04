@@ -37,7 +37,6 @@ import java.net.URLDecoder;
 import java.util.HashMap;
 import java.util.Map;
 
-import se.lublin.mumla.Constants;
 import se.lublin.mumla.Settings;
 
 /**
@@ -46,6 +45,7 @@ import se.lublin.mumla.Settings;
  * Created by andrew on 07/02/14.
  */
 public class MumbleImageGetter implements Html.ImageGetter {
+    private static final String TAG = MumbleImageGetter.class.getName();
 
     /** The maximum image size in bytes to load. */
     private static final int MAX_LENGTH = 64000;
@@ -85,7 +85,7 @@ public class MumbleImageGetter implements Html.ImageGetter {
                 bitmap = getURLImage(decodedSource);
             }
         } catch (IllegalArgumentException | ArrayIndexOutOfBoundsException e) {
-            Log.w(Constants.TAG, "MumbleImageGetter, exception when decoding data:image: " + e.toString());
+            Log.w(TAG, "exception when decoding data:image: " + e.toString());
             return null;
         }
         if(bitmap == null) return null;

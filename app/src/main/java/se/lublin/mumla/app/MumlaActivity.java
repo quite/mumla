@@ -101,12 +101,12 @@ import se.lublin.mumla.util.HumlaServiceFragment;
 import se.lublin.mumla.util.HumlaServiceProvider;
 import se.lublin.mumla.util.MumlaTrustStore;
 
-import static se.lublin.mumla.Constants.TAG;
-
 public class MumlaActivity extends AppCompatActivity implements ListView.OnItemClickListener,
         FavouriteServerListFragment.ServerConnectHandler, HumlaServiceProvider, DatabaseProvider,
         SharedPreferences.OnSharedPreferenceChangeListener, DrawerAdapter.DrawerDataProvider,
         ServerEditFragment.ServerEditListener {
+    private static final String TAG = MumlaActivity.class.getName();
+
     /**
      * If specified, the provided integer drawer fragment ID is shown when the activity is created.
      */

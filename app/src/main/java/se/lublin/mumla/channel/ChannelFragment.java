@@ -52,7 +52,6 @@ import se.lublin.humla.model.WhisperTarget;
 import se.lublin.humla.util.HumlaObserver;
 import se.lublin.humla.util.IHumlaObserver;
 import se.lublin.humla.util.VoiceTargetMode;
-import se.lublin.mumla.Constants;
 import se.lublin.mumla.R;
 import se.lublin.mumla.Settings;
 import se.lublin.mumla.util.HumlaServiceFragment;
@@ -62,6 +61,7 @@ import se.lublin.mumla.util.HumlaServiceFragment;
  * Created by andrew on 02/08/13.
  */
 public class ChannelFragment extends HumlaServiceFragment implements SharedPreferences.OnSharedPreferenceChangeListener, ChatTargetProvider {
+    private static final String TAG = ChannelFragment.class.getName();
 
     private ViewPager mViewPager;
     private PagerTabStrip mTabStrip;
@@ -89,7 +89,7 @@ public class ChannelFragment extends HumlaServiceFragment implements SharedPrefe
             try {
                 selfSession = getService().HumlaSession().getSessionId();
             } catch (IllegalStateException e) {
-                Log.d(Constants.TAG, "ChannelFragment, exception in onUserTalkStateUpdated: " + e);
+                Log.d(TAG, "exception in onUserTalkStateUpdated: " + e);
                 return;
             }
             if (user != null && user.getSession() == selfSession) {
@@ -117,7 +117,7 @@ public class ChannelFragment extends HumlaServiceFragment implements SharedPrefe
             try {
                 selfSession = getService().HumlaSession().getSessionId();
             } catch (IllegalStateException e) {
-                Log.d(Constants.TAG, "ChannelFragment, exception in onUserStateUpdated: " + e);
+                Log.d(TAG, "exception in onUserStateUpdated: " + e);
                 return;
             }
             if (user != null && user.getSession() == selfSession) {

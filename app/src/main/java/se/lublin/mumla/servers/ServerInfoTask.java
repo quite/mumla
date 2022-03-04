@@ -26,7 +26,6 @@ import java.net.InetAddress;
 import java.nio.ByteBuffer;
 
 import se.lublin.humla.model.Server;
-import se.lublin.mumla.Constants;
 
 /**
  * Pings the requested server and returns a ServerInfoResponse.
@@ -35,6 +34,8 @@ import se.lublin.mumla.Constants;
  *
  */
 public class ServerInfoTask extends AsyncTask<Server, Void, ServerInfoResponse> {
+    private static final String TAG = ServerInfoTask.class.getName();
+
     private Server server;
 
     @Override
@@ -65,7 +66,7 @@ public class ServerInfoTask extends AsyncTask<Server, Void, ServerInfoResponse> 
 
             ServerInfoResponse response = new ServerInfoResponse(server, responseBuffer, latencyInMs);
 
-            Log.d(Constants.TAG, "Server version: " + response.getVersionString()
+            Log.d(TAG, "Server version: " + response.getVersionString()
                     + " Users: " + response.getCurrentUsers() + "/" + response.getMaximumUsers());
 
             return response;

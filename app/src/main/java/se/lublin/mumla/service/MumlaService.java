@@ -62,6 +62,8 @@ public class MumlaService extends HumlaService implements
         SharedPreferences.OnSharedPreferenceChangeListener,
         MumlaConnectionNotification.OnActionListener,
         MumlaReconnectNotification.OnActionListener, IMumlaService {
+    private static final String TAG = MumlaService.class.getName();
+
     /** Undocumented constant that permits a proximity-sensing wake lock. */
     public static final int PROXIMITY_SCREEN_OFF_WAKE_LOCK = 32;
     public static final int TTS_THRESHOLD = 250; // Maximum number of characters to read
@@ -345,7 +347,7 @@ public class MumlaService extends HumlaService implements
         try {
             super.onConnectionSynchronized();
         } catch (RuntimeException e) {
-            Log.d(Constants.TAG, "HumlaService, exception in onConnectionSynchronized: " + e);
+            Log.d(TAG, "exception in onConnectionSynchronized: " + e);
             return;
         }
 

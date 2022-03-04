@@ -37,11 +37,11 @@ import se.lublin.humla.IHumlaService;
 import se.lublin.humla.IHumlaSession;
 import se.lublin.humla.model.IChannel;
 import se.lublin.humla.model.IUser;
-import se.lublin.mumla.Constants;
 import se.lublin.mumla.R;
 import se.lublin.mumla.service.MumlaService;
 
 public class ChannelSearchProvider extends ContentProvider {
+    private static final String TAG = ChannelSearchProvider.class.getName();
 
     public static final String INTENT_DATA_CHANNEL = "channel";
     public static final String INTENT_DATA_USER = "user";
@@ -105,7 +105,7 @@ public class ChannelSearchProvider extends ContentProvider {
                 }
 
                 if(mService == null) {
-                    Log.v(Constants.TAG, "Failed to connect to service from search provider!");
+                    Log.v(TAG, "Failed to connect to service from search provider!");
                     return null;
                 }
             }

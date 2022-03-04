@@ -28,9 +28,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import se.lublin.humla.model.Server;
-import se.lublin.mumla.Constants;
 
 public class MumlaSQLiteDatabase extends SQLiteOpenHelper implements MumlaDatabase {
+    private static final String TAG = MumlaSQLiteDatabase.class.getName();
+
     public static final String DATABASE_NAME = "mumble.db";
 
     public static final String TABLE_SERVER = "server";
@@ -139,7 +140,7 @@ public class MumlaSQLiteDatabase extends SQLiteOpenHelper implements MumlaDataba
             SQLiteDatabase db,
             int oldVersion,
             int newVersion) {
-        Log.w(Constants.TAG, "Database upgrade from " + oldVersion + " to " + newVersion);
+        Log.w(TAG, "Database upgrade from " + oldVersion + " to " + newVersion);
         if (oldVersion <= PRE_FAVOURITES_DB_VERSION) {
             db.execSQL(TABLE_FAVOURITES_CREATE_SQL);
         }

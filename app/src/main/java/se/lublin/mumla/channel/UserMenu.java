@@ -36,7 +36,6 @@ import java.util.List;
 import se.lublin.humla.model.IChannel;
 import se.lublin.humla.model.IUser;
 import se.lublin.humla.net.Permissions;
-import se.lublin.mumla.Constants;
 import se.lublin.mumla.R;
 import se.lublin.mumla.channel.comment.UserCommentFragment;
 import se.lublin.mumla.service.MumlaService;
@@ -46,6 +45,8 @@ import se.lublin.mumla.util.ModelUtils;
  * Created by andrew on 19/11/15.
  */
 public class UserMenu implements PermissionsPopupMenu.IOnMenuPrepareListener, PopupMenu.OnMenuItemClickListener {
+    private static final String TAG = UserMenu.class.getName();
+
     private final Context mContext;
     private final IUser mUser;
     private final MumlaService mService;
@@ -68,7 +69,7 @@ public class UserMenu implements PermissionsPopupMenu.IOnMenuPrepareListener, Po
         try {
             self = mUser.getSession() == mService.getSessionId();
         } catch (IllegalStateException e) {
-            Log.d(Constants.TAG, "UserMenu, exception in onMenuPrepare: " + e);
+            Log.d(TAG, "exception in onMenuPrepare: " + e);
             return;
         }
         int perms = mService.getPermissions();

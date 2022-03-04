@@ -43,13 +43,14 @@ import se.lublin.humla.Constants;
 import se.lublin.mumla.db.DatabaseCertificate;
 import se.lublin.mumla.db.MumlaSQLiteDatabase;
 
-import static se.lublin.mumla.Constants.TAG;
-
 /**
  * Singleton settings class for universal access to the app's preferences.
+ *
  * @author morlunk
  */
 public class Settings {
+    private static final String TAG = Settings.class.getName();
+
     public static final String PREF_INPUT_METHOD = "audioInputMethod";
     public static final Set<String> ARRAY_INPUT_METHODS;
     /** Voice activity transmits depending on the amplitude of user input. */

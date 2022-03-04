@@ -37,15 +37,16 @@ import android.widget.TextView.OnEditorActionListener;
 import java.util.ArrayList;
 import java.util.List;
 
-import se.lublin.mumla.Constants;
 import se.lublin.mumla.R;
 import se.lublin.mumla.db.DatabaseProvider;
 import se.lublin.mumla.util.HumlaServiceFragment;
 
 public class AccessTokenFragment extends HumlaServiceFragment {
+    private static final String TAG = AccessTokenFragment.class.getName();
 
     public interface AccessTokenListener {
         public void onAccessTokenAdded(long serverId, String token);
+
         public void onAccessTokenRemoved(long serverId, String token);
     }
 
@@ -112,7 +113,7 @@ public class AccessTokenFragment extends HumlaServiceFragment {
 
         mTokenField.setText("");
 
-        Log.i(Constants.TAG, "Adding token: " + tokenText);
+        Log.i(TAG, "Adding token: " + tokenText);
 
         mTokens.add(tokenText);
         mTokenAdapter.notifyDataSetChanged();
