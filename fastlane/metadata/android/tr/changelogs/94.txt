@@ -1,0 +1,7 @@
+Bu sürüm, Google Play mağazasının gerektirdiği şekilde Mumla'yı daha yeni Android sürümlerine uyarlamak için yapıldı. Mumla şimdi Android 12'de çalışıyor.
+
+Özellikle, Mumla'nın istemci sertifikalarının dışa aktarımı, Android 11+ ile çalışacak şekilde uyarlandı.
+
+Ayrıca son sürümden bu yana bazı yeni çeviriler. Teşekkürler anonymous, Abidin, Alfonso, deluxghost, Gabriel, Jaroslav, Kityn, Maite, Oğuz, pjammo, Vinicius, WLJ, Wesley.
+
+Çeviriler için: https://hosted.weblate.org/projects/mumla/

@@ -1,0 +1,7 @@
+此版本主要根据 Google Play 商店的要求适配 Android 新版本。Mumla 现在可以在 Android 12 上运行。
+
+特别是，Mumla 的客户端证书导出功能现已支持 Android 11+。
+
+以及上个版本以来的新翻译。感谢 anonymous、Abidin、Alfonso、deluxghost、Gabriel、Jaroslav、Kityn、Maite、Oğuz、pjammo、Vinicius、WLJ 和 Wesley。
+
+在此处贡献翻译：https://hosted.weblate.org/projects/mumla/
