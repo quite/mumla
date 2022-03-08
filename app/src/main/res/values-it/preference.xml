@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--Theme names-->
     <!--Call modes-->
@@ -9,7 +9,7 @@
     <string name="licenses">Licenze</string>
     <string name="authentication">Autenticazione</string>
     <string name="authenticationSum">Gestisci e crea certificati</string>
-    <string name="audioInput">Input audio</string>
+    <string name="audioInput">Ingresso audio</string>
     <string name="audioInputVolume">Volume microfono</string>
     <string name="general">Generale</string>
     <string name="theme">Tema</string>
@@ -28,4 +28,29 @@
     <string name="inputQuality">Qualità Input</string>
     <string name="loadImages">Carica immagini esterne</string>
     <string name="clearServerCertificates">Pulisci certificati server</string>
+    <string name="inputMethodVoice">Attività vocale</string>
+    <string name="call_mode_voice_call">Chiamata vocale</string>
+    <string name="hot_corner_top_right">In alto a destra</string>
+    <string name="hot_corner_bottom_right">In basso a destra</string>
+    <string name="aboutSum">Legale e riconoscimenti</string>
+    <string name="pttSound">Suono «Premi per parlare»</string>
+    <string name="version">Versione</string>
+    <string name="pref_export_certificate_title">Esporta un certificato</string>
+    <string name="pref_import_certificate_title">Importa un certificato</string>
+    <string name="pref_certificate_title">Certificato</string>
+    <string name="theme_light">Chiaro</string>
+    <string name="hot_corner_none">Niente</string>
+    <string name="hot_corner_bottom_left">In basso a sinistra</string>
+    <string name="inputMethodContinuous">Continuo</string>
+    <string name="acknowledgements">Ringraziamenti</string>
+    <string name="theme_dark">Scuro</string>
+    <string name="pttKey">Tasto Premi per parlare</string>
+    <string name="call_mode_speakerphone">Vivavoce</string>
+    <string name="inputMethodPtt">Premi per parlare</string>
+    <string name="theme_solarized_light">Solare</string>
+    <string name="theme_solarized_dark">Lunare</string>
+    <string name="hot_corner_top_left">In alto a sinistra</string>
+    <string name="audioInputMethodSum">Il metodo di ingresso audio.</string>
+    <string name="audioInputMethod">Modalità di trasmissione</string>
+    <string name="callMode">Modalità di chiamata</string>
 </resources>
