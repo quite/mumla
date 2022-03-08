@@ -1,33 +1,28 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="inputMethodVoice">Aktywność głosowa</string>
     <string name="inputMethodPtt">Naciśnij i mów</string>
     <string name="inputMethodContinuous">Ciągły</string>
-
     <!-- Theme names -->
     <string name="theme_light">Jasny</string>
     <string name="theme_dark">Ciemny</string>
     <string name="theme_solarized_light">Słoneczny jasny</string>
     <string name="theme_solarized_dark">Słoneczny ciemny</string>
-
     <!-- Call modes -->
     <string name="call_mode_speakerphone">Zestaw głośnomówiący</string>
     <string name="call_mode_voice_call">Połączenie głosowe</string>
-
     <!-- Hot corner -->
     <string name="hot_corner_none">Brak</string>
     <string name="hot_corner_top_left">Lewy górny</string>
     <string name="hot_corner_bottom_left">Lewy dolny</string>
     <string name="hot_corner_top_right">Prawy górny</string>
     <string name="hot_corner_bottom_right">Prawy dolny</string>
-
     <!-- About -->
     <string name="about">O programie</string>
     <string name="aboutSum">Informacje prawne i podziękowania</string>
     <string name="acknowledgements">Podziękowania</string>
     <string name="acknowledgementsSum">Zobacz, kto wniósł wkład w Mumla</string>
     <string name="licenses">Licencje</string>
-
     <string name="authentication">Uwierzytelnianie</string>
     <string name="authenticationSum">Zarządzaj certyfikatami i je twórz</string>
     <string name="audioInput">Wejście audio</string>
@@ -82,7 +77,7 @@
     <string name="autoReconnect">Automatyczne wznowienie połączenia</string>
     <string name="autoReconnectSum">Automatycznie spróbuj ponownie nawiązać połączenie, gdy połączenie z serwerem zostanie utracone.</string>
     <string name="useTor">Połącz przez Tor</string>
-    <string name="useTorSum">Wymaga aplikacji Orbot.</string>
+    <string name="useTorSum">Wymaga aplikacji Orbot</string>
     <string name="inputQuality">Jakość wejściowa</string>
     <string name="inputQualitySum">Docelowa jakość wejściowa w bps.</string>
     <string name="pttButtonHeight">Wysokość przycisku Naciśnij i mów</string>
