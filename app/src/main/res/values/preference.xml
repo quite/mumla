@@ -119,7 +119,7 @@
     <string name="pttSound">Push-to-talk sound</string>
     <string name="pttSoundSum">Play sound effect when pressing the push-to-talk button.</string>
     <string name="preprocessor_enabled">Input pre-processing</string>
-    <string name="preprocessor_enabled_sum">Suppresses ambient noise and normalizes sound volume.</string>
+    <string name="preprocessor_enabled_sum">Suppresses ambient noise and normalizes audio volume.</string>
     <string name="audio_per_packet">Audio per packet</string>
     <string name="audio_per_packet_sum">The length of audio per voice packet.</string>
     <string name="stay_awake">Stay awake</string>
