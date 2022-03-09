@@ -91,7 +91,7 @@
     <string name="disconnected">Rozłączono</string>
     <string name="kicked_message">Wyrzucono z serwera.\nPrzyczyna: %s</string>
     <string name="loading">Ładowanie…</string>
-    <string name="reset_key">Resetuj klucz</string>
+    <string name="reset_key">Resetuj przycisk</string>
     <string name="externalStorageUnavailable">Pamięć zewnętrzna niedostępna, nie można załadować certyfikatu</string>
     <string name="addFavorite">Dodaj ulubione</string>
     <string name="removeFavorite">Usuń ulubione</string>
@@ -126,9 +126,9 @@
     <string name="offline">Offline</string>
     <string name="clearChat">Wyczyść czat</string>
     <string name="connected">Połączono</string>
-    <string name="mumlaConnected">Mumla połączony</string>
+    <string name="mumlaConnected">Mumla połączona</string>
     <string name="mumlaConnecting">Mumla łączy się…</string>
-    <string name="mumlaDisconnected">Mumla rozłączony</string>
+    <string name="mumlaDisconnected">Mumla rozłączona</string>
     <string name="lostConnection">Utracono połączenie z serwerem.</string>
     <string name="resume">Wznów</string>
     <string name="channel">Kanał</string>
@@ -156,7 +156,7 @@
     <string name="country">Kraj</string>
     <string name="share">Udostępnij</string>
     <string name="description">Opis</string>
-    <string name="shareMessage">Dołącz do tego serwera Mumble z Mumla. %s</string>
+    <string name="shareMessage">Dołącz do tego serwera Mumble za pomocą Mumla. %s</string>
     <string name="noServerInfo">Ping, aby pobrać informacje</string>
     <string name="status_notify_muted_and_deafened">Wyciszony i ogłuszony.</string>
     <string name="status_notify_muted">Wyciszony.</string>
@@ -182,7 +182,7 @@
     <string name="hint_reason">Przyczyna</string>
     <string name="hint_ptt">Naciśnij i mów</string>
     <string name="hint_ptt_summary">Wystarczy nacisnąć ten przycisk, aby mówić. Kliknij dwukrotnie, aby przełączyć.</string>
-    <string name="hint_server_add">Witamy w Mumla</string>
+    <string name="hint_server_add">Witaj w Mumla</string>
     <string name="hint_server_add_summary">Dodaj ulubiony serwer, naciskając \'Dodaj\' z paska akcji.</string>
     <string name="hint_switching">Przełączanie między widokami</string>
     <string name="hint_switching_summary">Przełączaj się między widokiem czatu i kanału, używając lewego górnego przycisku lub przeciągając.</string>
