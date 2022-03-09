@@ -220,7 +220,7 @@
     <string name="hint_switching">Cambia Schermata</string>
     <string name="hint_server_add_summary">Aggiungi un server preferito premento \"Aggiungi\" sulla barra delle azioni.</string>
     <string name="hint_ptt_summary">Premi questo pulsante mentre parli. Doppio tocco per mantenere la funzione attiva o disattivata.</string>
-    <string name="hint_ptt">Premi per Parlare</string>
+    <string name="hint_ptt">Push-to-talk</string>
     <string name="tapToReconnect">Premi per Riconnetterti</string>
     <string name="error_fetching_servers">Impossibile recuperare i server.
 \nSei connesso a Internet\?</string>
@@ -254,7 +254,7 @@
     <string name="kicked_message">Sei stato cacciato dal server.
 \nMotivo: %s</string>
     <string name="togglelocalmute">Attiva/Disattiva Muto Locale</string>
-    <string name="ptt">Premi per Parlare</string>
+    <string name="ptt">Push-to-talk</string>
     <string name="server_label">Etichetta</string>
     <string name="no_servers">Aggiungere un server premendo «Aggiungi» dalla barra delle azioni.</string>
     <string name="server_match_description">Mumla può trovare automaticamente un server vuoto, con posizione, versione e latenza ideali.</string>
