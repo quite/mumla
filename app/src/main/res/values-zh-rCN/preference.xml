@@ -96,7 +96,7 @@
     <string name="pttSound">按住发言音效</string>
     <string name="pttSoundSum">按下按住发言按钮时播放音效。</string>
     <string name="preprocessor_enabled">输入预处理</string>
-    <string name="preprocessor_enabled_sum">抑制环境噪声，并使音量正常化。</string>
+    <string name="preprocessor_enabled_sum">抑制环境噪声，并使音频音量正常化。</string>
     <string name="audio_per_packet">每数据包音频</string>
     <string name="audio_per_packet_sum">每个数据包的音频长度。</string>
     <string name="stay_awake">保持亮屏</string>
