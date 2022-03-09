@@ -18,12 +18,18 @@
 package se.lublin.mumla.channel;
 
 import android.app.Activity;
+import android.content.ContentResolver;
 import android.content.Context;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.Html;
 import android.text.TextWatcher;
 import android.text.method.LinkMovementMethod;
+import android.util.Base64;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.KeyEvent;
@@ -42,6 +48,16 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
+
+import java.io.ByteArrayOutputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URLEncoder;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -55,13 +71,16 @@ import se.lublin.humla.IHumlaSession;
 import se.lublin.humla.model.IChannel;
 import se.lublin.humla.model.IMessage;
 import se.lublin.humla.model.IUser;
+import se.lublin.humla.model.ServerSettings;
 import se.lublin.humla.model.User;
 import se.lublin.humla.util.HumlaDisconnectedException;
 import se.lublin.humla.util.HumlaObserver;
 import se.lublin.humla.util.IHumlaObserver;
 import se.lublin.mumla.R;
 import se.lublin.mumla.service.IChatMessage;
+import se.lublin.mumla.util.BitmapUtils;
 import se.lublin.mumla.util.HumlaServiceFragment;
+import se.lublin.mumla.util.InputStreamUtils;
 import se.lublin.mumla.util.MumbleImageGetter;
 
 public class ChannelChatFragment extends HumlaServiceFragment implements ChatTargetProvider.OnChatTargetSelectedListener {
@@ -111,6 +130,9 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
     private EditText mChatTextEdit;
     private ImageButton mSendButton;
     private ChatTargetProvider mTargetProvider;
+    private String mMessageBuffer;
+    ActivityResultLauncher<String> imagePicker
+            = registerForActivityResult(new ActivityResultContracts.GetContent(), this::onImagePicked);
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -124,7 +146,7 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
         try {
             mTargetProvider = (ChatTargetProvider) getParentFragment();
         } catch (ClassCastException e) {
-            throw new ClassCastException(getParentFragment().toString()+" must implement ChatTargetProvider");
+            throw new ClassCastException(getParentFragment().toString() + " must implement ChatTargetProvider");
         }
     }
 
@@ -132,6 +154,11 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
     public void onResume() {
         super.onResume();
         mTargetProvider.registerChatTargetListener(this);
+
+        if (mMessageBuffer != null) {
+            sendMessage(mMessageBuffer);
+            mMessageBuffer = null;
+        }
     }
 
     @Override
@@ -142,7 +169,7 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState) {
+                             Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_chat, container, false);
         mChatList = (ListView) view.findViewById(R.id.chat_list);
         mChatTextEdit = (EditText) view.findViewById(R.id.chatTextEdit);
@@ -152,18 +179,21 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
             @Override
             public void onClick(View v) {
                 try {
-                    sendMessage();
+                    sendMessageFromEditor();
                 } catch (HumlaDisconnectedException e) {
                     Log.d(TAG, "exception from sendMessage: " + e);
                 }
             }
         });
 
+        ImageButton ImageSendButton = view.findViewById(R.id.chatImageSend);
+        ImageSendButton.setOnClickListener(buttonView -> imagePicker.launch("image/*"));
+
         mChatTextEdit.setOnEditorActionListener(new OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                 try {
-                    sendMessage();
+                    sendMessageFromEditor();
                 } catch (HumlaDisconnectedException e) {
                     Log.d(TAG, "exception from sendMessage: " + e);
                 }
@@ -208,15 +238,16 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
 
     /**
      * Adds the passed text to the fragment chat body.
+     *
      * @param message The message to add.
-     * @param scroll Whether to scroll to the bottom after adding the message.
+     * @param scroll  Whether to scroll to the bottom after adding the message.
      */
     public void addChatMessage(IChatMessage message, boolean scroll) {
-        if(mChatAdapter == null) return;
+        if (mChatAdapter == null) return;
 
         mChatAdapter.add(message);
 
-        if(scroll) {
+        if (scroll) {
             mChatList.post(new Runnable() {
 
                 @Override
@@ -227,30 +258,84 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
         }
     }
 
+    private void onImagePicked(Uri uri) {
+        try {
+            if(uri == null){
+                return;
+            }
+
+            int maxSize = getService().HumlaSession().getServerSettings().getImageMessageLength();
+
+            InputStream imageStream = requireContext().getContentResolver().openInputStream(uri);
+
+            byte[] originalBytes = InputStreamUtils.getBytes(imageStream);
+
+            Bitmap bitmap = BitmapFactory.decodeByteArray(originalBytes, 0, originalBytes.length);
+            Bitmap resized = BitmapUtils.resizeKeepingAspect(bitmap, 600, 400);
+
+            // Try to resize image until it fits
+            int quality = 97;
+            byte[] byteArray;
+            do {
+                ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                resized.compress(Bitmap.CompressFormat.JPEG, quality, stream);
+                byteArray = stream.toByteArray();
+                resized.recycle();
+
+                // Account for the base64 overhead
+                if (4 * (byteArray.length / 3) + 4 < maxSize || maxSize == 0) {
+                    break;
+                }
+
+                quality -= 10;
+            } while (quality > 0);
+
+            String imageStr = Base64.encodeToString(byteArray, Base64.NO_WRAP);
+            String encoded = URLEncoder.encode(imageStr);
+            mMessageBuffer = "<img src=\"data:image/jpeg;base64," + encoded + "\"/>";
+        } catch (FileNotFoundException e) {
+            Log.d(TAG, "exception from onImagePicked: " + e);
+        } catch (IOException e) {
+            Log.d(TAG, "exception from onImagePicked: " + e);
+        }
+    }
+
     /**
      * Sends the message currently in {@link se.lublin.mumla.channel.ChannelChatFragment#mChatTextEdit}
      * to the remote server. Clears the message box if the message was sent successfully.
+     *
      * @throws HumlaDisconnectedException If the service is disconnected.
      */
-    private void sendMessage() throws HumlaDisconnectedException {
-        if(mChatTextEdit.length() == 0) return;
+    private void sendMessageFromEditor() throws HumlaDisconnectedException {
+        if (mChatTextEdit.length() == 0) return;
         String message = mChatTextEdit.getText().toString();
-        String formattedMessage = markupOutgoingMessage(message);
-        ChatTargetProvider.ChatTarget target = mTargetProvider.getChatTarget();
-        IMessage responseMessage = null;
-        IHumlaSession session = getService().HumlaSession();
-        if(target == null)
-            responseMessage = session.sendChannelTextMessage(session.getSessionChannel().getId(), formattedMessage, false);
-        else if(target.getUser() != null)
-            responseMessage = session.sendUserTextMessage(target.getUser().getSession(), formattedMessage);
-        else if(target.getChannel() != null)
-            responseMessage = session.sendChannelTextMessage(target.getChannel().getId(), formattedMessage, false);
-        addChatMessage(new IChatMessage.TextMessage(responseMessage), true);
+        sendMessage(message);
         mChatTextEdit.setText("");
     }
 
     /**
+     * Sends a message to the remote server.
+     *
+     * @param message The message to send.
+     * @throws HumlaDisconnectedException If the service is disconnected.
+     */
+    private void sendMessage(String message) throws HumlaDisconnectedException {
+        String formattedMessage = markupOutgoingMessage(message);
+        ChatTargetProvider.ChatTarget target = mTargetProvider.getChatTarget();
+        IMessage responseMessage = null;
+        IHumlaSession session = getService().HumlaSession();
+        if (target == null)
+            responseMessage = session.sendChannelTextMessage(session.getSessionChannel().getId(), formattedMessage, false);
+        else if (target.getUser() != null)
+            responseMessage = session.sendUserTextMessage(target.getUser().getSession(), formattedMessage);
+        else if (target.getChannel() != null)
+            responseMessage = session.sendChannelTextMessage(target.getChannel().getId(), formattedMessage, false);
+        addChatMessage(new IChatMessage.TextMessage(responseMessage), true);
+    }
+
+    /**
      * Adds HTML markup to the message, replacing links and newlines.
+     *
      * @param message The message to markup.
      * @return HTML data.
      */
@@ -273,15 +358,15 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
      * Updates hint displaying chat target.
      */
     public void updateChatTargetText(final ChatTargetProvider.ChatTarget target) {
-        if(getService() == null || !getService().isConnected()) return;
+        if (getService() == null || !getService().isConnected()) return;
 
         IHumlaSession session = getService().HumlaSession();
         String hint = null;
-        if(target == null && session.getSessionChannel() != null) {
+        if (target == null && session.getSessionChannel() != null) {
             hint = getString(R.string.messageToChannel, session.getSessionChannel().getName());
-        } else if(target != null && target.getUser() != null) {
+        } else if (target != null && target.getUser() != null) {
             hint = getString(R.string.messageToUser, target.getUser().getName());
-        } else if(target != null && target.getChannel() != null) {
+        } else if (target != null && target.getChannel() != null) {
             hint = getString(R.string.messageToChannel, target.getChannel().getName());
         }
         mChatTextEdit.setHint(hint);
@@ -326,7 +411,7 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             View v = convertView;
-            if(v == null) {
+            if (v == null) {
                 v = LayoutInflater.from(getContext()).inflate(R.layout.list_chat_item, parent, false);
             }
 

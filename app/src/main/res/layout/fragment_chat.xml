@@ -54,6 +54,16 @@
         android:divider="?attr/dividerHorizontal"
         android:showDividers="middle">
 
+        <ImageButton
+            android:id="@+id/chatImageSend"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:background="?attr/selectableItemBackground"
+            android:enabled="false"
+            app:srcCompat="@android:drawable/ic_menu_upload"
+            app:tint="?android:attr/textColorPrimary" />
+
         <EditText
             android:id="@+id/chatTextEdit"
             android:layout_width="0dp"
