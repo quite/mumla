@@ -93,8 +93,8 @@
     <string name="loading">Ładowanie…</string>
     <string name="reset_key">Resetuj przycisk</string>
     <string name="externalStorageUnavailable">Pamięć zewnętrzna niedostępna, nie można załadować certyfikatu</string>
-    <string name="addFavorite">Dodaj ulubione</string>
-    <string name="removeFavorite">Usuń ulubione</string>
+    <string name="addFavorite">Dodaj do ulubionych</string>
+    <string name="removeFavorite">Usuń z ulubionych</string>
     <string name="viewFavorites">Wyświetl ulubione</string>
     <string name="favorites">Ulubione</string>
     <string name="favoriteRemoved">Ulubione usunięte.</string>
@@ -177,13 +177,13 @@
     <string name="error_fetching_servers">Nie udało się pobrać serwerów.
 \nCzy masz połączenie z internetem\?</string>
     <string name="coming_soon">Funkcja już wkrótce.</string>
-    <string name="tapToReconnect">Naciśnij, aby ponownie połączyć</string>
+    <string name="tapToReconnect">Stuknij, aby ponownie połączyć</string>
     <string name="overlay">Nakładka</string>
     <string name="hint_reason">Przyczyna</string>
     <string name="hint_ptt">Naciśnij i mów</string>
-    <string name="hint_ptt_summary">Wystarczy nacisnąć ten przycisk, aby mówić. Kliknij dwukrotnie, aby przełączyć.</string>
+    <string name="hint_ptt_summary">Wystarczy nacisnąć ten przycisk, aby mówić. Stuknij dwukrotnie, aby przełączyć.</string>
     <string name="hint_server_add">Witaj w Mumla</string>
-    <string name="hint_server_add_summary">Dodaj ulubiony serwer, naciskając \'Dodaj\' z paska akcji.</string>
+    <string name="hint_server_add_summary">Dodaj serwer do ulubionych, naciskając \'Dodaj\' z paska akcji.</string>
     <string name="hint_switching">Przełączanie między widokami</string>
     <string name="hint_switching_summary">Przełączaj się między widokiem czatu i kanału, używając lewego górnego przycisku lub przeciągając.</string>
     <string name="action_settings">Ustawienia</string>
@@ -199,7 +199,7 @@
     <string name="tts_failed">Nie udało się uruchomić TTS</string>
     <string name="mumble_url_parse_failed">Adres URL Mumble jest nieprawidłowy.</string>
     <string name="first_run_generate_certificate_title">Witaj w Mumla.</string>
-    <string name="first_run_generate_certificate">Generowanie certyfikatu jest wysoce zalecane i konieczne do połączenia z niektórymi serwerami.</string>
+    <string name="first_run_generate_certificate">Generowanie certyfikatu jest bardzo zalecane i konieczne do połączenia z niektórymi serwerami.</string>
     <string name="generate">Wygeneruj</string>
     <string name="certificate_not_valid">Nie udało się załadować certyfikatu %s.</string>
     <string name="invalid_password">Błędne hasło.</string>
@@ -211,7 +211,7 @@
     <string name="trust_add_failed">Nie udało się dodać certyfikatu do magazynu zaufanych certyfikatów.</string>
     <string name="trust_cleared">Wyczyszczono bazę danych zaufania</string>
     <string name="cancelled">Anulowano</string>
-    <string name="transmit_mode">Tryb transmisji</string>
+    <string name="transmit_mode">Tryb przekazywania</string>
     <string name="current_chat_target">Bieżący cel czatu</string>
     <string name="channel_join">Dołącz</string>
     <string name="certificate_info">Podmiot:\n%1$s\n\nWażny od:\n%2$s\n\nWażny do:\n%3$s\n\nSkrót (SHA-1):\n%4$s\n\nSkrót (SHA-256):\n%5$s</string>
@@ -244,7 +244,7 @@
     <string name="grant_perm_storage">Proszę udzielić pozwolenia na pamięć zewnętrzną.</string>
     <string name="grant_perm_draw_over_apps">Proszę udzielić pozwolenia na wyświetlanie w innych aplikacjach.</string>
     <string name="orbot_not_installed">Aplikacja Orbot nie jest zainstalowana. Nie używam sieci Tor.</string>
-    <string name="orbot_tor_failed">Nie udało się połączyć z lokalnym serwerem proxy Tor na porcie %d (SOCKS).
+    <string name="orbot_tor_failed">Nie udało się połączyć z lokalnym serwerem proxy sieci Tor na porcie %d (SOCKS).
 \n
 \nUpewnij się, że aplikacja Orbot jest uruchomiona.</string>
     <string name="default_">Domyślny</string>
