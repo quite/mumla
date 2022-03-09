@@ -96,7 +96,7 @@
     <string name="pttSound">Dźwięk funkcji „Naciśnij i mów”</string>
     <string name="pttSoundSum">Odtwórz efekt dźwiękowy po naciśnięciu przycisku funkcji „Naciśnij i mów”.</string>
     <string name="preprocessor_enabled">Wstępne przetwarzanie wejścia</string>
-    <string name="preprocessor_enabled_sum">Tłumi hałas otoczenia i normalizuje głośność dźwięku.</string>
+    <string name="preprocessor_enabled_sum">Tłumi hałas otoczenia i normalizuje głośność audio.</string>
     <string name="audio_per_packet">Audio na pakiet</string>
     <string name="audio_per_packet_sum">Długość audio na pakiet głosowy.</string>
     <string name="stay_awake">Nie usypiaj</string>
