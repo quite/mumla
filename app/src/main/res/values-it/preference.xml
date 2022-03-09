@@ -22,7 +22,7 @@
     <string name="certificateGenerate">Genera certificato</string>
     <string name="audioOutput">Qualità suono altoparlante</string>
     <string name="disableOpus">Evita codec Opus</string>
-    <string name="useTts">Text-to-Speech</string>
+    <string name="useTts">Sintesi vocale</string>
     <string name="autoReconnect">Riconnessione automatica</string>
     <string name="useTor">Connetti tramite Tor</string>
     <string name="inputQuality">Qualità input microfono</string>
