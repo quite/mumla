@@ -10,8 +10,8 @@ To jest pierwsze wydanie w Google Play.
 
 - Allan Nordhøy przerobił ang. napisy źródłowe.
 
-- R4SAS przetłumaczył Mumlę na rosyjski.
+- R4SAS przetłumaczył Mumla na rosyjski.
 
-- deluxghost przetłumaczył Mumlę na chiński uproszczony.
+- deluxghost przetłumaczył Mumla na chiński uproszczony.
 
 - Pobieranie listy serwerów działa.
