@@ -18,9 +18,7 @@
 package se.lublin.mumla.channel;
 
 import android.app.Activity;
-import android.content.ContentResolver;
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
@@ -48,13 +46,10 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 
-import androidx.activity.result.ActivityResult;
-import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 
 import java.io.ByteArrayOutputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URLEncoder;
@@ -71,7 +66,6 @@ import se.lublin.humla.IHumlaSession;
 import se.lublin.humla.model.IChannel;
 import se.lublin.humla.model.IMessage;
 import se.lublin.humla.model.IUser;
-import se.lublin.humla.model.ServerSettings;
 import se.lublin.humla.model.User;
 import se.lublin.humla.util.HumlaDisconnectedException;
 import se.lublin.humla.util.HumlaObserver;
@@ -174,6 +168,9 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
         mChatList = (ListView) view.findViewById(R.id.chat_list);
         mChatTextEdit = (EditText) view.findViewById(R.id.chatTextEdit);
 
+        ImageButton ImageSendButton = view.findViewById(R.id.chatImageSend);
+        ImageSendButton.setOnClickListener(buttonView -> imagePicker.launch("image/*"));
+
         mSendButton = (ImageButton) view.findViewById(R.id.chatTextSend);
         mSendButton.setOnClickListener(new OnClickListener() {
             @Override
@@ -185,9 +182,6 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
                 }
             }
         });
-
-        ImageButton ImageSendButton = view.findViewById(R.id.chatImageSend);
-        ImageSendButton.setOnClickListener(buttonView -> imagePicker.launch("image/*"));
 
         mChatTextEdit.setOnEditorActionListener(new OnEditorActionListener() {
             @Override
@@ -259,45 +253,62 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
     }
 
     private void onImagePicked(Uri uri) {
+        if (uri == null) {
+            return;
+        }
+        if (getService() == null || !getService().isConnected()) {
+            return;
+        }
+        int maxSize = getService().HumlaSession().getServerSettings().getImageMessageLength();
+
+        byte[] bytes;
         try {
-            if(uri == null){
+            InputStream imageStream = requireContext().getContentResolver().openInputStream(uri);
+            if (imageStream == null) {
                 return;
             }
-
-            int maxSize = getService().HumlaSession().getServerSettings().getImageMessageLength();
-
-            InputStream imageStream = requireContext().getContentResolver().openInputStream(uri);
-
-            byte[] originalBytes = InputStreamUtils.getBytes(imageStream);
-
-            Bitmap bitmap = BitmapFactory.decodeByteArray(originalBytes, 0, originalBytes.length);
-            Bitmap resized = BitmapUtils.resizeKeepingAspect(bitmap, 600, 400);
-
-            // Try to resize image until it fits
-            int quality = 97;
-            byte[] byteArray;
-            do {
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                resized.compress(Bitmap.CompressFormat.JPEG, quality, stream);
-                byteArray = stream.toByteArray();
-                resized.recycle();
-
-                // Account for the base64 overhead
-                if (4 * (byteArray.length / 3) + 4 < maxSize || maxSize == 0) {
-                    break;
-                }
-
-                quality -= 10;
-            } while (quality > 0);
-
-            String imageStr = Base64.encodeToString(byteArray, Base64.NO_WRAP);
-            String encoded = URLEncoder.encode(imageStr);
-            mMessageBuffer = "<img src=\"data:image/jpeg;base64," + encoded + "\"/>";
-        } catch (FileNotFoundException e) {
-            Log.d(TAG, "exception from onImagePicked: " + e);
+            bytes = InputStreamUtils.getBytes(imageStream);
+            imageStream.close();
         } catch (IOException e) {
-            Log.d(TAG, "exception from onImagePicked: " + e);
+            Log.d(TAG, "exception in onImagePicked: " + e);
+            return;
         }
+
+        Bitmap bitmap = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
+        if (bitmap == null) {
+            Log.w(TAG, "decode to bitmap failed");
+            return;
+        }
+        Bitmap resized = BitmapUtils.resizeKeepingAspect(bitmap, 600, 400);
+
+        // Try to resize image until it fits
+        int quality = 97;
+        byte[] compressed;
+        do {
+            ByteArrayOutputStream stream = new ByteArrayOutputStream();
+            if (!resized.compress(Bitmap.CompressFormat.JPEG, quality, stream)) {
+                Log.w(TAG, "compress failed, quality==" + quality);
+            } else {
+                compressed = stream.toByteArray();
+                // Account for the base64 overhead
+                if (4 * (compressed.length / 3) + 4 < maxSize || maxSize == 0) {
+                    break;
+                } else {
+                    Log.w(TAG, "compress(quality==" + quality + ") >= " + maxSize + " bytes");
+                }
+            }
+            compressed = null;
+            quality -= 10;
+        } while (quality > 0);
+
+        if (compressed == null) {
+            Log.w(TAG, "all compress attempts failed");
+            return;
+        }
+
+        String imageStr = Base64.encodeToString(compressed, Base64.NO_WRAP);
+        String encoded = URLEncoder.encode(imageStr);
+        mMessageBuffer = "<img src=\"data:image/jpeg;base64," + encoded + "\"/>";
     }
 
     /**

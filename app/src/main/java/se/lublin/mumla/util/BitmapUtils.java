@@ -7,7 +7,7 @@ public class BitmapUtils {
         int width = image.getWidth();
         int height = image.getHeight();
 
-        if(width < maxWidth && height < maxHeight){
+        if (width < maxWidth && height < maxHeight) {
             return image;
         }
 
@@ -17,9 +17,9 @@ public class BitmapUtils {
         int finalWidth = maxWidth;
         int finalHeight = maxHeight;
         if (ratioMax > ratioBitmap) {
-            finalWidth = (int) ((float)maxHeight * ratioBitmap);
+            finalWidth = (int) ((float) maxHeight * ratioBitmap);
         } else {
-            finalHeight = (int) ((float)maxWidth / ratioBitmap);
+            finalHeight = (int) ((float) maxWidth / ratioBitmap);
         }
 
         return Bitmap.createScaledBitmap(image, finalWidth, finalHeight, true);
