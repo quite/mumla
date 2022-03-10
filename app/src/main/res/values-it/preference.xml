@@ -76,7 +76,7 @@
     <string name="voiceActivitySettingsSum">Configura l\'attività vocale (se attiva).</string>
     <string name="voiceActivitySettings">Impostazioni attività vocale</string>
     <string name="disableOpusSum">Disattiva il supporto Opus per i server Mumble 1.2.4.</string>
-    <string name="shortTtsMessages">Messaggi text-to-speech abbreviati</string>
+    <string name="shortTtsMessages">Messaggi sintesi vocale abbreviati</string>
     <string name="shortTtsMessagesSum">Accorcia i messaggi leggendo solo i nomi dei domini dei collegamenti.</string>
     <string name="autoReconnectSum">Ristabilisce la connessione al server quando viene persa.</string>
     <string name="useTorSum">Richiede l\'app Orbot.</string>
@@ -91,7 +91,7 @@
     <string name="handsetMode">Cornetta</string>
     <string name="pref_export_certificate_summary">Esporta nella memoria esterna.</string>
     <string name="pttSettingsSum">Configura push-to-talk (se attivo).</string>
-    <string name="preprocessor_enabled_sum">Supprime il rumore ambientale e normalizza il volume del suono.</string>
+    <string name="preprocessor_enabled_sum">Sopprime il rumore ambientale e normalizza il volume dell\'audio.</string>
     <string name="pref_import_certificate_summary">Importa dalla memoria esterna.</string>
     <string name="pref_start_up_in_pinned_mode">Modalità canali fissati</string>
     <string name="pttSettings">Impostazioni push-to-talk</string>
