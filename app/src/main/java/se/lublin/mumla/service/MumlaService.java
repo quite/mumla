@@ -46,6 +46,7 @@ import se.lublin.humla.HumlaService;
 import se.lublin.humla.exception.AudioException;
 import se.lublin.humla.model.IMessage;
 import se.lublin.humla.model.IUser;
+import se.lublin.humla.model.Message;
 import se.lublin.humla.model.TalkState;
 import se.lublin.humla.util.HumlaException;
 import se.lublin.humla.util.HumlaObserver;
@@ -646,5 +647,21 @@ public class MumlaService extends HumlaService implements
         public IMumlaService getService() {
             return mService;
         }
+    }
+
+    @Override
+    public Message sendUserTextMessage(int session, String message) {
+        Message msg = super.sendUserTextMessage(session, message);
+
+        mMessageLog.add(new IChatMessage.TextMessage(msg));
+        return msg;
+    }
+
+    @Override
+    public Message sendChannelTextMessage(int channel, String message, boolean tree) {
+        Message msg = super.sendChannelTextMessage(channel, message, tree);
+
+        mMessageLog.add(new IChatMessage.TextMessage(msg));
+        return msg;
     }
 }
