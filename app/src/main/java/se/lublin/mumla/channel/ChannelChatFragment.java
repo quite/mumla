@@ -50,7 +50,7 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 
 import java.io.ByteArrayOutputStream;
-import java.io.IOException;
+import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.net.URLEncoder;
 import java.text.DateFormat;
@@ -74,7 +74,6 @@ import se.lublin.mumla.R;
 import se.lublin.mumla.service.IChatMessage;
 import se.lublin.mumla.util.BitmapUtils;
 import se.lublin.mumla.util.HumlaServiceFragment;
-import se.lublin.mumla.util.InputStreamUtils;
 import se.lublin.mumla.util.MumbleImageGetter;
 
 public class ChannelChatFragment extends HumlaServiceFragment implements ChatTargetProvider.OnChatTargetSelectedListener {
@@ -261,20 +260,19 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
         }
         int maxSize = getService().HumlaSession().getServerSettings().getImageMessageLength();
 
-        byte[] bytes;
+        InputStream imageStream;
         try {
-            InputStream imageStream = requireContext().getContentResolver().openInputStream(uri);
+            imageStream = requireContext().getContentResolver().openInputStream(uri);
             if (imageStream == null) {
+                Log.w(TAG, "openInputStream(uri) failed");
                 return;
             }
-            bytes = InputStreamUtils.getBytes(imageStream);
-            imageStream.close();
-        } catch (IOException e) {
+        } catch (FileNotFoundException e) {
             Log.d(TAG, "exception in onImagePicked: " + e);
             return;
         }
 
-        Bitmap bitmap = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
+        Bitmap bitmap = BitmapFactory.decodeStream(imageStream);
         if (bitmap == null) {
             Log.w(TAG, "decode to bitmap failed");
             return;
