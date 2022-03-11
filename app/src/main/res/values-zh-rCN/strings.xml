@@ -260,4 +260,5 @@
     <plurals name="notification_unread_many">
         <item quantity="other">%d 条新消息</item>
     </plurals>
+    <string name="image_confirm_send">发送此图片吗？</string>
 </resources>
