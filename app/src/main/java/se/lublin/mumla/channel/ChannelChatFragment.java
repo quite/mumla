@@ -21,6 +21,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.Editable;
@@ -48,9 +49,10 @@ import android.widget.TextView.OnEditorActionListener;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.exifinterface.media.ExifInterface;
 
 import java.io.ByteArrayOutputStream;
-import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.InputStream;
 import java.net.URLEncoder;
 import java.text.DateFormat;
@@ -260,6 +262,22 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
         }
         int maxSize = getService().HumlaSession().getServerSettings().getImageMessageLength();
 
+        // We don't fail on errors when getting orientation
+        boolean flipped = false;
+        int rotationDeg = 0;
+        try (InputStream imageStream = requireContext().getContentResolver().openInputStream(uri)) {
+            if (imageStream == null) {
+                Log.w(TAG, "openInputStream(uri) failed for orientation");
+            } else {
+                ExifInterface exif = new ExifInterface(imageStream);
+                flipped = exif.isFlipped();
+                rotationDeg = exif.getRotationDegrees();
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "exception when getting orientation: " + e);
+        }
+        Log.d(TAG, "flipped:" + flipped + " rotationDeg:" + rotationDeg);
+
         InputStream imageStream;
         try {
             imageStream = requireContext().getContentResolver().openInputStream(uri);
@@ -267,8 +285,8 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
                 Log.w(TAG, "openInputStream(uri) failed");
                 return;
             }
-        } catch (FileNotFoundException e) {
-            Log.d(TAG, "exception in onImagePicked: " + e);
+        } catch (IOException e) {
+            Log.w(TAG, "exception when opening stream: " + e);
             return;
         }
 
@@ -277,6 +295,20 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
             Log.w(TAG, "decode to bitmap failed");
             return;
         }
+
+        if (flipped || rotationDeg > 0) {
+            Matrix matrix = new Matrix();
+            if (flipped) {
+                // first flip horizontally, following {@link ExifInterface#getRotationDegrees()}
+                matrix.postScale(-1, 1, bitmap.getWidth() / 2f, bitmap.getHeight() / 2f);
+            }
+            if (rotationDeg > 0) {
+                matrix.postRotate(rotationDeg);
+            }
+            bitmap = Bitmap.createBitmap(bitmap, 0, 0, bitmap.getWidth(), bitmap.getHeight(),
+                    matrix, false);
+        }
+
         Bitmap resized = BitmapUtils.resizeKeepingAspect(bitmap, 600, 400);
 
         // Try to resize image until it fits
@@ -292,7 +324,7 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
                 if (4 * (compressed.length / 3) + 4 < maxSize || maxSize == 0) {
                     break;
                 } else {
-                    Log.w(TAG, "compress(quality==" + quality + ") >= " + maxSize + " bytes");
+                    Log.d(TAG, "compress(quality==" + quality + ") >= " + maxSize + " bytes");
                 }
             }
             compressed = null;
