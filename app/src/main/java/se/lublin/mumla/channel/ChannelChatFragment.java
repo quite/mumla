@@ -18,7 +18,7 @@
 package se.lublin.mumla.channel;
 
 import android.app.Activity;
-import android.app.AlertDialog;
+import android.app.AlertDialog.Builder;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -292,12 +292,6 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
             return;
         }
 
-        ImageView image = new ImageView(requireContext());
-        image.setImageBitmap(bitmap);
-        image.setAdjustViewBounds(true);
-        image.setScaleType(ImageView.ScaleType.FIT_CENTER);
-        image.setMaxHeight(Resources.getSystem().getDisplayMetrics().heightPixels / 3);
-
         if (flipped || rotationDeg > 0) {
             Matrix matrix = new Matrix();
             if (flipped) {
@@ -313,18 +307,20 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
 
         Bitmap resized = BitmapUtils.resizeKeepingAspect(bitmap, 600, 400);
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(requireContext())
+        ImageView preview = new ImageView(requireContext());
+        preview.setImageBitmap(resized);
+        preview.setAdjustViewBounds(true);
+        preview.setScaleType(ImageView.ScaleType.FIT_CENTER);
+        preview.setMaxHeight(Resources.getSystem().getDisplayMetrics().heightPixels / 3);
+        Builder adb = new Builder(requireContext())
                 .setMessage(R.string.image_confirm_send)
-                .setPositiveButton(R.string.ok, (dialog, which) -> {
-                    dialog.dismiss();
-                    onImageConfirmed(resized);
-                })
-                .setNegativeButton(R.string.cancel,  (dialog, which) -> dialog.dismiss())
-                .setView(image);
-        builder.create().show();
+                .setPositiveButton(android.R.string.ok, (dlg, which) -> onImageConfirmed(resized))
+                .setNegativeButton(android.R.string.cancel, null)
+                .setView(preview);
+        adb.create().show();
     }
 
-    private void onImageConfirmed( Bitmap resized){
+    private void onImageConfirmed(Bitmap resized) {
         int maxSize = getService().HumlaSession().getServerSettings().getImageMessageLength();
 
         // Try to resize image until it fits
