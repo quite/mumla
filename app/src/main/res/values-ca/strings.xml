@@ -274,4 +274,5 @@
 \n%5$s</string>
     <string name="channel_join">Unir-se</string>
     <string name="current_chat_target">Destí actual</string>
+    <string name="image_confirm_send">Enviar aquesta imatge\?</string>
 </resources>
