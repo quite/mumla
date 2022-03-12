@@ -105,7 +105,7 @@
     <string name="hint_switching">Görünümler Arasında Geçiş</string>
     <string name="hint_server_add">Mumla\'ya hoş geldiniz</string>
     <string name="hint_ptt_summary">Konuşmak için bu düğmeye basmanız yeterlidir. Değiştirmek için iki defa dokunun.</string>
-    <string name="hint_ptt">Bas-konuş</string>
+    <string name="hint_ptt">Bas konuş</string>
     <string name="hint_reason">Neden</string>
     <string name="tapToReconnect">Yeniden bağlanmak için dokunun</string>
     <string name="coming_soon">Özellik yakında gelecek.</string>
@@ -199,7 +199,7 @@
     <string name="disconnect">Bağlantıyı Kes</string>
     <string name="deafen">Duymasını Engelle</string>
     <string name="mute">Sesini Kapat</string>
-    <string name="ptt">Bas-konuş</string>
+    <string name="ptt">Bas konuş</string>
     <string name="menu_settings">Ayarlar</string>
     <string name="fragment_channel">Kanal</string>
     <string name="fragment_chat">Sohbet</string>
@@ -272,6 +272,7 @@
     <string name="user_menu_kick">At</string>
     <string name="user_menu_admin">Yönetici</string>
     <string name="chat_message_to">%1$s → %2$s</string>
-    <string name="drawer_pinned">Sabitlenmiş Kanallar</string>
+    <string name="drawer_pinned">Sabitlenen Kanallar</string>
     <string name="drawer_tokens">Erişim Belirteçleri</string>
+    <string name="image_confirm_send">Bu resim gönderilsin mi\?</string>
 </resources>
