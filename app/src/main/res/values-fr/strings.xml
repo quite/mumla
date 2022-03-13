@@ -29,8 +29,8 @@
     <string name="user_menu_view_comment">Voir le commentaire</string>
     <string name="user_menu_reset_comment">Réinitialiser le commentaire</string>
     <string name="user_menu_send_message">Envoyer un message</string>
-    <string name="user_menu_information">Information</string>
-    <string name="user_menu_register">Enregistrer</string>
+    <string name="user_menu_information">Informations</string>
+    <string name="user_menu_register">S\'enregistrer</string>
     <string name="user_menu_registered">Enregistré</string>
     <!--Channel menu-->
     <string name="channel_menu_pin">Épingle</string>
@@ -75,28 +75,28 @@
     <string name="server_label">Libellé</string>
     <string name="connecting">Connexion</string>
     <string name="connecting_to_server">Connexion à %s…</string>
-    <string name="fragment_chat">Chat</string>
+    <string name="fragment_chat">Discussion</string>
     <string name="fragment_channel">canal</string>
     <string name="menu_settings">Paramètres</string>
     <string name="ptt">Appuyer pour parler</string>
     <string name="mute">Muet</string>
     <string name="deafen">Sourd</string>
     <string name="disconnect">Déconnecter</string>
-    <string name="disconnectSure">Êtes vous sur de vouloir vous déconnecter de serveur %s ?</string>
+    <string name="disconnectSure">Êtes-vous sûr(e) de vouloir vous déconnecter de serveur %s \?</string>
     <string name="save">Sauvegarder</string>
     <string name="add">Ajouter</string>
     <string name="preferences">Préférences</string>
     <string name="togglelocalmute">Activer/désactiver ne plus l\'écouter</string>
-    <string name="chat">Chat</string>
+    <string name="chat">Discussion</string>
     <string name="perm_denied">Permission refusée.</string>
     <string name="connectionRefused">Connexion refusée</string>
-    <string name="confirm_delete_server">Êtes vous sur vouloir supprimer ce serveur ?</string>
+    <string name="confirm_delete_server">Êtes-vous sûr(e) vouloir supprimer ce serveur \?</string>
     <string name="confirm_delete_channel">Êtes-vous sûr·e de vouloir supprimer ce salon \?</string>
     <string name="disconnected">Déconnecté</string>
     <string name="kicked_message">Expulsé du serveur.
 \nRaison : %s</string>
     <string name="loading">Chargement…</string>
-    <string name="reset_key">Touche pour reset</string>
+    <string name="reset_key">Réinitialiser la touche</string>
     <string name="externalStorageUnavailable">Stockage externe indisponible, impossible de charger le certificat</string>
     <string name="addFavorite">Ajouter un favori</string>
     <string name="removeFavorite">Supprimer un favori</string>
@@ -115,21 +115,21 @@
     <string name="generateCertProgress">Génération d\'un certificat…</string>
     <string name="search">Rechercher</string>
     <string name="searchHint">Rechercher des salons et des utilisateurs</string>
-    <string name="undocumentedWakeLock">Malheuresement, il ne semble pas que nous puissions proposer le déverrouillage grâce aux capteurs de proximité pour votre appareil. Veuillez changer le mode d\'appel à haut-parleur.</string>
+    <string name="undocumentedWakeLock">Malheureusement, il ne semble pas que nous puissions proposer le déverrouillage grâce aux capteurs de proximité pour votre appareil. Veuillez changer le mode d\'appel à haut-parleur.</string>
     <string name="bluetooth">Bluetooth</string>
     <string name="recordingVolume">Augmentation du volume d\'enregistrement</string>
     <string name="quickConnect">Connexion rapide</string>
     <string name="connect">Connexion</string>
     <string name="connectToServer">Connexion au serveur</string>
-    <string name="edit">Éditer</string>
-    <string name="remove">Supprimer</string>
-    <string name="delete">Effacer</string>
+    <string name="edit">Modifier</string>
+    <string name="remove">Retirer</string>
+    <string name="delete">Supprimer</string>
     <string name="retry">Réessayer</string>
-    <string name="messageToUser">Écrire un message à l\'utilisateur \'%s\'</string>
-    <string name="messageToChannel">Écrire un message dans le salon\'%s\'</string>
+    <string name="messageToUser">Écrire un message à l\'utilisateur « %s »</string>
+    <string name="messageToChannel">Écrire un message dans le salon « %s »</string>
     <string name="online">En ligne</string>
     <string name="offline">Hors ligne</string>
-    <string name="clearChat">Vider le chat</string>
+    <string name="clearChat">Effacer la discussion</string>
     <string name="connected">Connecté</string>
     <string name="mumlaConnected">Mumla connecté</string>
     <string name="mumlaConnecting">Mumla en connexion…</string>
@@ -246,7 +246,7 @@
         <item quantity="other">%d utilisateurs</item>
     </plurals>
     <plurals name="reconnecting">
-        <item quantity="one">Reconnexion en %d seconde.</item>
+        <item quantity="one">Reconnexion dans %d seconde.</item>
         <item quantity="other">Reconnexion dans %d secondes.</item>
     </plurals>
     <plurals name="notification_unread_many">
@@ -275,11 +275,12 @@
     <string name="migration_certificate_begin">Début de la migration des certificats…</string>
     <string name="certificate_import_success">Certificat importé %s.</string>
     <string name="certificate_load_failed">Impossible de stocker le certificat.</string>
-    <string name="invalid_certificate">Certificat invalide, n\'a pas pu être chargé.</string>
+    <string name="invalid_certificate">Un certificat invalide n\'a pas pu être chargé.</string>
     <string name="password">Mot de passe</string>
     <string name="decrypt_certificate">Déchiffrer le certificat</string>
     <string name="certificates">Certificats</string>
     <string name="no_certificate">Aucun certificat</string>
     <string name="change_requires_reconnect">Reconnectez-vous pour utiliser les nouveaux paramètres.</string>
     <string name="chat_message_tts_short_link">(Lien vers %1$s)</string>
+    <string name="image_confirm_send">Envoyer cette image \?</string>
 </resources>
