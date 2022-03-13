@@ -218,7 +218,9 @@
     <string name="invalid_port_range">Ungültiger Port (1-65535)</string>
     <string name="invalid_username">Ungültiger Benutzername</string>
     <string name="cancel_reconnect">Neuverbinden abbrechen</string>
-    <string name="attempting_reconnect">Fehler: %s.\n\n Versuche erneut zu verbinden…</string>
+    <string name="attempting_reconnect">Fehler: %s.
+\n
+\nVersuche erneut zu verbinden…</string>
     <string name="default_">Standard</string>
     <plurals name="search_channel_users">
         <item quantity="one">%d Benutzer</item>
@@ -261,4 +263,5 @@
     <string name="shout_failed">Sprachziel konnte nicht erstellt werden.</string>
     <string name="shout_include_subchannels">Stimme zu Unterkanälen</string>
     <string name="context_channel_shout">Sprachziel festlegen</string>
+    <string name="image_confirm_send">Dieses Bild senden\?</string>
 </resources>
