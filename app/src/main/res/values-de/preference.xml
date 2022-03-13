@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="inputMethodVoice">Sprachaktivierung</string>
+    <string name="inputMethodVoice">Sprachaktivität</string>
     <string name="inputMethodPtt">Zum Sprechen drücken</string>
     <string name="inputMethodContinuous">Kontinuierlich</string>
     <!--Theme names-->
@@ -13,48 +13,48 @@
     <string name="call_mode_voice_call">Telefongespräch</string>
     <!--Hot corner-->
     <string name="hot_corner_none">Keine</string>
-    <string name="hot_corner_top_left">Oben links</string>
-    <string name="hot_corner_bottom_left">Unten links</string>
-    <string name="hot_corner_top_right">Oben rechts</string>
-    <string name="hot_corner_bottom_right">Unten rechts</string>
+    <string name="hot_corner_top_left">↖ oben links</string>
+    <string name="hot_corner_bottom_left">↙ unten links</string>
+    <string name="hot_corner_top_right">Oben rechts ↗</string>
+    <string name="hot_corner_bottom_right">Unten rechts ↘</string>
     <!--About-->
     <string name="about">Über</string>
-    <string name="aboutSum">Rechtliches und Danksagungen</string>
-    <string name="acknowledgements">Danksagungen</string>
-    <string name="acknowledgementsSum">Ansehen, wer zu Mumla beigetragen hat</string>
+    <string name="aboutSum">Rechtliche Hinweise und Danksagungen</string>
+    <string name="acknowledgements">Mitwirkende</string>
+    <string name="acknowledgementsSum">Sehen Sie, wer zu Mumla beigetragen hat (Weblink)</string>
     <string name="licenses">Lizenzen</string>
     <string name="authentication">Authentifizierung</string>
     <string name="authenticationSum">Zertifikate verwalten und erstellen</string>
-    <string name="audioInput">Audioeingabe</string>
-    <string name="audioInputMethodSum">Wie Ton zum Server übertragen werden soll.</string>
-    <string name="audioInputMethod">Eingabemethode</string>
-    <string name="audioInputVolume">Aufnahmelautstärke</string>
-    <string name="audioInputVolumeSum">Aufnahmelautstärke erhöhen um den Ton künstlich zu regeln.</string>
+    <string name="audioInput">Audioeingang</string>
+    <string name="audioInputMethodSum">Wie die Audioübertragung aktiviert wird.</string>
+    <string name="audioInputMethod">Sendemodus</string>
+    <string name="audioInputVolume">Mikrofonlautstärke</string>
+    <string name="audioInputVolumeSum">Pegel, auf den das Audio normalisiert werden soll.</string>
     <string name="callMode">Gesprächsmodus</string>
-    <string name="callModeSum">Der Gesprächsmodus von Mumla: Entweder wie bei einem Telefonanruf oder bei Freisprechen verhalten.</string>
+    <string name="callModeSum">Normales Telefonat oder Freisprecheinrichtung.</string>
     <string name="detectionThreshold">Signalwerterkennung</string>
-    <string name="detectionThresholdSum">Der minimal benötigte Ausschlag, um als Sprache erkannt zu werden (nur bei Sprachaktivierung).</string>
+    <string name="detectionThresholdSum">Mindestlautstärke zur Erkennung von Sprache (wenn der Sendemodus \"Sprachaktivität\" ist).</string>
     <string name="pttKey">Zum Sprechen drücken-Taste</string>
     <string name="pttKeySum">Eine Hardwaretaste für „Zum Sprechen drücken“.</string>
     <string name="hotCorner">Bildschirmecke als Zum Sprechen drücken-Taste</string>
     <string name="hotCornerSum">Eine Bildschirmecke festlegen, welche App-Übergreifend als Zum Sprechen drücken-Taste verwendet werden kann.</string>
     <string name="general">Allgemein</string>
-    <string name="generalSum">Allgemeine Einstellungen anpassen</string>
+    <string name="generalSum">Die Haupteinstellungen</string>
     <string name="appearance">Aussehen</string>
     <string name="appearanceSum">Das Aussehen der App anpassen</string>
-    <string name="themeSum">Das Erscheinungsbild der App anpassen.</string>
+    <string name="themeSum">Ändern Sie das Aussehen der App.</string>
     <string name="theme">Erscheinungsbild</string>
     <string name="advancedAudio">Erweiterte Audioeinstellungen</string>
-    <string name="forceTcp">Erzwinge TCP</string>
-    <string name="forceTcpSum">Ausschließlich TCP benutzten (und UDP ausschalten).</string>
+    <string name="forceTcp">Nur TCP</string>
+    <string name="forceTcpSum">Deaktiviert UDP für die Kommunikation.</string>
     <string name="audio">Audio</string>
     <string name="audioSum">Audioeingabe und Audioausgabe anpassen</string>
     <string name="audioSampleRate">Samplerate der Eingabe</string>
     <string name="audioSampleRateSum">Die bevorzugte Audio Samplerate. Nicht alle Raten werden von allen Geräten unterstützt.</string>
     <string name="noCert">Kein Zertifikat</string>
-    <string name="chatNotifications">Chat Benachrichtigung</string>
-    <string name="chatNotificationsSum">Bei eingehenden Nachrichten eine Benachrichtigung anzeigen.</string>
-    <string name="defaultUsername">Standard Benutzername</string>
+    <string name="chatNotifications">Chat-Benachrichtigungen</string>
+    <string name="chatNotificationsSum">Wird bei neuen Chat-Nachrichten angezeigt.</string>
+    <string name="defaultUsername">Standard-Benutzername</string>
     <string name="defaultUsernameSum">Der voreingestellte Benutzername, welcher beim Verbinden zu Servern verwendet wird.</string>
     <string name="defaultUsernameDefault">Mumla_Benutzer</string>
     <string name="certificateGenerate">Zertifikat erzeugen</string>
