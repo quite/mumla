@@ -323,7 +323,7 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
     private void onImageConfirmed(Bitmap resized) {
         int maxSize = getService().HumlaSession().getServerSettings().getImageMessageLength();
 
-        // Try to resize image until it fits
+        // Lower the quality, compressing image harder until it fits
         int quality = 97;
         byte[] compressed;
         do {
