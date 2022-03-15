@@ -51,8 +51,6 @@
         android:requestLegacyExternalStorage="true">
         <!-- requestLegacyExternalStorage still true: we keep using old code if Android < 30 -->
 
-        <activity android:name=".wizard.WizardActivity" />
-
         <activity
             android:name=".preference.Preferences"
             android:parentActivityName=".app.MumlaActivity"

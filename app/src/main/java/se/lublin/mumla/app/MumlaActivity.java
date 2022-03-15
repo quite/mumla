@@ -239,7 +239,7 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
                         }
                     }
                 });
-                adb.setNegativeButton(R.string.wizard_cancel, null);
+                adb.setNegativeButton(android.R.string.cancel, null);
                 adb.show();
             } catch (CertificateException e) {
                 e.printStackTrace();
@@ -344,7 +344,9 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
         setVolumeControlStream(mSettings.isHandsetMode() ?
                 AudioManager.STREAM_VOICE_CALL : AudioManager.STREAM_MUSIC);
 
-        if(mSettings.isFirstRun()) showSetupWizard();
+        if (mSettings.isFirstRun()) {
+            showFirstRunGuide();
+        }
     }
 
     @Override
@@ -465,13 +467,11 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
         loadDrawerFragment((int) id);
     }
 
-    /**
-     * Shows a nice looking setup wizard to guide the user through the app's settings.
-     * Will do nothing if it isn't the first launch.
-     */
-    private void showSetupWizard() {
+    private void showFirstRunGuide() {
         // Prompt the user to generate a certificate.
-        if(mSettings.isUsingCertificate()) return;
+        if (mSettings.isUsingCertificate()) {
+            return;
+        }
         AlertDialog.Builder adb = new AlertDialog.Builder(this);
         adb.setTitle(R.string.first_run_generate_certificate_title);
         String msg = getString(R.string.first_run_generate_certificate);
@@ -494,10 +494,6 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
         });
         adb.show();
         mSettings.setFirstRun(false);
-
-        // TODO: finish wizard
-//        Intent intent = new Intent(this, WizardActivity.class);
-//        startActivity(intent);
     }
 
     /**
