@@ -81,7 +81,6 @@
     <string name="externalStorageUnavailable">Pamięć zewnętrzna niedostępna, nie można załadować certyfikatu</string>
     <string name="addFavorite">Dodaj do ulubionych</string>
     <string name="accessAdd">Dodaj token dostępu</string>
-    <string name="pushToTalkHint">(zaznacz pole wyboru, aby włączyć przełączanie)</string>
     <string name="messageReceived">Nowa wiadomość</string>
     <string name="generateCertSuccess">Twój certyfikat został ustawiony i zapisany jako %s!</string>
     <string name="generateCertFailure">Nie udało się wygenerować certyfikatu.</string>
@@ -124,12 +123,6 @@
 \nCzy masz połączenie z internetem\?</string>
     <string name="overlay">Nakładka</string>
     <string name="hint_reason">Przyczyna</string>
-    <string name="hint_ptt">Naciśnij i mów</string>
-    <string name="hint_ptt_summary">Wystarczy nacisnąć ten przycisk, aby mówić. Stuknij dwukrotnie, aby przełączyć.</string>
-    <string name="hint_server_add">Witaj w Mumla</string>
-    <string name="hint_server_add_summary">Dodaj serwer do ulubionych, naciskając \'Dodaj\' z paska akcji.</string>
-    <string name="hint_switching">Przełączanie między widokami</string>
-    <string name="hint_switching_summary">Przełączaj się między widokiem czatu i kanału, używając lewego górnego przycisku lub przeciągając.</string>
     <string name="action_settings">Ustawienia</string>
     <string name="reconnect">Połącz ponownie</string>
     <string name="reconnect_dialog_message">Jesteś już połączony z serwerem. Czy zamiast tego połączyć się z tym serwerem?</string>

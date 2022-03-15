@@ -13,7 +13,6 @@
     <string name="generateCertFailure">Kunne ikke generere sertifikat.</string>
     <string name="generateCertSuccess">Sertifikatet ditt har blitt satt og lagret som %s!</string>
     <string name="messageReceived">Ny melding</string>
-    <string name="pushToTalkHint">(huk av i avkryssningsboksen for å skru på veksling)</string>
     <string name="accessAdd">Legg til tilgangssymbol</string>
     <string name="addFavorite">Legg til favoritt</string>
     <string name="externalStorageUnavailable">Eksternt lagringsmedium utilgjengelig. Kan ikke laste inn sertifikat.</string>
@@ -140,12 +139,6 @@
     <string name="reconnect_dialog_message">Du er allerede tilkoblet en tjener. Koble til denne tjeneren istedenfor\?</string>
     <string name="reconnect">Koble til igjen</string>
     <string name="action_settings">Innstillinger</string>
-    <string name="hint_switching_summary">Bytt mellom sludrings- og kanalvisning ved å brukke knappene øverst til venstre, eller ved å dra.</string>
-    <string name="hint_switching">Veksling mellom visninger</string>
-    <string name="hint_server_add_summary">Legg til en favoritt-tjener ved å trykke «Legg til» fra handlingsfeltet.</string>
-    <string name="hint_server_add">Velkommen</string>
-    <string name="hint_ptt_summary">Trykk denne knappen for å snakke. Dobbelttrykk for å veksle den.</string>
-    <string name="hint_ptt">Trykk for å snakk</string>
     <string name="hint_reason">Grunn</string>
     <string name="overlay">Overlag</string>
     <string name="error_fetching_servers">Kunne ikke hente tjenere.

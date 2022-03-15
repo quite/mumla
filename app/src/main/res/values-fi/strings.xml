@@ -86,12 +86,6 @@
     <string name="reconnect_dialog_message">Olet jo yhteydessä palvelimeen. Yhdistetäänkö tähän palvelimeen\?</string>
     <string name="reconnect">Yhdistä uudelleen</string>
     <string name="action_settings">Asetukset</string>
-    <string name="hint_switching_summary">Vaihda chat- ja kanavanäkymien välillä vasemmassa yläkulmassa olevilla painikkeilla tai pyyhkäisemällä.</string>
-    <string name="hint_switching">Siirtyminen näkymästä toiseen</string>
-    <string name="hint_server_add_summary">Lisää suosikkipalvelin painamalla toimintopalkista Lisää.</string>
-    <string name="hint_server_add">Tervetuloa Mumlaan</string>
-    <string name="hint_ptt_summary">Paina vain tätä painiketta puhuaksesi. Vaihda se kaksoisnapauttamalla.</string>
-    <string name="hint_ptt">Puhepikanäppäin</string>
     <string name="hint_reason">Syy</string>
     <string name="overlay">Päällys</string>
     <string name="error_fetching_servers">Palvelimia ei voitu noutaa.
@@ -133,7 +127,6 @@
     <string name="generateCertFailure">Sertifikaattia ei voitu luoda.</string>
     <string name="generateCertSuccess">Sertifikaatisi on asetettu ja tallennettu nimellä %s!</string>
     <string name="messageReceived">Uusi viesti</string>
-    <string name="pushToTalkHint">(valitse valintaruutu vaihtaaksesi)</string>
     <string name="accessAdd">Lisää pääsyavain</string>
     <string name="addFavorite">Lisää suosikki</string>
     <string name="externalStorageUnavailable">Ulkoinen tallennustila ei ole käytettävissä, sertifikaattia ei voi ladata</string>

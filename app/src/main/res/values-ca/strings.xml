@@ -4,8 +4,6 @@
     <string name="reconnect_dialog_message">Ja esteu connectat a un servidor. Connectar a aquest enlloc\?</string>
     <string name="reconnect">Reconnecta</string>
     <string name="action_settings">Configuració</string>
-    <string name="hint_server_add">Benvinguts a Mumla</string>
-    <string name="hint_ptt">Premeu per parlar</string>
     <string name="hint_reason">Motiu</string>
     <string name="information">Informació</string>
     <string name="search_country">País</string>
@@ -126,7 +124,6 @@
     <string name="shareMessage">Accediu a aquest servidor amb Mumla. %s</string>
     <string name="share">Compartir</string>
     <string name="generateCertSuccess">El vostre certificat s\'ha generat y s\'ha guardar com a %s!</string>
-    <string name="pushToTalkHint">(marqueu la casella de verificació per habilitar la conmutació)</string>
     <string name="cancelled">Cancel·lat</string>
     <string name="trust_cleared">Base de dades de confiança buidada</string>
     <string name="trust_add_failed">No s\'ha pogut afegir el certificat a la base de dades de confiança.</string>
@@ -146,10 +143,6 @@
     <string name="temporary">Temporal</string>
     <string name="expand">Ampliar</string>
     <string name="confirm_reset_comment">Esteu segur que voleu restablir el comentari de %s\?</string>
-    <string name="hint_switching_summary">Conmuteu entre les vistes de xat i canal amb els botons de la part superior esquerra o fent lliscar el dit.</string>
-    <string name="hint_switching">Conmutar entre les vistes</string>
-    <string name="hint_server_add_summary">Des de la barra d\'accions, premeu \"Afegir\" per afegir un servidor a favorits.</string>
-    <string name="hint_ptt_summary">Premeu aquesta tecla per parlar. Premeu dues vegades per conmutar-la.</string>
     <string name="overlay">Superposició</string>
     <plurals name="notification_unread_many">
         <item quantity="one">%d nou missatge</item>

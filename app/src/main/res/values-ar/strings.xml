@@ -102,11 +102,8 @@
     <string name="error_fetching_servers">تعذر جلب الخوادم.
 \nهل أنت متصل؟</string>
     <string name="hint_reason">السبب</string>
-    <string name="hint_switching">التبديل بين طرق العرض</string>
     <string name="action_settings">الإعدادات</string>
     <string name="reconnect">أعد الاتصال</string>
-    <string name="hint_server_add">مرحبًا في موملا</string>
-    <string name="hint_server_add_summary">أضف خادمًا للمفضلة بضغط زر \'أضف\' من شريط الإجراءات.</string>
     <string name="reconnect_dialog_message">أنت متصل بخادم. أتريد الاتصال بهذا الخادم عوضًا عنه؟</string>
     <string name="confirm">أكّد</string>
     <string name="expand">وسّع</string>
@@ -177,5 +174,4 @@
     <string name="channel_add">أضف قناة</string>
     <string name="tts_failed">تعذر بدأ TTS</string>
     <string name="user_menu_deafen">أصم</string>
-    <string name="pushToTalkHint">(أشِّر مربع الاختيار لتمكين التبديل)</string>
 </resources>

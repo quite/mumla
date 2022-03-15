@@ -81,12 +81,6 @@
     <string name="reconnect_dialog_message">คุณได้เชื่อมต่อกับเซิร์ฟเวอร์แล้ว เชื่อมต่อกับเซิร์ฟเวอร์นี้แทนหรือไม่\?</string>
     <string name="reconnect">เชื่อมต่อใหม่</string>
     <string name="action_settings">ตั้งค่า</string>
-    <string name="hint_switching_summary">สลับระหว่างมุมมองแชทและแชนเนลโดยใช้ปุ่มซ้ายบนหรือปัด</string>
-    <string name="hint_switching">การสลับระหว่างมุมมอง</string>
-    <string name="hint_server_add_summary">เพิ่มเซิร์ฟเวอร์โปรดโดยกด \'เพิ่ม\' จากแถบการทำงาน</string>
-    <string name="hint_server_add">ยินดีต้อนรับสู่ Mumla</string>
-    <string name="hint_ptt_summary">เพียงกดปุ่มนี้เพื่อพูดคุย แตะสองครั้งเพื่อสลับค้าง</string>
-    <string name="hint_ptt">กดพูด</string>
     <string name="hint_reason">เหตุผล</string>
     <string name="overlay">โอเวอร์เลย์</string>
     <string name="error_fetching_servers">ไม่สามารถดึงข้อมูลเซิฟเวอร์.
@@ -129,7 +123,6 @@
     <string name="generateCertFailure">สร้างใบรับรองไม่ได้</string>
     <string name="generateCertSuccess">ใบรับรองของคุณสร้างและบันทึกแล้ว %s!</string>
     <string name="messageReceived">ข้อความใหม่</string>
-    <string name="pushToTalkHint">(ติ๊กช่องทำเครื่องหมายเพื่อเปิดใช้งานการสลับค้าง)</string>
     <string name="accessAdd">เพิ่มโทเค็นการเข้าถึง</string>
     <string name="addFavorite">เพิ่มรายการโปรด</string>
     <string name="externalStorageUnavailable">ที่เก็บข้อมูลภายนอกไม่พร้อมใช้งาน. ไม่สามารถโหลดใบรับรองได้</string>

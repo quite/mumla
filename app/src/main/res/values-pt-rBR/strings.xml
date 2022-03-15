@@ -7,7 +7,6 @@
     <string name="confirm_reset_comment">Tem certeza de que deseja redefinir o comentário do usuário %s\?</string>
     <string name="reconnect_dialog_message">Você já está conectado a um servidor. Em vez disso, conectar-se a este servidor\?</string>
     <string name="action_settings">Configurações</string>
-    <string name="hint_server_add">Bem-vindo ao Mumla</string>
     <string name="overlay">Sobreposição</string>
     <string name="error_fetching_servers">Não foi possível buscar servidores.
 \nVocê está conectado à Internet\?</string>
@@ -89,10 +88,6 @@
     <string name="expand">Expandir</string>
     <string name="confirm">Confirmar</string>
     <string name="reconnect">Reconectar</string>
-    <string name="hint_switching">Alternando Entre Visualizações</string>
-    <string name="hint_server_add_summary">Adicione um servidor favorito pressionando \'Adicionar\' na barra de ações.</string>
-    <string name="hint_ptt_summary">Basta pressionar este botão para falar. Toque duas vezes para alternar.</string>
-    <string name="hint_ptt">Pressione para falar</string>
     <string name="hint_reason">Motivo</string>
     <string name="information">Informação</string>
     <string name="search_country">País</string>

@@ -81,7 +81,6 @@
     <string name="externalStorageUnavailable">Внешнее хранилище недоступно, не удалось загрузить сертификат</string>
     <string name="addFavorite">Добавить в избранное</string>
     <string name="accessAdd">Добавить токен доступа</string>
-    <string name="pushToTalkHint">(нажмите на чекбокс чтобы переключить)</string>
     <string name="messageReceived">Новое сообщение</string>
     <string name="generateCertSuccess">Ваш сертификат был установлен и сохранен как %s!</string>
     <string name="generateCertFailure">Не удалось создать сертификат.</string>
@@ -123,12 +122,6 @@
     <string name="error_fetching_servers">Не удалось получить список.\nВы подключены к интернету?</string>
     <string name="overlay">Оверлей</string>
     <string name="hint_reason">Причина</string>
-    <string name="hint_ptt">Нажми чтобы говорить</string>
-    <string name="hint_ptt_summary">Просто нажмите эту кнопку чтобы говорить. Дважды нажмите чтобы переключить её.</string>
-    <string name="hint_server_add">Добро пожаловать в Mumla</string>
-    <string name="hint_server_add_summary">Добавьте сервер в избранное нажав \'Добавить\' в панели управления.</string>
-    <string name="hint_switching">Переключение между страницами</string>
-    <string name="hint_switching_summary">Переключайтесь между чатом и просмотром каналов, используя верхнюю левую кнопку или проводя пальцем.</string>
     <string name="action_settings">Настройки</string>
     <string name="reconnect">Переподключиться</string>
     <string name="reconnect_dialog_message">Вы уже подключены к серверу. Подключиться к этому серверу?</string>

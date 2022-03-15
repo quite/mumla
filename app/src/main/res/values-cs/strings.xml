@@ -87,12 +87,6 @@
     <string name="reconnect_dialog_message">Jste již připojeni k serveru. Chcete se místo toho připojit k tomuto serveru\?</string>
     <string name="reconnect">Znovu se připojit</string>
     <string name="action_settings">Nastavení</string>
-    <string name="hint_switching_summary">Mezi zobrazením chatu a kanálu můžete přepínat pomocí tlačítek vlevo nahoře nebo přejetím prstem.</string>
-    <string name="hint_switching">Přepínání mezi zobrazeními</string>
-    <string name="hint_server_add_summary">Přidejte oblíbený server stisknutím tlačítka „Přidat“ na horním panelu.</string>
-    <string name="hint_server_add">Vítejte v Mumla</string>
-    <string name="hint_ptt_summary">Jednoduše stiskněte toto tlačítko a můžete mluvit. Dvojitým klepnutím jej přepnete.</string>
-    <string name="hint_ptt">Mluvení při stisku klávesy</string>
     <string name="hint_reason">Důvod</string>
     <string name="overlay">Překryv</string>
     <string name="error_fetching_servers">Nelze načíst servery.
@@ -135,7 +129,6 @@
     <string name="generateCertFailure">Certifikát se nepodařilo vygenerovat.</string>
     <string name="generateCertSuccess">Váš certifikát byl nastaven a uložen jako %s!</string>
     <string name="messageReceived">Nová zpráva</string>
-    <string name="pushToTalkHint">(zaškrtnutím políčka povolíte přepínání)</string>
     <string name="accessAdd">Přidat přístupový token</string>
     <string name="addFavorite">Přidat do oblíbených</string>
     <string name="externalStorageUnavailable">Externí úložiště není dostupné, certifikát nelze načíst</string>

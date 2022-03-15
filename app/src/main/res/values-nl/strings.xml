@@ -80,7 +80,6 @@
     <string name="externalStorageUnavailable">Externe opslag niet bereikbaar, kan certificaat niet laden</string>
     <string name="addFavorite">Favoriet Toevoegen</string>
     <string name="accessAdd">Toevoegen toegangssleutels</string>
-    <string name="pushToTalkHint">(vink aan om aan/uit functie te gebruiken)</string>
     <string name="messageReceived">Nieuw bericht</string>
     <string name="generateCertSuccess">Uw certificaat is ingesteld en opgeslagen als %s!</string>
     <string name="generateCertFailure">Certificaat genereren mislukt.</string>
@@ -123,12 +122,6 @@
 \nControleer internet verbinding.</string>
     <string name="overlay">Overlay</string>
     <string name="hint_reason">Reden</string>
-    <string name="hint_ptt">Push to Talk</string>
-    <string name="hint_ptt_summary">Houd deze knop ingedrukt om te spreken. Dubbel-tik om aan/uit te schakelen.</string>
-    <string name="hint_server_add">Welkom bij Mumla</string>
-    <string name="hint_server_add_summary">Om te beginnen, voeg een favoriete server toe door op de toevoegen knop te drukken in de taakbalk.</string>
-    <string name="hint_switching">Wisselen Van Weergave</string>
-    <string name="hint_switching_summary">Wissel tussen de chat en kanaal weergave met de knoppen links boven, of door te vegen.</string>
     <string name="action_settings">Instellingen</string>
     <string name="reconnect">Herverbinden</string>
     <string name="reconnect_dialog_message">U bent al verbonden met een andere server. Wisselen naar deze server?</string>

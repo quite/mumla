@@ -85,7 +85,6 @@
     <string name="externalStorageUnavailable">Stockage externe indisponible, impossible de charger le certificat</string>
     <string name="addFavorite">Ajouter un favori</string>
     <string name="accessAdd">Ajouter un jeton d\'accès</string>
-    <string name="pushToTalkHint">(Cocher la case pour permettre la bascule)</string>
     <string name="messageReceived">Nouveau message</string>
     <string name="generateCertSuccess">Votre certificat a été définie et enregistré sous %s !</string>
     <string name="generateCertFailure">Échec de la génération du certificat.</string>
@@ -128,12 +127,6 @@
 \nVérifiez votre connexion internet.</string>
     <string name="overlay">Superposition</string>
     <string name="hint_reason">Raison</string>
-    <string name="hint_ptt">Appuyer pour parler</string>
-    <string name="hint_ptt_summary">Appuyez simplement sur ce bouton enfoncé pour parler. Double-cliquez pour l\'activer.</string>
-    <string name="hint_server_add">Bienvenue sur Mumla</string>
-    <string name="hint_server_add_summary">Pour commence, ajouter un serveur favori en appuyant sur le bouton ajouter dans la barre d\'action.</string>
-    <string name="hint_switching">Basculer entre les vues</string>
-    <string name="hint_switching_summary">Basculer entre le chat et le salon en utilisant les boutons en haut à gauche ou en glissant.</string>
     <string name="action_settings">Paramètres</string>
     <string name="reconnect">Reconnecter</string>
     <string name="reconnect_dialog_message">Vous êtes déjà connecté·e à un serveur. Se connecter à ce serveur à la place \?</string>

@@ -79,7 +79,6 @@
     <string name="externalStorageUnavailable">外部ストレージ利用できません。証明書をロードできません</string>
     <string name="addFavorite">お気に入りに追加</string>
     <string name="accessAdd">アクセストークンを追加</string>
-    <string name="pushToTalkHint">(チェックすると切り替えを有効にします)</string>
     <string name="messageReceived">新しいメッセージ</string>
     <string name="generateCertSuccess">証明書が設定され、%s として保存されました!</string>
     <string name="generateCertFailure">証明書の生成に失敗しました。</string>
@@ -121,12 +120,6 @@
     <string name="error_fetching_servers">サーバーの取得中にエラー!\nインターネット接続を確認してください。</string>
     <string name="overlay">オーバーレイ</string>
     <string name="hint_reason">理由</string>
-    <string name="hint_ptt">プッシュ トゥ トーク</string>
-    <string name="hint_ptt_summary">話をするには、単にこのボタンを押してください。ダブルタップで切り替えます。</string>
-    <string name="hint_server_add">Mumla にようこそ</string>
-    <string name="hint_server_add_summary">始めるには、アクションバーの \'追加\' ボタンを押して、お好みのサーバーを追加してください。</string>
-    <string name="hint_switching">ビュー間の切り替え</string>
-    <string name="hint_switching_summary">左上のボタンを使用するか、スワイプしてチャットとチャンネルのビューを切り替えます。</string>
     <string name="action_settings">設定</string>
     <string name="reconnect">再接続</string>
     <string name="reconnect_dialog_message">既にサーバーに接続されています。このサーバに接続し直しますか?</string>

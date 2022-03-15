@@ -48,7 +48,6 @@
     <string name="search_name">Navn</string>
     <string name="information">Information</string>
     <string name="hint_reason">Begrundelse</string>
-    <string name="hint_server_add">Velkommen til Mumla</string>
     <string name="action_settings">Indstillinger</string>
     <string name="confirm">Bekræft</string>
     <string name="expand">Udvid</string>
@@ -105,7 +104,6 @@
     <string name="close">Luk</string>
     <string name="export_success">Certifikat eksportéret til %s.</string>
     <string name="search_country">Land</string>
-    <string name="hint_ptt">Tryk-for-snak</string>
     <string name="reconnect_dialog_message">Du er allerede forbundet til en server. Forbind til denne server i stedet\?</string>
     <string name="channel_menu_view_description">Se beskrivelse</string>
     <string name="no_certificate">Intet certifikat</string>

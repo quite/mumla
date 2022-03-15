@@ -79,7 +79,6 @@
     <string name="search_country">Paese</string>
     <string name="information">Informazioni</string>
     <string name="hint_reason">Motivo</string>
-    <string name="hint_server_add">Benvenuto su Mumla</string>
     <string name="action_settings">Impostazioni</string>
     <string name="reconnect">Riconnetti</string>
     <string name="confirm">Conferma</string>
@@ -174,7 +173,6 @@
     <string name="shareMessage">Unisciti a questo server Mumble tramite Mumla. %s</string>
     <string name="messageToChannel">Scrivi un messaggio al canale «%s»</string>
     <string name="messageToUser">Scrivi un messaggio all\'utente «%s»</string>
-    <string name="pushToTalkHint">(spunta per attivare la modalità attiva/disattiva)</string>
     <string name="reset_key">Ripristina tasto</string>
     <string name="user_menu_ban">Bandisci</string>
     <string name="user_menu_kick">Caccia</string>

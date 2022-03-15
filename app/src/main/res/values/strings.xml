@@ -106,7 +106,6 @@
     <string name="externalStorageUnavailable">External storage unavailable, cannot load certificate</string>
     <string name="addFavorite">Add Favorite</string>
     <string name="accessAdd">Add Access Token</string>
-    <string name="pushToTalkHint">(tick checkbox to enable toggle)</string>
     <string name="messageReceived">New message</string>
     <string name="generateCertSuccess">Your certificate has been set and saved as %s!</string>
     <string name="generateCertFailure">Could not generate certificate.</string>
@@ -148,12 +147,6 @@
     <string name="error_fetching_servers">Could not fetch servers.\nAre you connected to the Internet?</string>
     <string name="overlay">Overlay</string>
     <string name="hint_reason">Reason</string>
-    <string name="hint_ptt">Push-to-talk</string>
-    <string name="hint_ptt_summary">Simply press this button to talk. Double-tap to toggle it.</string>
-    <string name="hint_server_add">Welcome to Mumla</string>
-    <string name="hint_server_add_summary">Add a favorite server by pressing \'Add\' from the action bar.</string>
-    <string name="hint_switching">Switching Between Views</string>
-    <string name="hint_switching_summary">Switch between the chat and channel views by using the top left buttons, or swiping.</string>
     <string name="action_settings">Settings</string>
     <string name="reconnect">Reconnect</string>
     <string name="reconnect_dialog_message">You are already connected to a server. Connect to this server instead?</string>

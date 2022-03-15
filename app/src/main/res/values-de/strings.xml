@@ -80,7 +80,6 @@
     <string name="externalStorageUnavailable">Externer Speicher nicht verfügbar, kann Zertifikat nicht laden</string>
     <string name="addFavorite">Favorit hinzufügen</string>
     <string name="accessAdd">Zugriffscode hinzufügen</string>
-    <string name="pushToTalkHint">(checkbox setzen zum einrasten der Taste)</string>
     <string name="messageReceived">Neue Nachricht</string>
     <string name="generateCertSuccess">Ihr Zertifikat wurde generiert und als %s gespeichert!</string>
     <string name="generateCertFailure">Erzeugung des Zertifikat fehlgeschlagen.</string>
@@ -123,12 +122,6 @@
 \nÜberprüfen Sie ihre Internetverbindung.</string>
     <string name="overlay">Überlagerung</string>
     <string name="hint_reason">Grund</string>
-    <string name="hint_ptt">Push-To-Talk</string>
-    <string name="hint_ptt_summary">Drücken Sie diese Taste zum Sprechen. Doppelt drücken zum Einrasten.</string>
-    <string name="hint_server_add">Willkommen bei Mumla</string>
-    <string name="hint_server_add_summary">Drücken Sie auf \'+\' in der Aktionsleiste um einen Server in den Favoriten zu hinterlegen.</string>
-    <string name="hint_switching">Zwischen den Ansichten wechseln</string>
-    <string name="hint_switching_summary">Diese Schaltflächen oder Wischgesten verwenden, um zwischen der Chat- und Kanalansicht zu wechseln.</string>
     <string name="action_settings">Einstellungen</string>
     <string name="reconnect">Wiederverbinden</string>
     <string name="reconnect_dialog_message">Sie sind bereits mit einem Server verbunden. Möchten Sie zu diesem Server wechseln?</string>

@@ -86,7 +86,6 @@
     <string name="externalStorageUnavailable">外部存储不可用，无法加载证书</string>
     <string name="addFavorite">添加为收藏</string>
     <string name="accessAdd">添加访问令牌</string>
-    <string name="pushToTalkHint">（勾选选框启用切换模式）</string>
     <string name="messageReceived">新消息</string>
     <string name="generateCertSuccess">您的证书已被设置并保存为 %s！</string>
     <string name="generateCertFailure">无法生成证书。</string>
@@ -128,12 +127,6 @@
     <string name="error_fetching_servers">无法获取服务器。\n您确定已连接互联网吗？</string>
     <string name="overlay">浮窗</string>
     <string name="hint_reason">原因</string>
-    <string name="hint_ptt">按键发言</string>
-    <string name="hint_ptt_summary">按下此按钮以发言，双击按钮以切换状态。</string>
-    <string name="hint_server_add">欢迎使用 Mumla</string>
-    <string name="hint_server_add_summary">点击操作栏上的“添加”按钮添加一个服务器。</string>
-    <string name="hint_switching">切换视图</string>
-    <string name="hint_switching_summary">使用左上角的按钮或左右滑动，在聊天与频道视图之间切换。</string>
     <string name="action_settings">设置</string>
     <string name="reconnect">重新连接</string>
     <string name="reconnect_dialog_message">您已连接到其他服务器。改为连接此服务器吗？</string>

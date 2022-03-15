@@ -91,11 +91,6 @@
     <string name="reconnect_dialog_message">Zaten bir sunucuya bağlısınız. Onun yerine bu sunucuya bağlanılsın mı\?</string>
     <string name="reconnect">Yeniden Bağlan</string>
     <string name="action_settings">Ayarlar</string>
-    <string name="hint_switching_summary">Sol üst düğmeleri kullanarak veya kaydırarak sohbet ve kanal görünümleri arasında geçiş yapın.</string>
-    <string name="hint_switching">Görünümler Arasında Geçiş</string>
-    <string name="hint_server_add">Mumla\'ya hoş geldiniz</string>
-    <string name="hint_ptt_summary">Konuşmak için bu düğmeye basmanız yeterlidir. Değiştirmek için iki defa dokunun.</string>
-    <string name="hint_ptt">Bas konuş</string>
     <string name="hint_reason">Neden</string>
     <string name="error_fetching_servers">Sunucular alınamadı.
 \nİnternete bağlı mısınız\?</string>
@@ -137,7 +132,6 @@
     <string name="generateCertFailure">Sertifika oluşturulamadı.</string>
     <string name="generateCertSuccess">Sertifikanız ayarlandı ve %s olarak kaydedildi!</string>
     <string name="messageReceived">Yeni mesaj</string>
-    <string name="pushToTalkHint">(değiştirmeyi etkinleştirmek için onay kutusunu işaretleyin)</string>
     <string name="accessAdd">Erişim Belirteci Ekle</string>
     <string name="addFavorite">Sık Kullanılanlara Ekle</string>
     <string name="externalStorageUnavailable">Harici depolama kullanılabilir değil, sertifika yüklenemiyor</string>

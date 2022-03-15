@@ -24,7 +24,6 @@
     <string name="generateCertFailure">Não foi possível gerar o certificado.</string>
     <string name="generateCertSuccess">Seu certificado foi definido e salvo como %s!</string>
     <string name="messageReceived">Nova mensagem</string>
-    <string name="pushToTalkHint">(marque a caixa de seleção para ativar o botão de alternância)</string>
     <string name="accessAdd">Adicionar token de acesso</string>
     <string name="addFavorite">Adicionar aos favoritos</string>
     <string name="externalStorageUnavailable">Armazenamento externo indisponível, não é possível carregar o certificado</string>
@@ -186,12 +185,6 @@
     <string name="reconnect_dialog_message">Você já está conectado em um servidor. Deseja conectar-se a este ao invés disso\?</string>
     <string name="reconnect">Reconectar</string>
     <string name="action_settings">Opções</string>
-    <string name="hint_switching_summary">Alterne entre o chat e a lista de canais usando os botões da esquerda ao topo ou deslizando.</string>
-    <string name="hint_switching">Alternar entre visualizações</string>
-    <string name="hint_server_add_summary">Adicione um servidor aos favoritos pressionando o botão \'Adicionar\' na barra de ações.</string>
-    <string name="hint_server_add">Bem-vindo(a) ao Mumla</string>
-    <string name="hint_ptt_summary">Simplesmente pressione o botão para falar. Pressione duas vezes para alterná-lo.</string>
-    <string name="hint_ptt">Pressione-para-falar</string>
     <string name="hint_reason">Motivo</string>
     <string name="overlay">Sobreposição</string>
     <string name="error_fetching_servers">Não foi possível obter a lista de servidores.

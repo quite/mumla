@@ -80,7 +80,6 @@
     <string name="externalStorageUnavailable">Almacenamiento externo no disponible, no se puede cargar el certificado</string>
     <string name="addFavorite">Añadir a favoritos</string>
     <string name="accessAdd">Añadir token de acceso</string>
-    <string name="pushToTalkHint">(marque la casilla para habilitar el alternado)</string>
     <string name="messageReceived">Nuevo mensaje </string>
     <string name="generateCertSuccess">¡Su certificado ha sido establecido y guardado como %s!</string>
     <string name="generateCertFailure">Fallo al generar el certificado.</string>
@@ -123,12 +122,6 @@
 \nCompruebe su conexión a Internet.</string>
     <string name="overlay">Superposición</string>
     <string name="hint_reason">Razón</string>
-    <string name="hint_ptt">Presionar-para-hablar</string>
-    <string name="hint_ptt_summary">Simplemente presione este botón para hablar. Toque dos veces para alternar.</string>
-    <string name="hint_server_add">Bienvenido a Mumla</string>
-    <string name="hint_server_add_summary">Para empezar, añada un servidor a favoritos presionando el botón añadir en la barra de acciones.</string>
-    <string name="hint_switching">Cambio de vista</string>
-    <string name="hint_switching_summary">Cambie entre la vista del chat y de los canales usando los botones arriba a la izquierda o arrastrando.</string>
     <string name="action_settings">Opciones</string>
     <string name="reconnect">Reconectar</string>
     <string name="reconnect_dialog_message">Ya estás conectado a un servidor. ¿Conectar a este servidor en su lugar?</string>
