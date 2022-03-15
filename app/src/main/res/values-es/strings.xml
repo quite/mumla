@@ -188,4 +188,5 @@
     <string name="decrypt_certificate">Decifrar el certificado</string>
     <string name="certificates">Certificados</string>
     <string name="change_requires_reconnect">Reconectar para usar el opciones nuevos.</string>
+    <string name="image_confirm_send">¿Enviar esta foto\?</string>
 </resources>
