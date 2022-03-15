@@ -102,9 +102,6 @@
         <item quantity="one">%d nuovo messaggio</item>
         <item quantity="other">%d nuovi messaggi</item>
     </plurals>
-    <string name="chat_notify_disconnected">%s disconnesso.</string>
-    <string name="chat_notify_moved">%1$s è arrivato da %2$s tramite %3$s.</string>
-    <string name="chat_notify_connected">%s connesso.</string>
     <string name="decrypt_certificate">Decrittografa Certificato</string>
     <string name="current_chat_target">Destinazione chat attuale</string>
     <string name="shout_target">Destinazione Voce: %s</string>
@@ -116,10 +113,6 @@
     <string name="context_channel_shout">Imposta destinazione voce</string>
     <string name="overlay">In Sovrimpressione</string>
     <string name="status_notify_muted_and_deafened">Muto ed Escluso.</string>
-    <string name="chat_notify_now_unmuted_undeafened">%s non è muto né escluso.</string>
-    <string name="chat_notify_unmuted_undeafened">Né muto né escluso.</string>
-    <string name="chat_notify_now_muted_deafened">%s è muto ed escluso.</string>
-    <string name="chat_notify_muted_deafened">Muto ed escluso.</string>
     <string name="user_menu_deafen">Escluditi</string>
     <string name="user_menu_priority_speaker">Altoparlante prioritario</string>
     <string name="donation_thanks">Grazie per la donazione.</string>
@@ -179,9 +172,6 @@
 \nSei connesso a Internet\?</string>
     <string name="status_notify_muted">Muto.</string>
     <string name="shareMessage">Unisciti a questo server Mumble tramite Mumla. %s</string>
-    <string name="chat_notify_now_unmuted">%s non è muto.</string>
-    <string name="chat_notify_now_muted">%s è muto.</string>
-    <string name="chat_notify_unmuted">Non muto.</string>
     <string name="messageToChannel">Scrivi un messaggio al canale «%s»</string>
     <string name="messageToUser">Scrivi un messaggio all\'utente «%s»</string>
     <string name="pushToTalkHint">(spunta per attivare la modalità attiva/disattiva)</string>
@@ -192,7 +182,6 @@
     <string name="drawer_tokens">Token d\'accesso</string>
     <string name="drawer_close">Chiudi barra laterale</string>
     <string name="drawer_open">Apri barra laterale</string>
-    <string name="chat_notify_muted">Muto.</string>
     <string name="generateCertFailure">Impossibile generare il certificato.</string>
     <string name="generateCertSuccess">Il certificato è stato impostato e salvato come: %s!</string>
     <string name="accessAdd">Aggiungi token d\'accesso</string>

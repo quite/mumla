@@ -131,15 +131,6 @@
     <string name="mumlaDisconnected">Mumla disconnected</string>
     <string name="channel">Channel</string>
     <string name="user">User</string>
-    <string name="chat_notify_muted">Muted.</string>
-    <string name="chat_notify_unmuted">Unmuted.</string>
-    <string name="chat_notify_unmuted_undeafened">Unmuted and undeafened.</string>
-    <string name="chat_notify_now_muted_deafened">%s is now muted and deafened.</string>
-    <string name="chat_notify_now_muted">%s is now muted.</string>
-    <string name="chat_notify_now_unmuted">%s is now unmuted.</string>
-    <string name="chat_notify_now_unmuted_undeafened">%s is now unmuted and undeafened.</string>
-    <string name="chat_notify_connected">%s connected.</string>
-    <string name="chat_notify_disconnected">%s disconnected.</string>
     <string name="unknown">Unknown</string>
     <string name="sort">Sort</string>
     <string name="sortBy">Sort by…</string>

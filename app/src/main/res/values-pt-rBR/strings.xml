@@ -12,12 +12,6 @@
     <string name="error_fetching_servers">Não foi possível buscar servidores.
 \nVocê está conectado à Internet\?</string>
     <string name="status_notify_muted_and_deafened">Silenciado e ensurdecido.</string>
-    <string name="chat_notify_now_unmuted_undeafened">%s agora está dessilenciado e desensurdecido.</string>
-    <string name="chat_notify_now_unmuted">%s agora está dessilenciado.</string>
-    <string name="chat_notify_now_muted_deafened">%s agora está mudo e ensurdecido.</string>
-    <string name="chat_notify_unmuted_undeafened">Dessilenciado e desensurdecido.</string>
-    <string name="chat_notify_unmuted">Dessilenciado.</string>
-    <string name="chat_notify_muted_deafened">Silenciado e ensurdecido.</string>
     <string name="clearChat">Limpar Conversa</string>
     <string name="delete">Excluir</string>
     <string name="quickConnect">Conexão Rápida</string>
@@ -113,10 +107,6 @@
     <string name="sortBy">Ordenar por…</string>
     <string name="sort">Ordenar</string>
     <string name="unknown">Desconhecido</string>
-    <string name="chat_notify_disconnected">%s desconectou.</string>
-    <string name="chat_notify_connected">%s conectou.</string>
-    <string name="chat_notify_now_muted">%s agora está silenciado.</string>
-    <string name="chat_notify_muted">Silenciado.</string>
     <string name="user">Usuário</string>
     <string name="channel">Canal</string>
     <string name="mumlaDisconnected">Mumla desconectou</string>

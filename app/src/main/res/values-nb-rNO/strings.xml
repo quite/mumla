@@ -164,15 +164,6 @@
     <string name="sortBy">Sorter etter …</string>
     <string name="sort">Rekkefølge</string>
     <string name="unknown">Ukjent</string>
-    <string name="chat_notify_disconnected">%s koblet fra.</string>
-    <string name="chat_notify_connected">%s koblet til.</string>
-    <string name="chat_notify_now_unmuted_undeafened">%s er nå hverken forstummet eller døv.</string>
-    <string name="chat_notify_now_unmuted">%s har fått sin forstummelse opphevet.</string>
-    <string name="chat_notify_now_muted">%s er nå forstummet.</string>
-    <string name="chat_notify_now_muted_deafened">%s er nå forstummet og gjort døv.</string>
-    <string name="chat_notify_unmuted_undeafened">Forstummelse og døvhet opphevet.</string>
-    <string name="chat_notify_unmuted">Forstummelse opphevet.</string>
-    <string name="chat_notify_muted">Forstummet.</string>
     <string name="user">Bruker</string>
     <string name="channel">Kanal</string>
     <string name="mumlaDisconnected">Mumla er frakoblet</string>

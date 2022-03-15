@@ -111,15 +111,6 @@
     <string name="sort">Seřadit</string>
     <string name="sortBy">Seřadit podle…</string>
     <string name="unknown">Neznámé</string>
-    <string name="chat_notify_disconnected">%s se odpojil.</string>
-    <string name="chat_notify_connected">%s se připojil.</string>
-    <string name="chat_notify_now_unmuted_undeafened">%s zrušil ohlušení a je nyní zesílen.</string>
-    <string name="chat_notify_now_unmuted">%s je nyní zesílen.</string>
-    <string name="chat_notify_now_muted">%s je nyní zeslaben.</string>
-    <string name="chat_notify_now_muted_deafened">%s je nyní zeslaben a ohlušen.</string>
-    <string name="chat_notify_unmuted_undeafened">Zrušeno ohlušení a zesílen.</string>
-    <string name="chat_notify_unmuted">Zesílen.</string>
-    <string name="chat_notify_muted">Ztlumen.</string>
     <string name="user">Uživatel</string>
     <string name="channel">Kanál</string>
     <string name="mumlaDisconnected">Mumla odpojen</string>

@@ -105,15 +105,6 @@
     <string name="sortBy">จัดเรียงโดย…</string>
     <string name="sort">จัดเรียง</string>
     <string name="unknown">ไม่ระบุ</string>
-    <string name="chat_notify_disconnected">%s ออกจากระบบแล้ว</string>
-    <string name="chat_notify_connected">%s เชื่อมต่อแล้ว</string>
-    <string name="chat_notify_now_unmuted_undeafened">%s เปิดไมค์และเปิดเสียงทั้งหมดแล้ว</string>
-    <string name="chat_notify_now_unmuted">%s เปิดไมค์แล้ว</string>
-    <string name="chat_notify_now_muted">%s ปิดไมค์แล้ว</string>
-    <string name="chat_notify_now_muted_deafened">%s เงียบและปิดเสียงทั้งหมด</string>
-    <string name="chat_notify_unmuted_undeafened">เปิดเสียงทั้งหมด</string>
-    <string name="chat_notify_unmuted">เปิดเสียง</string>
-    <string name="chat_notify_muted">เงียบเสียงแล้ว</string>
     <string name="user">ผู้ใช้</string>
     <string name="channel">แชทเนล</string>
     <string name="mumlaDisconnected">Mumla ออกจากระบบ</string>

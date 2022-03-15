@@ -109,7 +109,6 @@
     <string name="name">Nimi</string>
     <string name="sort">Järjestä</string>
     <string name="unknown">Tuntematon</string>
-    <string name="chat_notify_moved">%1$s siirtyi kanavalta %2$s käyttäjän %3$s toimesta.</string>
     <string name="user">Käyttäjä</string>
     <string name="channel">Kanava</string>
     <string name="mumlaDisconnected">Mumla katkaisi yhteyden</string>
@@ -211,14 +210,4 @@
     <string name="drawer_not_connected">Ei yhdistetty</string>
     <string name="drawer_close">Sulje alasvetovalikko</string>
     <string name="drawer_open">Avaa alasvetovalikko</string>
-    <string name="chat_notify_disconnected">%s poistui.</string>
-    <string name="chat_notify_connected">%s liittyi.</string>
-    <string name="chat_notify_now_unmuted_undeafened">%s ei ole enää mykistetty tai hiljennetty.</string>
-    <string name="chat_notify_now_unmuted">%s ei ole enää mykistetty.</string>
-    <string name="chat_notify_now_muted">%s on nyt mykistetty.</string>
-    <string name="chat_notify_now_muted_deafened">%s on nyt mykistetty ja hiljennetty.</string>
-    <string name="chat_notify_unmuted_undeafened">Mykistys ja hiljennys poistettu.</string>
-    <string name="chat_notify_unmuted">Mykistys poistettu.</string>
-    <string name="chat_notify_muted">Mykistetty.</string>
-    <string name="chat_notify_muted_deafened">Mykistetty ja hiljennetty.</string>
 </resources>

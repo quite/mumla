@@ -105,15 +105,6 @@
     <string name="mumlaDisconnected">Mumla Verbinding Verbroken</string>
     <string name="channel">Kanaal</string>
     <string name="user">Gebruiker</string>
-    <string name="chat_notify_muted">Gedempt.</string>
-    <string name="chat_notify_unmuted">Dempen opgeheven.</string>
-    <string name="chat_notify_unmuted_undeafened">Dempen opgeheven en horend gemaakt.</string>
-    <string name="chat_notify_now_muted_deafened">%s is nu gedempt en doof gemaakt.</string>
-    <string name="chat_notify_now_muted">%s is nu gedempt.</string>
-    <string name="chat_notify_now_unmuted">%s is niet meer gedempt.</string>
-    <string name="chat_notify_now_unmuted_undeafened">%s is niet meer gedempt of doof.</string>
-    <string name="chat_notify_connected">%s verbonden.</string>
-    <string name="chat_notify_disconnected">%s verbinding verbroken.</string>
     <string name="unknown">Ongekend</string>
     <string name="sort">Sorteren</string>
     <string name="sortBy">Sorteren op…</string>

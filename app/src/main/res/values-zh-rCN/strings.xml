@@ -111,15 +111,6 @@
     <string name="mumlaDisconnected">Mumla 已断开连接</string>
     <string name="channel">频道</string>
     <string name="user">用户</string>
-    <string name="chat_notify_muted">已关闭麦克风。</string>
-    <string name="chat_notify_unmuted">已打开麦克风。</string>
-    <string name="chat_notify_unmuted_undeafened">已打开麦克风和扬声器。</string>
-    <string name="chat_notify_now_muted_deafened">%s 已关闭麦克风和扬声器。</string>
-    <string name="chat_notify_now_muted">%s 已关闭麦克风。</string>
-    <string name="chat_notify_now_unmuted">%s 已打开麦克风。</string>
-    <string name="chat_notify_now_unmuted_undeafened">%s 已打开麦克风和扬声器。</string>
-    <string name="chat_notify_connected">%s 已连接。</string>
-    <string name="chat_notify_disconnected">%s 已断开连接。</string>
     <string name="unknown">未知</string>
     <string name="sort">排序</string>
     <string name="sortBy">排序方式…</string>

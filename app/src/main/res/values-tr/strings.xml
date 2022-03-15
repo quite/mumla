@@ -166,17 +166,6 @@
     <string name="server_match_description">Mumla konuma, sürüme ve gecikmeye göre sizin için en iyi boş sunucuyu otomatik olarak bulabilir.</string>
     <string name="chat_message_tts_short_link">(%1$s için bağlantı)</string>
     <string name="perm_denied">İzin reddedildi.</string>
-    <string name="chat_notify_disconnected">%s bağlantısı kesildi.</string>
-    <string name="chat_notify_connected">%s bağlandı.</string>
-    <string name="chat_notify_now_unmuted_undeafened">%s kişisinin sesi açıldı ve duyma engeli kaldırıldı.</string>
-    <string name="chat_notify_now_unmuted">%s kişisinin sesi açıldı.</string>
-    <string name="chat_notify_now_muted">%s kişisinin sesi kapatıldı.</string>
-    <string name="chat_notify_now_muted_deafened">%s kişisinin sesi kapatıldı ve duyması engellendi.</string>
-    <string name="chat_notify_unmuted_undeafened">Sesi açıldı ve duyma engeli kaldırıldı.</string>
-    <string name="chat_notify_unmuted">Sesi açıldı.</string>
-    <string name="chat_notify_muted">Sesi kapatıldı.</string>
-    <string name="chat_notify_muted_deafened">Sesi kapatıldı ve duyması engellendi.</string>
-    <string name="chat_notify_moved">%1$s, %3$s tarafından %2$s konumundan taşındı.</string>
     <string name="server_match_info">Ad: %1$s
 \nAna Makine: %2$s:%3$d
 \nKullanıcılar: %4$d / %5$d

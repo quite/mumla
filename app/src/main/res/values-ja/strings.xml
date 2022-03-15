@@ -104,15 +104,6 @@
     <string name="mumlaDisconnected">Mumla から切断されました</string>
     <string name="channel">チャンネル</string>
     <string name="user">ユーザー</string>
-    <string name="chat_notify_muted">ミュートしました。</string>
-    <string name="chat_notify_unmuted">ミュートを解除しました。</string>
-    <string name="chat_notify_unmuted_undeafened">ミュート解除および防音解除しました。</string>
-    <string name="chat_notify_now_muted_deafened">%s がミュートおよび防音されました。</string>
-    <string name="chat_notify_now_muted">%s がミュートされました。</string>
-    <string name="chat_notify_now_unmuted">%s がミュート解除されました。</string>
-    <string name="chat_notify_now_unmuted_undeafened">%s がミュート解除および防音解除されました。</string>
-    <string name="chat_notify_connected">%s が接続しました。</string>
-    <string name="chat_notify_disconnected">%s が切断しました。</string>
     <string name="unknown">不明</string>
     <string name="sort">ソート</string>
     <string name="sortBy">ソート順…</string>

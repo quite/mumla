@@ -98,12 +98,10 @@
     <string name="generateCertFailure">Kunne ikke generére certifikat.</string>
     <string name="addFavorite">Tilføj favorit</string>
     <string name="remove">Fjern</string>
-    <string name="chat_notify_moved">%1$s flyttet ind fra %2$s af %3$s.</string>
     <string name="unknown">Ukendt</string>
     <string name="description">Beskrivelse</string>
     <string name="channel_add">Tilføj kanal</string>
     <string name="connectToServer">Forbind til server</string>
-    <string name="chat_notify_connected">%s forbundet.</string>
     <string name="close">Luk</string>
     <string name="export_success">Certifikat eksportéret til %s.</string>
     <string name="search_country">Land</string>

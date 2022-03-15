@@ -105,15 +105,6 @@
     <string name="mumlaDisconnected">Mumla desconectado</string>
     <string name="channel">Canal</string>
     <string name="user">Usuario</string>
-    <string name="chat_notify_muted">Mudo.</string>
-    <string name="chat_notify_unmuted">Con voz.</string>
-    <string name="chat_notify_unmuted_undeafened">Con voz y escucha.</string>
-    <string name="chat_notify_now_muted_deafened">%s está ahora enmudecido y ensordecido.</string>
-    <string name="chat_notify_now_muted">%s está ahora enmudecido.</string>
-    <string name="chat_notify_now_unmuted">%s ahora tiene voz.</string>
-    <string name="chat_notify_now_unmuted_undeafened">%s ahora tiene voz y escucha.</string>
-    <string name="chat_notify_connected">%s se ha conectado.</string>
-    <string name="chat_notify_disconnected">%s se ha desconectado.</string>
     <string name="unknown">Desconocido</string>
     <string name="sort">Ordenar</string>
     <string name="sortBy">Ordenar por…</string>

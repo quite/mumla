@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="chat_notify_now_muted_deafened">%s agora está silenciado e com o áudio desativado.</string>
-    <string name="chat_notify_unmuted_undeafened">Microfone e áudio ativados.</string>
-    <string name="chat_notify_unmuted">Microfone reativado.</string>
-    <string name="chat_notify_muted">Silenciado.</string>
     <string name="user">Usuário</string>
     <string name="channel">Canal</string>
     <string name="mumlaConnecting">Mumla está conectando…</string>
@@ -214,9 +210,4 @@
     <string name="sortBy">Ordenar por…</string>
     <string name="sort">Ordenar</string>
     <string name="unknown">Desconhecido</string>
-    <string name="chat_notify_disconnected">%s desconectou-se.</string>
-    <string name="chat_notify_connected">%s conectou-se.</string>
-    <string name="chat_notify_now_unmuted_undeafened">%s agora está com microfone e áudio ativados.</string>
-    <string name="chat_notify_now_unmuted">%s agora está com o microfone ativado.</string>
-    <string name="chat_notify_now_muted">%s agora está silenciado.</string>
 </resources>

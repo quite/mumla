@@ -91,10 +91,6 @@
     <string name="clearChat">امسح المحادثة</string>
     <string name="channel">قناة</string>
     <string name="user">مستخدم</string>
-    <string name="chat_notify_muted">كُتم.</string>
-    <string name="chat_notify_unmuted">فُك كتمه.</string>
-    <string name="chat_notify_connected">%s متصل.</string>
-    <string name="chat_notify_disconnected">%s غير متصل.</string>
     <string name="unknown">مجهول</string>
     <string name="name">الاسم</string>
     <string name="country">البلد</string>
@@ -182,6 +178,4 @@
     <string name="tts_failed">تعذر بدأ TTS</string>
     <string name="user_menu_deafen">أصم</string>
     <string name="pushToTalkHint">(أشِّر مربع الاختيار لتمكين التبديل)</string>
-    <string name="chat_notify_now_muted">%s مكتوم.</string>
-    <string name="chat_notify_now_unmuted">%s غير مكتوم.</string>
 </resources>

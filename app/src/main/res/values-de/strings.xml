@@ -105,15 +105,6 @@
     <string name="mumlaDisconnected">Mumla wurde getrennt</string>
     <string name="channel">Kanal</string>
     <string name="user">Benutzer</string>
-    <string name="chat_notify_muted">Stumm.</string>
-    <string name="chat_notify_unmuted">Nicht stumm.</string>
-    <string name="chat_notify_unmuted_undeafened">Nicht stumm und nicht taub.</string>
-    <string name="chat_notify_now_muted_deafened">%s ist nun stumm und taub.</string>
-    <string name="chat_notify_now_muted">%s ist jetzt stumm gestellt.</string>
-    <string name="chat_notify_now_unmuted">%s ist jetzt nicht mehr stumm.</string>
-    <string name="chat_notify_now_unmuted_undeafened">%s ist jetzt nicht mehr stumm und nicht mehr taub.</string>
-    <string name="chat_notify_connected">%s ist verbunden.</string>
-    <string name="chat_notify_disconnected">%s hat den Server verlassen.</string>
     <string name="unknown">Unbekannt</string>
     <string name="sort">Sortierung</string>
     <string name="sortBy">Sortieren nach…</string>
