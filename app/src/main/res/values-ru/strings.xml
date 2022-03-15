@@ -84,7 +84,6 @@
     <string name="generateCertProgress">Создание сертификата…</string>
     <string name="search">Поиск</string>
     <string name="searchHint">Поиск каналов и пользователей</string>
-    <!-- <string name="bluetooth">Bluetooth</string> -->
     <string name="quickConnect">Быстрое подключение</string>
     <string name="connect">Подключиться</string>
     <string name="connectToServer">Подключиться к серверу</string>
