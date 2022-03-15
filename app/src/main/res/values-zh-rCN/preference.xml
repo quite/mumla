@@ -22,7 +22,6 @@
     <string name="licenses">许可证</string>
     <string name="authentication">身份验证</string>
     <string name="authenticationSum">管理与创建证书</string>
-    <string name="audioInput">音频输入</string>
     <string name="audioInputMethodSum">如何激活音频传输。</string>
     <string name="audioInputMethod">传输模式</string>
     <string name="audioInputVolume">麦克风音量</string>
@@ -46,7 +45,6 @@
     <string name="audioSum">调整音频输入输出</string>
     <string name="audioSampleRate">输入采样率</string>
     <string name="audioSampleRateSum">偏好音频采样率。某些设备仅支持部分采样率。</string>
-    <string name="noCert">无证书</string>
     <string name="chatNotifications">聊天提醒</string>
     <string name="chatNotificationsSum">显示新文字消息提醒。</string>
     <string name="defaultUsername">默认用户名</string>
@@ -55,10 +53,7 @@
     <string name="certificateGenerate">生成证书</string>
     <string name="certificateGenerateSum">生成一份新的 Mumla 自签名证书。推荐新用户使用。</string>
     <string name="pttSettings">按住发言设置</string>
-    <string name="pttSettingsSum">启用时，设置按住发言选项。</string>
     <string name="voiceActivitySettings">语音激活设置</string>
-    <string name="voiceActivitySettingsSum">启用时，设置“语音激活”选项。</string>
-    <string name="audioOutput">扬声器声音质量</string>
     <string name="disableOpus">禁用 Opus 编解码器</string>
     <string name="disableOpusSum">为 Mumble 1.2.4 服务器禁用 Opus 支持。</string>
     <string name="hidePtt">隐藏按住发言按钮</string>

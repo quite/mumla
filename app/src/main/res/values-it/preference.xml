@@ -8,7 +8,6 @@
     <string name="licenses">Licenze</string>
     <string name="authentication">Autenticazione</string>
     <string name="authenticationSum">Gestisci e crea certificati</string>
-    <string name="audioInput">Ingresso audio</string>
     <string name="audioInputVolume">Volume microfono</string>
     <string name="general">Generale</string>
     <string name="theme">Tema</string>
@@ -16,10 +15,8 @@
     <string name="forceTcp">Solo TCP</string>
     <string name="audio">Audio</string>
     <string name="audioSum">Regola input e output audio</string>
-    <string name="noCert">Nessun certificato</string>
     <string name="chatNotifications">Notifiche chat</string>
     <string name="certificateGenerate">Genera certificato</string>
-    <string name="audioOutput">Qualità suono altoparlante</string>
     <string name="disableOpus">Evita codec Opus</string>
     <string name="useTts">Sintesi vocale</string>
     <string name="autoReconnect">Riconnessione automatica</string>
@@ -68,7 +65,6 @@
     <string name="defaultUsernameSum">Nome precompilato usato quando si aggiunge un server o ci si connette a un server pubblico.</string>
     <string name="defaultUsernameDefault">Mumla_User</string>
     <string name="chatNotificationsSum">Mostrate per nuovi messaggi.</string>
-    <string name="voiceActivitySettingsSum">Configura l\'attività vocale (se attiva).</string>
     <string name="voiceActivitySettings">Impostazioni attività vocale</string>
     <string name="disableOpusSum">Disattiva il supporto Opus per i server Mumble 1.2.4.</string>
     <string name="shortTtsMessages">Messaggi sintesi vocale abbreviati</string>
@@ -85,7 +81,6 @@
     <string name="pttSoundSum">Riprodurre un suono alla pressione del pulsante push-to-talk.</string>
     <string name="handsetMode">Cornetta</string>
     <string name="pref_export_certificate_summary">Esporta nella memoria esterna.</string>
-    <string name="pttSettingsSum">Configura push-to-talk (se attivo).</string>
     <string name="preprocessor_enabled_sum">Sopprime il rumore ambientale e normalizza il volume dell\'audio.</string>
     <string name="pref_import_certificate_summary">Importa dalla memoria esterna.</string>
     <string name="pref_start_up_in_pinned_mode">Modalità canali fissati</string>

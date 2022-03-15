@@ -5,20 +5,16 @@
     <string name="drawer_server">Tutti i canali</string>
     <string name="drawer_header_servers">Server</string>
     <string name="drawer_favorites">Preferiti</string>
-    <string name="drawer_lan">LAN</string>
     <string name="drawer_public">Server pubblici</string>
     <!--Chat formatting-->
     <string name="chat_message_to">%1$s → %2$s</string>
     <!--User menu-->
-    <string name="user_menu_admin">Admin</string>
     <string name="user_menu_mute">Muto</string>
     <string name="user_menu_ignore_messages">Ignora i messaggi</string>
     <string name="user_menu_change_comment">Cambia il commento</string>
     <string name="user_menu_view_comment">Mostra il commento</string>
-    <string name="user_menu_send_message">Invia un messaggio</string>
     <string name="user_menu_information">Informazioni</string>
     <string name="user_menu_register">Registrati</string>
-    <string name="user_menu_registered">Registrato</string>
     <!--Channel menu-->
     <string name="channel_menu_pin">Fissa</string>
     <!--Comment Fragment-->
@@ -33,17 +29,12 @@
     <string name="server_match_found">Server trovato</string>
     <string name="server_match_not_found">Impossibile trovare server</string>
     <!--Common-->
-    <string name="channels">Canali</string>
-    <string name="server_add">Aggiungi server</string>
     <string name="server_password">Password</string>
     <string name="server_username">Nome utente</string>
     <string name="server_port">Porta</string>
     <string name="server_host">Indirizzo</string>
     <string name="connecting">Connessione</string>
     <string name="connecting_to_server">Connessione a %s…</string>
-    <string name="fragment_chat">Chat</string>
-    <string name="fragment_channel">Canale</string>
-    <string name="menu_settings">Impostazioni</string>
     <string name="mute">Muto</string>
     <string name="disconnect">Disconnetti</string>
     <string name="disconnectSure">Disconnettersi da «%s»\?</string>
@@ -55,17 +46,8 @@
     <string name="connectionRefused">Connessione rifiutata</string>
     <string name="confirm_delete_server">Eliminare questo server\?</string>
     <string name="confirm_delete_channel">Eliminare questo canale\?</string>
-    <string name="disconnected">Disconnesso</string>
-    <string name="loading">Caricamento…</string>
     <string name="addFavorite">Aggiungi preferito</string>
-    <string name="removeFavorite">Rimuovi preferito</string>
-    <string name="viewFavorites">Mostra preferiti</string>
-    <string name="favorites">Preferiti</string>
-    <string name="favoriteRemoved">Preferito rimosso.</string>
-    <string name="favoriteAdded">Preferito aggiunto.</string>
-    <string name="noFavorites">Nessun canale preferito.</string>
     <string name="messageReceived">Nuovo messaggio</string>
-    <string name="generateCert">Genera un certificato</string>
     <string name="generateCertProgress">Generazione certificato…</string>
     <string name="search">Cerca</string>
     <string name="searchHint">Cerca canali e utenti</string>
@@ -76,7 +58,6 @@
     <string name="edit">Modifica</string>
     <string name="remove">Rimuovi</string>
     <string name="delete">Elimina</string>
-    <string name="retry">Riprova</string>
     <string name="online">In linea</string>
     <string name="offline">Non in linea</string>
     <string name="clearChat">Pulisci chat</string>
@@ -84,31 +65,19 @@
     <string name="mumlaConnected">Mumla connesso</string>
     <string name="mumlaConnecting">Mumla in connessione…</string>
     <string name="mumlaDisconnected">Mumla disconnesso </string>
-    <string name="lostConnection">Connessione al server persa.</string>
-    <string name="resume">Riprendi</string>
     <string name="channel">Canale</string>
     <string name="user">Utente</string>
-    <string name="server">Server</string>
     <string name="unknown">Sconosciuto</string>
-    <string name="server_list_title_favorite">Preferiti</string>
-    <string name="server_list_title_lan">LAN</string>
-    <string name="ping">Ping</string>
     <string name="sort">Ordine</string>
     <string name="sortBy">Ordina per…</string>
     <string name="name">Nome</string>
     <string name="country">Paese</string>
     <string name="share">Condividi</string>
     <string name="description">Descrizione</string>
-    <string name="comment">Commento</string>
     <string name="close">Chiudi</string>
     <string name="search_name">Nome</string>
     <string name="search_country">Paese</string>
-    <string name="fullscreen">Schermo Intero</string>
-    <string name="fullscreen_chat">Chat</string>
-    <string name="fullscreen_channel">Canale</string>
     <string name="information">Informazioni</string>
-    <string name="userControl">Controllo Utente</string>
-    <string name="coming_soon">Questa funzione arriverà presto.</string>
     <string name="hint_reason">Motivo</string>
     <string name="hint_server_add">Benvenuto su Mumla</string>
     <string name="action_settings">Impostazioni</string>
@@ -129,10 +98,6 @@
         <item quantity="one">%d utente</item>
         <item quantity="other">%d utenti</item>
     </plurals>
-    <plurals name="reconnecting">
-        <item quantity="one">Riconnessione in %d secondo.</item>
-        <item quantity="other">Riconnessione in %d secondi.</item>
-    </plurals>
     <plurals name="notification_unread_many">
         <item quantity="one">%d nuovo messaggio</item>
         <item quantity="other">%d nuovi messaggi</item>
@@ -150,15 +115,12 @@
     <string name="deafen">Escluso</string>
     <string name="context_channel_shout">Imposta destinazione voce</string>
     <string name="overlay">In Sovrimpressione</string>
-    <string name="register">Registrati</string>
-    <string name="recordingVolume">Aumento volume registrazioni</string>
     <string name="status_notify_muted_and_deafened">Muto ed Escluso.</string>
     <string name="chat_notify_now_unmuted_undeafened">%s non è muto né escluso.</string>
     <string name="chat_notify_unmuted_undeafened">Né muto né escluso.</string>
     <string name="chat_notify_now_muted_deafened">%s è muto ed escluso.</string>
     <string name="chat_notify_muted_deafened">Muto ed escluso.</string>
     <string name="user_menu_deafen">Escluditi</string>
-    <string name="undocumentedWakeLock">Il wakelock del sensore di prossimità non è supportato sul tuo dispositivo. Modificare la modalità di chiamata in «Vivavoce».</string>
     <string name="user_menu_priority_speaker">Altoparlante prioritario</string>
     <string name="donation_thanks">Grazie per la donazione.</string>
     <string name="default_">Predefinito</string>
@@ -186,7 +148,6 @@
 \n
 \nRiconnessione…</string>
     <string name="cancel_reconnect">Annulla riconnessione</string>
-    <string name="invalid_username">Nome utente non valido</string>
     <string name="channel_join">Unisciti</string>
     <string name="invalid_port_range">Porta non valida (1-65535)</string>
     <string name="invalid_host">Host non valido</string>
@@ -204,34 +165,20 @@
 \n
 \nDigest (SHA-256):
 \n%5$s</string>
-    <string name="transmit_mode">Modalità trasmissione</string>
     <string name="cancelled">Annullato</string>
     <string name="trust_cleared">Banca dati dei certificati attendibili pulito</string>
     <string name="trust_add_failed">Impossibile aggiungere il certificato tra quelli attendibili.</string>
     <string name="trust_added">Certificato aggiunto tra quelli attendibili</string>
     <string name="untrusted_certificate">Certificato non attendibile</string>
-    <string name="certificate_not_valid">Impossibile caricare il certificato %s.</string>
     <string name="first_run_generate_certificate">La generazione di un certificato è altamente consigliata e necessaria per la connessione ad alcuni server.</string>
     <string name="mumble_url_parse_failed">L\'URL Mumble non è valido.</string>
     <string name="tts_failed">Impossibile avviare il TTS</string>
     <string name="confirm_reset_comment">Ripristinare il commento dell\'utente \"%s\"\?</string>
     <string name="reconnect_dialog_message">Sei già connesso a un server. Connettersi a questo\?</string>
-    <string name="hint_switching_summary">Cambia tra la schermata della chat e quella del canale utilizzando i pulsanti in alto a sinistra oppure scorrendo.</string>
-    <string name="hint_switching">Cambia Schermata</string>
-    <string name="hint_server_add_summary">Aggiungi un server preferito premento \"Aggiungi\" sulla barra delle azioni.</string>
-    <string name="hint_ptt_summary">Premi questo pulsante mentre parli. Doppio tocco per mantenere la funzione attiva o disattivata.</string>
-    <string name="hint_ptt">Push-to-talk</string>
-    <string name="tapToReconnect">Premi per Riconnetterti</string>
     <string name="error_fetching_servers">Impossibile recuperare i server.
 \nSei connesso a Internet\?</string>
-    <string name="registerSelfSuccess">Richiesta di registrazione inviata</string>
-    <string name="fetchingServers">Recupero della lista dei server pubblici…</string>
-    <string name="preferences_immutable">Questa impostazione non può essere modificata mentre si è connessi a un server.</string>
-    <string name="retrieving">Ricezione…</string>
     <string name="status_notify_muted">Muto.</string>
-    <string name="noServerInfo">Pinga per Ottenere Informazioni</string>
     <string name="shareMessage">Unisciti a questo server Mumble tramite Mumla. %s</string>
-    <string name="server_list_title_public_internet">Pubblici</string>
     <string name="chat_notify_now_unmuted">%s non è muto.</string>
     <string name="chat_notify_now_muted">%s è muto.</string>
     <string name="chat_notify_unmuted">Non muto.</string>
@@ -249,10 +196,7 @@
     <string name="generateCertFailure">Impossibile generare il certificato.</string>
     <string name="generateCertSuccess">Il certificato è stato impostato e salvato come: %s!</string>
     <string name="accessAdd">Aggiungi token d\'accesso</string>
-    <string name="accessTokens">Token d\'accesso</string>
     <string name="externalStorageUnavailable">Archiviazione esterna non disponibile, impossibile caricare il certificato</string>
-    <string name="kicked_message">Sei stato cacciato dal server.
-\nMotivo: %s</string>
     <string name="togglelocalmute">Attiva/disattiva muto locale</string>
     <string name="ptt">Premi per parlare</string>
     <string name="server_label">Etichetta</string>
@@ -280,7 +224,5 @@
     <string name="user_menu_local_mute">Muto locale</string>
     <string name="user_menu_move">Sposta</string>
     <string name="chat_message_tts_short_link">(Collegamento a %1$s)</string>
-    <string name="chat_message_channel">(Canale)</string>
-    <string name="chat_message_tree">(Albero)</string>
     <string name="image_confirm_send">Inviare questa immagine\?</string>
 </resources>

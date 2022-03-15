@@ -27,7 +27,6 @@
 
     <string name="authentication">Идентификация</string>
     <string name="authenticationSum">Управление и создание сертификатов</string>
-    <string name="audioInput">Аудио вход</string>
     <string name="audioInputMethodSum">Способ ввода звука.</string>
     <string name="audioInputMethod">Режим передачи</string>
     <string name="audioInputVolume">Громкость микрофона</string>
@@ -51,7 +50,6 @@
     <string name="audioSum">Отрегулируйте настройки звука</string>
     <string name="audioSampleRate">Качество входного сигнала</string>
     <string name="audioSampleRateSum">Предпочитаемая частота дискретизации. Не все значения поддерживаются на всех устройствах.</string>
-    <string name="noCert">Нет сертификата</string>
     <string name="chatNotifications">Уведомления чата</string>
     <string name="chatNotificationsSum">Показывать уведомления когда пользователь пишет в чат.</string>
     <string name="defaultUsername">Имя по-умолчанию</string>
@@ -60,10 +58,7 @@
     <string name="certificateGenerate">Создать сертификат</string>
     <string name="certificateGenerateSum">Создать новый само-заверенный Mumla сертификат. Рекомендуется для начинающих.</string>
     <string name="pttSettings">Настройки кнопки</string>
-    <string name="pttSettingsSum">Настройки кнопки активации голосом (если включено).</string>
     <string name="voiceActivitySettings">Настройки голосовой активности</string>
-    <string name="voiceActivitySettingsSum">Настроить голосовую активность (если она включена).</string>
-    <string name="audioOutput">Вывод звука</string>
     <string name="disableOpus">Отключить Opus кодек</string>
     <string name="disableOpusSum">Отключить Opus кодек для Mumble 1.2.4 серверов.</string>
     <string name="hidePtt">Скрыть кнопку активации голоса</string>

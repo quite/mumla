@@ -22,7 +22,6 @@
     <string name="licenses">ライセンス</string>
     <string name="authentication">認証</string>
     <string name="authenticationSum">証明書の管理と作成</string>
-    <string name="audioInput">音声入力</string>
     <string name="audioInputMethodSum">音声入力の方法。</string>
     <string name="audioInputMethod">送信モード</string>
     <string name="audioInputVolume">マイクボリューム</string>
@@ -46,7 +45,6 @@
     <string name="audioSum">音声入力および出力を超セします</string>
     <string name="audioSampleRate">入力サンプルレート</string>
     <string name="audioSampleRateSum">お好みのオーディオ サンプルレート。すべてのデバイスですべてのレートがサポートされているわけではありません。</string>
-    <string name="noCert">証明書がありません</string>
     <string name="chatNotifications">チャット通知</string>
     <string name="chatNotificationsSum">ユーザーがチャットに投稿した時に、通知を表示します。</string>
     <string name="defaultUsername">デフォルトのユーザー名</string>
@@ -55,10 +53,7 @@
     <string name="certificateGenerate">証明書を生成</string>
     <string name="certificateGenerateSum">新しい自己署名の Mumla 証明書を生成します。初心者におすすめです。</string>
     <string name="pttSettings">プッシュツートーク設定</string>
-    <string name="pttSettingsSum">有効な場合、プッシュツートークを設定します。</string>
     <string name="voiceActivitySettings">音声機能設定</string>
-    <string name="voiceActivitySettingsSum">有効な場合、音声機能を設定します。</string>
-    <string name="audioOutput">音声出力</string>
     <string name="disableOpus">Opus Codec を無効にする</string>
     <string name="disableOpusSum">Mumble 1.2.4 サーバーで、Opus サポートを無効にします。</string>
     <string name="hidePtt">プッシュツートークボタンを非表示</string>

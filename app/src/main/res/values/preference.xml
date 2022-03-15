@@ -44,7 +44,6 @@
 
     <string name="authentication">Authentication</string>
     <string name="authenticationSum">Manage and create certificates</string>
-    <string name="audioInput">Audio input</string>
     <string name="audioInputMethodSum">How audio transmission is activated.</string>
     <string name="audioInputMethod">Transmit mode</string>
     <string name="audioInputVolume">Microphone volume</string>
@@ -68,7 +67,6 @@
     <string name="audioSum">Adjust audio input and output</string>
     <string name="audioSampleRate">Input sample rate</string>
     <string name="audioSampleRateSum">Preferred audio sample rate. Some devices support fewer rates.</string>
-    <string name="noCert">No certificate</string>
     <string name="chatNotifications">Chat notifications</string>
     <string name="chatNotificationsSum">Shown for new chat messages.</string>
     <string name="defaultUsername">Default username</string>
@@ -77,10 +75,7 @@
     <string name="certificateGenerate">Generate certificate</string>
     <string name="certificateGenerateSum">Generates a new self-signed Mumla certificate. Recommended for beginners.</string>
     <string name="pttSettings">Push-to-talk settings</string>
-    <string name="pttSettingsSum">Configure push-to-talk (if it is turned on).</string>
     <string name="voiceActivitySettings">Voice activity settings</string>
-    <string name="voiceActivitySettingsSum">Configure voice activity (if it is turned on).</string>
-    <string name="audioOutput">Speaker sound quality</string>
     <string name="disableOpus">Avoid Opus codec</string>
     <string name="disableOpusSum">Turn off Opus support for Mumble 1.2.4 servers.</string>
     <string name="hidePtt">Hide push-to-talk button</string>

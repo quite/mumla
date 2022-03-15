@@ -9,15 +9,11 @@
     <string name="drawer_pinned">Закрепленные</string>
     <string name="drawer_header_servers">Сервера</string>
     <string name="drawer_favorites">Избранное</string>
-    <string name="drawer_lan">Локальные</string>
     <string name="drawer_public">Публичные сервера</string>
     <!-- Chat formatting -->
-    <string name="chat_message_tree">(Дерево)</string>
-    <string name="chat_message_channel">(Канал)</string>
     <string name="chat_message_to">%1$s → %2$s</string>
     <string name="chat_message_tts_short_link">(Ссылка на %1$s)</string>
     <!-- User menu -->
-    <string name="user_menu_admin">Администратор</string>
     <string name="user_menu_kick">Кикнуть</string>
     <string name="user_menu_ban">Забанить</string>
     <string name="user_menu_mute">Замутировать</string>
@@ -29,10 +25,8 @@
     <string name="user_menu_change_comment">Изменить комментарий</string>
     <string name="user_menu_view_comment">Изменить комментарий</string>
     <string name="user_menu_reset_comment">Очистить комментарий</string>
-    <string name="user_menu_send_message">Отправить сообщение</string>
     <string name="user_menu_information">Информация</string>
     <string name="user_menu_register">Регистрация</string>
-    <string name="user_menu_registered">Зарегистрирован</string>
     <!-- Channel menu -->
     <string name="channel_menu_pin">Закрепить</string>
     <!-- Comment Fragment -->
@@ -61,9 +55,7 @@
     <string name="server_match_info">Имя: %1$s\nАдрес: %2$s:%3$d\nПользователей: %4$d / %5$d\nВерсия: %6$s \nСтрана: %7$s \nЗадержка: %8$d ms</string>
     <string name="server_match_description">Mumla может автоматически найти пустой сервер, основываясь на местоположении, версии, и задержке.</string>
     <!-- Common -->
-    <string name="channels">Каналы</string>
     <string name="no_servers">Для начала нажмите \'Добавить\' в панели управления чтобы добавить сервер.</string>
-    <string name="server_add">Добавить сервер</string>
     <string name="server_password">Пароль</string>
     <string name="server_username">Имя пользователя</string>
     <string name="server_port">Порт</string>
@@ -71,9 +63,6 @@
     <string name="server_label">Название</string>
     <string name="connecting">Подключение</string>
     <string name="connecting_to_server">Подключение к %s…</string>
-    <string name="fragment_chat">Чат</string>
-    <string name="fragment_channel">Канал</string>
-    <string name="menu_settings">Настройки</string>
     <string name="ptt">Нажать-чтобы-говорить</string>
     <string name="mute">Мут</string>
     <string name="deafen">Приглушить</string>
@@ -88,38 +77,24 @@
     <string name="connectionRefused">Подключение отклонено</string>
     <string name="confirm_delete_server">Вы действительно хотите удалить этот сервер?</string>
     <string name="confirm_delete_channel">Вы действительно хотите удалить этот канал?</string>
-    <string name="disconnected">Отключен</string>
-    <string name="kicked_message">Кикнут с сервера.\nПричина: %s</string>
-    <string name="loading">Загрузка…</string>
     <string name="reset_key">Сбросить кнопку</string>
     <string name="externalStorageUnavailable">Внешнее хранилище недоступно, не удалось загрузить сертификат</string>
     <string name="addFavorite">Добавить в избранное</string>
-    <string name="removeFavorite">Убрать из избранного</string>
-    <string name="viewFavorites">Просмотреть избранное</string>
-    <string name="favorites">Избранное</string>
-    <string name="favoriteRemoved">Убрано из избранного.</string>
-    <string name="favoriteAdded">Добавлено в избранное.</string>
-    <string name="noFavorites">Нет избранных каналов.</string>
-    <string name="accessTokens">Токены доступа</string>
     <string name="accessAdd">Добавить токен доступа</string>
     <string name="pushToTalkHint">(нажмите на чекбокс чтобы переключить)</string>
     <string name="messageReceived">Новое сообщение</string>
-    <string name="generateCert">Создать сертификат</string>
     <string name="generateCertSuccess">Ваш сертификат был установлен и сохранен как %s!</string>
     <string name="generateCertFailure">Не удалось создать сертификат.</string>
     <string name="generateCertProgress">Создание сертификата…</string>
     <string name="search">Поиск</string>
     <string name="searchHint">Поиск каналов и пользователей</string>
-    <string name="undocumentedWakeLock">Пробуждение от датчика приближения не поддерживается на вашем устройстве. Пожалуйста, измените режим вызова на громкую связь.</string>
     <!-- <string name="bluetooth">Bluetooth</string> -->
-    <string name="recordingVolume">Усиление громкости записи</string>
     <string name="quickConnect">Быстрое подключение</string>
     <string name="connect">Подключиться</string>
     <string name="connectToServer">Подключиться к серверу</string>
     <string name="edit">Редактировать</string>
     <string name="remove">Удалить</string>
     <string name="delete">Удалить</string>
-    <string name="retry">Повторить</string>
     <string name="messageToUser">Введите сообщение для пользователя \'%s\'</string>
     <string name="messageToChannel">Введите сообщение для канала \'%s\'</string>
     <string name="online">Онлайн</string>
@@ -129,13 +104,8 @@
     <string name="mumlaConnected">Mumla подключен</string>
     <string name="mumlaConnecting">Mumla подключается…</string>
     <string name="mumlaDisconnected">Mumla отключен</string>
-    <string name="lostConnection">Потеряно подключение к серверу.</string>
-    <string name="resume">Продолжить</string>
     <string name="channel">Канал</string>
     <string name="user">Пользователь</string>
-    <string name="server">Сервер</string>
-    <string name="chat_notify_moved">%1$s перемещен(а) %3$s из %2$s.</string>
-    <string name="chat_notify_muted_deafened">Звук и микрофон отключен.</string>
     <string name="chat_notify_muted">Микрофон отключен.</string>
     <string name="chat_notify_unmuted">Микрофон включен.</string>
     <string name="chat_notify_unmuted_undeafened">Микрофон и звук включен.</string>
@@ -146,10 +116,6 @@
     <string name="chat_notify_connected">%s соеденен(а).</string>
     <string name="chat_notify_disconnected">%s отсоединен(а).</string>
     <string name="unknown">Неизвестный</string>
-    <string name="server_list_title_favorite">Избранное</string>
-    <string name="server_list_title_lan">Локальные</string>
-    <string name="server_list_title_public_internet">Публичные</string>
-    <string name="ping">Пинг</string>
     <string name="sort">Сортировка</string>
     <string name="sortBy">Сортировать по…</string>
     <string name="name">Имя</string>
@@ -157,26 +123,13 @@
     <string name="share">Поделиться</string>
     <string name="description">Описание</string>
     <string name="shareMessage">Присоединяйся к этому Mumble серверу с помощью Mumla. %s</string>
-    <string name="noServerInfo">Отправить ping чтобы получить информацию</string>
     <string name="status_notify_muted_and_deafened">Звук и микрофон отключен.</string>
     <string name="status_notify_muted">Микрофон отключен.</string>
-    <string name="comment">Комментарий</string>
     <string name="close">Закрыть</string>
-    <string name="retrieving">Получение…</string>
     <string name="search_name">Имя</string>
     <string name="search_country">Страна</string>
-    <string name="preferences_immutable">Этот параметр не может быть изменен пока Вы подключены к серверу.</string>
-    <string name="fullscreen">Полноэкранный режим</string>
-    <string name="fullscreen_chat">Чат</string>
-    <string name="fullscreen_channel">Канал</string>
-    <string name="fetchingServers">Пожалуйста подождите, идет загрузка списка публичных серверов…</string>
     <string name="information">Информация</string>
-    <string name="register">Зарегистрироваться</string>
-    <string name="userControl">Управление пользователем</string>
-    <string name="registerSelfSuccess">Отправить запрос на регистрацию</string>
     <string name="error_fetching_servers">Не удалось получить список.\nВы подключены к интернету?</string>
-    <string name="coming_soon">Опция скоро будет доступна.</string>
-    <string name="tapToReconnect">Нажмите чтобы переподключиться</string>
     <string name="overlay">Оверлей</string>
     <string name="hint_reason">Причина</string>
     <string name="hint_ptt">Нажми чтобы говорить</string>
@@ -200,7 +153,6 @@
     <string name="first_run_generate_certificate_title">Добро пожаловать в Mumla.</string>
     <string name="first_run_generate_certificate">Создание сертификата очень рекомендуется, и требуется некоторыми для подключения некоторыми серверами.</string>
     <string name="generate">Создать</string>
-    <string name="certificate_not_valid">Не удалось загрузить сертификат %s.</string>
     <string name="invalid_password">Не верный пароль.</string>
     <string name="send_message">Отправить сообщение</string>
     <string name="channel_menu_view_description">Просмотреть описание</string>
@@ -210,13 +162,11 @@
     <string name="trust_add_failed">Не удалось добавить сертификат в хранилище доверенных сертификатов.</string>
     <string name="trust_cleared">Хранилище доверенных сертификатов очищено</string>
     <string name="cancelled">Отменено</string>
-    <string name="transmit_mode">Режим передачи</string>
     <string name="current_chat_target">Текущий получатель сообщений</string>
     <string name="channel_join">Присоединиться</string>
     <string name="certificate_info">Получатель:\n%1$s\n\nДействует с:\n%2$s\n\nДействует до:\n%3$s\n\nПодпись (SHA-1):\n%4$s\n\nПодпись (SHA-256):\n%5$s</string>
     <string name="invalid_host">Некорректный адрес</string>
     <string name="invalid_port_range">Некорректный порт (1-65535)</string>
-    <string name="invalid_username">Не верное имя пользователя</string>
     <string name="cancel_reconnect">Отменить переподключение</string>
     <string name="attempting_reconnect">Ошибка: %s.
 \n
@@ -253,11 +203,6 @@
         <item quantity="one">%d пользователь</item>
         <item quantity="few">%d пользователя</item>
         <item quantity="other">%d пользователей</item>
-    </plurals>
-    <plurals name="reconnecting">
-        <item quantity="one">Переподключение через %d секунду.</item>
-        <item quantity="few">Переподключение через %d секунды.</item>
-        <item quantity="other">Переподключение через %d секунд.</item>
     </plurals>
     <plurals name="notification_unread_many">
         <item quantity="one">%d новое сообщение</item>

@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="chat_message_channel">(Kanal)</string>
-    <string name="chat_message_tree">(Ağaç)</string>
     <string name="drawer_public">Genel Sunucular</string>
-    <string name="drawer_lan">LAN</string>
     <string name="drawer_favorites">Sık Kullanılanlar</string>
     <string name="drawer_header_servers">Sunucular</string>
     <string name="drawer_server">Tüm Kanallar</string>
@@ -14,10 +11,6 @@
     <plurals name="notification_unread_many">
         <item quantity="one">%d yeni mesaj</item>
         <item quantity="other">%d yeni mesaj</item>
-    </plurals>
-    <plurals name="reconnecting">
-        <item quantity="one">%d saniye içinde yeniden bağlanılıyor.</item>
-        <item quantity="other">%d saniye içinde yeniden bağlanılıyor.</item>
     </plurals>
     <plurals name="search_channel_users">
         <item quantity="one">%d kullanıcı</item>
@@ -56,7 +49,6 @@
 \n
 \nYeniden bağlanılıyor…</string>
     <string name="cancel_reconnect">Yeniden bağlanmayı iptal et</string>
-    <string name="invalid_username">Geçersiz kullanıcı adı</string>
     <string name="invalid_port_range">Geçersiz bağlantı noktası (1-65535)</string>
     <string name="invalid_host">Geçersiz ana makine</string>
     <string name="certificate_info">Sahibi:
@@ -75,7 +67,6 @@
 \n%5$s</string>
     <string name="channel_join">Katıl</string>
     <string name="current_chat_target">Geçerli sohbet hedefi</string>
-    <string name="transmit_mode">İletim Modu</string>
     <string name="cancelled">İptal edildi</string>
     <string name="trust_cleared">Güven veri tabanı temizlendi</string>
     <string name="trust_add_failed">Sertifika güven deposuna eklenemedi.</string>
@@ -85,7 +76,6 @@
     <string name="channel_menu_view_description">Açıklamayı Görüntüle</string>
     <string name="send_message">Mesaj gönder</string>
     <string name="invalid_password">Yanlış parola.</string>
-    <string name="certificate_not_valid">%s sertifikası yüklenemedi.</string>
     <string name="generate">Oluştur</string>
     <string name="first_run_generate_certificate">Sertifika oluşturulması şiddetle tavsiye edilir ve bazı sunuculara bağlanmak için gereklidir.</string>
     <string name="first_run_generate_certificate_title">Mumla\'ya hoş geldiniz.</string>
@@ -107,27 +97,14 @@
     <string name="hint_ptt_summary">Konuşmak için bu düğmeye basmanız yeterlidir. Değiştirmek için iki defa dokunun.</string>
     <string name="hint_ptt">Bas konuş</string>
     <string name="hint_reason">Neden</string>
-    <string name="tapToReconnect">Yeniden bağlanmak için dokunun</string>
-    <string name="coming_soon">Özellik yakında gelecek.</string>
     <string name="error_fetching_servers">Sunucular alınamadı.
 \nİnternete bağlı mısınız\?</string>
-    <string name="registerSelfSuccess">Kayıt isteği gönderildi</string>
-    <string name="userControl">Kullanıcı Denetimi</string>
-    <string name="register">Kendini Kaydet</string>
     <string name="information">Bilgi</string>
-    <string name="fetchingServers">Lütfen bekleyin, genel sunucuların listesi alınıyor…</string>
-    <string name="fullscreen_channel">Kanal</string>
-    <string name="fullscreen_chat">Sohbet</string>
-    <string name="fullscreen">Tam Ekran</string>
-    <string name="preferences_immutable">Bu ayar, bir sunucuya bağlıyken değiştirilemez.</string>
     <string name="search_country">Ülke</string>
     <string name="search_name">Ad</string>
-    <string name="retrieving">Alınıyor…</string>
     <string name="close">Kapat</string>
-    <string name="comment">Yorum Yap</string>
     <string name="status_notify_muted">Sesi kapatıldı.</string>
     <string name="status_notify_muted_and_deafened">Sesi kapatıldı ve duyması engellendi.</string>
-    <string name="noServerInfo">Bilgi almak için ping at</string>
     <string name="shareMessage">Bu Mumble sunucusuna Mumla ile katılın. %s</string>
     <string name="description">Açıklama</string>
     <string name="share">Paylaş</string>
@@ -135,14 +112,9 @@
     <string name="name">Ad</string>
     <string name="sortBy">Sıralama ölçütü…</string>
     <string name="sort">Sırala</string>
-    <string name="ping">Ping</string>
-    <string name="server_list_title_public_internet">Genel İnternet</string>
-    <string name="server_list_title_lan">LAN</string>
     <string name="unknown">Bilinmeyen</string>
     <string name="user">Kullanıcı</string>
     <string name="channel">Kanal</string>
-    <string name="resume">Devam Ettir</string>
-    <string name="lostConnection">Sunucuyla bağlantı kesildi.</string>
     <string name="mumlaDisconnected">Mumla bağlantısı kesildi</string>
     <string name="mumlaConnecting">Mumla bağlanıyor…</string>
     <string name="mumlaConnected">Mumla bağlandı</string>
@@ -152,41 +124,24 @@
     <string name="online">Çevrim içi</string>
     <string name="messageToChannel">\'%s\' kanalına mesaj yazın</string>
     <string name="messageToUser">\'%s\' kullanıcısına bir mesaj yazın</string>
-    <string name="retry">Yeniden Dene</string>
     <string name="delete">Sil</string>
     <string name="remove">Kaldır</string>
     <string name="edit">Düzenle</string>
     <string name="connectToServer">Sunucuya Bağlan</string>
     <string name="connect">Bağlan</string>
     <string name="quickConnect">Hızlı Bağlan</string>
-    <string name="recordingVolume">Kayıt Sesi Yükseltme</string>
     <string name="bluetooth">Bluetooth</string>
-    <string name="undocumentedWakeLock">Yakınlık sensörü uyandırma kilidi aygıtınızda desteklenmiyor. Lütfen arama modunu hoparlör olarak değiştirin.</string>
     <string name="searchHint">Kanalları ve kullanıcıları arayın</string>
     <string name="search">Ara</string>
     <string name="generateCertProgress">Sertifika oluşturuluyor…</string>
     <string name="generateCertFailure">Sertifika oluşturulamadı.</string>
     <string name="generateCertSuccess">Sertifikanız ayarlandı ve %s olarak kaydedildi!</string>
-    <string name="generateCert">Sertifika Oluştur</string>
     <string name="messageReceived">Yeni mesaj</string>
     <string name="pushToTalkHint">(değiştirmeyi etkinleştirmek için onay kutusunu işaretleyin)</string>
     <string name="accessAdd">Erişim Belirteci Ekle</string>
-    <string name="accessTokens">Erişim Belirteçleri</string>
-    <string name="hint_server_add_summary">Eylem çubuğundan \'Ekle\' düğmesine basarak sık kullanılanlara bir sunucu ekleyin.</string>
-    <string name="server_list_title_favorite">Sık Kullanılanlar</string>
-    <string name="noFavorites">Sık kullanılanlara eklenen kanal yok.</string>
-    <string name="favoriteAdded">Sık kullanılanlara eklendi.</string>
-    <string name="favoriteRemoved">Sık kullanılanlardan kaldırıldı.</string>
-    <string name="favorites">Sık Kullanılanlar</string>
-    <string name="viewFavorites">Sık Kullanılanları Gürüntüle</string>
-    <string name="removeFavorite">Sık Kullanılanlardan Kaldır</string>
     <string name="addFavorite">Sık Kullanılanlara Ekle</string>
     <string name="externalStorageUnavailable">Harici depolama kullanılabilir değil, sertifika yüklenemiyor</string>
     <string name="reset_key">Sıfırlama Tuşu</string>
-    <string name="loading">Yükleniyor…</string>
-    <string name="kicked_message">Sunucudan atıldı.
-\nNeden: %s</string>
-    <string name="disconnected">Bağlantı kesildi</string>
     <string name="confirm_delete_channel">Bu kanalı silmek istediğinizden emin misiniz\?</string>
     <string name="confirm_delete_server">Bu sunucuyu silmek istediğinizden emin misiniz\?</string>
     <string name="connectionRefused">Bağlantı reddedildi</string>
@@ -200,9 +155,6 @@
     <string name="deafen">Duymasını Engelle</string>
     <string name="mute">Sesini Kapat</string>
     <string name="ptt">Bas konuş</string>
-    <string name="menu_settings">Ayarlar</string>
-    <string name="fragment_channel">Kanal</string>
-    <string name="fragment_chat">Sohbet</string>
     <string name="connecting_to_server">%s ile bağlantı kuruluyor…</string>
     <string name="connecting">Bağlanıyor</string>
     <string name="server_label">Etiket</string>
@@ -210,12 +162,9 @@
     <string name="server_port">Bağlantı Noktası</string>
     <string name="server_username">Kullanıcı Adı</string>
     <string name="server_password">Parola</string>
-    <string name="server_add">Sunucu Ekle</string>
     <string name="no_servers">Önce bir sunucu eklemek için eylem çubuğundan \'Ekle\' düğmesine basın.</string>
-    <string name="channels">Kanallar</string>
     <string name="server_match_description">Mumla konuma, sürüme ve gecikmeye göre sizin için en iyi boş sunucuyu otomatik olarak bulabilir.</string>
     <string name="chat_message_tts_short_link">(%1$s için bağlantı)</string>
-    <string name="server">Sunucu</string>
     <string name="perm_denied">İzin reddedildi.</string>
     <string name="chat_notify_disconnected">%s bağlantısı kesildi.</string>
     <string name="chat_notify_connected">%s bağlandı.</string>
@@ -255,10 +204,8 @@
     <string name="comment_edit_source">Kaynağı düzenle</string>
     <string name="comment_view">Görüntüle</string>
     <string name="channel_menu_pin">Sabitle</string>
-    <string name="user_menu_registered">Kayıtlı</string>
     <string name="user_menu_register">Kaydol</string>
     <string name="user_menu_information">Bilgi</string>
-    <string name="user_menu_send_message">Mesaj Gönder</string>
     <string name="user_menu_reset_comment">Yorumu Sıfırla</string>
     <string name="user_menu_view_comment">Yorumu Görüntüle</string>
     <string name="user_menu_change_comment">Yorumu Değiştir</string>
@@ -270,7 +217,6 @@
     <string name="user_menu_mute">Sesini Kapat</string>
     <string name="user_menu_ban">Yasakla</string>
     <string name="user_menu_kick">At</string>
-    <string name="user_menu_admin">Yönetici</string>
     <string name="chat_message_to">%1$s → %2$s</string>
     <string name="drawer_pinned">Sabitlenen Kanallar</string>
     <string name="drawer_tokens">Erişim Belirteçleri</string>

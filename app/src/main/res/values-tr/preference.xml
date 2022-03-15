@@ -36,7 +36,6 @@
     <string name="inputMethodPtt">Bas konuş</string>
     <string name="hot_corner_bottom_right">sağ alt ↘</string>
     <string name="acknowledgements">Katkıda bulunanlar</string>
-    <string name="audioInput">Ses girişi</string>
     <string name="audioInputMethod">İletim modu</string>
     <string name="detectionThreshold">Algılama eşiği</string>
     <string name="pttKey">Bas konuş tuşu</string>
@@ -44,16 +43,12 @@
     <string name="appearanceSum">Uygulamanın görünümünü ayarlayın</string>
     <string name="forceTcp">Yalnızca TCP</string>
     <string name="forceTcpSum">İletişim için UDP\'yi kapatır.</string>
-    <string name="noCert">Sertifika yok</string>
     <string name="chatNotifications">Sohbet bildirimleri</string>
     <string name="chatNotificationsSum">Yeni sohbet mesajları için gösterilir.</string>
     <string name="defaultUsername">Öntanımlı kullanıcı adı</string>
     <string name="certificateGenerate">Sertifika oluştur</string>
     <string name="pttSettings">Bas konuş ayarları</string>
-    <string name="pttSettingsSum">Bas konuş özelliğini yapılandırın (açıksa).</string>
     <string name="voiceActivitySettings">Ses etkinliği ayarları</string>
-    <string name="voiceActivitySettingsSum">Ses etkinliğini yapılandırın (açıksa).</string>
-    <string name="audioOutput">Hoparlör ses kalitesi</string>
     <string name="disableOpus">Opus kod çözücüden kaçın</string>
     <string name="disableOpusSum">Mumble 1.2.4 sunucuları için Opus desteğini kapatın.</string>
     <string name="hidePtt">Bas konuş düğmesini gizle</string>

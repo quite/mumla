@@ -22,7 +22,6 @@
     <string name="licenses">Licences</string>
     <string name="authentication">Authentification</string>
     <string name="authenticationSum">Gérer et créer des certificats</string>
-    <string name="audioInput">Entrée audio</string>
     <string name="audioInputMethodSum">Comment la transmission audio est activée.</string>
     <string name="audioInputMethod">Mode de transmission</string>
     <string name="audioInputVolume">Volume du microphone</string>
@@ -46,7 +45,6 @@
     <string name="audioSum">Ajuster les entrées et sorties audio</string>
     <string name="audioSampleRate">Taux d\'échantillonnage en entrée</string>
     <string name="audioSampleRateSum">Fréquence d\'échantillonnage audio préférée. Certains appareils prennent en charge moins de fréquences.</string>
-    <string name="noCert">Pas de certificat</string>
     <string name="chatNotifications">Notifications du chat</string>
     <string name="chatNotificationsSum">S\'affiche pour les nouveaux messages.</string>
     <string name="defaultUsername">Nom d\'utilisateur par défaut</string>
@@ -55,10 +53,7 @@
     <string name="certificateGenerate">Générer un certificat</string>
     <string name="certificateGenerateSum">Générer un nouveau certificat Mumla auto-signé. Recommendé pour les débutants.</string>
     <string name="pttSettings">Paramètres de « appuyer pour parler »</string>
-    <string name="pttSettingsSum">Configurez la fonction appuyer pour parler(si elle est activée).</string>
     <string name="voiceActivitySettings">Paramètres d\'activité vocale</string>
-    <string name="voiceActivitySettingsSum">Configurer l\'activité vocale (si elle est activée).</string>
-    <string name="audioOutput">Qualité du son du haut-parleur</string>
     <string name="disableOpus">Éviter le codec Opus</string>
     <string name="disableOpusSum">Désactiver la prise en charge d\'Opus pour les serveurs Mumble 1.2.4.</string>
     <string name="hidePtt">Masquer le bouton « Appuyer pour parler »</string>

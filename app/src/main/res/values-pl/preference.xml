@@ -22,7 +22,6 @@
     <string name="licenses">Licencje</string>
     <string name="authentication">Uwierzytelnianie</string>
     <string name="authenticationSum">Zarządzaj certyfikatami i je twórz</string>
-    <string name="audioInput">Wejście audio</string>
     <string name="audioInputMethodSum">Sposób aktywacji przekazywania audio.</string>
     <string name="audioInputMethod">Tryb przekazywania</string>
     <string name="audioInputVolume">Głośność mikrofonu</string>
@@ -46,7 +45,6 @@
     <string name="audioSum">Dostosuj wejście i wyjście audio</string>
     <string name="audioSampleRate">Częstotliwość próbkowania wejścia</string>
     <string name="audioSampleRateSum">Preferowana częstotliwość próbkowania audio. Niektóre urządzenia obsługują mniej częstotliwości.</string>
-    <string name="noCert">Brak certyfikatu</string>
     <string name="chatNotifications">Powiadomienia na czacie</string>
     <string name="chatNotificationsSum">Wyświetlane dla nowych wiadomości czatu.</string>
     <string name="defaultUsername">Domyślna nazwa użytkownika</string>
@@ -55,10 +53,7 @@
     <string name="certificateGenerate">Wygeneruj certyfikat</string>
     <string name="certificateGenerateSum">Generuje nowy samopodpisany certyfikat Mumla. Zalecane dla początkujących.</string>
     <string name="pttSettings">Ustawienia funkcji „Naciśnij i mów”</string>
-    <string name="pttSettingsSum">Skonfiguruj funkcję „Naciśnij i mów” (jeśli jest włączona).</string>
     <string name="voiceActivitySettings">Ustawienia aktywności głosowej</string>
-    <string name="voiceActivitySettingsSum">Skonfiguruj aktywność głosową (jeśli jest włączona).</string>
-    <string name="audioOutput">Jakość audio głośnika</string>
     <string name="disableOpus">Unikaj kodeka Opus</string>
     <string name="disableOpusSum">Wyłącz obsługę Opus dla serwerów Mumble 1.2.4.</string>
     <string name="hidePtt">Ukryj przycisk funkcji „Naciśnij i mów”</string>

@@ -22,7 +22,6 @@
     <string name="licenses">Licencias</string>
     <string name="authentication">Autenticación</string>
     <string name="authenticationSum">Gestiona y crea certificados</string>
-    <string name="audioInput">Entrada de audio</string>
     <string name="audioInputMethodSum">El método de entrada de audio</string>
     <string name="audioInputMethod">Modo de transmisión</string>
     <string name="audioInputVolume">Volumen del micrófono</string>
@@ -46,7 +45,6 @@
     <string name="audioSum">Ajuste la entrada y salida del audio</string>
     <string name="audioSampleRate">Frecuencia de muestreo de la entrada</string>
     <string name="audioSampleRateSum">La frecuencia de muestreo del audio preferida. No todas las frecuencias son funcionales en todos los dispositivos.</string>
-    <string name="noCert">Sin certificado</string>
     <string name="chatNotifications">Notificaciones del chat</string>
     <string name="chatNotificationsSum">Mostrar notificaciones cuando un usuario escriba en el chat</string>
     <string name="defaultUsername">Nombre de usuario predeterminado</string>
@@ -55,10 +53,7 @@
     <string name="certificateGenerate">Generar certificado</string>
     <string name="certificateGenerateSum">Genera un nuevo certificado de Mumla auto-firmado. Recomendado para principiantes.</string>
     <string name="pttSettings">Opciones de Presionar-para-hablar</string>
-    <string name="pttSettingsSum">Configúrelo si Presionar-para-hablar está habilitado.</string>
     <string name="voiceActivitySettings">Opciones de actividad de voz</string>
-    <string name="voiceActivitySettingsSum">Configúrelo si ha seleccionado transmisión por actividad de voz</string>
-    <string name="audioOutput">Salida de audio</string>
     <string name="disableOpus">Inhabilitar códec Opus</string>
     <string name="disableOpusSum">Inhabilitar soporte de Opus para los servidores de Mumble versión 1.2.4</string>
     <string name="hidePtt">Ocultar botón de Presionar-para-hablar</string>

@@ -9,14 +9,10 @@
     <string name="drawer_pinned">Salons épinglés</string>
     <string name="drawer_header_servers">Serveurs</string>
     <string name="drawer_favorites">Favoris</string>
-    <string name="drawer_lan">LAN</string>
     <string name="drawer_public">Serveurs publiques</string>
     <!--Chat formatting-->
-    <string name="chat_message_tree">(Arborescence)</string>
-    <string name="chat_message_channel">(Canal)</string>
     <string name="chat_message_to">%1$s → %2$s</string>
     <!--User menu-->
-    <string name="user_menu_admin">Admin</string>
     <string name="user_menu_kick">Expulser</string>
     <string name="user_menu_ban">Bannir</string>
     <string name="user_menu_mute">Muet</string>
@@ -28,10 +24,8 @@
     <string name="user_menu_change_comment">Changer le commentaire</string>
     <string name="user_menu_view_comment">Voir le commentaire</string>
     <string name="user_menu_reset_comment">Réinitialiser le commentaire</string>
-    <string name="user_menu_send_message">Envoyer un message</string>
     <string name="user_menu_information">Informations</string>
     <string name="user_menu_register">S\'enregistrer</string>
-    <string name="user_menu_registered">Enregistré</string>
     <!--Channel menu-->
     <string name="channel_menu_pin">Épingle</string>
     <!--Comment Fragment-->
@@ -65,9 +59,7 @@
 \nLatence : %8$d ms</string>
     <string name="server_match_description">Mumla peut vous trouver automatiquement un serveur vide, en optimisant en se basant sur la position du serveur, sa version, et sa latence.</string>
     <!--Common-->
-    <string name="channels">Canaux</string>
     <string name="no_servers">Appuyez sur le bouton « Ajouter » dans la barre d\'action pour commencer.</string>
-    <string name="server_add">Ajouter un serveur</string>
     <string name="server_password">Mot de passe</string>
     <string name="server_username">Nom d\'utilisateur</string>
     <string name="server_port">Port</string>
@@ -75,9 +67,6 @@
     <string name="server_label">Libellé</string>
     <string name="connecting">Connexion</string>
     <string name="connecting_to_server">Connexion à %s…</string>
-    <string name="fragment_chat">Discussion</string>
-    <string name="fragment_channel">canal</string>
-    <string name="menu_settings">Paramètres</string>
     <string name="ptt">Appuyer pour parler</string>
     <string name="mute">Muet</string>
     <string name="deafen">Sourd</string>
@@ -92,39 +81,24 @@
     <string name="connectionRefused">Connexion refusée</string>
     <string name="confirm_delete_server">Êtes-vous sûr(e) vouloir supprimer ce serveur \?</string>
     <string name="confirm_delete_channel">Êtes-vous sûr·e de vouloir supprimer ce salon \?</string>
-    <string name="disconnected">Déconnecté</string>
-    <string name="kicked_message">Expulsé du serveur.
-\nRaison : %s</string>
-    <string name="loading">Chargement…</string>
     <string name="reset_key">Réinitialiser la touche</string>
     <string name="externalStorageUnavailable">Stockage externe indisponible, impossible de charger le certificat</string>
     <string name="addFavorite">Ajouter un favori</string>
-    <string name="removeFavorite">Supprimer un favori</string>
-    <string name="viewFavorites">Afficher les favoris</string>
-    <string name="favorites">Favoris</string>
-    <string name="favoriteRemoved">Favori supprimé.</string>
-    <string name="favoriteAdded">Favori ajouté.</string>
-    <string name="noFavorites">Pas de salon favoris.</string>
-    <string name="accessTokens">Jeton d\'accès</string>
     <string name="accessAdd">Ajouter un jeton d\'accès</string>
     <string name="pushToTalkHint">(Cocher la case pour permettre la bascule)</string>
     <string name="messageReceived">Nouveau message</string>
-    <string name="generateCert">Générer un certificat</string>
     <string name="generateCertSuccess">Votre certificat a été définie et enregistré sous %s !</string>
     <string name="generateCertFailure">Échec de la génération du certificat.</string>
     <string name="generateCertProgress">Génération d\'un certificat…</string>
     <string name="search">Rechercher</string>
     <string name="searchHint">Rechercher des salons et des utilisateurs</string>
-    <string name="undocumentedWakeLock">Malheureusement, il ne semble pas que nous puissions proposer le déverrouillage grâce aux capteurs de proximité pour votre appareil. Veuillez changer le mode d\'appel à haut-parleur.</string>
     <string name="bluetooth">Bluetooth</string>
-    <string name="recordingVolume">Augmentation du volume d\'enregistrement</string>
     <string name="quickConnect">Connexion rapide</string>
     <string name="connect">Connexion</string>
     <string name="connectToServer">Connexion au serveur</string>
     <string name="edit">Modifier</string>
     <string name="remove">Retirer</string>
     <string name="delete">Supprimer</string>
-    <string name="retry">Réessayer</string>
     <string name="messageToUser">Écrire un message à l\'utilisateur « %s »</string>
     <string name="messageToChannel">Écrire un message dans le salon « %s »</string>
     <string name="online">En ligne</string>
@@ -134,13 +108,8 @@
     <string name="mumlaConnected">Mumla connecté</string>
     <string name="mumlaConnecting">Mumla en connexion…</string>
     <string name="mumlaDisconnected">Mumla déconnecté</string>
-    <string name="lostConnection">Connexion au serveur perdu.</string>
-    <string name="resume">Reprendre</string>
     <string name="channel">Salon</string>
     <string name="user">Utilisateur</string>
-    <string name="server">Serveur</string>
-    <string name="chat_notify_moved">%1$s a été déplacé de %2$s par %3$s.</string>
-    <string name="chat_notify_muted_deafened">Muet et sourd.</string>
     <string name="chat_notify_muted">Muet.</string>
     <string name="chat_notify_unmuted">Non muet.</string>
     <string name="chat_notify_unmuted_undeafened">N\'est plus muet et sourd.</string>
@@ -151,10 +120,6 @@
     <string name="chat_notify_connected">%s connecté.</string>
     <string name="chat_notify_disconnected">%s déconnecté.</string>
     <string name="unknown">Inconnu</string>
-    <string name="server_list_title_favorite">Favoris</string>
-    <string name="server_list_title_lan">LAN</string>
-    <string name="server_list_title_public_internet">Internet publique</string>
-    <string name="ping">Ping</string>
     <string name="sort">Trier</string>
     <string name="sortBy">Trier par…</string>
     <string name="name">Nom</string>
@@ -162,27 +127,14 @@
     <string name="share">Partager</string>
     <string name="description">Description</string>
     <string name="shareMessage">Rejoindre ce serveur Mumble avec Mumla. %s</string>
-    <string name="noServerInfo">Pinguer pour récupérer des infos</string>
     <string name="status_notify_muted_and_deafened">Muet et sourd.</string>
     <string name="status_notify_muted">Muet.</string>
-    <string name="comment">Commenter</string>
     <string name="close">Fermer</string>
-    <string name="retrieving">Récupération…</string>
     <string name="search_name">Nom</string>
     <string name="search_country">Pays</string>
-    <string name="preferences_immutable">Ce paramètre ne peut pas être changé pendant une connexion au serveur.</string>
-    <string name="fullscreen">Plein écran</string>
-    <string name="fullscreen_chat">Chat</string>
-    <string name="fullscreen_channel">Salon</string>
-    <string name="fetchingServers">Veuillez attendre, récupération de la liste des serveurs publiques…</string>
     <string name="information">Information</string>
-    <string name="register">S\'enregistrer</string>
-    <string name="userControl">Contrôle de l\'utilisateur</string>
-    <string name="registerSelfSuccess">Demande d\'inscription envoyé</string>
     <string name="error_fetching_servers">Erreur du chargement des serveurs.
 \nVérifiez votre connexion internet.</string>
-    <string name="coming_soon">Cette fonctionnalité arrivera bientôt.</string>
-    <string name="tapToReconnect">Appuyez pour vous reconnecter</string>
     <string name="overlay">Superposition</string>
     <string name="hint_reason">Raison</string>
     <string name="hint_ptt">Appuyer pour parler</string>
@@ -206,7 +158,6 @@
     <string name="first_run_generate_certificate_title">Bienvenue dans Mumla.</string>
     <string name="first_run_generate_certificate">Générer un certificat est très recommandé, et nécessaire pour la connexion à certains serveurs.</string>
     <string name="generate">Générer</string>
-    <string name="certificate_not_valid">Impossible de charger le certificat %s.</string>
     <string name="invalid_password">Mot de passe invalide.</string>
     <string name="send_message">Envoyer un message</string>
     <string name="channel_menu_view_description">Voir la description</string>
@@ -216,7 +167,6 @@
     <string name="trust_add_failed">Échec de l\'ajout du certificat à la base de confiance.</string>
     <string name="trust_cleared">Base de confiance effacée</string>
     <string name="cancelled">Annulé</string>
-    <string name="transmit_mode">Mode de transmission</string>
     <string name="current_chat_target">Discussion cible actuelle</string>
     <string name="channel_join">Joindre</string>
     <string name="certificate_info">Sujet :
@@ -235,7 +185,6 @@
 \n%5$s</string>
     <string name="invalid_host">Hôte invalide</string>
     <string name="invalid_port_range">Port invalide (1-65535)</string>
-    <string name="invalid_username">Nom d\'utilisateur invalide</string>
     <string name="cancel_reconnect">Annuler la reconnexion</string>
     <string name="attempting_reconnect">Erreur : %s.
 \n
@@ -244,10 +193,6 @@
     <plurals name="search_channel_users">
         <item quantity="one">%d utilisateur</item>
         <item quantity="other">%d utilisateurs</item>
-    </plurals>
-    <plurals name="reconnecting">
-        <item quantity="one">Reconnexion dans %d seconde.</item>
-        <item quantity="other">Reconnexion dans %d secondes.</item>
     </plurals>
     <plurals name="notification_unread_many">
         <item quantity="one">%d nouveau message</item>

@@ -1,38 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="retry">Prøv igjen</string>
     <string name="delete">Slett</string>
     <string name="remove">Fjern</string>
     <string name="edit">Rediger</string>
     <string name="connectToServer">Koble til tjener</string>
     <string name="connect">Koble til</string>
     <string name="quickConnect">Hurtigtilkobling</string>
-    <string name="recordingVolume">Opptakslydstyrkeforhøyelse</string>
-    <string name="undocumentedWakeLock">Oppvåkning fra låst tilstand med nærhetssensor støttes ikke på din enhet. Endre ringemodus til høyttaler.</string>
     <string name="bluetooth">Blåtann</string>
     <string name="searchHint">Søk i kanaler og brukere</string>
     <string name="search">Søk</string>
     <string name="generateCertProgress">Genererer sertifikat …</string>
     <string name="generateCertFailure">Kunne ikke generere sertifikat.</string>
     <string name="generateCertSuccess">Sertifikatet ditt har blitt satt og lagret som %s!</string>
-    <string name="generateCert">Generer sertifikat</string>
     <string name="messageReceived">Ny melding</string>
     <string name="pushToTalkHint">(huk av i avkryssningsboksen for å skru på veksling)</string>
     <string name="accessAdd">Legg til tilgangssymbol</string>
-    <string name="accessTokens">Tilgangssymboler</string>
-    <string name="noFavorites">Ingen favorittkanaler.</string>
-    <string name="favoriteAdded">Favoritt lagt til.</string>
-    <string name="favoriteRemoved">Favoritt fjernet.</string>
-    <string name="favorites">Favoritter</string>
-    <string name="viewFavorites">Vis favoritter</string>
-    <string name="removeFavorite">Fjern favoritt</string>
     <string name="addFavorite">Legg til favoritt</string>
     <string name="externalStorageUnavailable">Eksternt lagringsmedium utilgjengelig. Kan ikke laste inn sertifikat.</string>
     <string name="reset_key">Tilbakestill nøkkel</string>
-    <string name="loading">Laster inn …</string>
-    <string name="kicked_message">Utkastet fra tjeneren.
-\nGrunn: %s</string>
-    <string name="disconnected">Frakoblet</string>
     <string name="confirm_delete_channel">Er du sikker på at du vil slette denne kanalen\?</string>
     <string name="confirm_delete_server">Er du sikker på at du vil slette denne tjeneren\?</string>
     <string name="perm_denied">Tilgang nektet.</string>
@@ -47,9 +32,6 @@
     <string name="deafen">Gjør døv</string>
     <string name="mute">Forstum</string>
     <string name="ptt">Trykk for å snakke</string>
-    <string name="menu_settings">Innstillinger</string>
-    <string name="fragment_channel">Kanal</string>
-    <string name="fragment_chat">Sludre</string>
     <string name="connecting_to_server">Kobler til %s …</string>
     <string name="connecting">Kobler til</string>
     <string name="server_label">Etikett</string>
@@ -57,9 +39,7 @@
     <string name="server_port">Port</string>
     <string name="server_username">Brukernavn</string>
     <string name="server_password">Passord</string>
-    <string name="server_add">Legg til tjener</string>
     <string name="no_servers">Trykk «Legg til» fra handlingsfeltet for å legge til en tjener først.</string>
-    <string name="channels">Kanaler</string>
     <string name="server_match_description">Mumla kan automatisk finne deg en tom tjener, optimalisere for plassering, versjon, og latens.</string>
     <string name="server_match_info">Navn: %1$s
 \nVert: %2$s:%3$d
@@ -80,10 +60,6 @@
     <plurals name="notification_unread_many">
         <item quantity="one">%d ny melding</item>
         <item quantity="other">%d nye meldinger</item>
-    </plurals>
-    <plurals name="reconnecting">
-        <item quantity="one">Kobler til igjen om %d sekund.</item>
-        <item quantity="other">Kobler til igjen om %d sekunder.</item>
     </plurals>
     <plurals name="search_channel_users">
         <item quantity="one">%d bruker</item>
@@ -122,7 +98,6 @@
 \n
 \nKobler til igjen …</string>
     <string name="cancel_reconnect">Avbryt forsøk på å koble til igjen</string>
-    <string name="invalid_username">Ugyldig brukernavn</string>
     <string name="invalid_port_range">Ugyldig port (1-65535)</string>
     <string name="invalid_host">Ugyldig vert</string>
     <string name="certificate_info">Emne:
@@ -141,7 +116,6 @@
 \n%5$s</string>
     <string name="channel_join">Ta del</string>
     <string name="current_chat_target">Nåværende sludremål</string>
-    <string name="transmit_mode">Overføringsmodus</string>
     <string name="cancelled">Avbrutt</string>
     <string name="trust_cleared">Tillitsbunke tømt</string>
     <string name="trust_add_failed">Kunne ikke legge til sertifikat i tillitsbunken.</string>
@@ -151,7 +125,6 @@
     <string name="channel_menu_view_description">Vis beskrivelse</string>
     <string name="send_message">Send melding</string>
     <string name="invalid_password">Feil passord.</string>
-    <string name="certificate_not_valid">Kunne laste inn sertifikat %s.</string>
     <string name="generate">Generer</string>
     <string name="first_run_generate_certificate">Generering av sertifikat anbefales sterkt, og er påkrevd for tilkobling til noen tjenere.</string>
     <string name="first_run_generate_certificate_title">Velkommen</string>
@@ -175,27 +148,14 @@
     <string name="hint_ptt">Trykk for å snakk</string>
     <string name="hint_reason">Grunn</string>
     <string name="overlay">Overlag</string>
-    <string name="tapToReconnect">Trykk for å koble til igjen</string>
-    <string name="coming_soon">Funksjonen kommer snart.</string>
     <string name="error_fetching_servers">Kunne ikke hente tjenere.
 \nEr du koblet til Internett\?</string>
-    <string name="registerSelfSuccess">Sendte registreringsforespørsel</string>
-    <string name="userControl">Brukerkontroll</string>
-    <string name="register">Selvregistrering</string>
     <string name="information">Info</string>
-    <string name="fetchingServers">Vent mens listen over offentlige tjenere hentes …</string>
-    <string name="fullscreen_channel">Kanal</string>
-    <string name="fullscreen_chat">Sludring</string>
-    <string name="fullscreen">Fullskjerm</string>
-    <string name="preferences_immutable">Denne innstillingen kan ikke endres når tilkoblet til en tjener.</string>
     <string name="search_country">Land</string>
     <string name="search_name">Navn</string>
-    <string name="retrieving">Henter …</string>
     <string name="close">Lukk</string>
-    <string name="comment">Kommentar</string>
     <string name="status_notify_muted">Forstummet.</string>
     <string name="status_notify_muted_and_deafened">Forstummet og gjort døv.</string>
-    <string name="noServerInfo">Utført sambandsforsinkelsestest for å hente info</string>
     <string name="shareMessage">Ta del i denne Mumble-tjeneren med Mumla. %s</string>
     <string name="description">Beskrivelse</string>
     <string name="share">Deling</string>
@@ -203,10 +163,6 @@
     <string name="name">Navn</string>
     <string name="sortBy">Sorter etter …</string>
     <string name="sort">Rekkefølge</string>
-    <string name="ping">Sambandsforsinkelsestest</string>
-    <string name="server_list_title_public_internet">Offentlig Internett</string>
-    <string name="server_list_title_lan">Lokalnett</string>
-    <string name="server_list_title_favorite">Favoritter</string>
     <string name="unknown">Ukjent</string>
     <string name="chat_notify_disconnected">%s koblet fra.</string>
     <string name="chat_notify_connected">%s koblet til.</string>
@@ -217,13 +173,8 @@
     <string name="chat_notify_unmuted_undeafened">Forstummelse og døvhet opphevet.</string>
     <string name="chat_notify_unmuted">Forstummelse opphevet.</string>
     <string name="chat_notify_muted">Forstummet.</string>
-    <string name="chat_notify_muted_deafened">Forstummet og gjort døv.</string>
-    <string name="chat_notify_moved">%1$s flyttet inn fra %2$s av %3$s.</string>
-    <string name="server">Tjener</string>
     <string name="user">Bruker</string>
     <string name="channel">Kanal</string>
-    <string name="resume">Gjenoppta</string>
-    <string name="lostConnection">Mistet tilknytningen til tjeneren.</string>
     <string name="mumlaDisconnected">Mumla er frakoblet</string>
     <string name="mumlaConnecting">Mumla kobler til …</string>
     <string name="mumlaConnected">Mumla er tilkoblet</string>
@@ -244,10 +195,8 @@
     <string name="comment_edit_source">Rediger kilde</string>
     <string name="comment_view">Vis</string>
     <string name="channel_menu_pin">Fest</string>
-    <string name="user_menu_registered">Registrert</string>
     <string name="user_menu_register">Registrer</string>
     <string name="user_menu_information">Info</string>
-    <string name="user_menu_send_message">Send melding</string>
     <string name="user_menu_reset_comment">Tilbakestill kommentar</string>
     <string name="user_menu_view_comment">Vis kommentar</string>
     <string name="user_menu_change_comment">Endre kommentar</string>
@@ -259,13 +208,9 @@
     <string name="user_menu_mute">Forstum</string>
     <string name="user_menu_ban">Bannlys</string>
     <string name="user_menu_kick">Kast ut</string>
-    <string name="user_menu_admin">Administrator</string>
     <string name="chat_message_tts_short_link">(Lenke til %1$s)</string>
     <string name="chat_message_to">%1$s → %2$s</string>
-    <string name="chat_message_channel">(Kanal)</string>
-    <string name="chat_message_tree">(Tre)</string>
     <string name="drawer_public">Offentlige tjenere</string>
-    <string name="drawer_lan">Lokalnett</string>
     <string name="drawer_favorites">Favoritter</string>
     <string name="drawer_header_servers">Tjenere</string>
     <string name="drawer_pinned">Festede kanaler</string>

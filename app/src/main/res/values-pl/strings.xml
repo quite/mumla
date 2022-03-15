@@ -9,15 +9,11 @@
     <string name="drawer_pinned">Przypięte kanały</string>
     <string name="drawer_header_servers">Serwery</string>
     <string name="drawer_favorites">Ulubione</string>
-    <string name="drawer_lan">LAN</string>
     <string name="drawer_public">Serwery publiczne</string>
     <!-- Chat formatting -->
-    <string name="chat_message_tree">(Drzewo)</string>
-    <string name="chat_message_channel">(Kanał)</string>
     <string name="chat_message_to">%1$s → %2$s</string>
     <string name="chat_message_tts_short_link">(Łącze do %1$s)</string>
     <!-- User menu -->
-    <string name="user_menu_admin">Administrator</string>
     <string name="user_menu_kick">Wykop</string>
     <string name="user_menu_ban">Zbanuj</string>
     <string name="user_menu_mute">Wycisz</string>
@@ -29,10 +25,8 @@
     <string name="user_menu_change_comment">Zmień komentarz</string>
     <string name="user_menu_view_comment">Wyświetl komentarz</string>
     <string name="user_menu_reset_comment">Resetuj komentarz</string>
-    <string name="user_menu_send_message">Wyślij wiadomość</string>
     <string name="user_menu_information">Informacje</string>
     <string name="user_menu_register">Zarejestruj się</string>
-    <string name="user_menu_registered">Zarejestrowany</string>
     <!-- Channel menu -->
     <string name="channel_menu_pin">Przypnij</string>
     <!-- Comment Fragment -->
@@ -61,9 +55,7 @@
     <string name="server_match_info">Nazwa: %1$s\nHost: %2$s:%3$d\nUżytkownicy: %4$d / %5$d\nWersja: %6$s \nKraj: %7$s \nOpóźnienie: %8$d ms</string>
     <string name="server_match_description">Mumla może automatycznie znaleźć Ci pusty serwer, optymalizując lokalizację, wersję i opóźnienie.</string>
     <!-- Common -->
-    <string name="channels">Kanały</string>
     <string name="no_servers">Naciśnij \'Dodaj\' z paska akcji, aby najpierw dodać serwer.</string>
-    <string name="server_add">Dodaj serwer</string>
     <string name="server_password">Hasło</string>
     <string name="server_username">Nazwa użytkownika</string>
     <string name="server_port">Port</string>
@@ -71,9 +63,6 @@
     <string name="server_label">Etykieta</string>
     <string name="connecting">Łączenie</string>
     <string name="connecting_to_server">Łączenie z %s…</string>
-    <string name="fragment_chat">Czat</string>
-    <string name="fragment_channel">Kanał</string>
-    <string name="menu_settings">Ustawienia</string>
     <string name="ptt">Naciśnij i mów</string>
     <string name="mute">Wycisz</string>
     <string name="deafen">Ogłusz</string>
@@ -88,38 +77,24 @@
     <string name="connectionRefused">Połączenie odrzucone</string>
     <string name="confirm_delete_server">Czy na pewno chcesz usunąć ten serwer?</string>
     <string name="confirm_delete_channel">Czy na pewno chcesz usunąć ten kanał?</string>
-    <string name="disconnected">Rozłączono</string>
-    <string name="kicked_message">Wyrzucono z serwera.\nPrzyczyna: %s</string>
-    <string name="loading">Ładowanie…</string>
     <string name="reset_key">Resetuj przycisk</string>
     <string name="externalStorageUnavailable">Pamięć zewnętrzna niedostępna, nie można załadować certyfikatu</string>
     <string name="addFavorite">Dodaj do ulubionych</string>
-    <string name="removeFavorite">Usuń z ulubionych</string>
-    <string name="viewFavorites">Wyświetl ulubione</string>
-    <string name="favorites">Ulubione</string>
-    <string name="favoriteRemoved">Ulubione usunięte.</string>
-    <string name="favoriteAdded">Ulubione dodane.</string>
-    <string name="noFavorites">Brak ulubionych kanałów.</string>
-    <string name="accessTokens">Tokeny dostępu</string>
     <string name="accessAdd">Dodaj token dostępu</string>
     <string name="pushToTalkHint">(zaznacz pole wyboru, aby włączyć przełączanie)</string>
     <string name="messageReceived">Nowa wiadomość</string>
-    <string name="generateCert">Wygeneruj certyfikat</string>
     <string name="generateCertSuccess">Twój certyfikat został ustawiony i zapisany jako %s!</string>
     <string name="generateCertFailure">Nie udało się wygenerować certyfikatu.</string>
     <string name="generateCertProgress">Generowanie certyfikatu…</string>
     <string name="search">Wyszukaj</string>
     <string name="searchHint">Wyszukaj kanały i użytkowników</string>
-    <string name="undocumentedWakeLock">Blokada aktywacji czujnika zbliżeniowego nie jest obsługiwana przez urządzenie. Zmień tryb połączenia na tryb głośnomówiący.</string>
     <string name="bluetooth">Bluetooth</string>
-    <string name="recordingVolume">Zwiększenie głośności nagrywania</string>
     <string name="quickConnect">Szybkie połączenie</string>
     <string name="connect">Połącz</string>
     <string name="connectToServer">Połącz z serwerem</string>
     <string name="edit">Edytuj</string>
     <string name="remove">Skasuj</string>
     <string name="delete">Usuń</string>
-    <string name="retry">Ponów</string>
     <string name="messageToUser">Wpisz wiadomość do użytkownika \'%s\'</string>
     <string name="messageToChannel">Wpisz wiadomość do kanału \'%s\'</string>
     <string name="online">Online</string>
@@ -129,13 +104,8 @@
     <string name="mumlaConnected">Mumla połączona</string>
     <string name="mumlaConnecting">Mumla łączy się…</string>
     <string name="mumlaDisconnected">Mumla rozłączona</string>
-    <string name="lostConnection">Utracono połączenie z serwerem.</string>
-    <string name="resume">Wznów</string>
     <string name="channel">Kanał</string>
     <string name="user">Użytkownik</string>
-    <string name="server">Serwer</string>
-    <string name="chat_notify_moved">%1$s przeniesiono z %2$s przez %3$s.</string>
-    <string name="chat_notify_muted_deafened">Wyciszony i ogłuszony.</string>
     <string name="chat_notify_muted">Wyciszony.</string>
     <string name="chat_notify_unmuted">Nie jest wyciszony.</string>
     <string name="chat_notify_unmuted_undeafened">Nie jest wyciszony i ogłuszony.</string>
@@ -146,10 +116,6 @@
     <string name="chat_notify_connected">%s podłączony.</string>
     <string name="chat_notify_disconnected">%s odłączony.</string>
     <string name="unknown">Nieznany</string>
-    <string name="server_list_title_favorite">Ulubione</string>
-    <string name="server_list_title_lan">LAN</string>
-    <string name="server_list_title_public_internet">Publiczny internet</string>
-    <string name="ping">Ping</string>
     <string name="sort">Sortuj</string>
     <string name="sortBy">Sortuj według…</string>
     <string name="name">Nazwa</string>
@@ -157,27 +123,14 @@
     <string name="share">Udostępnij</string>
     <string name="description">Opis</string>
     <string name="shareMessage">Dołącz do tego serwera Mumble za pomocą Mumla. %s</string>
-    <string name="noServerInfo">Ping, aby pobrać informacje</string>
     <string name="status_notify_muted_and_deafened">Wyciszony i ogłuszony.</string>
     <string name="status_notify_muted">Wyciszony.</string>
-    <string name="comment">Komentarz</string>
     <string name="close">Zamknij</string>
-    <string name="retrieving">Pobieranie…</string>
     <string name="search_name">Nazwa</string>
     <string name="search_country">Kraj</string>
-    <string name="preferences_immutable">Tego ustawienia nie można zmienić podczas połączenia z serwerem.</string>
-    <string name="fullscreen">Pełny ekran</string>
-    <string name="fullscreen_chat">Czat</string>
-    <string name="fullscreen_channel">Kanał</string>
-    <string name="fetchingServers">Proszę czekać, pobieranie listy serwerów publicznych…</string>
     <string name="information">Informacje</string>
-    <string name="register">Zarejestruj się</string>
-    <string name="userControl">Kontrola użytkownika</string>
-    <string name="registerSelfSuccess">Wysłano prośbę o rejestrację</string>
     <string name="error_fetching_servers">Nie udało się pobrać serwerów.
 \nCzy masz połączenie z internetem\?</string>
-    <string name="coming_soon">Funkcja już wkrótce.</string>
-    <string name="tapToReconnect">Stuknij, aby ponownie połączyć</string>
     <string name="overlay">Nakładka</string>
     <string name="hint_reason">Przyczyna</string>
     <string name="hint_ptt">Naciśnij i mów</string>
@@ -201,7 +154,6 @@
     <string name="first_run_generate_certificate_title">Witaj w Mumla.</string>
     <string name="first_run_generate_certificate">Generowanie certyfikatu jest bardzo zalecane i konieczne do połączenia z niektórymi serwerami.</string>
     <string name="generate">Wygeneruj</string>
-    <string name="certificate_not_valid">Nie udało się załadować certyfikatu %s.</string>
     <string name="invalid_password">Błędne hasło.</string>
     <string name="send_message">Wyślij wiadomość</string>
     <string name="channel_menu_view_description">Wyświetl opis</string>
@@ -211,13 +163,11 @@
     <string name="trust_add_failed">Nie udało się dodać certyfikatu do magazynu zaufanych certyfikatów.</string>
     <string name="trust_cleared">Wyczyszczono bazę danych zaufania</string>
     <string name="cancelled">Anulowano</string>
-    <string name="transmit_mode">Tryb przekazywania</string>
     <string name="current_chat_target">Bieżący cel czatu</string>
     <string name="channel_join">Dołącz</string>
     <string name="certificate_info">Podmiot:\n%1$s\n\nWażny od:\n%2$s\n\nWażny do:\n%3$s\n\nSkrót (SHA-1):\n%4$s\n\nSkrót (SHA-256):\n%5$s</string>
     <string name="invalid_host">Nieprawidłowy host</string>
     <string name="invalid_port_range">Nieprawidłowy port (1-65535)</string>
-    <string name="invalid_username">Nieprawidłowa nazwa użytkownika</string>
     <string name="cancel_reconnect">Anuluj ponowne połączenie</string>
     <string name="attempting_reconnect">Błąd: %s.\n\nPonowne połączenie…</string>
     <string name="change_requires_reconnect">Połącz ponownie, aby użyć nowych ustawień.</string>
@@ -253,11 +203,6 @@
         <item quantity="one">%d użytkownik</item>
         <item quantity="few">%d użytkowników</item>
         <item quantity="other">%d użytkowników</item>
-    </plurals>
-    <plurals name="reconnecting">
-        <item quantity="one">Ponowne połączenie za %d sekundę.</item>
-        <item quantity="few">Ponowne połączenie za %d sekundy.</item>
-        <item quantity="other">Ponowne połączenie za %d sekund.</item>
     </plurals>
     <plurals name="notification_unread_many">
         <item quantity="one">%d nowa wiadomość</item>

@@ -27,17 +27,13 @@
     <string name="drawer_pinned">Pinned Channels</string>
     <string name="drawer_header_servers">Servers</string>
     <string name="drawer_favorites">Favorites</string>
-    <string name="drawer_lan">LAN</string>
     <string name="drawer_public">Public Servers</string>
 
     <!-- Chat formatting -->
-    <string name="chat_message_tree">(Tree)</string>
-    <string name="chat_message_channel">(Channel)</string>
     <string name="chat_message_to">%1$s → %2$s</string>
     <string name="chat_message_tts_short_link">(Link to %1$s)</string>
 
     <!-- User menu -->
-    <string name="user_menu_admin">Admin</string>
     <string name="user_menu_kick">Kick</string>
     <string name="user_menu_ban">Ban</string>
     <string name="user_menu_mute">Mute</string>
@@ -49,10 +45,8 @@
     <string name="user_menu_change_comment">Change Comment</string>
     <string name="user_menu_view_comment">View Comment</string>
     <string name="user_menu_reset_comment">Reset Comment</string>
-    <string name="user_menu_send_message">Send Message</string>
     <string name="user_menu_information">Information</string>
     <string name="user_menu_register">Register</string>
-    <string name="user_menu_registered">Registered</string>
 
     <!-- Channel menu -->
     <string name="channel_menu_pin">Pin</string>
@@ -86,9 +80,7 @@
     <string name="server_match_description">Mumla can automatically find you an empty server, optimizing for location, version, and latency.</string>
 
     <!-- Common -->
-    <string name="channels">Channels</string>
     <string name="no_servers">Press \'Add\' from the action bar to add a server first.</string>
-    <string name="server_add">Add Server</string>
     <string name="server_password">Password</string>
     <string name="server_username">Username</string>
     <string name="server_port">Port</string>
@@ -96,9 +88,6 @@
     <string name="server_label">Label</string>
     <string name="connecting">Connecting</string>
     <string name="connecting_to_server">Connecting to %s…</string>
-    <string name="fragment_chat">Chat</string>
-    <string name="fragment_channel">Channel</string>
-    <string name="menu_settings">Settings</string>
     <string name="ptt">Push-to-talk</string>
     <string name="mute">Mute</string>
     <string name="deafen">Deafen</string>
@@ -113,38 +102,24 @@
     <string name="connectionRefused">Connection refused</string>
     <string name="confirm_delete_server">Are you sure you want to delete this server?</string>
     <string name="confirm_delete_channel">Are you sure you want to delete this channel?</string>
-    <string name="disconnected">Disconnected</string>
-    <string name="kicked_message">Kicked from server.\nReason: %s</string>
-    <string name="loading">Loading…</string>
     <string name="reset_key">Reset Key</string>
     <string name="externalStorageUnavailable">External storage unavailable, cannot load certificate</string>
     <string name="addFavorite">Add Favorite</string>
-    <string name="removeFavorite">Remove Favorite</string>
-    <string name="viewFavorites">View Favorites</string>
-    <string name="favorites">Favorites</string>
-    <string name="favoriteRemoved">Favorite removed.</string>
-    <string name="favoriteAdded">Favorite added.</string>
-    <string name="noFavorites">No favorited channels.</string>
-    <string name="accessTokens">Access Tokens</string>
     <string name="accessAdd">Add Access Token</string>
     <string name="pushToTalkHint">(tick checkbox to enable toggle)</string>
     <string name="messageReceived">New message</string>
-    <string name="generateCert">Generate Certificate</string>
     <string name="generateCertSuccess">Your certificate has been set and saved as %s!</string>
     <string name="generateCertFailure">Could not generate certificate.</string>
     <string name="generateCertProgress">Generating certificate…</string>
     <string name="search">Search</string>
     <string name="searchHint">Search channels and users</string>
-    <string name="undocumentedWakeLock">Proximity sensor wake lock is not supported on your device. Please change the call mode to speakerphone.</string>
     <string name="bluetooth">Bluetooth</string>
-    <string name="recordingVolume">Recording Volume Boost</string>
     <string name="quickConnect">Quick Connect</string>
     <string name="connect">Connect</string>
     <string name="connectToServer">Connect to Server</string>
     <string name="edit">Edit</string>
     <string name="remove">Remove</string>
     <string name="delete">Delete</string>
-    <string name="retry">Retry</string>
     <string name="messageToUser">Type a message to user \'%s\'</string>
     <string name="messageToChannel">Type message to channel \'%s\'</string>
     <string name="online">Online</string>
@@ -154,13 +129,8 @@
     <string name="mumlaConnected">Mumla connected</string>
     <string name="mumlaConnecting">Mumla connecting…</string>
     <string name="mumlaDisconnected">Mumla disconnected</string>
-    <string name="lostConnection">Lost connection to the server.</string>
-    <string name="resume">Resume</string>
     <string name="channel">Channel</string>
     <string name="user">User</string>
-    <string name="server">Server</string>
-    <string name="chat_notify_moved">%1$s moved in from %2$s by %3$s.</string>
-    <string name="chat_notify_muted_deafened">Muted and deafened.</string>
     <string name="chat_notify_muted">Muted.</string>
     <string name="chat_notify_unmuted">Unmuted.</string>
     <string name="chat_notify_unmuted_undeafened">Unmuted and undeafened.</string>
@@ -171,10 +141,6 @@
     <string name="chat_notify_connected">%s connected.</string>
     <string name="chat_notify_disconnected">%s disconnected.</string>
     <string name="unknown">Unknown</string>
-    <string name="server_list_title_favorite">Favorites</string>
-    <string name="server_list_title_lan">LAN</string>
-    <string name="server_list_title_public_internet">Public Internet</string>
-    <string name="ping">Ping</string>
     <string name="sort">Sort</string>
     <string name="sortBy">Sort by…</string>
     <string name="name">Name</string>
@@ -182,26 +148,13 @@
     <string name="share">Share</string>
     <string name="description">Description</string>
     <string name="shareMessage">Join this Mumble server with Mumla. %s</string>
-    <string name="noServerInfo">Ping to fetch info</string>
     <string name="status_notify_muted_and_deafened">Muted and deafened.</string>
     <string name="status_notify_muted">Muted.</string>
-    <string name="comment">Comment</string>
     <string name="close">Close</string>
-    <string name="retrieving">Retrieving…</string>
     <string name="search_name">Name</string>
     <string name="search_country">Country</string>
-    <string name="preferences_immutable">This setting cannot be changed while connected to a server.</string>
-    <string name="fullscreen">Fullscreen</string>
-    <string name="fullscreen_chat">Chat</string>
-    <string name="fullscreen_channel">Channel</string>
-    <string name="fetchingServers">Please wait, fetching list of public servers…</string>
     <string name="information">Information</string>
-    <string name="register">Register Self</string>
-    <string name="userControl">User Control</string>
-    <string name="registerSelfSuccess">Sent registration request</string>
     <string name="error_fetching_servers">Could not fetch servers.\nAre you connected to the Internet?</string>
-    <string name="coming_soon">Feature coming soon.</string>
-    <string name="tapToReconnect">Tap to reconnect</string>
     <string name="overlay">Overlay</string>
     <string name="hint_reason">Reason</string>
     <string name="hint_ptt">Push-to-talk</string>
@@ -225,7 +178,6 @@
     <string name="first_run_generate_certificate_title">Welcome to Mumla.</string>
     <string name="first_run_generate_certificate">Generating a certificate is highly recommended, and necessary for connection to some servers.</string>
     <string name="generate">Generate</string>
-    <string name="certificate_not_valid">Could not load certificate %s.</string>
     <string name="invalid_password">Wrong password.</string>
     <string name="send_message">Send message</string>
     <string name="channel_menu_view_description">View Description</string>
@@ -235,13 +187,11 @@
     <string name="trust_add_failed">Could not add certificate to trust store.</string>
     <string name="trust_cleared">Trust database cleared</string>
     <string name="cancelled">Canceled</string>
-    <string name="transmit_mode">Transmit Mode</string>
     <string name="current_chat_target">Current chat target</string>
     <string name="channel_join">Join</string>
     <string name="certificate_info">Subject:\n%1$s\n\nValid from:\n%2$s\n\nValid to:\n%3$s\n\nDigest (SHA-1):\n%4$s\n\nDigest (SHA-256):\n%5$s</string>
     <string name="invalid_host">Invalid host</string>
     <string name="invalid_port_range">Invalid port (1-65535)</string>
-    <string name="invalid_username">Invalid username</string>
     <string name="cancel_reconnect">Cancel reconnect</string>
     <string name="attempting_reconnect">Error: %s.\n\nReconnecting…</string>
     <string name="change_requires_reconnect">Reconnect to use new settings.</string>
@@ -276,10 +226,6 @@
     <plurals name="search_channel_users">
         <item quantity="one">%d user</item>
         <item quantity="other">%d users</item>
-    </plurals>
-    <plurals name="reconnecting">
-        <item quantity="one">Reconnecting in %d second.</item>
-        <item quantity="other">Reconnecting in %d seconds.</item>
     </plurals>
     <plurals name="notification_unread_many">
         <item quantity="one">%d new message</item>

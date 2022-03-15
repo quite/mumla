@@ -22,7 +22,6 @@
     <string name="licenses">Licenties</string>
     <string name="authentication">Authenticatie</string>
     <string name="authenticationSum">Beheer en creeer certificaten</string>
-    <string name="audioInput">Audio Invoer</string>
     <string name="audioInputMethodSum">De methode van audio invoer.</string>
     <string name="audioInputMethod">Doorstuur Methode</string>
     <string name="audioInputVolume">Microfoon Volume</string>
@@ -46,7 +45,6 @@
     <string name="audioSum">Audio in- en uitvoer aanpassen</string>
     <string name="audioSampleRate">Invoer Sample Rate</string>
     <string name="audioSampleRateSum">De voorkeur audio sample rate. Niet alle rates worden door alle toestellen ondersteund.</string>
-    <string name="noCert">Geen Certificaat</string>
     <string name="chatNotifications">Chat Notificaties</string>
     <string name="chatNotificationsSum">Toon notificatie wanneer een gebruiker in chat post.</string>
     <string name="defaultUsername">Standaard Gebruikersnaam</string>
@@ -55,10 +53,7 @@
     <string name="certificateGenerate">Genereer Certificaat</string>
     <string name="certificateGenerateSum">Genereert een nieuw self-signed Mumla certificaat. Annbevolen voor beginners.</string>
     <string name="pttSettings">Push to Talk Instellingen</string>
-    <string name="pttSettingsSum">Configureer Push to Talk als dit ingeschakeld is.</string>
     <string name="voiceActivitySettings">Stem Activatie Instellingen</string>
-    <string name="voiceActivitySettingsSum">Configureer Stem Activatie als dit is ingeschakeld.</string>
-    <string name="audioOutput">Audio Uitvoer</string>
     <string name="disableOpus">Schakel Opus Codec uit</string>
     <string name="disableOpusSum">Schakel Opus Codec uit voor Mumble 1.2.4 servers.</string>
     <string name="hidePtt">Verberg Push to Talk Knop</string>

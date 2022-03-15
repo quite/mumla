@@ -16,7 +16,6 @@
     <string name="audioSampleRate">Samplingsrate for inngang</string>
     <string name="chatNotificationsSum">Vis for nye sludremeldinger.</string>
     <string name="defaultUsernameSum">Forvalgt brukernavn å bruke ved tillegg av og tilkobling til tjenere.</string>
-    <string name="pttSettingsSum">Sett opp trykk-for-å-snakke (hvis det er påskrudd).</string>
     <string name="voiceActivitySettings">Innstillinger for taleaktivitet</string>
     <string name="useTor">Koble til via Tor</string>
     <string name="inputQuality">Mikrofon-inngangskvalitet</string>
@@ -51,7 +50,6 @@
     <string name="about">Om</string>
     <string name="aboutSum">Juridisk info og kunngjøringer</string>
     <string name="authenticationSum">Håndter og opprett sertifikater</string>
-    <string name="audioInput">Lydinngang</string>
     <string name="appearance">Utseende</string>
     <string name="defaultUsername">Forvalgt brukernavn</string>
     <string name="certificateGenerate">Generer sertifikat</string>
@@ -70,7 +68,6 @@
     <string name="audio">Lyd</string>
     <string name="hot_corner_bottom_right">Nede til høyre ↘</string>
     <string name="generalSum">Hovedinnstillingene</string>
-    <string name="noCert">Uten sertifikat</string>
     <string name="chatNotifications">Sludremerknader</string>
     <string name="pref_certificate_title">Sertifikat</string>
     <string name="audioInputVolumeSum">Nivå å normalisere til.</string>
@@ -78,7 +75,6 @@
     <string name="pttSettings">Innstillinger for trykk-for-å-snakke</string>
     <string name="pttKeySum">Maskinvaretast å overføre lyd.</string>
     <string name="audioSampleRateSum">Foretrukket takt for måling av lyd. Noen enheter støtter færre takter.</string>
-    <string name="voiceActivitySettingsSum">Sett opp taleaktivitet (hvis det er påslått).</string>
     <string name="preprocessor_enabled_sum">Undertrykker omgivelseslyd og normaliserer lydstyrke.</string>
     <string name="pttSoundSum">Spill lydeffekt når trykk-for-å-snakke trykkes.</string>
     <string name="certificateGenerateSum">Genererer et nytt selv-signert Mumla-sertifikat. Anbefales for nybegynnere.</string>
@@ -94,7 +90,6 @@
     <string name="preprocessor_enabled">Inngangsforhåndsprosessering</string>
     <string name="pttButtonHeightSum">Endre vertikal høyde for knappen som brukes for å snakke.</string>
     <string name="hotCorner">Hjørne for trykk-for-å-snakke.</string>
-    <string name="audioOutput">Høyttaler-lydkvalitet</string>
     <string name="disableOpus">Unngå Opus-kodek</string>
     <string name="disableOpusSum">Skrur av Opus-støtte for Mumble 1.2.4-tjenere.</string>
     <string name="autoReconnectSum">Re-etablerer tilkobling tilkobling til tjeneren når den går tapt.</string>
