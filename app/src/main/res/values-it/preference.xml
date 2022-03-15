@@ -7,14 +7,12 @@
     <string name="acknowledgementsSum">Vedi chi ha contribuito a Mumla (collegamento web)</string>
     <string name="licenses">Licenze</string>
     <string name="authentication">Autenticazione</string>
-    <string name="authenticationSum">Gestisci e crea certificati</string>
     <string name="audioInputVolume">Volume microfono</string>
     <string name="general">Generale</string>
     <string name="theme">Tema</string>
     <string name="advancedAudio">Avanzato</string>
     <string name="forceTcp">Solo TCP</string>
     <string name="audio">Audio</string>
-    <string name="audioSum">Regola input e output audio</string>
     <string name="chatNotifications">Notifiche chat</string>
     <string name="certificateGenerate">Genera certificato</string>
     <string name="disableOpus">Evita codec Opus</string>
@@ -27,7 +25,6 @@
     <string name="inputMethodVoice">Attività vocale</string>
     <string name="hot_corner_top_right">in alto a destra ↗</string>
     <string name="hot_corner_bottom_right">in basso a destra ↘</string>
-    <string name="aboutSum">Note legali e riconoscimenti</string>
     <string name="pttSound">Suono push-to-talk</string>
     <string name="version">Versione</string>
     <string name="pref_export_certificate_title">Esporta certificato</string>
@@ -57,8 +54,6 @@
     <string name="pttKeySum">Usa un pulsante fisico per trasmettere l\'audio.</string>
     <string name="hotCornerSum">Premere un angolo schermo, in tutto Android, per trasmettere l\'audio.</string>
     <string name="appearance">Aspetto</string>
-    <string name="generalSum">Le impostazioni principali</string>
-    <string name="appearanceSum">Modifica la grafica dell\'app</string>
     <string name="themeSum">Cambia l\'aspetto dell\'app.</string>
     <string name="defaultUsername">Nome utente predefinito</string>
     <string name="audioSampleRateSum">Frequenza di campionamento audio preferita. Alcuni dispositivi supportano meno frequenze.</string>

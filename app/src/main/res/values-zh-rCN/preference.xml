@@ -16,12 +16,10 @@
     <string name="hot_corner_bottom_right">右下角 ↘</string>
     <!-- About -->
     <string name="about">关于</string>
-    <string name="aboutSum">法律与致谢信息</string>
     <string name="acknowledgements">贡献者</string>
     <string name="acknowledgementsSum">查看 Mumla 的贡献者（网页链接）</string>
     <string name="licenses">许可证</string>
     <string name="authentication">身份验证</string>
-    <string name="authenticationSum">管理与创建证书</string>
     <string name="audioInputMethodSum">如何激活音频传输。</string>
     <string name="audioInputMethod">传输模式</string>
     <string name="audioInputVolume">麦克风音量</string>
@@ -33,16 +31,13 @@
     <string name="hotCorner">按住发言触发角</string>
     <string name="hotCornerSum">按下屏幕的一个角落，通过 Android 传输音频。</string>
     <string name="general">常规</string>
-    <string name="generalSum">基本设置</string>
     <string name="appearance">外观</string>
-    <string name="appearanceSum">调整应用外观</string>
     <string name="themeSum">更改应用的外观。</string>
     <string name="theme">主题</string>
     <string name="advancedAudio">高级</string>
     <string name="forceTcp">仅使用 TCP</string>
     <string name="forceTcpSum">禁止 UDP 通信。</string>
     <string name="audio">音频</string>
-    <string name="audioSum">调整音频输入输出</string>
     <string name="audioSampleRate">输入采样率</string>
     <string name="audioSampleRateSum">偏好音频采样率。某些设备仅支持部分采样率。</string>
     <string name="chatNotifications">聊天提醒</string>

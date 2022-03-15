@@ -20,31 +20,26 @@
 <preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
     <header
         android:title="@string/general"
-        android:summary="@string/generalSum"
         android:fragment="se.lublin.mumla.preference.Preferences$MumlaPreferenceFragment">
         <extra android:name="settings" android:value="general"></extra>
     </header>
     <header
         android:title="@string/authentication"
-        android:summary="@string/authenticationSum"
         android:fragment="se.lublin.mumla.preference.Preferences$MumlaPreferenceFragment">
         <extra android:name="settings" android:value="authentication"></extra>
     </header>
     <header
         android:title="@string/audio"
-        android:summary="@string/audioSum"
         android:fragment="se.lublin.mumla.preference.Preferences$MumlaPreferenceFragment">
         <extra android:name="settings" android:value="audio"></extra>
     </header>
     <header
         android:title="@string/appearance"
-        android:summary="@string/appearanceSum"
         android:fragment="se.lublin.mumla.preference.Preferences$MumlaPreferenceFragment">
         <extra android:name="settings" android:value="appearance"></extra>
     </header>
     <header
         android:title="@string/about"
-        android:summary="@string/aboutSum"
         android:fragment="se.lublin.mumla.preference.Preferences$MumlaPreferenceFragment">
         <extra android:name="settings" android:value="about"></extra>
     </header>

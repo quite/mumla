@@ -17,12 +17,10 @@
     <string name="theme_solarized_dark">Solarized Koyu</string>
     <string name="about">Hakkında</string>
     <string name="authentication">Kimlik doğrulama</string>
-    <string name="authenticationSum">Sertifikaları yönetin ve oluşturun</string>
     <string name="general">Genel</string>
     <string name="appearance">Görünüm</string>
     <string name="theme">Tema</string>
     <string name="advancedAudio">Gelişmiş</string>
-    <string name="audioSum">Ses girişini ve çıkışını ayarlayın</string>
     <string name="defaultUsernameDefault">Mumla_Kullanicisi</string>
     <string name="certificateGenerateSum">Kendinden imzalı yeni bir Mumla sertifikası oluşturur. Yeni başlayanlar için tavsiye edilir.</string>
     <string name="useTor">Tor aracılığıyla bağlan</string>
@@ -39,8 +37,6 @@
     <string name="audioInputMethod">İletim modu</string>
     <string name="detectionThreshold">Algılama eşiği</string>
     <string name="pttKey">Bas konuş tuşu</string>
-    <string name="generalSum">Ana ayarlar</string>
-    <string name="appearanceSum">Uygulamanın görünümünü ayarlayın</string>
     <string name="forceTcp">Yalnızca TCP</string>
     <string name="forceTcpSum">İletişim için UDP\'yi kapatır.</string>
     <string name="chatNotifications">Sohbet bildirimleri</string>
@@ -77,7 +73,6 @@
     <string name="pref_export_certificate_summary">Harici depolama alanına dışa aktarın.</string>
     <string name="pref_show_user_count">Kanal kullanıcı sayısını göster</string>
     <string name="pref_show_user_count_summary">Kanal alt ağaçlarındaki kullanıcı sayısını gösterir.</string>
-    <string name="aboutSum">Yasal hususlar ve teşekkürler</string>
     <string name="acknowledgementsSum">Mumla\'ya kimin katkıda bulunduğunu görün (web bağlantısı)</string>
     <string name="licenses">Lisanslar</string>
     <string name="audioInputMethodSum">Ses iletimi nasıl etkinleştirilir.</string>

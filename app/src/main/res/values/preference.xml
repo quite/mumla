@@ -37,13 +37,11 @@
 
     <!-- About -->
     <string name="about">About</string>
-    <string name="aboutSum">Legal and acknowledgements</string>
     <string name="acknowledgements">Contributors</string>
     <string name="acknowledgementsSum">See who contributed to Mumla (web link)</string>
     <string name="licenses">Licenses</string>
 
     <string name="authentication">Authentication</string>
-    <string name="authenticationSum">Manage and create certificates</string>
     <string name="audioInputMethodSum">How audio transmission is activated.</string>
     <string name="audioInputMethod">Transmit mode</string>
     <string name="audioInputVolume">Microphone volume</string>
@@ -55,16 +53,13 @@
     <string name="hotCorner">Push-to-talk corner</string>
     <string name="hotCornerSum">Press a screen corner to transmit audio throughout Android.</string>
     <string name="general">General</string>
-    <string name="generalSum">The main settings</string>
     <string name="appearance">Appearance</string>
-    <string name="appearanceSum">Adjust the app\'s visuals</string>
     <string name="themeSum">Change the look of the app.</string>
     <string name="theme">Theme</string>
     <string name="advancedAudio">Advanced</string>
     <string name="forceTcp">Only TCP</string>
     <string name="forceTcpSum">Turns off UDP for communication.</string>
     <string name="audio">Audio</string>
-    <string name="audioSum">Adjust audio input and output</string>
     <string name="audioSampleRate">Input sample rate</string>
     <string name="audioSampleRateSum">Preferred audio sample rate. Some devices support fewer rates.</string>
     <string name="chatNotifications">Chat notifications</string>

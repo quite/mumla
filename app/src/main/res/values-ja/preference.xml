@@ -16,12 +16,10 @@
     <string name="hot_corner_bottom_right">右下</string>
     <!--About-->
     <string name="about">アプリについて</string>
-    <string name="aboutSum">法律と謝辞</string>
     <string name="acknowledgements">謝辞</string>
     <string name="acknowledgementsSum">Mumla の貢献者を参照</string>
     <string name="licenses">ライセンス</string>
     <string name="authentication">認証</string>
-    <string name="authenticationSum">証明書の管理と作成</string>
     <string name="audioInputMethodSum">音声入力の方法。</string>
     <string name="audioInputMethod">送信モード</string>
     <string name="audioInputVolume">マイクボリューム</string>
@@ -33,16 +31,13 @@
     <string name="hotCorner">プッシュツートーク ホットコーナー</string>
     <string name="hotCornerSum">指定された画面のコーナーが押された時に、Android を通してプッシュツートークします。</string>
     <string name="general">全般</string>
-    <string name="generalSum">全般の設定を調整します</string>
     <string name="appearance">外観</string>
-    <string name="appearanceSum">アプリの外観を微調整します</string>
     <string name="themeSum">アプリ全体のテーマ。</string>
     <string name="theme">テーマ</string>
     <string name="advancedAudio">高度な設定</string>
     <string name="forceTcp">TCP を強制</string>
     <string name="forceTcpSum">TCP 通信を強制する (UDPを無効にする) かどうか。</string>
     <string name="audio">音声</string>
-    <string name="audioSum">音声入力および出力を超セします</string>
     <string name="audioSampleRate">入力サンプルレート</string>
     <string name="audioSampleRateSum">お好みのオーディオ サンプルレート。すべてのデバイスですべてのレートがサポートされているわけではありません。</string>
     <string name="chatNotifications">チャット通知</string>

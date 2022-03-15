@@ -20,13 +20,11 @@
 
     <!--About-->
     <string name="about">О программе</string>
-    <string name="aboutSum">Юридическая информация и благодарности</string>
     <string name="acknowledgements">Благодарности</string>
     <string name="acknowledgementsSum">Посмотреть кто способствовали развитию Mumla.</string>
     <string name="licenses">Лицензии</string>
 
     <string name="authentication">Идентификация</string>
-    <string name="authenticationSum">Управление и создание сертификатов</string>
     <string name="audioInputMethodSum">Способ ввода звука.</string>
     <string name="audioInputMethod">Режим передачи</string>
     <string name="audioInputVolume">Громкость микрофона</string>
@@ -38,16 +36,13 @@
     <string name="hotCorner">Расположение кнопки</string>
     <string name="hotCornerSum">Определенный угол экрана который, при нажатии, будет включать передачу в любом приложении Android.</string>
     <string name="general">Основные</string>
-    <string name="generalSum">Отрегулируйте общие настройки</string>
     <string name="appearance">Внешний вид</string>
-    <string name="appearanceSum">Измените внешний вид приложения</string>
     <string name="themeSum">Визуальное оформление</string>
     <string name="theme">Темы</string>
     <string name="advancedAudio">Продвинутые</string>
     <string name="forceTcp">Принудительное TCP</string>
     <string name="forceTcpSum">Заставить работать через TCP (отключить UDP).</string>
     <string name="audio">Звук</string>
-    <string name="audioSum">Отрегулируйте настройки звука</string>
     <string name="audioSampleRate">Качество входного сигнала</string>
     <string name="audioSampleRateSum">Предпочитаемая частота дискретизации. Не все значения поддерживаются на всех устройствах.</string>
     <string name="chatNotifications">Уведомления чата</string>

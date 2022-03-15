@@ -16,12 +16,10 @@
     <string name="hot_corner_bottom_right">Bodem Rechts</string>
     <!--About-->
     <string name="about">Over</string>
-    <string name="aboutSum">Legaal en dankbetuigingen</string>
     <string name="acknowledgements">Dankbetuigingen</string>
     <string name="acknowledgementsSum">Bekijk wie tot Mumla heeft bijgedragen</string>
     <string name="licenses">Licenties</string>
     <string name="authentication">Authenticatie</string>
-    <string name="authenticationSum">Beheer en creeer certificaten</string>
     <string name="audioInputMethodSum">De methode van audio invoer.</string>
     <string name="audioInputMethod">Doorstuur Methode</string>
     <string name="audioInputVolume">Microfoon Volume</string>
@@ -33,16 +31,13 @@
     <string name="hotCorner">Push to Talk Scherm Hoek</string>
     <string name="hotCornerSum">Een specifieke hoek van het scherm dat, wanneer ingedrukt, Push to Talk activeert.</string>
     <string name="general">Algemeen</string>
-    <string name="generalSum">Algemene instellingen aanpassen</string>
     <string name="appearance">Uiterlijk</string>
-    <string name="appearanceSum">Verander applicatie uiterlijk</string>
     <string name="themeSum">Het applicatie thema.</string>
     <string name="theme">Thema</string>
     <string name="advancedAudio">Geavanceerd</string>
     <string name="forceTcp">Forceer TCP</string>
     <string name="forceTcpSum">TCP communicatie forceren (UPD uitschakelen).</string>
     <string name="audio">Audio</string>
-    <string name="audioSum">Audio in- en uitvoer aanpassen</string>
     <string name="audioSampleRate">Invoer Sample Rate</string>
     <string name="audioSampleRateSum">De voorkeur audio sample rate. Niet alle rates worden door alle toestellen ondersteund.</string>
     <string name="chatNotifications">Chat Notificaties</string>

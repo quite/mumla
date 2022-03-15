@@ -16,12 +16,10 @@
     <string name="hot_corner_bottom_right">Prawy dolny ↘</string>
     <!-- About -->
     <string name="about">O programie</string>
-    <string name="aboutSum">Informacje prawne i podziękowania</string>
     <string name="acknowledgements">Współtwórcy</string>
     <string name="acknowledgementsSum">Zobacz, kto przyczynił się do powstania Mumla (łącze internetowe)</string>
     <string name="licenses">Licencje</string>
     <string name="authentication">Uwierzytelnianie</string>
-    <string name="authenticationSum">Zarządzaj certyfikatami i je twórz</string>
     <string name="audioInputMethodSum">Sposób aktywacji przekazywania audio.</string>
     <string name="audioInputMethod">Tryb przekazywania</string>
     <string name="audioInputVolume">Głośność mikrofonu</string>
@@ -33,16 +31,13 @@
     <string name="hotCorner">Narożnik funkcji „Naciśnij i mów”</string>
     <string name="hotCornerSum">Naciśnij narożnik ekranu, aby przekazywać audio w całym systemie Android.</string>
     <string name="general">Ogólne</string>
-    <string name="generalSum">Ustawienia główne</string>
     <string name="appearance">Wygląd</string>
-    <string name="appearanceSum">Dostosuj efekty wizualne aplikacji</string>
     <string name="themeSum">Zmień wygląd aplikacji.</string>
     <string name="theme">Motyw</string>
     <string name="advancedAudio">Zaawansowane</string>
     <string name="forceTcp">Tylko TCP</string>
     <string name="forceTcpSum">Wyłącza UDP do komunikacji.</string>
     <string name="audio">Audio</string>
-    <string name="audioSum">Dostosuj wejście i wyjście audio</string>
     <string name="audioSampleRate">Częstotliwość próbkowania wejścia</string>
     <string name="audioSampleRateSum">Preferowana częstotliwość próbkowania audio. Niektóre urządzenia obsługują mniej częstotliwości.</string>
     <string name="chatNotifications">Powiadomienia na czacie</string>

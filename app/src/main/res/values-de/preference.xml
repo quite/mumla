@@ -16,12 +16,10 @@
     <string name="hot_corner_bottom_right">Unten rechts ↘</string>
     <!--About-->
     <string name="about">Über</string>
-    <string name="aboutSum">Rechtliche Hinweise und Danksagungen</string>
     <string name="acknowledgements">Mitwirkende</string>
     <string name="acknowledgementsSum">Sehen Sie, wer zu Mumla beigetragen hat (Weblink)</string>
     <string name="licenses">Lizenzen</string>
     <string name="authentication">Authentifizierung</string>
-    <string name="authenticationSum">Zertifikate verwalten und erstellen</string>
     <string name="audioInputMethodSum">Wie die Audioübertragung aktiviert wird.</string>
     <string name="audioInputMethod">Sendemodus</string>
     <string name="audioInputVolume">Mikrofonlautstärke</string>
@@ -33,16 +31,13 @@
     <string name="hotCorner">Bildschirmecke als Zum Sprechen drücken-Taste</string>
     <string name="hotCornerSum">Eine Bildschirmecke festlegen, welche App-Übergreifend als Zum Sprechen drücken-Taste verwendet werden kann.</string>
     <string name="general">Allgemein</string>
-    <string name="generalSum">Die Haupteinstellungen</string>
     <string name="appearance">Aussehen</string>
-    <string name="appearanceSum">Das Aussehen der App anpassen</string>
     <string name="themeSum">Ändern Sie das Aussehen der App.</string>
     <string name="theme">Erscheinungsbild</string>
     <string name="advancedAudio">Erweiterte Audioeinstellungen</string>
     <string name="forceTcp">Nur TCP</string>
     <string name="forceTcpSum">Deaktiviert UDP für die Kommunikation.</string>
     <string name="audio">Audio</string>
-    <string name="audioSum">Audioeingabe und Audioausgabe anpassen</string>
     <string name="audioSampleRate">Samplerate der Eingabe</string>
     <string name="audioSampleRateSum">Die bevorzugte Audio Samplerate. Nicht alle Raten werden von allen Geräten unterstützt.</string>
     <string name="chatNotifications">Chat-Benachrichtigungen</string>

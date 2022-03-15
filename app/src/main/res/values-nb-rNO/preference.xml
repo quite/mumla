@@ -8,10 +8,8 @@
     <string name="audioInputVolume">Mikrofonlydstyrke</string>
     <string name="audioInputMethodSum">Lydinngangsmetode.</string>
     <string name="audioInputMethod">Overføringsmodus</string>
-    <string name="appearanceSum">Tilpass programmets utseende</string>
     <string name="themeSum">Utseende for programmet.</string>
     <string name="forceTcp">Kun TCP</string>
-    <string name="audioSum">Juster lydinngang og -utgang</string>
     <string name="forceTcpSum">Skrur av UDP for kommunikasjon.</string>
     <string name="audioSampleRate">Samplingsrate for inngang</string>
     <string name="chatNotificationsSum">Vis for nye sludremeldinger.</string>
@@ -48,8 +46,6 @@
     <string name="theme_solarized_dark">Solarisert mørk</string>
     <string name="hot_corner_bottom_left">↙ nederst til venstre</string>
     <string name="about">Om</string>
-    <string name="aboutSum">Juridisk info og kunngjøringer</string>
-    <string name="authenticationSum">Håndter og opprett sertifikater</string>
     <string name="appearance">Utseende</string>
     <string name="defaultUsername">Forvalgt brukernavn</string>
     <string name="certificateGenerate">Generer sertifikat</string>
@@ -67,7 +63,6 @@
     <string name="advancedAudio">Avansert</string>
     <string name="audio">Lyd</string>
     <string name="hot_corner_bottom_right">Nede til høyre ↘</string>
-    <string name="generalSum">Hovedinnstillingene</string>
     <string name="chatNotifications">Sludremerknader</string>
     <string name="pref_certificate_title">Sertifikat</string>
     <string name="audioInputVolumeSum">Nivå å normalisere til.</string>

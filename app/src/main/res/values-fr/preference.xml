@@ -16,12 +16,10 @@
     <string name="hot_corner_bottom_right">En bas à droite ↘</string>
     <!--About-->
     <string name="about">À propos</string>
-    <string name="aboutSum">Mentions légales et remerciements</string>
     <string name="acknowledgements">Contributeurs</string>
     <string name="acknowledgementsSum">Voir qui a contribué à Mumla (lien web)</string>
     <string name="licenses">Licences</string>
     <string name="authentication">Authentification</string>
-    <string name="authenticationSum">Gérer et créer des certificats</string>
     <string name="audioInputMethodSum">Comment la transmission audio est activée.</string>
     <string name="audioInputMethod">Mode de transmission</string>
     <string name="audioInputVolume">Volume du microphone</string>
@@ -33,16 +31,13 @@
     <string name="hotCorner">Coin Appuyer pour parler</string>
     <string name="hotCornerSum">Appuyez sur un coin de l\'écran pour transmettre le son dans tout Android.</string>
     <string name="general">Général</string>
-    <string name="generalSum">Les principaux paramètres</string>
     <string name="appearance">Apparence</string>
-    <string name="appearanceSum">Ajuster les visuels de l\'application</string>
     <string name="themeSum">Changer l\'apparence de l\'application.</string>
     <string name="theme">Thème</string>
     <string name="advancedAudio">Avancé</string>
     <string name="forceTcp">Uniquement TCP</string>
     <string name="forceTcpSum">Désactive le protocole UDP pour la communication.</string>
     <string name="audio">Audio</string>
-    <string name="audioSum">Ajuster les entrées et sorties audio</string>
     <string name="audioSampleRate">Taux d\'échantillonnage en entrée</string>
     <string name="audioSampleRateSum">Fréquence d\'échantillonnage audio préférée. Certains appareils prennent en charge moins de fréquences.</string>
     <string name="chatNotifications">Notifications du chat</string>

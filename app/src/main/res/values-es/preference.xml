@@ -16,12 +16,10 @@
     <string name="hot_corner_bottom_right">Inferior derecha</string>
     <!--About-->
     <string name="about">Acerca de</string>
-    <string name="aboutSum">Legal y agradecimientos</string>
     <string name="acknowledgements">Agradecimientos</string>
     <string name="acknowledgementsSum">Mira quién ha contribuido a Mumla</string>
     <string name="licenses">Licencias</string>
     <string name="authentication">Autenticación</string>
-    <string name="authenticationSum">Gestiona y crea certificados</string>
     <string name="audioInputMethodSum">El método de entrada de audio</string>
     <string name="audioInputMethod">Modo de transmisión</string>
     <string name="audioInputVolume">Volumen del micrófono</string>
@@ -33,16 +31,13 @@
     <string name="hotCorner">Esquina de Presionar-para-hablar</string>
     <string name="hotCornerSum">Una esquina de la pantalla asignada a Presionar-para-hablar que puede ser presionada en cualquier momento.</string>
     <string name="general">General</string>
-    <string name="generalSum">Ajuste las opciones generales</string>
     <string name="appearance">Apariencia</string>
-    <string name="appearanceSum">Modifique la apariencia de la aplicación</string>
     <string name="themeSum">El tema visual de la aplicación</string>
     <string name="theme">Tema</string>
     <string name="advancedAudio">Avanzado</string>
     <string name="forceTcp">Forzar TCP</string>
     <string name="forceTcpSum">Al activarse se forzará el uso de la comunicación vía TCP (UDP desactivado)</string>
     <string name="audio">Audio</string>
-    <string name="audioSum">Ajuste la entrada y salida del audio</string>
     <string name="audioSampleRate">Frecuencia de muestreo de la entrada</string>
     <string name="audioSampleRateSum">La frecuencia de muestreo del audio preferida. No todas las frecuencias son funcionales en todos los dispositivos.</string>
     <string name="chatNotifications">Notificaciones del chat</string>
