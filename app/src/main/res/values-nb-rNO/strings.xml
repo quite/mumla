@@ -200,4 +200,5 @@
     <string name="drawer_not_connected">Ikke tilkoblet</string>
     <string name="drawer_close">Lukk skuff</string>
     <string name="drawer_open">Åpne skuff</string>
+    <string name="image_confirm_send">Send dette bildet\?</string>
 </resources>
