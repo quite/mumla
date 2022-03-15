@@ -24,7 +24,6 @@
     <string name="user_menu_change_comment">Kommentar ändern</string>
     <string name="user_menu_view_comment">Kommentar anzeigen</string>
     <string name="user_menu_reset_comment">Kommentar zurücksetzen</string>
-    <string name="user_menu_information">Informationen</string>
     <string name="user_menu_register">Registrieren</string>
     <!--Channel menu-->
     <string name="channel_menu_pin">Pin</string>
@@ -69,8 +68,6 @@
     <string name="disconnectSure">Sind Sie sicher, dass Sie die Verbindung mit %s trennen möchten?</string>
     <string name="save">Speichern</string>
     <string name="add">Hinzufügen</string>
-    <string name="preferences">Einstellungen</string>
-    <string name="togglelocalmute">lokale Stummschaltung wechseln</string>
     <string name="chat">Chat</string>
     <string name="perm_denied">Zugriff verweigert.</string>
     <string name="connectionRefused">Verbindung abgelehnt</string>

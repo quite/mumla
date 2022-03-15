@@ -24,7 +24,6 @@
     <string name="user_menu_change_comment">コメントを変更</string>
     <string name="user_menu_view_comment">コメントを表示</string>
     <string name="user_menu_reset_comment">コメントをリセット</string>
-    <string name="user_menu_information">情報</string>
     <string name="user_menu_register">登録</string>
     <!--Channel menu-->
     <string name="channel_menu_pin">Pin</string>
@@ -69,7 +68,6 @@
     <string name="disconnectSure">%s から切断してもよろしいですか?</string>
     <string name="save">保存</string>
     <string name="add">追加</string>
-    <string name="preferences">プリファレンス</string>
     <string name="chat">チャット</string>
     <string name="perm_denied">権限が拒否されました。</string>
     <string name="connectionRefused">接続が拒否されました</string>

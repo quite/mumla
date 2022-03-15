@@ -140,8 +140,6 @@
     <string name="confirm_delete_server">Bu sunucuyu silmek istediğinizden emin misiniz\?</string>
     <string name="connectionRefused">Bağlantı reddedildi</string>
     <string name="chat">Sohbet</string>
-    <string name="togglelocalmute">Yerel Ses Kapatmayı Değiştir</string>
-    <string name="preferences">Tercihler</string>
     <string name="add">Ekle</string>
     <string name="save">Kaydet</string>
     <string name="disconnectSure">%s ile bağlantıyı kesmek istediğinizden emin misiniz\?</string>
@@ -188,7 +186,6 @@
     <string name="comment_view">Görüntüle</string>
     <string name="channel_menu_pin">Sabitle</string>
     <string name="user_menu_register">Kaydol</string>
-    <string name="user_menu_information">Bilgi</string>
     <string name="user_menu_reset_comment">Yorumu Sıfırla</string>
     <string name="user_menu_view_comment">Yorumu Görüntüle</string>
     <string name="user_menu_change_comment">Yorumu Değiştir</string>

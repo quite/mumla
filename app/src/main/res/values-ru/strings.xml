@@ -25,7 +25,6 @@
     <string name="user_menu_change_comment">Изменить комментарий</string>
     <string name="user_menu_view_comment">Изменить комментарий</string>
     <string name="user_menu_reset_comment">Очистить комментарий</string>
-    <string name="user_menu_information">Информация</string>
     <string name="user_menu_register">Регистрация</string>
     <!-- Channel menu -->
     <string name="channel_menu_pin">Закрепить</string>
@@ -70,8 +69,6 @@
     <string name="disconnectSure">Вы действительно хотите отключиться от %s?</string>
     <string name="save">Сохранить</string>
     <string name="add">Добавить</string>
-    <string name="preferences">Параметры</string>
-    <string name="togglelocalmute">Переключть локальный мут</string>
     <string name="chat">Чат</string>
     <string name="perm_denied">Доступ запрещён.</string>
     <string name="connectionRefused">Подключение отклонено</string>

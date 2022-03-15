@@ -132,8 +132,6 @@
     <string name="connectionRefused">การเชื่อมต่อถูกปฏิเสธ</string>
     <string name="perm_denied">ไม่มีสิทธิ์</string>
     <string name="chat">แชท</string>
-    <string name="togglelocalmute">สลับค้างเงียบเฉพาะฉัน</string>
-    <string name="preferences">แก้ไข</string>
     <string name="add">เพิ่ม</string>
     <string name="save">บันทึก</string>
     <string name="disconnectSure">คุณต้องการออกจาก %s\?</string>
@@ -178,7 +176,6 @@
     <string name="comment_view">ดู</string>
     <string name="channel_menu_pin">ปัก</string>
     <string name="user_menu_register">ลงทะเบียน</string>
-    <string name="user_menu_information">ข้อมูล</string>
     <string name="user_menu_reset_comment">ลบคอมเมนท์</string>
     <string name="user_menu_view_comment">ดูคอมเมนท์</string>
     <string name="user_menu_change_comment">แก้ไขคอมเมนท์</string>

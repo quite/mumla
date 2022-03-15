@@ -34,7 +34,6 @@
     <string name="connectionRefused">Connexió refusada</string>
     <string name="perm_denied">Permís denegat.</string>
     <string name="chat">Xat</string>
-    <string name="preferences">Preferències</string>
     <string name="add">Afegir</string>
     <string name="save">Guardar</string>
     <string name="disconnect">Desconnectar</string>
@@ -58,7 +57,6 @@
     <string name="tcp_encryption_mode">Xifrat amb 256 bit AES-256-SHA</string>
     <string name="comment_view">Mostrar</string>
     <string name="channel_menu_pin">Fixar</string>
-    <string name="user_menu_information">Informació</string>
     <string name="user_menu_reset_comment">Restablir comentari</string>
     <string name="user_menu_view_comment">Mostrar comentari</string>
     <string name="user_menu_change_comment">Canviar comentari</string>
@@ -115,7 +113,6 @@
     <string name="externalStorageUnavailable">Emmagatzemament extern no disponible, no es pot carregar el certificat</string>
     <string name="confirm_delete_channel">Segur que voleu esborrar aquest canal\?</string>
     <string name="confirm_delete_server">Segur que voleu esborrar aquest servidor\?</string>
-    <string name="togglelocalmute">Canviar a silenciar localment</string>
     <string name="disconnectSure">Segur que desitja desconnectar-se de %s\?</string>
     <string name="error_fetching_servers">Error a l\'accedir al servidor.
 \nEsteu connectat a Internet\?</string>

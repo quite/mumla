@@ -6,7 +6,6 @@
     <string name="comment_view">اعرض</string>
     <string name="channel_menu_pin">ثبّت</string>
     <string name="user_menu_register">سجِّل</string>
-    <string name="user_menu_information">معلومات</string>
     <string name="user_menu_reset_comment">أعد تعيين التعليق</string>
     <string name="user_menu_view_comment">اعرض التعليق</string>
     <string name="user_menu_change_comment">غيّر التعليق</string>
@@ -30,7 +29,6 @@
     <string name="connectionRefused">رُفض الاتصال</string>
     <string name="perm_denied">رُفض الإذن.</string>
     <string name="chat">محادثة</string>
-    <string name="preferences">التفضيلات</string>
     <string name="add">أضف</string>
     <string name="save">احفظ</string>
     <string name="disconnectSure">أمتأكد من قطع الاتصال عن %s؟</string>
@@ -74,7 +72,6 @@
     <string name="udp_encryption_mode">مشفر بـ OCB-AES-128 128 بت</string>
     <string name="audio_bandwidth">سعة نطاق الصوت</string>
     <string name="deafen">أصم</string>
-    <string name="togglelocalmute">بدّل حالة الكتم المحلي</string>
     <string name="accessAdd">أضف رمز وصول</string>
     <string name="messageReceived">رسالة جديدة</string>
     <string name="generateCertSuccess">عُينة الشهادة وحُفظت كـ %s!</string>

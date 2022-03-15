@@ -33,8 +33,6 @@
     <string name="connectionRefused">Conexão recusada</string>
     <string name="perm_denied">Permissão negada.</string>
     <string name="chat">Chat</string>
-    <string name="togglelocalmute">Ligar/desligar silenciar localmente</string>
-    <string name="preferences">Opções</string>
     <string name="add">Adicionar</string>
     <string name="save">Salvar</string>
     <string name="disconnectSure">Tem certeza que deseja desconectar-se de %s\?</string>
@@ -78,7 +76,6 @@
     <string name="comment_view">Mostrar</string>
     <string name="channel_menu_pin">Fixar</string>
     <string name="user_menu_register">Registrar</string>
-    <string name="user_menu_information">Informação</string>
     <string name="user_menu_reset_comment">Apagar comentário</string>
     <string name="user_menu_view_comment">Ver comentário</string>
     <string name="user_menu_change_comment">Mudar comentário</string>

@@ -24,7 +24,6 @@
     <string name="user_menu_change_comment">Cambiar comentario</string>
     <string name="user_menu_view_comment">Ver comentario</string>
     <string name="user_menu_reset_comment">Reiniciar comentario</string>
-    <string name="user_menu_information">Información</string>
     <string name="user_menu_register">Registrar</string>
     <!--Channel menu-->
     <string name="channel_menu_pin">Fijar</string>
@@ -69,8 +68,6 @@
     <string name="disconnectSure">¿Está seguro de que desea desconectarse del servidor %s?</string>
     <string name="save">Guardar</string>
     <string name="add">Añadir</string>
-    <string name="preferences">Preferencias</string>
-    <string name="togglelocalmute">Alternar enmudecimiento local</string>
     <string name="chat">Chat</string>
     <string name="perm_denied">Permiso denegado.</string>
     <string name="connectionRefused">Conexión rechazada</string>

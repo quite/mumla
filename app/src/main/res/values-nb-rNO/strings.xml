@@ -21,9 +21,7 @@
     <string name="confirm_delete_server">Er du sikker på at du vil slette denne tjeneren\?</string>
     <string name="perm_denied">Tilgang nektet.</string>
     <string name="connectionRefused">Tilkobling nektet</string>
-    <string name="togglelocalmute">Veksle lokal forstumming</string>
     <string name="chat">Sludring</string>
-    <string name="preferences">Innstillinger</string>
     <string name="add">Legg til</string>
     <string name="save">Lagre</string>
     <string name="disconnectSure">Er du sikker på at du ønsker å koble fra %s\?</string>
@@ -180,7 +178,6 @@
     <string name="comment_view">Vis</string>
     <string name="channel_menu_pin">Fest</string>
     <string name="user_menu_register">Registrer</string>
-    <string name="user_menu_information">Info</string>
     <string name="user_menu_reset_comment">Tilbakestill kommentar</string>
     <string name="user_menu_view_comment">Vis kommentar</string>
     <string name="user_menu_change_comment">Endre kommentar</string>

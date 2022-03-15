@@ -25,7 +25,6 @@
     <string name="user_menu_change_comment">更改简介</string>
     <string name="user_menu_view_comment">查看简介</string>
     <string name="user_menu_reset_comment">重置简介</string>
-    <string name="user_menu_information">信息</string>
     <string name="user_menu_register">注册</string>
     <!-- Channel menu -->
     <string name="channel_menu_pin">钉选</string>
@@ -75,8 +74,6 @@
     <string name="disconnectSure">您确定要从 %s 断开连接吗？</string>
     <string name="save">保存</string>
     <string name="add">添加</string>
-    <string name="preferences">偏好设置</string>
-    <string name="togglelocalmute">切换本地静音</string>
     <string name="chat">聊天</string>
     <string name="perm_denied">权限被拒绝。</string>
     <string name="connectionRefused">连接被拒绝</string>

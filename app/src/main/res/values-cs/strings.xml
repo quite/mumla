@@ -138,8 +138,6 @@
     <string name="connectionRefused">Přístup odepřen</string>
     <string name="perm_denied">Přístup zamítnut.</string>
     <string name="chat">Chat</string>
-    <string name="togglelocalmute">Zapnout/vypnout místní ztlumení</string>
-    <string name="preferences">Předvolby</string>
     <string name="add">Přidat</string>
     <string name="save">Uložit</string>
     <string name="disconnectSure">Jste si jisti, že se chcete odpojit od %s\?</string>
@@ -183,7 +181,6 @@
     <string name="comment_view">Zobrazit</string>
     <string name="channel_menu_pin">Připnout</string>
     <string name="user_menu_register">Zaregistrovat</string>
-    <string name="user_menu_information">Informace</string>
     <string name="user_menu_view_comment">Zobrazit komentář</string>
     <string name="user_menu_change_comment">Změnit komentář</string>
     <string name="drawer_favorites">Oblíbené</string>

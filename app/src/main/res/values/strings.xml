@@ -45,7 +45,6 @@
     <string name="user_menu_change_comment">Change Comment</string>
     <string name="user_menu_view_comment">View Comment</string>
     <string name="user_menu_reset_comment">Reset Comment</string>
-    <string name="user_menu_information">Information</string>
     <string name="user_menu_register">Register</string>
 
     <!-- Channel menu -->
@@ -95,8 +94,6 @@
     <string name="disconnectSure">Are you sure you want to disconnect from %s?</string>
     <string name="save">Save</string>
     <string name="add">Add</string>
-    <string name="preferences">Preferences</string>
-    <string name="togglelocalmute">Toggle Local Mute</string>
     <string name="chat">Chat</string>
     <string name="perm_denied">Permission denied.</string>
     <string name="connectionRefused">Connection refused</string>

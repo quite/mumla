@@ -25,7 +25,6 @@
     <string name="user_menu_change_comment">Zmień komentarz</string>
     <string name="user_menu_view_comment">Wyświetl komentarz</string>
     <string name="user_menu_reset_comment">Resetuj komentarz</string>
-    <string name="user_menu_information">Informacje</string>
     <string name="user_menu_register">Zarejestruj się</string>
     <!-- Channel menu -->
     <string name="channel_menu_pin">Przypnij</string>
@@ -70,8 +69,6 @@
     <string name="disconnectSure">Czy na pewno chcesz rozłączyć się z %s?</string>
     <string name="save">Zapisz</string>
     <string name="add">Dodaj</string>
-    <string name="preferences">Preferencje</string>
-    <string name="togglelocalmute">Przełącz wyciszenie lokalne</string>
     <string name="chat">Czat</string>
     <string name="perm_denied">Odmowa dostępu.</string>
     <string name="connectionRefused">Połączenie odrzucone</string>

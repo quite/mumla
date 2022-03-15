@@ -24,7 +24,6 @@
     <string name="user_menu_change_comment">Verander Commentaar</string>
     <string name="user_menu_view_comment">Bekijk Commentaar</string>
     <string name="user_menu_reset_comment">Reset Commentaar</string>
-    <string name="user_menu_information">Informatie</string>
     <string name="user_menu_register">Registreer</string>
     <!--Channel menu-->
     <string name="channel_menu_pin">Prik op</string>
@@ -69,8 +68,6 @@
     <string name="disconnectSure">Bent u zeker dat u de verbinding met %s wilt verbreken?</string>
     <string name="save">Opslaan</string>
     <string name="add">Toevoegen</string>
-    <string name="preferences">Voorkeuren</string>
-    <string name="togglelocalmute">Lokaal Dempen Aan/Uit</string>
     <string name="chat">Chat</string>
     <string name="perm_denied">Geen toelating.</string>
     <string name="connectionRefused">Verbinding Geweigerd</string>

@@ -136,8 +136,6 @@
     <string name="connectionRefused">Yhteys evätty</string>
     <string name="perm_denied">Käyttöoikeus evätty.</string>
     <string name="chat">Chatti</string>
-    <string name="togglelocalmute">Aseta paikallinen mykistys</string>
-    <string name="preferences">Asetukset</string>
     <string name="add">Lisää</string>
     <string name="save">Tallenna</string>
     <string name="disconnectSure">Oletko varma, että haluat katkaista yhteyden palvelimelta %s\?</string>
@@ -180,7 +178,6 @@
     <string name="comment_view">Näytä</string>
     <string name="channel_menu_pin">Kiinnitä</string>
     <string name="user_menu_register">Rekisteröidy</string>
-    <string name="user_menu_information">Tiedot</string>
     <string name="user_menu_reset_comment">Nollaa kommentti</string>
     <string name="user_menu_view_comment">Näytä kommentti</string>
     <string name="user_menu_change_comment">Muuta kommenttia</string>

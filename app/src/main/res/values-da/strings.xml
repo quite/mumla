@@ -5,7 +5,6 @@
     <string name="chat_message_to">%1$s → %2$s</string>
     <string name="chat_message_tts_short_link">(Link til %1$s)</string>
     <string name="user_menu_ignore_messages">Ignorér beskeder</string>
-    <string name="user_menu_information">Information</string>
     <string name="comment_edit_source">Redigér kilde</string>
     <string name="comment_view_source">Se kilde</string>
     <string name="control_channel">Kontrollér kanal</string>
@@ -82,7 +81,6 @@
     <string name="user_menu_view_comment">Se kommentar</string>
     <string name="server_info_max_bandwidth">Maksimum %.1f kbit/s</string>
     <string name="server_info_current_bandwidth">Nuværende %.1f kbit/s</string>
-    <string name="preferences">Præferencer</string>
     <string name="server_match">Find server</string>
     <string name="server_match_found">Server fundet</string>
     <string name="server_match_expand_country">Kunne ikke finde nogle optimale servere i dit land. Søg verden over\?</string>

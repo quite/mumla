@@ -126,7 +126,6 @@
     <string name="externalStorageUnavailable">Armazenamento externo indisponível, não é possível carregar o certificado</string>
     <string name="connectionRefused">Conexão recusada</string>
     <string name="perm_denied">Permissão negada.</string>
-    <string name="preferences">Preferências</string>
     <string name="add">Adicionar</string>
     <string name="save">Salvar</string>
     <string name="disconnect">Desconectar</string>
@@ -152,7 +151,6 @@
     <string name="comment_view_source">Visualizar fonte</string>
     <string name="comment_view">Visualizar</string>
     <string name="channel_menu_pin">Fixar</string>
-    <string name="user_menu_information">Informação</string>
     <string name="user_menu_view_comment">Visualizar Comentário</string>
     <string name="user_menu_change_comment">Alterar Comentário</string>
     <string name="user_menu_ignore_messages">Ignorar Mensagens</string>
