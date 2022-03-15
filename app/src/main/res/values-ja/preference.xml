@@ -8,9 +8,6 @@
     <string name="theme_dark">ダーク</string>
     <string name="theme_solarized_light">ソラライズ ライト</string>
     <string name="theme_solarized_dark">ソラライズ ダーク</string>
-    <!--Call modes-->
-    <string name="call_mode_speakerphone">スピーカーフォン</string>
-    <string name="call_mode_voice_call">音声通話</string>
     <!--Hot corner-->
     <string name="hot_corner_none">なし</string>
     <string name="hot_corner_top_left">左上</string>
@@ -30,8 +27,6 @@
     <string name="audioInputMethod">送信モード</string>
     <string name="audioInputVolume">マイクボリューム</string>
     <string name="audioInputVolumeSum">音声を標準化するために使用する、マイクボリュームの乗数。</string>
-    <string name="callMode">通話モード</string>
-    <string name="callModeSum">Mumla の通話モード、音声通話またはスピーカーフォンのどちらかの機能。</string>
     <string name="detectionThreshold">検出閾値</string>
     <string name="detectionThresholdSum">音声の検出に必要な最小振幅 (音声機能にのみ適用可能)。</string>
     <string name="pttKey">プッシュツートーク キー</string>

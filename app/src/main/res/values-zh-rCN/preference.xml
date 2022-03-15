@@ -8,9 +8,6 @@
     <string name="theme_dark">黑暗</string>
     <string name="theme_solarized_light">Solarized 明亮</string>
     <string name="theme_solarized_dark">Solarized 黑暗</string>
-    <!-- Call modes -->
-    <string name="call_mode_speakerphone">免提</string>
-    <string name="call_mode_voice_call">语音电话</string>
     <!-- Hot corner -->
     <string name="hot_corner_none">关闭</string>
     <string name="hot_corner_top_left">↖ 左上角</string>
@@ -30,8 +27,6 @@
     <string name="audioInputMethod">传输模式</string>
     <string name="audioInputVolume">麦克风音量</string>
     <string name="audioInputVolumeSum">手工调整音频音量。</string>
-    <string name="callMode">电话模式</string>
-    <string name="callModeSum">常规听筒或免提模式。</string>
     <string name="detectionThreshold">检测阈值</string>
     <string name="detectionThresholdSum">检测为语音所需的最低音量（仅语音激活模式下有效）。</string>
     <string name="pttKey">按住发言键</string>

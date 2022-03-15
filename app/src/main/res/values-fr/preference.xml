@@ -8,9 +8,6 @@
     <string name="theme_dark">Sombre</string>
     <string name="theme_solarized_light">Solaire</string>
     <string name="theme_solarized_dark">Lunaire</string>
-    <!--Call modes-->
-    <string name="call_mode_speakerphone">Haut-parleur</string>
-    <string name="call_mode_voice_call">Appel vocal</string>
     <!--Hot corner-->
     <string name="hot_corner_none">Désactivé</string>
     <string name="hot_corner_top_left">↖ en haut à gauche</string>
@@ -30,8 +27,6 @@
     <string name="audioInputMethod">Mode de transmission</string>
     <string name="audioInputVolume">Volume du microphone</string>
     <string name="audioInputVolumeSum">Volume du microphone pour normalisation audio artificielle.</string>
-    <string name="callMode">Mode d\'appel</string>
-    <string name="callModeSum">Appel téléphonique normal ou haut-parleur.</string>
     <string name="detectionThreshold">Seuil de détection</string>
     <string name="detectionThresholdSum">Niveau de volume minimum pour la détection de la voix (lorsque le mode de transmission est « Activité vocale »).</string>
     <string name="pttKey">Touche pour « appuyer pour parler »</string>

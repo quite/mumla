@@ -8,9 +8,6 @@
     <string name="theme_dark">Oscuro</string>
     <string name="theme_solarized_light">Claro solarizado</string>
     <string name="theme_solarized_dark">Oscuro solarizado</string>
-    <!--Call modes-->
-    <string name="call_mode_speakerphone">Altavoz</string>
-    <string name="call_mode_voice_call">Llamada de voz</string>
     <!--Hot corner-->
     <string name="hot_corner_none">Ninguno</string>
     <string name="hot_corner_top_left">Superior izquierda</string>
@@ -30,8 +27,6 @@
     <string name="audioInputMethod">Modo de transmisión</string>
     <string name="audioInputVolume">Volumen del micrófono</string>
     <string name="audioInputVolumeSum">Multiplicador del volumen del micrófono utilizado para normalizar el audio artificialmente.</string>
-    <string name="callMode">Modo de llamada</string>
-    <string name="callModeSum">El modo de llamada del Mumla, se comportará como una llamada de voz o  un altavoz.</string>
     <string name="detectionThreshold">Umbral de detección</string>
     <string name="detectionThresholdSum">La amplitud mínima requerida para que la voz sea detectada( solo aplicable para el modo de transmisión por actividad de voz )</string>
     <string name="pttKey">Tecla de Presionar-para-hablar</string>

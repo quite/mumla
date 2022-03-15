@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--Theme names-->
-    <!--Call modes-->
     <!--Hot corner-->
     <!--About-->
     <string name="about">Info su</string>
@@ -29,7 +28,6 @@
     <string name="loadImages">Immagini esterne</string>
     <string name="clearServerCertificates">Pulisci certificati server</string>
     <string name="inputMethodVoice">Attività vocale</string>
-    <string name="call_mode_voice_call">Chiamata vocale</string>
     <string name="hot_corner_top_right">in alto a destra ↗</string>
     <string name="hot_corner_bottom_right">in basso a destra ↘</string>
     <string name="aboutSum">Note legali e riconoscimenti</string>
@@ -45,21 +43,18 @@
     <string name="acknowledgements">Contributori</string>
     <string name="theme_dark">Scuro</string>
     <string name="pttKey">Tasto push-to-talk</string>
-    <string name="call_mode_speakerphone">Vivavoce</string>
     <string name="inputMethodPtt">Push-to-talk</string>
     <string name="theme_solarized_light">Solare</string>
     <string name="theme_solarized_dark">Lunare</string>
     <string name="hot_corner_top_left">↖ in alto a sinistra</string>
     <string name="audioInputMethodSum">Il modo in cui si attiva la trasmissione dell\'audio.</string>
     <string name="audioInputMethod">Modalità di trasmissione</string>
-    <string name="callMode">Modalità di chiamata</string>
     <string name="inputQualitySum">Velocità preferita per la trasmissione dei dati (in bit al secondo).</string>
     <string name="pressKey">Usa un tasto fisico per il push-to-talk.</string>
     <string name="forceTcpSum">Disattiva UDP per la comunicazione.</string>
     <string name="audioInputVolumeSum">Livello a cui normalizzare l\'audio.</string>
     <string name="certificateGenerateSum">Genera un certificato Mumla autofirmato. Raccomandato per i principianti.</string>
     <string name="useTtsSum">Leggere ad alta voce i messaggi in arrivo utilizzando la sintesi vocale.</string>
-    <string name="callModeSum">Telefonata normale o vivavoce.</string>
     <string name="detectionThresholdSum">Livello minimo del volume per il rilevamento della voce (quando la modalità di trasmissione è \"Attività vocale\").</string>
     <string name="detectionThreshold">Soglia di rilevamento</string>
     <string name="pttKeySum">Usa un pulsante fisico per trasmettere l\'audio.</string>

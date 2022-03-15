@@ -8,9 +8,6 @@
     <string name="theme_dark">Ciemny</string>
     <string name="theme_solarized_light">Słoneczny jasny</string>
     <string name="theme_solarized_dark">Słoneczny ciemny</string>
-    <!-- Call modes -->
-    <string name="call_mode_speakerphone">Zestaw głośnomówiący</string>
-    <string name="call_mode_voice_call">Połączenie głosowe</string>
     <!-- Hot corner -->
     <string name="hot_corner_none">Wyłączony</string>
     <string name="hot_corner_top_left">↖ Lewy górny</string>
@@ -30,8 +27,6 @@
     <string name="audioInputMethod">Tryb przekazywania</string>
     <string name="audioInputVolume">Głośność mikrofonu</string>
     <string name="audioInputVolumeSum">Poziom, do którego normalizować audio.</string>
-    <string name="callMode">Tryb połączenia</string>
-    <string name="callModeSum">Zwykła rozmowa telefoniczna lub zestaw głośnomówiący.</string>
     <string name="detectionThreshold">Próg wykrywania</string>
     <string name="detectionThresholdSum">Minimalny poziom głośności do wykrywania głosu (gdy tryb przekazywania to „Aktywność głosowa”).</string>
     <string name="pttKey">Przycisk funkcji „Naciśnij i mów”</string>

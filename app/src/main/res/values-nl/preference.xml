@@ -8,9 +8,6 @@
     <string name="theme_dark">Donker</string>
     <string name="theme_solarized_light">Solarized Licht</string>
     <string name="theme_solarized_dark">Solarized Donker</string>
-    <!--Call modes-->
-    <string name="call_mode_speakerphone">Luidspreker</string>
-    <string name="call_mode_voice_call">Stem Oproep</string>
     <!--Hot corner-->
     <string name="hot_corner_none">Geen</string>
     <string name="hot_corner_top_left">Top Links</string>
@@ -30,8 +27,6 @@
     <string name="audioInputMethod">Doorstuur Methode</string>
     <string name="audioInputVolume">Microfoon Volume</string>
     <string name="audioInputVolumeSum">Microfoon volume vermeerdering om audio kunstmatig te normaliseren.</string>
-    <string name="callMode">Oproep Modus</string>
-    <string name="callModeSum">De oproep modus van Mumla, zijnde luidspreker of gewone oproep.</string>
     <string name="detectionThreshold">Detectie Drempelwaarde</string>
     <string name="detectionThresholdSum">De minimum geluidsnorm vereist om stemdetectie te starten.</string>
     <string name="pttKey">Push to Talk Knop</string>

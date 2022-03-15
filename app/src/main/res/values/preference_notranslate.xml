@@ -60,16 +60,6 @@
         <item>solarizedDark</item>
     </string-array>
 
-    <string-array name="callModeNames">
-        <item>@string/call_mode_speakerphone</item>
-        <item>@string/call_mode_voice_call</item>
-    </string-array>
-
-    <string-array name="callModeValues">
-        <item>speakerphone</item>
-        <item>voice</item>
-    </string-array>
-
     <string-array name="hotCornerNames">
         <item>@string/hot_corner_none</item>
         <item>@string/hot_corner_top_left</item>

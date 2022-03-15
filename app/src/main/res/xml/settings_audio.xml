@@ -121,18 +121,6 @@
             android:summary="@string/preprocessor_enabled_sum"
             android:defaultValue="true" />
 
-        <!-- TODO: REIMPLEMENT -->
-        <!--
-        <ListPreference
-            android:defaultValue="speakerphone"
-            android:dialogTitle="@string/callMode"
-            android:entries="@array/callModeNames"
-            android:entryValues="@array/callModeValues"
-            android:key="callMode"
-            android:summary="@string/callModeSum"
-            android:title="@string/callMode" />
-            -->
-
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="disableOpus"

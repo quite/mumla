@@ -10,9 +10,6 @@
     <string name="theme_solarized_light">Солнечно светлый</string>
     <string name="theme_solarized_dark">Солнечно темный</string>
 
-    <!--Call modes-->
-    <string name="call_mode_speakerphone">Динамик</string>
-    <string name="call_mode_voice_call">Голосовой вызов</string>
 
     <!--Hot corner-->
     <string name="hot_corner_none">Ничего</string>
@@ -35,8 +32,6 @@
     <string name="audioInputMethod">Режим передачи</string>
     <string name="audioInputVolume">Громкость микрофона</string>
     <string name="audioInputVolumeSum">Коэффициент громкости микрофона используется для искусственной нормализации звука.</string>
-    <string name="callMode">Режим вызова</string>
-    <string name="callModeSum">Режим вызова Mumla, выступать в качестве громкой связи или голосовой динамик.</string>
     <string name="detectionThreshold">Уровень улавливания</string>
     <string name="detectionThresholdSum">Минимальная амплитуда требуемая для голоса (только для голосовой активации).</string>
     <string name="pttKey">Кнопка для активации</string>

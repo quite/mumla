@@ -3,14 +3,11 @@
     <string name="inputMethodContinuous">Kontinuerlig</string>
     <string name="hot_corner_none">Av</string>
     <string name="hot_corner_top_left">↖ øverst til venstre</string>
-    <string name="call_mode_speakerphone">Høytafon</string>
-    <string name="call_mode_voice_call">Taleanrop</string>
     <string name="licenses">Lisenser</string>
     <string name="authentication">Identitetsbekreftelse</string>
     <string name="audioInputVolume">Mikrofonlydstyrke</string>
     <string name="audioInputMethodSum">Lydinngangsmetode.</string>
     <string name="audioInputMethod">Overføringsmodus</string>
-    <string name="callMode">Anropsmodus</string>
     <string name="appearanceSum">Tilpass programmets utseende</string>
     <string name="themeSum">Utseende for programmet.</string>
     <string name="forceTcp">Kun TCP</string>
@@ -90,7 +87,6 @@
     <string name="pttButtonHeight">Knappehøyde for trykk-for-å-snakke.</string>
     <string name="autoReconnect">Koble til igjen automatisk</string>
     <string name="detectionThresholdSum">Minimumsamplitude for stemmeoppdagelse (har kun innvirkning på taleaktivitet).</string>
-    <string name="callModeSum">Vanlig telefonsamtale eller høytafon.</string>
     <string name="useTts">Tekst-til-tale</string>
     <string name="inputQualitySum">Mål for inngangskvalitet i biter per sekund.</string>
     <string name="hotCornerSum">Trykk et hjørne for å overføre lyd i hele Android.</string>

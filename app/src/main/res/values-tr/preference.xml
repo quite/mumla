@@ -15,7 +15,6 @@
     <string name="theme_dark">Koyu</string>
     <string name="theme_solarized_light">Solarized Açık</string>
     <string name="theme_solarized_dark">Solarized Koyu</string>
-    <string name="call_mode_speakerphone">Hoparlör</string>
     <string name="about">Hakkında</string>
     <string name="authentication">Kimlik doğrulama</string>
     <string name="authenticationSum">Sertifikaları yönetin ve oluşturun</string>
@@ -33,15 +32,12 @@
     <string name="audio_per_packet_sum">Ses paketi başına sesin uzunluğu.</string>
     <string name="pref_certificate_title">Sertifika</string>
     <string name="inputMethodVoice">Ses etkinliği</string>
-    <string name="call_mode_voice_call">Sesli arama</string>
     <string name="hot_corner_none">Kapalı</string>
     <string name="inputMethodPtt">Bas konuş</string>
     <string name="hot_corner_bottom_right">sağ alt ↘</string>
     <string name="acknowledgements">Katkıda bulunanlar</string>
     <string name="audioInput">Ses girişi</string>
     <string name="audioInputMethod">İletim modu</string>
-    <string name="callMode">Arama modu</string>
-    <string name="callModeSum">Normal telefon görüşmesi veya hoparlör.</string>
     <string name="detectionThreshold">Algılama eşiği</string>
     <string name="pttKey">Bas konuş tuşu</string>
     <string name="generalSum">Ana ayarlar</string>
