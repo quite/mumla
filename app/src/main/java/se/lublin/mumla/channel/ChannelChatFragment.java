@@ -17,6 +17,9 @@
 
 package se.lublin.mumla.channel;
 
+import static android.view.KeyEvent.KEYCODE_ENTER;
+import static android.view.inputmethod.EditorInfo.IME_NULL;
+
 import android.app.Activity;
 import android.app.AlertDialog.Builder;
 import android.content.Context;
@@ -33,13 +36,11 @@ import android.text.method.LinkMovementMethod;
 import android.util.Base64;
 import android.util.Log;
 import android.view.Gravity;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -48,7 +49,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.TextView.OnEditorActionListener;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
@@ -170,27 +170,14 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
         ImageSendButton.setOnClickListener(buttonView -> imagePicker.launch("image/*"));
 
         mSendButton = (ImageButton) view.findViewById(R.id.chatTextSend);
-        mSendButton.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try {
-                    sendMessageFromEditor();
-                } catch (HumlaDisconnectedException e) {
-                    Log.d(TAG, "exception from sendMessage: " + e);
-                }
-            }
-        });
+        mSendButton.setOnClickListener(this::sendMessageFromEditor);
 
-        mChatTextEdit.setOnEditorActionListener(new OnEditorActionListener() {
-            @Override
-            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                try {
-                    sendMessageFromEditor();
-                } catch (HumlaDisconnectedException e) {
-                    Log.d(TAG, "exception from sendMessage: " + e);
-                }
+        mChatTextEdit.setOnEditorActionListener((v, actionId, event) -> {
+            if (actionId == IME_NULL && event != null && event.getKeyCode() == KEYCODE_ENTER) {
+                sendMessageFromEditor(v);
                 return true;
             }
+            return false;
         });
 
         mChatTextEdit.addTextChangedListener(new TextWatcher() {
@@ -354,16 +341,21 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
     }
 
     /**
-     * Sends the message currently in {@link se.lublin.mumla.channel.ChannelChatFragment#mChatTextEdit}
+     * Sends the message currently in
+     * {@link se.lublin.mumla.channel.ChannelChatFragment#mChatTextEdit}
      * to the remote server. Clears the message box if the message was sent successfully.
-     *
-     * @throws HumlaDisconnectedException If the service is disconnected.
      */
-    private void sendMessageFromEditor() throws HumlaDisconnectedException {
-        if (mChatTextEdit.length() == 0) return;
+    private void sendMessageFromEditor(View v) {
+        if (mChatTextEdit.length() == 0) {
+            return;
+        }
         String message = mChatTextEdit.getText().toString();
-        sendMessage(message);
-        mChatTextEdit.setText("");
+        try {
+            sendMessage(message);
+            mChatTextEdit.setText("");
+        } catch (HumlaDisconnectedException e) {
+            Log.d(TAG, "exception from sendMessage: " + e);
+        }
     }
 
     /**
