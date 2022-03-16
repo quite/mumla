@@ -1,0 +1,5 @@
+Mumla artık sohbette resim göndermenize izin veriyor. Bunu uyguladığı ve kendi sohbet mesajlarının kaybolmasıyla ilgili bir sorunu düzelttiği için Bartkk0'a teşekkür ederiz!
+
+Ayrıca bazı mesajlar yeniden düzenlendi ve çevrildi. Teşekkürler Allan, Bartkk0, J. Lavoie, Matthaiks, Omar, Oğuz Ersen, deluxghost, nautilusx, pjammo.
+
+Çevirilere katkıda bulunmak için: https://hosted.weblate.org/projects/mumla/
