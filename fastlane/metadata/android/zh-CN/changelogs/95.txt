@@ -1,0 +1,5 @@
+Mumla 现在支持在聊天中发送图片。感谢 Bartkk0 实现此功能，同时修复了一个聊天消息消失的问题。
+
+一些消息文本已重新润色和翻译。感谢 Allan、Bartkk0、J. Lavoie、Matthaiks、Omar、Oğuz Ersen、deluxghost、nautilusx 和 pjammo。
+
+在此处贡献翻译：https://hosted.weblate.org/projects/mumla/
