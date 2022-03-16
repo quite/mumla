@@ -1,0 +1,5 @@
+Mumla pozwala teraz publikować obrazy na czacie. Dziękuję Bartkk0 za wdrożenie tego, a także naprawienie problemu ze znikaniem własnych wiadomości czatu!
+
+Również niektóre komunikaty zostały przerobione i przetłumaczone. Dzięki: Allan, Bartkk0, J. Lavoie, Matthaiks, Omar, Oğuz Ersen, deluxghost, nautilusx, pjammo.
+
+Tłumaczenie odbywa się tutaj: https://hosted.weblate.org/projects/mumla/
