@@ -1,0 +1,5 @@
+Mumla now let's you post images in the chat. Thank you Bartkk0 for implementing this, and also fixing an issue with own chat messages disappearing!
+
+Also some messages have been reworked and translated. Thanks to Allan, Bartkk0, J. Lavoie, Matthaiks, Omar, Oğuz Ersen, deluxghost, nautilusx, pjammo.
+
+Translating is done here: https://hosted.weblate.org/projects/mumla/
