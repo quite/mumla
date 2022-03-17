@@ -202,4 +202,5 @@
     <string name="chat_message_tts_short_link">(Odkaz na %1$s)</string>
     <string name="chat_message_to">%1$s → %2$s</string>
     <string name="drawer_public">Veřejné servery</string>
+    <string name="image_confirm_send"></string>
 </resources>
