@@ -200,4 +200,5 @@
     <string name="sortBy">Ordenar por…</string>
     <string name="sort">Ordenar</string>
     <string name="unknown">Desconhecido</string>
+    <string name="image_confirm_send">Enviar esta imagem\?</string>
 </resources>
