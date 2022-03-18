@@ -171,4 +171,14 @@
     <string name="channel_add">أضف قناة</string>
     <string name="tts_failed">تعذر بدأ TTS</string>
     <string name="user_menu_deafen">أصم</string>
+    <string name="current_chat_target">الهدف الحالي للمحادثة</string>
+    <string name="shareMessage">إنضم إلى هذا الخادم عبر Mumla.%s</string>
+    <string name="confirm_reset_comment">أتريد تصفير تعليق المستخدم %s؟</string>
+    <string name="trust_add_failed">تعذرت إضافة شهادة في قاعدة بيانات الاستيثاق.</string>
+    <string name="trust_cleared">مُسحت قاعدة بيانات الاستيثاق</string>
+    <string name="certificate_load_failed">تعذر حفظ الشهادة.</string>
+    <string name="position">الموقع</string>
+    <string name="mumble_url_parse_failed">رابط مامبل غير صالح.</string>
+    <string name="trust_added">أُضيفت شهادة لقاعدة بيانات الاستيثاق</string>
+    <string name="certificate_import_success">أُستوردت الشهادة %s.</string>
 </resources>
