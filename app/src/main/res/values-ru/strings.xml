@@ -191,4 +191,5 @@
     </plurals>
     <string name="donation_thanks">Спасибо за пожертвование.</string>
     <string name="bluetooth">Bluetooth</string>
+    <string name="image_confirm_send">Отправить это изображение\?</string>
 </resources>
