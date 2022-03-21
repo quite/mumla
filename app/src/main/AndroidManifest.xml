@@ -84,6 +84,7 @@
 
         <service
             android:name=".service.MumlaService"
+            android:exported="true"
             android:enabled="true" />
 
         <activity
