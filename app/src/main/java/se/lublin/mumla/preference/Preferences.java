@@ -17,7 +17,6 @@
 
 package se.lublin.mumla.preference;
 
-import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.pm.PackageInfo;
@@ -36,6 +35,7 @@ import android.preference.PreferenceScreen;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 import java.util.TimeZone;
 
 import info.guardianproject.netcipher.proxy.OrbotHelper;
@@ -135,8 +135,7 @@ public class Preferences extends PreferenceActivity {
             PackageInfo info = context.getPackageManager().getPackageInfo(context.getPackageName(), 0);
             version = info.versionName;
             if (BuildConfig.FLAVOR.equals("beta")) {
-                @SuppressLint("SimpleDateFormat")
-                SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.US);
                 f.setTimeZone(TimeZone.getTimeZone("UTC"));
                 version += ("\nBeta flavor, versioncode: " + info.versionCode
                         + "\nbuildtime: " + f.format(new Date(BuildConfig.TIMESTAMP)) + " UTC");
