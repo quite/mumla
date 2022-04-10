@@ -1,29 +1,24 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="inputMethodVoice">Голосовая активность</string>
     <string name="inputMethodPtt">Нажми чтобы говорить</string>
     <string name="inputMethodContinuous">Непрерывно</string>
-
     <!--Theme names-->
     <string name="theme_light">Светлый</string>
     <string name="theme_dark">Темный</string>
     <string name="theme_solarized_light">Солнечно светлый</string>
     <string name="theme_solarized_dark">Солнечно темный</string>
-
-
     <!--Hot corner-->
     <string name="hot_corner_none">Ничего</string>
     <string name="hot_corner_top_left">Слева вверху</string>
     <string name="hot_corner_bottom_left">Слева внизу</string>
     <string name="hot_corner_top_right">Справа вверху</string>
     <string name="hot_corner_bottom_right">Справа снизу</string>
-
     <!--About-->
     <string name="about">О программе</string>
     <string name="acknowledgements">Благодарности</string>
     <string name="acknowledgementsSum">Посмотреть кто способствовали развитию Mumla.</string>
     <string name="licenses">Лицензии</string>
-
     <string name="authentication">Идентификация</string>
     <string name="audioInputMethodSum">Способ ввода звука.</string>
     <string name="audioInputMethod">Режим передачи</string>
