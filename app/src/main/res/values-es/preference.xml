@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="inputMethodVoice">Actividad de voz</string>
     <string name="inputMethodPtt">Presionar-para-hablar</string>
@@ -10,14 +10,14 @@
     <string name="theme_solarized_dark">Oscuro solarizado</string>
     <!--Hot corner-->
     <string name="hot_corner_none">Ninguno</string>
-    <string name="hot_corner_top_left">Superior izquierda</string>
-    <string name="hot_corner_bottom_left">Inferior izquierda</string>
-    <string name="hot_corner_top_right">Superior derecha</string>
-    <string name="hot_corner_bottom_right">Inferior derecha</string>
+    <string name="hot_corner_top_left">↖ superior izquierda</string>
+    <string name="hot_corner_bottom_left">↙ inferior izquierda</string>
+    <string name="hot_corner_top_right">Superior derecha ↗</string>
+    <string name="hot_corner_bottom_right">inferior derecha ↘</string>
     <!--About-->
     <string name="about">Acerca de</string>
-    <string name="acknowledgements">Agradecimientos</string>
-    <string name="acknowledgementsSum">Mira quién ha contribuido a Mumla</string>
+    <string name="acknowledgements">Contribuidores</string>
+    <string name="acknowledgementsSum">Mira quién ha contribuido a Mumla (enlace web)</string>
     <string name="licenses">Licencias</string>
     <string name="authentication">Autenticación</string>
     <string name="audioInputMethodSum">El método de entrada de audio</string>
