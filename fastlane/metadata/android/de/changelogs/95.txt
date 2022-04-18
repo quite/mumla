@@ -1,0 +1,5 @@
+Mumla erlaubt nun das Posten von Bildern im Chat. Vielen Dank, Bartkk0 für die Implementierung, und auch für das Beheben eines Fehlers, durch den eigene Chatnachrichten verschwanden!
+
+Außerdem wurden einige Benachrichtigungen nachgebessert und übersetzt. Danke an Allan, Bartkk0, J. Lavoie, Matthaiks, Omar, Oğuz Ersen, deluxghost, nautilusx, pjammo.
+
+Übersetzt wird hier: https://hosted.weblate.org/projects/mumla/

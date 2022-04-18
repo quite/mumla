@@ -1,0 +1,1 @@
+Die Verbindung zu Tor mithilfe von Orbot sollte besser funktionieren, mehrere Nachrichten in der Benutzeroberfläche zeigen nun an, dass Tor genutzt wird. Das Verbinden zu .onion-Adressen funktioniert auch; DNS Auflösung übernimmt der Tor SOCKS Proxy.
