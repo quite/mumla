@@ -1,0 +1,1 @@
+Verbindungen über Tor mittels Orbot sollten besser funktionieren, zudem zeigen jetzt mehrere Indikatoren in der Benutzeroberfläche, dass Tor genutzt wird. Auch die Verbindung zur Tor Hidden Services (.onion-URLs) funktioniert nun; DNS wird dem Tor SOCKS-Proxy überlassen.
