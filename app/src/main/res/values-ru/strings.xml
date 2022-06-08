@@ -14,13 +14,13 @@
     <string name="chat_message_to">%1$s → %2$s</string>
     <string name="chat_message_tts_short_link">(Ссылка на %1$s)</string>
     <!-- User menu -->
-    <string name="user_menu_kick">Кикнуть</string>
+    <string name="user_menu_kick">Выгнать</string>
     <string name="user_menu_ban">Забанить</string>
-    <string name="user_menu_mute">Замутировать</string>
-    <string name="user_menu_deafen">Заглушить</string>
+    <string name="user_menu_mute">Заглушить</string>
+    <string name="user_menu_deafen">Оглушить</string>
     <string name="user_menu_move">Переместить</string>
-    <string name="user_menu_priority_speaker">Приоритетный спикер</string>
-    <string name="user_menu_local_mute">Замутировать локально</string>
+    <string name="user_menu_priority_speaker">Приоритетный оратор</string>
+    <string name="user_menu_local_mute">Заглушить локально</string>
     <string name="user_menu_ignore_messages">Игнорировать сообщения</string>
     <string name="user_menu_change_comment">Изменить комментарий</string>
     <string name="user_menu_view_comment">Изменить комментарий</string>
@@ -34,27 +34,32 @@
     <string name="comment_view_source">Просмотреть исходник</string>
     <!-- Server Info Fragment -->
     <string name="control_channel">Канал управления</string>
-    <string name="tcp_encryption_mode">Зашифровано с помощью 256 битного AES-256-SHA</string>
-    <string name="voice_channel">Канал голоса</string>
-    <string name="udp_encryption_mode">Зашифровано с помощью 128 битного OCB-AES-128</string>
+    <string name="tcp_encryption_mode">Зашифровано с помощью 256-битного AES-256-SHA</string>
+    <string name="voice_channel">Голосовой канал</string>
+    <string name="udp_encryption_mode">Зашифровано с помощью 128-битного OCB-AES-128</string>
     <string name="audio_bandwidth">Пропускная способность аудио</string>
     <string name="server_info_protocol">Протокол %s.</string>
     <string name="server_info_version">%1$s (%2$s)</string>
-    <string name="server_info_latency">Задержка %.2f ms</string>
+    <string name="server_info_latency">Задержка %.2f мс</string>
     <string name="server_info_host">Удаленный адрес %1$s (порт %2$d)</string>
     <string name="server_info_codec">Кодек: %s</string>
-    <string name="server_info_max_bandwidth">Максимальная %.1f kbit/s</string>
-    <string name="server_info_current_bandwidth">Текущая %.1f kbit/s</string>
+    <string name="server_info_max_bandwidth">Максимальная %.1f Кбит/с</string>
+    <string name="server_info_current_bandwidth">Текущая %.1f Кбит/с</string>
     <!-- Server matching -->
     <string name="server_match">Найти сервер</string>
     <string name="server_match_progress">Поиск сервера…</string>
     <string name="server_match_found">Сервер найден</string>
     <string name="server_match_not_found">Не удалось найти сервер</string>
-    <string name="server_match_expand_country">Не удалось найти оптимальный сервер в вашей стране. Искать во всем мире?</string>
-    <string name="server_match_info">Имя: %1$s\nАдрес: %2$s:%3$d\nПользователей: %4$d / %5$d\nВерсия: %6$s \nСтрана: %7$s \nЗадержка: %8$d ms</string>
+    <string name="server_match_expand_country">Не удалось найти оптимальный сервер в вашей стране. Искать по всему миру\?</string>
+    <string name="server_match_info">Название: %1$s
+\nАдрес: %2$s:%3$d
+\nПользователей: %4$d / %5$d
+\nВерсия: %6$s
+\nСтрана: %7$s
+\nЗадержка: %8$d мс</string>
     <string name="server_match_description">Mumla может автоматически найти пустой сервер, основываясь на местоположении, версии, и задержке.</string>
     <!-- Common -->
-    <string name="no_servers">Для начала нажмите \'Добавить\' в панели управления чтобы добавить сервер.</string>
+    <string name="no_servers">Для начала добавьте сервер, нажав \'Добавить\' в панели управления.</string>
     <string name="server_password">Пароль</string>
     <string name="server_username">Имя пользователя</string>
     <string name="server_port">Порт</string>
@@ -92,27 +97,27 @@
     <string name="delete">Удалить</string>
     <string name="messageToUser">Введите сообщение для пользователя \'%s\'</string>
     <string name="messageToChannel">Введите сообщение для канала \'%s\'</string>
-    <string name="online">Онлайн</string>
-    <string name="offline">Оффлайн</string>
+    <string name="online">В сети</string>
+    <string name="offline">Не в сети</string>
     <string name="clearChat">Очистить чат</string>
     <string name="connected">Подключено</string>
-    <string name="mumlaConnected">Mumla подключен</string>
+    <string name="mumlaConnected">Mumla подключена</string>
     <string name="mumlaConnecting">Mumla подключается…</string>
-    <string name="mumlaDisconnected">Mumla отключен</string>
+    <string name="mumlaDisconnected">Mumla отключена</string>
     <string name="channel">Канал</string>
     <string name="user">Пользователь</string>
     <string name="unknown">Неизвестный</string>
     <string name="sort">Сортировка</string>
     <string name="sortBy">Сортировать по…</string>
-    <string name="name">Имя</string>
+    <string name="name">Название</string>
     <string name="country">Страна</string>
     <string name="share">Поделиться</string>
     <string name="description">Описание</string>
-    <string name="shareMessage">Присоединяйся к этому Mumble серверу с помощью Mumla. %s</string>
-    <string name="status_notify_muted_and_deafened">Звук и микрофон отключен.</string>
+    <string name="shareMessage">Присоединяйся к этому Mumble-серверу с помощью Mumla. %s</string>
+    <string name="status_notify_muted_and_deafened">Звук и микрофон отключены.</string>
     <string name="status_notify_muted">Микрофон отключен.</string>
     <string name="close">Закрыть</string>
-    <string name="search_name">Имя</string>
+    <string name="search_name">Название</string>
     <string name="search_country">Страна</string>
     <string name="information">Информация</string>
     <string name="error_fetching_servers">Не удалось получить список.\nВы подключены к интернету?</string>
@@ -120,7 +125,7 @@
     <string name="hint_reason">Причина</string>
     <string name="action_settings">Настройки</string>
     <string name="reconnect">Переподключиться</string>
-    <string name="reconnect_dialog_message">Вы уже подключены к серверу. Подключиться к этому серверу?</string>
+    <string name="reconnect_dialog_message">Вы уже подключены к серверу. Хотите попробовать ещё раз\?</string>
     <string name="confirm_reset_comment">Вы действительно хотите очистить комментарий %s?</string>
     <string name="confirm">Подтвердить</string>
     <string name="expand">Увеличить</string>
@@ -129,11 +134,11 @@
     <string name="channel_edit">Редактировать канал</string>
     <string name="channel_add">Добавить канал</string>
     <string name="tts_failed">Не удалось запустить TTS</string>
-    <string name="mumble_url_parse_failed">Mumble URL не верный.</string>
-    <string name="first_run_generate_certificate_title">Добро пожаловать в Mumla.</string>
-    <string name="first_run_generate_certificate">Создание сертификата очень рекомендуется, и требуется некоторыми для подключения некоторыми серверами.</string>
+    <string name="mumble_url_parse_failed">Неверная Mumble-ссылка.</string>
+    <string name="first_run_generate_certificate_title">Добро пожаловать в Mumla</string>
+    <string name="first_run_generate_certificate">Мы рекомендуем создать сертификат. К тому же, он необходим для подключения к некоторым серверам.</string>
     <string name="generate">Создать</string>
-    <string name="invalid_password">Не верный пароль.</string>
+    <string name="invalid_password">Неверный пароль.</string>
     <string name="send_message">Отправить сообщение</string>
     <string name="channel_menu_view_description">Просмотреть описание</string>
     <string name="untrusted_certificate">Не доверенный сертификат</string>
@@ -171,13 +176,13 @@
     <string name="shout_failed">Не удалось создать цель для передачи.</string>
     <string name="shout_target">Говорим в %s</string>
     <string name="shout_configure">Настроить цели голосового сообщения</string>
-    <string name="grant_perm_microphone">Пожалуйста разрешите использование микрофона.</string>
-    <string name="grant_perm_storage">Пожалуйста разрешите запись в внешнее хранилище.</string>
-    <string name="grant_perm_draw_over_apps">Пожалуйста разрешите отображение окон поверх других приложений.</string>
+    <string name="grant_perm_microphone">Пожалуйста, разрешите использовать микрофон.</string>
+    <string name="grant_perm_storage">Пожалуйста, разрешите запись во внешнее хранилище.</string>
+    <string name="grant_perm_draw_over_apps">Пожалуйста, разрешите показывать окна поверх других приложений.</string>
     <string name="orbot_not_installed">Приложение Orbot не установлено. Tor не используется.</string>
-    <string name="orbot_tor_failed">Не удалось подключиться к к локальному прокси Tor на порту %d (SOCKS).
+    <string name="orbot_tor_failed">Не удалось подключиться к к локальному Tor-прокси на порту %d (SOCKS).
 \n
-\nПожалуйста убедитесь что приложение Orbot запущено.</string>
+\nПожалуйста, убедитесь, что приложение Orbot запущено.</string>
     <string name="default_">По умолчанию</string>
     <plurals name="search_channel_users">
         <item quantity="one">%d пользователь</item>
