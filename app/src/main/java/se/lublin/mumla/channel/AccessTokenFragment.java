@@ -113,7 +113,7 @@ public class AccessTokenFragment extends HumlaServiceFragment {
 
         mTokenField.setText("");
 
-        Log.i(TAG, "Adding token: " + tokenText);
+        Log.i(TAG, "Adding a token");
 
         mTokens.add(tokenText);
         mTokenAdapter.notifyDataSetChanged();
