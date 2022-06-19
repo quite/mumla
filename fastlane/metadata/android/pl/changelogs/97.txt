@@ -1,0 +1,3 @@
+Jest to głównie wydanie z tłumaczeniami. Podziękowania dla tłumaczy: AHOHNMYC, Axus Wizix, Iago, J. Lavoie, Pure Incompetence, sal0max
+
+Tłumaczenie odbywa się tutaj: https://hosted.weblate.org/projects/mumla/
