@@ -1,2 +1,204 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="drawer_tokens">Στοιχεία πρόσβασης</string>
+    <string name="drawer_pinned">Καρφιτσωμένα κανάλια</string>
+    <string name="drawer_header_servers">Διακομιστές</string>
+    <string name="drawer_favorites">Αγαπημένα</string>
+    <string name="chat_message_tts_short_link">(Σύνδεσμος προς %1$s)</string>
+    <string name="user_menu_kick">Πέταγμα</string>
+    <string name="user_menu_ban">Απαγόρευση πρόσβασης</string>
+    <string name="user_menu_mute">Σίγαση</string>
+    <string name="user_menu_deafen">Κώφωση</string>
+    <string name="user_menu_move">Μετακίνηση</string>
+    <string name="user_menu_ignore_messages">Άγνοια μηνυμάτων</string>
+    <string name="user_menu_change_comment">Σχόλιο αλλαγής</string>
+    <string name="user_menu_reset_comment">Επαναφορά σχολίου</string>
+    <string name="user_menu_view_comment">Προβολή σχολίου</string>
+    <string name="tcp_encryption_mode">Κρυπτογραφημένο με 256 bit AES-256-SHA</string>
+    <string name="voice_channel">Κανάλι φωνής</string>
+    <string name="udp_encryption_mode">Κρυπτογραφημένο με 128 bit OCB-AES-128</string>
+    <string name="audio_bandwidth">Εύρος ζώνης ήχου</string>
+    <string name="server_info_protocol">Πρωτόκολλο %s.</string>
+    <string name="server_info_version">%1$s (%2$s)</string>
+    <string name="server_info_latency">%.2f ms καθυστέρηση</string>
+    <string name="server_info_host">Απομακρυσμένος κεντρικός υπολογιστής %1$s (θύρα %2$d)</string>
+    <string name="server_info_codec">Κωδικοποιητής: %s</string>
+    <string name="server_info_max_bandwidth">Μέγιστα %.1f kbit/s</string>
+    <string name="server_info_current_bandwidth">Τρέχων %.1f kbit/s</string>
+    <string name="server_match_found">Διακομιστής ευρέθη</string>
+    <string name="server_match_not_found">Δεν ήταν δυνατή η εύρεση διακομιστή</string>
+    <string name="server_match_expand_country">Δεν μπόρεσαν να βρεθούν βέλτιστοι διακομιστές στη χώρα σας. Αναζήτηση παγκοσμίως;</string>
+    <string name="server_match_info">Όνομα: %1$s
+\nΑπομακρυσμένος κεντρικός υπολογιστής: %2$s: %3$d
+\nΧρήστες: %4$d / %5$d
+\nΈκδοση: %6$s
+\nΧώρα: %7$s
+\nΚαθυστέρηση: %8$d ms</string>
+    <string name="server_match_description">Το Mumla μπορεί να βρει αυτόματα έναν κενό διακομιστή, βελτιστοποιώντας την τοποθεσία, την έκδοση και την καθυστέρηση.</string>
+    <string name="no_servers">Πατήστε \'Προσθήκη\' από τη γραμμή δράσης για να προσθέσετε πρώτα ένα διακομιστή.</string>
+    <string name="server_password">Κωδικός πρόσβασης</string>
+    <string name="server_username">Όνομα χρήστη</string>
+    <string name="server_port">Θύρα</string>
+    <string name="server_host">Διεύθυνση</string>
+    <string name="connecting">Σύνδεση σε εξέλιξη</string>
+    <string name="connecting_to_server">Γίνετε σύνδεση με %s…</string>
+    <string name="ptt">Πίεση-πλήκτρου-για-ομιλία</string>
+    <string name="mute">φίμωση</string>
+    <string name="disconnectSure">Είστε βέβαιοι ότι θέλετε να αποσυνδεθείτε από το %s;</string>
+    <string name="save">Αποθήκευση</string>
+    <string name="add">Προσθήκη</string>
+    <string name="chat">Συζήτηση</string>
+    <string name="connectionRefused">Η σύνδεση αρνήθηκε</string>
+    <string name="confirm_delete_server">Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτόν τον διακομιστή;</string>
+    <string name="reset_key">Επαναφορά κλειδιού</string>
+    <string name="addFavorite">Προσθήκη στα αγαπημένα</string>
+    <string name="accessAdd">Προσθήκη διακριτικού κλειδιού πρόσβασης</string>
+    <string name="messageReceived">Νέο μήνυμα</string>
+    <string name="generateCertFailure">Δεν ήταν δυνατή η δημιουργία πιστοποιητικού.</string>
+    <string name="generateCertProgress">Γίνεται δημιουργία πιστοποιητικού…</string>
+    <string name="search">Αναζήτηση</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="quickConnect">Γρήγορη σύνδεση</string>
+    <string name="connect">Σύνδεση</string>
+    <string name="connectToServer">Σύνδεση στο διακομιστή</string>
+    <string name="edit">Επεξεργασία</string>
+    <string name="remove">Αφαίρεση</string>
+    <string name="delete">Διαγραφή</string>
+    <string name="messageToUser">Πληκτρολογήστε ένα μήνυμα στο χρήστη \'%s\'</string>
+    <string name="messageToChannel">Πληκτρολογήστε ένα μήνυμα στο κανάλι \'%s\'</string>
+    <string name="online">Συνδεμένος</string>
+    <string name="offline">Αποσυνδεμένος</string>
+    <string name="mumlaConnected">Το Mumla συνδέθηκε</string>
+    <string name="mumlaConnecting">Το Mumla συνδέεται…</string>
+    <string name="mumlaDisconnected">Το Mumla αποσυνδέθηκε</string>
+    <string name="unknown">Άγνωστο</string>
+    <string name="sort">Ταξινόμηση</string>
+    <string name="name">Όνομα</string>
+    <string name="country">Χώρα</string>
+    <string name="share">Κοινοποίηση</string>
+    <string name="description">Περιγραφή</string>
+    <string name="status_notify_muted_and_deafened">Φιμώθηκε και κωφώθηκε.</string>
+    <string name="status_notify_muted">Σιωπηλός.</string>
+    <string name="close">Κλείσιμο</string>
+    <string name="search_name">Όνομα</string>
+    <string name="search_country">Χώρα</string>
+    <string name="information">Πληροφορίες</string>
+    <string name="hint_reason">Λόγος</string>
+    <string name="action_settings">Ρυθμίσεις</string>
+    <string name="reconnect">Επανασύνδεση</string>
+    <string name="confirm">Επιβεβαίωση</string>
+    <string name="temporary">Προσωρινό</string>
+    <string name="tts_failed">Δεν μπόρεσε να γίνει εκκίνηση το TTS</string>
+    <string name="mumble_url_parse_failed">Το Mumble URL δεν ισχύει.</string>
+    <string name="overlay">Εμφάνιση πάνω από άλλες εφαρμογές</string>
+    <string name="first_run_generate_certificate_title">Καλώς ήλθατε στο Mumla.</string>
+    <string name="generate">Δημιουργία</string>
+    <string name="channel_menu_view_description">Περιγραφή προβολής</string>
+    <string name="untrusted_certificate">Μη αξιόπιστο πιστοποιητικό</string>
+    <string name="allow">Έγκριση</string>
+    <string name="trust_added">Προστέθηκε πιστοποιητικό στο trust store</string>
+    <string name="trust_add_failed">Δεν ήταν δυνατή η προσθήκη πιστοποιητικού στο trust store.</string>
+    <string name="trust_cleared">Καθαρίστηκε η βάση δεδομένων εμπιστοσύνης</string>
+    <string name="cancelled">Ακυρώθηκε</string>
+    <string name="current_chat_target">Τρέχων στόχος συνομιλίας</string>
+    <string name="channel_join">Εγγραφή</string>
+    <string name="certificate_info">Θέμα:
+\n%1$s
+\n
+\nΙσχύει από:
+\n%2$s
+\n
+\nΈγκυρο για:
+\n%3$s
+\n
+\nDigest (Sha-1):
+\n%4$s
+\n
+\nDigest (Sha-256):
+\n%5$s</string>
+    <string name="invalid_host">Μη έγκυρος απομακρυσμένος κεντρικός υπολογιστής</string>
+    <string name="invalid_port_range">Μη έγκυρη θύρα (1-65535)</string>
+    <string name="cancel_reconnect">Ακύρωση επανασύνδεσης</string>
+    <string name="attempting_reconnect">Σφάλμα: %s.
+\n
+\nΕπανασύνδεση…</string>
+    <string name="no_certificate">Έλλειψη πιστοποιητικού</string>
+    <string name="certificates">Πιστοποιητικά</string>
+    <string name="decrypt_certificate">Αποκρυπτογράφηση πιστοποιητικού</string>
+    <string name="certificate_load_failed">Δεν ήταν δυνατή η αποθήκευση του πιστοποιητικού.</string>
+    <string name="certificate_import_success">Εισαγόμενο πιστοποιητικό %s.</string>
+    <string name="error_writing_to_storage">Δεν ήταν δυνατή η εγγραφή σε εξωτερικό χώρος.</string>
+    <string name="export_success">Πιστοποιητικό που εξάγεται σε %s.</string>
+    <string name="context_channel_link">Σύνδεσμος</string>
+    <string name="context_channel_unlink_all">Αποσύνδεση όλων</string>
+    <string name="context_channel_shout">Ορίστε τον φωνητικό στόχο</string>
+    <string name="shout_include_linked">Εκφώνηση σε συνδεδεμένα κανάλια</string>
+    <string name="shout_include_subchannels">Εκφώνηση σε υποκανάλια</string>
+    <string name="shout_target">Εκφώνηση στο %s</string>
+    <string name="grant_perm_microphone">Παρακαλούμε χορηγήστε άδεια μικροφώνου.</string>
+    <string name="grant_perm_draw_over_apps">Παρακαλούμε χορηγήστε άδεια για εμφάνιση πάνω από άλλες εφαρμογές.</string>
+    <string name="orbot_tor_failed">Δεν ήταν δυνατή η σύνδεση με τον τοπικό διακομιστή μεσολάβησης στη θύρα %d (SOCKS).
+\n
+\nΒεβαιωθείτε ότι η εφαρμογή Orbot λειτουργεί.</string>
+    <string name="default_">Προκαθορισμένο</string>
+    <string name="drawer_open">Άνοιγμα συρταριού</string>
+    <string name="perm_denied">Δεν επιτρέπεται η πρόσβαση.</string>
+    <string name="drawer_not_connected">Μη συνδεδεμένος</string>
+    <string name="drawer_close">Κλείσιμο συρταριού</string>
+    <string name="drawer_server">Όλα τα κανάλια</string>
+    <string name="drawer_public">Δημόσιοι διακομιστές</string>
+    <string name="user_menu_local_mute">Τοπική σίγαση</string>
+    <string name="user_menu_register">Εγγραφή</string>
+    <string name="user_menu_priority_speaker">Ομιλητής προτεραιότητας</string>
+    <string name="comment_edit_source">Επεξεργασία πηγής</string>
+    <string name="channel_menu_pin">Καρφίτσωμα</string>
+    <string name="comment_view">Προβολή</string>
+    <string name="comment_view_source">Προβολή πηγής</string>
+    <string name="control_channel">Έλεγχος καναλιού</string>
+    <string name="server_match">Εύρεση διακομιστή</string>
+    <string name="server_match_progress">Γίνεται εύρεση διακομιστή…</string>
+    <string name="deafen">Κώφωση</string>
+    <string name="server_label">Επιγραφή</string>
+    <string name="disconnect">Αποσύνδεση</string>
+    <string name="channel">Κανάλι</string>
+    <string name="confirm_delete_channel">Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτό το κανάλι;</string>
+    <string name="generateCertSuccess">Το πιστοποιητικό σας έχει οριστεί και αποθηκευτεί ως %s!</string>
+    <string name="externalStorageUnavailable">Εξωτερικός χώρος αποθήκευσης μη διαθέσιμος, δεν μπορεί να φορτωθεί το πιστοποιητικό</string>
+    <string name="searchHint">Αναζήτηση καναλιών και χρηστών</string>
+    <string name="user">Χρήστης</string>
+    <string name="clearChat">Καθάρισμα συζήτησης</string>
+    <string name="connected">Συνδέθηκε</string>
+    <string name="sortBy">Ταξινόμηση κατά…</string>
+    <string name="shareMessage">Εγγραφείτε σε αυτόν τον διακομιστή Mumble με το Mumla. %s</string>
+    <string name="error_fetching_servers">Δεν μπόρεσα να φέρω διακομιστές.
+\nΕίστε συνδεδεμένοι στο Διαδίκτυο;</string>
+    <string name="position">Θέση</string>
+    <string name="reconnect_dialog_message">Είστε ήδη συνδεδεμένοι σε ένα διακομιστή. Θέλετε να συνδεθείτε σε αυτόν τον διακομιστή;</string>
+    <string name="confirm_reset_comment">Είστε βέβαιοι ότι θέλετε να επαναφέρετε το σχόλιο του χρήστη %s;</string>
+    <string name="expand">Επέκταση</string>
+    <string name="channel_edit">Επεξεργασία Καναλιού</string>
+    <string name="channel_add">Προσθήκη καναλιού</string>
+    <string name="first_run_generate_certificate">Η δημιουργία πιστοποιητικού συνιστάται ιδιαίτερα και είναι απαραίτητη για σύνδεση με ορισμένους διακομιστές.</string>
+    <string name="invalid_password">Λάθος κωδικός πρόσβασης.</string>
+    <string name="send_message">Αποστολή μηνύματος</string>
+    <string name="password">Κωδικός πρόσβασης</string>
+    <string name="invalid_certificate">Δεν ήταν δυνατή η φόρτωση μη έγκυρου πιστοποιητικού.</string>
+    <string name="change_requires_reconnect">Επανασυνδεθείτε για να χρησιμοποιήσετε τις νέες ρυθμίσεις.</string>
+    <string name="migration_certificate_begin">Έναρξη μετάπτωση πιστοποιητικού…</string>
+    <string name="migration_certificate_success">Το πιστοποιητικό μεταπτώθηκε.</string>
+    <string name="shout_configure">Ρύθμιση παραμέτρων φωνητικού στόχου</string>
+    <string name="shout_failed">Δεν ήταν δυνατή η δημιουργία φωνητικού στόχου.</string>
+    <string name="grant_perm_storage">Παρακαλούμε να χορηγήσετε άδεια σε εξωτερικό χώρο αποθήκευσης.</string>
+    <string name="donation_thanks">Σας ευχαριστούμε για τη δωρεά.</string>
+    <string name="image_confirm_send">Αποστολή αυτής της εικόνας;</string>
+    <string name="orbot_not_installed">Η εφαρμογή Orbot δεν είναι εγκατεστημένη. Δεν χρησιμοποιείτε το Tor.</string>
+    <plurals name="search_channel_users">
+        <item quantity="one">%d χρήστης</item>
+        <item quantity="other">%d χρήστες</item>
+    </plurals>
+    <plurals name="notification_unread_many">
+        <item quantity="one">%d νέο μήνυμα</item>
+        <item quantity="other">%d νέα μηνύματα</item>
+    </plurals>
+    <string name="chat_message_to">%1$s → %2$s</string>
+</resources>
