@@ -1,0 +1,3 @@
+To jest wydanie z tłumaczeniami. Mumla jest teraz dostępna w języku greckim, dziękujemy Athanasiosowi Plastirasowi!
+
+Tłumaczenie odbywa się tutaj: https://hosted.weblate.org/projects/mumla/
