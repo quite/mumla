@@ -1,0 +1,3 @@
+This is translation release. Mumla is now available in Greek, thank you Athanasios Plastiras!
+
+Translating is done here: https://hosted.weblate.org/projects/mumla/
