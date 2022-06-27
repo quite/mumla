@@ -1,0 +1,1 @@
+Conectar sobre Tor usando Orbot debería funcionar mejor y varios mensajes en la Interfaz de Usuario ahora indican que Tor se está usando. Conectar a la dirección .onion de Hidden Services también funciona; la resolución de DNS se deja para el proxy TOR SOCKS.
