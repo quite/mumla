@@ -200,4 +200,5 @@
     <string name="drawer_not_connected">Ei yhdistetty</string>
     <string name="drawer_close">Sulje alasvetovalikko</string>
     <string name="drawer_open">Avaa alasvetovalikko</string>
+    <string name="image_confirm_send">Lähetä tämä kuva\?</string>
 </resources>
