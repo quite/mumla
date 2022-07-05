@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="theme_solarized_light">Solární světlo</string>
+    <string name="theme_solarized_dark">Solarizovaná tmavá</string>
+    <string name="inputMethodVoice">Hlasová aktivita</string>
+    <string name="inputMethodPtt">Drž-a-mluv</string>
+    <string name="inputMethodContinuous">Souvislé</string>
+    <string name="theme_light">Světlé</string>
+    <string name="theme_dark">Tmavé</string>
+</resources>
