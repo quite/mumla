@@ -55,7 +55,7 @@
     <string name="hidePttSum">Nur nützlich bei Verwendung von Bildschirmecken oder Hardwaretasten.</string>
     <string name="useTts">Text-zu-Sprache</string>
     <string name="useTtsSum">Aktiviert Text-zu-Sprache für eingehende Nachrichten.</string>
-    <string name="togglePtt">Zum Sprechen drücken</string>
+    <string name="togglePtt">Angehefte Zum Sprechen drücken-Taste</string>
     <string name="togglePttSum">Die Sprachübertragung wird beim Drücken der Zum Sprechen drücken-Taste dauerhaft aktiviert/deaktiviert.</string>
     <string name="autoReconnect">Automatisch Wiederverbinden</string>
     <string name="autoReconnectSum">Nach einem Verbindungsbbruch automatisch wiederverbinden.</string>
