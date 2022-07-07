@@ -55,8 +55,8 @@
     <string name="hidePttSum">Seulement utile si vous utilisez le coin « Appuyer pour parler » ou la touche physique.</string>
     <string name="useTts">Synthèse vocale</string>
     <string name="useTtsSum">Lire le message entrant à haute voix en utilisant la synthèse vocale.</string>
-    <string name="togglePtt">Appuyer pour parler</string>
-    <string name="togglePttSum">Active ou désactive le mode « Appuyer pour parler » pour chaque pression.</string>
+    <string name="togglePtt">Bouton Appuyer pour parler épinglé</string>
+    <string name="togglePttSum">Le bouton Appuyer-pour-parler permet d\'activer ou de désactiver la transmission. Il n\'est pas nécessaire de le tenir.</string>
     <string name="autoReconnect">Reconnexion automatique</string>
     <string name="autoReconnectSum">Rétablit la connexion au serveur en cas de perte.</string>
     <string name="useTor">Se connecter via Tor</string>
