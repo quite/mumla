@@ -57,8 +57,8 @@
     <string name="useTtsSum">Czytaj na głos wiadomość przychodzącą za pomocą syntezy mowy.</string>
     <string name="shortTtsMessages">Krótkie wiadomości funkcji „Tekst na mowę”</string>
     <string name="shortTtsMessagesSum">Skróć wiadomości, czytając tylko nazwy domen łącz.</string>
-    <string name="togglePtt">Naciśnij i mów</string>
-    <string name="togglePttSum">Włącza i wyłącza funkcję „Naciśnij i mów” po każdym naciśnięciu.</string>
+    <string name="togglePtt">Przycisk przełączania funkcji „Naciśnij i mów”</string>
+    <string name="togglePttSum">Przycisk funkcji „Naciśnij i mów” włącza i wyłącza transmisję. Nie trzeba go trzymać.</string>
     <string name="autoReconnect">Automatyczne wznowienie połączenia</string>
     <string name="autoReconnectSum">W przypadku utraty połączenia ponownie nawiązuje połączenie z serwerem.</string>
     <string name="useTor">Połącz przez sieć Tor</string>
