@@ -52,8 +52,8 @@
     <string name="shortTtsMessages">Kısaltılmış metin okuma mesajları</string>
     <string name="autoReconnect">Otomatik yeniden bağlan</string>
     <string name="useTorSum">Orbot uygulamasını gerektirir.</string>
-    <string name="togglePtt">Bas konuş</string>
-    <string name="togglePttSum">Bas konuş özelliğini her basışta açar veya kapatır.</string>
+    <string name="togglePtt">Yapışkan bas konuş düğmesi</string>
+    <string name="togglePttSum">Bas konuş düğmesi iletimi açar/kapatır. Basılı tutmaya gerek yoktur.</string>
     <string name="audioInputVolume">Mikrofon ses seviyesi</string>
     <string name="inputQuality">Mikrofon giriş kalitesi</string>
     <string name="pttButtonHeight">Bas konuş düğmesi yüksekliği</string>
