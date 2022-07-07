@@ -79,8 +79,8 @@
     <string name="useTtsSum">Read incoming message aloud using speech synthesis.</string>
     <string name="shortTtsMessages">Shortened text-to-speech messages</string>
     <string name="shortTtsMessagesSum">Shorten the messages by only reading the domain names of links.</string>
-    <string name="togglePtt">Push-to-talk</string>
-    <string name="togglePttSum">Turns push-to-talk on or off for each press.</string>
+    <string name="togglePtt">Sticky Push-to-talk button</string>
+    <string name="togglePttSum">Push-to-talk button toggles transmission on/off. No need to hold it.</string>
     <string name="autoReconnect">Auto-reconnect</string>
     <string name="autoReconnectSum">Re-establishes connection to server when lost.</string>
     <string name="useTor">Connect via Tor</string>
