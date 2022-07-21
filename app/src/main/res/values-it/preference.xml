@@ -93,7 +93,7 @@
     <string name="hotCorner">Angolo push-to-talk</string>
     <string name="hidePtt">Nascondi pulsante push-to-talk</string>
     <string name="hidePttSum">Utile solo se si usa l\'angolo push-to-talk o il tasto fisico.</string>
-    <string name="togglePtt">Push-to-talk</string>
-    <string name="togglePttSum">A ogni pressione attiva o disattiva il push-to-talk.</string>
+    <string name="togglePtt">Pulsante Push-to-talk bloccato</string>
+    <string name="togglePttSum">La pressione del pulsante push-to-talk attiva o disattiva la trasmissione. Non è necessario tenerlo premuto.</string>
     <string name="pttButtonHeight">Altezza pulsante push-to-talk</string>
 </resources>
