@@ -20,6 +20,10 @@ of our libre project!
 
 ## Building on GNU/Linux
 
+TODO: Building is only verified to work using JDK 11. So you typically want
+`export JAVA_HOME=/usr/lib/jvm/java-11-openjdk`. Tracking issue:
+https://gitlab.com/quite/mumla/-/issues/108
+
 TODO: humla-spongycastle should be built as a sub-project of Humla's Gradle,
 but currently isn't.
 
@@ -30,6 +34,9 @@ but currently isn't.
     popd
 
     ./gradlew assembleDebug
+
+If you get an error running out of Java heap space, try raising the -Xmx in
+`./gradle.properties`.
 
 ### Notes
 
