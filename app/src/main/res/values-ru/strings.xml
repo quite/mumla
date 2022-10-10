@@ -23,14 +23,14 @@
     <string name="user_menu_local_mute">Заглушить локально</string>
     <string name="user_menu_ignore_messages">Игнорировать сообщения</string>
     <string name="user_menu_change_comment">Изменить комментарий</string>
-    <string name="user_menu_view_comment">Изменить комментарий</string>
+    <string name="user_menu_view_comment">Посмотреть комментарий</string>
     <string name="user_menu_reset_comment">Очистить комментарий</string>
-    <string name="user_menu_register">Регистрация</string>
+    <string name="user_menu_register">Зарегистрироваться</string>
     <!-- Channel menu -->
     <string name="channel_menu_pin">Закрепить</string>
     <!-- Comment Fragment -->
     <string name="comment_view">Просмотреть</string>
-    <string name="comment_edit_source">Изменить исходник</string>
+    <string name="comment_edit_source">Редактировать исходник</string>
     <string name="comment_view_source">Просмотреть исходник</string>
     <!-- Server Info Fragment -->
     <string name="control_channel">Канал управления</string>
@@ -128,7 +128,7 @@
     <string name="reconnect_dialog_message">Вы уже подключены к серверу. Хотите попробовать ещё раз\?</string>
     <string name="confirm_reset_comment">Вы действительно хотите очистить комментарий %s?</string>
     <string name="confirm">Подтвердить</string>
-    <string name="expand">Увеличить</string>
+    <string name="expand">Развернуть</string>
     <string name="temporary">Временный</string>
     <string name="position">Позиция</string>
     <string name="channel_edit">Редактировать канал</string>
