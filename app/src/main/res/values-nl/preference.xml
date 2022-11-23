@@ -1,7 +1,7 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="inputMethodVoice">Stem Activiteit</string>
-    <string name="inputMethodPtt">Push to Talk</string>
+    <string name="inputMethodVoice">Stem activiteit</string>
+    <string name="inputMethodPtt">Push-to-Talk</string>
     <string name="inputMethodContinuous">Doorlopend</string>
     <!--Theme names-->
     <string name="theme_light">Licht</string>
@@ -10,44 +10,44 @@
     <string name="theme_solarized_dark">Solarized Donker</string>
     <!--Hot corner-->
     <string name="hot_corner_none">Geen</string>
-    <string name="hot_corner_top_left">Top Links</string>
-    <string name="hot_corner_bottom_left">Bodem Links</string>
-    <string name="hot_corner_top_right">Top Rechts</string>
-    <string name="hot_corner_bottom_right">Bodem Rechts</string>
+    <string name="hot_corner_top_left">↖ bovenaan links</string>
+    <string name="hot_corner_bottom_left">↙ onderaan links</string>
+    <string name="hot_corner_top_right">Bovenaan rechts ↗</string>
+    <string name="hot_corner_bottom_right">Onderaan rechts ↘</string>
     <!--About-->
     <string name="about">Over</string>
-    <string name="acknowledgements">Dankbetuigingen</string>
+    <string name="acknowledgements">Bijdragers</string>
     <string name="acknowledgementsSum">Bekijk wie tot Mumla heeft bijgedragen</string>
     <string name="licenses">Licenties</string>
     <string name="authentication">Authenticatie</string>
     <string name="audioInputMethodSum">De methode van audio invoer.</string>
-    <string name="audioInputMethod">Doorstuur Methode</string>
-    <string name="audioInputVolume">Microfoon Volume</string>
+    <string name="audioInputMethod">Doorstuur methode</string>
+    <string name="audioInputVolume">Microfoon volume</string>
     <string name="audioInputVolumeSum">Microfoon volume vermeerdering om audio kunstmatig te normaliseren.</string>
-    <string name="detectionThreshold">Detectie Drempelwaarde</string>
+    <string name="detectionThreshold">Detectie drempelwaarde</string>
     <string name="detectionThresholdSum">De minimum geluidsnorm vereist om stemdetectie te starten.</string>
-    <string name="pttKey">Push to Talk Knop</string>
-    <string name="pttKeySum">Een hardware knop om Push to Talk aan te binden.</string>
-    <string name="hotCorner">Push to Talk Scherm Hoek</string>
-    <string name="hotCornerSum">Een specifieke hoek van het scherm dat, wanneer ingedrukt, Push to Talk activeert.</string>
+    <string name="pttKey">Push-to-talk knop</string>
+    <string name="pttKeySum">Een hardware knop om Push-to-talk aan te binden.</string>
+    <string name="hotCorner">Push-to-talk hoek</string>
+    <string name="hotCornerSum">Een specifieke hoek van het scherm dat, wanneer ingedrukt, Push-to-talk activeert.</string>
     <string name="general">Algemeen</string>
     <string name="appearance">Uiterlijk</string>
-    <string name="themeSum">Het applicatie thema.</string>
+    <string name="themeSum">Verander het uiterlijk van de app.</string>
     <string name="theme">Thema</string>
     <string name="advancedAudio">Geavanceerd</string>
-    <string name="forceTcp">Forceer TCP</string>
-    <string name="forceTcpSum">TCP communicatie forceren (UPD uitschakelen).</string>
+    <string name="forceTcp">Enkel TCP</string>
+    <string name="forceTcpSum">Schakelt UDP uit voor communicatie.</string>
     <string name="audio">Audio</string>
-    <string name="audioSampleRate">Invoer Sample Rate</string>
+    <string name="audioSampleRate">Invoer sample rate</string>
     <string name="audioSampleRateSum">De voorkeur audio sample rate. Niet alle rates worden door alle toestellen ondersteund.</string>
-    <string name="chatNotifications">Chat Notificaties</string>
-    <string name="chatNotificationsSum">Toon notificatie wanneer een gebruiker in chat post.</string>
-    <string name="defaultUsername">Standaard Gebruikersnaam</string>
+    <string name="chatNotifications">Chat notificaties</string>
+    <string name="chatNotificationsSum">Weergegeven voor nieuwe chat berichten.</string>
+    <string name="defaultUsername">Standaard gebruikersnaam</string>
     <string name="defaultUsernameSum">De standaard gebruikersnaam te gebruiken bij verbinding met servers.</string>
     <string name="defaultUsernameDefault">Mumla_Gebruiker</string>
-    <string name="certificateGenerate">Genereer Certificaat</string>
+    <string name="certificateGenerate">Genereer certificaat</string>
     <string name="certificateGenerateSum">Genereert een nieuw self-signed Mumla certificaat. Annbevolen voor beginners.</string>
-    <string name="pttSettings">Push to Talk Instellingen</string>
+    <string name="pttSettings">Push-to-talk instellingen</string>
     <string name="voiceActivitySettings">Stem Activatie Instellingen</string>
     <string name="disableOpus">Schakel Opus Codec uit</string>
     <string name="disableOpusSum">Schakel Opus Codec uit voor Mumble 1.2.4 servers.</string>
