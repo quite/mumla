@@ -87,7 +87,7 @@
     <string name="hotCorner">Hjørne for trykk-for-å-snakke.</string>
     <string name="disableOpus">Unngå Opus-kodek</string>
     <string name="disableOpusSum">Skrur av Opus-støtte for Mumble 1.2.4-tjenere.</string>
-    <string name="autoReconnectSum">Re-etablerer tilkobling tilkobling til tjeneren når den går tapt.</string>
+    <string name="autoReconnectSum">Re-etablerer tilkoblingen til tjeneren når den går tapt.</string>
     <string name="halfDuplexSum">Forstummer annen avspilling under trykk-for-å-snakke for å unngå lyd-tilbakekobling/feedback.</string>
     <string name="togglePttSum">Skrur trykk-for-å-snakke på og av for hvert trykk.</string>
     <string name="hidePtt">Skjul trykk-for-å-snakke -knapp</string>
