@@ -7,4 +7,14 @@
     <string name="inputMethodContinuous">Souvislé</string>
     <string name="theme_light">Světlé</string>
     <string name="theme_dark">Tmavé</string>
+    <string name="about">O aplikaci KiCad</string>
+    <string name="authentication">Ověření</string>
+    <string name="hot_corner_none">Vypnout</string>
+    <string name="hot_corner_top_left">↖Vlevo nahoře</string>
+    <string name="hot_corner_bottom_left">↙ Vlevo dole</string>
+    <string name="hot_corner_top_right">Vpravo nahoře ↗</string>
+    <string name="hot_corner_bottom_right">Vpravo dole ↘</string>
+    <string name="acknowledgements">Přispěvatelé</string>
+    <string name="licenses">Licence</string>
+    <string name="acknowledgementsSum">Podívejte se, kdo přispěl do Mumly (webový odkaz)</string>
 </resources>
