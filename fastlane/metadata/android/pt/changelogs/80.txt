@@ -1,0 +1,8 @@
+- I- Implementar pesquisa de registos SRV para endereço do servidor. Permite endereços de servidor simples como `example.net`, onde um registo SRV para o domínio no DNS indica
+s o anfitrião do servidor e porta a que se ligar. Ver: https://wiki.mumble.info/wiki/SRV_Record .
+
+- Allan Nordhøy retrabalhou as cordas de fonte inglesa.
+
+- Corrigir o pedido de permissão para o "push-to-talk" do hot-corner.
+
+- Remover animação de estado falante que foi quebrada de diferentes maneiras.
