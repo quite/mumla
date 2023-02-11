@@ -57,7 +57,7 @@
     <string name="useTtsSum">Читать входящие сообщения голосовым синтезатором.</string>
     <string name="shortTtsMessages">Сокращать сообщения</string>
     <string name="shortTtsMessagesSum">Сократить сообщения, читая вместо ссылок только доменные имена.</string>
-    <string name="togglePtt">Push-to-talk</string>
+    <string name="togglePtt">Кнопка Push-to-talk</string>
     <string name="togglePttSum">Переключать постоянное вещание по нажатию.</string>
     <string name="autoReconnect">Поддерживать соединение</string>
     <string name="autoReconnectSum">Автоматически пытаться восстановить соединение при обрыве связи.</string>
