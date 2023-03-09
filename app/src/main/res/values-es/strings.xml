@@ -164,7 +164,7 @@
     <string name="no_certificate">No hay certificado</string>
     <string name="chat_message_tts_short_link">(Link a %1$s)</string>
     <string name="donation_thanks">Gracias por la donación.</string>
-    <string name="orbot_tor_failed">No se pudo conector al proxy Tor en el puerto %d (SOCKS).
+    <string name="orbot_tor_failed">No se pudo conectar al proxy Tor local en el puerto %d (SOCKS).
 \n
 \nPor favor, asegúrese de que la aplicación Orbot se esté ejecutando.</string>
     <string name="orbot_not_installed">La aplicación Orbot no está instalada. Tor no se utiliza.</string>
