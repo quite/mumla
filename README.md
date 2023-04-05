@@ -18,6 +18,14 @@ If you want to help out translating Mumla, the project is [on
 Weblate](https://hosted.weblate.org/engage/mumla/) -- thanks for gratis hosting
 of our libre project!
 
+## Repository submodules
+
+Note that this Mumla git repository has submodule(s). You either need to clone
+it using `git clone --recursive`, or you need to get the submodule(s) in place
+after cloning:
+
+    git submodule update --init --recursive
+
 ## Building on GNU/Linux
 
 TODO: Building is only verified to work using JDK 11. So you typically want
