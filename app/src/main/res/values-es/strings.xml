@@ -115,8 +115,8 @@
     <string name="search_name">Nombre</string>
     <string name="search_country">País</string>
     <string name="information">Información</string>
-    <string name="error_fetching_servers">Error obteniendo servidores.
-\nCompruebe su conexión a Internet.</string>
+    <string name="error_fetching_servers">No se han podido recuperar los servidores.
+\n¿Estás conectado a Internet\?</string>
     <string name="overlay">Superposición</string>
     <string name="hint_reason">Razón</string>
     <string name="action_settings">Opciones</string>
@@ -162,20 +162,20 @@
     <string name="shout_failed">No se pudo crear el objetivo de voz.</string>
     <string name="certificate_import_success">Importó el certificado %s.</string>
     <string name="no_certificate">No hay certificado</string>
-    <string name="chat_message_tts_short_link">(Link a %1$s)</string>
+    <string name="chat_message_tts_short_link">(Enlace a %1$s)</string>
     <string name="donation_thanks">Gracias por la donación.</string>
     <string name="orbot_tor_failed">No se pudo conectar al proxy Tor local en el puerto %d (SOCKS).
 \n
 \nPor favor, asegúrese de que la aplicación Orbot se esté ejecutando.</string>
-    <string name="orbot_not_installed">La aplicación Orbot no está instalada. Tor no se utiliza.</string>
+    <string name="orbot_not_installed">La aplicación Orbot no está instalada. No uso Tor.</string>
     <string name="grant_perm_draw_over_apps">Por favor, da permiso para mostrar sobre otras aplicaciones.</string>
     <string name="grant_perm_microphone">Por favor, da permiso al micrófono.</string>
     <string name="grant_perm_storage">Por favor, da permiso al almacenamiento externo.</string>
-    <string name="shout_configure">Configura objetivo de voz</string>
-    <string name="shout_target">Está gritando a %s</string>
+    <string name="shout_configure">Especificar el destino del audio</string>
+    <string name="shout_target">Gritando a %s</string>
     <string name="shout_include_subchannels">Gritar en los subcanales</string>
     <string name="shout_include_linked">Gritar en los canales vinculados</string>
-    <string name="context_channel_shout">Establecer objetivo de voz</string>
+    <string name="context_channel_shout">Fijar el objetivo de la voz</string>
     <string name="context_channel_unlink_all">Desvincular todo</string>
     <string name="context_channel_link">Vincular</string>
     <string name="export_success">Certificado exportado a %s.</string>
