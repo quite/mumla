@@ -4,7 +4,7 @@
     <string name="drawer_open">Ouvrir Drawer</string>
     <string name="drawer_close">Fermer Drawer</string>
     <string name="drawer_not_connected">Pas connecté</string>
-    <string name="drawer_server">Serveur</string>
+    <string name="drawer_server">Tous les canaux</string>
     <string name="drawer_tokens">Jetons d\'accès</string>
     <string name="drawer_pinned">Salons épinglés</string>
     <string name="drawer_header_servers">Serveurs</string>
