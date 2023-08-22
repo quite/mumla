@@ -1,0 +1,5 @@
+此版本根据 Google 的要求将应用更新到新版 API 级别。希望一切都正常工作 🤞
+
+同时感谢来自他们的新翻译：AHOHNMYC、Nordhøy、DEN35、J. Lavoie、Josue Mosqueira、Konstantin Goncharik、Laurens Wuyts、Maite Guix、Matthaiks、Michal Bedáň、Oğuz Ersen、Rodrigo Garcia Martin、deluxghost、gallegonovato、pjammo、ssantos。
+
+您可以在这里贡献翻译：https://hosted.weblate.org/projects/mumla/
