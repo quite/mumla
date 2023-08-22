@@ -1,0 +1,1 @@
+Tilkobling over Tor ved bruk av Orbot bør fungere bedre, og flere meldinger i grensesnittet indikerer nå at Tor brukes. Tilkobling til skjulte tjenester via .onion-adresse fungerer også; DNS-utledning overlates til SOCKS-mellomtjeneren til Tor.
