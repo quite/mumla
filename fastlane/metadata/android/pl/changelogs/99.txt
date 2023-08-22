@@ -1,0 +1,5 @@
+To wydanie jest ukierunkowane na nowszy poziom interfejsu API, zgodnie z wymaganiami Google. Oby wszystko działało. 🤞
+
+Zawiera również nowe tłumaczenia dzięki tym autorom: AHOHNMYC, Nordhøy, DEN35, J. Lavoie, Josue Mosqueira, Konstantin Goncharik, Laurens Wuyts, Maite Guix, Matthaiks, Michal Bedáň, Oğuz Ersen, Rodrigo Garcia Martin, deluxghost, gallegonovato, pjammo, ssantos.
+
+Tłumaczenie odbywa się tutaj: https://hosted.weblate.org/projects/mumla/
