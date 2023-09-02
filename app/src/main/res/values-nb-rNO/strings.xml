@@ -201,4 +201,5 @@
     <string name="drawer_close">Lukk skuff</string>
     <string name="drawer_open">Åpne skuff</string>
     <string name="image_confirm_send">Send dette bildet\?</string>
+    <string name="grant_perm_notifications">Innvilg tilgang til å sende merknader.</string>
 </resources>
