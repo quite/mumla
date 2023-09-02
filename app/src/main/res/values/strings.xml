@@ -196,6 +196,7 @@
     <string name="shout_target">Shouting to %s</string>
     <string name="shout_configure">Configure Voice Target</string>
     <string name="grant_perm_microphone">Please grant microphone permission.</string>
+    <string name="grant_perm_notifications">Please grant permission to send notifications.</string>
     <string name="grant_perm_storage">Please grant external storage permission.</string>
     <string name="grant_perm_draw_over_apps">Please grant permission to display over other apps.</string>
     <string name="orbot_not_installed">The Orbot app is not installed. Not using Tor.</string>

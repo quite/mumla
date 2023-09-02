@@ -29,6 +29,7 @@ import android.content.res.Configuration;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.media.AudioManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.preference.PreferenceManager;
@@ -122,7 +123,9 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
     private DrawerAdapter mDrawerAdapter;
 
     private static final int PERMISSIONS_REQUEST_RECORD_AUDIO = 1;
+    private static final int PERMISSIONS_REQUEST_POST_NOTIFICATIONS = 2;
     private Server mServerPendingPerm = null;
+    private boolean mPermPostNotificationsAsked = false;
 
     private ProgressDialog mConnectingDialog;
     private AlertDialog mErrorDialog;
@@ -541,17 +544,38 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
     }
 
     public void connectToServer(final Server server) {
-        mServerPendingPerm = null;
+        mServerPendingPerm = server;
+        connectToServerWithPerm();
+    }
 
+    public void connectToServerWithPerm() {
         if (ContextCompat.checkSelfPermission(MumlaActivity.this,
                 Manifest.permission.RECORD_AUDIO)
                 != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(MumlaActivity.this,
                     new String[]{Manifest.permission.RECORD_AUDIO},
                     PERMISSIONS_REQUEST_RECORD_AUDIO);
-            mServerPendingPerm = server;
             return;
         }
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU && !mPermPostNotificationsAsked) {
+            if (ContextCompat.checkSelfPermission(MumlaActivity.this,
+                    Manifest.permission.POST_NOTIFICATIONS)
+                    != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(MumlaActivity.this,
+                        new String[]{Manifest.permission.POST_NOTIFICATIONS},
+                        PERMISSIONS_REQUEST_POST_NOTIFICATIONS);
+                return;
+            }
+        }
+
+        if (mServerPendingPerm == null) {
+            Log.w(TAG, "No pending server after getting permissions");
+            return;
+        }
+
+        Server server = mServerPendingPerm;
+        mServerPendingPerm = null;
 
         // Check if we're already connected to a server; if so, inform user.
         if(mService != null && mService.isConnected()) {
@@ -599,6 +623,40 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
         connectTask.execute(server);
     }
 
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
+                                           @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        if (grantResults.length == 0) {
+            return;
+        }
+
+        switch (requestCode) {
+            case PERMISSIONS_REQUEST_RECORD_AUDIO:
+                if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    connectToServerWithPerm();
+                } else {
+                    Toast.makeText(MumlaActivity.this, getString(R.string.grant_perm_microphone),
+                            Toast.LENGTH_LONG).show();
+                }
+                break;
+            case PERMISSIONS_REQUEST_POST_NOTIFICATIONS:
+                mPermPostNotificationsAsked = true;
+                if (grantResults[0] == PackageManager.PERMISSION_DENIED) {
+                    // This is inspired by https://stackoverflow.com/a/34612503
+                    if (ActivityCompat.shouldShowRequestPermissionRationale(MumlaActivity.this,
+                            Manifest.permission.POST_NOTIFICATIONS)) {
+                        Toast.makeText(MumlaActivity.this,
+                                getString(R.string.grant_perm_notifications), Toast.LENGTH_LONG).show();
+                    }
+                }
+                connectToServerWithPerm();
+                break;
+        }
+    }
+
     private boolean isPortOpen(final String host, final int port, final int timeout) {
         final AtomicBoolean open = new AtomicBoolean(false);
         try {
@@ -624,25 +682,6 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
         }
         return false;
     }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
-                                           @NonNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (requestCode == PERMISSIONS_REQUEST_RECORD_AUDIO) {
-            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                if (mServerPendingPerm != null) {
-                    connectToServer(mServerPendingPerm);
-                } else {
-                    Log.w(TAG, "No pending server after record audio permission was granted");
-                }
-            } else {
-                Toast.makeText(MumlaActivity.this, getString(R.string.grant_perm_microphone),
-                        Toast.LENGTH_LONG).show();
-            }
-        }
-    }
-
     public void connectToPublicServer(final PublicServer server) {
         AlertDialog.Builder alertBuilder = new AlertDialog.Builder(this);
 
