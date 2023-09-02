@@ -183,12 +183,15 @@
     <plurals name="search_channel_users">
         <item quantity="one">%d użytkownik</item>
         <item quantity="few">%d użytkowników</item>
+        <item quantity="many">%d użytkowników</item>
         <item quantity="other">%d użytkowników</item>
     </plurals>
     <plurals name="notification_unread_many">
         <item quantity="one">%d nowa wiadomość</item>
         <item quantity="few">%d nowe wiadomości</item>
+        <item quantity="many">%d nowych wiadomości</item>
         <item quantity="other">%d nowych wiadomości</item>
     </plurals>
     <string name="image_confirm_send">Wysłać ten obraz\?</string>
+    <string name="grant_perm_notifications">Proszę udzielić pozwolenia na wysyłanie powiadomień.</string>
 </resources>
