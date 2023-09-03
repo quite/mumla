@@ -1,0 +1,1 @@
+W tym wydaniu dodano prośbę o pozwolenie na wysyłanie powiadomień, które jest wymagana w systemie Android 13.
