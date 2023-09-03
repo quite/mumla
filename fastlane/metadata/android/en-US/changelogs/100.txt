@@ -1,0 +1,1 @@
+This release adds request for permission to send notifications, which is required on Android 13.
