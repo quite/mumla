@@ -132,7 +132,7 @@
     <string name="position">Posisjon</string>
     <string name="temporary">Midlertidig</string>
     <string name="expand">Utvid</string>
-    <string name="confirm">Koble til</string>
+    <string name="confirm">Bekreft</string>
     <string name="confirm_reset_comment">Er du sikker på at du ønsker å tilbakestille kommentaren til brukeren %s\?</string>
     <string name="reconnect_dialog_message">Du er allerede tilkoblet en tjener. Koble til denne tjeneren istedenfor\?</string>
     <string name="reconnect">Koble til igjen</string>
