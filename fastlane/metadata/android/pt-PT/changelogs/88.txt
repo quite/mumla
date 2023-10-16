@@ -1,1 +1,0 @@
-- Corrigir mais alguns bugs de crash
