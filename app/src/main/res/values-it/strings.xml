@@ -93,11 +93,13 @@
     <string name="allow">Consenti</string>
     <plurals name="search_channel_users">
         <item quantity="one">%d utente</item>
+        <item quantity="many">%d utenti</item>
         <item quantity="other">%d utenti</item>
     </plurals>
     <plurals name="notification_unread_many">
         <item quantity="one">%d nuovo messaggio</item>
-        <item quantity="other">%d nuovi messaggi</item>
+        <item quantity="many">%d utente</item>
+        <item quantity="other">%d utente</item>
     </plurals>
     <string name="decrypt_certificate">Decrittografa Certificato</string>
     <string name="current_chat_target">Destinazione chat attuale</string>
@@ -209,4 +211,5 @@
     <string name="user_menu_move">Sposta</string>
     <string name="chat_message_tts_short_link">(Collegamento a %1$s)</string>
     <string name="image_confirm_send">Inviare questa immagine\?</string>
+    <string name="grant_perm_notifications">Concedere l\'autorizzazione per inviare le notifiche.</string>
 </resources>
