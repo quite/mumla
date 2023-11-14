@@ -1,3 +1,24 @@
+
+# Software maintenance situation
+
+I, Lublin, have very little time to do voluntary work on Mumla. My focus is
+strictly on maintaining stability and security. This includes migrations to
+newer Android SDKs, as they become requirements by Google/Alphabet for even
+getting updates published on Google Play. There are also other maintenance and
+administrative work. I barely have time to get this done in a timely manner.
+
+At some point I expect Mumla to disappear from Google Play, because there will
+be some requirement that I did not have time to fulfill. Eventually it will
+also rot and no longer work well in general on newer releases of Android.
+
+Mumla needs a new maintainer that can allocate time to take on, to begin with,
+all these tasks. To maintain stability and security. And then hopefully also
+work with the community on for example protocol parity with desktop Mumble,
+support for various hardware accessories, general usability, and new features.
+
+Until there is a new maintainer with time on their hands you cannot expect new
+features, or even the continued existance of a usable Mumble app for Android.
+
 # Mumla
 
 Mumla is a fork and continuation of [Plumble](https://github.com/acomminos/Plumble),
