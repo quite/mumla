@@ -1,0 +1,5 @@
+Bu sürümde Google'ın gereksinimlerine göre uygulama daha yeni bir API düzeyine doğru hedeflendi. Umarım hepsi çalışır 🤞
+
+Ayrıca yeni çeviriler için teşekkürler: AHOHNMYC, Nordhøy, DEN35, J. Lavoie, Josue Mosqueira, Konstantin Goncharik, Laurens Wuyts, Maite Guix, Matthaiks, Michal Bedáň, Oğuz Ersen, Rodrigo Garcia Martin, deluxghost, gallegonovato, pjammo, ssantos.
+
+Çevirilere katkıda bulunmak için: https://hosted.weblate.org/projects/mumla/

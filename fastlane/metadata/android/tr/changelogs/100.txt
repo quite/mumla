@@ -1,0 +1,1 @@
+Bu sürümde Android 13'te gerekli olan bildirim gönderme izni isteği eklendi.
