@@ -83,4 +83,5 @@
     <string name="stay_awake">Mantener pantalla encendida</string>
     <string name="stay_awake_sum">La pantalla no se apagará mientras Mumla esté abierto.</string>
     <string name="shortTtsMessages">Mensajes acortados de texto a voz</string>
+    <string name="shortTtsMessagesSum">Acortar los mensajes leyendo sólo los nombres de dominio de los enlaces.</string>
 </resources>
