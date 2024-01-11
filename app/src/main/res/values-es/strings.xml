@@ -189,4 +189,5 @@
     <string name="certificates">Certificados</string>
     <string name="change_requires_reconnect">Reconectar para usar el opciones nuevos.</string>
     <string name="image_confirm_send">¿Enviar esta foto\?</string>
+    <string name="grant_perm_notifications">Por favor, autorice el envío de notificaciones.</string>
 </resources>
