@@ -49,8 +49,8 @@ after cloning:
 
 ## Building on GNU/Linux
 
-TODO: Building is only verified to work using JDK 11. So you typically want
-`export JAVA_HOME=/usr/lib/jvm/java-11-openjdk`. Tracking issue:
+TODO: Building is verified to work using JDK 17. So you typically want `export
+JAVA_HOME=/usr/lib/jvm/java-17-openjdk`. Tracking issue:
 https://gitlab.com/quite/mumla/-/issues/108
 
 TODO: humla-spongycastle should be built as a sub-project of Humla's Gradle,

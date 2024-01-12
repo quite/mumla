@@ -21,7 +21,7 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.0.4'
+        classpath 'com.android.tools.build:gradle:8.1.4'
     }
 }
 apply plugin: 'com.android.application'
@@ -53,7 +53,14 @@ allprojects {
 }
 
 android {
+    namespace 'se.lublin.mumla'
+
     compileSdkVersion 33
+
+    // gradle8: Need to enable this when defaultConfig below contains some custom BuildConfig
+    buildFeatures {
+        buildConfig true
+    }
 
     defaultConfig {
         minSdkVersion 14
@@ -107,7 +114,14 @@ android {
             }
         }
     }
-
+    lint {
+        abortOnError true
+        // InvalidPackage is spongycastle-related
+        disable 'InvalidPackage', 'MissingTranslation'
+        explainIssues true
+        ignoreWarnings false
+        quiet false
+    }
     // betas may be released every minute
     // TODO? dynamic stuff, have to rebuild a lot
     applicationVariants.all { variant ->
@@ -118,18 +132,6 @@ android {
         }
     }
 
-    lintOptions {
-        quiet false
-
-        // spongycastle-related
-        disable "InvalidPackage"
-
-        disable "MissingTranslation"
-
-        ignoreWarnings false
-        abortOnError true
-        explainIssues true
-    }
 }
 
 dependencies {
