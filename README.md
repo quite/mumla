@@ -67,18 +67,23 @@ but currently isn't.
 If you get an error running out of Java heap space, try raising the -Xmx in
 `./gradle.properties`.
 
-### Notes
+### Notes on NDK
 
-According to https://developer.android.com/studio/releases/gradle-plugin
-default NDK for Android Gradle Plugin 7.x is 21.4.7075529. It should be
-installed automatically (by Android Studio and/or the plugin right), but for me
-it wasn't.
+We're now building with Android Gradle Plugin (AGP) 8.x, which should come
+bundled with NDK version 25.1.8937393 that we currently use. The NDK is the
+toolchain used for building the native code (C/C++) of Humla, specified using
+`ndkVersion` in `libraries/humla/build.gradle`. Using newer NDK might give
+build errors. See also:
+https://developer.android.com/studio/projects/install-ndk
 
-I had to Bring up SDK Manager in Android Studio.
+If this version of the NDK does not get installed automatically by Android
+Studio (typically in a directory in `~/Android/Sdk/`), then you may be able
+to get it installed by using its SDK Manager like this:
+
 - Click SDK Tools tab.
 - Check "Show Package Details"
 - In the list view, expand "NDK (Side by side)"
-- Check 21.4.7075529
+- Check 25.1.8937393
 - Click OK
 
 ## License
