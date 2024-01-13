@@ -1,4 +1,4 @@
-image: docker.io/quite/android-sdk-ndk:5
+image: docker.io/quite/android-sdk-ndk:6
 
 variables:
   # get those pesky submodules
@@ -24,8 +24,7 @@ stages:
 assembleDebug:
   stage: build
   script:
-    - printf  >local.properties 'sdk.dir=/sdk\n'
-    - printf >>local.properties 'ndk.dir=/sdk/ndk-bundle\n'
+    # ANDROID_SDK_ROOT is already set in the android-sdk-ndk container image.
     - pushd libraries/humla/libs/humla-spongycastle
     - ../../gradlew jar
     - popd
