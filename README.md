@@ -69,16 +69,17 @@ If you get an error running out of Java heap space, try raising the -Xmx in
 
 ### Notes on NDK
 
-We're now building with Android Gradle Plugin (AGP) 8.x, which should come
-bundled with NDK version 25.1.8937393 that we currently use. The NDK is the
-toolchain used for building the native code (C/C++) of Humla, specified using
-`ndkVersion` in `libraries/humla/build.gradle`. Using newer NDK might give
-build errors. See also:
+The NDK is the toolchain used for building the native code (C/C++) of Humla,
+specified using `ndkVersion` in `libraries/humla/build.gradle`.
+
+We currently build with version 8.x of Android Gradle Plugin (AGP), which
+should come bundled with the version 25.1.8937393 of NDK that we currently use.
+Using newer NDK might give build errors. See also:
 https://developer.android.com/studio/projects/install-ndk
 
-If this version of the NDK does not get installed automatically by Android
-Studio (typically in a directory in `~/Android/Sdk/`), then you may be able
-to get it installed by using its SDK Manager like this:
+If Android Studio does not automatically install the mentioned version of the
+NDK (typically in a directory in `~/Android/Sdk/`) then you may be able to get
+it installed by using the SDK Manager:
 
 - Click SDK Tools tab.
 - Check "Show Package Details"
