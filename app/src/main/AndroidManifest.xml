@@ -23,6 +23,7 @@
         android:required="false" />
 
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" android:minSdkVersion="34" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission
@@ -85,7 +86,8 @@
         <service
             android:name=".service.MumlaService"
             android:exported="true"
-            android:enabled="true" />
+            android:enabled="true"
+            android:foregroundServiceType="microphone" />
 
         <activity
             android:name=".app.MumlaActivity"

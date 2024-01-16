@@ -357,7 +357,11 @@ public class MumlaService extends HumlaService implements
             setSelfMuteDeafState(mSettings.isMuted(), mSettings.isDeafened());
         }
 
-        registerReceiver(mTalkReceiver, new IntentFilter(TalkBroadcastReceiver.BROADCAST_TALK));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+            registerReceiver(mTalkReceiver, new IntentFilter(TalkBroadcastReceiver.BROADCAST_TALK), RECEIVER_EXPORTED);
+        } else {
+            registerReceiver(mTalkReceiver, new IntentFilter(TalkBroadcastReceiver.BROADCAST_TALK));
+        }
 
         if (mSettings.isHotCornerEnabled()) {
             mHotCorner.setShown(true);
