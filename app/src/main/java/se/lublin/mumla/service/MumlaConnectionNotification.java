@@ -31,7 +31,6 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.content.pm.ServiceInfo;
 import android.os.Build;
 
 import androidx.core.app.NotificationCompat;
@@ -166,8 +165,11 @@ public class MumlaConnectionNotification {
         if (mActionsShown) {
             // Add notification triggers
             Intent muteIntent = new Intent(BROADCAST_MUTE);
+            muteIntent.setPackage(mService.getPackageName());
             Intent deafenIntent = new Intent(BROADCAST_DEAFEN);
+            deafenIntent.setPackage(mService.getPackageName());
             Intent overlayIntent = new Intent(BROADCAST_OVERLAY);
+            overlayIntent.setPackage(mService.getPackageName());
 
             builder.addAction(R.drawable.ic_action_microphone,
                     mService.getString(R.string.mute), PendingIntent.getBroadcast(mService, 1,

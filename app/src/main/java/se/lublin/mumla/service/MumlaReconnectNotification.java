@@ -113,17 +113,20 @@ public class MumlaReconnectNotification {
         builder.setTicker(mContext.getString(R.string.mumlaDisconnected));
 
         Intent dismissIntent = new Intent(BROADCAST_DISMISS);
+        dismissIntent.setPackage(mContext.getPackageName());
         builder.setDeleteIntent(PendingIntent.getBroadcast(mContext, 2,
                 dismissIntent, FLAG_CANCEL_CURRENT | FLAG_IMMUTABLE));
 
         if (autoReconnect) {
             Intent cancelIntent = new Intent(BROADCAST_CANCEL_RECONNECT);
+            cancelIntent.setPackage(mContext.getPackageName());
             builder.addAction(R.drawable.ic_action_delete_dark,
                     mContext.getString(R.string.cancel_reconnect), PendingIntent.getBroadcast(mContext, 2,
                             cancelIntent, FLAG_CANCEL_CURRENT | FLAG_IMMUTABLE));
             builder.setOngoing(true);
         } else {
             Intent reconnectIntent = new Intent(BROADCAST_RECONNECT);
+            reconnectIntent.setPackage(mContext.getPackageName());
             builder.addAction(R.drawable.ic_action_move,
                     mContext.getString(R.string.reconnect), PendingIntent.getBroadcast(mContext, 2,
                             reconnectIntent, FLAG_CANCEL_CURRENT | FLAG_IMMUTABLE));
