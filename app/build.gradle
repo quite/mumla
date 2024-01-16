@@ -54,8 +54,8 @@ allprojects {
 
 android {
     namespace 'se.lublin.mumla'
+    compileSdk 34
 
-    compileSdkVersion 33
 
     // gradle8: Need to enable this when defaultConfig below contains some custom BuildConfig
     buildFeatures {
