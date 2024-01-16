@@ -1,4 +1,4 @@
-Adaptations for Mumla running on Android 14 (SDK 34). Hopefully it is not less than before.
+Adaptations for Mumla running on Android 14 (SDK 34). Hopefully it is not less stable than before.
 
 Thanks to Nicolas Peugnet for some some bug fixes in Humla internals.
 
