@@ -16,8 +16,7 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    android:installLocation="auto"
-    package="se.lublin.mumla">
+    android:installLocation="auto">
 
     <uses-feature
         android:name="android.hardware.microphone"

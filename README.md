@@ -49,9 +49,13 @@ after cloning:
 
 ## Building on GNU/Linux
 
-TODO: Building is only verified to work using JDK 11. So you typically want
-`export JAVA_HOME=/usr/lib/jvm/java-11-openjdk`. Tracking issue:
-https://gitlab.com/quite/mumla/-/issues/108
+Building is verified to work using JDK 17. So you typically want to set and
+export the JAVA_HOME environment variable like `export
+JAVA_HOME=/usr/lib/jvm/java-17-openjdk`.
+
+The Android SDK need to be specified as usual, for example by setting
+`ANDROID_SDK_ROOT`, or writing it to local.properties as `echo
+>local.properties sdk.dir=/home/user/Android/Sdk`
 
 TODO: humla-spongycastle should be built as a sub-project of Humla's Gradle,
 but currently isn't.
@@ -67,18 +71,25 @@ but currently isn't.
 If you get an error running out of Java heap space, try raising the -Xmx in
 `./gradle.properties`.
 
-### Notes
+### Notes on NDK
 
-According to https://developer.android.com/studio/releases/gradle-plugin
-default NDK for Android Gradle Plugin 7.x is 21.4.7075529. It should be
-installed automatically (by Android Studio and/or the plugin right), but for me
-it wasn't.
+The NDK is the toolchain used for building the native code (C/C++) of Humla. We
+specify the version needed using `ndkVersion` in
+`libraries/humla/build.gradle`.
 
-I had to Bring up SDK Manager in Android Studio.
+We currently use Android Gradle Plugin (AGP) version 8.x, which should come
+bundled with NDK 25.1.8937393 that we currently use. It is typically installed
+in a directory in `~/Android/Sdk/ndk/`. Using newer NDK might give build
+errors. See also: https://developer.android.com/studio/projects/install-ndk
+
+If Android Studio does not automatically install the mentioned version of the
+NDK in the mentioned directory, then you may be able to get it installed by
+using the SDK Manager:
+
 - Click SDK Tools tab.
 - Check "Show Package Details"
 - In the list view, expand "NDK (Side by side)"
-- Check 21.4.7075529
+- Check 25.1.8937393
 - Click OK
 
 ## License
