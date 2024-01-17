@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Richard Stallman → FSF"
+            android:text="example username → channel"
             android:textSize="11sp"
             android:id="@+id/list_chat_item_target"
             android:textColor="#999"
@@ -44,7 +44,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="I FIGHT FOR THE USERS!"
+            android:text="example message"
             android:id="@+id/list_chat_item_text"
             android:layout_marginBottom="4dp"
             android:textIsSelectable="true"/>
@@ -53,7 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="9:06 PM"
+            android:text="23:23:23"
             android:textSize="11sp"
             android:id="@+id/list_chat_item_time"
             android:textColor="#999"/>

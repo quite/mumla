@@ -38,16 +38,6 @@
         android:padding="8dp"
         tools:listitem="@layout/list_chat_item"></ListView>
 
-    <!--
-    <TextView
-        android:id="@+id/chat_target"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="To: Richard Matthew Stallman"
-        android:fontFamily="sans-serif-light"
-        android:padding="4dp"/>
-    -->
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
