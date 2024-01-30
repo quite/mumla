@@ -173,10 +173,12 @@
     <string name="default_">Défaut</string>
     <plurals name="search_channel_users">
         <item quantity="one">%d utilisateur</item>
+        <item quantity="many">%d utilisateurs</item>
         <item quantity="other">%d utilisateurs</item>
     </plurals>
     <plurals name="notification_unread_many">
         <item quantity="one">%d nouveau message</item>
+        <item quantity="many">%d nouveaux messages</item>
         <item quantity="other">%d nouveaux messages</item>
     </plurals>
     <string name="shout_include_linked">Voix vers les salons liés</string>
@@ -209,4 +211,5 @@
     <string name="change_requires_reconnect">Reconnectez-vous pour utiliser les nouveaux paramètres.</string>
     <string name="chat_message_tts_short_link">(Lien vers %1$s)</string>
     <string name="image_confirm_send">Envoyer cette image \?</string>
+    <string name="grant_perm_notifications">Veuillez accorder l\'autorisation d\'envoyer des notifications.</string>
 </resources>
