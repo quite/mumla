@@ -49,6 +49,7 @@ import se.lublin.humla.model.IChannel;
 import se.lublin.humla.model.IUser;
 import se.lublin.humla.model.Server;
 import se.lublin.humla.model.TalkState;
+import se.lublin.humla.util.HumlaDisconnectedException;
 import se.lublin.mumla.R;
 import se.lublin.mumla.db.MumlaDatabase;
 import se.lublin.mumla.drawable.CircleDrawable;
@@ -193,8 +194,9 @@ public class ChannelListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
             cvh.mJoinButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if (mService.isConnected())
+                    if (mService != null && mService.isConnected()) {
                         mService.HumlaSession().joinChannel(channel.getId());
+                    }
                 }
             });
 
@@ -228,7 +230,17 @@ public class ChannelListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
             uvh.mUserName.setText(user.getName());
 
             final int typefaceStyle;
-            if (mService.isConnected() && mService.HumlaSession().getSessionId() == user.getSession()) {
+
+            int selfSession = -1;
+            try {
+                if (mService != null) {
+                    selfSession = mService.HumlaSession().getSessionId();
+                }
+            } catch (HumlaDisconnectedException|IllegalStateException e) {
+                Log.d(TAG, "exception in onBindViewHolder: " + e);
+            }
+
+            if (mService != null && mService.isConnected() && user.getSession() == selfSession) {
                 typefaceStyle = Typeface.BOLD;
             } else {
                 typefaceStyle = Typeface.NORMAL;
@@ -296,8 +308,9 @@ public class ChannelListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
      * To be used after any channel tree modifications.
      */
     public void updateChannels() {
-        if (!mService.isConnected())
+        if (mService == null || !mService.isConnected()) {
             return;
+        }
 
         IHumlaSession session = mService.HumlaSession();
         mNodes.clear();

@@ -49,6 +49,7 @@ import se.lublin.humla.IHumlaService;
 import se.lublin.humla.IHumlaSession;
 import se.lublin.humla.model.IUser;
 import se.lublin.humla.model.WhisperTarget;
+import se.lublin.humla.util.HumlaDisconnectedException;
 import se.lublin.humla.util.HumlaObserver;
 import se.lublin.humla.util.IHumlaObserver;
 import se.lublin.humla.util.VoiceTargetMode;
@@ -82,13 +83,13 @@ public class ChannelFragment extends HumlaServiceFragment implements SharedPrefe
     private HumlaObserver mObserver = new HumlaObserver() {
         @Override
         public void onUserTalkStateUpdated(IUser user) {
-            if (!getService().isConnected()) {
+            if (getService() == null || !getService().isConnected()) {
                 return;
             }
             int selfSession;
             try {
                 selfSession = getService().HumlaSession().getSessionId();
-            } catch (IllegalStateException e) {
+            } catch (HumlaDisconnectedException|IllegalStateException e) {
                 Log.d(TAG, "exception in onUserTalkStateUpdated: " + e);
                 return;
             }
@@ -110,7 +111,7 @@ public class ChannelFragment extends HumlaServiceFragment implements SharedPrefe
 
         @Override
         public void onUserStateUpdated(IUser user) {
-            if (!getService().isConnected()) {
+            if (getService() == null || !getService().isConnected()) {
                 return;
             }
             int selfSession;
@@ -163,10 +164,14 @@ public class ChannelFragment extends HumlaServiceFragment implements SharedPrefe
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getAction()) {
                     case MotionEvent.ACTION_DOWN:
-                        getService().onTalkKeyDown();
+                        if (getService() != null) {
+                            getService().onTalkKeyDown();
+                        }
                         break;
                     case MotionEvent.ACTION_UP:
-                        getService().onTalkKeyUp();
+                        if (getService() != null) {
+                            getService().onTalkKeyUp();
+                        }
                         break;
                 }
                 return true;
@@ -273,8 +278,9 @@ public class ChannelFragment extends HumlaServiceFragment implements SharedPrefe
     }
 
     private void configureTargetPanel() {
-        if (!getService().isConnected())
+        if (getService() == null || !getService().isConnected()) {
             return;
+        }
 
         IHumlaSession session = getService().HumlaSession();
         VoiceTargetMode mode = session.getVoiceTargetMode();
@@ -307,8 +313,13 @@ public class ChannelFragment extends HumlaServiceFragment implements SharedPrefe
 
         boolean muted = false;
         if (getService() != null && getService().isConnected()) {
-            IUser user = getService().HumlaSession().getSessionUser();
-            muted = user.isMuted() || user.isSuppressed() || user.isSelfMuted();
+            IUser self = null;
+            try {
+                self = getService().HumlaSession().getSessionUser();
+            } catch (HumlaDisconnectedException|IllegalStateException e) {
+                Log.d(TAG, "exception in configureInput: " + e);
+            }
+            muted = self == null || self.isMuted() || self.isSuppressed() || self.isSelfMuted();
         }
         boolean showPttButton =
                 !muted &&

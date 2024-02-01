@@ -67,7 +67,7 @@ public class ChannelEditFragment extends DialogFragment {
         mTemporaryBox = (CheckBox) view.findViewById(R.id.channel_edit_temporary);
 
         // If we can only make temporary channels, remove the option.
-        if (mServiceProvider.getService().isConnected()) {
+        if (mServiceProvider.getService() != null && mServiceProvider.getService().isConnected()) {
             // TODO: we probably should just stop this dialog in its tracks if we're disconnected.
             IHumlaSession session = mServiceProvider.getService().HumlaSession();
             IChannel parentChannel = session.getChannel(getParent());
@@ -85,7 +85,7 @@ public class ChannelEditFragment extends DialogFragment {
                 .setPositiveButton(isAdding() ? R.string.add : R.string.save, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        if(isAdding() && mServiceProvider.getService().isConnected()) {
+                        if (isAdding() && mServiceProvider.getService() != null && mServiceProvider.getService().isConnected()) {
                             mServiceProvider.getService().HumlaSession().createChannel(getParent(),
                                     mNameField.getText().toString(),
                                     mDescriptionField.getText().toString(),

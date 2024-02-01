@@ -74,6 +74,10 @@ public class UserMenu implements PermissionsPopupMenu.IOnMenuPrepareListener, Po
         }
         int perms = mService.getPermissions();
         IChannel channel = mUser.getChannel();
+        if (channel == null) {
+            Log.d(TAG, "mUser.getChannel()==null in onMenuPrepare");
+            return;
+        }
         int channelPerms = channel.getId() != 0 ? channel.getPermissions() : perms;
 
         menu.findItem(R.id.context_kick).setVisible(

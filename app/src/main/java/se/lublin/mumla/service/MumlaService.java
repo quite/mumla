@@ -170,7 +170,19 @@ public class MumlaService extends HumlaService implements
 
         @Override
         public void onUserStateUpdated(IUser user) {
-            if(user.getSession() == getSessionId()) {
+            if (user == null) {
+                return;
+            }
+
+            int selfSession;
+            try {
+                selfSession = getSessionId();
+            } catch (IllegalStateException e) {
+                Log.d(TAG, "exception in onUserStateUpdated: " + e);
+                return;
+            }
+
+            if (user.getSession() == selfSession) {
                 mSettings.setMutedAndDeafened(user.isSelfMuted(), user.isSelfDeafened()); // Update settings mute/deafen state
                 if(mNotification != null) {
                     String contentText;
@@ -185,8 +197,7 @@ public class MumlaService extends HumlaService implements
                 }
             }
 
-            if (user.getTextureHash() != null &&
-                    user.getTexture() == null) {
+            if (user.getTextureHash() != null && user.getTexture() == null) {
                 // Update avatar data if available.
                 requestAvatar(user.getSession());
             }
@@ -261,8 +272,15 @@ public class MumlaService extends HumlaService implements
 
         @Override
         public void onUserTalkStateUpdated(IUser user) {
+            int selfSession = -1;
+            try {
+                selfSession = getSessionId();
+            } catch (IllegalStateException e) {
+                Log.d(TAG, "exception in onUserTalkStateUpdated: " + e);
+            }
+
             if (isConnectionEstablished() &&
-                    getSessionId() == user.getSession() &&
+                    user.getSession() == selfSession &&
                     getTransmitMode() == Constants.TRANSMIT_PUSH_TO_TALK &&
                     user.getTalkState() == TalkState.TALKING &&
                     mPTTSoundEnabled) {

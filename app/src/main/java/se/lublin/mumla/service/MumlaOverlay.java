@@ -21,6 +21,7 @@ import android.content.Context;
 import android.graphics.PixelFormat;
 import android.os.Build;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
@@ -40,6 +41,7 @@ import se.lublin.mumla.channel.ChannelAdapter;
  * Created by andrew on 26/09/13.
  */
 public class MumlaOverlay {
+    private static final String TAG = MumlaOverlay.class.getName();
 
     public static final int DEFAULT_WIDTH = 200;
     public static final int DEFAULT_HEIGHT = 240;
@@ -59,11 +61,21 @@ public class MumlaOverlay {
 
         @Override
         public void onUserJoinedChannel(IUser user, IChannel newChannel, IChannel oldChannel) {
-            if(user.getSession() == mService.getSessionId()) // Session user has changed channels
+            int selfSession;
+            try {
+                selfSession = mService.getSessionId();
+            } catch (IllegalStateException e) {
+                Log.d(TAG, "exception in onUserJoinedChannel: " + e);
+                return;
+            }
+
+            if (user.getSession() == selfSession) {
+                // Session user has changed channels
                 mChannelAdapter.setChannel(mService.getSessionChannel());
-            else if(newChannel.getId() == mService.getSessionChannel().getId() ||
-                    oldChannel.getId() == mService.getSessionChannel().getId())
+            } else if (newChannel.getId() == mService.getSessionChannel().getId() ||
+                    oldChannel.getId() == mService.getSessionChannel().getId()) {
                 mChannelAdapter.notifyDataSetChanged();
+            }
         }
     };
 

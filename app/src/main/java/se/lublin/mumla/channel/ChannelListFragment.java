@@ -33,6 +33,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -40,6 +41,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.view.ActionMode;
 import androidx.appcompat.widget.SearchView;
@@ -51,6 +53,7 @@ import se.lublin.humla.IHumlaService;
 import se.lublin.humla.IHumlaSession;
 import se.lublin.humla.model.IChannel;
 import se.lublin.humla.model.IUser;
+import se.lublin.humla.util.HumlaDisconnectedException;
 import se.lublin.humla.util.HumlaException;
 import se.lublin.humla.util.HumlaObserver;
 import se.lublin.humla.util.IHumlaObserver;
@@ -60,6 +63,7 @@ import se.lublin.mumla.db.DatabaseProvider;
 import se.lublin.mumla.util.HumlaServiceFragment;
 
 public class ChannelListFragment extends HumlaServiceFragment implements OnChannelClickListener, OnUserClickListener, SharedPreferences.OnSharedPreferenceChangeListener {
+    private static final String TAG = ChannelListFragment.class.getName();
 
     private IHumlaObserver mServiceObserver = new HumlaObserver() {
         @Override
@@ -71,8 +75,20 @@ public class ChannelListFragment extends HumlaServiceFragment implements OnChann
         public void onUserJoinedChannel(IUser user, IChannel newChannel, IChannel oldChannel) {
             mChannelListAdapter.updateChannels();
             mChannelListAdapter.notifyDataSetChanged();
-            if(getService().isConnected() &&
-                    getService().HumlaSession().getSessionId() == user.getSession()) {
+
+            if (getService() == null || !getService().isConnected()) {
+                return;
+            }
+
+            int selfSession;
+            try {
+                selfSession = getService().HumlaSession().getSessionId();
+            } catch (HumlaDisconnectedException|IllegalStateException e) {
+                Log.d(TAG, "exception in onUserJoinedChannel: " + e);
+                return;
+            }
+
+            if (user.getSession() == selfSession) {
                 scrollToChannel(newChannel.getId());
             }
         }
@@ -105,8 +121,9 @@ public class ChannelListFragment extends HumlaServiceFragment implements OnChann
         public void onUserRemoved(IUser user, String reason) {
             // If we are the user being removed, don't update the channel list.
             // We won't be in a synchronized state.
-            if (!getService().isConnected())
+            if (getService() == null || !getService().isConnected()) {
                 return;
+            }
 
             mChannelListAdapter.updateChannels();
             mChannelListAdapter.notifyDataSetChanged();
@@ -229,10 +246,12 @@ public class ChannelListFragment extends HumlaServiceFragment implements OnChann
             int foregroundColor = getActivity().getTheme().obtainStyledAttributes(new int[]{android.R.attr.textColorPrimaryInverse}).getColor(0, -1);
 
             IUser self = session.getSessionUser();
-            muteItem.setIcon(self.isSelfMuted() ? R.drawable.ic_action_microphone_muted : R.drawable.ic_action_microphone);
-            deafenItem.setIcon(self.isSelfDeafened() ? R.drawable.ic_action_audio_muted : R.drawable.ic_action_audio);
-            muteItem.getIcon().mutate().setColorFilter(foregroundColor, PorterDuff.Mode.MULTIPLY);
-            deafenItem.getIcon().mutate().setColorFilter(foregroundColor, PorterDuff.Mode.MULTIPLY);
+            if (self != null) {
+                muteItem.setIcon(self.isSelfMuted() ? R.drawable.ic_action_microphone_muted : R.drawable.ic_action_microphone);
+                deafenItem.setIcon(self.isSelfDeafened() ? R.drawable.ic_action_audio_muted : R.drawable.ic_action_audio);
+                muteItem.getIcon().mutate().setColorFilter(foregroundColor, PorterDuff.Mode.MULTIPLY);
+                deafenItem.getIcon().mutate().setColorFilter(foregroundColor, PorterDuff.Mode.MULTIPLY);
+            }
 
             MenuItem bluetoothItem = menu.findItem(R.id.menu_bluetooth);
             bluetoothItem.setChecked(session.usingBluetoothSco());
@@ -282,7 +301,7 @@ public class ChannelListFragment extends HumlaServiceFragment implements OnChann
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (getService() == null || !getService().isConnected())
             return super.onOptionsItemSelected(item);
 
@@ -290,19 +309,21 @@ public class ChannelListFragment extends HumlaServiceFragment implements OnChann
         int itemId = item.getItemId();
         if (itemId == R.id.menu_mute_button) {
             IUser self = session.getSessionUser();
-
-            boolean muted = !self.isSelfMuted();
-            boolean deafened = self.isSelfDeafened();
-            deafened &= muted; // Undeafen if mute is off
-            session.setSelfMuteDeafState(muted, deafened);
+            if (self != null) {
+                boolean muted = !self.isSelfMuted();
+                boolean deafened = self.isSelfDeafened();
+                deafened &= muted; // Undeafen if mute is off
+                session.setSelfMuteDeafState(muted, deafened);
+            }
 
             getActivity().supportInvalidateOptionsMenu();
             return true;
         } else if (itemId == R.id.menu_deafen_button) {
             IUser self = session.getSessionUser();
-
-            boolean deafened = !self.isSelfDeafened();
-            session.setSelfMuteDeafState(deafened, deafened);
+            if (self != null) {
+                boolean deafened = !self.isSelfDeafened();
+                session.setSelfMuteDeafState(deafened, deafened);
+            }
 
             getActivity().supportInvalidateOptionsMenu();
             return true;

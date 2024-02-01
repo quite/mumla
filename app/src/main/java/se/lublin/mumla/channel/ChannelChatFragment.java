@@ -111,7 +111,7 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
         @Override
         public void onUserJoinedChannel(IUser user, IChannel newChannel, IChannel oldChannel) {
             IHumlaService service = getService();
-            if (service.isConnected()) {
+            if (service != null && service.isConnected()) {
                 IHumlaSession session = service.HumlaSession();
                 if (user != null && session.getSessionUser() != null &&
                         user.equals(session.getSessionUser()) &&
@@ -365,10 +365,15 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
      * @throws HumlaDisconnectedException If the service is disconnected.
      */
     private void sendMessage(String message) throws HumlaDisconnectedException {
+        if (getService() == null) {
+            Log.d(TAG,"getService()==null in sendMessage");
+            return;
+        }
+        IHumlaSession session = getService().HumlaSession();
+
         String formattedMessage = markupOutgoingMessage(message);
         ChatTargetProvider.ChatTarget target = mTargetProvider.getChatTarget();
         IMessage responseMessage = null;
-        IHumlaSession session = getService().HumlaSession();
         if (target == null)
             responseMessage = session.sendChannelTextMessage(session.getSessionChannel().getId(), formattedMessage, false);
         else if (target.getUser() != null)
@@ -396,7 +401,9 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
         if (mChatAdapter != null) {
             mChatAdapter.clear();
         }
-        getService().clearMessageLog();
+        if (getService() != null) {
+            getService().clearMessageLog();
+        }
     }
 
     /**
@@ -421,6 +428,10 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
 
     @Override
     public void onServiceBound(IHumlaService service) {
+        if (getService() == null) {
+            return;
+        }
+
         mChatAdapter = new ChannelChatAdapter(getActivity(), service, getService().getMessageLog());
         mChatList.setAdapter(mChatAdapter);
         mChatList.post(new Runnable() {
