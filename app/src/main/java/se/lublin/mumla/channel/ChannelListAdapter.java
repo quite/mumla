@@ -326,23 +326,6 @@ public class ChannelListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
         }
     }
 
-    /**
-     * Updates the user's state icon with a nice animation.
-     * @param user The user to update.
-     * @param view The view containing this adapter.
-     */
-    public void animateUserStateUpdate(IUser user, RecyclerView view) {
-        long itemId = user.getSession() | USER_ID_MASK;
-        UserViewHolder uvh = (UserViewHolder) view.findViewHolderForItemId(itemId);
-        if (uvh != null) {
-            Drawable newState = getTalkStateDrawable(user);
-            if (!uvh.mUserTalkHighlight.getDrawable().getCurrent().getConstantState()
-                    .equals(newState.getConstantState())) {
-                uvh.mUserTalkHighlight.setImageDrawable(newState);
-            }
-        }
-    }
-
     private Drawable getTalkStateDrawable(IUser user) {
         Resources resources = mContext.getResources();
         if (user.isSelfDeafened()) {

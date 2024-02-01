@@ -17,7 +17,6 @@
 
 package se.lublin.mumla.channel;
 
-import android.animation.Animator;
 import android.content.SharedPreferences;
 import android.content.res.TypedArray;
 import android.os.Bundle;
@@ -329,33 +328,7 @@ public class ChannelFragment extends HumlaServiceFragment implements SharedPrefe
     }
 
     private void setTalkButtonHidden(final boolean hidden) {
-        if (hidden ^ mTalkButtonHidden) {
-            Settings settings = Settings.getInstance(getActivity());
-            mTalkView.animate()
-                    .setDuration(300)
-                    .translationY(hidden ? settings.getPTTButtonHeight() : 0)
-                    .setListener(new Animator.AnimatorListener() {
-                        @Override
-                        public void onAnimationStart(Animator animation) {
-                            mTalkView.setVisibility(View.VISIBLE);
-                        }
-
-                        @Override
-                        public void onAnimationEnd(Animator animation) {
-                            mTalkView.setVisibility(hidden ? View.GONE : View.VISIBLE);
-                        }
-
-                        @Override
-                        public void onAnimationCancel(Animator animation) {
-
-                        }
-
-                        @Override
-                        public void onAnimationRepeat(Animator animation) {
-
-                        }
-                    });
-        }
+        mTalkView.setVisibility(hidden ? View.GONE : View.VISIBLE);
         mTalkButtonHidden = hidden;
     }
 
