@@ -23,6 +23,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
+import android.graphics.drawable.Drawable.ConstantState;
 import android.os.RemoteException;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -323,6 +324,23 @@ public class ChannelListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
             }
         } catch (IllegalStateException e) {
             Log.d(TAG, "exception in updateChannels: " + e);
+        }
+    }
+
+    /**
+     * Update a user's state icon
+     * @param user The user to update.
+     * @param view The view containing this adapter.
+     */
+    public void updateUserStates(IUser user, RecyclerView view) {
+        long itemId = user.getSession() | USER_ID_MASK;
+        UserViewHolder uvh = (UserViewHolder) view.findViewHolderForItemId(itemId);
+        if (uvh != null) {
+            Drawable newState = getTalkStateDrawable(user);
+            ConstantState state = uvh.mUserTalkHighlight.getDrawable().getCurrent().getConstantState();
+            if (state != null && !state.equals(newState.getConstantState())) {
+                uvh.mUserTalkHighlight.setImageDrawable(newState);
+            }
         }
     }
 

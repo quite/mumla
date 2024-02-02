@@ -131,9 +131,14 @@ public class ChannelListFragment extends HumlaServiceFragment implements OnChann
 
         @Override
         public void onUserStateUpdated(IUser user) {
+            mChannelListAdapter.updateUserStates(user, mChannelView);
             getActivity().supportInvalidateOptionsMenu(); // Update self mute/deafen state
         }
 
+        @Override
+        public void onUserTalkStateUpdated(IUser user) {
+            mChannelListAdapter.updateUserStates(user, mChannelView);
+        }
     };
 
     private BroadcastReceiver mBluetoothReceiver = new BroadcastReceiver() {
