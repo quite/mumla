@@ -1,0 +1,5 @@
+Android 14 (SDK 34) üzerinde çalışan Mumla için uyarlamalar. Umarım eskisinden daha az kararlı değildir.
+
+Nicolas Peugnet'e Humla'nın iç kısımlarındaki bazı hata düzeltmeleri için teşekkürler.
+
+Birkaç çeviri güncellemesi, teşekkürler Allan Nordhøy, deluxghost, gallegonovato, Matthaiks, Oğuz Ersen, pjammo, riomccloud.

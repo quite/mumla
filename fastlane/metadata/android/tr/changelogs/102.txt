@@ -1,0 +1,3 @@
+Bu sürüm olası çökmeler için bazı düzeltmeler içerir.
+
+Mumla yakın zamanda Android 14 (SDK 34) üzerinde çalışacak şekilde uyarlandı. Umarım eskisinden daha az kararlı değildir.
