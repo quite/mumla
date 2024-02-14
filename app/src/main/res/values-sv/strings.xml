@@ -1,2 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="drawer_not_connected">Ej ansluten</string>
+    <string name="drawer_open">Öppna byrålåda</string>
+    <string name="drawer_server">Alla kanaler</string>
+    <string name="drawer_close">Stäng byrålåda</string>
+    <string name="chat_message_to">%1$s→ %2$s</string>
+    <string name="user_menu_kick">Sparka ut</string>
+    <string name="drawer_public">Publika servrar</string>
+    <string name="server_info_codec">Kodek: %s</string>
+    <string name="server_match_progress">Hittar en server…</string>
+    <string name="server_match_info">Namn: %1$s
+\nVärd: %2$s:%3$d
+\nAnvändare:%4$d / %5$d
+\nVersion: %6$s
+\nLand: %7$s
+\nLatens: %8$d ms</string>
+    <string name="server_username">Användarnamn</string>
+    <string name="add">Lägg till</string>
+    <string name="information">Information</string>
+    <string name="action_settings">Inställningar</string>
+    <string name="cancelled">Avbröts</string>
+    <string name="invalid_port_range">Ogiltig port (1-65535)</string>
+    <string name="change_requires_reconnect">Återansluter för att använda nya inställningar.</string>
+    <string name="temporary">Tillfällig</string>
+    <string name="invalid_password">Fel lösenord.</string>
+    <string name="send_message">Skicka meddelande</string>
+    <string name="shout_include_subchannels">Ropa till underkanaler</string>
+    <string name="shout_failed">Kunde inte skapa röstmål.</string>
+    <string name="shout_configure">Ställ in röstmål</string>
+    <string name="shout_target">Ropar till %s</string>
+    <string name="orbot_tor_failed">Kunde inte ansluta till en lokal Tor-proxy på port %d (SOCKS).
+\n
+\nVänligen försäkra dig om att Orbot-appen körs.</string>
+    <string name="donation_thanks">Tack för donationen.</string>
+    <string name="image_confirm_send">Skicka den här bilden?</string>
+    <string name="drawer_favorites">Favoriter</string>
+    <string name="drawer_header_servers">Servrar</string>
+    <string name="drawer_pinned">Fastnålade kanaler</string>
+    <string name="chat_message_tts_short_link">(Länk till %1$s)</string>
+    <string name="user_menu_ban">Bannlys</string>
+    <string name="user_menu_mute">Tysta ner</string>
+    <string name="user_menu_move">Flytta</string>
+    <string name="user_menu_priority_speaker">Prioriterad högtalare</string>
+    <string name="user_menu_ignore_messages">Ignorera meddelanden</string>
+    <string name="user_menu_change_comment">Ändra kommentar</string>
+    <string name="user_menu_view_comment">Visa kommentar</string>
+    <string name="user_menu_reset_comment">Återställ kommentar</string>
+    <string name="comment_view">Visa</string>
+    <string name="comment_edit_source">Redigera källa</string>
+    <string name="comment_view_source">Visa källa</string>
+    <string name="control_channel">Kontrollera kanal</string>
+    <string name="tcp_encryption_mode">Krypterad med 256-bitars AES-256-SHA</string>
+    <string name="voice_channel">Röstkanal</string>
+    <string name="udp_encryption_mode">Krypterad med 128-bitars OCB-AES-128</string>
+    <string name="server_info_protocol">Protokoll %s.</string>
+    <string name="server_info_version">%1$s (%2$s)</string>
+    <string name="server_info_max_bandwidth">Max %.1f kbit/s</string>
+    <string name="server_match_found">Servern hittades</string>
+    <string name="server_match_expand_country">Kunde inte hitta några optimala servrar i ditt land. Sök över hela världen?</string>
+    <string name="no_servers">Tryck på \"Lägg till\" från åtgärdsfältet för att lägga till en server först.</string>
+    <string name="server_password">Lösenord</string>
+    <string name="server_port">Port</string>
+    <string name="server_host">Adress</string>
+    <string name="server_label">Etikett</string>
+    <string name="connecting">Ansluter</string>
+    <string name="connecting_to_server">Ansluter till %s…</string>
+    <string name="ptt">Tryck-för-att-prata</string>
+    <string name="disconnect">Koppla ner</string>
+    <string name="disconnectSure">Är du säker på att du vill koppla ur från %s?</string>
+    <string name="save">Spara</string>
+    <string name="chat">Chatt</string>
+    <string name="hint_reason">Anledning</string>
+    <string name="reconnect_dialog_message">Du är redan ansluten till en server. Anslut till den här servern istället?</string>
+    <string name="confirm">Bekräfta</string>
+    <string name="expand">Expandera</string>
+    <string name="position">Position</string>
+    <string name="channel_add">Lägg till kanal</string>
+    <string name="tts_failed">Kunde inte starta TTS</string>
+    <string name="first_run_generate_certificate_title">Välkommen till Mumla.</string>
+    <string name="generate">Generera</string>
+    <string name="channel_menu_view_description">Visa beskrivning</string>
+    <string name="untrusted_certificate">Ej pålitligt certifikat</string>
+    <string name="allow">Tillåt</string>
+    <string name="attempting_reconnect">Fel: %s.
+\n
+\nÅteransluter…</string>
+    <string name="no_certificate">Inget certifikat</string>
+    <string name="password">Lösenord</string>
+    <string name="certificate_load_failed">Kunde inte ladda arkivets certifikat.</string>
+    <string name="certificate_import_success">Importera certifikatet %s.</string>
+    <string name="migration_certificate_success">Certifikatet migrerades.</string>
+    <string name="export_success">Certifikatet exporterades till %s.</string>
+    <string name="context_channel_shout">Ställ in röstmål</string>
+    <string name="shout_include_linked">Ropa till länkade kanaler</string>
+    <string name="orbot_not_installed">Orbot-appen är inte installerad. Använder inte Tor.</string>
+    <string name="default_">Standard</string>
+</resources>
