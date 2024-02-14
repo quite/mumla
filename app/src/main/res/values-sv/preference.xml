@@ -1,2 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="theme_solarized_dark">Mörkt solariserad</string>
+    <string name="hot_corner_none">Av</string>
+    <string name="about">Om</string>
+    <string name="acknowledgementsSum">Se vem som har bidragit till Mumla (webblänk)</string>
+    <string name="acknowledgements">Medverkande</string>
+    <string name="voiceActivitySettings">Inställningar för röstaktivitet</string>
+    <string name="certificateGenerate">Generera certifikat</string>
+    <string name="pttSettings">Inställningar för Tryck-för-att-prata</string>
+    <string name="disableOpus">Undvik Opus-kodek</string>
+    <string name="hidePtt">Dölj knappen tryck-för-att-prata</string>
+    <string name="useTts">Text-till-tal</string>
+    <string name="inputMethodPtt">Tryck-för-att-prata</string>
+    <string name="licenses">Licenser</string>
+    <string name="authentication">Autentisering</string>
+    <string name="audioInputVolume">Mikrofonvolym</string>
+    <string name="audioInputVolumeSum">Nivå att normalisera ljudet till.</string>
+    <string name="pttKeySum">Använd en fysisk knapp för att överföra ljud.</string>
+    <string name="appearance">Utseende</string>
+    <string name="themeSum">Ändra appens utseende.</string>
+    <string name="theme">Tema</string>
+    <string name="forceTcp">Endast TCP</string>
+    <string name="audio">Ljud</string>
+    <string name="autoReconnect">Återanslut automatiskt</string>
+    <string name="useTor">Anslut via Tor</string>
+    <string name="useTorSum">Kräver Orbot-appen.</string>
+</resources>
