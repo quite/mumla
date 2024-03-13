@@ -9,4 +9,71 @@
     <string name="drawer_public">Публічні сервери</string>
     <string name="drawer_open">Відкрити меню</string>
     <string name="drawer_pinned">Закріплені канали</string>
+    <string name="user_menu_local_mute">Заглушити локально</string>
+    <string name="user_menu_change_comment">Змінити коментар</string>
+    <string name="server_match_description">Mumla може автоматично знайти для вас порожній сервер, оптимізуючи розташування, версію та затримку.</string>
+    <string name="user_menu_ignore_messages">Ігнорувати повідомлення</string>
+    <string name="user_menu_view_comment">Переглянути коментар</string>
+    <string name="user_menu_reset_comment">Очистити коментар</string>
+    <string name="user_menu_register">Зареєструватися</string>
+    <string name="chat_message_to">%1$s → %2$s</string>
+    <string name="chat_message_tts_short_link">(Посилання на %1$s)</string>
+    <string name="user_menu_kick">Вигнати</string>
+    <string name="user_menu_ban">Заблокувати</string>
+    <string name="user_menu_mute">Приглушити</string>
+    <string name="user_menu_deafen">Оглушити</string>
+    <string name="user_menu_move">Перемістити</string>
+    <string name="user_menu_priority_speaker">Пріоритетний оратор</string>
+    <string name="channel_menu_pin">Закріпити</string>
+    <string name="comment_view">Переглянути</string>
+    <string name="comment_edit_source">Редагувати джерело</string>
+    <string name="comment_view_source">Переглянути джерело</string>
+    <string name="server_password">Пароль</string>
+    <string name="server_username">Ім\'я користувача</string>
+    <string name="server_port">Порт</string>
+    <string name="control_channel">Канал керування</string>
+    <string name="tcp_encryption_mode">Зашифровано за допомогою 256-бітного AES-256-SHA</string>
+    <string name="voice_channel">Голосовий канал</string>
+    <string name="udp_encryption_mode">Зашифровано за допомогою 128-бітного OCB-AES-128</string>
+    <string name="audio_bandwidth">Пропускна здатність аудіо</string>
+    <string name="server_info_protocol">Протокол %s.</string>
+    <string name="server_info_version">%1$s (%2$s)</string>
+    <string name="server_info_latency">Затримка %.2f мс</string>
+    <string name="server_info_host">Віддалений вузол %1$s (порт %2$d)</string>
+    <string name="server_info_codec">Кодек: %s</string>
+    <string name="server_info_max_bandwidth">Максимальна %.1f кбіт/с</string>
+    <string name="server_info_current_bandwidth">Поточна %.1f кбіт/с</string>
+    <string name="server_match">Знайти сервер</string>
+    <string name="server_match_progress">Пошук сервера…</string>
+    <string name="server_match_found">Сервер знайдено</string>
+    <string name="server_match_not_found">Не вдалося знайти сервер</string>
+    <string name="server_match_expand_country">Не вдалося знайти оптимальні сервери у вашій країні. Шукати по всьому світу?</string>
+    <string name="server_match_info">Назва: %1$s
+\nВузол: %2$s:%3$d
+\nКористувачів: %4$d/%5$d
+\nВерсія: %6$s
+\nКраїна: %7$s
+\nЗатримка: %8$d мс</string>
+    <string name="no_servers">Спочатку додайте сервер, натиснувши \'Додати\' в панелі керування.</string>
+    <string name="server_host">Адреса</string>
+    <string name="server_label">Позначка</string>
+    <string name="connecting">Підключення</string>
+    <string name="connecting_to_server">Підключення до %s…</string>
+    <string name="ptt">Натисни-щоб-говорити</string>
+    <string name="mute">Приглушити</string>
+    <string name="deafen">Заглушити</string>
+    <string name="disconnect">Відключитися</string>
+    <string name="disconnectSure">Ви дійсно хочете відключитися від %s?</string>
+    <string name="save">Зберегти</string>
+    <string name="add">Додати</string>
+    <string name="chat">Чат</string>
+    <string name="perm_denied">Відмовлено в доступі.</string>
+    <string name="connectionRefused">Відмовлено у підключенні</string>
+    <string name="confirm_delete_server">Ви дійсно бажаєте видалити цей сервер?</string>
+    <string name="confirm_delete_channel">Ви дійсно бажаєте видалити цей канал?</string>
+    <string name="reset_key">Скинути кнопку</string>
+    <string name="externalStorageUnavailable">Зовнішнє сховище недоступне, не вдалося завантажити сертифікат</string>
+    <string name="addFavorite">Додати в обране</string>
+    <string name="accessAdd">Додати токен доступу</string>
+    <string name="messageReceived">Нове повідомлення</string>
 </resources>
