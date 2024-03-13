@@ -1,2 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="drawer_close">Закрити меню</string>
+    <string name="drawer_not_connected">Не підключено</string>
+    <string name="drawer_server">Всі канали</string>
+    <string name="drawer_tokens">Токени доступу</string>
+    <string name="drawer_header_servers">Сервери</string>
+    <string name="drawer_favorites">Вибрані</string>
+    <string name="drawer_public">Публічні сервери</string>
+    <string name="drawer_open">Відкрити меню</string>
+    <string name="drawer_pinned">Закріплені канали</string>
+</resources>
