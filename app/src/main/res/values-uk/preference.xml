@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="inputMethodVoice">За порогом гучності</string>
+    <string name="inputMethodPtt">Push-to-talk</string>
+    <string name="inputMethodContinuous">Неперервно</string>
+    <string name="theme_light">Світла</string>
+    <string name="theme_dark">Темна</string>
+    <string name="theme_solarized_light">Світла Solarized</string>
+    <string name="theme_solarized_dark">Темна Solarized</string>
+    <string name="hot_corner_none">Викл</string>
+</resources>
