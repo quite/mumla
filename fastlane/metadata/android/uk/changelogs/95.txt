@@ -1,0 +1,5 @@
+Mumla тепер дозволяє вам розміщувати зображення в чаті. Дякуємо Bartkk0 за впровадження цієї функції і виправлення проблеми з власними повідомленнями в чаті!
+
+Також були перероблені і перекладені деякі повідомлення. Дякуємо Allan, Bartkk0, J. Lavoie, Matthaiks, Omar, Oğuz Ersen, deluxghost, nautilusx, pjammo.
+
+Переклади виконуються тут: https://hosted.weblate.org/projects/mumla/

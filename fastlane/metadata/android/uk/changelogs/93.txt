@@ -1,0 +1,7 @@
+Цей випуск призначений для адаптації Mumla до новіших версій Android, як це вимагається магазином Google Play. Тепер Mumla повинна працювати на Android 12.
+
+Зокрема, експорт сертифікатів клієнта Mumla був адаптований для роботи з Android 11+.
+
+Також додано нові переклади з моменту останнього випуску. Дякуємо! anonymous, Abidin, Alfonso, deluxghost, Gabriel, Jaroslav, Kityn, Maite, Oğuz, pjammo, Vinicius, WLJ, Wesley
+
+Переклади виконуються тут: https://hosted.weblate.org/projects/mumla/

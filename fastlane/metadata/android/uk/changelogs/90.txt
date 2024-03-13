@@ -1,0 +1,3 @@
+У цьому релізі ми маємо багато нових перекладів Mumla на різні мови. Включаючи повні переклади на тайську та фінську мови! Дякуємо всім -- Abidin Toumi, Alfonso Montero López, Allan Nordhøy, Carlos Pinto, Nikita Epifanov, SamiR, Torkel, WLJ, deluxghost, kityn, mv87, pjammo.
+
+Переклади виконуються тут: https://hosted.weblate.org/projects/mumla/
