@@ -2,7 +2,7 @@
 <resources>
     <string name="drawer_close">Закрити меню</string>
     <string name="drawer_not_connected">Не підключено</string>
-    <string name="drawer_server">Всі Канали</string>
+    <string name="drawer_server">Всі канали</string>
     <string name="drawer_tokens">Токени доступу</string>
     <string name="drawer_header_servers">Сервери</string>
     <string name="drawer_favorites">Вибрані</string>
@@ -78,7 +78,7 @@
     <string name="messageReceived">Нове повідомлення</string>
     <string name="temporary">Тимчасовий</string>
     <string name="channel_menu_view_description">Переглянути опис</string>
-    <string name="channel_join">Підключитися</string>
+    <string name="channel_join">Приєднатися</string>
     <string name="invalid_port_range">Неправильний порт (1-65535)</string>
     <string name="password">Пароль</string>
     <string name="attempting_reconnect">Помилка: %s
@@ -173,4 +173,37 @@
         <item quantity="many">%d нових повідомлень</item>
         <item quantity="other">%d нових повідомлень</item>
     </plurals>
+    <string name="generateCertSuccess">Ваш сертифікат встановлено та збережено як %s!</string>
+    <string name="generateCertFailure">Не вдалося згенерувати сертифікат.</string>
+    <string name="generateCertProgress">Генерація сертифіката…</string>
+    <string name="search">Пошук</string>
+    <string name="searchHint">Пошук каналів і користувачів</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="quickConnect">Швидке підключення</string>
+    <string name="connect">Підключитися</string>
+    <string name="connectToServer">Підключитися до сервера</string>
+    <string name="edit">Редагувати</string>
+    <string name="delete">Видалити</string>
+    <string name="remove">Вилучити</string>
+    <string name="messageToUser">Введіть повідомлення для користувача \"%s\"</string>
+    <string name="messageToChannel">Введіть повідомлення для каналу \"%s\"</string>
+    <string name="online">В мережі</string>
+    <string name="offline">Не в мережі</string>
+    <string name="clearChat">Очистити чат</string>
+    <string name="connected">Підключено</string>
+    <string name="mumlaConnected">Mumla підключена</string>
+    <string name="mumlaConnecting">Mumla підключається…</string>
+    <string name="mumlaDisconnected">Mumla відключена</string>
+    <string name="channel">Канал</string>
+    <string name="user">Користувач</string>
+    <string name="unknown">Невідомий</string>
+    <string name="sort">Сортування</string>
+    <string name="sortBy">Сортувати за…</string>
+    <string name="name">Назва</string>
+    <string name="country">Країна</string>
+    <string name="share">Поділитися</string>
+    <string name="description">Опис</string>
+    <string name="shareMessage">Приєднайтеся до цього Mumble-сервера за допомогою Mumla. %s</string>
+    <string name="status_notify_muted_and_deafened">Звук та мікрофон вимкнені.</string>
+    <string name="status_notify_muted">Мікрофон вимкнено.</string>
 </resources>
