@@ -2,7 +2,7 @@
 <resources>
     <string name="drawer_close">Закрити меню</string>
     <string name="drawer_not_connected">Не підключено</string>
-    <string name="drawer_server">Всі канали</string>
+    <string name="drawer_server">Всі Канали</string>
     <string name="drawer_tokens">Токени доступу</string>
     <string name="drawer_header_servers">Сервери</string>
     <string name="drawer_favorites">Вибрані</string>
