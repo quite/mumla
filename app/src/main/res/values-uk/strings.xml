@@ -76,4 +76,101 @@
     <string name="addFavorite">Додати в обране</string>
     <string name="accessAdd">Додати токен доступу</string>
     <string name="messageReceived">Нове повідомлення</string>
+    <string name="temporary">Тимчасовий</string>
+    <string name="channel_menu_view_description">Переглянути опис</string>
+    <string name="channel_join">Підключитися</string>
+    <string name="invalid_port_range">Неправильний порт (1-65535)</string>
+    <string name="password">Пароль</string>
+    <string name="attempting_reconnect">Помилка: %s
+\n
+\nПовторне підключення…</string>
+    <string name="invalid_certificate">Неможливо завантажити недійсний сертифікат.</string>
+    <string name="certificate_load_failed">Не вдалося зберегти сертифікат.</string>
+    <string name="certificate_import_success">Імпортовано сертифікат %s.</string>
+    <string name="close">Закрити</string>
+    <string name="search_name">Назва</string>
+    <string name="search_country">Країна</string>
+    <string name="information">Інформація</string>
+    <string name="error_fetching_servers">Не вдалося отримати список серверів.
+\nВи підключені до Інтернету?</string>
+    <string name="overlay">Оверлей</string>
+    <string name="hint_reason">Причина</string>
+    <string name="action_settings">Налаштування</string>
+    <string name="reconnect">Повторне підключення</string>
+    <string name="reconnect_dialog_message">Ви вже підключені до сервера. Натомість підключитися до цього сервера?</string>
+    <string name="confirm_reset_comment">Ви дійсно бажаєте очистити коментар користувача %s?</string>
+    <string name="confirm">Підтвердити</string>
+    <string name="expand">Розгорнути</string>
+    <string name="position">Позиція</string>
+    <string name="channel_edit">Редагувати канал</string>
+    <string name="channel_add">Додати канал</string>
+    <string name="tts_failed">Не вдалося запустити TTS</string>
+    <string name="mumble_url_parse_failed">Невірне Mumble-посилання.</string>
+    <string name="first_run_generate_certificate_title">Ласкаво просимо до Mumla.</string>
+    <string name="first_run_generate_certificate">Наполягаємо на створенні сертифіката, так як він необхідний для підключення до деяких серверів.</string>
+    <string name="generate">Згенерувати</string>
+    <string name="invalid_password">Невірний пароль.</string>
+    <string name="send_message">Надіслати повідомлення</string>
+    <string name="untrusted_certificate">Ненадійний сертифікат</string>
+    <string name="allow">Дозволити</string>
+    <string name="trust_added">Сертифікат додано до довіреного сховища</string>
+    <string name="trust_add_failed">Не вдалося додати сертифікат до довіреного сховища.</string>
+    <string name="trust_cleared">Довірене сховище очищено</string>
+    <string name="cancelled">Скасовано</string>
+    <string name="current_chat_target">Поточний одержувач повідомлень</string>
+    <string name="certificate_info">Одержувач:
+\n%1$s
+\n
+\nДійсний з:
+\n%2$s
+\n
+\nДійсний до:
+\n%3$s
+\n
+\nПідпис (SHA-1):
+\n%4$s
+\n
+\nПідпис (SHA-256):
+\n%5$s</string>
+    <string name="invalid_host">Неправильний вузол</string>
+    <string name="cancel_reconnect">Скасувати повторне підключення</string>
+    <string name="change_requires_reconnect">Повторно підключіться, щоб використовувати нові налаштування.</string>
+    <string name="no_certificate">Без сертифіката</string>
+    <string name="certificates">Сертифікати</string>
+    <string name="decrypt_certificate">Розшифрувати сертифікат</string>
+    <string name="migration_certificate_begin">Початок перенесення сертифіката…</string>
+    <string name="migration_certificate_success">Сертифікат перенесено.</string>
+    <string name="error_writing_to_storage">Не вдалося записати на зовнішнє сховище.</string>
+    <string name="export_success">Сертифікат експортовано в %s.</string>
+    <string name="context_channel_unlink_all">Від’єднати все</string>
+    <string name="context_channel_link">Поєднати</string>
+    <string name="context_channel_shout">Встановити ціллю для голосу</string>
+    <string name="shout_include_linked">Транслювати в поєднані канали</string>
+    <string name="shout_include_subchannels">Транслювати в підканали</string>
+    <string name="shout_failed">Не вдалося створити ціль для передачі.</string>
+    <string name="shout_target">Говоримо в %s</string>
+    <string name="shout_configure">Налаштувати ціль голосового повідомлення</string>
+    <string name="grant_perm_microphone">Будь-ласка, надайте дозвіл використовувати мікрофон.</string>
+    <string name="grant_perm_notifications">Будь-ласка, надайте дозвіл надсилати сповіщення.</string>
+    <string name="grant_perm_storage">Будь-ласка, надайте дозвіл використовувати зовнішнє сховище.</string>
+    <string name="grant_perm_draw_over_apps">Будь-ласка, надайте дозвіл відображати поверх інших програм.</string>
+    <string name="orbot_not_installed">Програма Orbot не встановлена. Tor не використовується.</string>
+    <string name="orbot_tor_failed">Не вдалося підключитися до локального Tor-проксі на порту %d (SOCKS).
+\n
+\nПереконайтеся, що програма Orbot запущена.</string>
+    <string name="default_">За замовчуванням</string>
+    <string name="donation_thanks">Дякуємо за пожертвування.</string>
+    <string name="image_confirm_send">Надіслати це зображення?</string>
+    <plurals name="search_channel_users">
+        <item quantity="one">%d користувач</item>
+        <item quantity="few">%d користувача</item>
+        <item quantity="many">%d користувачів</item>
+        <item quantity="other">%d користувачів</item>
+    </plurals>
+    <plurals name="notification_unread_many">
+        <item quantity="one">%d нове повідомлення</item>
+        <item quantity="few">%d нові повідомлення</item>
+        <item quantity="many">%d нових повідомлень</item>
+        <item quantity="other">%d нових повідомлень</item>
+    </plurals>
 </resources>
