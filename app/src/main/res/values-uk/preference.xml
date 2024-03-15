@@ -71,4 +71,26 @@
     <string name="loadImagesSum">Завантажувати і показувати зображення в чаті.</string>
     <string name="loadImages">Зовнішні зображення</string>
     <string name="clearServerCertificatesSum">Видалити всі довірені серверні сертифікати з Mumla.</string>
+    <string name="stay_awake_sum">Тримати дисплей увімкненим, коли Mumla відкрита.</string>
+    <string name="pref_import_certificate_summary">Імпортувати із зовнішнього сховища.</string>
+    <string name="pref_show_user_count_summary">Показувати кількість користувачів у дереві каналів.</string>
+    <string name="pref_start_upIn_pinned_mode_sum">Показувати тільки закріплені канали після підключення до сервера (приховує інші канали).</string>
+    <string name="halfDuplex">Одностороннє аудіо</string>
+    <string name="halfDuplexSum">Приглушує інші звуки під час передачі, щоб уникнути звукових петель та ехо.</string>
+    <string name="handsetMode">Гарнітура</string>
+    <string name="handsetModeSum">Використовувати передній динамік і датчик наближення для імітації традиційного телефонного дзвінка.</string>
+    <string name="pttSound">Звук \"Натисни-щоб-говорити\"</string>
+    <string name="pttSoundSum">Відтворення звукового ефекту при натисканні кнопки \"Натисни-щоб-говорити\".</string>
+    <string name="preprocessor_enabled">Попередня обробка вхідного сигналу</string>
+    <string name="preprocessor_enabled_sum">Придушення фонового шуму і нормалізація гучності.</string>
+    <string name="audio_per_packet">Звук на пакет</string>
+    <string name="audio_per_packet_sum">Довжина аудіо в голосовому пакеті.</string>
+    <string name="stay_awake">Тримати дисплей увімкненим</string>
+    <string name="pref_certificate_title">Сертифікат</string>
+    <string name="pref_certificate_summary">Використовується за замовчуванням при підключенні до сервера.</string>
+    <string name="pref_import_certificate_title">Імпортувати сертифікат</string>
+    <string name="pref_export_certificate_title">Експортувати сертифікат</string>
+    <string name="pref_export_certificate_summary">Експортувати до зовнішнього сховища.</string>
+    <string name="pref_show_user_count">Показувати кількість користувачів каналу</string>
+    <string name="pref_start_up_in_pinned_mode">Режим закріплених каналів</string>
 </resources>
