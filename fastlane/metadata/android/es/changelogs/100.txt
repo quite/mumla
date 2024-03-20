@@ -1,0 +1,1 @@
+Esta versión añade la solicitud de permiso para enviar notificaciones, que es necesaria en Android 13.

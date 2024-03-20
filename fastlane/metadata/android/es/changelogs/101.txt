@@ -1,0 +1,5 @@
+Adaptaciones para Mumla ejecutándose en Android 14 (SDK 34). Esperemos que no sea menos estable que antes.
+
+Gracias a Nicolas Peugnet por algunas correcciones de errores en los componentes internos de Humla.
+
+Algunas actualizaciones de traducción, gracias a Allan Nordhøy, Deluxghost, Gallegonovato, Matthews, Oğuz Ersen, Pjammo, Riomccloud.

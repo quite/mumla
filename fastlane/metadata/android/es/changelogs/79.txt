@@ -1,0 +1,1 @@
+Implementar la búsqueda de registros SRV para la dirección del servidor. Habilita direcciones de servidor simples como `example.net`, donde un registro SRV para el dominio en DNS indica el host del servidor y el puerto al que conectarse. Ver: https://wiki.mumble.info/wiki/SRV_Record
