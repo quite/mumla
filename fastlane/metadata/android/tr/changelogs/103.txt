@@ -1,0 +1,4 @@
+Bu sürümde Mumla tamamen Ukraynaca'ya çevrildi.
+Teşekkürler Andrii Karpenko ve Vasyl Voloshyn.
+
+Mumla yakın zamanda Android 14 (SDK 34) üzerinde çalışacak şekilde uyarlandı. Umarım eskisinden daha az kararlı değildir.
