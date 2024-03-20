@@ -1,0 +1,4 @@
+In this release, Mumla has been completely translation into Ukranian.
+Thank you Andrii Karpenko and Vasyl Voloshyn.
+
+Mumla was recently adapted for running on Android 14 (SDK 34). Hopefully it is not less stable than before.
