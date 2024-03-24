@@ -71,8 +71,8 @@
     <string name="drawer_server">Tots els canals</string>
     <string name="drawer_not_connected">No connectat</string>
     <string name="allow">Permet</string>
-    <string name="drawer_close">Tancar barra de navegació</string>
-    <string name="drawer_open">Obrir barra de navegació</string>
+    <string name="drawer_close">Tancar el calaix</string>
+    <string name="drawer_open">Obre el calaix</string>
     <string name="drawer_tokens">Tokens d\'accés</string>
     <string name="deafen">Ensordir</string>
     <string name="server_port">Port</string>
@@ -201,4 +201,5 @@
     <string name="channel_join">Unir-se</string>
     <string name="current_chat_target">Destí actual</string>
     <string name="image_confirm_send">Enviar aquesta imatge\?</string>
+    <string name="grant_perm_notifications">Doneu permís per enviar les notificacions, si us plau.</string>
 </resources>
