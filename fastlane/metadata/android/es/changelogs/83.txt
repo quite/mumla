@@ -1,0 +1,16 @@
+- Implementa la búsqueda de registros SRV para la dirección del servidor. Permite direcciones de servidor simples como `ejemplo.net`, donde un registro SRV para el dominio en DNS indica
+s el host del servidor y el puerto al que conectarse. Véase: https://wiki.mumble.info/wiki/SRV_Record .
+
+- Corregida la petición de permisos para el push-to-talk en hot-corner, para que deje de fallar.
+
+- Mostrar también el resumen SHA-256 en el diálogo de aceptación de certificado, y hacer el texto seleccionable.
+
+- Allan Nordhøy reelaboró las cadenas fuente en inglés.
+
+- R4SAS proporcionó una traducción completa al ruso.
+
+- Eliminar la animación del estado de conversación que estaba rota de diferentes maneras.
+
+- Utilizar los mismos iconos de estado de usuario en la superposición que en la lista principal de canales.
+
+- Corregir los iconos de fragmentos de token para el tema oscuro.
