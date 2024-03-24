@@ -1,0 +1,3 @@
+Aquesta versió conté algunes correccions per a possibles bloquejos.
+
+Mumla s'ha adaptat recentment per funcionar amb Android 14 (SDK 34). Esperem que sigui tan estable com l'anterior.

@@ -1,0 +1,5 @@
+Mumla ara permet publicar imatges al xat. Gràcies Bartkk0 per implementar-ho i per solucionar un problema amb els missatges de xat que desapareixien!
+
+També s'han reelaborat i traduït alguns missatges. Gràcies a Allan, Bartkk0, J. Lavoie, Matthaiks, Omar, Oğuz Ersen, deluxghost, nautilusx, pjammo.
+
+La traducció es fa aquí: https://hosted.weblate.org/projects/mumla/

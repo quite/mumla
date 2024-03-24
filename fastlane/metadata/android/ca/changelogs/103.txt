@@ -1,0 +1,4 @@
+En aquesta versió, Mumla s'ha traduit completament a l'ucraïnès.
+Gràcies Andrii Karpenko i Vasyl Voloshyn.
+
+Mumla s'ha adaptat recentment per funcionar amb Android 14 (SDK 34). Esperem que sigui tan estable com l'anterior.

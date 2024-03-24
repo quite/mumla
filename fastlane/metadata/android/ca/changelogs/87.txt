@@ -1,0 +1,6 @@
+- Jackal Zhao ha ajudat a millorar la traducció a xinès simplificat,
+- Mostra correctament la freqüència de mostreig predeterminada de 48 kHz a la GUI
+- Arregla l'obtenció de comentaris d'usuari llargs (> 127 bytes).
+- Arregla el restabliment dels comentaris breus dels usuaris
+- Corregeix l'exportació del certificat a l'emmagatzematge extern a Android 10
+- Solucioneauna dotzena d'errors possibles i reals

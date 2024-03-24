@@ -1,0 +1,15 @@
+- Implementar la cerca de registres SRV per a l'adreça del servidor. Habilita adreces de servidor simples com ara `example.net`, on un registre SRV per al domini al DNS indica l'amfitrió del servidor i el port al qual es connectar. Vegeu: https://wiki.mumble.info/wiki/SRV_Record .
+
+- Soluciona la sol·licitud de permís per al botó PTT, ja no es penja.
+
+- Mostra també el resum SHA-256 al diàleg d'acceptació del certificat i el text es pot seleccionar.
+
+- Allan Nordhøy ha reelaborat les cadenes en angles.
+
+- R4SAS ha proporcionat una traducció completa al rus.
+
+- Elimina l'animació d'estat en parlar, que es era trencada en diferents punts.
+
+- Utilitza les mateixes icones d'estat d'usuari a la superposició que a la llista de canals principal.
+
+- Corregeix les icones dels fragments de testimoni per al tema fosc.

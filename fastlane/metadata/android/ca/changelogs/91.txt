@@ -1,0 +1,3 @@
+Aquesta versió corregeix errors i i afegeix traduccions. En concret, ara Mumla està completament traduït al català! Gràcies Emma Farreras Compte per la gran feina. I gràcies abidin toumi, Allan Nordhøy, deluxghost, J. Lavoie, Matthaiks, Nikita Epifanov, Oğuz Ersen, pjammo, retiolus, salaman TK, Suleyman Bilgin.
+
+La traducció es fa aquí: https://hosted.weblate.org/projects/mumla/

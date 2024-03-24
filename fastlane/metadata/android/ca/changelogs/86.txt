@@ -1,0 +1,17 @@
+Aquesta és la primera versió a Google Play Store.
+
+- S'han corregit molts errors, especialment relacionats amb les sol·licituds de permís.
+
+- La connexió a través de Tor (Orbot) funciona millor i és compatible amb els serveis ocults (.onion).
+
+- Admet el registre DNS SRV per a la cerca d'adreces del servidor.
+
+- El diàleg del certificat mostra el resum SHA-256 i es pot copiar el text.
+
+- Allan Nordhøy ha reelaborat les cadenes en angles
+
+- R4SAS ha traduït Mumla al rus.
+
+- deluxghost ha traduït Mumla al xinès simplificat.
+
+- La consulta de la llista de servidors públics torna a funcionar.
