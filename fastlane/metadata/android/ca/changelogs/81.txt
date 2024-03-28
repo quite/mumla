@@ -1,10 +1,10 @@
-- Cercar regis. SRV per a l'adr. del serv. Permet adr. servidor simples com `example.net`, on un registre SRV per al dom. a DNS indica
-host del serv. i port conn. Veg.: https://wiki.mumble.info/wiki/SRV_Record.
+- Cerca els registres de SRV per a l'adreça del servidor. Permet adreces simples com `exemple.net`, amb un registre SRV que indiqui el DNS
+del servidor i el port de connexió. Vegeu: https://wiki.mumble.info/wiki/SRV_Record.
 
-- Allan Nordhøy ha reeditat les cad. del text en anglès.
+- Allan Nordhøy ha millorat el text en anglès.
 
-- Corregir la sol·licitud de permís per a prémer per parlar de la cant. activa.
+- Corregeix la sol·licitud de permís per a prémer per parlar de la cantonada.
 
-- Elimin. anim. d'estat de conver. trencada de diverses maneres.
+- Elimina l'animació de l'estat que donava problemes.
 
-- Mostrar compendi SHA-256 al diàleg d'accep. certific. i fer text seleccionable.
+- Mostra el resum SHA-256 al diàleg d'accep. certific. i permet seleccionar el text.

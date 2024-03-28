@@ -1,20 +1,20 @@
-Un client per al sistema de xat de veu de Mumble. Allotgeu-vos o connecteu-vos a un de molts servidors públics associatius (vegeu https://www.mumble.info). Mumla es la versió actualitzada i sotmesa a manteniment (una bifurcació) de l'aplicació Plumble.
+Un client per al sistema de xat de veu del Mumble. Connecteu al vostre servidor o a un dels molts servidors públics associats (vegeu https://www.mumble.info). El Mumla és la versió actualitzada i mantenida (un fork) de l'aplicació Plumble.
 
 Algunes de les característiques:
 
 * Generació, importació i exportació de certificats
 * Navegació per servidors públics
-* Transmissió activada per veu (predeterminada), o altres botons que es premen per a parlar
-* Compatible amb cascs Bluetooth
+* Transmissió activada per veu (predeterminada), o amb un botó Premeu per a parlar
+* Compatible amb els cascs Bluetooth
 * Registre automàtic al servidor
-* Tokens d'accés
-* Compatible amb còdecs d'Opus, CELT i Speex
+* Claus d'accés
+* Compatible amb els còdecs d'Opus, CELT i Speex
 * Reconnexió automàtica
-* Compatibilitat amb Tor amb l'aplicació Orbot
-* De veu a text per missatges (activat de forma predeterminada)
-* Tema clar i fosc
+* Compatibile amb Tor amb l'aplicació Orbot
+* Síntesi de veu dels missatges (activada per omisió)
+* Temes clar i fosc
 
-La transmissió activada per veu funciona millor si s'usen cascs. S'està perfeccionant la supressió de l'eco i la reducció del soroll.
-És útil afinar el llindar de detecció de la configuració.
+La transmissió activada per la veu funciona millor amb auriculars. Encara hem de millorar la supressió de l'eco i la reducció del soroll.
+Pot ser útil ajustar el llindar de detecció a la configuració.
 
-Mumla és un programari lliure amb copyleft. Més informació a: https://mumla-app.gitlab.io/
+El Mumla és un programari lliure amb copyleft. Podeu trobar més informació a: https://mumla-app.gitlab.io/

@@ -1,3 +1,3 @@
-Aquesta és una versió de traducció. Mumla ja està disponible en grec, gràcies Athanasios Plastiras!
+Aquesta és una versió de traducció. El Mumla ja està disponible en grec, gràcies Athanasios Plastiras!
 
-La traducció es fa aquí: https://hosted.weblate.org/projects/mumla/
+La traducció es manté aquí: https://hosted.weblate.org/projects/mumla/

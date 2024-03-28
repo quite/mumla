@@ -2,4 +2,4 @@ Aquesta versió adapta l'aplicació a un nivell d'API més recent, segons els re
 
 També incorpora noves traduccions gràcies a: AHOHNMYC, Nordhøy, DEN35, J. Lavoie, Josue Mosqueira, Konstantin Goncharik, Laurens Wuyts, Maite Guix, Matthaiks, Michal Bedáň, Oğuz Ersen, Rodrigo Garcia Martin, deluxghost, gallegonovato, pjammo, ssantos,
 
-La traducció es fa aquí: https://hosted.weblate.org/projects/mumla/
+La traducció es manté aquí: https://hosted.weblate.org/projects/mumla/

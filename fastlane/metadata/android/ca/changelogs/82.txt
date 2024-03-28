@@ -1,13 +1,14 @@
-- Implementar la cerca de registres SRV per a l'adreça del servidor. Habilita adreces de servidor simples com ara `example.net`, on un registre SRV per al domini al DNS indica l'amfitrió del servidor i el port al qual es connectar. Vegeu: https://wiki.mumble.info/wiki/SRV_Record
+- Cerca registres SRV. Permet adreces com `exemple.net`, un registre SRV indica al DNS el servidor i el port.
+Vegeu: https://wiki.mumble.info/wiki/SRV_Record.
 
-- Corregiu la sol·licitud de permís per a la conversa push-to-talk de la cantonada calenta, deixeu de bloquejar-vos.
+- El PTT ja no es bloqueja.
 
-- Mostrar també sha-256 digest en el diàleg d'acceptació de certificats, i fer que el text sigui seleccionable.
+- Mostra el resum sha-256 dels certificats, i el permet seleccionar.
 
-- Allan Nordhøy va reelaborar les cadenes de fonts angleses.
+- Allan Nordhøy ha millorat el text en anglès.
 
-- Eliminar l'animació de l'estat parlant que s'ha trencat de diferents maneres.
+- Elimina l'animació de l'estat que donava problemes.
 
-- Utilitzeu les mateixes icones d'estat d'usuari a la superposició que a la llista de canals principals
+- Mateixes icones a la superposició que a la llista de canals
 
-- Icones correctes de fragments de fitxes per a tema fosc
+- Icones correctes de fragments de claus del tema fosc
