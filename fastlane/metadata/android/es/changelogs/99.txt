@@ -1,0 +1,5 @@
+Esta versión orienta la aplicación hacia un nivel de API más reciente, según los requisitos de Google. Espero que todo funcione 🤞
+
+Incorporando también nuevas traducciones gracias a: AHOHNMYC, Nordhøy, DEN35, J. Lavoie, Josue Mosqueira, Konstantin Goncharik, Laurens Wuyts, Maite Guix, Matthaiks, Michal Bedáň, Oğuz Ersen, Rodrigo Garcia Martin, deluxghost, gallegonovato, pjammo, ssantos.
+
+La traducción se realiza aquí: https://hosted.weblate.org/projects/mumla/

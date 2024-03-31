@@ -1,0 +1,5 @@
+Mumla ahora te permite publicar imágenes en el chat. Gracias Bartkk0 por implementar esto, ¡y también por arreglar un problema con la desaparición de los mensajes del chat!
+
+También se han revisado y traducido algunos mensajes. Gracias a Allan, Bartkk0, J. Lavoie, Matthaiks, Omar, Oğuz Ersen, deluxghost, nautilusx, pjammo.
+
+La traducción se realiza aquí: https://hosted.weblate.org/projects/mumla/

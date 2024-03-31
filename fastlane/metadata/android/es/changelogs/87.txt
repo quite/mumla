@@ -1,0 +1,6 @@
+- Jackal Zhao ayudó a perfeccionar la traducción al simpl. Chino
+- Mostrar correctamente la frecuencia de muestreo predeterminada de 48 kHz en la interfaz gráfica de usuario.
+- Corrección de los comentarios largos de los usuarios (> 127 bytes)
+- Corrección del restablecimiento de los comentarios cortos de los usuarios
+- Corrección de la exportación de certificados a almacenamiento externo en Android 10
+- Arreglar una docena de errores de bloqueo posibles y reales
