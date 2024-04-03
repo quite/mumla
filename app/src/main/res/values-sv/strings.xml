@@ -10,7 +10,7 @@
     <string name="server_info_codec">Kodek: %s</string>
     <string name="server_match_progress">Hittar en server…</string>
     <string name="server_match_info">Namn: %1$s
-\nVärd: %2$s:%3$d
+\nServer och port: %2$s:%3$d
 \nAnvändare:%4$d / %5$d
 \nVersion: %6$s
 \nLand: %7$s
@@ -95,4 +95,111 @@
     <string name="shout_include_linked">Ropa till länkade kanaler</string>
     <string name="orbot_not_installed">Orbot-appen är inte installerad. Använder inte Tor.</string>
     <string name="default_">Standard</string>
+    <string name="server_info_current_bandwidth">Nuvarande %.1f kbit/s</string>
+    <string name="server_match_description">Mumla kan automatiskt hitta en tom server, optimerad för plats, version och latens.</string>
+    <string name="externalStorageUnavailable">Extern lagring otillgänglig, kan inte ladda certifikat</string>
+    <string name="searchHint">Sök kanaler och användare</string>
+    <string name="connectToServer">Anslut till Server</string>
+    <string name="online">Online</string>
+    <string name="clearChat">Rensa chatt</string>
+    <string name="mumlaConnected">Mumla ansluten</string>
+    <string name="channel">Kanal</string>
+    <string name="user">Användare</string>
+    <string name="unknown">Okänt</string>
+    <string name="sort">Sortera</string>
+    <string name="sortBy">Sortera efter…</string>
+    <string name="name">Name</string>
+    <string name="country">Land</string>
+    <string name="share">Dela</string>
+    <string name="description">Beskrivning</string>
+    <string name="trust_added">Certifikatet lades till i \"trust store\"</string>
+    <string name="drawer_tokens">Åtkomsttoken</string>
+    <string name="user_menu_deafen">Döva</string>
+    <string name="user_menu_local_mute">Tysta lokalt</string>
+    <string name="user_menu_register">Registrera</string>
+    <string name="channel_menu_pin">Fäst</string>
+    <string name="audio_bandwidth">Ljudbandbredd</string>
+    <string name="server_info_latency">%.2f ms latens</string>
+    <string name="server_info_host">Servernamn %1$s (port %2$d)</string>
+    <string name="server_match">Hitta server</string>
+    <string name="server_match_not_found">Kunde inte hitta server</string>
+    <string name="mute">Tysta</string>
+    <string name="deafen">Döva</string>
+    <string name="perm_denied">Åtkomst nekad.</string>
+    <string name="connectionRefused">Anslutningen nekades</string>
+    <string name="confirm_delete_server">Är du säker på att du vill ta bort den här servern?</string>
+    <string name="confirm_delete_channel">Är du säker på att du vill ta bort den här kanalen?</string>
+    <string name="reset_key">Återställ nyckel</string>
+    <string name="addFavorite">Lägg till favorit</string>
+    <string name="accessAdd">Lägg till åtkomsttoken</string>
+    <string name="messageReceived">Nytt meddelande</string>
+    <string name="generateCertSuccess">Ditt certifikat har ställts in och sparats som %s!</string>
+    <string name="generateCertFailure">Kunde inte generera certifikat.</string>
+    <string name="generateCertProgress">Genererar certifikat…</string>
+    <string name="search">Sök</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="quickConnect">Snabbanslutning</string>
+    <string name="connect">Anslut</string>
+    <string name="edit">Redigera</string>
+    <string name="remove">Ta bort</string>
+    <string name="delete">Ta bort</string>
+    <string name="messageToUser">Skriv ett meddelande till användaren \'%s\'</string>
+    <string name="messageToChannel">Skriv ett meddelande till kanalen \'%s\'</string>
+    <string name="offline">Nedkopplad</string>
+    <string name="connected">Ansluten</string>
+    <string name="mumlaConnecting">Mumla ansluter…</string>
+    <string name="mumlaDisconnected">Mumla frånkopplad</string>
+    <string name="shareMessage">Anslut till denna Mumble-server med Mumla. %s</string>
+    <string name="status_notify_muted_and_deafened">Tystad och dövad.</string>
+    <string name="status_notify_muted">Tystad.</string>
+    <string name="close">Stäng</string>
+    <string name="search_name">Namn</string>
+    <string name="search_country">Land</string>
+    <string name="error_fetching_servers">Kan inte hämta servrar.
+\nÄr du ansluten till Internet?</string>
+    <string name="overlay">Överlagring</string>
+    <string name="reconnect">Återanslut</string>
+    <string name="confirm_reset_comment">Är du säker på att du vill återställa kommentaren för användaren %s?</string>
+    <string name="channel_edit">Redigera kanal</string>
+    <string name="mumble_url_parse_failed">Mumble-URL:en är inte giltig.</string>
+    <string name="first_run_generate_certificate">Generering av certifikat rekommenderas starkt, och krävs för att ansluta till vissa servrar.</string>
+    <string name="trust_add_failed">Kunde ej lägga till certifikatet i \"trust store\".</string>
+    <string name="trust_cleared">Tillitsdatabasen har tömts</string>
+    <string name="current_chat_target">Nuvarande chattmål</string>
+    <string name="channel_join">Gå med</string>
+    <string name="certificate_info">Subject:
+\n%1$s
+\n
+\nGiltigt från:
+\n%2$s
+\n
+\nGiltigt för:
+\n%3$s
+\n
+\nDigest (SHA-1):
+\n%4$s
+\n
+\nDigest (SHA-256):
+\n%5$s</string>
+    <string name="cancel_reconnect">Avbryt återanslutning</string>
+    <string name="certificates">Certifikat</string>
+    <string name="decrypt_certificate">Avkryptera certifikat</string>
+    <string name="invalid_certificate">Ogiltigt certifikat kunde inte laddas.</string>
+    <string name="migration_certificate_begin">Påbörjar flytt av certifikat…</string>
+    <string name="error_writing_to_storage">Kan inte skriva till extern lagring.</string>
+    <string name="context_channel_link">Länka</string>
+    <string name="context_channel_unlink_all">Avlänka alla</string>
+    <string name="invalid_host">Felaktigt servernamn</string>
+    <string name="grant_perm_microphone">Vänligen ge mikrofontillstånd.</string>
+    <string name="grant_perm_notifications">Vänligen ge tillstånd för aviseringar.</string>
+    <string name="grant_perm_storage">Vänligen ge åtkomst till extern lagring.</string>
+    <string name="grant_perm_draw_over_apps">Vänligen ge tillstånd för överlagring på andra appar.</string>
+    <plurals name="search_channel_users">
+        <item quantity="one">%d användare</item>
+        <item quantity="other">%d användare</item>
+    </plurals>
+    <plurals name="notification_unread_many">
+        <item quantity="one">%d nytt meddelande</item>
+        <item quantity="other">%d nya meddelanden</item>
+    </plurals>
 </resources>
