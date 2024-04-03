@@ -6,21 +6,29 @@ cd "${0%/*}"
 langdirs=(app/src/main/res/values-?? app/src/main/res/values-??-r??)
 readarray -td '' langdirs < <(printf '%s\0' "${langdirs[@]}" | sort -z)
 
-readarray -t exclude < <(curl -sSf -L https://hosted.weblate.org/api/projects/mumla/languages/ \
-                           | jq -r '.[] | select(.translated_percent < 40) | "\(.code)"')
-printf "excluding languages with translated_percent < 40: %s\n" "${exclude[*]}"
+count_strings() {
+  code=$1
+  [[ -n "$code" ]] && code="-$code"
+  grep -h -c "</string>" "app/src/main/res/values$code/"{strings,preference}.xml "libraries/humla/src/main/res/values$code/strings.xml" \
+    | awk '{s+=$1} END {print s}'
+}
+
+en=$(count_strings "")
 
 declare -a langs
+declare -a excluded
 for lang in "${langdirs[@]}"; do
   lang=${lang##*/}
   lang=${lang#values-}
-  re="\<$lang\>"
-  if [[ "${exclude[*]}" =~ $re ]]; then
+  percent=$(( $(count_strings "$lang") * 100 / en ))
+  if (( percent < 40 )); then
+    excluded+=("$lang ($percent%)")
     continue
   fi
   langs+=("$lang")
 done
 printf "included languages: %s\n" "${langs[*]}"
+printf "excluded languages: %s\n" "${excluded[*]}"
 
 destf=app/src/main/res/xml/local_config.xml
 cat >"$destf" <<-EOF
