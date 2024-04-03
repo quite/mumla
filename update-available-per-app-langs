@@ -1,0 +1,42 @@
+#!/bin/bash
+set -eu
+
+cd "${0%/*}"
+
+langdirs=(app/src/main/res/values-?? app/src/main/res/values-??-r??)
+readarray -td '' langdirs < <(printf '%s\0' "${langdirs[@]}" | sort -z)
+
+readarray -t exclude < <(curl -sSf -L https://hosted.weblate.org/api/projects/mumla/languages/ \
+                           | jq -r '.[] | select(.translated_percent < 40) | "\(.code)"')
+printf "excluding languages with translated_percent < 40: %s\n" "${exclude[*]}"
+
+declare -a langs
+for lang in "${langdirs[@]}"; do
+  lang=${lang##*/}
+  lang=${lang#values-}
+  re="\<$lang\>"
+  if [[ "${exclude[*]}" =~ $re ]]; then
+    continue
+  fi
+  langs+=("$lang")
+done
+printf "included languages: %s\n" "${langs[*]}"
+
+destf=app/src/main/res/xml/local_config.xml
+cat >"$destf" <<-EOF
+<?xml version="1.0" encoding="utf-8"?>
+<locale-config xmlns:android="http://schemas.android.com/apk/res/android">
+EOF
+for lang in en-US "${langs[@]}"; do
+  printf >>"$destf" '    <locale android:name="%s" />\n' "$lang"
+done
+printf >>"$destf" "</locale-config>\n"
+printf "wrote %s\n" "$destf"
+
+new='resourceConfigurations += ["en"'
+for lang in "${langs[@]}"; do
+  new=$(printf '%s, "%s"' "$new" "$lang")
+done
+new="$new]"
+sed -i "s/resourceConfigurations .*/$new/" app/build.gradle
+printf "updated app/build.gradle\n"
