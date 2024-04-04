@@ -1,0 +1,6 @@
+This release adds support for the per-app language setting in Android 13 and later. In settings System / Languages / App Languages you can pick the language that Mumla should use, from those available.
+
+The languages available in Mumla are those which have been translated to 40% or more.
+You can help translating Mumla at https://hosted.weblate.org/engage/mumla/
+
+Mumla was recently adapted for running on Android 14 (SDK 34). Hopefully it is not less stable than before.
