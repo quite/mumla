@@ -1,0 +1,6 @@
+W tym wydaniu dodano obsługę ustawień języka dla poszczególnych aplikacji w systemie Android 13 i nowszych. W ustawieniach System / Języki / Języki aplikacji możesz wybrać język, którego Mumla ma używać, spośród dostępnych.
+
+Języki dostępne w Mumla to te, które przetłumaczono w 40% lub więcej.
+Możesz pomóc w tłumaczeniu na https://hosted.weblate.org/engage/mumla/
+
+Mumla została niedawno przystosowana do działania na systemie Android 14 (SDK 34). Oby nie była mniej stabilna niż wcześniej.
