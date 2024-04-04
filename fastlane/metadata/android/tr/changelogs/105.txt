@@ -1,0 +1,6 @@
+Bu sürüm, Android 13 ve sonrasında uygulama başına dil ayarı için destek ekler. Sistem / Diller / Uygulama Dilleri ayarlarından Mumla'nın kullanması gereken dili seçebilirsiniz.
+
+Mumla'da %40 veya daha fazlasına çevrilmiş olan dilleri kullanabilirsiniz.
+Mumla'nın çevrilmesine https://hosted.weblate.org/engage/mumla/ adresinden yardımcı olabilirsiniz.
+
+Mumla yakın zamanda Android 14 (SDK 34) üzerinde çalışacak şekilde uyarlandı. Umarım eskisinden daha az kararlı değildir.
