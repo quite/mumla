@@ -113,4 +113,93 @@
     <string name="close">Bezárás</string>
     <string name="search_country">Ország</string>
     <string name="information">Információ</string>
+    <string name="overlay">Átfedés</string>
+    <string name="hint_reason">Indok</string>
+    <string name="action_settings">Beállítások</string>
+    <string name="reconnect">Újrakapcsolódás</string>
+    <string name="reconnect_dialog_message">Már csatlakoztál egy szerverhez. Inkább ehhez a kiszolgálóhoz csatlakoznál?</string>
+    <string name="temporary">Ideiglenes</string>
+    <string name="position">Pozíció</string>
+    <string name="generate">Generálás</string>
+    <string name="invalid_password">Rossz jelszó.</string>
+    <string name="send_message">Üzenet küldése</string>
+    <string name="channel_menu_view_description">Megjegyzést megtekint</string>
+    <string name="untrusted_certificate">Nem megbízható tanúsítvány</string>
+    <string name="trust_added">Tanúsítvány hozzáadása a biztonságos tárolóhoz</string>
+    <string name="trust_add_failed">A tanúsítványt nem sikerült hozzáadni a biztonságos tárolóhoz.</string>
+    <string name="trust_cleared">Megbízható adatbázis törölve</string>
+    <string name="cancelled">Törölve</string>
+    <string name="current_chat_target">Csevegő címzettje</string>
+    <string name="invalid_port_range">Helytelen portszám (1-65535)</string>
+    <string name="cancel_reconnect">Újracsatlakozás megszakítása</string>
+    <string name="certificates">Tanúsítványok</string>
+    <string name="certificate_load_failed">Nem sikerült eltárolni a tanúsítványt.</string>
+    <string name="certificate_import_success">Importált tanúsítvány: %s.</string>
+    <string name="migration_certificate_begin">Tanúsítvány migráció kezdése…</string>
+    <string name="export_success">Tanúsítvány exportálva: %s.</string>
+    <string name="context_channel_link">Összekapcsol</string>
+    <string name="context_channel_shout">Hangcél beállítása</string>
+    <string name="shout_include_subchannels">Kiáltás alcsatornákra</string>
+    <string name="shout_failed">Nem sikerült létrehozni a hangcélt.</string>
+    <string name="shout_target">Kiáltás neki: %s</string>
+    <string name="grant_perm_microphone">Kérlek, adj engedélyt a mikrofonhoz.</string>
+    <string name="shout_configure">Hangcél konfigurálása</string>
+    <string name="default_">Alapértelmezett</string>
+    <string name="donation_thanks">Köszönjük a támogatást.</string>
+    <string name="image_confirm_send">Elküldöd az üzenetet?</string>
+    <plurals name="notification_unread_many">
+        <item quantity="one">%d új üzenet</item>
+        <item quantity="other">%d új üzenetek</item>
+    </plurals>
+    <string name="error_fetching_servers">Nem sikerült lekérni a szerverek listáját.
+\nBiztosan csatlakozol az Internethez?</string>
+    <string name="confirm">Megerősítés</string>
+    <string name="expand">Kibővít</string>
+    <string name="channel_edit">Csatorna szerkesztése</string>
+    <string name="channel_add">Csatorna hozzáadása</string>
+    <string name="tts_failed">Nem sikerült a Text To Speech indítása</string>
+    <string name="mumble_url_parse_failed">Ez a Mumble URL helytelen.</string>
+    <string name="first_run_generate_certificate_title">Üdvözöl a Mumla.</string>
+    <string name="channel_join">Belépés</string>
+    <string name="certificate_info">Tárgy:
+\n%1$s
+\n
+\nÉrvényes ekkortól:
+\n%2$s
+\n
+\nÉrvényes eddig:
+\n%3$s
+\n
+\nDigest (SHA-1):
+\n%4$s
+\n
+\nDigest (SHA-256):
+\n%5$s</string>
+    <string name="attempting_reconnect">Hiba: %s.
+\n
+\nÚjracsatlakozás…</string>
+    <string name="no_certificate">Nincs tanúsítvány</string>
+    <string name="decrypt_certificate">Tanúsítvány dekódolása</string>
+    <string name="invalid_host">Helytelen kiszolgáló</string>
+    <string name="change_requires_reconnect">A beállítások használatához csatlakozz újra.</string>
+    <string name="first_run_generate_certificate">A tanúsítványok generálása és használata erősen ajánlott. Bizonyos kiszolgálók csak tanúsítvány alapú hitelesítést fogadnak el.</string>
+    <string name="password">Jelszó</string>
+    <string name="invalid_certificate">Helytelen tanúsítvány, nem került betöltésre.</string>
+    <string name="allow">Engedélyez</string>
+    <string name="confirm_reset_comment">Biztosan vissza akarod állítani a(z) %s nevű felhasználó megjegyzését?</string>
+    <string name="migration_certificate_success">Tanúsítvány sikeresen migrálva.</string>
+    <string name="error_writing_to_storage">Nem lehet írni a külső tárolóba.</string>
+    <string name="context_channel_unlink_all">Összes szétválasztása</string>
+    <string name="shout_include_linked">Kiáltás a kapcsolt csatornákra</string>
+    <string name="grant_perm_notifications">Kérlek, adj engedélyt az értesítések küldésére.</string>
+    <string name="grant_perm_storage">Kérlek, adj engedélyt a külső tárolóhoz.</string>
+    <string name="grant_perm_draw_over_apps">Kérlek, adj engedélyt a más alkalmazások feletti megjelenítésre.</string>
+    <string name="orbot_not_installed">Az Orbot alkalmazás nincs telepítve. Így a Tor nem használható.</string>
+    <string name="orbot_tor_failed">Nem sikerült a helyi Tor proxyhoz csatlakozni ezen a porton: %d (SOCKS).
+\n
+\nKérlek, bizonyosodj meg róla, hogy az Orbot alkalmazás fut.</string>
+    <plurals name="search_channel_users">
+        <item quantity="one">%d felhasználó</item>
+        <item quantity="other">%d felhasználók</item>
+    </plurals>
 </resources>
