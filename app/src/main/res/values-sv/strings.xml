@@ -36,7 +36,7 @@
     <string name="image_confirm_send">Skicka den här bilden?</string>
     <string name="drawer_favorites">Favoriter</string>
     <string name="drawer_header_servers">Servrar</string>
-    <string name="drawer_pinned">Fastnålade kanaler</string>
+    <string name="drawer_pinned">Fästa kanaler</string>
     <string name="chat_message_tts_short_link">(Länk till %1$s)</string>
     <string name="user_menu_ban">Bannlys</string>
     <string name="user_menu_mute">Tysta ner</string>
@@ -65,9 +65,9 @@
     <string name="server_label">Etikett</string>
     <string name="connecting">Ansluter</string>
     <string name="connecting_to_server">Ansluter till %s…</string>
-    <string name="ptt">Tryck-för-att-prata</string>
+    <string name="ptt">Push-to-talk</string>
     <string name="disconnect">Koppla ner</string>
-    <string name="disconnectSure">Är du säker på att du vill koppla ur från %s?</string>
+    <string name="disconnectSure">Är du säker på att du vill koppla ner från %s?</string>
     <string name="save">Spara</string>
     <string name="chat">Chatt</string>
     <string name="hint_reason">Anledning</string>
@@ -80,7 +80,7 @@
     <string name="first_run_generate_certificate_title">Välkommen till Mumla.</string>
     <string name="generate">Generera</string>
     <string name="channel_menu_view_description">Visa beskrivning</string>
-    <string name="untrusted_certificate">Ej pålitligt certifikat</string>
+    <string name="untrusted_certificate">Ej betrott certifikat</string>
     <string name="allow">Tillåt</string>
     <string name="attempting_reconnect">Fel: %s.
 \n
@@ -99,7 +99,7 @@
     <string name="server_match_description">Mumla kan automatiskt hitta en tom server, optimerad för plats, version och latens.</string>
     <string name="externalStorageUnavailable">Extern lagring otillgänglig, kan inte ladda certifikat</string>
     <string name="searchHint">Sök kanaler och användare</string>
-    <string name="connectToServer">Anslut till Server</string>
+    <string name="connectToServer">Anslut till server</string>
     <string name="online">Online</string>
     <string name="clearChat">Rensa chatt</string>
     <string name="mumlaConnected">Mumla ansluten</string>
@@ -145,10 +145,10 @@
     <string name="delete">Ta bort</string>
     <string name="messageToUser">Skriv ett meddelande till användaren \'%s\'</string>
     <string name="messageToChannel">Skriv ett meddelande till kanalen \'%s\'</string>
-    <string name="offline">Nedkopplad</string>
+    <string name="offline">Offline</string>
     <string name="connected">Ansluten</string>
     <string name="mumlaConnecting">Mumla ansluter…</string>
-    <string name="mumlaDisconnected">Mumla frånkopplad</string>
+    <string name="mumlaDisconnected">Mumla nedkopplad</string>
     <string name="shareMessage">Anslut till denna Mumble-server med Mumla. %s</string>
     <string name="status_notify_muted_and_deafened">Tystad och dövad.</string>
     <string name="status_notify_muted">Tystad.</string>
@@ -173,7 +173,7 @@
 \nGiltigt från:
 \n%2$s
 \n
-\nGiltigt för:
+\nGiltigt till:
 \n%3$s
 \n
 \nDigest (SHA-1):
