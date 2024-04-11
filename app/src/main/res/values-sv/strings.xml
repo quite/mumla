@@ -41,7 +41,7 @@
     <string name="user_menu_ban">Bannlys</string>
     <string name="user_menu_mute">Tysta ner</string>
     <string name="user_menu_move">Flytta</string>
-    <string name="user_menu_priority_speaker">Prioriterad högtalare</string>
+    <string name="user_menu_priority_speaker">Prioriterad talare</string>
     <string name="user_menu_ignore_messages">Ignorera meddelanden</string>
     <string name="user_menu_change_comment">Ändra kommentar</string>
     <string name="user_menu_view_comment">Visa kommentar</string>
@@ -49,7 +49,7 @@
     <string name="comment_view">Visa</string>
     <string name="comment_edit_source">Redigera källa</string>
     <string name="comment_view_source">Visa källa</string>
-    <string name="control_channel">Kontrollera kanal</string>
+    <string name="control_channel">Kontrollkanal</string>
     <string name="tcp_encryption_mode">Krypterad med 256-bitars AES-256-SHA</string>
     <string name="voice_channel">Röstkanal</string>
     <string name="udp_encryption_mode">Krypterad med 128-bitars OCB-AES-128</string>
@@ -91,7 +91,7 @@
     <string name="certificate_import_success">Importera certifikatet %s.</string>
     <string name="migration_certificate_success">Certifikatet migrerades.</string>
     <string name="export_success">Certifikatet exporterades till %s.</string>
-    <string name="context_channel_shout">Ställ in röstmål</string>
+    <string name="context_channel_shout">Sätt som röstmål</string>
     <string name="shout_include_linked">Ropa till länkade kanaler</string>
     <string name="orbot_not_installed">Orbot-appen är inte installerad. Använder inte Tor.</string>
     <string name="default_">Standard</string>
@@ -116,7 +116,7 @@
     <string name="drawer_tokens">Åtkomsttoken</string>
     <string name="user_menu_deafen">Döva</string>
     <string name="user_menu_local_mute">Tysta lokalt</string>
-    <string name="user_menu_register">Registrera</string>
+    <string name="user_menu_register">Registrera användare</string>
     <string name="channel_menu_pin">Fäst</string>
     <string name="audio_bandwidth">Ljudbandbredd</string>
     <string name="server_info_latency">%.2f ms latens</string>
