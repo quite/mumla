@@ -1,2 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="inputMethodVoice">Hang aktivitás</string>
+    <string name="inputMethodPtt">Nyomd-a-beszédhez</string>
+    <string name="theme_light">Világos</string>
+    <string name="theme_dark">Sötét</string>
+    <string name="theme_solarized_light">Szolarizált világos</string>
+    <string name="theme_solarized_dark">Szolarizált sötét</string>
+    <string name="theme">Téma</string>
+    <string name="forceTcpSum">UDP kommunikáció kikapcsolása.</string>
+    <string name="chatNotifications">Csevegő értesítések</string>
+    <string name="chatNotificationsSum">Új csevegő üzenetek esetén jelenik meg.</string>
+    <string name="inputMethodContinuous">Folyamatos</string>
+    <string name="hot_corner_none">Ki</string>
+    <string name="hot_corner_top_left">bal felső</string>
+    <string name="hot_corner_bottom_left">bal alsó</string>
+    <string name="hot_corner_top_right">jobb felső</string>
+    <string name="hot_corner_bottom_right">jobb alsó</string>
+    <string name="about">A Mumláról</string>
+    <string name="acknowledgements">Közreműködők</string>
+    <string name="acknowledgementsSum">A Mumla közreműködőinek megtekintése (webes link)</string>
+    <string name="licenses">Licenszek</string>
+    <string name="authentication">Hitelesítés</string>
+    <string name="audioInputMethodSum">Hangátvitel aktiválása.</string>
+    <string name="audioInputMethod">Átviteli mód</string>
+    <string name="audioInputVolume">Mikrofon hangereje</string>
+    <string name="audioInputVolumeSum">A hangerő normalizálásának szintje.</string>
+    <string name="detectionThreshold">Érzékelési küszöb</string>
+    <string name="detectionThresholdSum">Minimális hangerőszint a beszédhang érzékeléséhez (ha az átviteli mód \"Hang aktivitás\").</string>
+    <string name="pttKey">Nyomd-a-beszédhez gomb</string>
+    <string name="pttKeySum">Fizikai gomb használata a beszédhez.</string>
+    <string name="hotCorner">Nyomd-a-beszédhez sarok</string>
+    <string name="hotCornerSum">Nyomd meg a képernyő egyik sarkát a hang továbbításához.</string>
+    <string name="themeSum">Az alkalmazás kinézetének megváltoztatása.</string>
+    <string name="general">Általános</string>
+    <string name="appearance">Megjelenés</string>
+    <string name="advancedAudio">Haladó</string>
+    <string name="forceTcp">Csak TCP</string>
+    <string name="audio">Hang</string>
+    <string name="audioSampleRate">Bemeneti mintavételezés</string>
+    <string name="audioSampleRateSum">Kívánt hang mintavételezés. Néhány eszközön kevesebb lehetőség adott.</string>
+    <string name="defaultUsername">Alapértelmezett felhasználónév</string>
+</resources>
