@@ -22,10 +22,12 @@ for lang in "${langdirs[@]}"; do
   lang=${lang#values-}
   percent=$(( $(count_strings "$lang") * 100 / en ))
   if (( percent < 40 )); then
-    excluded+=("$lang ($percent%)")
-    continue
+    excluded+=("$lang($percent%)")
+  elif (( percent < 95 )); then
+    langs+=("$lang($percent%)")
+  else
+    langs+=("$lang")
   fi
-  langs+=("$lang")
 done
 printf "included languages: %s\n" "${langs[*]}"
 printf "excluded languages: %s\n" "${excluded[*]}"
@@ -36,6 +38,7 @@ cat >"$destf" <<-EOF
 <locale-config xmlns:android="http://schemas.android.com/apk/res/android">
 EOF
 for lang in en-US "${langs[@]}"; do
+  lang="${lang%%(*}"
   printf >>"$destf" '    <locale android:name="%s" />\n' "$lang"
 done
 printf >>"$destf" "</locale-config>\n"
@@ -43,6 +46,7 @@ printf "wrote %s\n" "$destf"
 
 new='resourceConfigurations += ["en"'
 for lang in "${langs[@]}"; do
+  lang="${lang%%(*}"
   new=$(printf '%s, "%s"' "$new" "$lang")
 done
 new="$new]"
