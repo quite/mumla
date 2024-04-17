@@ -20,7 +20,7 @@
 \nVerzió: %6$s
 \nOrszág: %7$s
 \nKésleltetés: %8$d ms</string>
-    <string name="no_servers">Nyomd meg a \'Hozzáad\' gombot (+) , hogy hozzáadj egy kiszolgálót.</string>
+    <string name="no_servers">Nyomd meg a \'Hozzáad\' gombot (+) , egy kiszolgáló hozzáadásához.</string>
     <string name="server_host">Cím</string>
     <string name="accessAdd">Hozzáférési token hozzáadása</string>
     <string name="mute">Némít</string>
@@ -135,7 +135,7 @@
     <string name="certificates">Tanúsítványok</string>
     <string name="certificate_load_failed">Nem sikerült eltárolni a tanúsítványt.</string>
     <string name="certificate_import_success">Importált tanúsítvány: %s.</string>
-    <string name="migration_certificate_begin">Tanúsítvány migráció kezdése…</string>
+    <string name="migration_certificate_begin">Tanúsítvány migrálásának kezdése…</string>
     <string name="export_success">Tanúsítvány exportálva: %s.</string>
     <string name="context_channel_link">Összekapcsol</string>
     <string name="context_channel_shout">Hangcél beállítása</string>
@@ -152,7 +152,7 @@
         <item quantity="other">%d új üzenetek</item>
     </plurals>
     <string name="error_fetching_servers">Nem sikerült lekérni a szerverek listáját.
-\nBiztosan csatlakozol az Internethez?</string>
+\nBiztosan csatlakozva vagy az Internethez?</string>
     <string name="confirm">Megerősítés</string>
     <string name="expand">Kibővít</string>
     <string name="channel_edit">Csatorna szerkesztése</string>
