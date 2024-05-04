@@ -1,0 +1,1 @@
+Ez a kiadás hozzáadja az értesítések küldéséhez szükséges engedélykérést, ez Android 13 rendszeren szükséges.
