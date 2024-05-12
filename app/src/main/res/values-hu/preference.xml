@@ -12,10 +12,10 @@
     <string name="chatNotificationsSum">Új csevegő üzenetek esetén jelenik meg.</string>
     <string name="inputMethodContinuous">Folyamatos</string>
     <string name="hot_corner_none">Ki</string>
-    <string name="hot_corner_top_left">bal felső</string>
-    <string name="hot_corner_bottom_left">bal alsó</string>
-    <string name="hot_corner_top_right">jobb felső</string>
-    <string name="hot_corner_bottom_right">jobb alsó</string>
+    <string name="hot_corner_top_left">↖ bal felső</string>
+    <string name="hot_corner_bottom_left">↙ bal alsó</string>
+    <string name="hot_corner_top_right">jobb felső ↗</string>
+    <string name="hot_corner_bottom_right">jobb alsó ↘</string>
     <string name="about">A Mumláról</string>
     <string name="acknowledgements">Közreműködők</string>
     <string name="acknowledgementsSum">A Mumla közreműködőinek megtekintése (webes link)</string>
