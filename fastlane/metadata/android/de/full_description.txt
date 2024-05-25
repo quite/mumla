@@ -4,7 +4,7 @@ Einige der Funktionen:
 
 * Zertifikatserstellung, Import und Export
 * Durchsuchen Sie öffentliche Server
-* Sprachaktivierte Übertragung (Standardeinstellung) oder verschiedene Push-to-Talk-Tasten
+* Sprachaktivierte Übertragung (Standardeinstellung) oder verschiedene "Zum Sprechen drücken" (Push-to-Talk) Tasten
 * Unterstützung für Bluetooth-Headsets
 * Selbstregistrierung auf dem Server
 * Zugriffstoken

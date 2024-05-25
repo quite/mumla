@@ -1,0 +1,1 @@
+Diese Veröffentlichung fügt eine Anfrage auf Erlaubnis, Benachrichtigungen zu senden, die auf Android 13 erforderlich ist, hinzu.
