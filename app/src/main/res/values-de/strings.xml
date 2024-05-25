@@ -4,7 +4,7 @@
     <string name="drawer_open">Drawer öffnen</string>
     <string name="drawer_close">Drawer schließen</string>
     <string name="drawer_not_connected">Nicht verbunden</string>
-    <string name="drawer_server">Server</string>
+    <string name="drawer_server">Alle Kanäle</string>
     <string name="drawer_tokens">Zugriffscodes</string>
     <string name="drawer_pinned">Gepinnte Kanäle</string>
     <string name="drawer_header_servers">Server</string>
@@ -191,4 +191,5 @@
     <string name="shout_include_subchannels">Stimme zu Unterkanälen</string>
     <string name="context_channel_shout">Sprachziel festlegen</string>
     <string name="image_confirm_send">Dieses Bild senden\?</string>
+    <string name="grant_perm_notifications">Bitte setze die Berechtigung zum Senden von Benachrichtigungen.</string>
 </resources>
