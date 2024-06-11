@@ -33,6 +33,20 @@ Mumla is available [on F-Droid](https://f-droid.org/packages/se.lublin.mumla/).
 There is a small [landing page](https://mumla-app.gitlab.io/), that also has
 information about [Beta releases](https://mumla-app.gitlab.io/beta/).
 
+## FAQs -- Frequently Asked Questions
+
+### Action that my user has permission for does not show up in overflow menu
+
+Question: The Mumble server I use has an ACL that should give my user
+(or a group it's in) permission to carry out a specific action (like
+"Move"). Why doesn't Mumla show this action in the overflow menu
+(three dots) for a channel or user?
+
+Answer: Try to disconnect and then reconnect to the server. The
+decision to show a menu item depending on whether the user has the
+required permission is done upon connecting, when the UI is set up. It
+is *not* updated on the fly if permissions change while connected.
+
 ## Translations
 
 If you want to help out translating Mumla, the project is [on
