@@ -56,7 +56,7 @@ public class KeySelectDialogPreference extends DialogPreference implements OnKey
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 keyCode = 0;
-                valueTextView.setText("No Key");
+                valueTextView.setText(R.string.no_ptt_key);
                 persistInt(keyCode); // Neutral is a 'negative' response to android, we save manually here.
             }
         });
@@ -115,7 +115,7 @@ public class KeySelectDialogPreference extends DialogPreference implements OnKey
     protected void onBindDialogView(View view) {
         super.onBindDialogView(view);
         if(keyCode == 0) {
-            valueTextView.setText("No Key");
+            valueTextView.setText(R.string.no_ptt_key);
         } else {
             valueTextView.setText(KeyEvent.keyCodeToString(keyCode));
         }

@@ -99,6 +99,7 @@
     <string name="connectionRefused">Connection refused</string>
     <string name="confirm_delete_server">Are you sure you want to delete this server?</string>
     <string name="confirm_delete_channel">Are you sure you want to delete this channel?</string>
+    <string name="no_ptt_key">No Key</string>
     <string name="reset_key">Reset Key</string>
     <string name="externalStorageUnavailable">External storage unavailable, cannot load certificate</string>
     <string name="addFavorite">Add Favorite</string>
