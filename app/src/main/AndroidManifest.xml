@@ -121,7 +121,7 @@
         <activity
             android:name=".preference.CertificateSelectActivity"
             android:theme="@style/Base.Theme.AppCompat.Light.Dialog"
-            android:exported="false">
+            android:exported="true">
             <intent-filter>
                 <action android:name="se.lublin.mumla.app.CERTIFICATE_SELECT" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -130,7 +130,7 @@
         <activity
             android:name=".preference.CertificateImportActivity"
             android:theme="@style/Base.Theme.AppCompat.Light.Dialog"
-            android:exported="false">
+            android:exported="true">
             <intent-filter>
                 <action android:name="se.lublin.mumla.app.CERTIFICATE_IMPORT" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -139,7 +139,7 @@
         <activity
             android:name=".preference.CertificateExportActivity"
             android:theme="@style/Base.Theme.AppCompat.Light.Dialog"
-            android:exported="false">
+            android:exported="true">
             <intent-filter>
                 <action android:name="se.lublin.mumla.app.CERTIFICATE_EXPORT" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -148,7 +148,7 @@
         <activity
             android:name=".preference.CertificateGenerateActivity"
             android:theme="@style/Base.Theme.AppCompat.Light.Dialog"
-            android:exported="false">
+            android:exported="true">
             <intent-filter>
                 <action android:name="se.lublin.mumla.app.CERTIFICATE_GENERATE" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -157,7 +157,7 @@
         <activity
             android:name=".preference.ServerCertificateClearActivity"
             android:theme="@style/Base.Theme.AppCompat.Light.Dialog"
-            android:exported="false">
+            android:exported="true">
             <intent-filter>
                 <action android:name="se.lublin.mumla.app.CLEAR_SERVER_CERTIFICATES" />
                 <category android:name="android.intent.category.DEFAULT" />
