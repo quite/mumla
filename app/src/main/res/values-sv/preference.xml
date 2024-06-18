@@ -5,7 +5,7 @@
     <string name="about">Om</string>
     <string name="acknowledgementsSum">Se vem som har bidragit till Mumla (webblänk)</string>
     <string name="acknowledgements">Medverkande</string>
-    <string name="voiceActivitySettings">Inställningar för röstaktivitet</string>
+    <string name="voiceActivitySettings">Inställningar för röstaktivering</string>
     <string name="certificateGenerate">Generera certifikat</string>
     <string name="pttSettings">Inställningar för Push-to-talk</string>
     <string name="disableOpus">Undvik Opus-kodek</string>

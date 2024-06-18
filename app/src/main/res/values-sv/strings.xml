@@ -129,7 +129,8 @@
     <string name="connectionRefused">Anslutningen nekades</string>
     <string name="confirm_delete_server">Är du säker på att du vill ta bort den här servern?</string>
     <string name="confirm_delete_channel">Är du säker på att du vill ta bort den här kanalen?</string>
-    <string name="reset_key">Återställ nyckel</string>
+    <string name="no_ptt_key">Ingen knapp</string>
+    <string name="reset_key">Återställ knapp</string>
     <string name="addFavorite">Lägg till favorit</string>
     <string name="accessAdd">Lägg till åtkomsttoken</string>
     <string name="messageReceived">Nytt meddelande</string>
