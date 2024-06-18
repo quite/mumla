@@ -194,4 +194,5 @@
     </plurals>
     <string name="image_confirm_send">Wysłać ten obraz\?</string>
     <string name="grant_perm_notifications">Proszę udzielić pozwolenia na wysyłanie powiadomień.</string>
+    <string name="no_ptt_key">Bez przycisku</string>
 </resources>
