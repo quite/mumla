@@ -2,8 +2,6 @@
 <resources>
     <string name="theme_light">Clar</string>
     <string name="theme_dark">Fosc</string>
-    <string name="theme_solarized_light">Clar solaritzat</string>
-    <string name="theme_solarized_dark">Fosc solaritzat</string>
     <string name="about">Quant a</string>
     <string name="authentication">Autenticació</string>
     <string name="general">General</string>

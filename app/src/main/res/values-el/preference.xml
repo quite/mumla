@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="theme_solarized_light">Ηλιοθετημένο Φωτεινό</string>
-    <string name="theme_solarized_dark">Ηλιοθετημένο Σκοτεινό</string>
     <string name="hot_corner_none">Κλειστό</string>
     <string name="hot_corner_top_left">↖ επάνω αριστερά</string>
     <string name="hot_corner_bottom_left">↙ κάτω αριστερά</string>

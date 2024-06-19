@@ -6,8 +6,6 @@
     <!--Theme names-->
     <string name="theme_light">Hell</string>
     <string name="theme_dark">Dunkel</string>
-    <string name="theme_solarized_light">Solarisiertes Licht</string>
-    <string name="theme_solarized_dark">Solarisierte Dunkelheit</string>
     <!--Hot corner-->
     <string name="hot_corner_none">Keine</string>
     <string name="hot_corner_top_left">↖ oben links</string>

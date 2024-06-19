@@ -43,7 +43,6 @@
     <string name="pref_start_upIn_pinned_mode_sum">Folder sammen kanaler som ikke er festet.</string>
     <string name="inputMethodVoice">Stemmeaktivitet</string>
     <string name="theme_light">Lys</string>
-    <string name="theme_solarized_dark">Solarisert mørk</string>
     <string name="hot_corner_bottom_left">↙ nederst til venstre</string>
     <string name="about">Om</string>
     <string name="appearance">Utseende</string>
@@ -51,7 +50,6 @@
     <string name="certificateGenerate">Generer sertifikat</string>
     <string name="pref_import_certificate_title">Importer sertifikat</string>
     <string name="inputMethodPtt">Trykk-for-å-snakke</string>
-    <string name="theme_solarized_light">Solarisert lys</string>
     <string name="defaultUsernameDefault">Mumla_bruker</string>
     <string name="theme_dark">Mørk</string>
     <string name="hot_corner_top_right">Øverst til høyre ↗</string>

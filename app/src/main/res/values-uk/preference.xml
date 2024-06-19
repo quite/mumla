@@ -5,8 +5,6 @@
     <string name="inputMethodContinuous">Неперервно</string>
     <string name="theme_light">Світла</string>
     <string name="theme_dark">Темна</string>
-    <string name="theme_solarized_light">Світла Solarized</string>
-    <string name="theme_solarized_dark">Темна Solarized</string>
     <string name="hot_corner_none">Викл</string>
     <string name="audioInputMethod">Режим передачі</string>
     <string name="hotCornerSum">Натисніть на кут екрану з будь-якого додатку Android для початку передачі аудіо.</string>

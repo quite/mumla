@@ -25,8 +25,6 @@
     <!-- Theme names -->
     <string name="theme_light">Light</string>
     <string name="theme_dark">Dark</string>
-    <string name="theme_solarized_light">Solarized Light</string>
-    <string name="theme_solarized_dark">Solarized Dark</string>
 
     <!-- Hot corner -->
     <string name="hot_corner_none">Off</string>

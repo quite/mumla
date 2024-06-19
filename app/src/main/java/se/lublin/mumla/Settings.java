@@ -323,15 +323,28 @@ public class Settings {
      * @return the resource ID of the user-defined theme.
      */
     public int getTheme() {
-        String theme = preferences.getString(PREF_THEME, ARRAY_THEME_LIGHT);
-        if(ARRAY_THEME_LIGHT.equals(theme))
-            return R.style.Theme_Mumla;
-        else if(ARRAY_THEME_DARK.equals(theme))
-            return R.style.Theme_Mumla_Dark;
-        else if(ARRAY_THEME_SOLARIZED_LIGHT.equals(theme))
-            return R.style.Theme_Mumla_Solarized_Light;
-        else if(ARRAY_THEME_SOLARIZED_DARK.equals(theme))
-            return R.style.Theme_Mumla_Solarized_Dark;
+        switch (preferences.getString(PREF_THEME, ARRAY_THEME_LIGHT)) {
+            case ARRAY_THEME_LIGHT: {
+                return R.style.Theme_Mumla;
+            }
+            case ARRAY_THEME_DARK: {
+                return R.style.Theme_Mumla_Dark;
+            }
+            // The solarized themes were removed, so for these we adjust
+            // the preference, falling back to regular light/dark.
+            case ARRAY_THEME_SOLARIZED_LIGHT: {
+                Editor editor = preferences.edit();
+                editor.putString(PREF_THEME, ARRAY_THEME_LIGHT);
+                editor.apply();
+                return R.style.Theme_Mumla;
+            }
+            case ARRAY_THEME_SOLARIZED_DARK: {
+                Editor editor = preferences.edit();
+                editor.putString(PREF_THEME, ARRAY_THEME_DARK);
+                editor.apply();
+                return R.style.Theme_Mumla_Dark;
+            }
+        }
         return -1;
     }
 

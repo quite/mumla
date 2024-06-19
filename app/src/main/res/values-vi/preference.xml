@@ -9,8 +9,6 @@
     <string name="pref_start_upIn_pinned_mode_sum">Bật chế độ \"Ghim kênh\" sau khi kết nối (ẩn các kênh không được ghim).</string>
     <string name="inputMethodContinuous">Liên tục</string>
     <string name="theme_light">Sáng</string>
-    <string name="theme_solarized_light">Sáng 2</string>
-    <string name="theme_solarized_dark">Tối 2</string>
     <string name="hot_corner_none">Tắt</string>
     <string name="hot_corner_top_right">phải trên cùng ↗</string>
     <string name="hot_corner_bottom_right">phải dưới cùng ↘</string>

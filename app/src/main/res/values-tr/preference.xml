@@ -13,8 +13,6 @@
     <string name="inputMethodContinuous">Sürekli</string>
     <string name="theme_light">Açık</string>
     <string name="theme_dark">Koyu</string>
-    <string name="theme_solarized_light">Solarized Açık</string>
-    <string name="theme_solarized_dark">Solarized Koyu</string>
     <string name="about">Hakkında</string>
     <string name="authentication">Kimlik doğrulama</string>
     <string name="general">Genel</string>

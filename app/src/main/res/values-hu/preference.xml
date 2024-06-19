@@ -4,8 +4,6 @@
     <string name="inputMethodPtt">Nyomd-a-beszédhez</string>
     <string name="theme_light">Világos</string>
     <string name="theme_dark">Sötét</string>
-    <string name="theme_solarized_light">Szolarizált világos</string>
-    <string name="theme_solarized_dark">Szolarizált sötét</string>
     <string name="theme">Téma</string>
     <string name="forceTcpSum">UDP kommunikáció kikapcsolása.</string>
     <string name="chatNotifications">Csevegő értesítések</string>

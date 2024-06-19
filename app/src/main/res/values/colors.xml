@@ -46,16 +46,6 @@
     <!-- A really bright Holo shade of blue -->
     <color name="holo_blue_bright">#ff00ddff</color>
 
-    <!-- Solarized -->
-    <color name="solarized_base03">#002b36</color>
-    <color name="solarized_base02">#073642</color>
-    <color name="solarized_base01">#586e75</color>
-    <color name="solarized_base00">#657b83</color>
-    <color name="solarized_base0">#839496</color>
-    <color name="solarized_base1">#93a1a1</color>
-    <color name="solarized_base2">#eee8d5</color>
-    <color name="solarized_base3">#fdf6e3</color>
-
     <!-- Ripple talk states -->
     <color name="ripple_talk_state_on">@color/holo_red_dark</color>
     <color name="ripple_talk_state_off">#FFFFFFFF</color>
