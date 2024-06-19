@@ -202,4 +202,5 @@
     <string name="drawer_tokens">Erişim Belirteçleri</string>
     <string name="image_confirm_send">Bu resim gönderilsin mi\?</string>
     <string name="grant_perm_notifications">Lütfen bildirim gönderme izni verin.</string>
+    <string name="no_ptt_key">Tuş Yok</string>
 </resources>
