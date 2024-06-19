@@ -1,0 +1,8 @@
+W tej wersji naprawiono błąd uniemożliwiający użycie przycisków ustawień uwierzytelniania w najnowszych wersjach Androida.
+
+Mumla została również w całości przetłumaczona na węgierski. Dziękuję Chlor Ethan!
+
+W systemie Android 13 i nowszych Mumla obsługuje ustawienia języka dla poszczególnych aplikacji. Wybierz język w System / Języki / Języki aplikacji.
+
+Języki dostępne w Mumla to te, które przetłumaczono w 40% lub więcej.
+Możesz pomóc w tłumaczeniu na https://hosted.weblate.org/engage/mumla/
