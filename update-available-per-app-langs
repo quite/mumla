@@ -23,7 +23,7 @@ for lang in "${langdirs[@]}"; do
   percent=$(( $(count_strings "$lang") * 100 / en ))
   if (( percent < 40 )); then
     excluded+=("$lang($percent%)")
-  elif (( percent < 95 )); then
+  elif (( percent < 99 )); then
     langs+=("$lang($percent%)")
   else
     langs+=("$lang")
