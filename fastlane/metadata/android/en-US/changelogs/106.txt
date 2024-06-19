@@ -1,0 +1,8 @@
+This release fixes a bug where the Authentication settings buttons could not be used on recent Android versions.
+
+Mumla has also been completely translated into Hungarian. Thank you Chlor Ethan!
+
+On Android 13 and later Mumla, nowdays supports per-app language setting. Pick language in System settings / Languages / App Languages.
+
+The languages available in Mumla are those which have been translated to 40% or more.
+You can help translating Mumla at https://hosted.weblate.org/engage/mumla/
