@@ -1,0 +1,8 @@
+Android sürümlerinde kullanılamamasına neden olan bir hatayı giderir.
+
+Mumla ayrıca tamamen Macarcaya çevrildi. Teşekkürler Chlor Ethan!
+
+Android 13 ve sonraki sürümlerde Mumla, artık uygulama başına dil ayarını destekliyor. Sistem ayarları / Diller / Uygulama Dilleri bölümünden dili seçin.
+
+Mumla'da %40 veya daha fazlasına çevrilen diller kullanılabilir durumdadır.
+Mumla'nın çevrilmesine https://hosted.weblate.org/engage/mumla/ adresinden yardımcı olabilirsiniz.
