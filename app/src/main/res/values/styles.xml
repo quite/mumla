@@ -20,8 +20,6 @@
     tools:ignore="NewApi">
 
     <style name="Theme.Mumla" parent="@style/Theme.AppCompat.Light.DarkActionBar">
-        <item name="android:textColorPrimary">#000</item>
-        <item name="android:textColorSecondary">#666</item>
         <item name="android:textColorPrimaryInverse">#FFF</item>
         <item name="android:textColorSecondaryInverse">#AAA</item>
 
@@ -29,7 +27,6 @@
 
         <item name="colorPrimary">#454D5E</item>
         <item name="colorPrimaryDark">#2F3440</item>
-        <item name="colorAccent">#454D5E</item>
 
         <item name="cardStyle">@style/Theme.Mumla.CardView</item>
     </style>
@@ -38,8 +35,6 @@
     </style>
 
     <style name="Theme.Mumla.Dark" parent="@style/Theme.AppCompat">
-        <item name="android:textColorPrimary">#FFF</item>
-        <item name="android:textColorSecondary">#DDD</item>
         <item name="android:textColorPrimaryInverse">#FFF</item>
         <item name="android:textColorSecondaryInverse">#AAA</item>
 
