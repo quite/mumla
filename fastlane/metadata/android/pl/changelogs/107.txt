@@ -1,0 +1,8 @@
+Usunięcie starszych motywów kolorystycznych Solarized. Pozostałe dziedziczą teraz więcej domyślnych kolorów systemu.
+
+Niedawno naprawiliśmy błąd uniemożliwiający użycie przycisków ustawień uwierzytelniania.
+
+W systemie Android 13 i nowszych Mumla obsługuje ustawienia języka dla poszczególnych aplikacji. Wybierz język w System / Języki / Języki aplikacji.
+
+Języki dostępne w Mumla to te, które przetłumaczono w 40% lub więcej.
+Możesz pomóc w tłumaczeniu na https://hosted.weblate.org/engage/mumla/
