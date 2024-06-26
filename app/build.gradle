@@ -68,7 +68,7 @@ android {
         multiDexEnabled true
 
         applicationId "se.lublin.mumla"
-        versionCode 106
+        versionCode 107
         versionName gitDescribe()
 
         resourceConfigurations += ["en", "ar", "ca", "cs", "de", "el", "es", "fi", "fr", "hu", "it", "ja", "nb-rNO", "nl", "pl", "pt", "pt-rBR", "ru", "sv", "th", "tr", "uk", "zh-rCN"]
