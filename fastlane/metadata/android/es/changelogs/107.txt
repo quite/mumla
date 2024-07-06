@@ -1,0 +1,8 @@
+Eliminación de los temas de color solarizado heredados. Los temas restantes ahora heredan más colores por defecto del sistema.
+
+Recientemente hemos corregido un error en el que no se podían utilizar los botones de configuración de Autenticación.
+
+En Android 13 y posterior, Mumla hoy en día es compatible con la configuración de idioma por aplicación. Seleccione el idioma en Configuración del sistema / Idiomas / Idiomas de la aplicación.
+
+Los idiomas disponibles en Mumla son aquellos que han sido traducidos al 40% o más.
+Puedes ayudar a traducir Mumla en https://hosted.weblate.org/engage/mumla/

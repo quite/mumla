@@ -1,0 +1,8 @@
+Esta versión corrige un error en el que los botones de configuración de autenticación no se podían utilizar en las versiones recientes de Android.
+
+Mumla también se ha traducido completamente al húngaro. ¡Gracias, Chlor Ethan!
+
+En Android 13 y posterior Mumla, Hoy en día es compatible con la configuración de idioma por aplicación. Seleccione el idioma en Configuración del sistema / Idiomas / Idiomas de la aplicación.
+
+Los idiomas disponibles en Mumla son aquellos que han sido traducidos al 40% o más.
+Puede ayudar a traducir Mumla en https://hosted.weblate.org/engage/mumla/
