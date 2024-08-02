@@ -190,4 +190,5 @@
     </plurals>
     <string name="image_confirm_send">发送此图片吗？</string>
     <string name="grant_perm_notifications">请授予发送通知权限。</string>
+    <string name="no_ptt_key">无按键</string>
 </resources>
