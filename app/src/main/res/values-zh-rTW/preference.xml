@@ -1,2 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="inputMethodContinuous">連續</string>
+    <string name="theme_light">淺色</string>
+    <string name="theme_dark">深色</string>
+    <string name="about">關於</string>
+    <string name="authentication">驗證</string>
+    <string name="general">一般</string>
+    <string name="advancedAudio">進階</string>
+    <string name="appearance">外觀</string>
+    <string name="theme">主題</string>
+    <string name="disableOpusSum">關閉 Opus 對 Mumble 1.2.4 伺服器的支援。</string>
+    <string name="inputMethodVoice">語音活動</string>
+    <string name="inputMethodPtt">按鍵發話</string>
+    <string name="hot_corner_none">關閉</string>
+    <string name="audio">音訊</string>
+    <string name="hot_corner_top_left">↖ 左上角</string>
+    <string name="hot_corner_bottom_left">↙ 左下角</string>
+    <string name="hot_corner_top_right">右上角 ↗</string>
+    <string name="hot_corner_bottom_right">右下角 ↘</string>
+    <string name="acknowledgements">貢獻者</string>
+    <string name="acknowledgementsSum">看看誰為 Mumla 作出了貢獻（網頁連結）</string>
+    <string name="licenses">許可證</string>
+    <string name="audioInputVolume">麥克風音量</string>
+    <string name="forceTcp">僅 TCP</string>
+    <string name="chatNotifications">聊天通知</string>
+    <string name="chatNotificationsSum">顯示新的聊天訊息。</string>
+    <string name="defaultUsername">預設使用者名稱</string>
+    <string name="certificateGenerate">產生憑證</string>
+    <string name="voiceActivitySettings">語音活動設定</string>
+    <string name="disableOpus">避免 Opus 編解碼器</string>
+    <string name="useTts">文字轉語音</string>
+</resources>
