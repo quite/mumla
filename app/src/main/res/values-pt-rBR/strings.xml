@@ -161,4 +161,14 @@
     <string name="drawer_favorites">Favoritos</string>
     <string name="drawer_header_servers">Servidores</string>
     <string name="drawer_pinned">Canais Fixados</string>
+    <string name="chat_message_tts_short_link">(Link para %1$s)</string>
+    <string name="trust_cleared">Banco de dados confiável limpo</string>
+    <string name="invalid_host">Host inválido</string>
+    <string name="shout_configure">Configurar destino de voz</string>
+    <string name="shout_failed">Não foi possível criar o destino de voz.</string>
+    <string name="shout_include_subchannels">Gritar para subcanais</string>
+    <string name="shout_target">Gritando para %s</string>
+    <string name="grant_perm_notifications">Conceda permissão para enviar notificações.</string>
+    <string name="image_confirm_send">Enviar esta imagem?</string>
+    <string name="shout_include_linked">Gritar para canais vinculados</string>
 </resources>
