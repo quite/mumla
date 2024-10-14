@@ -1,0 +1,6 @@
+Aquesta versió afegeix suport a la configuració de l'idioma per-app en Android 13 i següents. A la configuració Sistema / Idiomes / App Llengües podeu triar l’idioma que Mumla ha d’utilitzar, des dels disponibles.
+
+Les llengües disponibles a Mumla són les que s’han traduït al 40% o més.
+Podeu ajudar a traduir Mumla a https://hosted.weblate.org/engage/mumla/
+
+Mumla s'ha adaptat recentment per a l'Android 14 (SDK 34). Esperem que no sigui menys estable que abans.

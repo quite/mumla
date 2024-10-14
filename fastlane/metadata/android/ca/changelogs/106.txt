@@ -1,0 +1,8 @@
+Aquesta versió corregeix un error dels botons de configuració d'autenticació no responien en versions recents d'Android.
+
+El Mumla també ha estat completament traduït a l’hongarès. Gràcies Chlor Ethan!
+
+A l'Android 13 i següents, el Mumla, ara es pot configurar l'idioma per a cada aplicació. Trieu l'idioma a la configuració del sistema / idiomes / Idiomes de l'aplicació.
+
+Les llengües disponibles al Mumla són les que s’han traduït al 40% o més.
+Podeu ajudar a traduir el Mumla a https://hosted.weblate.org/engage/mumla/
