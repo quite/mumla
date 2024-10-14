@@ -202,4 +202,5 @@
     <string name="current_chat_target">Destí actual</string>
     <string name="image_confirm_send">Enviar aquesta imatge\?</string>
     <string name="grant_perm_notifications">Doneu permís per enviar les notificacions, si us plau.</string>
+    <string name="no_ptt_key">Cap Clau</string>
 </resources>
