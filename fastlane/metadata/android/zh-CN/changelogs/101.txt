@@ -1,0 +1,5 @@
+适配 Mumla 到 Android 14（SDK 34）。希望不会带来稳定性问题。
+
+感谢 Nicolas Peugnet 提供一些 Humla 内部的问题修复。
+
+一些翻译更新，感谢 Allan Nordhøy、deluxghost、gallegonovato、Matthaiks、Oğuz Ersen、pjammo、riomccloud。

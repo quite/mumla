@@ -1,0 +1,6 @@
+此版本为 Android 13 和更高版本添加了分应用语言设置。在“系统/语言/应用语言”设置中，您可以选择 Mumla 使用的语言。
+
+Mumla 可用的语言包括已被翻译至少 40% 的语言。
+您可以在这里帮助翻译 Mumla：https://hosted.weblate.org/engage/mumla/
+
+Mumla 最近适配了 Android 14（SDK 34）。希望不会带来稳定性问题。

@@ -1,0 +1,4 @@
+此版本中，Mumla 已被完整翻译到乌克兰语。
+感谢 Andrii Karpenko 和 Vasyl Voloshyn。
+
+Mumla 最近适配了 Android 14（SDK 34）。希望不会带来稳定性问题。
