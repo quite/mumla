@@ -71,7 +71,7 @@ android {
         versionCode 107
         versionName gitDescribe()
 
-        resourceConfigurations += ["en", "ar", "ca", "cs", "de", "el", "es", "fi", "fr", "hu", "it", "ja", "nb-rNO", "nl", "pl", "pt", "pt-rBR", "ru", "sv", "th", "tr", "uk", "zh-rCN"]
+        resourceConfigurations += ["en", "ar", "ca", "cs", "de", "el", "es", "fi", "fr", "hu", "in", "it", "ja", "nb-rNO", "nl", "pl", "pt", "pt-rBR", "ru", "sv", "th", "tr", "uk", "zh-rCN"]
 
         setProperty("archivesBaseName", "mumla")
         buildConfigField "long", "TIMESTAMP", System.currentTimeMillis() + "L"
