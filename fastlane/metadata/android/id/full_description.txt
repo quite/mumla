@@ -1,0 +1,20 @@
+Sebuah client untuk sistem voice chat Mumble. Hosting sendiri atau bergabung ke berbagai server publik milik komunitas (see https://www.mumble.info). Mumla adalah versi yang di-update dan di-maintain (sebuah fork) dari app Plumble.
+
+Berbagai macam fitur yang tersedia:
+
+* Pembuatan, impor, dan ekspor sertifikat keamanan
+* Jelajahi server publik
+* Transmisi suara aktif secara otomatis, atau gunakan berbagai macam tombol push-to-talk
+* Dukungan untuk headset Bluetooth
+* Registrasi mandiri pada server
+* Token akses
+* Dukungan kodek Opus, CELT, dan Speex
+* Sambung ulang secara otomatis
+* Dukungan untuk Tor melalui aplikasi Orbot
+* Text-to-speech untuk pesan (nyala secara default)
+* Tema terang dan gelap
+
+Transmisi otomatis melalui aktivasi suara bekerja secara optimal ketika menggunakan headset. Echo cancellation dan noise reduction membutuhkan pengerjaan lebih lanjut.
+Mengatur batas bawah deteksi pada pengaturan akan membantu performa.
+
+Mumla adalah sebuah copylefted libre software. Cari tahu lebih lanjut di: https://mumla-app.gitlab.io/
