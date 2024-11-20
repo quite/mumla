@@ -1,2 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="inputMethodVoice">Aktivitas suara</string>
+    <string name="theme_light">Terang</string>
+    <string name="inputMethodContinuous">Terus-menerus</string>
+    <string name="theme_dark">Gelap</string>
+    <string name="hot_corner_none">Mati</string>
+    <string name="hot_corner_top_left">↖ kiri atas</string>
+    <string name="hot_corner_bottom_left">↙ kiri bawah</string>
+    <string name="hot_corner_top_right">kanan atas ↗</string>
+    <string name="hot_corner_bottom_right">kanan bawah ↘</string>
+    <string name="inputMethodPtt">Push-to-talk</string>
+    <string name="about">Tentang</string>
+</resources>
