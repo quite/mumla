@@ -1,0 +1,6 @@
+Mumla has been completely translated into Indonesian. Thank you Alvin Lorence!
+
+On Android 13 and later, Mumla nowdays supports per-app language setting. Pick language in System settings / Languages / App Languages.
+
+The languages available in Mumla are those which have been translated to 40% or more.
+You can help translating Mumla at https://hosted.weblate.org/engage/mumla/
