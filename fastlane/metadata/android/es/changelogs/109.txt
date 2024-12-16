@@ -1,0 +1,6 @@
+Mumla se ha traducido completamente al indonesio. ¡Gracias Alvin Lorence!
+
+En Android 13 y posteriores, Mumla ahora soporta la configuración de idioma por aplicación. Elige el idioma en Ajustes del sistema / Idiomas / Idiomas de la aplicación.
+
+Los idiomas disponibles en Mumla son aquellos que han sido traducidos al 40% o más.
+Puedes ayudar a traducir Mumla en https://hosted.weblate.org/engage/mumla/
