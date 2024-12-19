@@ -1,0 +1,6 @@
+在此版本中，Mumla 已被翻译至印度尼西亚语。感谢 Alvin Lorence！
+
+在 Android 13 和更高版本上，Mumla 已支持分应用语言设置。请在“系统设置/语言/应用语言”内选择。
+
+Mumla 可用的语言包括已被翻译至少 40% 的语言。
+您可以在这里帮助翻译 Mumla：https://hosted.weblate.org/engage/mumla/
