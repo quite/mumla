@@ -212,4 +212,5 @@
     <string name="chat_message_tts_short_link">(Lien vers %1$s)</string>
     <string name="image_confirm_send">Envoyer cette image \?</string>
     <string name="grant_perm_notifications">Veuillez accorder l\'autorisation d\'envoyer des notifications.</string>
+    <string name="no_ptt_key">Aucun bouton</string>
 </resources>
