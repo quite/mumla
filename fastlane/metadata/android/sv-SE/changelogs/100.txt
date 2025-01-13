@@ -1,0 +1,1 @@
+Denna version lägger till begäran av rättigheter att skicka notiser, vilket är ett krav på Android 13.

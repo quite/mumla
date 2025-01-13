@@ -1,0 +1,4 @@
+I denna utgåva har Mumla helt översatts till ukrainska.
+Tack Andrii Karpenko och Vasyl Voloshyn.
+
+Mumla har nyligen anpassats för att köras på Android 14 (SDK 34). Förhoppningsvis är den inte mindre stabil än tidigare.

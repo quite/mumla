@@ -1,0 +1,20 @@
+En klient för röstchatsystemet Mumla. Agera värd eller anslut till en av de många gemenskapsledda publika servrar (se https://www.mumble.info). Mumla är en uppdaterad och underhållen version (en fork) av appen Plumble.
+
+Några av särdragen
+
+* Certifikatsgenerering, -import och -export
+* Bläddra mellan publika servrar
+* Röstaktiverad överföring (förvalt), eller olika Push-to-talk-knappar
+* Stöd för Bluetooth-headset
+* Självregistering på servern
+* Access tokens
+* Opus-, CELT- och Speex-codekstöd
+* Automatisk återansluitning
+* TOR-stöd genom appen Orbot
+* Text-till-tal för meddelanden (påslaget som standard)
+* Ljust och mörkt tema
+
+Röstaktiverad överföring fungerar för närvarande bäst vid användning av headset. Ekoutsläckning och brusreducering behöver förbättras.
+Justering av Detection threshold under intällningarna hjälper.
+
+Mumla är copyleft libre-mjukvara. Läs med på https://mumla-app.gitlab.io/

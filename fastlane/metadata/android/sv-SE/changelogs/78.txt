@@ -1,0 +1,1 @@
+Anslutning över TOR genom användning av Orbot bör fungera bättre och flera UI-meddelanden indikerar nu att TOR används. Anslutning till Hidden Services .onion-adresser fungerar också; DNS-resolvering lämnas åt TOR SOCKS-proxy.

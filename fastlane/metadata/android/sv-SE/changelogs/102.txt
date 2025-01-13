@@ -1,0 +1,3 @@
+Denna version innehåller några fixar för potentiella krasher.
+
+Mumla anpassades nyligen för att köra på Android 14 (SDK 34). Förhoppningsvis är den inte mindre stabil än tidigare.
