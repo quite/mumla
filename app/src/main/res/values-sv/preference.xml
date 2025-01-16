@@ -90,5 +90,5 @@
     <string name="pref_show_user_count">Visa antalet användare i kanalen</string>
     <string name="pref_show_user_count_summary">Visar antalet användare i en kanals underkanaler.</string>
     <string name="pref_start_up_in_pinned_mode">Visa bara fästade kanaler</string>
-    <string name="pref_start_upIn_pinned_mode_sum">Aktiverar läget ”Pinned channels” efter anslutning (döljer kanaler som inte är fästa).</string>
+    <string name="pref_start_upIn_pinned_mode_sum">Efter anslutning visas bara kanaler som är fästa.</string>
 </resources>
