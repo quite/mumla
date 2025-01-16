@@ -112,7 +112,7 @@
     <string name="country">Land</string>
     <string name="share">Dela</string>
     <string name="description">Beskrivning</string>
-    <string name="trust_added">Certifikatet lades till i \"trust store\"</string>
+    <string name="trust_added">Lägg till certifikatet i det betrodda arkivet</string>
     <string name="drawer_tokens">Åtkomsttoken</string>
     <string name="user_menu_deafen">Döva</string>
     <string name="user_menu_local_mute">Tysta lokalt</string>
@@ -164,7 +164,7 @@
     <string name="channel_edit">Redigera kanal</string>
     <string name="mumble_url_parse_failed">Mumble-URL:en är inte giltig.</string>
     <string name="first_run_generate_certificate">Generering av certifikat rekommenderas starkt, och krävs för att ansluta till vissa servrar.</string>
-    <string name="trust_add_failed">Kunde ej lägga till certifikatet i \"trust store\".</string>
+    <string name="trust_add_failed">Kunde inte lägga till certifikatet till det betrodda arkivet.</string>
     <string name="trust_cleared">Tillitsdatabasen har tömts</string>
     <string name="current_chat_target">Nuvarande chattmål</string>
     <string name="channel_join">Gå med</string>
