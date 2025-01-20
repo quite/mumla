@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="drawer_close">மூடு டிராயர்</string>
+    <string name="drawer_close">அலமாரி மூடு</string>
     <string name="drawer_not_connected">இணைக்கப்படவில்லை</string>
-    <string name="drawer_server">அனைத்து சேனல்களும்</string>
-    <string name="drawer_tokens">டோக்கன்களை அணுகவும்</string>
-    <string name="drawer_pinned">பின் செய்யப்பட்ட சேனல்கள்</string>
+    <string name="drawer_server">அனைத்து தடங்களும்</string>
+    <string name="drawer_tokens">கிள்ளாக்குகளை அணுகவும்</string>
+    <string name="drawer_pinned">பின் செய்யப்பட்ட தடங்கள்</string>
     <string name="drawer_header_servers">சேவையகங்கள்</string>
-    <string name="drawer_favorites">பிடித்தவை</string>
+    <string name="drawer_favorites">பிடித்தவைகள்</string>
     <string name="drawer_public">பொது சேவையகங்கள்</string>
     <string name="chat_message_to">%1$s → %2$s</string>
-    <string name="chat_message_tts_short_link">( %1$s உடன் இணைப்பு)</string>
-    <string name="user_menu_kick">கிக்</string>
+    <string name="chat_message_tts_short_link">(%1$s உடன் இணைப்பு)</string>
+    <string name="user_menu_kick">உதை</string>
     <string name="user_menu_ban">தடை</string>
     <string name="user_menu_mute">முடக்கு</string>
     <string name="user_menu_deafen">காது கேளாதது</string>
@@ -43,7 +43,7 @@
     <string name="server_match_found">சேவையகம் காணப்பட்டது</string>
     <string name="server_match_not_found">சேவையகத்தைக் கண்டுபிடிக்க முடியவில்லை</string>
     <string name="server_match_expand_country">உங்கள் நாட்டில் எந்த உகந்த சேவையகங்களையும் கண்டுபிடிக்க முடியவில்லை. உலகளவில் தேடவா?</string>
-    <string name="server_match_info">பெயர்: %1$s\n ஓச்ட்: %2$s: %3$d\n பயனர்கள்: %4 $ டி / %5 $ d\n பதிப்பு: %6 $ s\n நாடு: %7 $ s\n தாமதம்: %8 $ டி MS</string>
+    <string name="server_match_info">பெயர்: %1$s\n புரவலன்: %2$s: %3$d\n பயனர்கள்: %4$d / %5$d\n பதிப்பு: %6$s\n நாடு: %7$s\n தாமதம்: %8$d மிநொ</string>
     <string name="server_match_description">மும்லா தானாகவே ஒரு வெற்று சேவையகத்தைக் கண்டுபிடித்து, இருப்பிடம், பதிப்பு மற்றும் தாமதத்தை மேம்படுத்தலாம்.</string>
     <string name="no_servers">முதலில் ஒரு சேவையகத்தைச் சேர்க்க அதிரடி பட்டியில் இருந்து \'சேர்\' என்பதை அழுத்தவும்.</string>
     <string name="server_password">கடவுச்சொல்</string>
@@ -135,7 +135,7 @@
     <string name="cancelled">ரத்து செய்யப்பட்டது</string>
     <string name="current_chat_target">தற்போதைய அரட்டை இலக்கு</string>
     <string name="channel_join">சேர</string>
-    <string name="certificate_info">பொருள்:\n %1$s\n\n இதிலிருந்து செல்லுபடியாகும்:\n %2$s\n\n இதற்கு செல்லுபடியாகும்:\n %3$s\n\n டைசச்ட் (சா -1):\n %4 $ கள்\n\n டைசச்ட் (சா -256):\n %5 $ கள்</string>
+    <string name="certificate_info">பொருள்:\n %1$s\n\n இதிலிருந்து செல்லுபடியாகும்:\n %2$s\n\n இதுவரை செல்லுபடியாகும்:\n %3$s\n\n சுருக்கம்(சா -1):\n %4$s\n\n சுருக்கம்(சா -256):\n %5$s</string>
     <string name="invalid_host">தவறான புரவலன்</string>
     <string name="invalid_port_range">தவறான துறைமுகம் (1-65535)</string>
     <string name="cancel_reconnect">மீண்டும் இணைக்க ரத்துசெய்</string>
@@ -143,7 +143,7 @@
     <string name="change_requires_reconnect">புதிய அமைப்புகளைப் பயன்படுத்த மீண்டும் இணைக்கவும்.</string>
     <string name="no_certificate">சான்றிதழ் இல்லை</string>
     <string name="certificates">சான்றிதழ்கள்</string>
-    <string name="decrypt_certificate">சான்றிதழ்</string>
+    <string name="decrypt_certificate">மறைவிலக்கு சான்றிதழ்</string>
     <string name="password">கடவுச்சொல்</string>
     <string name="invalid_certificate">தவறான சான்றிதழை ஏற்ற முடியவில்லை.</string>
     <string name="certificate_load_failed">சான்றிதழை சேமிக்க முடியவில்லை.</string>
@@ -178,6 +178,6 @@
     <string name="orbot_not_installed">ஆர்போட் பயன்பாடு நிறுவப்படவில்லை. டோர் பயன்படுத்தவில்லை.</string>
     <string name="default_">இயல்புநிலை</string>
     <string name="donation_thanks">நன்கொடைக்கு நன்றி.</string>
-    <string name="drawer_open">திறந்த அலமாரியை</string>
+    <string name="drawer_open">அலமாரி திற</string>
     <string name="perm_denied">இசைவு மறுக்கப்பட்டது.</string>
 </resources>
