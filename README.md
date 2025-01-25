@@ -30,8 +30,7 @@ Mumla should run on Android 4.0 (IceCreamSandwich, API 14) and later.
 
 Mumla is available [on F-Droid](https://f-droid.org/packages/se.lublin.mumla/).
 
-There is a small [landing page](https://mumla-app.gitlab.io/), that also has
-information about [Beta releases](https://mumla-app.gitlab.io/beta/).
+There is a small [landing page](https://mumla-app.gitlab.io/).
 
 ## FAQs -- Frequently Asked Questions
 
