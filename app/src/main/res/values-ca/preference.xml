@@ -87,7 +87,7 @@
     <string name="clearServerCertificatesSum">Elimina tots els certificats de confiança del servidor de Mumla.</string>
     <string name="halfDuplex">Àudio unidireccional</string>
     <string name="halfDuplexSum">Silencia la resta de reproduccions durant la transmissió per evitar acoplaments d\'àudio.</string>
-    <string name="pttSound">Só del PTT</string>
+    <string name="pttSound">So del PTT</string>
     <string name="stay_awake">Manté despert</string>
     <string name="pref_start_up_in_pinned_mode">Mode de canals fixats</string>
     <string name="inputQuality">Qualitat d\'entrada del micròfon</string>
