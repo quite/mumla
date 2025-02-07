@@ -1,0 +1,3 @@
+Этот релиз в основном содержит переводы. Спасибо переводчикам AHOHNMYC, Axus Wizix, Iago, J. Lavoie, Pure Incompetence, sal0max
+
+Перевод осуществляется здесь: https://hosted.weblate.org/projects/mumla/

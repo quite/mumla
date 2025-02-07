@@ -1,0 +1,5 @@
+Этот релиз нацеливает приложение на более современный уровень API, в соответствии с требованиями Google. Надеюсь, все будет работать 🤞
+
+Также включены новые переводы благодаря: AHOHNMYC, Nordhøy, DEN35, J. Lavoie, Josue Mosqueira, Konstantin Goncharik, Laurens Wuyts, Maite Guix, Matthaiks, Michal Bedáň, Oğuz Ersen, Rodrigo Garcia Martin, deluxghost, gallegonovato, pjammo, ssantos.
+
+Перевод выполнен здесь: https://hosted.weblate.org/projects/mumla/
