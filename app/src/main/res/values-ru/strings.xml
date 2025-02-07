@@ -197,4 +197,5 @@
     <string name="donation_thanks">Спасибо за пожертвование.</string>
     <string name="bluetooth">Bluetooth</string>
     <string name="image_confirm_send">Отправить это изображение\?</string>
+    <string name="no_ptt_key">Кнопка не выбрана</string>
 </resources>
