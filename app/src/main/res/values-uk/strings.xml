@@ -206,4 +206,5 @@
     <string name="shareMessage">Приєднайтеся до цього Mumble-сервера за допомогою Mumla. %s</string>
     <string name="status_notify_muted_and_deafened">Звук та мікрофон вимкнені.</string>
     <string name="status_notify_muted">Мікрофон вимкнено.</string>
+    <string name="no_ptt_key">Кнопка не обрана</string>
 </resources>
