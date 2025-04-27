@@ -68,8 +68,8 @@
     <string name="connecting">Подключение</string>
     <string name="connecting_to_server">Подключение к %s…</string>
     <string name="ptt">Нажать-чтобы-говорить</string>
-    <string name="mute">Мут</string>
-    <string name="deafen">Приглушить</string>
+    <string name="mute">Приглушить</string>
+    <string name="deafen">Заглушить</string>
     <string name="disconnect">Отключиться</string>
     <string name="disconnectSure">Вы действительно хотите отключиться от %s?</string>
     <string name="save">Сохранить</string>
@@ -79,7 +79,7 @@
     <string name="connectionRefused">Подключение отклонено</string>
     <string name="confirm_delete_server">Вы действительно хотите удалить этот сервер?</string>
     <string name="confirm_delete_channel">Вы действительно хотите удалить этот канал?</string>
-    <string name="reset_key">Сбросить кнопку</string>
+    <string name="reset_key">Клавиша Сброса</string>
     <string name="externalStorageUnavailable">Внешнее хранилище недоступно, не удалось загрузить сертификат</string>
     <string name="addFavorite">Добавить в избранное</string>
     <string name="accessAdd">Добавить токен доступа</string>
@@ -121,7 +121,7 @@
     <string name="search_country">Страна</string>
     <string name="information">Информация</string>
     <string name="error_fetching_servers">Не удалось получить список.\nВы подключены к интернету?</string>
-    <string name="overlay">Оверлей</string>
+    <string name="overlay">Накладка</string>
     <string name="hint_reason">Причина</string>
     <string name="action_settings">Настройки</string>
     <string name="reconnect">Переподключиться</string>
@@ -175,7 +175,7 @@
     <string name="shout_include_subchannels">Транслировать в подканалы</string>
     <string name="shout_failed">Не удалось создать цель для передачи.</string>
     <string name="shout_target">Говорим в %s</string>
-    <string name="shout_configure">Настроить цели голосового сообщения</string>
+    <string name="shout_configure">Настроить цель голосового сообщения</string>
     <string name="grant_perm_microphone">Пожалуйста, разрешите использовать микрофон.</string>
     <string name="grant_perm_storage">Пожалуйста, разрешите запись во внешнее хранилище.</string>
     <string name="grant_perm_draw_over_apps">Пожалуйста, разрешите показывать окна поверх других приложений.</string>
@@ -187,15 +187,18 @@
     <plurals name="search_channel_users">
         <item quantity="one">%d пользователь</item>
         <item quantity="few">%d пользователя</item>
+        <item quantity="many">%d пользователей</item>
         <item quantity="other">%d пользователей</item>
     </plurals>
     <plurals name="notification_unread_many">
         <item quantity="one">%d новое сообщение</item>
         <item quantity="few">%d новых сообщения</item>
+        <item quantity="many">%d новых сообщений</item>
         <item quantity="other">%d новых сообщений</item>
     </plurals>
     <string name="donation_thanks">Спасибо за пожертвование.</string>
     <string name="bluetooth">Bluetooth</string>
     <string name="image_confirm_send">Отправить это изображение\?</string>
     <string name="no_ptt_key">Кнопка не выбрана</string>
+    <string name="grant_perm_notifications">Пожалуйста, дайте разрешение на отправку уведомлений.</string>
 </resources>
