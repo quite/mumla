@@ -202,4 +202,5 @@
         <item quantity="one">%d felhasználó</item>
         <item quantity="other">%d felhasználók</item>
     </plurals>
+    <string name="no_ptt_key">Nincs kulcs</string>
 </resources>
