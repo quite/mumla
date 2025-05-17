@@ -113,9 +113,9 @@
     <string name="send_message">Надіслати повідомлення</string>
     <string name="untrusted_certificate">Ненадійний сертифікат</string>
     <string name="allow">Дозволити</string>
-    <string name="trust_added">Сертифікат додано до довіреного сховища</string>
-    <string name="trust_add_failed">Не вдалося додати сертифікат до довіреного сховища.</string>
-    <string name="trust_cleared">Довірене сховище очищено</string>
+    <string name="trust_added">Сертифікат додано до бази довірених сертифікатів</string>
+    <string name="trust_add_failed">Не вдалося додати сертифікат до бази довірених сертифікатів.</string>
+    <string name="trust_cleared">База даних довірених сертифікатів була очищена</string>
     <string name="cancelled">Скасовано</string>
     <string name="current_chat_target">Поточний одержувач повідомлень</string>
     <string name="certificate_info">Одержувач:
