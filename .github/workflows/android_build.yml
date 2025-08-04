@@ -68,7 +68,7 @@ jobs:
         popd
 
     - name: Build All APK
-      run: ./gradlew assembleRelease # Compila l'APK in modalità release  . Se vuoi la debug, userai assembleDebug
+      run: ./gradlew assembleDebug # Compila l'APK in modalità release  . Se vuoi la debug, userai assembleRelease
     - name: List files in build directory
       run: find app -name "*.apk"
     - name: Upload All APK
