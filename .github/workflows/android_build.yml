@@ -1,0 +1,78 @@
+name: Android CI Build for MumlaPOC
+
+on:
+  #push:
+  #  branches:
+      # - main # Esegui il workflow ogni volta che viene fatto un push sul branch 'main'
+      # - your_feature_branch # Puoi aggiungere anche altri branch se vuoi testare le build delle tue feature
+
+  #pull_request:
+   # branches:
+      # - main # Esegui il workflow quando una pull request è aperta/aggiornata sul branch 'main'
+
+  workflow_dispatch: # Permette di avviare il workflow manualmente dalla pagina Actions di GitHub
+
+jobs:
+  build:
+    runs-on: ubuntu-latest # Esegui il job su un runner virtuale Ubuntu
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4 # Clona il tuo repository
+      with:
+        submodules: 'recursive' # Aggiungi questa linea per inizializzare e aggiornare i sottomoduli
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4 # Imposta l'ambiente Java (Mumla potrebbe richiedere JDK 11 o 17, controlla il suo build.gradle)
+      with:
+        distribution: 'temurin'
+        java-version: '17' # Usa JDK 17, che è compatibile con le ultime versioni di Android Studio e Gradle
+    - name: Set up Android NDK 25.1.8937393
+      id: setup_ndk # Assegna un ID a questo step per poterne referenziare gli output
+      uses: nttld/setup-ndk@v1
+      with:
+        #ndk-version: '25.1.8937393' # Specifica la versione esatta dell'NDK
+        ndk-version: 'r25b' # Questo dovrebbe risolvere il 404
+    # Aggiungi queste opzioni per assicurarti che l'NDK sia correttamente collegato
+        add-to-path: true # Aggiunge l'NDK al PATH, utile per strumenti da riga di comando
+        # link-to-sdk: true # Questo potrebbe causare il conflitto se sta installando una versione NDK ridondante.
+                          # Questo spesso risolve il "NDK not installed" in CI
+    # ---Step per creare local.properties---
+    - name: Create local.properties
+      run: |
+        echo "sdk.dir=$ANDROID_HOME" > local.properties
+        # L'azione nttld/setup-ndk dovrebbe configurare ANDROID_NDK_HOME,
+        # ma possiamo anche provare a scriverlo esplicitamente se necessario.
+        # Usa l'output dell'azione setup-ndk per maggiore precisione
+        echo "ndk.dir=${{ steps.setup_ndk.outputs.ndk-path }}" >> local.properties
+      # Questo step deve essere eseguito PRIMA di qualsiasi comando gradlew
+    # ---------------------------------------
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew # Rendi lo script Gradle Wrapper eseguibile
+
+    - name: Cache Gradle packages
+      uses: actions/cache@v4
+      with:
+        path: ~/.gradle/caches
+        key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+        restore-keys: |
+          ${{ runner.os }}-gradle-
+    - name: Build humla-spongycastle JAR
+      # Esegui i comandi specifici per compilare la libreria humla-spongycastle
+      # Nota: pushd e popd sono comandi della shell per cambiare directory e tornare indietro
+      # Assicurati che il percorso 'libraries/humla/libs/humla-spongycastle' sia ESATTO.
+      # L'utilizzo di `pwd` può aiutarti a verificarlo in locale.
+      run: |
+        pushd libraries/humla/libs/humla-spongycastle
+        ../../gradlew jar
+        popd
+
+    - name: Build All APK
+      run: ./gradlew assembleRelease # Compila l'APK in modalità release  . Se vuoi la debug, userai assembleDebug
+    - name: List files in build directory
+      run: find app -name "*.apk"
+    - name: Upload All APK
+      uses: actions/upload-artifact@v4 # Carica l'APK come artefatto del workflow
+      with:
+        name: mumlaPoc-all-apks
+        path: app/build/outputs/apk/**/*.apk
