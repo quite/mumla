@@ -18,7 +18,7 @@
 
 <!-- Here be constants. These resources do NOT need translation. -->
 <resources>
-    <string name="app_name">Mumla</string>
+    <string name="app_name">MumlaPOC</string>
     <string name="notification_message">%1$s: %2$s</string>
     <string name="certificate_export_format">mumla_%s.p12</string>
 </resources>
