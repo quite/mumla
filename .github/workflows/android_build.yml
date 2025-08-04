@@ -1,13 +1,13 @@
 name: Android CI Build for MumlaPOC
 
 on:
-  push:
-    branches:
+  #push:
+  #  branches:
       # - main # Esegui il workflow ogni volta che viene fatto un push sul branch 'main'
       # - your_feature_branch # Puoi aggiungere anche altri branch se vuoi testare le build delle tue feature
 
-  pull_request:
-    branches:
+  #pull_request:
+   # branches:
       # - main # Esegui il workflow quando una pull request è aperta/aggiornata sul branch 'main'
 
   workflow_dispatch: # Permette di avviare il workflow manualmente dalla pagina Actions di GitHub
@@ -67,12 +67,12 @@ jobs:
         ../../gradlew jar
         popd
 
-    - name: Build Debug APK
-      run: ./gradlew assembleDebug # Compila l'APK in modalità debug. Se vuoi la release, userai assembleRelease
+    - name: Build All APK
+      run: ./gradlew assembleRelease # Compila l'APK in modalità release  . Se vuoi la debug, userai assembleDebug
     - name: List files in build directory
       run: find app -name "*.apk"
-    - name: Upload Debug APK
+    - name: Upload All APK
       uses: actions/upload-artifact@v4 # Carica l'APK come artefatto del workflow
       with:
-        name: mumla-all-apks
+        name: mumlaPoc-all-apks
         path: app/build/outputs/apk/**/*.apk
