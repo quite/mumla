@@ -1,0 +1,6 @@
+Mumla tamamen Endonezyaca'ya çevrildi. Teşekkürler Alvin Lorence!
+
+Android 13 ve sonraki sürümlerde, Mumla artık uygulama başına dil ayarını destekliyor. Sistem ayarları / Diller / Uygulama Dilleri içinden dili seçin.
+
+Mumla'da %40 veya daha fazlasına çevrilmiş olan dilleri kullanabilirsiniz.
+Mumla'nın çevrilmesine https://hosted.weblate.org/engage/mumla/ adresinden yardımcı olabilirsiniz.
