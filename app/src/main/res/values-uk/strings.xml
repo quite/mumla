@@ -5,7 +5,7 @@
     <string name="drawer_server">Всі канали</string>
     <string name="drawer_tokens">Токени доступу</string>
     <string name="drawer_header_servers">Сервери</string>
-    <string name="drawer_favorites">Вибрані</string>
+    <string name="drawer_favorites">Обрані</string>
     <string name="drawer_public">Публічні сервери</string>
     <string name="drawer_open">Відкрити меню</string>
     <string name="drawer_pinned">Закріплені канали</string>
