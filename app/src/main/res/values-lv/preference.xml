@@ -1,3 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="inputMethodContinuous">Nepārtraukts</string>
+    <string name="theme_light">Gaišs</string>
+    <string name="theme_dark">Tumšs</string>
+    <string name="about">Par lietotni</string>
+    <string name="acknowledgements">Līdzautori</string>
+    <string name="licenses">Licences</string>
+    <string name="authentication">Autorizācija</string>
+    <string name="general">Vispārīgie</string>
+    <string name="appearance">Izskats</string>
+    <string name="theme">Motīvs</string>
+    <string name="advancedAudio">Papildus</string>
+    <string name="audio">Audio</string>
+    <string name="acknowledgementsSum">Skatīt, kuri veicināja Mumla attīstību, deva savu artavu (saite)</string>
+    <string name="version">Versija</string>
+    <string name="themeSum">Mainīt lietotnes izskatu.</string>
+    <string name="pref_show_user_count">Rādīt kanāla lietotāju skaitu</string>
+    <string name="pref_show_user_count_summary">Rādīs lietotāju skaitu kanāla apakškokos.</string>
 </resources>
