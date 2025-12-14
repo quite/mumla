@@ -1,3 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="drawer_header_servers">Serveri</string>
+    <string name="drawer_favorites">Iecienītākie</string>
+    <string name="user_menu_kick">Izmest</string>
+    <string name="user_menu_ban">Aizliegt</string>
+    <string name="user_menu_move">Pārvietot</string>
+    <string name="user_menu_register">Reģistrēties</string>
+    <string name="channel_menu_pin">Piespraust</string>
+    <string name="comment_view">Skatīt</string>
+    <string name="server_password">Parole</string>
+    <string name="server_username">Lietotājvārds</string>
+    <string name="server_port">Ports</string>
+    <string name="server_host">Adrese</string>
+    <string name="disconnect">Atvienot</string>
+    <string name="save">Saglabāt</string>
+    <string name="add">Pievienot</string>
+    <string name="search">Meklēt</string>
+    <string name="edit">Rediģēt</string>
+    <string name="remove">Noņemt</string>
+    <string name="delete">Dzēst</string>
+    <string name="online">Tiešsaistē</string>
+    <string name="offline">Bezsaistē</string>
+    <string name="channel">Kanāls</string>
+    <string name="user">Lietotājs</string>
+    <string name="server_info_version">%1$s (%2$s)</string>
+    <string name="server_match_info">Nosaukums: %1$s\nResursdatora adrese: %2$s:%3$d\nLietotāji: %4$d / %5$d\nVersija: %6$s \nValsts: %7$s \nAizture: %8$d ms</string>
+    <string name="server_match_description">Mumla var automātiski atrast jums tukšu serveri, kas optimizēts pēc tā atrašanās vietas, versijas un aiztures.</string>
+    <string name="server_match_expand_country">Nevarēja atrast optimālo serveri jūsu valstī. Vai meklēt pa visu pasauli?</string>
+    <string name="country">Valsts</string>
+    <string name="search_country">Valsts</string>
 </resources>
