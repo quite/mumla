@@ -19,7 +19,6 @@ package se.lublin.mumla;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.content.SharedPreferences.Editor;
 import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.Gravity;
@@ -106,10 +105,11 @@ public class Settings {
     public static final Boolean DEFAULT_AUTO_RECONNECT = true;
 
     public static final String PREF_THEME = "theme";
-    public static final String ARRAY_THEME_LIGHT = "lightDark";
-    public static final String ARRAY_THEME_DARK = "dark";
-    public static final String ARRAY_THEME_SOLARIZED_LIGHT = "solarizedLight";
-    public static final String ARRAY_THEME_SOLARIZED_DARK = "solarizedDark";
+    // These "system" and "force*" values are new. The MumlaApplication class will
+    // make all other (older) values result in the system default theme.
+    public static final String ARRAY_THEME_SYSTEM = "system";
+    public static final String ARRAY_THEME_LIGHT = "forceLight";
+    public static final String ARRAY_THEME_DARK = "forceDark";
 
     public static final String PREF_PTT_BUTTON_HEIGHT = "pttButtonHeight";
     public static final int DEFAULT_PTT_BUTTON_HEIGHT = 150;
@@ -319,34 +319,6 @@ public class Settings {
         return 0;
     }
 
-    /**
-     * @return the resource ID of the user-defined theme.
-     */
-    public int getTheme() {
-        switch (preferences.getString(PREF_THEME, ARRAY_THEME_LIGHT)) {
-            case ARRAY_THEME_LIGHT: {
-                return R.style.Theme_Mumla;
-            }
-            case ARRAY_THEME_DARK: {
-                return R.style.Theme_Mumla_Dark;
-            }
-            // The solarized themes were removed, so for these we adjust
-            // the preference, falling back to regular light/dark.
-            case ARRAY_THEME_SOLARIZED_LIGHT: {
-                Editor editor = preferences.edit();
-                editor.putString(PREF_THEME, ARRAY_THEME_LIGHT);
-                editor.apply();
-                return R.style.Theme_Mumla;
-            }
-            case ARRAY_THEME_SOLARIZED_DARK: {
-                Editor editor = preferences.edit();
-                editor.putString(PREF_THEME, ARRAY_THEME_DARK);
-                editor.apply();
-                return R.style.Theme_Mumla_Dark;
-            }
-        }
-        return -1;
-    }
 
     /* @return the height of PTT button */
     public int getPTTButtonHeight() {
@@ -422,10 +394,10 @@ public class Settings {
     }
 
     public void setMutedAndDeafened(boolean muted, boolean deafened) {
-        Editor editor = preferences.edit();
-        editor.putBoolean(PREF_MUTED, muted || deafened);
-        editor.putBoolean(PREF_DEAFENED, deafened);
-        editor.apply();
+        preferences.edit()
+                .putBoolean(PREF_MUTED, muted || deafened)
+                .putBoolean(PREF_DEAFENED, deafened)
+                .apply();
     }
 
     public void setFirstRun(boolean run) {

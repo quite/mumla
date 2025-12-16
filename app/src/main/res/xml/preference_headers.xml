@@ -1,46 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!--
-  ~ Copyright (C) 2014 Andrew Comminos
-  ~
-  ~ This program is free software: you can redistribute it and/or modify
-  ~ it under the terms of the GNU General Public License as published by
-  ~ the Free Software Foundation, either version 3 of the License, or
-  ~ (at your option) any later version.
-  ~
-  ~ This program is distributed in the hope that it will be useful,
-  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
-  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  ~ GNU General Public License for more details.
-  ~
-  ~ You should have received a copy of the GNU General Public License
-  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
-  -->
-
-<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
-    <header
-        android:title="@string/general"
-        android:fragment="se.lublin.mumla.preference.Preferences$MumlaPreferenceFragment">
-        <extra android:name="settings" android:value="general"></extra>
-    </header>
-    <header
-        android:title="@string/authentication"
-        android:fragment="se.lublin.mumla.preference.Preferences$MumlaPreferenceFragment">
-        <extra android:name="settings" android:value="authentication"></extra>
-    </header>
-    <header
-        android:title="@string/audio"
-        android:fragment="se.lublin.mumla.preference.Preferences$MumlaPreferenceFragment">
-        <extra android:name="settings" android:value="audio"></extra>
-    </header>
-    <header
-        android:title="@string/appearance"
-        android:fragment="se.lublin.mumla.preference.Preferences$MumlaPreferenceFragment">
-        <extra android:name="settings" android:value="appearance"></extra>
-    </header>
-    <header
-        android:title="@string/about"
-        android:fragment="se.lublin.mumla.preference.Preferences$MumlaPreferenceFragment">
-        <extra android:name="settings" android:value="about"></extra>
-    </header>
-</preference-headers>
+<androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference app:key="general_settings"
+        app:title="@string/general"
+        app:fragment="se.lublin.mumla.preference.GeneralSettingsFragment" />
+    <Preference app:key="authentication_settings"
+        app:title="@string/authentication"
+        app:fragment="se.lublin.mumla.preference.AuthenticationSettingsFragment" />
+    <Preference app:key="audio_settings"
+        app:title="@string/audio"
+        app:fragment="se.lublin.mumla.preference.AudioSettingsFragment" />
+    <Preference app:key="appearance_settings"
+        app:title="@string/appearance"
+        app:fragment="se.lublin.mumla.preference.AppearanceSettingsFragment" />
+    <Preference app:key="about_settings"
+        app:title="@string/about"
+        app:fragment="se.lublin.mumla.preference.AboutSettingsFragment" />
+</androidx.preference.PreferenceScreen>

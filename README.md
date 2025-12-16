@@ -26,7 +26,7 @@ a robust GPLv3 Mumble client for Android originally written by Andrew Comminos.
 It uses the the [Humla](https://gitlab.com/quite/humla) protocol implementation
 (forked from Comminos's [Jumble](https://github.com/acomminos/Jumble)).
 
-Mumla should run on Android 4.0 (IceCreamSandwich, API 14) and later.
+Mumla should run on Android 5.0 (Lollipop, "L", SDK/API 21) and later.
 
 Mumla is available [on F-Droid](https://f-droid.org/packages/se.lublin.mumla/).
 

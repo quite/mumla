@@ -46,14 +46,15 @@
     </string-array>
 
     <string-array name="themeNames">
+        <item>@string/theme_system</item>
         <item>@string/theme_light</item>
         <item>@string/theme_dark</item>
     </string-array>
 
-    <string-array
-        name="themeValues">
-        <item>lightDark</item>
-        <item>dark</item>
+    <string-array name="themeValues">
+        <item>system</item>
+        <item>forceLight</item>
+        <item>forceDark</item>
     </string-array>
 
     <string-array name="hotCornerNames">

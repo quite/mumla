@@ -17,6 +17,8 @@
 
 package se.lublin.mumla.app;
 
+import static java.util.Objects.requireNonNull;
+
 import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.ComponentName;
@@ -26,8 +28,6 @@ import android.content.ServiceConnection;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
-import android.graphics.PorterDuff;
-import android.graphics.drawable.Drawable;
 import android.media.AudioManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -50,6 +50,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -92,7 +93,7 @@ import se.lublin.mumla.db.MumlaDatabase;
 import se.lublin.mumla.db.MumlaSQLiteDatabase;
 import se.lublin.mumla.db.PublicServer;
 import se.lublin.mumla.preference.MumlaCertificateGenerateTask;
-import se.lublin.mumla.preference.Preferences;
+import se.lublin.mumla.preference.SettingsActivity;
 import se.lublin.mumla.servers.FavouriteServerListFragment;
 import se.lublin.mumla.servers.PublicServerListFragment;
 import se.lublin.mumla.servers.ServerEditFragment;
@@ -261,10 +262,12 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         mSettings = Settings.getInstance(this);
-        setTheme(mSettings.getTheme());
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         setStayAwake(mSettings.shouldStayAwake());
 
@@ -279,7 +282,7 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
         mDrawerList.setOnItemClickListener(this);
         mDrawerAdapter = new DrawerAdapter(this, this);
         mDrawerList.setAdapter(mDrawerAdapter);
-        mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.drawer_open, R.string.drawer_close) {
+        mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.drawer_open, R.string.drawer_close) {
             @Override
             public void onDrawerClosed(View drawerView) {
                 supportInvalidateOptionsMenu();
@@ -395,18 +398,6 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
     public boolean onPrepareOptionsMenu(Menu menu) {
         MenuItem disconnectButton = menu.findItem(R.id.action_disconnect);
         disconnectButton.setVisible(mService != null && mService.isConnected());
-
-        // Color the action bar icons to the primary text color of the theme.
-        int foregroundColor = getSupportActionBar().getThemedContext()
-                .obtainStyledAttributes(new int[] { android.R.attr.textColor })
-                .getColor(0, -1);
-        for(int x=0;x<menu.size();x++) {
-            MenuItem item = menu.getItem(x);
-            if(item.getIcon() != null) {
-                Drawable icon = item.getIcon().mutate(); // Mutate the icon so that the color filter is exclusive to the action bar
-                icon.setColorFilter(foregroundColor, PorterDuff.Mode.MULTIPLY);
-            }
-        }
 
         return super.onPrepareOptionsMenu(menu);
     }
@@ -529,7 +520,7 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
                 fragmentClass = PublicServerListFragment.class;
                 break;
             case DrawerAdapter.ITEM_SETTINGS:
-                Intent prefIntent = new Intent(this, Preferences.class);
+                Intent prefIntent = new Intent(this, SettingsActivity.class);
                 startActivity(prefIntent);
                 return;
             default:
@@ -540,7 +531,7 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
                     .replace(R.id.content_frame, fragment, fragmentClass.getName())
                     .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                     .commit();
-        setTitle(mDrawerAdapter.getItemWithId(fragmentId).title);
+        requireNonNull(getSupportActionBar()).setTitle(mDrawerAdapter.getItemWithId(fragmentId).title);
     }
 
     public void connectToServer(final Server server) {

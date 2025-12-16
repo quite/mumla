@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.Mumla" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/md_theme_light_primary</item>
+        <item name="colorOnPrimary">@color/md_theme_light_onPrimary</item>
+        <!-- Make it so appbar's popupmenu has light theme, even though appbar has dark -->
+        <item name="popupOverlay">@style/ThemeOverlay.Material3.Light</item>
+        <!-- Make the Chat Target "banner" ActionMode obscure the ActionBar,
+        instead of pushing it (and the rest of the layout) down. -->
+        <item name="windowActionModeOverlay">true</item>
+        <!-- This makes the ActionMode background dark, somehow: that style is empty!
+         But it is what we want, on both dark/light themes (text color is bright) -->
+        <item name="actionModeStyle">@style/App.Widget.ActionMode</item>
+    </style>
+
+    <!-- This is for always have dark themed appbar, used in activity .xmls -->
+    <style name="TweakedAppBarLayout" parent="">
+        <!-- Set background to primary color of theme -->
+        <item name="android:background">?attr/colorPrimary</item>
+        <!-- Use dark actionbar theme to ensure text/icons are light -->
+        <item name="android:theme">@style/ThemeOverlay.Material3.Dark.ActionBar</item>
+    </style>
+
+    <style name="App.Widget.ActionMode" parent="Widget.AppCompat.ActionMode">
+    </style>
+
+    <style name="Theme.Mumla" parent="Base.Theme.Mumla" />
+</resources>

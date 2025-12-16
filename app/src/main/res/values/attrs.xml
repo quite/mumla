@@ -17,5 +17,14 @@
   -->
 
 <resources>
-  <attr name="cardStyle" format="reference" />
+    <attr name="cardStyle" format="reference" />
+    <attr name="popupOverlay" format="reference" />
+
+    <declare-styleable name="SeekBarDialogPreference">
+        <attr name="max" format="integer" />
+        <attr name="min" format="integer" />
+        <attr name="multiplier" format="integer" />
+        <attr name="android:text" format="string" />
+        <attr name="android:defaultValue" />
+    </declare-styleable>
 </resources>

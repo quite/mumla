@@ -15,27 +15,52 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<androidx.drawerlayout.widget.DrawerLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/drawer_layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
+        <!-- Using TweakedAppBarLayout to always have dark themed appbar -->
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TweakedAppBarLayout">
+
+            <!-- The special popupTheme here makes it so popupmenu is will still have a light theme,
+            even though the AppBar has dark. See attrs.xml and themes.xml -->
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="?attr/popupOverlay"
+                app:title="@string/app_name" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
         <FrameLayout
             android:id="@+id/content_frame"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"/>
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
     </LinearLayout>
-    <ListView android:id="@+id/left_drawer"
-              android:layout_width="240dp"
-              android:layout_height="match_parent"
-              android:layout_gravity="start"
-              android:choiceMode="singleChoice"
-              android:divider="@android:color/transparent"
-              android:dividerHeight="0dp"
-              android:background="?colorPrimaryDark"/>
+
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="?colorPrimaryDark"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:fitsSystemWindows="true" />
+
 </androidx.drawerlayout.widget.DrawerLayout>
