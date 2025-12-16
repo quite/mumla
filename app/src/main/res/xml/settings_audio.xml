@@ -17,7 +17,8 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <ListPreference
         android:defaultValue="voiceActivity"
         android:entries="@array/audioInputNames"
@@ -36,17 +37,18 @@
         android:title="@string/audioInputVolume"
         android:summary="@string/audioInputVolumeSum"
         android:key="inputVolume"
-        max="200"
+        app:max="200"
         android:defaultValue="100"
         android:text="%"/>
 
     <PreferenceCategory android:title="@string/voiceActivitySettings"
         android:key="vad_settings">
+        <!-- multiplier was previously 0.1, but never made sense, never worked -->
         <se.lublin.mumla.preference.SeekBarDialogPreference
-            multiplier="0.1"
+            app:multiplier="1"
             android:defaultValue="50"
             android:key="vadThreshold"
-            max="100"
+            app:max="100"
             android:summary="@string/detectionThresholdSum"
             android:title="@string/detectionThreshold"/>
     </PreferenceCategory>
@@ -101,9 +103,9 @@
             android:key="input_bitrate"
             android:title="@string/inputQuality"
             android:summary="@string/inputQualitySum"
-            multiplier="1000"
-            max="96"
-            min="8"
+            app:multiplier="1000"
+            app:max="96"
+            app:min="8"
             android:defaultValue="40"
             android:text=" bps"/>
 

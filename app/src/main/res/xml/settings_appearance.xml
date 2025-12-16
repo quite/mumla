@@ -17,9 +17,10 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <ListPreference
-        android:defaultValue="lightDark"
+        android:defaultValue="system"
         android:entries="@array/themeNames"
         android:entryValues="@array/themeValues"
         android:key="theme"
@@ -36,9 +37,9 @@
         android:key="pttButtonHeight"
         android:title="@string/pttButtonHeight"
         android:summary="@string/pttButtonHeightSum"
-        multiplier="10"
-        max="100"
-        min="15"
+        app:multiplier="10"
+        app:max="100"
+        app:min="15"
         android:defaultValue="15"
         android:text=" dp"/>
 

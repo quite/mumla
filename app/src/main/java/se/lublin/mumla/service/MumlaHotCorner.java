@@ -61,7 +61,7 @@ public class MumlaHotCorner implements View.OnTouchListener {
                 WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE | WindowManager.LayoutParams.FLAG_WATCH_OUTSIDE_TOUCH,
                 PixelFormat.TRANSLUCENT);
         mParams.gravity = gravity;
-        mHighlightColour = mContext.getResources().getColor(R.color.holo_blue_bright);
+        mHighlightColour = mContext.getResources().getColor(R.color.hot_corner_highlight);
     }
 
     /**

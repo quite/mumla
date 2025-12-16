@@ -1,0 +1,26 @@
+<resources>
+    <style name="Theme.Mumla" parent="Base.Theme.Mumla">
+        <item name="colorPrimary">@color/md_theme_dark_primary</item>
+        <item name="colorOnPrimary">@color/md_theme_dark_onPrimary</item>
+        <!-- Fix text color in drawer -->
+        <item name="android:textColorPrimaryInverse">#dddddd</item>-->
+        <item name="android:textColorSecondaryInverse">#dddddd</item>-->
+        <!-- Dark primary color is too dark for dialog buttons (on dark background) -->
+        <item name="alertDialogTheme">@style/TweakedDialog</item>
+        <!-- Mark the cardview background a bit darker (used for server list and chat item list) -->
+        <item name="cardStyle">@style/Theme.Mumla.Dark.CardView</item>
+        <!-- Make it so appbar's popupmenu has dark theme (it would anyway in general dark theme,
+        but this is needed because in the light theme this is set to Material3.Light z-->
+        <item name="popupOverlay">@style/ThemeOverlay.Material3.Dark</item>
+    </style>
+
+    <style name="TweakedDialog" parent="ThemeOverlay.Material3.Dialog.Alert">
+        <item name="buttonBarButtonStyle">@style/TweakedButtonBarStyle</item>
+    </style>
+    <style name="TweakedButtonBarStyle" parent="Widget.Material3.Button.TextButton.Dialog.Flush">
+        <item name="android:textColor">#1795c2</item>
+    </style>
+    <style name="Theme.Mumla.Dark.CardView" parent="CardView">
+        <item name="cardBackgroundColor">#202020</item>
+    </style>
+</resources>
