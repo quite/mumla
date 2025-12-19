@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Color when PTT button is pressed -->
+    <item android:state_pressed="true" android:color="?attr/pttPressed" />
+    <!-- Color when PTT button is in sticky mode, and activate -->
+    <item android:state_activated="true" android:color="?attr/pttPressed" />
+    <!-- Normal primary color in default state -->
+    <item android:color="?attr/colorPrimary" />
+</selector>

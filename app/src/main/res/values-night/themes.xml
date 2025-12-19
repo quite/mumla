@@ -2,6 +2,7 @@
     <style name="Theme.Mumla" parent="Base.Theme.Mumla">
         <item name="colorPrimary">@color/md_theme_dark_primary</item>
         <item name="colorOnPrimary">@color/md_theme_dark_onPrimary</item>
+        <item name="pttPressed">@color/md_theme_dark_primary_lighter</item>
         <!-- Fix text color in drawer -->
         <item name="android:textColorPrimaryInverse">#dddddd</item>-->
         <item name="android:textColorSecondaryInverse">#dddddd</item>-->
