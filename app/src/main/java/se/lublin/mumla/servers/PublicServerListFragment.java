@@ -18,13 +18,11 @@
 package se.lublin.mumla.servers;
 
 import android.annotation.SuppressLint;
-import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.AsyncTask;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -326,7 +324,6 @@ public class PublicServerListFragment extends Fragment implements OnItemClickLis
      * Finds an empty server in the user's country code with low latency.
      * By default, it will show a ProgressDialog while it performs this and an AlertDialog allowing the user to connect.
      */
-    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     private class MatchServerTask extends AsyncTask<String, Void, ServerInfoResponse> {
 
         /**
