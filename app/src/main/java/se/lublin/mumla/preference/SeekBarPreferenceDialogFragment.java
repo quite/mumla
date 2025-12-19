@@ -42,21 +42,21 @@ public class SeekBarPreferenceDialogFragment extends PreferenceDialogFragmentCom
         mSuffix = preference.mSuffix;
         // The persisted value is always multiplied, but the default value in the XML is not (nor
         // are the min and max values in the XML). Make this variable contain the correct
-        // multiplievalue in both cases.
-        mCurrentValue = Objects.requireNonNull(preference.getSharedPreferences())
+        // multiplier value in both cases.
+        mCurrentValue = requireNonNull(preference.getSharedPreferences())
                 .getInt(preference.getKey(), preference.mDefaultValue * mMultiplier);
+        updateValueView();
 
         seekBar.setMax(preference.mMax - mMin);
         // The persisted value is multiplied, scale it down
         seekBar.setProgress((mCurrentValue / mMultiplier) - mMin);
-        updateValueView(mCurrentValue);
 
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 if (fromUser) {
                     mCurrentValue = (mMin + progress) * mMultiplier;
-                    updateValueView(mCurrentValue);
+                    updateValueView();
                 }
             }
 
@@ -70,8 +70,8 @@ public class SeekBarPreferenceDialogFragment extends PreferenceDialogFragmentCom
         });
     }
 
-    private void updateValueView(int value) {
-        String t = String.valueOf(value);
+    private void updateValueView() {
+        String t = String.valueOf(mCurrentValue);
         mValueView.setText(mSuffix == null ? t : t.concat(mSuffix));
     }
 

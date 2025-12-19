@@ -29,8 +29,17 @@ public abstract class MumlaPreferenceFragment extends PreferenceFragmentCompat {
             final PreferenceDialogFragmentCompat dialogFragment = SeekBarPreferenceDialogFragment.newInstance(preference.getKey());
             dialogFragment.setTargetFragment(this, 0);
             dialogFragment.show(getParentFragmentManager(), "androidx.preference.PreferenceFragment.DIALOG");
-        } else {
-            super.onDisplayPreferenceDialog(preference);
+            return;
         }
+        if (preference instanceof KeySelectDialogPreference) {
+            if (getParentFragmentManager().findFragmentByTag("androidx.preference.PreferenceFragment.DIALOG") != null) {
+                return;
+            }
+            final PreferenceDialogFragmentCompat dialogFragment = KeySelectPreferenceDialogFragment.newInstance(preference.getKey());
+            dialogFragment.setTargetFragment(this, 0);
+            dialogFragment.show(getParentFragmentManager(), "androidx.preference.PreferenceFragment.DIALOG");
+            return;
+        }
+        super.onDisplayPreferenceDialog(preference);
     }
 }

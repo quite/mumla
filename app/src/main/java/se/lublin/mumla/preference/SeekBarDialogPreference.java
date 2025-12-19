@@ -9,7 +9,6 @@ import androidx.preference.DialogPreference;
 import se.lublin.mumla.R;
 
 public class SeekBarDialogPreference extends DialogPreference {
-
     public final int mMax;
     public final int mMin;
     public final int mMultiplier;
