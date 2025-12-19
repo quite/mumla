@@ -69,8 +69,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:orientation="vertical"
-        android:background="?attr/colorPrimary">
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/pushtotalk"
@@ -80,8 +79,11 @@
             android:textColor="?android:attr/textColorPrimaryInverse"
             android:textAllCaps="true"
             android:textStyle="bold"
-            android:textSize="12sp"
-            android:background="?attr/selectableItemBackground"/>
+            android:textSize="14sp"
+            app:backgroundTint="@drawable/ptt_button_tint"
+            app:cornerRadius="0dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp" />
     </LinearLayout>
 
 </LinearLayout>

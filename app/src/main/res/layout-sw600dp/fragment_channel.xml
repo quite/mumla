@@ -107,7 +107,7 @@
                 android:text="@string/ptt"
                 android:textAllCaps="true"
                 android:textStyle="bold"
-                android:textSize="12sp"
+                android:textSize="14sp"
                 android:textColor="#858585"
                 android:background="?attr/selectableItemBackground"/>
         </LinearLayout>

@@ -3,6 +3,7 @@
     <style name="Base.Theme.Mumla" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/md_theme_light_primary</item>
         <item name="colorOnPrimary">@color/md_theme_light_onPrimary</item>
+        <item name="pttPressed">@color/md_theme_light_primary_darker</item>
         <!-- Make it so appbar's popupmenu has light theme, even though appbar has dark -->
         <item name="popupOverlay">@style/ThemeOverlay.Material3.Light</item>
         <!-- Make the Chat Target "banner" ActionMode obscure the ActionBar,
