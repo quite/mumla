@@ -31,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/version"
-            android:textSize="24sp"
+            android:textSize="20sp"
             android:fontFamily="sans-serif-condensed"
             android:layout_marginBottom="8dp"/>
         <TextView
@@ -54,7 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/control_channel"
-            android:textSize="24sp"
+            android:textSize="20sp"
             android:fontFamily="sans-serif-condensed"
             android:layout_marginBottom="8dp"
             android:layout_marginTop="16dp" />
@@ -84,7 +84,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/voice_channel"
-            android:textSize="24sp"
+            android:textSize="20sp"
             android:fontFamily="sans-serif-condensed"
             android:layout_marginBottom="8dp"
             android:layout_marginTop="16dp" />
@@ -107,7 +107,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/audio_bandwidth"
-            android:textSize="24sp"
+            android:textSize="20sp"
             android:fontFamily="sans-serif-condensed"
             android:layout_marginBottom="8dp"
             android:layout_marginTop="16dp" />

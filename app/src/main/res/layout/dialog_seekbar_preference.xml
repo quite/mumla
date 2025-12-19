@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:textSize="28sp"
+        android:textSize="23sp"
         android:layout_marginBottom="16dp"/>
 
     <SeekBar

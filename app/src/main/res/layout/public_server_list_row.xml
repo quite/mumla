@@ -54,7 +54,7 @@
                 android:lines="1"
                 android:text="@string/server_host"
                 android:textColor="?android:textColorSecondary"
-                android:textSize="24sp" />
+                android:textSize="19sp" />
 
             <RelativeLayout
                 android:id="@+id/server_row_info"
