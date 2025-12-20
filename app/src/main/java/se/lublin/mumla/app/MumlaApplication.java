@@ -5,12 +5,13 @@ import static se.lublin.mumla.Settings.ARRAY_THEME_LIGHT;
 import static se.lublin.mumla.Settings.ARRAY_THEME_SYSTEM;
 import static se.lublin.mumla.Settings.PREF_THEME;
 
+import android.app.Application;
 import android.content.SharedPreferences;
+
 import androidx.appcompat.app.AppCompatDelegate;
-import androidx.multidex.MultiDexApplication;
 import androidx.preference.PreferenceManager;
 
-public class MumlaApplication extends MultiDexApplication implements SharedPreferences.OnSharedPreferenceChangeListener {
+public class MumlaApplication extends Application implements SharedPreferences.OnSharedPreferenceChangeListener {
 
     @Override
     public void onCreate() {

@@ -21,7 +21,7 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.1.4'
+        classpath 'com.android.tools.build:gradle:8.13.2'
     }
 }
 apply plugin: 'com.android.application'
@@ -65,7 +65,6 @@ android {
     defaultConfig {
         minSdkVersion 21
         targetSdk 35
-        multiDexEnabled true
 
         applicationId "se.lublin.mumla"
         versionCode 110
@@ -137,7 +136,6 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.multidex:multidex:2.0.1'
     implementation project(":libraries:humla")
     implementation 'androidx.appcompat:appcompat:1.6.0'
     implementation 'androidx.cardview:cardview:1.0.0'
