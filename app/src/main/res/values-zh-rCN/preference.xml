@@ -94,4 +94,5 @@
     <string name="pref_show_user_count_summary">在频道树中显示用户数量。</string>
     <string name="pref_start_up_in_pinned_mode">钉选频道模式</string>
     <string name="pref_start_upIn_pinned_mode_sum">连接到服务器后，启用“钉选频道”模式（隐藏未钉选的频道）。</string>
+    <string name="theme_system">系统默认</string>
 </resources>
