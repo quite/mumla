@@ -23,6 +23,7 @@
     <string name="inputMethodContinuous">Continuous</string>
 
     <!-- Theme names -->
+    <string name="theme_system">System default</string>
     <string name="theme_light">Light</string>
     <string name="theme_dark">Dark</string>
 

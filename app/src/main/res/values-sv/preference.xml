@@ -31,6 +31,7 @@
     <string name="version">Version</string>
     <string name="inputMethodVoice">Röstaktivitet</string>
     <string name="inputMethodContinuous">Kontinuerlig</string>
+    <string name="theme_system">Systemstandard</string>
     <string name="theme_light">Ljust</string>
     <string name="theme_dark">Mörk</string>
     <string name="hot_corner_top_left">↖ överst till vänster</string>
