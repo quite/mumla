@@ -91,4 +91,5 @@
     <string name="inputQualitySum">Tercih edilen veri aktarım hızı (bit/saniye olarak).</string>
     <string name="pref_start_up_in_pinned_mode">Sabitlenen kanallar modu</string>
     <string name="pref_start_upIn_pinned_mode_sum">Bağlandıktan sonra \"Sabitlenen kanallar\" modunu etkinleştirir (sabitlenmeyen kanalları gizler).</string>
+    <string name="theme_system">Sistem öntanımlı değeri</string>
 </resources>
