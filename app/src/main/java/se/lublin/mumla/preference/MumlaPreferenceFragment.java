@@ -3,9 +3,13 @@ package se.lublin.mumla.preference;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceDialogFragmentCompat;
 import androidx.preference.PreferenceFragmentCompat;
+
+import se.lublin.mumla.R;
 
 public abstract class MumlaPreferenceFragment extends PreferenceFragmentCompat {
     @Override
@@ -14,6 +18,7 @@ public abstract class MumlaPreferenceFragment extends PreferenceFragmentCompat {
         if (fragment != null) {
             Bundle bundle = new Bundle();
             bundle.putString("fragmentClassName", fragment);
+            bundle.putCharSequence("title", preference.getTitle());
             getParentFragmentManager().setFragmentResult("launchFragment", bundle);
             return true;
         }
@@ -41,5 +46,22 @@ public abstract class MumlaPreferenceFragment extends PreferenceFragmentCompat {
             return;
         }
         super.onDisplayPreferenceDialog(preference);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        ActionBar actionBar = ((AppCompatActivity) requireActivity()).getSupportActionBar();
+        if (actionBar == null) {
+            return;
+        }
+        Bundle arguments = getArguments();
+        CharSequence title = (arguments != null) ? arguments.getCharSequence("title") : null;
+        if (title == null) {
+            actionBar.setTitle(R.string.action_settings);
+            return;
+        }
+        actionBar.setTitle(title);
     }
 }

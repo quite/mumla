@@ -46,9 +46,12 @@ public class SettingsActivity extends AppCompatActivity {
             if (fragmentClassName != null) {
                 try {
                     Class<?> fragmentClass = Class.forName(fragmentClassName);
+                    Fragment fragment = (Fragment) fragmentClass.newInstance();
+                    // Pass it on to the fragment so its onResume can set the title, see MumlaPreferenceFragment
+                    fragment.setArguments(result);
                     getSupportFragmentManager()
                             .beginTransaction()
-                            .replace(R.id.settings_container, (Fragment) fragmentClass.newInstance())
+                            .replace(R.id.settings_container, fragment)
                             .addToBackStack(null)
                             .commit();
                 } catch (Exception e) {
