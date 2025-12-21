@@ -3,17 +3,22 @@
 <androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
     <Preference app:key="general_settings"
         app:title="@string/general"
-        app:fragment="se.lublin.mumla.preference.GeneralSettingsFragment" />
+        app:fragment="se.lublin.mumla.preference.GeneralSettingsFragment"
+        app:iconSpaceReserved="false" />
     <Preference app:key="authentication_settings"
         app:title="@string/authentication"
-        app:fragment="se.lublin.mumla.preference.AuthenticationSettingsFragment" />
+        app:fragment="se.lublin.mumla.preference.AuthenticationSettingsFragment"
+        app:iconSpaceReserved="false" />
     <Preference app:key="audio_settings"
         app:title="@string/audio"
-        app:fragment="se.lublin.mumla.preference.AudioSettingsFragment" />
+        app:fragment="se.lublin.mumla.preference.AudioSettingsFragment"
+        app:iconSpaceReserved="false" />
     <Preference app:key="appearance_settings"
         app:title="@string/appearance"
-        app:fragment="se.lublin.mumla.preference.AppearanceSettingsFragment" />
+        app:fragment="se.lublin.mumla.preference.AppearanceSettingsFragment"
+        app:iconSpaceReserved="false" />
     <Preference app:key="about_settings"
         app:title="@string/about"
-        app:fragment="se.lublin.mumla.preference.AboutSettingsFragment" />
+        app:fragment="se.lublin.mumla.preference.AboutSettingsFragment"
+        app:iconSpaceReserved="false" />
 </androidx.preference.PreferenceScreen>
