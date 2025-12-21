@@ -17,36 +17,42 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <Preference
         android:key="certificateGenerate"
         android:summary="@string/certificateGenerateSum"
-        android:title="@string/certificateGenerate">
+        android:title="@string/certificateGenerate"
+        app:iconSpaceReserved="false">
         <intent android:action="se.lublin.mumla.app.CERTIFICATE_GENERATE" />
     </Preference>
 
     <Preference
         android:summary="@string/pref_certificate_summary"
-        android:title="@string/pref_certificate_title">
+        android:title="@string/pref_certificate_title"
+        app:iconSpaceReserved="false">
         <intent android:action="se.lublin.mumla.app.CERTIFICATE_SELECT" />
     </Preference>
 
     <Preference
         android:summary="@string/pref_import_certificate_summary"
-        android:title="@string/pref_import_certificate_title">
+        android:title="@string/pref_import_certificate_title"
+        app:iconSpaceReserved="false">
         <intent android:action="se.lublin.mumla.app.CERTIFICATE_IMPORT" />
     </Preference>
 
     <Preference
         android:summary="@string/pref_export_certificate_summary"
-        android:title="@string/pref_export_certificate_title">
+        android:title="@string/pref_export_certificate_title"
+        app:iconSpaceReserved="false">
         <intent android:action="se.lublin.mumla.app.CERTIFICATE_EXPORT" />
     </Preference>
 
     <Preference
         android:key="clearTrust"
         android:title="@string/clearServerCertificates"
-        android:summary="@string/clearServerCertificatesSum">
+        android:summary="@string/clearServerCertificatesSum"
+        app:iconSpaceReserved="false">
         <intent android:action="se.lublin.mumla.app.CLEAR_SERVER_CERTIFICATES" />
     </Preference>
 
@@ -54,5 +60,6 @@
         android:key="defaultUsername"
         android:summary="@string/defaultUsernameSum"
         android:title="@string/defaultUsername"
-        android:defaultValue="@string/defaultUsernameDefault"/>
+        android:defaultValue="@string/defaultUsernameDefault"
+        app:iconSpaceReserved="false"/>
 </PreferenceScreen>

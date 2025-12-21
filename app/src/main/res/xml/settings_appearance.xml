@@ -25,13 +25,15 @@
         android:entryValues="@array/themeValues"
         android:key="theme"
         android:summary="@string/themeSum"
-        android:title="@string/theme" />
+        android:title="@string/theme"
+        app:iconSpaceReserved="false" />
 
     <CheckBoxPreference
         android:key="show_user_count"
         android:defaultValue="false"
         android:title="@string/pref_show_user_count"
-        android:summary="@string/pref_show_user_count_summary" />
+        android:summary="@string/pref_show_user_count_summary"
+        app:iconSpaceReserved="false" />
 
     <se.lublin.mumla.preference.SeekBarDialogPreference
         android:key="pttButtonHeight"
@@ -41,7 +43,8 @@
         app:max="100"
         app:min="15"
         android:defaultValue="15"
-        android:text=" dp"/>
+        android:text=" dp"
+        app:iconSpaceReserved="false" />
 
     <!--
     <ListPreference

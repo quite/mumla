@@ -17,54 +17,63 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <CheckBoxPreference
         android:defaultValue="true"
         android:key="chatNotify"
         android:summary="@string/chatNotificationsSum"
-        android:title="@string/chatNotifications" />
+        android:title="@string/chatNotifications"
+        app:iconSpaceReserved="false" />
 
     <CheckBoxPreference
         android:key="stay_awake"
         android:defaultValue="false"
         android:title="@string/stay_awake"
-        android:summary="@string/stay_awake_sum" />
+        android:summary="@string/stay_awake_sum"
+        app:iconSpaceReserved="false" />
 
     <CheckBoxPreference
         android:defaultValue="true"
         android:key="useTts"
         android:summary="@string/useTtsSum"
-        android:title="@string/useTts" />
+        android:title="@string/useTts"
+        app:iconSpaceReserved="false" />
 
     <CheckBoxPreference
         android:defaultValue="false"
         android:key="shortTtsMessages"
         android:summary="@string/shortTtsMessagesSum"
-        android:title="@string/shortTtsMessages" />
+        android:title="@string/shortTtsMessages"
+        app:iconSpaceReserved="false" />
 
     <CheckBoxPreference
         android:defaultValue="true"
         android:key="load_images"
         android:summary="@string/loadImagesSum"
-        android:title="@string/loadImages"/>
+        android:title="@string/loadImages"
+        app:iconSpaceReserved="false" />
 
     <CheckBoxPreference
         android:defaultValue="true"
         android:key="autoReconnect"
         android:summary="@string/autoReconnectSum"
-        android:title="@string/autoReconnect" />
+        android:title="@string/autoReconnect"
+        app:iconSpaceReserved="false" />
 
     <CheckBoxPreference
         android:defaultValue="false"
         android:key="forceTcp"
         android:summary="@string/forceTcpSum"
-        android:title="@string/forceTcp"/>
+        android:title="@string/forceTcp"
+        app:iconSpaceReserved="false" />
 
     <CheckBoxPreference
         android:defaultValue="false"
         android:key="useTor"
         android:summary="@string/useTorSum"
-        android:title="@string/useTor"/>
+        android:title="@string/useTor"
+        app:iconSpaceReserved="false" />
 
     <CheckBoxPreference
         android:layout_width="wrap_content"
@@ -72,5 +81,6 @@
         android:defaultValue="false"
         android:key="startUpInPinnedMode"
         android:summary="@string/pref_start_upIn_pinned_mode_sum"
-        android:title="@string/pref_start_up_in_pinned_mode" />
+        android:title="@string/pref_start_up_in_pinned_mode"
+        app:iconSpaceReserved="false" />
 </PreferenceScreen>
