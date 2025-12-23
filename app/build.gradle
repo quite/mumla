@@ -31,14 +31,9 @@ repositories {
     google()
 }
 
-def gitDescribe = { ->
-    def stdout = new ByteArrayOutputStream()
-    exec {
-        commandLine "git", "describe", "--tags", "--always"
-        standardOutput = stdout
-    }
-    return stdout.toString().trim()
-}
+def gitDescribe = providers.exec {
+    commandLine "git", "describe", "--tags", "--always"
+}.standardOutput.asText.get().trim()
 
 def signingFile = file 'signing.gradle'
 if (signingFile.exists()) apply from: signingFile
@@ -53,13 +48,16 @@ allprojects {
 }
 
 android {
-    namespace 'se.lublin.mumla'
+    namespace = 'se.lublin.mumla'
     compileSdk = 36
 
+    base {
+        archivesName = "mumla"
+    }
 
     // gradle8: Need to enable this when defaultConfig below contains some custom BuildConfig
     buildFeatures {
-        buildConfig true
+        buildConfig = true
     }
 
     defaultConfig {
@@ -68,11 +66,10 @@ android {
 
         applicationId "se.lublin.mumla"
         versionCode 110
-        versionName gitDescribe()
+        versionName gitDescribe
 
         resourceConfigurations += ["en", "ar", "ca", "cs", "de", "el", "es", "fi", "fr", "hu", "in", "it", "ja", "nb-rNO", "nl", "pl", "pt", "pt-rBR", "ru", "sv", "ta", "th", "tr", "uk", "zh-rCN"]
 
-        setProperty("archivesBaseName", "mumla")
         buildConfigField "long", "TIMESTAMP", System.currentTimeMillis() + "L"
 
         testInstrumentationRunner "android.test.InstrumentationTestRunner"
@@ -99,10 +96,10 @@ android {
         release {
             if (android.hasProperty("signingConfigs")) {
                 if (signingConfigs.hasProperty("release")) {
-                    signingConfig signingConfigs.release
+                    signingConfig = signingConfigs.release
                 }
                 if (signingConfigs.hasProperty("beta")) {
-                    signingConfig signingConfigs.beta
+                    signingConfig = signingConfigs.beta
                 }
             }
         }
@@ -110,18 +107,18 @@ android {
             versionNameSuffix "-debug"
             if (android.hasProperty("signingConfigs")) {
                 if (signingConfigs.hasProperty("beta")) {
-                    signingConfig signingConfigs.beta
+                    signingConfig = signingConfigs.beta
                 }
             }
         }
     }
     lint {
-        abortOnError true
+        abortOnError = true
         // InvalidPackage is spongycastle-related
         disable 'InvalidPackage', 'MissingTranslation'
-        explainIssues true
-        ignoreWarnings false
-        quiet false
+        explainIssues = true
+        ignoreWarnings = false
+        quiet = false
     }
     // betas may be released every minute
     // TODO? dynamic stuff, have to rebuild a lot
