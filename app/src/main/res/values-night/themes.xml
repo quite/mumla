@@ -4,8 +4,9 @@
         <item name="colorOnPrimary">@color/md_theme_dark_onPrimary</item>
         <item name="pttPressed">@color/md_theme_dark_primary_lighter</item>
         <!-- Fix text color in drawer -->
-        <item name="android:textColorPrimaryInverse">#dddddd</item>-->
-        <item name="android:textColorSecondaryInverse">#dddddd</item>-->
+        <item name="android:textColorPrimaryInverse">#dddddd</item>
+        <item name="android:textColorSecondaryInverse">#dddddd</item>
+
         <!-- Dark primary color is too dark for dialog buttons (on dark background) -->
         <item name="alertDialogTheme">@style/TweakedDialog</item>
         <!-- Mark the cardview background a bit darker (used for server list and chat item list) -->
