@@ -214,4 +214,14 @@
         <item quantity="one">%d new message</item>
         <item quantity="other">%d new messages</item>
     </plurals>
+
+    <string name="app_news">What\'s New</string>
+    <string name="app_news_summary">View the latest update news</string>
+    <string-array name="news_items_v3_7_0">
+        <item>A lot of work was done to update Mumla for Android 15 and 16 (API 35 &amp; 36).</item>
+        <item>As a consequence Android 5.0 (API 21) or later is now required.</item>
+        <item>Theming was modernized to support system light/dark modes.</item>
+        <item>The settings screen had to be adapted to newer APIs.</item>
+    </string-array>
+    <string name="news_footer_on_startup">These news can be viewed again from the About page.</string>
 </resources>

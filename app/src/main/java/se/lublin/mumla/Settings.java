@@ -19,10 +19,12 @@ package se.lublin.mumla;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.Gravity;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.preference.PreferenceManager;
 
 import org.spongycastle.jce.provider.BouncyCastleProvider;
 
@@ -172,6 +174,8 @@ public class Settings {
 
     public static final String PREF_START_UP_IN_PINNED_MODE = "startUpInPinnedMode";
     public static final boolean DEFAULT_START_UP_IN_PINNED_MODE = false;
+
+    public static final String PREF_NEWS_SHOWN_VERSIONS = "newsShownVersions";
 
     static {
         ARRAY_INPUT_METHODS = new HashSet<String>();
@@ -449,5 +453,24 @@ public class Settings {
 
     public boolean shouldStartUpInPinnedMode() {
         return preferences.getBoolean(PREF_START_UP_IN_PINNED_MODE, DEFAULT_START_UP_IN_PINNED_MODE);
+    }
+
+    public Set<String> getNewsShownVersions() {
+        return preferences.getStringSet(PREF_NEWS_SHOWN_VERSIONS, new HashSet<>());
+    }
+
+    public void addNewsShownVersion(@NonNull String versionName) {
+        if (versionName.isEmpty()) {
+            return;
+        }
+        // Making a copy; getStringSet docs states that the returned set must not be modified
+        Set<String> versions = new HashSet<>(preferences.getStringSet(PREF_NEWS_SHOWN_VERSIONS, new HashSet<>()));
+        if (versions.add(versionName)) {
+            preferences.edit().putStringSet(PREF_NEWS_SHOWN_VERSIONS, versions).apply();
+        }
+    }
+
+    public void resetNewsShownVersion() {
+        preferences.edit().putStringSet(PREF_NEWS_SHOWN_VERSIONS, new HashSet<>()).apply();
     }
 }

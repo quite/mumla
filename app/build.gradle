@@ -31,10 +31,6 @@ repositories {
     google()
 }
 
-def gitDescribe = providers.exec {
-    commandLine "git", "describe", "--tags", "--always"
-}.standardOutput.asText.get().trim()
-
 def signingFile = file 'signing.gradle'
 if (signingFile.exists()) apply from: signingFile
 def signingBetaFile = file 'signing-beta.gradle'
@@ -60,17 +56,23 @@ android {
         buildConfig = true
     }
 
+    def gitDescribe = providers.exec {
+        commandLine "git", "describe", "--tags", "--match", "[0-9]*.[0-9]*.[0-9]*"
+    }.standardOutput.asText.get().trim()
+
     defaultConfig {
         minSdkVersion 21
         targetSdk 36
 
         applicationId "se.lublin.mumla"
+        // Remember the news_items_vX_Y_Z in app/src/main/res/values/strings.xml
         versionCode 110
         versionName gitDescribe
 
         resourceConfigurations += ["en", "ar", "ca", "cs", "de", "el", "es", "fi", "fr", "hu", "in", "it", "ja", "nb-rNO", "nl", "pl", "pt", "pt-rBR", "ru", "sv", "ta", "th", "tr", "uk", "zh-rCN"]
 
         buildConfigField "long", "TIMESTAMP", System.currentTimeMillis() + "L"
+        buildConfigField "String", "VERSIONTAG", "\"" + gitDescribe.split("-")[0] + "\""
 
         testInstrumentationRunner "android.test.InstrumentationTestRunner"
     }

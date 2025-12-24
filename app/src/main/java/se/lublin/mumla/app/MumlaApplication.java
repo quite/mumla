@@ -12,7 +12,6 @@ import androidx.appcompat.app.AppCompatDelegate;
 import androidx.preference.PreferenceManager;
 
 public class MumlaApplication extends Application implements SharedPreferences.OnSharedPreferenceChangeListener {
-
     @Override
     public void onCreate() {
         super.onCreate();
@@ -49,4 +48,5 @@ public class MumlaApplication extends Application implements SharedPreferences.O
             preferences.edit().putString(PREF_THEME, ARRAY_THEME_SYSTEM).apply();
         }
     }
+
 }

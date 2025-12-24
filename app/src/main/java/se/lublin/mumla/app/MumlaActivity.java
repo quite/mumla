@@ -19,6 +19,8 @@ package se.lublin.mumla.app;
 
 import static java.util.Objects.requireNonNull;
 
+import static se.lublin.mumla.app.DialogUtils.maybeShowNewsDialog;
+
 import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.ComponentName;
@@ -32,7 +34,6 @@ import android.media.AudioManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.IBinder;
-import android.preference.PreferenceManager;
 import android.text.InputType;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -57,6 +58,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.preference.PreferenceManager;
 
 import org.spongycastle.util.encoders.Hex;
 
@@ -354,8 +356,15 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
         setVolumeControlStream(mSettings.isHandsetMode() ?
                 AudioManager.STREAM_VOICE_CALL : AudioManager.STREAM_MUSIC);
 
+        if (savedInstanceState == null) {
+            // Running this only on real app startup -- not when Android recreates the activity
+            // on configuration change, like screen rotation.
+            maybeShowNewsDialog(this);
+        }
+
         if (mSettings.isFirstRun()) {
             showFirstRunGuide();
+            mSettings.setFirstRun(false);
         }
     }
 
@@ -491,7 +500,6 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
             }
         });
         adb.show();
-        mSettings.setFirstRun(false);
     }
 
     /**
