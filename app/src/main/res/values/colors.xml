@@ -6,6 +6,7 @@
 
     <color name="md_theme_dark_primary">#001b2b</color>
     <color name="md_theme_dark_primary_lighter">#002b45</color> <!-- for pttPressed -->
+    <color name="md_theme_dark_primary_lighter_more">#0093eb</color> <!-- for higher-contrast buttons in dark mode -->
     <color name="md_theme_dark_onPrimary">#1795c2</color>
 
     <color name="hot_corner_highlight">#ffffffff</color>
