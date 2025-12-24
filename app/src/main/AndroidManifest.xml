@@ -119,7 +119,7 @@
 
         <activity
             android:name=".preference.CertificateSelectActivity"
-            android:theme="@style/Base.Theme.AppCompat.Light.Dialog"
+            android:theme="@style/Theme.Mumla"
             android:exported="true">
             <intent-filter>
                 <action android:name="se.lublin.mumla.app.CERTIFICATE_SELECT" />
@@ -128,7 +128,7 @@
         </activity>
         <activity
             android:name=".preference.CertificateImportActivity"
-            android:theme="@style/Base.Theme.AppCompat.Light.Dialog"
+            android:theme="@style/Theme.Mumla"
             android:exported="true">
             <intent-filter>
                 <action android:name="se.lublin.mumla.app.CERTIFICATE_IMPORT" />
@@ -137,7 +137,7 @@
         </activity>
         <activity
             android:name=".preference.CertificateExportActivity"
-            android:theme="@style/Base.Theme.AppCompat.Light.Dialog"
+            android:theme="@style/Theme.Mumla"
             android:exported="true">
             <intent-filter>
                 <action android:name="se.lublin.mumla.app.CERTIFICATE_EXPORT" />
@@ -146,7 +146,7 @@
         </activity>
         <activity
             android:name=".preference.CertificateGenerateActivity"
-            android:theme="@style/Base.Theme.AppCompat.Light.Dialog"
+            android:theme="@style/Theme.Mumla"
             android:exported="true">
             <intent-filter>
                 <action android:name="se.lublin.mumla.app.CERTIFICATE_GENERATE" />
@@ -155,7 +155,7 @@
         </activity>
         <activity
             android:name=".preference.ServerCertificateClearActivity"
-            android:theme="@style/Base.Theme.AppCompat.Light.Dialog"
+            android:theme="@style/Theme.Mumla"
             android:exported="true">
             <intent-filter>
                 <action android:name="se.lublin.mumla.app.CLEAR_SERVER_CERTIFICATES" />

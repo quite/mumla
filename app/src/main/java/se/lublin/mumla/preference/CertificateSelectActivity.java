@@ -19,10 +19,16 @@ package se.lublin.mumla.preference;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.util.TypedValue;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.TextView;
 
-import androidx.appcompat.app.AlertDialog;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -71,14 +77,21 @@ public class CertificateSelectActivity extends AppCompatActivity implements Dial
             }
         }
 
-        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
-        dialogBuilder.setTitle(R.string.pref_certificate_title);
-        dialogBuilder.setSingleChoiceItems(
-                new ArrayAdapter<>(this, R.layout.list_certificate_item, mCertificates),
-                defaultCertificatePosition, this);
-        dialogBuilder.setNegativeButton(android.R.string.cancel, null);
-        AlertDialog dialog = dialogBuilder.show();
-        dialog.setOnDismissListener(this);
+        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(this);
+        builder.setTitle(R.string.pref_certificate_title);
+        ArrayAdapter<ICertificateItem> adapter = new ArrayAdapter<ICertificateItem>(this, android.R.layout.select_dialog_singlechoice, mCertificates) {
+            @NonNull
+            @Override
+            public View getView(int position, View convertView, @NonNull ViewGroup parent) {
+                View view = super.getView(position, convertView, parent);
+                TextView textView = view.findViewById(android.R.id.text1);
+                textView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
+                return view;
+            }
+        };
+        builder.setSingleChoiceItems(adapter, defaultCertificatePosition, this);
+        builder.setNegativeButton(android.R.string.cancel, null);
+        builder.show().setOnDismissListener(this);
     }
 
     @Override
