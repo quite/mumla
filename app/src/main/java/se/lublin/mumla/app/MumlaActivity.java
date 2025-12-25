@@ -277,8 +277,12 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
         mDatabase = new MumlaSQLiteDatabase(this); // TODO add support for cloud storage
         mDatabase.open();
 
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        mDrawerList = (ListView) findViewById(R.id.left_drawer);
+        mDrawerLayout = findViewById(R.id.drawer_layout);
+        mDrawerList = findViewById(R.id.left_drawer);
+
+        View headerView = getLayoutInflater().inflate(R.layout.list_drawer_headerlogo, mDrawerList, false);
+        mDrawerList.addHeaderView(headerView);
+
         mDrawerList.setOnItemClickListener(this);
         mDrawerAdapter = new DrawerAdapter(this, this);
         mDrawerList.setAdapter(mDrawerAdapter);
