@@ -19,11 +19,12 @@ public final class DialogUtils {
     private DialogUtils() {
     }
 
-    public static void maybeShowNewsDialog(Context context) {
+    public static boolean maybeShowNewsDialog(Context context) {
         if (Settings.getInstance(context).getNewsShownVersions().contains(BuildConfig.VERSIONTAG)) {
-            return;
+            return false;
         }
         showNewsDialogNow(context, BuildConfig.VERSIONTAG, true);
+        return true;
     }
 
     public static void showNewsDialog(Context context) {

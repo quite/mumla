@@ -66,7 +66,7 @@ android {
 
         applicationId "se.lublin.mumla"
         // Remember the news_items_vX_Y_Z in app/src/main/res/values/strings.xml
-        versionCode 110
+        versionCode 120
         versionName gitDescribe
 
         resourceConfigurations += ["en", "ar", "ca", "cs", "de", "el", "es", "fi", "fr", "hu", "in", "it", "ja", "nb-rNO", "nl", "pl", "pt", "pt-rBR", "ru", "sv", "ta", "th", "tr", "uk", "zh-rCN"]
@@ -79,7 +79,11 @@ android {
 
     flavorDimensions "release"
     productFlavors {
-        official {
+        goog {
+            dimension "release"
+            applicationId "se.lublin.mumla"
+        }
+        foss {
             dimension "release"
             applicationId "se.lublin.mumla"
         }
@@ -146,4 +150,6 @@ dependencies {
     implementation 'androidx.preference:preference:1.2.1'
     implementation 'org.jsoup:jsoup:1.13.1'
     implementation 'info.guardianproject.netcipher:netcipher:2.1.0'
+
+    googImplementation 'com.android.billingclient:billing:6.2.1'
 }

@@ -24,18 +24,19 @@ public class AboutSettingsFragment extends MumlaPreferenceFragment {
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         setPreferencesFromResource(R.xml.settings_about, rootKey);
 
-        String details = "";
-        if (BuildConfig.FLAVOR.equals("beta")) {
+        String summary = String.format("%s (code %s)", BuildConfig.VERSION_NAME, BuildConfig.VERSION_CODE);
+        if (BuildConfig.FLAVOR.equals("foss")) {
+            summary += "\nFOSS flavor";
+        } else if (BuildConfig.FLAVOR.equals("beta")) {
             SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.US);
             df.setTimeZone(TimeZone.getTimeZone("UTC"));
-            details = String.format("Beta flavor with versioncode %s\nBuildtime %s UTC",
-                    BuildConfig.VERSION_CODE, df.format(new Date(BuildConfig.TIMESTAMP)));
+            summary += String.format("\nBeta flavor with versioncode %s", BuildConfig.VERSION_CODE);
+            summary += String.format("\nBuildtime %s UTC", df.format(new Date(BuildConfig.TIMESTAMP)));
         } else if (BuildConfig.FLAVOR.equals("donation")) {
-            details = String.format("\n*) %s", getString(R.string.donation_thanks));
+            summary += String.format("\n*) %s", getString(R.string.donation_thanks));
         }
-
         Preference versionPreference = getPreferenceScreen().findPreference(VERSION_KEY);
-        requireNonNull(versionPreference).setSummary(String.format("%s\n%s", BuildConfig.VERSION_NAME, details));
+        requireNonNull(versionPreference).setSummary(summary);
         requireNonNull(versionPreference).setOnPreferenceClickListener(preference -> {
             Settings.getInstance(requireContext()).resetNewsShownVersion();
             Toast.makeText(requireContext(), "Latest update news will be shown again on app startup", Toast.LENGTH_LONG).show();

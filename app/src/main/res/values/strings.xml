@@ -222,4 +222,15 @@
         <item>The settings screen had to be adapted to newer APIs.</item>
     </string-array>
     <string name="news_footer_on_startup">These news can be viewed again from the About page.</string>
+
+    <!-- Used only by flavor "goog" -->
+    <string name="donate_dialog_title_goog">Enjoying Mumla?</string>
+    <string name="donate_dialog_message_goog">Thank you for using Mumla! Please consider making a small donation to help keep Mumla alive — and to remove this message.</string>
+    <string name="donate_dialog_positivebutton_goog">Support Mumla</string>
+    <string name="donate_dialog_negativebutton_goog">Later</string>
+    <string name="donate_purchase_pending_goog">Your donation is pending and may be ready at a later restart. Thank you!</string>
+    <string name="donate_thanks_goog">Thank you for your donation!</string>
+
+    <!-- Used only by flavor "foss" -->
+    <string name="donate_foss">Donate</string>
 </resources>

@@ -19,6 +19,7 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <uses-permission android:name="com.android.vending.BILLING" />
     <application>
         <provider
             android:name="se.lublin.mumla.channel.ChannelSearchProvider"

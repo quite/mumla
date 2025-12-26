@@ -19,8 +19,6 @@ package se.lublin.mumla.app;
 
 import static java.util.Objects.requireNonNull;
 
-import static se.lublin.mumla.app.DialogUtils.maybeShowNewsDialog;
-
 import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.ComponentName;
@@ -31,6 +29,7 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.media.AudioManager;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.IBinder;
@@ -59,6 +58,8 @@ import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.preference.PreferenceManager;
+
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import org.spongycastle.util.encoders.Hex;
 
@@ -283,7 +284,21 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
         mDrawerList = findViewById(R.id.left_drawer);
 
         View headerView = getLayoutInflater().inflate(R.layout.list_drawer_headerlogo, mDrawerList, false);
-        mDrawerList.addHeaderView(headerView);
+        mDrawerList.addHeaderView(headerView, null, false);
+
+        if (BuildConfig.FLAVOR.equals("foss")) {
+            final int layoutResId = getResources().getIdentifier("list_drawer_headerdonate_foss", "xml", getPackageName());
+            final int stringResId = getResources().getIdentifier("donate_link_foss", "string", getPackageName());
+            if ((layoutResId != 0) && (stringResId != 0)) {
+                View footerView = getLayoutInflater().inflate(layoutResId, mDrawerList, false);
+                mDrawerList.addHeaderView(footerView, null, true);
+                footerView.setOnClickListener(v -> {
+                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(stringResId)));
+                        startActivity(intent);
+                        mDrawerLayout.closeDrawers();
+                });
+            }
+        }
 
         mDrawerList.setOnItemClickListener(this);
         mDrawerAdapter = new DrawerAdapter(this, this);
@@ -357,14 +372,13 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
                 AudioManager.STREAM_VOICE_CALL : AudioManager.STREAM_MUSIC);
 
         if (savedInstanceState == null) {
-            // Running this only on real app startup -- not when Android recreates the activity
-            // on configuration change, like screen rotation.
-            maybeShowNewsDialog(this);
-        }
-
-        if (mSettings.isFirstRun()) {
-            showFirstRunGuide();
-            mSettings.setFirstRun(false);
+            // Got no instance bundle: this is run only on real app startup -- not when Android
+            // recreates the activity on configuration change, like screen rotation.
+            if (mSettings.isFirstRun()) {
+                showFirstRunGuide();
+            } else {
+                new StartupAction().execute(this);
+            }
         }
     }
 
@@ -477,29 +491,28 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
     private void showFirstRunGuide() {
         // Prompt the user to generate a certificate.
         if (mSettings.isUsingCertificate()) {
+            mSettings.setFirstRun(false);
             return;
         }
-        AlertDialog.Builder adb = new AlertDialog.Builder(this);
-        adb.setTitle(R.string.first_run_generate_certificate_title);
         String msg = getString(R.string.first_run_generate_certificate);
         if (BuildConfig.FLAVOR.equals("donation")) {
             msg = getString(R.string.donation_thanks) + "\n\n" + msg;
         }
-        adb.setMessage(msg);
-        adb.setPositiveButton(R.string.generate, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                MumlaCertificateGenerateTask generateTask = new MumlaCertificateGenerateTask(MumlaActivity.this) {
-                    @Override
-                    protected void onPostExecute(DatabaseCertificate result) {
-                        super.onPostExecute(result);
-                        if(result != null) mSettings.setDefaultCertificateId(result.getId());
-                    }
-                };
-                generateTask.execute();
-            }
-        });
-        adb.show();
+        new MaterialAlertDialogBuilder(this)
+                .setTitle(R.string.first_run_generate_certificate_title)
+                .setMessage(msg)
+                .setPositiveButton(R.string.generate, (DialogInterface dialog, int which) -> {
+                        MumlaCertificateGenerateTask generateTask = new MumlaCertificateGenerateTask(MumlaActivity.this) {
+                            @Override
+                            protected void onPostExecute(DatabaseCertificate result) {
+                                super.onPostExecute(result);
+                                if(result != null) mSettings.setDefaultCertificateId(result.getId());
+                            }
+                        };
+                        generateTask.execute();
+                        mSettings.setFirstRun(false);
+                    })
+                .show();
     }
 
     /**
