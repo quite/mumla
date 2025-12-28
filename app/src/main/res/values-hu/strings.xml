@@ -135,7 +135,6 @@
     <string name="certificates">Tanúsítványok</string>
     <string name="certificate_load_failed">Nem sikerült eltárolni a tanúsítványt.</string>
     <string name="certificate_import_success">Importált tanúsítvány: %s.</string>
-    <string name="migration_certificate_begin">Tanúsítvány migrálásának kezdése…</string>
     <string name="export_success">Tanúsítvány exportálva: %s.</string>
     <string name="context_channel_link">Összekapcsol</string>
     <string name="context_channel_shout">Hangcél beállítása</string>
@@ -187,7 +186,6 @@
     <string name="invalid_certificate">Helytelen tanúsítvány, nem került betöltésre.</string>
     <string name="allow">Engedélyez</string>
     <string name="confirm_reset_comment">Biztosan vissza akarod állítani a(z) %s nevű felhasználó megjegyzését?</string>
-    <string name="migration_certificate_success">Tanúsítvány sikeresen migrálva.</string>
     <string name="error_writing_to_storage">Nem lehet írni a külső tárolóba.</string>
     <string name="context_channel_unlink_all">Összes szétválasztása</string>
     <string name="shout_include_linked">Kiáltás a kapcsolt csatornákra</string>

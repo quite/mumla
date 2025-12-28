@@ -164,8 +164,6 @@
     <string name="invalid_certificate">Недействительный сертификат не может быть загружен.</string>
     <string name="certificate_load_failed">Не удалось сохранить сертификат.</string>
     <string name="certificate_import_success">Импортирован сертификат %s.</string>
-    <string name="migration_certificate_begin">Начало переноса сертификата…</string>
-    <string name="migration_certificate_success">Сертификат перенесен.</string>
     <string name="error_writing_to_storage">Не удается записать на внешнее хранилище.</string>
     <string name="export_success">Сертификат экспортирован в %s.</string>
     <string name="context_channel_link">Связать</string>

@@ -199,8 +199,6 @@
     <string name="context_channel_link">Relier</string>
     <string name="export_success">Certificat exporté vers %s.</string>
     <string name="error_writing_to_storage">Impossible d\'écrire sur un stockage externe.</string>
-    <string name="migration_certificate_success">Le certificat a été transféré.</string>
-    <string name="migration_certificate_begin">Début de la migration des certificats…</string>
     <string name="certificate_import_success">Certificat importé %s.</string>
     <string name="certificate_load_failed">Impossible de stocker le certificat.</string>
     <string name="invalid_certificate">Un certificat invalide n\'a pas pu être chargé.</string>

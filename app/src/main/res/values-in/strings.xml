@@ -118,7 +118,6 @@
     <string name="decrypt_certificate">Dekripsi Sertifikat Keamanan</string>
     <string name="certificate_load_failed">Tidak dapat menyimpan sertifikat keamanan.</string>
     <string name="certificate_import_success">Sertifikat keamanan %s berhasil diimpor.</string>
-    <string name="migration_certificate_begin">Memulai migrasi sertifikat keamanan…</string>
     <string name="error_writing_to_storage">Tidak dapat menyimpan ke penyimpanan eksternal.</string>
     <string name="export_success">Sertifikat keamanan berhasil diekspor ke %s.</string>
     <string name="context_channel_link">Link</string>
@@ -175,7 +174,6 @@
     <string name="certificate_info">Subyek:\n%1$s\n\nBerlaku mulai:\n%2$s\n\nBerlaku hingga:\n%3$s\n\nDigest (SHA-1):\n%4$s\n\nDigest (SHA-256):\n%5$s</string>
     <string name="invalid_host">Host tidak valid</string>
     <string name="invalid_certificate">Sertifikat Keamanan tidak valid dan tidak dapat dimuat.</string>
-    <string name="migration_certificate_success">Sertifikat keamanan berhasil dimigrasi.</string>
     <string name="context_channel_unlink_all">Unlink Semua</string>
     <string name="orbot_tor_failed">Tidak dapat menyambung ke proxy Tor lokal pada port %d (SOCKS).\n\nMohon pastikan aplikasi Orbot sedang berjalan.</string>
 </resources>

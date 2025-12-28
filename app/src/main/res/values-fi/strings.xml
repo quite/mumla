@@ -30,8 +30,6 @@
     <string name="context_channel_link">Linkki</string>
     <string name="export_success">Sertifikaatti viety %s.</string>
     <string name="error_writing_to_storage">Ulkoiseen tallennustilaan ei voitu kirjoittaa.</string>
-    <string name="migration_certificate_success">Sertifikaatti on siirretty.</string>
-    <string name="migration_certificate_begin">Aloitetaan sertifikaatin siirto…</string>
     <string name="certificate_import_success">Ladattu sertifikaatti %s.</string>
     <string name="certificate_load_failed">Sertifikaattia ei voitu ladata.</string>
     <string name="invalid_certificate">Virheellinen sertifikaatti, lataaminen epäonnistui.</string>

@@ -163,8 +163,6 @@
     </plurals>
     <string name="context_channel_unlink_all">Alle Links aufheben</string>
     <string name="context_channel_link">Link</string>
-    <string name="migration_certificate_success">Zertifikat transferiert.</string>
-    <string name="migration_certificate_begin">Starte Zertifikat-Transfer…</string>
     <string name="change_requires_reconnect">Stellen Sie die Verbindung wieder her, um neue Einstellungen zu verwenden.</string>
     <string name="chat_message_tts_short_link">(Link zu %1$s)</string>
     <string name="error_writing_to_storage">Konnte nicht auf externen Speicher schreiben.</string>

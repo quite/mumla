@@ -168,8 +168,6 @@
     <string name="context_channel_link">Enllaç</string>
     <string name="export_success">Certificat exportat a %s.</string>
     <string name="error_writing_to_storage">No s\'ha pogut guardar a l\'emmagatzemament extern.</string>
-    <string name="migration_certificate_success">Certificat transferit.</string>
-    <string name="migration_certificate_begin">Iniciant transferència de certificat…</string>
     <string name="certificate_import_success">Certificat %s importat.</string>
     <string name="certificate_load_failed">No s\'ha pogut guardar el certificat.</string>
     <string name="invalid_certificate">Certificat no vàlid, no s\'ha pogut carregar.</string>

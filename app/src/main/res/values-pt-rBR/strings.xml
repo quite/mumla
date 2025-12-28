@@ -57,8 +57,6 @@
     <string name="grant_perm_microphone">Por favor, conceda permissão de microfone.</string>
     <string name="export_success">Certificado exportado para %s.</string>
     <string name="error_writing_to_storage">Não foi possível gravar no armazenamento externo.</string>
-    <string name="migration_certificate_success">Certificado migrado.</string>
-    <string name="migration_certificate_begin">Iniciando a migração do certificado…</string>
     <string name="certificate_import_success">Certificado importado %s.</string>
     <string name="certificate_load_failed">Não foi possível armazenar o certificado.</string>
     <string name="invalid_certificate">O certificado inválido não pôde ser carregado.</string>

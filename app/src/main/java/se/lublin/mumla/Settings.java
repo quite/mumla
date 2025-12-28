@@ -19,30 +19,15 @@ package se.lublin.mumla;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.util.Log;
 import android.view.Gravity;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.preference.PreferenceManager;
 
-import org.spongycastle.jce.provider.BouncyCastleProvider;
-
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.security.KeyStore;
-import java.security.KeyStoreException;
-import java.security.NoSuchAlgorithmException;
-import java.security.cert.CertificateException;
 import java.util.HashSet;
 import java.util.Set;
 
 import se.lublin.humla.Constants;
-import se.lublin.mumla.db.DatabaseCertificate;
-import se.lublin.mumla.db.MumlaSQLiteDatabase;
 
 /**
  * Singleton settings class for universal access to the app's preferences.
@@ -116,11 +101,6 @@ public class Settings {
     public static final String PREF_PTT_BUTTON_HEIGHT = "pttButtonHeight";
     public static final int DEFAULT_PTT_BUTTON_HEIGHT = 150;
 
-    /** @deprecated use {@link #PREF_CERT_ID } */
-    public static final String PREF_CERT_DEPRECATED = "certificatePath";
-    /** @deprecated use {@link #PREF_CERT_ID } */
-    public static final String PREF_CERT_PASSWORD_DEPRECATED = "certificatePassword";
-
     /**
      * The DB identifier for the default certificate.
      * @see se.lublin.mumla.db.DatabaseCertificate
@@ -192,50 +172,6 @@ public class Settings {
 
     private Settings(Context ctx) {
         preferences = PreferenceManager.getDefaultSharedPreferences(ctx);
-
-        // TODO(acomminos): Settings migration infra.
-        if (preferences.contains(PREF_CERT_DEPRECATED)) {
-            // Perform legacy certificate migration into MumlaSQLiteDatabase.
-            Toast.makeText(ctx, R.string.migration_certificate_begin, Toast.LENGTH_LONG).show();
-            String certPath = preferences.getString(PREF_CERT_DEPRECATED, "");
-            String certPassword = preferences.getString(PREF_CERT_PASSWORD_DEPRECATED, "");
-
-            Log.d(TAG, "Migrating certificate from " + certPath);
-            try {
-                File certFile = new File(certPath);
-                FileInputStream certInput = new FileInputStream(certFile);
-                ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-                KeyStore oldStore = KeyStore.getInstance("PKCS12", new BouncyCastleProvider());
-                oldStore.load(certInput, certPassword.toCharArray());
-                oldStore.store(outputStream, new char[0]);
-
-                MumlaSQLiteDatabase database = new MumlaSQLiteDatabase(ctx);
-                DatabaseCertificate certificate =
-                        database.addCertificate(certFile.getName(), outputStream.toByteArray());
-                database.close();
-
-                setDefaultCertificateId(certificate.getId());
-
-                Toast.makeText(ctx, R.string.migration_certificate_success, Toast.LENGTH_LONG).show();
-            } catch (KeyStoreException e) {
-                e.printStackTrace();
-            } catch (FileNotFoundException e) {
-                // We can safely ignore this; the only case in which we might still want to recover
-                // would be if the user's external storage is removed.
-            } catch (CertificateException e) {
-                // Likely caused due to stored password being incorrect.
-            } catch (NoSuchAlgorithmException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
-            } finally {
-                preferences.edit()
-                        .remove(PREF_CERT_DEPRECATED)
-                        .remove(PREF_CERT_PASSWORD_DEPRECATED)
-                        .apply();
-            }
-
-        }
     }
 
     public String getInputMethod() {

@@ -159,8 +159,6 @@
     <string name="invalid_certificate">Nieprawidłowy certyfikat nie mógł zostać załadowany.</string>
     <string name="certificate_load_failed">Nie udało się zapisać certyfikatu.</string>
     <string name="certificate_import_success">Zaimportowany certyfikat %s.</string>
-    <string name="migration_certificate_begin">Rozpoczęcie migracji certyfikatu…</string>
-    <string name="migration_certificate_success">Certyfikat migrowany.</string>
     <string name="error_writing_to_storage">Nie udało się zapisać w pamięci zewnętrznej.</string>
     <string name="export_success">Certyfikat wyeksportowany do %s.</string>
     <string name="context_channel_link">Złącz</string>

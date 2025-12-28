@@ -81,8 +81,6 @@
     <string name="context_channel_link">Lenke</string>
     <string name="export_success">Sertifikat eksportert til %s.</string>
     <string name="error_writing_to_storage">Kunne ikke skrive til eksternt lagringsmedium.</string>
-    <string name="migration_certificate_success">Sertifikat migrert.</string>
-    <string name="migration_certificate_begin">Begynner sertifikatmigrering …</string>
     <string name="certificate_import_success">Importerte sertifikatet %s.</string>
     <string name="certificate_load_failed">Kunne ikke lagre sertifikat.</string>
     <string name="invalid_certificate">Ugyldig sertifikat, kunne ikke laste det inn.</string>

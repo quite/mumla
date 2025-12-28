@@ -31,8 +31,6 @@
     <string name="context_channel_link">Odkaz</string>
     <string name="export_success">Certifikát exportován do %s.</string>
     <string name="error_writing_to_storage">Nepodařilo se zapsat na externí úložiště.</string>
-    <string name="migration_certificate_success">Certifikát byl migrován.</string>
-    <string name="migration_certificate_begin">Zahájení migrace certifikátu…</string>
     <string name="certificate_import_success">Importován certifikát %s.</string>
     <string name="certificate_load_failed">Certifikát se nepodařilo uložit.</string>
     <string name="invalid_certificate">Neplatný certifikát nelze načíst.</string>

@@ -89,7 +89,6 @@
     <string name="password">Lösenord</string>
     <string name="certificate_load_failed">Kunde inte ladda arkivets certifikat.</string>
     <string name="certificate_import_success">Importera certifikatet %s.</string>
-    <string name="migration_certificate_success">Certifikatet migrerades.</string>
     <string name="export_success">Certifikatet exporterades till %s.</string>
     <string name="context_channel_shout">Sätt som röstmål</string>
     <string name="shout_include_linked">Ropa till länkade kanaler</string>
@@ -186,7 +185,6 @@
     <string name="certificates">Certifikat</string>
     <string name="decrypt_certificate">Avkryptera certifikat</string>
     <string name="invalid_certificate">Ogiltigt certifikat kunde inte laddas.</string>
-    <string name="migration_certificate_begin">Påbörjar flytt av certifikat…</string>
     <string name="error_writing_to_storage">Kan inte skriva till extern lagring.</string>
     <string name="context_channel_link">Länka</string>
     <string name="context_channel_unlink_all">Avlänka alla</string>

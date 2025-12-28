@@ -148,8 +148,6 @@
     <string name="invalid_certificate">தவறான சான்றிதழை ஏற்ற முடியவில்லை.</string>
     <string name="certificate_load_failed">சான்றிதழைச் சேமிக்க முடியவில்லை.</string>
     <string name="certificate_import_success">இறக்குமதி செய்யப்பட்ட சான்றிதழ் %s.</string>
-    <string name="migration_certificate_begin">தொடக்க சான்றிதழ் இடம்பெயர்வு…</string>
-    <string name="migration_certificate_success">சான்றிதழ் இடம்பெயர்ந்தது.</string>
     <string name="error_writing_to_storage">வெளிப்புற சேமிப்பகத்திற்கு எழுத முடியவில்லை.</string>
     <string name="export_success">சான்றிதழ் %s க்கு ஏற்றுமதி செய்யப்பட்டது.</string>
     <string name="context_channel_link">இணைப்பு</string>

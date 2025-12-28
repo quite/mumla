@@ -138,8 +138,6 @@
     <string name="no_certificate">Без сертифіката</string>
     <string name="certificates">Сертифікати</string>
     <string name="decrypt_certificate">Розшифрувати сертифікат</string>
-    <string name="migration_certificate_begin">Початок перенесення сертифіката…</string>
-    <string name="migration_certificate_success">Сертифікат перенесено.</string>
     <string name="error_writing_to_storage">Не вдалося записати на зовнішнє сховище.</string>
     <string name="export_success">Сертифікат експортовано в %s.</string>
     <string name="context_channel_unlink_all">Від’єднати все</string>

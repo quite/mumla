@@ -35,8 +35,6 @@
     <string name="context_channel_link">Bağla</string>
     <string name="export_success">Sertifika %s konumuna aktarıldı.</string>
     <string name="error_writing_to_storage">Harici depolamaya yazılamadı.</string>
-    <string name="migration_certificate_success">Sertifika taşındı.</string>
-    <string name="migration_certificate_begin">Sertifika taşıma başlatılıyor…</string>
     <string name="certificate_import_success">%s sertifikası içe aktarıldı.</string>
     <string name="certificate_load_failed">Sertifika saklanamadı.</string>
     <string name="invalid_certificate">Geçersiz sertifika yüklenemedi.</string>

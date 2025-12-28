@@ -180,8 +180,6 @@
     <string name="context_channel_link">Vincular</string>
     <string name="export_success">Certificado exportado a %s.</string>
     <string name="error_writing_to_storage">No se pudo escribir en al almacenamiento externo.</string>
-    <string name="migration_certificate_begin">Comenzando la migrado del certificado…</string>
-    <string name="migration_certificate_success">Certificado migrado.</string>
     <string name="certificate_load_failed">No se pudo guardar el certificado.</string>
     <string name="invalid_certificate">El certificado no es válido, no se pudo cargar.</string>
     <string name="password">Contraseña</string>

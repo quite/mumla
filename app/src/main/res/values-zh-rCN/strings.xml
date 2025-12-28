@@ -163,8 +163,6 @@
     <string name="invalid_certificate">无法加载无效的证书。</string>
     <string name="certificate_load_failed">无法存储证书。</string>
     <string name="certificate_import_success">已导入证书 %s。</string>
-    <string name="migration_certificate_begin">正在迁移证书…</string>
-    <string name="migration_certificate_success">证书已迁移。</string>
     <string name="error_writing_to_storage">无法写入外部存储。</string>
     <string name="export_success">已将证书导出为 %s。</string>
     <string name="context_channel_link">链接</string>

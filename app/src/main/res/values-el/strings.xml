@@ -184,8 +184,6 @@
     <string name="password">Κωδικός πρόσβασης</string>
     <string name="invalid_certificate">Δεν ήταν δυνατή η φόρτωση μη έγκυρου πιστοποιητικού.</string>
     <string name="change_requires_reconnect">Επανασυνδεθείτε για να χρησιμοποιήσετε τις νέες ρυθμίσεις.</string>
-    <string name="migration_certificate_begin">Έναρξη μετάπτωση πιστοποιητικού…</string>
-    <string name="migration_certificate_success">Το πιστοποιητικό μεταπτώθηκε.</string>
     <string name="shout_configure">Ρύθμιση παραμέτρων φωνητικού στόχου</string>
     <string name="shout_failed">Δεν ήταν δυνατή η δημιουργία φωνητικού στόχου.</string>
     <string name="grant_perm_storage">Παρακαλούμε να χορηγήσετε άδεια σε εξωτερικό χώρο αποθήκευσης.</string>

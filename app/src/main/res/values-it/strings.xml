@@ -127,8 +127,6 @@
     <string name="context_channel_link">Collega</string>
     <string name="export_success">Certificato esportato in %s.</string>
     <string name="error_writing_to_storage">Impossibile scrivere sulla memoria esterna.</string>
-    <string name="migration_certificate_success">Certificato migrato.</string>
-    <string name="migration_certificate_begin">Avvio migrazione certificato…</string>
     <string name="certificate_import_success">Certificato importato %s.</string>
     <string name="certificate_load_failed">Impossibile memorizzare certificato.</string>
     <string name="invalid_certificate">Impossibile caricare, certificato non valido.</string>

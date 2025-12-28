@@ -184,8 +184,6 @@
     <string name="invalid_certificate">Invalid certificate could not be loaded.</string>
     <string name="certificate_load_failed">Could not store certificate.</string>
     <string name="certificate_import_success">Imported certificate %s.</string>
-    <string name="migration_certificate_begin">Beginning certificate migration…</string>
-    <string name="migration_certificate_success">Certificate migrated.</string>
     <string name="error_writing_to_storage">Could not write to external storage.</string>
     <string name="export_success">Certificate exported to %s.</string>
     <string name="context_channel_link">Link</string>

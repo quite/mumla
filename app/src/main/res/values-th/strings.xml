@@ -25,8 +25,6 @@
     <string name="context_channel_link">ลิ้งค์</string>
     <string name="export_success">ส่งออกใบรับรองไปยัง %s.</string>
     <string name="error_writing_to_storage">ไม่สามารถเขียนข้อมูลไปยังที่จัดเก็บข้อมูลภายนอก</string>
-    <string name="migration_certificate_success">ย้ายใบรับรองแล้ว</string>
-    <string name="migration_certificate_begin">กำลังเริ่มต้นการย้ายใบรับรอง …</string>
     <string name="certificate_import_success">นำเข้าใบรับรอง %s.</string>
     <string name="certificate_load_failed">ไม่สามารถจัดเก็บใบรับรองได้</string>
     <string name="invalid_certificate">ใบรับรองไม่ถูกต้องไม่สามารถใช้งานได้</string>
