@@ -334,10 +334,7 @@ public class Settings {
     }
 
     public void setMutedAndDeafened(boolean muted, boolean deafened) {
-        preferences.edit()
-                .putBoolean(PREF_MUTED, muted || deafened)
-                .putBoolean(PREF_DEAFENED, deafened)
-                .apply();
+        preferences.edit().putBoolean(PREF_MUTED, muted || deafened).putBoolean(PREF_DEAFENED, deafened).apply();
     }
 
     public void setFirstRun(boolean run) {
