@@ -1,4 +1,4 @@
-image: docker.io/quite/android-sdk-ndk:8
+image: docker.io/quite/android-sdk-ndk:9
 
 variables:
   # get those pesky submodules
@@ -28,7 +28,7 @@ assembleDebug:
     - pushd libraries/humla/libs/humla-spongycastle
     - ../../gradlew jar
     - popd
-    - ./gradlew assembleDebug
+    - ./gradlew --debug --stacktrace assembleDebug
   artifacts:
     paths:
     - app/build/outputs/apk/
