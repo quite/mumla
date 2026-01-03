@@ -28,6 +28,7 @@ assembleDebug:
     - pushd libraries/humla/libs/humla-spongycastle
     - ../../gradlew jar
     - popd
+    - git describe --tags --match "[0-9]*.[0-9]*.[0-9]*"
     - ./gradlew --debug --stacktrace assembleDebug
   artifacts:
     paths:
