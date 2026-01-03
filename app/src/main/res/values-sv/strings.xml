@@ -201,4 +201,12 @@
         <item quantity="one">%d nytt meddelande</item>
         <item quantity="other">%d nya meddelanden</item>
     </plurals>
+    <string name="app_news"></string>
+    <string name="donate_foss">Donera</string>
+    <string name="donate_dialog_title_goog">Gillar du Mumla?</string>
+    <string name="donate_dialog_message_goog">Tack för att du använder Mumla! En liten donation kan hjälpa till att hålla Mumla levande — och tar bort detta meddelande.</string>
+    <string name="donate_dialog_positivebutton_goog">Stöd Mumla</string>
+    <string name="donate_dialog_negativebutton_goog">Senare</string>
+    <string name="donate_purchase_pending_goog">Din donation behandlas och kan vara klar vid en senare omstart. Tack!</string>
+    <string name="donate_thanks_goog">Tack för ditt stöd!</string>
 </resources>
