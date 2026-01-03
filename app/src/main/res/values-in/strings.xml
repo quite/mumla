@@ -98,7 +98,7 @@
     <string name="channel_add">Tambah Channel</string>
     <string name="tts_failed">Tidak dapat memulai TTS</string>
     <string name="mumble_url_parse_failed">URL Mumble tidak valid.</string>
-    <string name="first_run_generate_certificate_title">Selamat datang di Mumla.</string>
+    <string name="first_run_generate_certificate_title">Selamat datang di Mumla</string>
     <string name="generate">Buat</string>
     <string name="invalid_password">Password salah.</string>
     <string name="send_message">Kirim pesan</string>

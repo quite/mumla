@@ -131,7 +131,7 @@
     <string name="channel_add">Kanaal Toevoegen</string>
     <string name="tts_failed">TTS initialiseren mislukt</string>
     <string name="mumble_url_parse_failed">Mumble URL kon niet worden ontleed.</string>
-    <string name="first_run_generate_certificate_title">Welkom bij Mumla.</string>
+    <string name="first_run_generate_certificate_title">Welkom bij Mumla</string>
     <string name="first_run_generate_certificate">Certificaat generen is ten zeerste aangeraden en nodig voor verbinden met bepaalde servers.</string>
     <string name="generate">Genereer</string>
     <string name="invalid_password">Ongeldig wachtwoord.</string>

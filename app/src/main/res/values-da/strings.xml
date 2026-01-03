@@ -53,7 +53,7 @@
     <string name="temporary">Midlertidigt</string>
     <string name="position">Position</string>
     <string name="channel_edit">Redigér kanal</string>
-    <string name="first_run_generate_certificate_title">Velkommen til Mumla.</string>
+    <string name="first_run_generate_certificate_title">Velkommen til Mumla</string>
     <string name="generate">Generér</string>
     <string name="invalid_password">Forkert adgangskode.</string>
     <string name="send_message">Send besked</string>

@@ -131,7 +131,7 @@
     <string name="channel_add">Kanal hinzufügen</string>
     <string name="tts_failed">TTS konnte nicht gestartet werden</string>
     <string name="mumble_url_parse_failed">Konnte Mumble URL nicht verarbeiten.</string>
-    <string name="first_run_generate_certificate_title">Willkommen in Mumla.</string>
+    <string name="first_run_generate_certificate_title">Willkommen in Mumla</string>
     <string name="first_run_generate_certificate">Es wird sehr empfohlen ein Zertifikat zu generieren. Manche Server setzen ein Zertifikat voraus.</string>
     <string name="generate">Generieren</string>
     <string name="invalid_password">Ungültiges Passwort.</string>

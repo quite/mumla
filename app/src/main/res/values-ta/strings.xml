@@ -121,7 +121,7 @@
     <string name="channel_add">தடத்தைச் சேர்</string>
     <string name="tts_failed">உரைக்குபேச்சை தொடங்க முடியவில்லை</string>
     <string name="mumble_url_parse_failed">முணுமுணுப்பு முகவரி செல்லுபடியாகாது.</string>
-    <string name="first_run_generate_certificate_title">மும்லாவுக்கு வருக.</string>
+    <string name="first_run_generate_certificate_title">மும்லாவுக்கு வருக</string>
     <string name="first_run_generate_certificate">ஒரு சான்றிதழை உருவாக்குவது மிகவும் பரிந்துரைக்கப்படுகிறது, மேலும் சில சேவையகங்களுடனான இணைப்பிற்கு தேவை.</string>
     <string name="generate">உருவாக்கு</string>
     <string name="invalid_password">தவறான கடவுச்சொல்.</string>

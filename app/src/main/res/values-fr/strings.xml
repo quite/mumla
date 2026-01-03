@@ -136,7 +136,7 @@
     <string name="channel_add">Ajouter un salon</string>
     <string name="tts_failed">Erreur de l\'initialisation de TTS</string>
     <string name="mumble_url_parse_failed">L\'URL Mumble n\'est pas valide.</string>
-    <string name="first_run_generate_certificate_title">Bienvenue dans Mumla.</string>
+    <string name="first_run_generate_certificate_title">Bienvenue dans Mumla</string>
     <string name="first_run_generate_certificate">Générer un certificat est très recommandé, et nécessaire pour la connexion à certains serveurs.</string>
     <string name="generate">Générer</string>
     <string name="invalid_password">Mot de passe invalide.</string>

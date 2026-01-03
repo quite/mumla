@@ -158,7 +158,7 @@
     <string name="channel_add">Csatorna hozzáadása</string>
     <string name="tts_failed">Nem sikerült a Text To Speech indítása</string>
     <string name="mumble_url_parse_failed">Ez a Mumble URL helytelen.</string>
-    <string name="first_run_generate_certificate_title">Üdvözöl a Mumla.</string>
+    <string name="first_run_generate_certificate_title">Üdvözöl a Mumla</string>
     <string name="channel_join">Belépés</string>
     <string name="certificate_info">Tárgy:
 \n%1$s

@@ -157,7 +157,7 @@
     <string name="channel_add">Add Channel</string>
     <string name="tts_failed">Could not start TTS</string>
     <string name="mumble_url_parse_failed">Mumble URL is not valid.</string>
-    <string name="first_run_generate_certificate_title">Welcome to Mumla.</string>
+    <string name="first_run_generate_certificate_title">Welcome to Mumla</string>
     <string name="first_run_generate_certificate">Generating a certificate is highly recommended, and necessary for connection to some servers.</string>
     <string name="generate">Generate</string>
     <string name="invalid_password">Wrong password.</string>

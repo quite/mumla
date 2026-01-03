@@ -131,7 +131,7 @@
     <string name="channel_add">Añadir canal</string>
     <string name="tts_failed">Texto a voz ha fallado al inciarse</string>
     <string name="mumble_url_parse_failed">Fallo al procesar la URL de Mumble.</string>
-    <string name="first_run_generate_certificate_title">Bienvenido a Mumla.</string>
+    <string name="first_run_generate_certificate_title">Bienvenido a Mumla</string>
     <string name="first_run_generate_certificate">Generar un certificado es altamente recomendable y necesario para conectarse a ciertos servidores.</string>
     <string name="generate">Generar</string>
     <string name="invalid_password">Contraseña inválida.</string>

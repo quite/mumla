@@ -71,7 +71,7 @@
     <string name="invalid_password">Väärä salasana.</string>
     <string name="generate">Luo</string>
     <string name="first_run_generate_certificate">Sertifikaatin luominen on erittäin suositeltavaa ja välttämätöntä yhteyden muodostamiseksi joihinkin palvelimiin.</string>
-    <string name="first_run_generate_certificate_title">Tervetuloa Mumlaan.</string>
+    <string name="first_run_generate_certificate_title">Tervetuloa Mumlaan</string>
     <string name="mumble_url_parse_failed">Mumblen URL-osoite ei kelpaa.</string>
     <string name="tts_failed">TTS: n käynnistäminen epäonnistui</string>
     <string name="channel_add">Lisää kanava</string>

@@ -167,7 +167,7 @@
     <string name="invalid_password">Senha incorreta.</string>
     <string name="generate">Gerar</string>
     <string name="first_run_generate_certificate">Gerar um certificado é altamente recomendado e necessário para se conectar em alguns servidores.</string>
-    <string name="first_run_generate_certificate_title">Bem-vindo(a) ao Mumla.</string>
+    <string name="first_run_generate_certificate_title">Bem-vindo(a) ao Mumla</string>
     <string name="mumble_url_parse_failed">URL Mumble inválida.</string>
     <string name="tts_failed">Não foi possível iniciar o Texto-para-voz</string>
     <string name="channel_add">Adicionar canal</string>

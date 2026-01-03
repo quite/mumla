@@ -2,7 +2,7 @@
 <resources>
     <string name="user_menu_reset_comment">Redefinir Comentário</string>
     <string name="change_requires_reconnect">Reconecte para usar as novas configurações.</string>
-    <string name="first_run_generate_certificate_title">Bem-vindo ao Mumla.</string>
+    <string name="first_run_generate_certificate_title">Bem-vindo ao Mumla</string>
     <string name="mumble_url_parse_failed">A URL do Mumble não é válida.</string>
     <string name="confirm_reset_comment">Tem certeza de que deseja redefinir o comentário do usuário %s\?</string>
     <string name="reconnect_dialog_message">Você já está conectado a um servidor. Em vez disso, conectar-se a este servidor\?</string>

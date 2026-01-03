@@ -76,7 +76,7 @@
     <string name="invalid_password">Yanlış parola.</string>
     <string name="generate">Oluştur</string>
     <string name="first_run_generate_certificate">Sertifika oluşturulması şiddetle tavsiye edilir ve bazı sunuculara bağlanmak için gereklidir.</string>
-    <string name="first_run_generate_certificate_title">Mumla\'ya hoş geldiniz.</string>
+    <string name="first_run_generate_certificate_title">Mumla\'ya hoş geldiniz</string>
     <string name="mumble_url_parse_failed">Mumble URL\'si geçerli değil.</string>
     <string name="tts_failed">TTS başlatılamadı</string>
     <string name="channel_add">Kanal Ekle</string>

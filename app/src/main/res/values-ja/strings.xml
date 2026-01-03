@@ -130,7 +130,7 @@
     <string name="channel_add">チャンネルを追加</string>
     <string name="tts_failed">TTS が初期化に失敗しました</string>
     <string name="mumble_url_parse_failed">Mumble URL の解析に失敗しました!</string>
-    <string name="first_run_generate_certificate_title">Mumla にようこそ!</string>
+    <string name="first_run_generate_certificate_title">Mumla にようこそ</string>
     <string name="first_run_generate_certificate">証明書を生成することが非常に推奨されます。いくつかのサーバへ接続するために必要です。</string>
     <string name="generate">生成</string>
     <string name="invalid_password">パスワードが正しくありません。</string>

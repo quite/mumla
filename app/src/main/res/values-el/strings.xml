@@ -91,7 +91,7 @@
     <string name="tts_failed">Δεν μπόρεσε να γίνει εκκίνηση το TTS</string>
     <string name="mumble_url_parse_failed">Το Mumble URL δεν ισχύει.</string>
     <string name="overlay">Εμφάνιση πάνω από άλλες εφαρμογές</string>
-    <string name="first_run_generate_certificate_title">Καλώς ήλθατε στο Mumla.</string>
+    <string name="first_run_generate_certificate_title">Καλώς ήλθατε στο Mumla</string>
     <string name="generate">Δημιουργία</string>
     <string name="channel_menu_view_description">Περιγραφή προβολής</string>
     <string name="untrusted_certificate">Μη αξιόπιστο πιστοποιητικό</string>

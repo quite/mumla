@@ -106,7 +106,7 @@
     <string name="channel_add">Додати канал</string>
     <string name="tts_failed">Не вдалося запустити TTS</string>
     <string name="mumble_url_parse_failed">Невірне Mumble-посилання.</string>
-    <string name="first_run_generate_certificate_title">Ласкаво просимо до Mumla.</string>
+    <string name="first_run_generate_certificate_title">Ласкаво просимо до Mumla</string>
     <string name="first_run_generate_certificate">Наполягаємо на створенні сертифіката, так як він необхідний для підключення до деяких серверів.</string>
     <string name="generate">Згенерувати</string>
     <string name="invalid_password">Невірний пароль.</string>

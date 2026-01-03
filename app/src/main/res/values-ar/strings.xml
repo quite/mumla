@@ -106,7 +106,7 @@
     <string name="expand">وسّع</string>
     <string name="temporary">مؤقت</string>
     <string name="channel_edit">عدّل القناة</string>
-    <string name="first_run_generate_certificate_title">مرحبًا غي موملا.</string>
+    <string name="first_run_generate_certificate_title">مرحبًا غي موملا</string>
     <string name="first_run_generate_certificate">يُنصح بتوليد شهادة، فهي إلزامية في بعض الخوادم.</string>
     <string name="generate">ولّد</string>
     <string name="invalid_password">كلمة السر خاطئة.</string>

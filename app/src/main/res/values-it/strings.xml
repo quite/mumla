@@ -85,7 +85,7 @@
     <string name="position">Posizione</string>
     <string name="channel_edit">Modifica Canale</string>
     <string name="channel_add">Aggiungi Canale</string>
-    <string name="first_run_generate_certificate_title">Benvenuto in Mumla.</string>
+    <string name="first_run_generate_certificate_title">Benvenuto in Mumla</string>
     <string name="generate">Genera</string>
     <string name="invalid_password">Password errata.</string>
     <string name="send_message">Invia messaggio</string>

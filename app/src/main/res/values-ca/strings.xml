@@ -131,7 +131,7 @@
     <string name="invalid_password">Contrasenya no vàlida.</string>
     <string name="generate">Genera</string>
     <string name="first_run_generate_certificate">Es recomana generar un certificat. Alguns servidors demanen un certificat.</string>
-    <string name="first_run_generate_certificate_title">Benvinguts al Mumla.</string>
+    <string name="first_run_generate_certificate_title">Benvinguts al Mumla</string>
     <string name="mumble_url_parse_failed">No s\'ha pogut processar la URL de Mumble.</string>
     <string name="tts_failed">No s\'ha pogut iniciar TTS</string>
     <string name="channel_add">Afegeix un canal</string>

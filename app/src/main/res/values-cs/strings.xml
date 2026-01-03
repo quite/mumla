@@ -72,7 +72,7 @@
     <string name="invalid_password">Nesprávné heslo.</string>
     <string name="generate">Vygenerovat</string>
     <string name="first_run_generate_certificate">Generování certifikátu se důrazně doporučuje a je nezbytné pro připojení k některým serverům.</string>
-    <string name="first_run_generate_certificate_title">Vítejte v Mumla.</string>
+    <string name="first_run_generate_certificate_title">Vítejte v Mumla</string>
     <string name="mumble_url_parse_failed">Adresa URL služby Mumble není platná.</string>
     <string name="tts_failed">Nelze spustit převodník textu na řeč</string>
     <string name="channel_add">Přidat kanál</string>
