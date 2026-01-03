@@ -229,7 +229,7 @@
     <string name="donate_dialog_positivebutton_goog">Support Mumla</string>
     <string name="donate_dialog_negativebutton_goog">Later</string>
     <string name="donate_purchase_pending_goog">Your donation is pending and may be ready at a later restart. Thank you!</string>
-    <string name="donate_thanks_goog">Thank you for your donation!</string>
+    <string name="donate_thanks_goog">Thank you for your support!</string>
 
     <!-- Used only by flavor "foss" -->
     <string name="donate_foss">Donate</string>
