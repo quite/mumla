@@ -161,8 +161,8 @@ public class StartupAction implements IStartupAction {
         });
     }
 
-    private void showDonationDialog(Activity a) {
-        a.runOnUiThread(() -> {
+    private void showDonationDialog(Activity activity) {
+        activity.runOnUiThread(() -> {
             int[] icons = {
                     R.drawable.ic_donate_heart_goog,
                     R.drawable.ic_donate_tag_faces_goog,
@@ -171,12 +171,12 @@ public class StartupAction implements IStartupAction {
                     R.drawable.ic_donate_waving_hand_goog,
             };
             int randomIconRes = icons[ThreadLocalRandom.current().nextInt(icons.length)];
-            new MaterialAlertDialogBuilder(a)
+            new MaterialAlertDialogBuilder(activity)
                     .setTitle(R.string.donate_dialog_title_goog)
                     .setMessage(R.string.donate_dialog_message_goog)
                     .setIcon(randomIconRes)
                     .setCancelable(false)
-                    .setPositiveButton(R.string.donate_dialog_positivebutton_goog, (dialog, which) -> launchPurchaseFlow(a))
+                    .setPositiveButton(R.string.donate_dialog_positivebutton_goog, (dialog, which) -> launchPurchaseFlow(activity))
                     .setNegativeButton(R.string.donate_dialog_negativebutton_goog, (dialog, which) -> dialog.dismiss())
                     .show();
         });
