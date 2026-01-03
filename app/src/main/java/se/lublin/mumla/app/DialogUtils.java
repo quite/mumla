@@ -32,7 +32,7 @@ public final class DialogUtils {
     }
 
     private static void showNewsDialogNow(Context context, String version, boolean markShown) {
-        String resourceName = "news_items_v" + version.replaceAll("[.-]", "_");
+        String resourceName = "app_news_items_v" + version.replaceAll("[.-]", "_");
         int resourceId = context.getResources().getIdentifier(resourceName, "array", context.getPackageName());
         if (resourceId == 0) {
             Toast.makeText(context, "No news found for version " + version, Toast.LENGTH_SHORT).show();
@@ -46,7 +46,7 @@ public final class DialogUtils {
             sb.append(String.format("● %s<br/>", line));
         }
         if (markShown) {
-            sb.append(String.format("<br/><em>%s</em>", context.getString(R.string.news_footer_on_startup)));
+            sb.append(String.format("<br/><em>%s</em>", context.getString(R.string.app_news_footer_on_startup)));
         }
 
         LayoutInflater inflater = LayoutInflater.from(context);
