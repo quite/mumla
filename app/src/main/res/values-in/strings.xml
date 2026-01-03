@@ -176,4 +176,10 @@
     <string name="invalid_certificate">Sertifikat Keamanan tidak valid dan tidak dapat dimuat.</string>
     <string name="context_channel_unlink_all">Unlink Semua</string>
     <string name="orbot_tor_failed">Tidak dapat menyambung ke proxy Tor lokal pada port %d (SOCKS).\n\nMohon pastikan aplikasi Orbot sedang berjalan.</string>
+    <string name="donate_thanks_goog">Terima kasih atas dukungan Anda!</string>
+    <string name="donate_foss">Menyumbangkan</string>
+    <string name="donate_dialog_negativebutton_goog">Nanti</string>
+    <string name="donate_dialog_positivebutton_goog">Mendukung Mumla</string>
+    <string name="donate_dialog_message_goog">Terima kasih untuk menggunakan Mumla! Harap mempertimbangkan untuk membuat donasi kecil untuk membantu menjaga hidup Mumla - dan menghapus pesan ini.</string>
+    <string name="donate_dialog_title_goog">Apakah kamu suka Mumla?</string>
 </resources>
