@@ -29,8 +29,8 @@ for lang in "${langdirs[@]}"; do
     langs+=("$lang")
   fi
 done
-printf "included languages: %s\n" "${langs[*]}"
-printf "excluded languages: %s\n" "${excluded[*]}"
+printf "Included languages: %s\n" "${langs[*]}"
+printf "Excluded languages: %s\n" "${excluded[*]}"
 
 destf=app/src/main/res/xml/local_config.xml
 cat >"$destf" <<-EOF
@@ -42,7 +42,7 @@ for lang in en-US "${langs[@]}"; do
   printf >>"$destf" '    <locale android:name="%s" />\n' "$lang"
 done
 printf >>"$destf" "</locale-config>\n"
-printf "wrote %s\n" "$destf"
+printf "Wrote %s\n" "$destf"
 
 new='resourceConfigurations += ["en"'
 for lang in "${langs[@]}"; do
@@ -51,4 +51,7 @@ for lang in "${langs[@]}"; do
 done
 new="$new]"
 sed -i "s/resourceConfigurations .*/$new/" app/build.gradle
-printf "updated app/build.gradle\n"
+printf "Updated app/build.gradle\n"
+
+printf "Running git diff %s\n" "$destf"
+git diff "$destf"
