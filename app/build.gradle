@@ -57,7 +57,8 @@ android {
     }
 
     def gitDescribe = providers.exec {
-        commandLine "git", "describe", "--tags", "--match", "[0-9]*.[0-9]*.[0-9]*"
+        // Need --always because there are no tags in gitlab ci (right?)
+        commandLine "git", "describe", "--tags", "--match", "[0-9]*.[0-9]*.[0-9]*", "--always"
     }.standardOutput.asText.get().trim()
 
     defaultConfig {
