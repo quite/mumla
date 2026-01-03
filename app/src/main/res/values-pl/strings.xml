@@ -203,4 +203,9 @@
     <string name="donate_purchase_pending_goog">Twoja darowizna jest w trakcie realizacji i może być gotowa po ponownym uruchomieniu. Dziękujemy!</string>
     <string name="donate_thanks_goog">Dziękujemy za wsparcie!</string>
     <string name="donate_foss">Przekaż darowiznę</string>
+    <string name="app_news_item_v3_7_0_num_1">Dużo pracy włożono w aktualizację Mumli dla Androida 15 i 16 (API 35 i 36).</string>
+    <string name="app_news_item_v3_7_0_num_2">W związku z tym wymagany jest Android 5.0 (API 21) lub nowszy.</string>
+    <string name="app_news_item_v3_7_0_num_3">Zmodernizowano motyw, aby obsługiwał jasny/ciemny tryb systemu.</string>
+    <string name="app_news_item_v3_7_0_num_4">Ekran ustawień musiał zostać dostosowany do nowszych interfejsów API.</string>
+    <string name="app_news_footer_on_startup">Wiadomości te można ponownie przejrzeć na stronie O programie.</string>
 </resources>
