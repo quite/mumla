@@ -91,4 +91,5 @@
     <string name="pref_show_user_count_summary">Menampilkan jumlah user pada subtree channel.</string>
     <string name="pref_start_up_in_pinned_mode">Mode channel tertanda</string>
     <string name="pref_start_upIn_pinned_mode_sum">Mengaktifkan mode \"channel tertanda\" setelah menyambung ke server (menyembunyikan channel yang tidak tertanda).</string>
+    <string name="theme_system">Bawaan sistem</string>
 </resources>
