@@ -66,8 +66,9 @@ android {
         targetSdk 36
 
         applicationId "se.lublin.mumla"
-        // Remember the news_items_vX_Y_Z in app/src/main/res/values/strings.xml
-        versionCode 123
+        // Remember the app_news_items_vX_Y_Z in app/src/main/res/values/strings.xml
+        //     code:XYYZZbb (bb for build)
+        versionCode 3070007
         versionName gitDescribe
 
         buildConfigField "long", "TIMESTAMP", System.currentTimeMillis() + "L"

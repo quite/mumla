@@ -1,0 +1,4 @@
+A lot of work was done to update Mumla for Android 15 and 16 (API 35 & 36). As a consequence Android 5.0 (API 21) or later is now required. Theming was modernized to support system light/dark modes. The settings screen had to be adapted to newer APIs. Added in-app language preference.
+
+The languages available in Mumla are those which have been translated to 40% or more.
+You can help translating Mumla at https://hosted.weblate.org/engage/mumla/
