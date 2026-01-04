@@ -189,4 +189,18 @@
     <string name="image_confirm_send">发送此图片吗？</string>
     <string name="grant_perm_notifications">请授予发送通知权限。</string>
     <string name="no_ptt_key">无按键</string>
+    <string name="app_news">新功能</string>
+    <string name="app_news_summary">查看最新更新说明</string>
+    <string name="app_news_footer_on_startup">您可以在关于页面再次查看这些说明。</string>
+    <string name="app_news_item_v3_7_0_num_1">我们为 Mumla 适配 Android 15 和 16（API 35 和 36）做了大量工作。</string>
+    <string name="app_news_item_v3_7_0_num_2">为此，现在最低版本要求更改为 Android 5.0（API 21）.</string>
+    <string name="app_news_item_v3_7_0_num_3">主题功能已更新，支持系统明亮/黑暗模式。</string>
+    <string name="app_news_item_v3_7_0_num_4">设置界面已适配新 API。</string>
+    <string name="donate_dialog_title_goog">喜欢 Mumla？</string>
+    <string name="donate_dialog_message_goog">感谢您使用 Mumla！请考虑进行小额捐款以帮助维持 Mumla 的运营——并且移除这条消息。</string>
+    <string name="donate_dialog_positivebutton_goog">支持 Mumla</string>
+    <string name="donate_dialog_negativebutton_goog">稍后</string>
+    <string name="donate_purchase_pending_goog">您的捐赠正在处理中，可能会在重启后生效。非常感谢！</string>
+    <string name="donate_thanks_goog">感谢您的支持！</string>
+    <string name="donate_foss">捐赠</string>
 </resources>
