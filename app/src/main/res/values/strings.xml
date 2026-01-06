@@ -221,11 +221,13 @@
         <item>@string/app_news_item_v3_7_0_num_2</item>
         <item>@string/app_news_item_v3_7_0_num_3</item>
         <item>@string/app_news_item_v3_7_0_num_4</item>
+        <item>@string/app_news_item_v3_7_0_num_5</item>
     </string-array>
     <string name="app_news_item_v3_7_0_num_1">A lot of work was done to update Mumla for Android 15 and 16 (API 35 &amp; 36).</string>
     <string name="app_news_item_v3_7_0_num_2">As a consequence Android 5.0 (API 21) or later is now required.</string>
     <string name="app_news_item_v3_7_0_num_3">Theming was modernized to support system light/dark modes.</string>
     <string name="app_news_item_v3_7_0_num_4">The settings screen had to be adapted to newer APIs.</string>
+    <string name="app_news_item_v3_7_0_num_5">Added in-app language preference.</string>
 
     <!-- Used only by flavor "goog" -->
     <string name="donate_dialog_title_goog">Enjoying Mumla?</string>

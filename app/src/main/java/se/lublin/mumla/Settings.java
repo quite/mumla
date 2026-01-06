@@ -92,11 +92,7 @@ public class Settings {
     public static final Boolean DEFAULT_AUTO_RECONNECT = true;
 
     public static final String PREF_THEME = "theme";
-    // These "system" and "force*" values are new. The MumlaApplication class will
-    // make all other (older) values result in the system default theme.
-    public static final String ARRAY_THEME_SYSTEM = "system";
-    public static final String ARRAY_THEME_LIGHT = "forceLight";
-    public static final String ARRAY_THEME_DARK = "forceDark";
+    public static final String PREF_LANGUAGE = "language";
 
     public static final String PREF_PTT_BUTTON_HEIGHT = "pttButtonHeight";
     public static final int DEFAULT_PTT_BUTTON_HEIGHT = 150;

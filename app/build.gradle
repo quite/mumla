@@ -70,8 +70,6 @@ android {
         versionCode 123
         versionName gitDescribe
 
-        resourceConfigurations += ["en", "ar", "ca", "cs", "de", "el", "es", "fi", "fr", "hu", "in", "it", "ja", "nb-rNO", "nl", "pl", "pt", "pt-rBR", "ru", "sv", "ta", "th", "tr", "uk", "zh-rCN"]
-
         buildConfigField "long", "TIMESTAMP", System.currentTimeMillis() + "L"
         buildConfigField "String", "VERSIONTAG", "\"" + gitDescribe.split("-")[0] + "\""
 

@@ -47,6 +47,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -865,15 +866,17 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
     }
 
     @Override
-    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-        if(Settings.PREF_THEME.equals(key)) {
-            // Recreate activity when theme is changed
-            recreate();
-        } else if (Settings.PREF_STAY_AWAKE.equals(key)) {
-            setStayAwake(mSettings.shouldStayAwake());
-        } else if (Settings.PREF_HANDSET_MODE.equals(key)) {
-            setVolumeControlStream(mSettings.isHandsetMode() ?
-                    AudioManager.STREAM_VOICE_CALL : AudioManager.STREAM_MUSIC);
+    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, @Nullable String key) {
+        if (key == null) {
+            return;
+        }
+        switch (key) {
+            case Settings.PREF_STAY_AWAKE:
+                setStayAwake(mSettings.shouldStayAwake());
+                break;
+            case Settings.PREF_HANDSET_MODE:
+                setVolumeControlStream(mSettings.isHandsetMode() ? AudioManager.STREAM_VOICE_CALL : AudioManager.STREAM_MUSIC);
+                break;
         }
     }
 

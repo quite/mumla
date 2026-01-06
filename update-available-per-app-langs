@@ -29,29 +29,46 @@ for lang in "${langdirs[@]}"; do
     langs+=("$lang")
   fi
 done
+langs+=("en-US")
 printf "Included languages: %s\n" "${langs[*]}"
 printf "Excluded languages: %s\n" "${excluded[*]}"
 
-destf=app/src/main/res/xml/local_config.xml
-cat >"$destf" <<-EOF
+IFS=$'\n' langssorted=($(sort <<<"${langs[*]}")); unset IFS
+
+localf=app/src/main/res/xml/local_config.xml
+cat >"$localf" <<-EOF
 <?xml version="1.0" encoding="utf-8"?>
 <locale-config xmlns:android="http://schemas.android.com/apk/res/android">
 EOF
-for lang in en-US "${langs[@]}"; do
+for lang in "${langssorted[@]}"; do
   lang="${lang%%(*}"
-  printf >>"$destf" '    <locale android:name="%s" />\n' "$lang"
+  # Must not have an "r" there for the locales we support
+  lang="${lang//-r/-}"
+  printf >>"$localf" '    <locale android:name="%s" />\n' "$lang"
 done
-printf >>"$destf" "</locale-config>\n"
-printf "Wrote %s\n" "$destf"
+printf >>"$localf" "</locale-config>\n"
+printf "Wrote %s\n" "$localf"
 
-new='resourceConfigurations += ["en"'
-for lang in "${langs[@]}"; do
+langf=app/src/main/res/values/language_notranslate.xml
+cat >"$langf" <<-EOF
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languageValues">
+EOF
+for lang in "${langssorted[@]}"; do
   lang="${lang%%(*}"
-  new=$(printf '%s, "%s"' "$new" "$lang")
+  # Must not have an "r" there for the preference display
+  lang="${lang//-r/-}"
+  if [[ "$lang" = "en-US" ]]; then
+    lang="en"
+  fi
+  printf >>"$langf" '        <item>%s</item>\n' "$lang"
 done
-new="$new]"
-sed -i "s/resourceConfigurations .*/$new/" app/build.gradle
-printf "Updated app/build.gradle\n"
+cat >>"$langf" <<-EOF
+    </string-array>
+</resources>
+EOF
+printf "Wrote %s\n" "$langf"
 
-printf "Running git diff %s\n" "$destf"
-git diff "$destf"
+printf "Running git diff %s %s\n" "$localf" "$langf"
+git diff "$localf" "$langf"

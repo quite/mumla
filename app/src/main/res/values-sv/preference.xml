@@ -46,6 +46,7 @@
     <string name="hotCorner">Push-to-talk-hörn</string>
     <string name="hotCornerSum">Tryck på ett skärm-hörn för att överföra ljudet genom hela Android.</string>
     <string name="general">Allmänt</string>
+    <string name="language">Språk</string>
     <string name="advancedAudio">Avancerat</string>
     <string name="forceTcpSum">Stänger av UDP för kommunikation.</string>
     <string name="audioSampleRate">Ingångssamplingshastighet</string>

@@ -20,12 +20,19 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <ListPreference
+        android:key="theme"
         android:defaultValue="system"
         android:entries="@array/themeNames"
         android:entryValues="@array/themeValues"
-        android:key="theme"
-        android:summary="@string/themeSum"
+        app:useSimpleSummaryProvider="true"
         android:title="@string/theme"
+        app:iconSpaceReserved="false" />
+
+    <ListPreference
+        app:key="language"
+        app:defaultValue="system"
+        app:title="@string/language"
+        app:useSimpleSummaryProvider="true"
         app:iconSpaceReserved="false" />
 
     <CheckBoxPreference
@@ -38,6 +45,7 @@
     <se.lublin.mumla.preference.SeekBarDialogPreference
         android:key="pttButtonHeight"
         android:title="@string/pttButtonHeight"
+        app:useSimpleSummaryProvider="true"
         android:summary="@string/pttButtonHeightSum"
         app:multiplier="10"
         app:max="100"

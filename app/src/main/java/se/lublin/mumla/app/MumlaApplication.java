@@ -1,13 +1,15 @@
 package se.lublin.mumla.app;
 
-import static se.lublin.mumla.Settings.ARRAY_THEME_DARK;
-import static se.lublin.mumla.Settings.ARRAY_THEME_LIGHT;
-import static se.lublin.mumla.Settings.ARRAY_THEME_SYSTEM;
+import static androidx.appcompat.app.AppCompatDelegate.setApplicationLocales;
+import static androidx.core.os.LocaleListCompat.forLanguageTags;
+import static androidx.core.os.LocaleListCompat.getEmptyLocaleList;
+import static se.lublin.mumla.Settings.PREF_LANGUAGE;
 import static se.lublin.mumla.Settings.PREF_THEME;
 
 import android.app.Application;
 import android.content.SharedPreferences;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.preference.PreferenceManager;
 
@@ -21,32 +23,39 @@ public class MumlaApplication extends Application implements SharedPreferences.O
     }
 
     @Override
-    public void onSharedPreferenceChanged(SharedPreferences preferences, String key) {
-        if (PREF_THEME.equals(key)) {
-            applyTheme(preferences);
+    public void onSharedPreferenceChanged(SharedPreferences preferences, @Nullable String key) {
+        if (key == null) {
+            return;
+        }
+        switch (key) {
+            case PREF_LANGUAGE:
+                String language = preferences.getString(PREF_LANGUAGE, "system");
+                setApplicationLocales(language.equals("system") ? getEmptyLocaleList() : forLanguageTags(language));
+                break;
+            case PREF_THEME:
+                applyTheme(preferences);
+                break;
         }
     }
 
-    private void applyTheme(SharedPreferences preferences) {
-        boolean legacyValue = false;
-        switch (preferences.getString(PREF_THEME, ARRAY_THEME_SYSTEM)) {
-            case ARRAY_THEME_LIGHT:
+    private static void applyTheme(SharedPreferences preferences) {
+        // The "system" and "force*" values are new (see preference_notranslate.xml).
+        // We let other (older) value result in system default theme, and write that
+        // to the preference store.
+        switch (preferences.getString(PREF_THEME, "system")) {
+            case "forceLight":
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
                 break;
-            case ARRAY_THEME_DARK:
+            case "forceDark":
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
                 break;
-            case ARRAY_THEME_SYSTEM:
+            case "system":
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
                 break;
             default:
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
-                legacyValue = true;
+                preferences.edit().putString(PREF_THEME, "system").apply();
                 break;
         }
-        if (legacyValue) {
-            preferences.edit().putString(PREF_THEME, ARRAY_THEME_SYSTEM).apply();
-        }
     }
-
 }
