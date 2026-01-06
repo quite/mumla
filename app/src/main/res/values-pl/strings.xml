@@ -208,4 +208,5 @@
     <string name="app_news_item_v3_7_0_num_3">Zmodernizowano motyw, aby obsługiwał jasny/ciemny tryb systemu.</string>
     <string name="app_news_item_v3_7_0_num_4">Ekran ustawień musiał zostać dostosowany do nowszych interfejsów API.</string>
     <string name="app_news_footer_on_startup">Wiadomości te można ponownie przejrzeć na stronie O programie.</string>
+    <string name="app_news_item_v3_7_0_num_5">Dodano preferencje językowe w aplikacji.</string>
 </resources>
