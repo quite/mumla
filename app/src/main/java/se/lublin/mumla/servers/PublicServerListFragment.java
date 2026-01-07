@@ -19,12 +19,10 @@ package se.lublin.mumla.servers;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -37,14 +35,15 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.GridView;
 import android.widget.ProgressBar;
-import android.widget.TextView;
-import android.widget.TextView.OnEditorActionListener;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
+
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -107,11 +106,11 @@ public class PublicServerListFragment extends Fragment implements OnItemClickLis
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_public_server_list, container, false);
-        mServerGrid = (GridView) view.findViewById(R.id.server_list_grid);
+        mServerGrid = view.findViewById(R.id.server_list_grid);
         mServerGrid.setOnItemClickListener(this);
         if(mServerAdapter != null)
             mServerGrid.setAdapter(mServerAdapter);
-        mServerProgress = (ProgressBar) view.findViewById(R.id.serverProgress);
+        mServerProgress = view.findViewById(R.id.serverProgress);
         mServerProgress.setVisibility(mServerAdapter == null ? View.VISIBLE : View.GONE);
         return view;
     }
@@ -147,26 +146,27 @@ public class PublicServerListFragment extends Fragment implements OnItemClickLis
 
     @Override
     public void favouriteServer(final Server server) {
-        final Settings settings = Settings.getInstance(getActivity());
-        final EditText usernameField = new EditText(getActivity());
+        final Settings settings = Settings.getInstance(requireActivity());
+        final EditText usernameField = new EditText(requireActivity());
         usernameField.setHint(settings.getDefaultUsername());
-        AlertDialog.Builder adb = new AlertDialog.Builder(getActivity());
-        adb.setTitle(R.string.addFavorite);
-        adb.setView(usernameField);
-        adb.setPositiveButton(R.string.add, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                if(usernameField.getText().length() > 0) {
-                    server.setUsername(usernameField.getText().toString());
-                } else {
-                    server.setUsername(settings.getDefaultUsername());
-                }
-                MumlaDatabase database = mDatabaseProvider.getDatabase();
-                database.addServer(server);
-            }
-        });
-        adb.setNegativeButton(android.R.string.cancel, null);
-        adb.show();
+        FrameLayout layout = new FrameLayout(requireActivity());
+        layout.addView(usernameField);
+        int horizontalPadding = (int) getResources().getDimension(R.dimen.abc_dialog_padding_material);
+        layout.setPadding(horizontalPadding, 0, horizontalPadding, 0);
+        new MaterialAlertDialogBuilder(requireActivity())
+                .setTitle(R.string.addFavorite)
+                .setView(layout)
+                .setPositiveButton(R.string.add, (dialog, which) -> {
+                    if (usernameField.getText().length() > 0) {
+                        server.setUsername(usernameField.getText().toString());
+                    } else {
+                        server.setUsername(settings.getDefaultUsername());
+                    }
+                    MumlaDatabase database = mDatabaseProvider.getDatabase();
+                    database.addServer(server);
+                })
+                .setNegativeButton(android.R.string.cancel, null)
+                .show();
     }
 
     public void setServers(List<PublicServer> servers) {
@@ -181,17 +181,12 @@ public class PublicServerListFragment extends Fragment implements OnItemClickLis
     }
 
     private void showMatchDialog() {
-        AlertDialog.Builder adb = new AlertDialog.Builder(getActivity());
-        adb.setTitle(R.string.server_match);
-        adb.setMessage(R.string.server_match_description);
-        adb.setPositiveButton(R.string.search, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                findOptimalServer();
-            }
-        });
-        adb.setNegativeButton(android.R.string.cancel, null);
-        adb.show();
+        new MaterialAlertDialogBuilder(requireActivity())
+                .setTitle(R.string.server_match)
+                .setMessage(R.string.server_match_description)
+                .setPositiveButton(R.string.search, (dialog, which) -> findOptimalServer())
+                .setNegativeButton(android.R.string.cancel, null)
+                .show();
     }
 
     private void findOptimalServer() {
@@ -200,67 +195,54 @@ public class PublicServerListFragment extends Fragment implements OnItemClickLis
     }
 
     private void showSortDialog() {
-        AlertDialog.Builder alertBuilder = new AlertDialog.Builder(getActivity());
-        alertBuilder.setTitle(R.string.sortBy);
-        alertBuilder.setItems(new String[] { getString(R.string.name), getString(R.string.country)}, new SortClickListener());
-        alertBuilder.show();
+        new MaterialAlertDialogBuilder(requireActivity())
+                .setTitle(R.string.sortBy)
+                .setItems(new String[]{getString(R.string.name), getString(R.string.country)}, new SortClickListener())
+                .show();
     }
 
     private void showFilterDialog() {
         View dialogView = ((LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE)).inflate(R.layout.dialog_server_search, null);
-        final EditText nameText = (EditText) dialogView.findViewById(R.id.server_search_name);
-        final EditText countryText = (EditText) dialogView.findViewById(R.id.server_search_country);
+        final EditText nameText = dialogView.findViewById(R.id.server_search_name);
+        final EditText countryText = dialogView.findViewById(R.id.server_search_country);
 
-        final AlertDialog dlg = new AlertDialog.Builder(getActivity()).
-            setTitle(R.string.search).
-            setView(dialogView).
-            setPositiveButton(R.string.search, new DialogInterface.OnClickListener() {
-                public void onClick(final DialogInterface dialog, final int which)
-                {
+        final AlertDialog alertDialog = new MaterialAlertDialogBuilder(getActivity())
+                .setTitle(R.string.search)
+                .setView(dialogView)
+                .setPositiveButton(R.string.search, (dialog, which) -> {
                     String queryName = nameText.getText().toString().toUpperCase(Locale.US);
                     String queryCountry = countryText.getText().toString().toUpperCase(Locale.US);
                     mServerAdapter.filter(queryName, queryCountry);
                     dialog.dismiss();
-                }
-            }).create();
+                })
+                .create();
 
         nameText.setImeOptions(EditorInfo.IME_ACTION_SEARCH);
-        nameText.setOnEditorActionListener(new OnEditorActionListener() {
-            @Override
-            public boolean onEditorAction(final TextView v, final int actionId, final KeyEvent event)
-            {
-                String queryName = nameText.getText().toString().toUpperCase(Locale.US);
-                String queryCountry = countryText.getText().toString().toUpperCase(Locale.US);
-                mServerAdapter.filter(queryName, queryCountry);
-                dlg.dismiss();
-                return true;
-            }
+        nameText.setOnEditorActionListener((v, actionId, event) -> {
+            String queryName = nameText.getText().toString().toUpperCase(Locale.US);
+            String queryCountry = countryText.getText().toString().toUpperCase(Locale.US);
+            mServerAdapter.filter(queryName, queryCountry);
+            alertDialog.dismiss();
+            return true;
         });
 
         countryText.setImeOptions(EditorInfo.IME_ACTION_SEARCH);
-        countryText.setOnEditorActionListener(new OnEditorActionListener() {
-            @Override
-            public boolean onEditorAction(final TextView v, final int actionId, final KeyEvent event)
-            {
-                String queryName = nameText.getText().toString().toUpperCase(Locale.US);
-                String queryCountry = countryText.getText().toString().toUpperCase(Locale.US);
-                mServerAdapter.filter(queryName, queryCountry);
-                dlg.dismiss();
-                return true;
-            }
+        countryText.setOnEditorActionListener((v, actionId, event) -> {
+            String queryName = nameText.getText().toString().toUpperCase(Locale.US);
+            String queryCountry = countryText.getText().toString().toUpperCase(Locale.US);
+            mServerAdapter.filter(queryName, queryCountry);
+            alertDialog.dismiss();
+            return true;
         });
 
         // Show keyboard automatically
-        nameText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if (hasFocus) {
-                    dlg.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
-                }
+        nameText.setOnFocusChangeListener((v, hasFocus) -> {
+            if (hasFocus) {
+                alertDialog.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
             }
         });
 
-        dlg.show();
+        alertDialog.show();
     }
 
     @Override
@@ -370,20 +352,17 @@ public class PublicServerListFragment extends Fragment implements OnItemClickLis
         private volatile int mResponseCount = 0;
         private int mResponsesToSend = SEARCH_RANGE;
 
-        private ProgressDialog mProgressDialog;
+        private AlertDialog mProgressDialog;
 
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            mProgressDialog = ProgressDialog.show(getActivity(), null, getString(R.string.server_match_progress));
-            mProgressDialog.setCancelable(true);
-            mProgressDialog.setCanceledOnTouchOutside(true);
-            mProgressDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
-                @Override
-                public void onCancel(DialogInterface dialog) {
-                    cancel(true);
-                }
-            });
+            mProgressDialog = new MaterialAlertDialogBuilder(requireActivity())
+                    .setMessage(R.string.server_match_progress)
+                    .setCancelable(true)
+                    .setOnCancelListener(dialog -> cancel(true))
+                    .create();
+            mProgressDialog.show();
         }
 
         // TODO? suppress for the executeOnExecutor() below
@@ -437,38 +416,33 @@ public class PublicServerListFragment extends Fragment implements OnItemClickLis
             super.onPostExecute(response);
             final PublicServer publicServer = response == null ? null : (PublicServer) response.getServer();
             mProgressDialog.hide();
-
-            AlertDialog.Builder adb = new AlertDialog.Builder(getActivity());
-            if(publicServer != null) {
-                adb.setTitle(R.string.server_match_found);
-                adb.setMessage(getString(R.string.server_match_info,
-                        publicServer.getName(),
-                        publicServer.getHost(),
-                        publicServer.getPort(),
-                        response.getCurrentUsers(),
-                        response.getMaximumUsers(),
-                        response.getVersionString(),
-                        publicServer.getCountry(),
-                        response.getLatency()));
-                adb.setPositiveButton(R.string.connect, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        mConnectHandler.connectToPublicServer(publicServer);
-                    }
-                });
+            if (publicServer != null) {
+                new MaterialAlertDialogBuilder(requireActivity())
+                        .setTitle(R.string.server_match_found)
+                        .setMessage(getString(R.string.server_match_info,
+                                publicServer.getName(),
+                                publicServer.getHost(),
+                                publicServer.getPort(),
+                                response.getCurrentUsers(),
+                                response.getMaximumUsers(),
+                                response.getVersionString(),
+                                publicServer.getCountry(),
+                                response.getLatency()))
+                        .setPositiveButton(R.string.connect, (dialog, which) ->
+                                mConnectHandler.connectToPublicServer(publicServer))
+                        .setNegativeButton(android.R.string.cancel, null)
+                        .show();
             } else {
-                adb.setTitle(R.string.server_match_not_found);
-                adb.setMessage(R.string.server_match_expand_country);
-                adb.setPositiveButton(R.string.expand, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        MatchServerTask matchTask = new MatchServerTask();
-                        matchTask.execute();
-                    }
-                });
+                new MaterialAlertDialogBuilder(requireActivity())
+                        .setTitle(R.string.server_match_not_found)
+                        .setMessage(R.string.server_match_expand_country)
+                        .setPositiveButton(R.string.expand, (dialog, which) -> {
+                            MatchServerTask matchTask = new MatchServerTask();
+                            matchTask.execute();
+                        })
+                        .setNegativeButton(android.R.string.cancel, null)
+                        .show();
             }
-            adb.setNegativeButton(android.R.string.cancel, null);
-            adb.show();
         }
     }
 }

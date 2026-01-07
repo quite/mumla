@@ -78,7 +78,7 @@
     <string name="addFavorite">お気に入りに追加</string>
     <string name="accessAdd">アクセストークンを追加</string>
     <string name="messageReceived">新しいメッセージ</string>
-    <string name="generateCertSuccess">証明書が設定され、%s として保存されました!</string>
+    <string name="generateCertSuccess">証明書が設定され、%s として保存されました</string>
     <string name="generateCertFailure">証明書の生成に失敗しました。</string>
     <string name="generateCertProgress">証明書の生成中…</string>
     <string name="search">検索</string>
@@ -129,7 +129,7 @@
     <string name="channel_edit">チャンネルを編集</string>
     <string name="channel_add">チャンネルを追加</string>
     <string name="tts_failed">TTS が初期化に失敗しました</string>
-    <string name="mumble_url_parse_failed">Mumble URL の解析に失敗しました!</string>
+    <string name="mumble_url_parse_failed">Mumble URL の解析に失敗しました</string>
     <string name="first_run_generate_certificate_title">Mumla にようこそ</string>
     <string name="first_run_generate_certificate">証明書を生成することが非常に推奨されます。いくつかのサーバへ接続するために必要です。</string>
     <string name="generate">生成</string>
@@ -139,7 +139,7 @@
     <string name="untrusted_certificate">信頼できない証明書</string>
     <string name="allow">許可</string>
     <string name="trust_added">トラストストアに証明書を追加しました</string>
-    <string name="trust_add_failed">トラストストアへの証明書の追加に失敗しました!</string>
+    <string name="trust_add_failed">トラストストアへの証明書の追加に失敗しました</string>
     <string name="trust_cleared">トラストデータベースがクリアされました</string>
     <string name="cancelled">キャンセルされました</string>
     <string name="current_chat_target">現在のチャット対象</string>

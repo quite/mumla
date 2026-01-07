@@ -179,7 +179,7 @@
     <string name="drawer_close">Chiudi barra laterale</string>
     <string name="drawer_open">Apri barra laterale</string>
     <string name="generateCertFailure">Impossibile generare il certificato.</string>
-    <string name="generateCertSuccess">Il certificato è stato impostato e salvato come: %s!</string>
+    <string name="generateCertSuccess">Il certificato è stato impostato e salvato come: %s</string>
     <string name="accessAdd">Aggiungi token d\'accesso</string>
     <string name="externalStorageUnavailable">Archiviazione esterna non disponibile, impossibile caricare il certificato</string>
     <string name="ptt">Premi per parlare</string>

@@ -78,7 +78,7 @@
     <string name="addFavorite">Favorit hinzufügen</string>
     <string name="accessAdd">Zugriffscode hinzufügen</string>
     <string name="messageReceived">Neue Nachricht</string>
-    <string name="generateCertSuccess">Ihr Zertifikat wurde generiert und als %s gespeichert!</string>
+    <string name="generateCertSuccess">Ihr Zertifikat wurde generiert und als %s gespeichert</string>
     <string name="generateCertFailure">Erzeugung des Zertifikat fehlgeschlagen.</string>
     <string name="generateCertProgress">Erzeuge Zertifikat…</string>
     <string name="search">Suche</string>

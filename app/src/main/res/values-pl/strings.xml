@@ -79,7 +79,7 @@
     <string name="addFavorite">Dodaj do ulubionych</string>
     <string name="accessAdd">Dodaj token dostępu</string>
     <string name="messageReceived">Nowa wiadomość</string>
-    <string name="generateCertSuccess">Twój certyfikat został ustawiony i zapisany jako %s!</string>
+    <string name="generateCertSuccess">Twój certyfikat został ustawiony i zapisany jako %s</string>
     <string name="generateCertFailure">Nie udało się wygenerować certyfikatu.</string>
     <string name="generateCertProgress">Generowanie certyfikatu…</string>
     <string name="search">Wyszukaj</string>

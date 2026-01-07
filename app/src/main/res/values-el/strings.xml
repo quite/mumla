@@ -162,7 +162,7 @@
     <string name="disconnect">Αποσύνδεση</string>
     <string name="channel">Κανάλι</string>
     <string name="confirm_delete_channel">Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτό το κανάλι;</string>
-    <string name="generateCertSuccess">Το πιστοποιητικό σας έχει οριστεί και αποθηκευτεί ως %s!</string>
+    <string name="generateCertSuccess">Το πιστοποιητικό σας έχει οριστεί και αποθηκευτεί ως %s</string>
     <string name="externalStorageUnavailable">Εξωτερικός χώρος αποθήκευσης μη διαθέσιμος, δεν μπορεί να φορτωθεί το πιστοποιητικό</string>
     <string name="searchHint">Αναζήτηση καναλιών και χρηστών</string>
     <string name="user">Χρήστης</string>

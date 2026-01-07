@@ -11,7 +11,7 @@
     <string name="search">Søk</string>
     <string name="generateCertProgress">Genererer sertifikat …</string>
     <string name="generateCertFailure">Kunne ikke generere sertifikat.</string>
-    <string name="generateCertSuccess">Sertifikatet ditt har blitt satt og lagret som %s!</string>
+    <string name="generateCertSuccess">Sertifikatet ditt har blitt satt og lagret som %s</string>
     <string name="messageReceived">Ny melding</string>
     <string name="accessAdd">Legg til tilgangssymbol</string>
     <string name="addFavorite">Legg til favoritt</string>

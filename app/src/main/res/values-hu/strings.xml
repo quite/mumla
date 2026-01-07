@@ -81,7 +81,7 @@
     <string name="externalStorageUnavailable">Nem lehet betölteni a tanúsítványt, külső tároló nem érhető el</string>
     <string name="addFavorite">Kedvenc hozzáadása</string>
     <string name="messageReceived">Új üzenet</string>
-    <string name="generateCertSuccess">A tanúsítványod beállítva és mentve mint: %s!</string>
+    <string name="generateCertSuccess">A tanúsítványod beállítva és mentve mint: %s</string>
     <string name="generateCertFailure">Nem sikerült a tanúsítvány generálása.</string>
     <string name="generateCertProgress">Tanúsítvány létrehozása…</string>
     <string name="search">Keresés</string>

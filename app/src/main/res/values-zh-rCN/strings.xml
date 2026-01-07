@@ -84,7 +84,7 @@
     <string name="addFavorite">添加为收藏</string>
     <string name="accessAdd">添加访问令牌</string>
     <string name="messageReceived">新消息</string>
-    <string name="generateCertSuccess">您的证书已被设置并保存为 %s！</string>
+    <string name="generateCertSuccess">您的证书已被设置并保存为 %s</string>
     <string name="generateCertFailure">无法生成证书。</string>
     <string name="generateCertProgress">正在生成证书…</string>
     <string name="search">搜索</string>

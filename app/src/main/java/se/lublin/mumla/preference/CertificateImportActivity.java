@@ -17,7 +17,6 @@
 
 package se.lublin.mumla.preference;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
@@ -27,8 +26,9 @@ import android.text.InputType;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import org.spongycastle.jce.provider.BouncyCastleProvider;
 
@@ -107,25 +107,16 @@ public class CertificateImportActivity extends AppCompatActivity {
             // A problem occurred when reading the stream; interpret this as a password being
             // required. Request a password from the user and reattempt decryption.
             // FIXME(acomminos): examine p12 file's SafeBags to determine the presence of a password
-            AlertDialog.Builder promptBuilder = new AlertDialog.Builder(this);
             final EditText passwordField = new EditText(this);
             passwordField.setHint(R.string.password);
             passwordField.setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD);
-            promptBuilder.setTitle(R.string.decrypt_certificate);
-            promptBuilder.setView(passwordField);
-            promptBuilder.setOnCancelListener(new DialogInterface.OnCancelListener() {
-                @Override
-                public void onCancel(DialogInterface dialog) {
-                    finish();
-                }
-            });
-            promptBuilder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    storeKeystore(passwordField.getText().toString().toCharArray(), fileName, input);
-                }
-            });
-            promptBuilder.show();
+            new MaterialAlertDialogBuilder(this)
+                    .setTitle(R.string.decrypt_certificate)
+                    .setView(passwordField)
+                    .setOnCancelListener(dialog -> finish())
+                    .setPositiveButton(android.R.string.ok, (dialog, which) ->
+                            storeKeystore(passwordField.getText().toString().toCharArray(), fileName, input))
+                    .show();
             return;
         } catch (KeyStoreException|IOException|NoSuchAlgorithmException e) {
             e.printStackTrace();

@@ -8,7 +8,7 @@
     <string name="user_menu_kick">Sparka ut</string>
     <string name="drawer_public">Publika servrar</string>
     <string name="server_info_codec">Kodek: %s</string>
-    <string name="server_match_progress">Hittar en server…</string>
+    <string name="server_match_progress">Letar efter server…</string>
     <string name="server_match_info">Namn: %1$s
 \nServer och port: %2$s:%3$d
 \nAnvändare:%4$d / %5$d
@@ -133,7 +133,7 @@
     <string name="addFavorite">Lägg till favorit</string>
     <string name="accessAdd">Lägg till åtkomsttoken</string>
     <string name="messageReceived">Nytt meddelande</string>
-    <string name="generateCertSuccess">Ditt certifikat har ställts in och sparats som %s!</string>
+    <string name="generateCertSuccess">Ditt certifikat har ställts in och sparats som %s</string>
     <string name="generateCertFailure">Kunde inte generera certifikat.</string>
     <string name="generateCertProgress">Genererar certifikat…</string>
     <string name="search">Sök</string>

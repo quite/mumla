@@ -84,7 +84,7 @@
     <string name="addFavorite">Добавить в избранное</string>
     <string name="accessAdd">Добавить токен доступа</string>
     <string name="messageReceived">Новое сообщение</string>
-    <string name="generateCertSuccess">Ваш сертификат был установлен и сохранен как %s!</string>
+    <string name="generateCertSuccess">Ваш сертификат был установлен и сохранен как %s</string>
     <string name="generateCertFailure">Не удалось создать сертификат.</string>
     <string name="generateCertProgress">Создание сертификата…</string>
     <string name="search">Поиск</string>

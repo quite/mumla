@@ -18,7 +18,6 @@
 package se.lublin.mumla.channel;
 
 import android.content.Context;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -26,10 +25,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.PopupMenu;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import java.util.List;
 
@@ -123,20 +123,15 @@ public class UserMenu implements PermissionsPopupMenu.IOnMenuPrepareListener, Po
     public boolean onMenuItemClick(final MenuItem menuItem) {
         int itemId = menuItem.getItemId();
         if (itemId == R.id.context_ban || itemId == R.id.context_kick) {
-            AlertDialog.Builder alertBuilder = new AlertDialog.Builder(mContext);
-            alertBuilder.setTitle(R.string.user_menu_kick);
             final EditText reasonField = new EditText(mContext);
             reasonField.setHint(R.string.hint_reason);
-            alertBuilder.setView(reasonField);
-            alertBuilder.setPositiveButton(R.string.user_menu_kick, new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    mService.kickBanUser(mUser.getSession(),
-                            reasonField.getText().toString(), menuItem.getItemId() == R.id.context_ban);
-                }
-            });
-            alertBuilder.setNegativeButton(android.R.string.cancel, null);
-            alertBuilder.show();
+            new MaterialAlertDialogBuilder(mContext)
+                    .setTitle(R.string.user_menu_kick)
+                    .setView(reasonField)
+                    .setPositiveButton(R.string.user_menu_kick, (dialog, which) ->
+                            mService.kickBanUser(mUser.getSession(), reasonField.getText().toString(), menuItem.getItemId() == R.id.context_ban))
+                    .setNegativeButton(android.R.string.cancel, null)
+                    .show();
         } else if (itemId == R.id.context_mute) {
             mService.setMuteDeafState(mUser.getSession(), !(mUser.isMuted() || mUser.isSuppressed()), mUser.isDeafened());
         } else if (itemId == R.id.context_deafen) {
@@ -156,14 +151,10 @@ public class UserMenu implements PermissionsPopupMenu.IOnMenuPrepareListener, Po
         } else if (itemId == R.id.context_view_comment) {
             showUserComment(false);
         } else if (itemId == R.id.context_reset_comment) {
-            new AlertDialog.Builder(mContext)
+            new MaterialAlertDialogBuilder(mContext)
                     .setMessage(mContext.getString(R.string.confirm_reset_comment, mUser.getName()))
-                    .setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            mService.setUserComment(mUser.getSession(), "");
-                        }
-                    })
+                    .setPositiveButton(R.string.confirm, (dialog, which) ->
+                            mService.setUserComment(mUser.getSession(), ""))
                     .setNegativeButton(android.R.string.cancel, null)
                     .show();
 //        } else if (itemId == R.id.context_info) {
@@ -185,21 +176,18 @@ public class UserMenu implements PermissionsPopupMenu.IOnMenuPrepareListener, Po
     }
 
     private void showChannelMoveDialog() {
-        AlertDialog.Builder adb = new AlertDialog.Builder(mContext);
-        adb.setTitle(R.string.user_menu_move);
         final List<IChannel> channels = ModelUtils.getChannelList(mService.getRootChannel());
         final CharSequence[] channelNames = new CharSequence[channels.size()];
         for (int i = 0; i < channels.size(); i++) {
             channelNames[i] = channels.get(i).getName();
         }
-        adb.setItems(channelNames, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                IChannel channel = channels.get(which);
-                mService.moveUserToChannel(mUser.getSession(), channel.getId());
-            }
-        });
-        adb.show();
+        new MaterialAlertDialogBuilder(mContext)
+                .setTitle(R.string.user_menu_move)
+                .setItems(channelNames, (dialog, which) -> {
+                    IChannel channel = channels.get(which);
+                    mService.moveUserToChannel(mUser.getSession(), channel.getId());
+                })
+                .show();
     }
 
     public void showPopup(View anchor) {

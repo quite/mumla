@@ -78,7 +78,7 @@
     <string name="addFavorite">Favoriet Toevoegen</string>
     <string name="accessAdd">Toevoegen toegangssleutels</string>
     <string name="messageReceived">Nieuw bericht</string>
-    <string name="generateCertSuccess">Uw certificaat is ingesteld en opgeslagen als %s!</string>
+    <string name="generateCertSuccess">Uw certificaat is ingesteld en opgeslagen als %s</string>
     <string name="generateCertFailure">Certificaat genereren mislukt.</string>
     <string name="generateCertProgress">Certificaat genereren…</string>
     <string name="search">Zoeken</string>

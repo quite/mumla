@@ -105,7 +105,7 @@
     <string name="addFavorite">Add Favorite</string>
     <string name="accessAdd">Add Access Token</string>
     <string name="messageReceived">New message</string>
-    <string name="generateCertSuccess">Your certificate has been set and saved as %s!</string>
+    <string name="generateCertSuccess">Your certificate has been set and saved as %s</string>
     <string name="generateCertFailure">Could not generate certificate.</string>
     <string name="generateCertProgress">Generating certificate…</string>
     <string name="search">Search</string>

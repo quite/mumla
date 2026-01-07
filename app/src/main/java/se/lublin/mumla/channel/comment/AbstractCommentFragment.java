@@ -19,7 +19,6 @@ package se.lublin.mumla.channel.comment;
 
 import android.app.Activity;
 import android.app.Dialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -27,8 +26,9 @@ import android.webkit.WebView;
 import android.widget.EditText;
 import android.widget.TabHost;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
+
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import se.lublin.humla.IHumlaService;
 import se.lublin.mumla.R;
@@ -74,7 +74,7 @@ public abstract class AbstractCommentFragment extends DialogFragment {
         mTabHost = (TabHost) view.findViewById(R.id.comment_tabhost);
         mTabHost.setup();
 
-        if(mComment == null) {
+        if (mComment == null) {
             mCommentView.loadData("Loading...", null, null);
             requestComment(mProvider.getService());
         } else {
@@ -95,10 +95,10 @@ public abstract class AbstractCommentFragment extends DialogFragment {
         mTabHost.setOnTabChangedListener(new TabHost.OnTabChangeListener() {
             @Override
             public void onTabChanged(String tabId) {
-                if("View".equals(tabId)) {
+                if ("View".equals(tabId)) {
                     // When switching back to view tab, update with user's HTML changes.
                     mCommentView.loadData(mCommentEdit.getText().toString(), "text/html", "UTF-8");
-                } else if("Edit".equals(tabId) && "".equals(mCommentEdit.getText().toString())) {
+                } else if ("Edit".equals(tabId) && "".equals(mCommentEdit.getText().toString())) {
                     // Load edittext content for the first time when the tab is selected, to improve performance with long messages.
                     mCommentEdit.setText(mComment);
                 }
@@ -107,18 +107,19 @@ public abstract class AbstractCommentFragment extends DialogFragment {
 
         mTabHost.setCurrentTab(isEditing() ? 1 : 0);
 
-        AlertDialog.Builder adb = new AlertDialog.Builder(getActivity());
-        adb.setView(view);
         if (isEditing()) {
-            adb.setPositiveButton(R.string.save, new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    editComment(mProvider.getService(), mCommentEdit.getText().toString());
-                }
-            });
+            return new MaterialAlertDialogBuilder(requireActivity())
+                    .setView(view)
+                    .setNegativeButton(R.string.close, null)
+                    .setPositiveButton(R.string.save, (dialog, which) ->
+                            editComment(mProvider.getService(), mCommentEdit.getText().toString()))
+                    .create();
+        } else {
+            return new MaterialAlertDialogBuilder(requireActivity())
+                    .setView(view)
+                    .setNegativeButton(R.string.close, null)
+                    .create();
         }
-        adb.setNegativeButton(R.string.close, null);
-        return adb.create();
     }
 
     protected void loadComment(String comment) {

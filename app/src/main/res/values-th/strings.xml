@@ -119,7 +119,7 @@
     <string name="search">ค้นหา</string>
     <string name="generateCertProgress">กำลังสร้างใบรับรอง…</string>
     <string name="generateCertFailure">สร้างใบรับรองไม่ได้</string>
-    <string name="generateCertSuccess">ใบรับรองของคุณสร้างและบันทึกแล้ว %s!</string>
+    <string name="generateCertSuccess">ใบรับรองของคุณสร้างและบันทึกแล้ว %s</string>
     <string name="messageReceived">ข้อความใหม่</string>
     <string name="accessAdd">เพิ่มโทเค็นการเข้าถึง</string>
     <string name="addFavorite">เพิ่มรายการโปรด</string>

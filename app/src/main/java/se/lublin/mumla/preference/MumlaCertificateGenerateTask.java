@@ -17,10 +17,13 @@
 
 package se.lublin.mumla.preference;
 
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AlertDialog;
+
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import java.io.ByteArrayOutputStream;
 import java.text.SimpleDateFormat;
@@ -37,7 +40,7 @@ public class MumlaCertificateGenerateTask extends AsyncTask<Void, Void, Database
     private static final String DATE_FORMAT = "yyyy-MM-dd-HH-mm-ss";
 
     private Context context;
-    private ProgressDialog loadingDialog;
+    private AlertDialog loadingDialog;
 
     public MumlaCertificateGenerateTask(Context context) {
         this.context = context;
@@ -47,10 +50,11 @@ public class MumlaCertificateGenerateTask extends AsyncTask<Void, Void, Database
     protected void onPreExecute() {
         super.onPreExecute();
 
-        loadingDialog = new ProgressDialog(context);
-        loadingDialog.setIndeterminate(true);
-        loadingDialog.setMessage(context.getString(R.string.generateCertProgress));
-        loadingDialog.setCancelable(false);
+        loadingDialog = new MaterialAlertDialogBuilder(context)
+                .setTitle(R.string.generateCertProgress)
+                .setView(R.layout.dialog_progress)
+                .setCancelable(false)
+                .create();
         loadingDialog.show();
     }
     @Override
@@ -79,6 +83,8 @@ public class MumlaCertificateGenerateTask extends AsyncTask<Void, Void, Database
             Toast.makeText(context, R.string.generateCertFailure, Toast.LENGTH_SHORT).show();
         }
 
-        loadingDialog.dismiss();
+        if (loadingDialog != null) {
+            loadingDialog.dismiss();
+        }
     }
 }

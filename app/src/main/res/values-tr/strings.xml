@@ -128,7 +128,7 @@
     <string name="search">Ara</string>
     <string name="generateCertProgress">Sertifika oluşturuluyor…</string>
     <string name="generateCertFailure">Sertifika oluşturulamadı.</string>
-    <string name="generateCertSuccess">Sertifikanız ayarlandı ve %s olarak kaydedildi!</string>
+    <string name="generateCertSuccess">Sertifikanız ayarlandı ve %s olarak kaydedildi</string>
     <string name="messageReceived">Yeni mesaj</string>
     <string name="accessAdd">Erişim Belirteci Ekle</string>
     <string name="addFavorite">Sık Kullanılanlara Ekle</string>

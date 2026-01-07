@@ -64,7 +64,7 @@
     <string name="externalStorageUnavailable">Penyimpanan eksternal tidak tersedia, tidak dapat memuat sertifikat keamanan</string>
     <string name="addFavorite">Tambah Favorit</string>
     <string name="messageReceived">Pesan baru</string>
-    <string name="generateCertSuccess">Sertifikat keamanan anda berhasil disimpan sebagai %s!</string>
+    <string name="generateCertSuccess">Sertifikat keamanan anda berhasil disimpan sebagai %s</string>
     <string name="generateCertFailure">Tidak dapat membuat sertifikat keamanan.</string>
     <string name="search">Pencarian</string>
     <string name="searchHint">Cari channel dan user</string>

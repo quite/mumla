@@ -83,7 +83,7 @@
     <string name="addFavorite">Ajouter un favori</string>
     <string name="accessAdd">Ajouter un jeton d\'accès</string>
     <string name="messageReceived">Nouveau message</string>
-    <string name="generateCertSuccess">Votre certificat a été définie et enregistré sous %s !</string>
+    <string name="generateCertSuccess">Votre certificat a été définie et enregistré sous %s</string>
     <string name="generateCertFailure">Échec de la génération du certificat.</string>
     <string name="generateCertProgress">Génération d\'un certificat…</string>
     <string name="search">Rechercher</string>

@@ -78,7 +78,7 @@
     <string name="addFavorite">Añadir a favoritos</string>
     <string name="accessAdd">Añadir token de acceso</string>
     <string name="messageReceived">Nuevo mensaje </string>
-    <string name="generateCertSuccess">¡Su certificado ha sido establecido y guardado como %s!</string>
+    <string name="generateCertSuccess">¡Su certificado ha sido establecido y guardado como %s</string>
     <string name="generateCertFailure">Fallo al generar el certificado.</string>
     <string name="generateCertProgress">Generando certificado…</string>
     <string name="search">Buscar</string>

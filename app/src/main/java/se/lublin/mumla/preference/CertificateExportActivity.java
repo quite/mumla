@@ -32,11 +32,12 @@ import android.widget.Toast;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts.CreateDocument;
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.documentfile.provider.DocumentFile;
+
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -81,16 +82,11 @@ public class CertificateExportActivity extends AppCompatActivity implements Dial
             labels[i] = mCertificates.get(i).getName();
         }
 
-        AlertDialog.Builder adb = new AlertDialog.Builder(this);
-        adb.setTitle(R.string.pref_export_certificate_title);
-        adb.setItems(labels, this);
-        adb.setOnCancelListener(new DialogInterface.OnCancelListener() {
-            @Override
-            public void onCancel(DialogInterface dialog) {
-                finish();
-            }
-        });
-        adb.show();
+        new MaterialAlertDialogBuilder(this)
+                .setTitle(R.string.pref_export_certificate_title)
+                .setItems(labels, this)
+                .setOnCancelListener(dialog -> finish())
+                .show();
     }
 
     @Override
@@ -193,9 +189,9 @@ public class CertificateExportActivity extends AppCompatActivity implements Dial
     }
 
     private void showErrorDialog(int resourceId) {
-        AlertDialog.Builder errorDialog = new AlertDialog.Builder(this);
-        errorDialog.setMessage(resourceId);
-        errorDialog.setPositiveButton(android.R.string.ok, null);
-        errorDialog.show();
+        new MaterialAlertDialogBuilder(this)
+                .setMessage(resourceId)
+                .setPositiveButton(android.R.string.ok, null)
+                .show();
     }
 }

@@ -19,15 +19,15 @@ package se.lublin.mumla.channel;
 
 import android.app.Activity;
 import android.app.Dialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
+
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import se.lublin.humla.IHumlaSession;
 import se.lublin.humla.model.IChannel;
@@ -61,10 +61,10 @@ public class ChannelEditFragment extends DialogFragment {
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         LayoutInflater inflater = LayoutInflater.from(getActivity());
         View view = inflater.inflate(R.layout.fragment_channel_edit, null, false);
-        mNameField = (TextView) view.findViewById(R.id.channel_edit_name);
-        mDescriptionField = (TextView) view.findViewById(R.id.channel_edit_description);
-        mPositionField = (TextView) view.findViewById(R.id.channel_edit_position);
-        mTemporaryBox = (CheckBox) view.findViewById(R.id.channel_edit_temporary);
+        mNameField = view.findViewById(R.id.channel_edit_name);
+        mDescriptionField = view.findViewById(R.id.channel_edit_description);
+        mPositionField = view.findViewById(R.id.channel_edit_position);
+        mTemporaryBox = view.findViewById(R.id.channel_edit_temporary);
 
         // If we can only make temporary channels, remove the option.
         if (mServiceProvider.getService() != null && mServiceProvider.getService().isConnected()) {
@@ -79,21 +79,18 @@ public class ChannelEditFragment extends DialogFragment {
             mTemporaryBox.setEnabled(!onlyTemp);
         }
 
-        return new AlertDialog.Builder(getActivity())
+        return new MaterialAlertDialogBuilder(requireContext())
                 .setTitle(isAdding() ? R.string.channel_add : R.string.channel_edit)
                 .setView(view)
-                .setPositiveButton(isAdding() ? R.string.add : R.string.save, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        if (isAdding() && mServiceProvider.getService() != null && mServiceProvider.getService().isConnected()) {
-                            mServiceProvider.getService().HumlaSession().createChannel(getParent(),
-                                    mNameField.getText().toString(),
-                                    mDescriptionField.getText().toString(),
-                                    Integer.parseInt(mPositionField.getText().toString()), // We can guarantee this to be an int. InputType is numberSigned.
-                                    mTemporaryBox.isChecked());
-                        } else {
-                            // TODO
-                        }
+                .setPositiveButton(isAdding() ? R.string.add : R.string.save, (dialog, which) -> {
+                    if (isAdding() && mServiceProvider.getService() != null && mServiceProvider.getService().isConnected()) {
+                        mServiceProvider.getService().HumlaSession().createChannel(getParent(),
+                                mNameField.getText().toString(),
+                                mDescriptionField.getText().toString(),
+                                Integer.parseInt(mPositionField.getText().toString()), // We can guarantee this to be an int. InputType is numberSigned.
+                                mTemporaryBox.isChecked());
+                    } else {
+                        // TODO
                     }
                 })
                 .setNegativeButton(android.R.string.cancel, null)

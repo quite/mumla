@@ -171,7 +171,7 @@
         <item quantity="many">%d нових повідомлень</item>
         <item quantity="other">%d нових повідомлень</item>
     </plurals>
-    <string name="generateCertSuccess">Ваш сертифікат встановлено та збережено як %s!</string>
+    <string name="generateCertSuccess">Ваш сертифікат встановлено та збережено як %s</string>
     <string name="generateCertFailure">Не вдалося згенерувати сертифікат.</string>
     <string name="generateCertProgress">Генерація сертифіката…</string>
     <string name="search">Пошук</string>

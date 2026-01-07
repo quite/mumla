@@ -22,7 +22,7 @@
     <string name="search">Procurar</string>
     <string name="generateCertProgress">Gerando certificado…</string>
     <string name="generateCertFailure">Não foi possível gerar o certificado.</string>
-    <string name="generateCertSuccess">Seu certificado foi definido e salvo como %s!</string>
+    <string name="generateCertSuccess">Seu certificado foi definido e salvo como %s</string>
     <string name="messageReceived">Nova mensagem</string>
     <string name="accessAdd">Adicionar token de acesso</string>
     <string name="addFavorite">Adicionar aos favoritos</string>

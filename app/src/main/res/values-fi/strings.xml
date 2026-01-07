@@ -123,7 +123,7 @@
     <string name="search">Haku</string>
     <string name="generateCertProgress">Luodaan sertifikaattia…</string>
     <string name="generateCertFailure">Sertifikaattia ei voitu luoda.</string>
-    <string name="generateCertSuccess">Sertifikaatisi on asetettu ja tallennettu nimellä %s!</string>
+    <string name="generateCertSuccess">Sertifikaatisi on asetettu ja tallennettu nimellä %s</string>
     <string name="messageReceived">Uusi viesti</string>
     <string name="accessAdd">Lisää pääsyavain</string>
     <string name="addFavorite">Lisää suosikki</string>

@@ -21,7 +21,6 @@ import static android.view.KeyEvent.KEYCODE_ENTER;
 import static android.view.inputmethod.EditorInfo.IME_NULL;
 
 import android.app.Activity;
-import android.app.AlertDialog.Builder;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -53,6 +52,8 @@ import android.widget.TextView;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.exifinterface.media.ExifInterface;
+
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -299,12 +300,13 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
         preview.setAdjustViewBounds(true);
         preview.setScaleType(ImageView.ScaleType.FIT_CENTER);
         preview.setMaxHeight(Resources.getSystem().getDisplayMetrics().heightPixels / 3);
-        Builder adb = new Builder(requireContext())
+        new MaterialAlertDialogBuilder(requireContext())
                 .setMessage(R.string.image_confirm_send)
                 .setPositiveButton(android.R.string.ok, (dlg, which) -> onImageConfirmed(resized))
                 .setNegativeButton(android.R.string.cancel, null)
-                .setView(preview);
-        adb.create().show();
+                .setView(preview)
+                .create()
+                .show();
     }
 
     private void onImageConfirmed(Bitmap resized) {

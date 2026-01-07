@@ -18,7 +18,6 @@
 package se.lublin.mumla.servers;
 
 import android.app.Activity;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -31,8 +30,9 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
+
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import java.util.List;
 
@@ -132,17 +132,14 @@ public class FavouriteServerListFragment extends Fragment implements OnItemClick
     }
 
     public void deleteServer(final Server server) {
-        AlertDialog.Builder alertBuilder = new AlertDialog.Builder(getActivity());
-        alertBuilder.setMessage(R.string.confirm_delete_server);
-        alertBuilder.setPositiveButton(R.string.delete, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                mDatabaseProvider.getDatabase().removeServer(server);
-                mServerAdapter.remove(server);
-            }
-        });
-        alertBuilder.setNegativeButton(android.R.string.cancel, null);
-        alertBuilder.show();
+        new MaterialAlertDialogBuilder(requireContext())
+                .setMessage(R.string.confirm_delete_server)
+                .setPositiveButton(R.string.delete, (dialog, which) -> {
+                    mDatabaseProvider.getDatabase().removeServer(server);
+                    mServerAdapter.remove(server);
+                })
+                .setNegativeButton(android.R.string.cancel, null)
+                .show();
     }
 
     public void updateServers() {

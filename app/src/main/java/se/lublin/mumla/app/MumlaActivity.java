@@ -20,7 +20,6 @@ package se.lublin.mumla.app;
 import static java.util.Objects.requireNonNull;
 
 import android.Manifest;
-import android.app.ProgressDialog;
 import android.content.ComponentName;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -42,6 +41,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -132,11 +132,13 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
     private Server mServerPendingPerm = null;
     private boolean mPermPostNotificationsAsked = false;
 
-    private ProgressDialog mConnectingDialog;
+    private AlertDialog mConnectingDialog;
     private AlertDialog mErrorDialog;
-    private AlertDialog.Builder mDisconnectPromptBuilder;
+    private MaterialAlertDialogBuilder mDisconnectPromptBuilder;
 
-    /** List of fragments to be notified about service state changes. */
+    /**
+     * List of fragments to be notified about service state changes.
+     */
     private List<HumlaServiceFragment> mServiceFragments = new ArrayList<HumlaServiceFragment>();
 
     private ServiceConnection mConnection = new ServiceConnection() {
@@ -199,18 +201,14 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
 
         @Override
         public void onTLSHandshakeFailed(X509Certificate[] chain) {
-            final Server lastServer = getService().getTargetServer();
-
-            if (chain.length == 0)
+            if (chain.length == 0) {
                 return;
-
+            }
+            final Server lastServer = getService().getTargetServer();
             try {
                 final X509Certificate x509 = chain[0];
-
-                AlertDialog.Builder adb = new AlertDialog.Builder(MumlaActivity.this);
-                adb.setTitle(R.string.untrusted_certificate);
                 View layout = getLayoutInflater().inflate(R.layout.certificate_info, null);
-                TextView text = layout.findViewById(R.id.certificate_info_text);
+                TextView textView = layout.findViewById(R.id.certificate_info_text);
                 try {
                     MessageDigest digest1 = MessageDigest.getInstance("SHA-1");
                     MessageDigest digest2 = MessageDigest.getInstance("SHA-256");
@@ -219,7 +217,7 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
                     String hexDigest2 = new String(Hex.encode(digest2.digest(x509.getEncoded())))
                             .replaceAll("(..)", "$1:");
 
-                    text.setText(getString(R.string.certificate_info,
+                    textView.setText(getString(R.string.certificate_info,
                             x509.getSubjectDN().getName(),
                             x509.getNotBefore().toString(),
                             x509.getNotAfter().toString(),
@@ -227,28 +225,27 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
                             hexDigest2.substring(0, hexDigest2.length() - 1)));
                 } catch (NoSuchAlgorithmException e) {
                     e.printStackTrace();
-                    adb.setMessage(x509.toString());
+                    textView.setText(x509.toString());
                 }
-                adb.setView(layout);
-                adb.setPositiveButton(R.string.allow, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        // Try to add to trust store
-                        try {
-                            String alias = lastServer.getHost();
-                            KeyStore trustStore = MumlaTrustStore.getTrustStore(MumlaActivity.this);
-                            trustStore.setCertificateEntry(alias, x509);
-                            MumlaTrustStore.saveTrustStore(MumlaActivity.this, trustStore);
-                            Toast.makeText(MumlaActivity.this, R.string.trust_added, Toast.LENGTH_LONG).show();
-                            connectToServer(lastServer);
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                            Toast.makeText(MumlaActivity.this, R.string.trust_add_failed, Toast.LENGTH_LONG).show();
-                        }
-                    }
-                });
-                adb.setNegativeButton(android.R.string.cancel, null);
-                adb.show();
+                new MaterialAlertDialogBuilder(MumlaActivity.this)
+                        .setTitle(R.string.untrusted_certificate)
+                        .setView(layout)
+                        .setPositiveButton(R.string.allow, (dialog, which) -> {
+                            // Try to add to trust store
+                            try {
+                                String alias = lastServer.getHost();
+                                KeyStore trustStore = MumlaTrustStore.getTrustStore(MumlaActivity.this);
+                                trustStore.setCertificateEntry(alias, x509);
+                                MumlaTrustStore.saveTrustStore(MumlaActivity.this, trustStore);
+                                Toast.makeText(MumlaActivity.this, R.string.trust_added, Toast.LENGTH_LONG).show();
+                                connectToServer(lastServer);
+                            } catch (Exception e) {
+                                e.printStackTrace();
+                                Toast.makeText(MumlaActivity.this, R.string.trust_add_failed, Toast.LENGTH_LONG).show();
+                            }
+                        })
+                        .setNegativeButton(android.R.string.cancel, null)
+                        .show();
             } catch (CertificateException e) {
                 e.printStackTrace();
             }
@@ -256,10 +253,10 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
 
         @Override
         public void onPermissionDenied(String reason) {
-            AlertDialog.Builder adb = new AlertDialog.Builder(MumlaActivity.this);
-            adb.setTitle(R.string.perm_denied);
-            adb.setMessage(reason);
-            adb.show();
+            new MaterialAlertDialogBuilder(MumlaActivity.this)
+                    .setTitle(R.string.perm_denied)
+                    .setMessage(reason)
+                    .show();
         }
     };
 
@@ -294,9 +291,9 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
                 View footerView = getLayoutInflater().inflate(layoutResId, mDrawerList, false);
                 mDrawerList.addHeaderView(footerView, null, true);
                 footerView.setOnClickListener(v -> {
-                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(stringResId)));
-                        startActivity(intent);
-                        mDrawerLayout.closeDrawers();
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(stringResId)));
+                    startActivity(intent);
+                    mDrawerLayout.closeDrawers();
                 });
             }
         }
@@ -332,18 +329,14 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
 
-        AlertDialog.Builder dadb = new AlertDialog.Builder(this);
-        dadb.setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                if(mService != null) mService.disconnect();
-                loadDrawerFragment(DrawerAdapter.ITEM_FAVOURITES);
-            }
-        });
-        dadb.setNegativeButton(android.R.string.cancel, null);
-        mDisconnectPromptBuilder = dadb;
+        mDisconnectPromptBuilder = new MaterialAlertDialogBuilder(this)
+                .setPositiveButton(R.string.confirm, (dialog, which) -> {
+                    if (mService != null) mService.disconnect();
+                    loadDrawerFragment(DrawerAdapter.ITEM_FAVOURITES);
+                })
+                .setNegativeButton(android.R.string.cancel, null);
 
-        if(savedInstanceState == null) {
+        if (savedInstanceState == null) {
             if (getIntent() != null && getIntent().hasExtra(EXTRA_DRAWER_FRAGMENT)) {
                 loadDrawerFragment(getIntent().getIntExtra(EXTRA_DRAWER_FRAGMENT,
                         DrawerAdapter.ITEM_FAVOURITES));
@@ -353,7 +346,7 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
         }
 
         // If we're given a Mumble URL to show, open up a server edit fragment.
-        if(getIntent() != null &&
+        if (getIntent() != null &&
                 Intent.ACTION_VIEW.equals(getIntent().getAction())) {
             String url = getIntent().getDataString();
             try {
@@ -404,7 +397,7 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
         if (mConnectingDialog != null)
             mConnectingDialog.dismiss();
 
-        if(mService != null) {
+        if (mService != null) {
             for (HumlaServiceFragment fragment : mServiceFragments) {
                 fragment.setServiceBound(false);
             }
@@ -439,7 +432,7 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if(mDrawerToggle.onOptionsItemSelected(item))
+        if (mDrawerToggle.onOptionsItemSelected(item))
             return true;
         if (item.getItemId() == R.id.action_disconnect) {
             getService().disconnect();
@@ -474,7 +467,7 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
 
     @Override
     public void onBackPressed() {
-        if(mService != null && mService.isConnected()) {
+        if (mService != null && mService.isConnected()) {
             mDisconnectPromptBuilder.setMessage(getString(R.string.disconnectSure,
                     mService.getTargetServer().getName()));
             mDisconnectPromptBuilder.show();
@@ -503,16 +496,16 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
                 .setTitle(R.string.first_run_generate_certificate_title)
                 .setMessage(msg)
                 .setPositiveButton(R.string.generate, (DialogInterface dialog, int which) -> {
-                        MumlaCertificateGenerateTask generateTask = new MumlaCertificateGenerateTask(MumlaActivity.this) {
-                            @Override
-                            protected void onPostExecute(DatabaseCertificate result) {
-                                super.onPostExecute(result);
-                                if(result != null) mSettings.setDefaultCertificateId(result.getId());
-                            }
-                        };
-                        generateTask.execute();
-                        mSettings.setFirstRun(false);
-                    })
+                    MumlaCertificateGenerateTask generateTask = new MumlaCertificateGenerateTask(MumlaActivity.this) {
+                        @Override
+                        protected void onPostExecute(DatabaseCertificate result) {
+                            super.onPostExecute(result);
+                            if (result != null) mSettings.setDefaultCertificateId(result.getId());
+                        }
+                    };
+                    generateTask.execute();
+                    mSettings.setFirstRun(false);
+                })
                 .show();
     }
 
@@ -554,9 +547,9 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
         }
         Fragment fragment = Fragment.instantiate(this, fragmentClass.getName(), args);
         getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.content_frame, fragment, fragmentClass.getName())
-                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
-                    .commit();
+                .replace(R.id.content_frame, fragment, fragmentClass.getName())
+                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                .commit();
         requireNonNull(getSupportActionBar()).setTitle(mDrawerAdapter.getItemWithId(fragmentId).title);
     }
 
@@ -595,42 +588,39 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
         mServerPendingPerm = null;
 
         // Check if we're already connected to a server; if so, inform user.
-        if(mService != null && mService.isConnected()) {
-            AlertDialog.Builder adb = new AlertDialog.Builder(this);
-            adb.setMessage(R.string.reconnect_dialog_message);
-            adb.setPositiveButton(R.string.connect, new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    // Register an observer to reconnect to the new server once disconnected.
-                    mService.registerObserver(new HumlaObserver() {
-                        @Override
-                        public void onDisconnected(HumlaException e) {
-                            connectToServer(server);
-                            mService.unregisterObserver(this);
-                        }
-                    });
-                    mService.disconnect();
-                }
-            });
-            adb.setNegativeButton(android.R.string.cancel, null);
-            adb.show();
+        if (mService != null && mService.isConnected()) {
+            new MaterialAlertDialogBuilder(this)
+                    .setMessage(R.string.reconnect_dialog_message)
+                    .setPositiveButton(R.string.connect, (dialog, which) -> {
+                        // Register an observer to reconnect to the new server once disconnected.
+                        mService.registerObserver(new HumlaObserver() {
+                            @Override
+                            public void onDisconnected(HumlaException e) {
+                                connectToServer(server);
+                                mService.unregisterObserver(this);
+                            }
+                        });
+                        mService.disconnect();
+                    })
+                    .setNegativeButton(android.R.string.cancel, null)
+                    .show();
             return;
         }
 
         if (mSettings.isTorEnabled()) {
             if (!OrbotHelper.isOrbotInstalled(this)) {
                 mSettings.disableTor();
-                AlertDialog.Builder adb = new AlertDialog.Builder(MumlaActivity.this);
-                adb.setMessage(R.string.orbot_not_installed);
-                adb.setPositiveButton(android.R.string.ok, null);
-                adb.show();
+                new MaterialAlertDialogBuilder(MumlaActivity.this)
+                        .setMessage(R.string.orbot_not_installed)
+                        .setPositiveButton(android.R.string.ok, null)
+                        .show();
                 return;
             } else {
                 if (!isPortOpen(HumlaConnection.TOR_HOST, HumlaConnection.TOR_PORT, 2000)) {
-                    AlertDialog.Builder adb = new AlertDialog.Builder(MumlaActivity.this);
-                    adb.setMessage(getString(R.string.orbot_tor_failed, HumlaConnection.TOR_PORT));
-                    adb.setPositiveButton(android.R.string.ok, null);
-                    adb.show();
+                    new MaterialAlertDialogBuilder(MumlaActivity.this)
+                            .setMessage(getString(R.string.orbot_tor_failed, HumlaConnection.TOR_PORT))
+                            .setPositiveButton(android.R.string.ok, null)
+                            .show();
                     return;
                 }
             }
@@ -693,37 +683,32 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
             thread.start();
             thread.join();
             return open.get();
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             Log.d(TAG, "isPortOpen() " + e);
         }
         return false;
     }
+
     public void connectToPublicServer(final PublicServer server) {
-        AlertDialog.Builder alertBuilder = new AlertDialog.Builder(this);
-
         final Settings settings = Settings.getInstance(this);
-
-        // Allow username entry
         final EditText usernameField = new EditText(this);
         usernameField.setHint(settings.getDefaultUsername());
-        alertBuilder.setView(usernameField);
-
-        alertBuilder.setTitle(R.string.connectToServer);
-
-        alertBuilder.setPositiveButton(R.string.connect, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                PublicServer newServer = server;
-                if(!usernameField.getText().toString().equals(""))
-                    newServer.setUsername(usernameField.getText().toString());
-                else
-                    newServer.setUsername(settings.getDefaultUsername());
-                connectToServer(newServer);
-            }
-        });
-
-        alertBuilder.show();
+        FrameLayout layout = new FrameLayout(this);
+        layout.addView(usernameField);
+        int horizontalPadding = (int) getResources().getDimension(R.dimen.abc_dialog_padding_material);
+        layout.setPadding(horizontalPadding, 0, horizontalPadding, 0);
+        new MaterialAlertDialogBuilder(this)
+                .setView(layout)
+                .setTitle(R.string.connectToServer)
+                .setPositiveButton(R.string.connect, (dialog, which) -> {
+                    if (usernameField.getText().toString().isEmpty()) {
+                        server.setUsername(settings.getDefaultUsername());
+                    } else {
+                        server.setUsername(usernameField.getText().toString());
+                    }
+                    connectToServer(server);
+                })
+                .show();
     }
 
     private void setStayAwake(boolean stayAwake) {
@@ -739,32 +724,31 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
      * Will show reconnecting dialog if reconnecting, dismiss otherwise, etc.
      * Basically, this service will do catch-up if the activity wasn't bound to receive
      * connection state updates.
+     *
      * @param service A bound IHumlaService.
      */
     private void updateConnectionState(IHumlaService service) {
-        if (mConnectingDialog != null)
+        if (mConnectingDialog != null) {
             mConnectingDialog.dismiss();
+        }
         if (mErrorDialog != null)
             mErrorDialog.dismiss();
 
         switch (mService.getConnectionState()) {
             case CONNECTING:
                 Server server = service.getTargetServer();
-                mConnectingDialog = new ProgressDialog(this);
-                mConnectingDialog.setIndeterminate(true);
-                mConnectingDialog.setCancelable(true);
-                mConnectingDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
-                    @Override
-                    public void onCancel(DialogInterface dialog) {
-                        mService.disconnect();
-                        Toast.makeText(MumlaActivity.this, R.string.cancelled,
-                                Toast.LENGTH_SHORT).show();
-                    }
-                });
-                // SRV lookup is done later, so we no longer show the port (and
-                // only the configured hostname)
-                mConnectingDialog.setMessage(getString(R.string.connecting_to_server, server.getHost())
-                        + (mSettings.isTorEnabled() ? " (Tor)" : ""));
+                // SRV lookup is done later, so we no longer show the port in the connection
+                // progress dialog (and only the configured hostname)
+                mConnectingDialog = new MaterialAlertDialogBuilder(this)
+                        .setTitle(getString(R.string.connecting_to_server, server.getHost()) + (mSettings.isTorEnabled() ? " (Tor)" : ""))
+                        .setView(R.layout.dialog_progress)
+                        .setCancelable(true)
+                        .setOnCancelListener(dialog -> {
+                            mService.disconnect();
+                            Toast.makeText(MumlaActivity.this, R.string.cancelled,
+                                    Toast.LENGTH_SHORT).show();
+                        })
+                        .create();
                 mConnectingDialog.show();
                 break;
             case CONNECTION_LOST:
@@ -774,70 +758,59 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
                     if (getService() == null) {
                         break;
                     }
-                    AlertDialog.Builder ab = new AlertDialog.Builder(MumlaActivity.this);
-                    ab.setTitle(getString(R.string.connectionRefused) + (mSettings.isTorEnabled() ? " (Tor)" : ""));
+                    MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(MumlaActivity.this);
+                    builder.setTitle(getString(R.string.connectionRefused) + (mSettings.isTorEnabled() ? " (Tor)" : ""));
                     HumlaException error = getService().getConnectionError();
                     if (error != null && mService.isReconnecting()) {
-                        ab.setMessage(error.getMessage() + "\n\n"
+                        builder.setMessage(error.getMessage() + "\n\n"
                                 + getString(R.string.attempting_reconnect,
                                 error.getCause() != null ? error.getCause().getMessage() : "unknown"));
-                        ab.setPositiveButton(R.string.cancel_reconnect, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                if (getService() != null) {
-                                    getService().cancelReconnect();
-                                    getService().markErrorShown();
-                                }
+                        builder.setPositiveButton(R.string.cancel_reconnect, (dialog, which) -> {
+                            if (getService() != null) {
+                                getService().cancelReconnect();
+                                getService().markErrorShown();
                             }
                         });
                     } else if (error != null &&
-                               error.getReason() == HumlaException.HumlaDisconnectReason.REJECT &&
-                               (error.getReject().getType() == Mumble.Reject.RejectType.WrongUserPW ||
-                                error.getReject().getType() == Mumble.Reject.RejectType.WrongServerPW)) {
+                            error.getReason() == HumlaException.HumlaDisconnectReason.REJECT &&
+                            (error.getReject().getType() == Mumble.Reject.RejectType.WrongUserPW ||
+                                    error.getReject().getType() == Mumble.Reject.RejectType.WrongServerPW)) {
                         final EditText passwordField = new EditText(this);
-                        passwordField.setInputType(InputType.TYPE_CLASS_TEXT |
-                                InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                        passwordField.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
                         passwordField.setHint(R.string.password);
-                        ab.setTitle(R.string.invalid_password);
-                        ab.setMessage(error.getMessage());
-                        ab.setView(passwordField);
-                        ab.setPositiveButton(R.string.reconnect, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                Server server = getService().getTargetServer();
-                                if (server == null)
-                                    return;
-                                String password = passwordField.getText().toString();
-                                server.setPassword(password);
-                                if (server.isSaved())
-                                    mDatabase.updateServer(server);
-                                connectToServer(server);
+                        builder.setTitle(R.string.invalid_password);
+                        builder.setMessage(error.getMessage());
+                        builder.setView(passwordField);
+                        builder.setPositiveButton(R.string.reconnect, (dialog, which) -> {
+                            Server server1 = getService().getTargetServer();
+                            if (server1 == null) {
+                                return;
                             }
+                            String password = passwordField.getText().toString();
+                            server1.setPassword(password);
+                            if (server1.isSaved()) {
+                                mDatabase.updateServer(server1);
+                            }
+                            connectToServer(server1);
                         });
-                        ab.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                if (getService() != null)
-                                    getService().markErrorShown();
+                        builder.setNegativeButton(android.R.string.cancel, (dialog, which) -> {
+                            if (getService() != null) {
+                                getService().markErrorShown();
                             }
                         });
                     } else {
                         String msg = error != null ? error.getMessage() : getString(R.string.unknown);
-                        ab.setMessage(msg);
-                        ab.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                if (getService() != null)
-                                    getService().markErrorShown();
+                        builder.setMessage(msg);
+                        builder.setPositiveButton(android.R.string.ok, (dialog, which) -> {
+                            if (getService() != null) {
+                                getService().markErrorShown();
                             }
                         });
                     }
-                    ab.setCancelable(false);
-                    mErrorDialog = ab.show();
+                    builder.setCancelable(false);
+                    mErrorDialog = builder.show();
                 }
                 break;
-
-
         }
     }
 

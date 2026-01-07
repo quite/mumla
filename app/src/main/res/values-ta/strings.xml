@@ -69,7 +69,7 @@
     <string name="addFavorite">பிடித்ததைச் சேர்</string>
     <string name="accessAdd">அணுகல் கிள்ளாக்கைச் சேர்</string>
     <string name="messageReceived">புதிய செய்தி</string>
-    <string name="generateCertSuccess">உங்கள் சான்றிதழ் நிர்ணயிக்கப்பட்டு %s ஆகச் சேமிக்கப்பட்டுள்ளது!</string>
+    <string name="generateCertSuccess">உங்கள் சான்றிதழ் நிர்ணயிக்கப்பட்டு %s ஆகச் சேமிக்கப்பட்டுள்ளத</string>
     <string name="generateCertFailure">சான்றிதழை உருவாக்க முடியவில்லை.</string>
     <string name="generateCertProgress">சான்றிதழ் உருவாக்குதல்…</string>
     <string name="search">தேடல்</string>

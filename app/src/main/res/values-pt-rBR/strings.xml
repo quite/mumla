@@ -14,7 +14,7 @@
     <string name="clearChat">Limpar Conversa</string>
     <string name="delete">Excluir</string>
     <string name="quickConnect">Conexão Rápida</string>
-    <string name="generateCertSuccess">Seu certificado foi configurado e salvo como %s!</string>
+    <string name="generateCertSuccess">Seu certificado foi configurado e salvo como %s</string>
     <string name="user_menu_kick">Expulsar</string>
     <string name="confirm_delete_channel">Tem certeza de que deseja excluir este canal\?</string>
     <string name="confirm_delete_server">Tem certeza de que deseja excluir este servidor\?</string>

@@ -26,9 +26,12 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
+
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import se.lublin.humla.model.Server;
 import se.lublin.mumla.R;
@@ -98,9 +101,9 @@ public class ServerEditFragment extends DialogFragment {
         });
     }
 
+    @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        AlertDialog.Builder adb = new AlertDialog.Builder(getActivity());
         Settings settings = Settings.getInstance(getActivity());
 
         String actionName;
@@ -117,19 +120,17 @@ public class ServerEditFragment extends DialogFragment {
             default:
                 throw new RuntimeException("Unknown action " + getAction());
         }
-        adb.setPositiveButton(actionName, null);
-        adb.setNegativeButton(android.R.string.cancel, null);
 
         LayoutInflater inflater = LayoutInflater.from(getActivity());
         View view = inflater.inflate(R.layout.dialog_server_edit, null, false);
 
-        TextView titleLabel = (TextView) view.findViewById(R.id.server_edit_name_title);
-        mNameEdit = (EditText) view.findViewById(R.id.server_edit_name);
-        mHostEdit = (EditText) view.findViewById(R.id.server_edit_host);
-        mPortEdit = (EditText) view.findViewById(R.id.server_edit_port);
-        mUsernameEdit = (EditText) view.findViewById(R.id.server_edit_username);
+        TextView titleLabel = view.findViewById(R.id.server_edit_name_title);
+        mNameEdit = view.findViewById(R.id.server_edit_name);
+        mHostEdit = view.findViewById(R.id.server_edit_host);
+        mPortEdit = view.findViewById(R.id.server_edit_port);
+        mUsernameEdit = view.findViewById(R.id.server_edit_username);
         mUsernameEdit.setHint(settings.getDefaultUsername());
-        mPasswordEdit = (EditText) view.findViewById(R.id.server_edit_password);
+        mPasswordEdit = view.findViewById(R.id.server_edit_password);
 
         Server oldServer = getServer();
         if (oldServer != null) {
@@ -147,9 +148,11 @@ public class ServerEditFragment extends DialogFragment {
             mNameEdit.setVisibility(View.GONE);
         }
 
-        adb.setView(view);
-
-        return adb.create();
+        return new MaterialAlertDialogBuilder(requireActivity())
+                .setPositiveButton(actionName, null)
+                .setNegativeButton(android.R.string.cancel, null)
+                .setView(view)
+                .create();
     }
 
     public Server createServer() {
