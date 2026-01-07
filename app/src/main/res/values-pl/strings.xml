@@ -195,7 +195,7 @@
     <string name="no_ptt_key">Bez przycisku</string>
     <string name="app_news">Co nowego</string>
     <string name="app_news_summary">Zobacz najnowsze wiadomości o aktualizacjach</string>
-    <string name="news_footer_on_startup">Wiadomości te można ponownie przejrzeć na stronie O programie.</string>
+    <string name="app_news_footer_on_startup">Wiadomości te można ponownie przejrzeć na stronie O programie.</string>
     <string name="donate_dialog_title_goog">Podoba Ci się Mumla?</string>
     <string name="donate_dialog_message_goog">Dziękujemy za korzystanie z Mumli! Prosimy o rozważenie przekazania niewielkiej darowizny, która pomoże utrzymać Mumlę przy życiu i usunąć ten komunikat.</string>
     <string name="donate_dialog_positivebutton_goog">Wesprzyj Mumlę</string>
@@ -207,6 +207,5 @@
     <string name="app_news_item_v3_7_0_num_2">W związku z tym wymagany jest Android 5.0 (API 21) lub nowszy.</string>
     <string name="app_news_item_v3_7_0_num_3">Zmodernizowano motyw, aby obsługiwał jasny/ciemny tryb systemu.</string>
     <string name="app_news_item_v3_7_0_num_4">Ekran ustawień musiał zostać dostosowany do nowszych interfejsów API.</string>
-    <string name="app_news_footer_on_startup">Wiadomości te można ponownie przejrzeć na stronie O programie.</string>
     <string name="app_news_item_v3_7_0_num_5">Dodano preferencje językowe w aplikacji.</string>
 </resources>
