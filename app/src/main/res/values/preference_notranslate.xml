@@ -91,7 +91,7 @@
     <string name="project_link">https://mumla-app.gitlab.io</string>
     <string name="acknowledgements_link">https://gitlab.com/quite/mumla/-/graphs/master</string>
     <string name="license_gplv3">GNU General Public License v3.0</string>
-    <string name="license_gplv3_link">https://www.gnu.org/copyleft/gpl.html</string>
+    <string name="license_gplv3_link">https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="license_apache2">Apache License Version 2.0</string>
     <string name="license_apache2_link">https://www.apache.org/licenses/LICENSE-2.0.html</string>
 
