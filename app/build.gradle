@@ -150,5 +150,5 @@ dependencies {
     implementation 'org.jsoup:jsoup:1.13.1'
     implementation 'info.guardianproject.netcipher:netcipher:2.1.0'
 
-    googImplementation 'com.android.billingclient:billing:6.2.1'
+    googImplementation 'com.android.billingclient:billing:7.1.1'
 }

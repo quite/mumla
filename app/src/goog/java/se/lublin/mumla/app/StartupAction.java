@@ -19,6 +19,7 @@ import com.android.billingclient.api.BillingClientStateListener;
 import com.android.billingclient.api.BillingFlowParams;
 import com.android.billingclient.api.BillingFlowParams.ProductDetailsParams;
 import com.android.billingclient.api.BillingResult;
+import com.android.billingclient.api.PendingPurchasesParams;
 import com.android.billingclient.api.Purchase;
 import com.android.billingclient.api.QueryProductDetailsParams;
 import com.android.billingclient.api.QueryPurchasesParams;
@@ -63,7 +64,7 @@ public class StartupAction implements IStartupAction {
         }
 
         billingClient = BillingClient.newBuilder(activity)
-                .enablePendingPurchases()
+                .enablePendingPurchases(PendingPurchasesParams.newBuilder().enableOneTimeProducts().build())
                 .setListener((result, purchases) -> {
                     // This is a callback for handling a new purchase
                     if ((result.getResponseCode() != OK) || (purchases == null)) {
@@ -123,7 +124,7 @@ public class StartupAction implements IStartupAction {
 
     private void verifyPurchase(Activity activity, SharedPreferences preferences) {
         BillingClient client = BillingClient.newBuilder(activity)
-                .enablePendingPurchases()
+                .enablePendingPurchases(PendingPurchasesParams.newBuilder().enableOneTimeProducts().build())
                 .setListener((result, purchase) -> { /* NOP */ })
                 .build();
         client.startConnection(new BillingClientStateListener() {
