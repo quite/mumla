@@ -17,8 +17,13 @@
 
 package se.lublin.mumla.channel;
 
+import static android.Manifest.permission.READ_EXTERNAL_STORAGE;
+import static android.content.pm.PackageManager.PERMISSION_GRANTED;
+import static android.os.Build.VERSION.SDK_INT;
 import static android.view.KeyEvent.KEYCODE_ENTER;
 import static android.view.inputmethod.EditorInfo.IME_NULL;
+
+import static androidx.core.content.ContextCompat.checkSelfPermission;
 
 import android.app.Activity;
 import android.content.Context;
@@ -27,6 +32,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.Html;
@@ -48,9 +54,11 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.activity.result.contract.ActivityResultContracts.GetContent;
+import androidx.activity.result.contract.ActivityResultContracts.RequestPermission;
 import androidx.exifinterface.media.ExifInterface;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
@@ -129,9 +137,10 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
     private EditText mChatTextEdit;
     private ImageButton mSendButton;
     private ChatTargetProvider mTargetProvider;
-    ActivityResultLauncher<String> imagePicker
-            = registerForActivityResult(new ActivityResultContracts.GetContent(), this::onImagePicked);
-
+    ActivityResultLauncher<String> imagePicker =
+            registerForActivityResult(new GetContent(), this::onImagePicked);
+    private final ActivityResultLauncher<String> readPermissionRequester =
+            registerForActivityResult(new RequestPermission(), this::onReadPermissionGranted);
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -164,13 +173,25 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_chat, container, false);
-        mChatList = (ListView) view.findViewById(R.id.chat_list);
-        mChatTextEdit = (EditText) view.findViewById(R.id.chatTextEdit);
+        mChatList = view.findViewById(R.id.chat_list);
+        mChatTextEdit = view.findViewById(R.id.chatTextEdit);
 
         ImageButton ImageSendButton = view.findViewById(R.id.chatImageSend);
-        ImageSendButton.setOnClickListener(buttonView -> imagePicker.launch("image/*"));
+        ImageSendButton.setOnClickListener(buttonView -> {
+            // Android <= 12 (SDK 32) needs extra permission
+            if (SDK_INT <= Build.VERSION_CODES.S_V2) {
+                if (checkSelfPermission(requireContext(), READ_EXTERNAL_STORAGE) != PERMISSION_GRANTED) {
+                    readPermissionRequester.launch(READ_EXTERNAL_STORAGE);
+                } else {
+                    // Reaching here once app has gotten hold of the permission
+                    imagePicker.launch("image/*");
+                }
+            } else {
+                imagePicker.launch("image/*");
+            }
+        });
 
-        mSendButton = (ImageButton) view.findViewById(R.id.chatTextSend);
+        mSendButton = view.findViewById(R.id.chatTextSend);
         mSendButton.setOnClickListener(this::sendMessageFromEditor);
 
         mChatTextEdit.setOnEditorActionListener((v, actionId, event) -> {
@@ -235,6 +256,14 @@ public class ChannelChatFragment extends HumlaServiceFragment implements ChatTar
                     mChatList.smoothScrollToPosition(mChatAdapter.getCount() - 1);
                 }
             });
+        }
+    }
+
+    private void onReadPermissionGranted(Boolean isGranted) {
+        if (isGranted) {
+            imagePicker.launch("image/*");
+        } else {
+            Toast.makeText(requireContext(), "Permission denied to read storage", Toast.LENGTH_LONG).show();
         }
     }
 
