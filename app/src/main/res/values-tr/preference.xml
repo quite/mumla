@@ -92,4 +92,5 @@
     <string name="pref_start_up_in_pinned_mode">Sabitlenen kanallar modu</string>
     <string name="pref_start_upIn_pinned_mode_sum">Bağlandıktan sonra \"Sabitlenen kanallar\" modunu etkinleştirir (sabitlenmeyen kanalları gizler).</string>
     <string name="theme_system">Sistem öntanımlı değeri</string>
+    <string name="language">Dil</string>
 </resources>
