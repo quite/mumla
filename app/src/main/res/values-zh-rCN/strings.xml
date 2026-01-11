@@ -193,7 +193,7 @@
     <string name="app_news_summary">查看最新更新说明</string>
     <string name="app_news_footer_on_startup">您可以在关于页面再次查看这些说明。</string>
     <string name="app_news_item_v3_7_0_num_1">我们为 Mumla 适配 Android 15 和 16（API 35 和 36）做了大量工作。</string>
-    <string name="app_news_item_v3_7_0_num_2">为此，现在最低版本要求更改为 Android 5.0（API 21）.</string>
+    <string name="app_news_item_v3_7_0_num_2">为此，现在最低版本要求更改为 Android 5.0（API 21）。</string>
     <string name="app_news_item_v3_7_0_num_3">主题功能已更新，支持系统明亮/黑暗模式。</string>
     <string name="app_news_item_v3_7_0_num_4">设置界面已适配新 API。</string>
     <string name="donate_dialog_title_goog">喜欢 Mumla？</string>
