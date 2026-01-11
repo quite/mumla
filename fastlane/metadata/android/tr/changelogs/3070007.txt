@@ -1,0 +1,4 @@
+Mumla'yı Android 15 ve 16 (API 35 ve 36) için güncellemek için çok çalışma yapıldı. Sonuç olarak, artık Android 5.0 (API 21) veya üstü sürümler gereklidir. Sistem açık/koyu modlarını desteklemek için tema yenilendi. Ayarlar ekranı yeni API'lere uyarlanmak zorunda kaldı. Uygulama içi dil tercihi eklendi.
+
+Mumla'da %40 veya daha fazlasına çevrilmiş olan dilleri kullanabilirsiniz.
+Mumla'nın çevrilmesine https://hosted.weblate.org/engage/mumla/ adresinden yardımcı olabilirsiniz.
