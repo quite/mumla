@@ -1,0 +1,4 @@
+我们为适配 Android 15 和 16（API 35 和 36）对 Mumla 进行了大量更新工作。因此，该应用现在需要 Android 5.0（API 21）或更高版本。主题已现代化，以支持系统浅色/深色模式。设置界面已适配新的 API。添加了应用内语言偏好设置。
+
+Mumla 目前支持的语言为翻译进度达到 40% 及以上的语言。
+您可以在这里帮助翻译 Mumla：https://hosted.weblate.org/engage/mumla/
