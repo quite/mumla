@@ -1,7 +1,7 @@
 package se.lublin.mumla.preference;
 
 import static java.util.Objects.requireNonNull;
-import static se.lublin.mumla.app.DialogUtils.showNewsDialog;
+import static se.lublin.mumla.app.DialogUtils.showAllNewsDialog;
 
 import android.os.Bundle;
 import android.widget.Toast;
@@ -44,7 +44,7 @@ public class AboutSettingsFragment extends MumlaPreferenceFragment {
         });
         Preference showNewsPreference = getPreferenceScreen().findPreference("showNews");
         requireNonNull(showNewsPreference).setOnPreferenceClickListener(preference -> {
-            showNewsDialog(requireContext());
+            showAllNewsDialog(requireContext());
             return true;
         });
     }

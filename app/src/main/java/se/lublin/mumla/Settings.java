@@ -25,6 +25,7 @@ import androidx.annotation.NonNull;
 import androidx.preference.PreferenceManager;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import se.lublin.humla.Constants;
@@ -388,18 +389,17 @@ public class Settings {
         return preferences.getStringSet(PREF_NEWS_SHOWN_VERSIONS, new HashSet<>());
     }
 
-    public void addNewsShownVersion(@NonNull String versionName) {
-        if (versionName.isEmpty()) {
-            return;
-        }
+    public void addNewsShownVersions(@NonNull List<String> versions) {
         // Making a copy; getStringSet docs states that the returned set must not be modified
-        Set<String> versions = new HashSet<>(preferences.getStringSet(PREF_NEWS_SHOWN_VERSIONS, new HashSet<>()));
-        if (versions.add(versionName)) {
-            preferences.edit().putStringSet(PREF_NEWS_SHOWN_VERSIONS, versions).apply();
+        Set<String> shownVersions = new HashSet<>(preferences.getStringSet(PREF_NEWS_SHOWN_VERSIONS, new HashSet<>()));
+        versions.removeIf(s -> s == null || s.isEmpty());
+        if (shownVersions.addAll(versions)) {
+            preferences.edit().putStringSet(PREF_NEWS_SHOWN_VERSIONS, shownVersions).apply();
         }
     }
 
     public void resetNewsShownVersion() {
         preferences.edit().putStringSet(PREF_NEWS_SHOWN_VERSIONS, new HashSet<>()).apply();
     }
+
 }

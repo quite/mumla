@@ -34,7 +34,7 @@
     <Preference
         android:key="showNews"
         app:title="@string/app_news"
-        app:summary="Show the latest update information"
+        app:summary="@string/app_news_summary"
         app:iconSpaceReserved="false"/>
     <Preference
         android:title="@string/acknowledgements"

@@ -204,11 +204,11 @@
     <string name="app_news">Yenilikler</string>
     <string name="app_news_summary">En son güncelleme haberlerini görüntüle</string>
     <string name="app_news_footer_on_startup">Bu haberler Hakkında sayfasından tekrar görüntülenebilir.</string>
-    <string name="app_news_item_v3_7_0_num_1">Mumla\'yı Android 15 ve 16 (API 35 ve 36) için güncellemek için çok çalışıldı.</string>
-    <string name="app_news_item_v3_7_0_num_2">Sonuç olarak, artık Android 5.0 (API 21) veya üstü sürümler gereklidir.</string>
-    <string name="app_news_item_v3_7_0_num_3">Tema, sistemin açık/koyu modlarını destekleyecek şekilde yenilendi.</string>
-    <string name="app_news_item_v3_7_0_num_4">Ayarlar ekranının yeni API\'lere uyarlanması gerekiyordu.</string>
-    <string name="app_news_item_v3_7_0_num_5">Uygulama içi dil tercihi eklendi.</string>
+    <string name="app_news_items_v3_7_0">• Mumla\'yı Android 15 ve 16 (API 35 ve 36) için güncellemek için çok çalışıldı.\n
+• Sonuç olarak, artık Android 5.0 (API 21) veya üstü sürümler gereklidir.\n
+• Tema, sistemin açık/koyu modlarını destekleyecek şekilde yenilendi.\n
+• Ayarlar ekranının yeni API\'lere uyarlanması gerekiyordu.\n
+• Uygulama içi dil tercihi eklendi.\n</string>
     <string name="donate_dialog_title_goog">Mumla\'yı beğendiniz mi?</string>
     <string name="donate_dialog_message_goog">Mumla\'yı kullandığınız için teşekkür ederiz! Mumla\'nın devamlılığı ve bu mesajın kaldırılması için lütfen küçük bir bağış yapmayı düşünün.</string>
     <string name="donate_dialog_positivebutton_goog">Mumla\'yı destekleyin</string>
