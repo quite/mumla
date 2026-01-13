@@ -194,7 +194,7 @@
     <string name="grant_perm_notifications">Proszę udzielić pozwolenia na wysyłanie powiadomień.</string>
     <string name="no_ptt_key">Bez przycisku</string>
     <string name="app_news">Co nowego</string>
-    <string name="app_news_summary">Zobacz najnowsze wiadomości o aktualizacjach</string>
+    <string name="app_news_summary">Zobacz najnowsze aktualizacje</string>
     <string name="app_news_footer_on_startup">Wiadomości te można ponownie przejrzeć na stronie O programie.</string>
     <string name="donate_dialog_title_goog">Podoba Ci się Mumla?</string>
     <string name="donate_dialog_message_goog">Dziękujemy za korzystanie z Mumli! Prosimy o rozważenie przekazania niewielkiej darowizny, która pomoże utrzymać Mumlę przy życiu i usunąć ten komunikat.</string>
