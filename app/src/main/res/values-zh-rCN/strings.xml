@@ -190,7 +190,7 @@
     <string name="grant_perm_notifications">请授予发送通知权限。</string>
     <string name="no_ptt_key">无按键</string>
     <string name="app_news">新功能</string>
-    <string name="app_news_summary">查看最新更新说明</string>
+    <string name="app_news_summary">查看最新更新</string>
     <string name="app_news_footer_on_startup">您可以在关于页面再次查看这些说明。</string>
     <string name="app_news_items_v3_7_0">• 我们为 Mumla 适配 Android 15 和 16（API 35 和 36）做了大量工作。\n
 • 为此，现在最低版本要求更改为 Android 5.0（API 21）。\n
