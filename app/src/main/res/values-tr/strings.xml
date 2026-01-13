@@ -202,7 +202,7 @@
     <string name="grant_perm_notifications">Lütfen bildirim gönderme izni verin.</string>
     <string name="no_ptt_key">Tuş Yok</string>
     <string name="app_news">Yenilikler</string>
-    <string name="app_news_summary">En son güncelleme haberlerini görüntüle</string>
+    <string name="app_news_summary">En son güncellemeleri görüntüle</string>
     <string name="app_news_footer_on_startup">Bu haberler Hakkında sayfasından tekrar görüntülenebilir.</string>
     <string name="app_news_items_v3_7_0">• Mumla\'yı Android 15 ve 16 (API 35 ve 36) için güncellemek için çok çalışıldı.\n
 • Sonuç olarak, artık Android 5.0 (API 21) veya üstü sürümler gereklidir.\n
