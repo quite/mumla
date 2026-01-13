@@ -1,3 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="about">Ɣef</string>
+    <string name="acknowledgements">Imttekkiyen</string>
+    <string name="licenses">Turagin</string>
+    <string name="authentication">Asesteb</string>
+    <string name="general">Amatu</string>
+    <string name="appearance">Agrudem</string>
+    <string name="theme">Asentel</string>
+    <string name="language">Tutlayt</string>
+    <string name="advancedAudio">Leqqayen</string>
+    <string name="audio">Imesli</string>
+    <string name="defaultUsernameDefault">Aseqdac_n_Mumla</string>
+    <string name="version">Lqem</string>
+    <string name="pref_certificate_title">Aselkin</string>
 </resources>
