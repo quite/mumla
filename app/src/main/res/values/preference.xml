@@ -27,6 +27,9 @@
     <string name="theme_light">Light</string>
     <string name="theme_dark">Dark</string>
 
+    <!-- Language -->
+    <string name="language_system">System default</string>
+
     <!-- Hot corner -->
     <string name="hot_corner_none">Off</string>
     <string name="hot_corner_top_left">↖ top left</string>

@@ -39,7 +39,6 @@ public class AboutSettingsFragment extends MumlaPreferenceFragment {
         requireNonNull(versionPreference).setSummary(summary);
         requireNonNull(versionPreference).setOnPreferenceClickListener(preference -> {
             Settings.getInstance(requireContext()).resetNewsShownVersion();
-            Toast.makeText(requireContext(), "Latest update news will be shown again on app startup", Toast.LENGTH_LONG).show();
             return true;
         });
         Preference showNewsPreference = getPreferenceScreen().findPreference("showNews");

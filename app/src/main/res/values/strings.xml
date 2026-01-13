@@ -214,7 +214,7 @@
     </plurals>
 
     <string name="app_news">What\'s New</string>
-    <string name="app_news_summary">View the latest update news</string>
+    <string name="app_news_summary">View the latest updates</string>
     <string name="app_news_footer_on_startup">These news can be viewed again from the About page.</string>
 
     <string name="app_news_items_v3_7_0">• A lot of work was done to update Mumla for Android 15 and 16 (API 35 &amp; 36).\n

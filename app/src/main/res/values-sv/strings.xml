@@ -201,7 +201,8 @@
         <item quantity="one">%d nytt meddelande</item>
         <item quantity="other">%d nya meddelanden</item>
     </plurals>
-    <string name="app_news"/>
+    <string name="app_news">Nyheter</string>
+    <string name="app_news_summary">Visa de senaste uppdateringarna</string>
     <string name="donate_foss">Donera</string>
     <string name="donate_dialog_title_goog">Gillar du Mumla?</string>
     <string name="donate_dialog_message_goog">Tack för att du använder Mumla! En liten donation kan hjälpa till att hålla Mumla levande — och tar bort detta meddelande.</string>

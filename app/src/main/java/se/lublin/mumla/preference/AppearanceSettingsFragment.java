@@ -21,7 +21,7 @@ public class AppearanceSettingsFragment extends MumlaPreferenceFragment {
             String[] codes = getResources().getStringArray(R.array.languageValues);
             String[] listNames = new String[codes.length + 1];
             String[] listCodes = new String[codes.length + 1];
-            listNames[0] = "System default";
+            listNames[0] = getString(R.string.language_system);
             listCodes[0] = "system";
             int dest = 1;
             for (String code : codes) {

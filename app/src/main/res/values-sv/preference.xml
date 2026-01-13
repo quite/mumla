@@ -34,6 +34,7 @@
     <string name="theme_system">Systemstandard</string>
     <string name="theme_light">Ljust</string>
     <string name="theme_dark">Mörk</string>
+    <string name="language_system">Systemstandard</string>
     <string name="hot_corner_top_left">↖ överst till vänster</string>
     <string name="hot_corner_bottom_left">↙ nederst till vänster</string>
     <string name="hot_corner_top_right">Överst till höger ↗</string>
