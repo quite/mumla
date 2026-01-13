@@ -1,3 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="user_menu_register">Snulfu-d amiḍan</string>
+    <string name="server_password">Awal n uɛeddi</string>
+    <string name="server_username">Isem n useqdac</string>
+    <string name="server_port">Tawwurt</string>
+    <string name="server_host">Tansa</string>
+    <string name="server_label">Tabzimt</string>
+    <string name="connecting">Itteqqen</string>
+    <string name="ptt">Sit akken ad temmeslayeḍ</string>
+    <string name="mute">Sgugem</string>
 </resources>
