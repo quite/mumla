@@ -96,4 +96,5 @@
     <string name="pref_start_upIn_pinned_mode_sum">Włącza tryb „Przypięte kanały” po połączeniu (ukrywa kanały, które nie są przypięte).</string>
     <string name="theme_system">Domyślny systemowy</string>
     <string name="language">Język</string>
+    <string name="language_system">Domyślny systemowy</string>
 </resources>
