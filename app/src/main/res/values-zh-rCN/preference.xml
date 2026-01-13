@@ -96,4 +96,5 @@
     <string name="pref_start_upIn_pinned_mode_sum">连接到服务器后，启用“钉选频道”模式（隐藏未钉选的频道）。</string>
     <string name="theme_system">系统默认</string>
     <string name="language">语言</string>
+    <string name="language_system">系统默认</string>
 </resources>
