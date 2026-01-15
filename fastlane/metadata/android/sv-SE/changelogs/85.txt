@@ -1,0 +1,3 @@
+- deluxghost översatte Mumla till förenklad Kinesiska. 
+- Hämtning av Publik server-lista fungerar igen. 
+- Löste en kraschbugg relaterad till avbilden med data-URI.
