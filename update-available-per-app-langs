@@ -3,14 +3,19 @@ set -eu
 
 cd "${0%/*}"
 
-langdirs=(app/src/main/res/values-?? app/src/main/res/values-??-r??)
+langdirs=(app/src/main/res/values-?? app/src/main/res/values-??-r?? app/src/main/res/values-???)
 readarray -td '' langdirs < <(printf '%s\0' "${langdirs[@]}" | sort -z)
 
 count_strings() {
   code=$1
   [[ -n "$code" ]] && code="-$code"
-  grep -h -c "</string>" "app/src/main/res/values$code/"{strings,preference}.xml "libraries/humla/src/main/res/values$code/strings.xml" \
-    | awk '{s+=$1} END {print s}'
+  files=()
+  for f in "app/src/main/res/values$code/"{strings,preference}.xml "libraries/humla/src/main/res/values$code/strings.xml"; do
+    if [[ -e "$f" ]]; then
+      files+=("$f")
+    fi
+  done
+  grep -h -c "</string>" "${files[@]}" | awk '{s+=$1} END {print s}'
 }
 
 en=$(count_strings "")
