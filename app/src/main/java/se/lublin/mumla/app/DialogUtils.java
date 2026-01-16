@@ -33,6 +33,7 @@ public final class DialogUtils {
         NEWS_ITEMS = new LinkedHashMap<>();
         // These *must* be added in ascending semver order (1.2.3, 1.10.1, ...)
         NEWS_ITEMS.put("3.7.0", R.string.app_news_items_v3_7_0);
+        NEWS_ITEMS.put("3.7.1", R.string.app_news_items_v3_7_1);
         RELEVANT_VERSIONS = new ArrayList<>();
         for (String candidate : NEWS_ITEMS.keySet()) {
             // Relevant as long as candidate-version <= build-version; otherwise break
