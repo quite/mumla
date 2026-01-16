@@ -25,9 +25,6 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import se.lublin.mumla.R;
-
-
 
 /**
  * A wrapper around a {@link android.view.MenuInflater} that tints menu items to the control color
@@ -45,12 +42,12 @@ public class TintedMenuInflater {
     public TintedMenuInflater(Context context, MenuInflater inflater) {
         mInflater = inflater;
         TypedArray actionBarThemeArray =
-                context.obtainStyledAttributes(new int[]{R.attr.actionBarStyle});
+                context.obtainStyledAttributes(new int[]{androidx.appcompat.R.attr.actionBarStyle});
         int actionBarTheme = actionBarThemeArray.getResourceId(0, 0);
         actionBarThemeArray.recycle();
 
         TypedArray titleTextStyleArray =
-                context.obtainStyledAttributes(actionBarTheme, new int[]{R.attr.titleTextStyle});
+                context.obtainStyledAttributes(actionBarTheme, new int[]{androidx.appcompat.R.attr.titleTextStyle});
         int titleTextStyle = titleTextStyleArray.getResourceId(0, 0);
         titleTextStyleArray.recycle();
 

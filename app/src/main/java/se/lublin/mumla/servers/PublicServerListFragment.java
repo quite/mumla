@@ -151,7 +151,7 @@ public class PublicServerListFragment extends Fragment implements OnItemClickLis
         usernameField.setHint(settings.getDefaultUsername());
         FrameLayout layout = new FrameLayout(requireActivity());
         layout.addView(usernameField);
-        int horizontalPadding = (int) getResources().getDimension(R.dimen.abc_dialog_padding_material);
+        int horizontalPadding = (int) getResources().getDimension(androidx.appcompat.R.dimen.abc_dialog_padding_material);
         layout.setPadding(horizontalPadding, 0, horizontalPadding, 0);
         new MaterialAlertDialogBuilder(requireActivity())
                 .setTitle(R.string.addFavorite)
