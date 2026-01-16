@@ -204,4 +204,5 @@
     <string name="donate_purchase_pending_goog">您的捐赠正在处理中，可能会在重启后生效。非常感谢！</string>
     <string name="donate_thanks_goog">感谢您的支持！</string>
     <string name="donate_foss">捐赠</string>
+    <string name="app_news_items_v3_7_1">• 这个小版本主要是翻译更新，感谢所有翻译者！\n</string>
 </resources>
