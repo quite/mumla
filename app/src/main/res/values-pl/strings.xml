@@ -208,4 +208,5 @@
 • Zmodernizowano motyw, aby obsługiwał jasny/ciemny tryb systemu.\n
 • Ekran ustawień musiał zostać dostosowany do nowszych interfejsów API.\n
 • Dodano preferencje językowe w aplikacji.\n</string>
+    <string name="app_news_items_v3_7_1">• Drobne wydanie zawierające głównie aktualizacje tłumaczeń, dziękujemy wszystkim tłumaczom!\n</string>
 </resources>
