@@ -84,4 +84,14 @@
     <string name="pref_start_upIn_pinned_mode_sum">เปิดใช้งานโหมด \"ช่องที่ปักหมุด\" หลังจากเชื่อมต่อแล้ว (ซ่อนช่องที่ไม่ได้ปักหมุดไว้)</string>
     <string name="pref_start_up_in_pinned_mode">โหมดช่องที่ปักหมุด</string>
     <string name="audioSampleRateSum">อัตราการสุ่มตัวอย่างเสียงที่ต้องการ. อุปกรณ์บางชนิดรองรับอัตราที่ต่ำกว่านี้.</string>
+    <string name="inputQuality">คุณภาพข้อมูลไมโครโฟน</string>
+    <string name="halfDuplexSum">ปิดเสียงการเล่นอื่นๆ ระหว่างการกดปุ่มกดเพื่อพูด เพื่อหลีกเลี่ยงเสียงวนซ้ำ/เสียงสะท้อน.</string>
+    <string name="audio_per_packet">เสียงต่อแพ็กเก็ต</string>
+    <string name="stay_awake">หน้าจอไม่ดับ</string>
+    <string name="hot_corner_none">ปิด</string>
+    <string name="audioSampleRate">อัตราการสุ่มตัวอย่าง</string>
+    <string name="disableOpus">ปิดการใช้งาน Opus Codec</string>
+    <string name="togglePtt">สลับการใช้งานปุ่มกดเพื่อพูด</string>
+    <string name="hidePttSum">มีประโยชน์หากคุณใช้มุมลัดหรือปุ่มฮาร์ดแวร์เพียงอย่างเดียว.</string>
+    <string name="handsetMode">โหมดโทรศัพท์มือถือ</string>
 </resources>
