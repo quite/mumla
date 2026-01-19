@@ -216,4 +216,5 @@
     <string name="donate_purchase_pending_goog">Bağışınız beklemede ve daha sonra yeniden başlatıldığında hazır olabilir. Teşekkür ederiz!</string>
     <string name="donate_thanks_goog">Desteğiniz için teşekkür ederiz!</string>
     <string name="donate_foss">Bağış yap</string>
+    <string name="app_news_items_v3_7_1">• Çoğunlukla çeviri güncellemeleri içeren küçük bir sürüm, tüm çevirmenlere teşekkürler!\n</string>
 </resources>
