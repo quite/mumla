@@ -39,20 +39,7 @@
     <string name="cancel_reconnect">ยกเลิกการเชื่อมต่อ</string>
     <string name="invalid_port_range">พอร์ตไม่ถูกต้อง (1-65535)</string>
     <string name="invalid_host">โฮสต์ไม่ถูกต้อง</string>
-    <string name="certificate_info">Subject:
-\n%1$s
-\n
-\nValid from:
-\n%2$s
-\n
-\nValid to:
-\n%3$s
-\n
-\nDigest (SHA-1):
-\n%4$s
-\n
-\nDigest (SHA-256):
-\n%5$s</string>
+    <string name="certificate_info">หัวข้อ: \n%1$s \n \nใช้ได้ตั้งแต่: \n%2$s \n \nใช้ได้ถึง: \n%3$s \n \nสรุป(SHA-1): \n%4$s \n \nสรุป(SHA-256): \n%5$s</string>
     <string name="channel_join">เข้าร่วม</string>
     <string name="current_chat_target">เป้าหมายแชทปัจจุบัน</string>
     <string name="cancelled">ยกเลิก</string>
@@ -157,11 +144,11 @@
     <string name="server_match_found">เซิฟเวอร์ที่พบ</string>
     <string name="server_match_progress">กำลังค้นหาเซิฟเวอร์…</string>
     <string name="server_match">ค้นหาเซิฟเวอร์</string>
-    <string name="server_info_current_bandwidth">ปัจจุบัน %.1f kbit/s</string>
-    <string name="server_info_max_bandwidth">ขีดจำกัด %.1f kbit/s</string>
+    <string name="server_info_current_bandwidth">ปัจจุบัน %.1f กิโลบิต/วินาที</string>
+    <string name="server_info_max_bandwidth">ขีดจำกัด %.1f กิโลบิต/วินาที</string>
     <string name="server_info_codec">Codec: %s</string>
-    <string name="server_info_host">โฮสต์ปลายทาง %1$s (port %2$d)</string>
-    <string name="server_info_latency">%.2f ms latency</string>
+    <string name="server_info_host">ที่อยู่ปลายทาง %1$s (พอร์ต %2$d)</string>
+    <string name="server_info_latency">หน่วง %.2f มิลลิวินาที</string>
     <string name="server_info_version">%1$s (%2$s)</string>
     <string name="server_info_protocol">โปรโตคอล %s.</string>
     <string name="audio_bandwidth">ออดิโอ แบนด์วิธ</string>
@@ -196,4 +183,19 @@
     <string name="drawer_not_connected">เชื่อมต่อไม่ได้</string>
     <string name="drawer_close">ปิดดรอเวอร์</string>
     <string name="drawer_open">เปิดดรอเวอร์</string>
+    <string name="no_ptt_key">คีย์ว่าง</string>
+    <string name="grant_perm_notifications">โปรดอนุญาตให้เราส่งการแจ้งเตือน.</string>
+    <string name="image_confirm_send">ส่งภาพนี้ไหม?</string>
+    <string name="app_news">มีอะไรใหม่บ้าง</string>
+    <string name="app_news_summary">ดูข้อมูลอัปเดตล่าสุด</string>
+    <string name="app_news_footer_on_startup">สามารถดูข่าวเหล่านี้ซ้ำได้อีกครั้งจากหน้า \"เกี่ยวกับเรา\".</string>
+    <string name="app_news_items_v3_7_1">• อัปเดตเล็กน้อย ส่วนใหญ่เป็นการปรับปรุงคำแปล ขอขอบคุณนักแปลทุกท่าน!\n</string>
+    <string name="donate_dialog_message_goog">ขอบคุณที่ใช้ Mumla! พิจารณาบริจาคเล็กน้อยเพื่อช่วยให้ Mumla ยังคงอยู่ต่อไปและเพื่อลบข้อความนี้</string>
+    <string name="donate_dialog_positivebutton_goog">สนับสนุน Mumla</string>
+    <string name="donate_dialog_negativebutton_goog">ภายหลัง</string>
+    <string name="donate_purchase_pending_goog">การบริจาคของคุณอยู่ในสถานะรอการดำเนินการ และอาจพร้อมใช้งานเมื่อมีการรีสตาร์ทครั้งต่อไป ขอบคุณ!</string>
+    <string name="donate_thanks_goog">ขอบคุณสำหรับการสนับสนุนของคุณ!</string>
+    <string name="donate_foss">บริจาค</string>
+    <string name="donate_dialog_title_goog">มีความสุขกับ Mumla?</string>
+    <string name="app_news_items_v3_7_0">• มีการปรับปรุงแอป Mumla สำหรับ Android 15 และ 16 (API 35 และ 36).\n• ด้วยเหตุนี้ จึงจำเป็นต้องใช้ Android 5.0 (API 21) หรือเวอร์ชันที่ใหม่กว่า.\n• ปรับปรุงธีมให้รองรับโหมดสว่าง/มืดของระบบ.\n• หน้าจอการตั้งค่าต้องปรับให้เข้ากับ API เวอร์ชันใหม่กว่า.\n• เพิ่มการตั้งค่าภาษาภายในแอป.\n</string>
 </resources>
