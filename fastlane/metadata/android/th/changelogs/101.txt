@@ -1,0 +1,5 @@
+การปรับปรุง Mumla สำหรับใช้งานบน Android 14 (SDK 34) หวังว่ามันจะไม่เสถียรน้อยลงกว่าเดิม.
+
+ขอขอบคุณ Nicolas Peugnet สำหรับการแก้ไขข้อผิดพลาดบางส่วนในระบบภายในของ Humla.
+
+อัปเดตการแปลบางส่วนด้วย Allan Nordhøy, deluxghost, gallegonovato, Matthaiks, Oğuz Ersen, pjammo, riomccloud.

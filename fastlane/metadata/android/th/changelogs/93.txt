@@ -1,0 +1,7 @@
+การอัปเดตครั้งนี้จัดทำขึ้นเพื่อปรับปรุง Mumla ให้ใช้งานได้กับ Android เวอร์ชันใหม่กว่า ตามที่ Google Play Store กำหนดไว้ ขณะนี้ Mumla ควรจะสามารถใช้งานบน Android 12 ได้แล้ว.
+
+โดยเฉพาะอย่างยิ่ง, การส่งออกใบรับรองไคลเอ็นต์ของ Mumla ได้รับการปรับปรุงให้ใช้งานได้กับ Android 11 ขึ้นไป.
+
+มีคำแปลใหม่ๆ เพิ่มเข้ามา. ขอบคุณ! anonymous, Abidin, Alfonso, deluxghost, Gabriel, Jaroslav, Kityn, Maite, Oğuz, pjammo, Vinicius, WLJ, Wesley
+
+การแปลนี้ทำที่นี่: https://hosted.weblate.org/projects/mumla/

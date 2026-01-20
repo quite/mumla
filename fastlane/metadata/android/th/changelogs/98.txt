@@ -1,0 +1,3 @@
+นี่คือข่าวการแปลเวอร์ชันใหม่. ตอนนี้ Mumla มีให้บริการในภาษากรีกแล้ว ขอขอบคุณ Athanasios Plastiras!
+
+การแปลนี้ทำที่นี่: https://hosted.weblate.org/projects/mumla/

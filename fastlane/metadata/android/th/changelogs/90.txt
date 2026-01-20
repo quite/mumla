@@ -1,0 +1,3 @@
+ในการอัปเดตครั้งนี้ เราได้เพิ่มคำแปลใหม่ๆ ของ Mumla เป็นภาษาต่างๆ มากมาย รวมถึงคำแปลที่สมบูรณ์เป็นภาษาไทยและภาษาฟินแลนด์! ขอขอบคุณทุกท่าน -- Abidin Toumi, Alfonso Montero López, Allan Nordhøy, Carlos Pinto, Nikita Epifanov, SamiR, Torkel, WLJ, deluxghost, kityn, mv87, pjammo.
+
+การแปลนี้ทำที่นี่: https://hosted.weblate.org/projects/mumla/

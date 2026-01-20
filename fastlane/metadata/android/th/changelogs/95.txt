@@ -1,0 +1,5 @@
+ตอนนี้ Mumla อนุญาตให้โพสต์รูปภาพในแชทได้แล้ว. ขอบคุณ Bartkk0 ที่เพิ่มฟีเจอร์นี้ และแก้ไขปัญหาข้อความแชทของตัวเองหายไปด้วย!
+
+นอกจากนี้ ข้อความบางส่วนได้รับการแก้ไขและแปลใหม่ ขอขอบคุณ Allan, Bartkk0, J. Lavoie, Matthaiks, Omar, Oğuz Ersen, deluxghost, nautilusx และ pjammo ที่ได้ให้ความช่วยเหลือ.
+
+การแปลนี้ทำที่นี่: https://hosted.weblate.org/projects/mumla/
