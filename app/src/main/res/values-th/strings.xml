@@ -146,9 +146,9 @@
     <string name="server_match">ค้นหาเซิฟเวอร์</string>
     <string name="server_info_current_bandwidth">ปัจจุบัน %.1f กิโลบิต/วินาที</string>
     <string name="server_info_max_bandwidth">ขีดจำกัด %.1f กิโลบิต/วินาที</string>
-    <string name="server_info_codec">Codec: %s</string>
-    <string name="server_info_host">ที่อยู่ปลายทาง %1$s (พอร์ต %2$d)</string>
-    <string name="server_info_latency">หน่วง %.2f มิลลิวินาที</string>
+    <string name="server_info_codec">การเข้ารหัส: %s</string>
+    <string name="server_info_host">โฮสต์ปลายทาง %1$s (พอร์ต %2$d)</string>
+    <string name="server_info_latency">เวลาหน่วง %.2f มิลลิวินาที</string>
     <string name="server_info_version">%1$s (%2$s)</string>
     <string name="server_info_protocol">โปรโตคอล %s.</string>
     <string name="audio_bandwidth">ออดิโอ แบนด์วิธ</string>
@@ -183,7 +183,7 @@
     <string name="drawer_not_connected">เชื่อมต่อไม่ได้</string>
     <string name="drawer_close">ปิดดรอเวอร์</string>
     <string name="drawer_open">เปิดดรอเวอร์</string>
-    <string name="no_ptt_key">คีย์ว่าง</string>
+    <string name="no_ptt_key">ปุ่มว่าง</string>
     <string name="grant_perm_notifications">โปรดอนุญาตให้เราส่งการแจ้งเตือน.</string>
     <string name="image_confirm_send">ส่งภาพนี้ไหม?</string>
     <string name="app_news">มีอะไรใหม่บ้าง</string>
