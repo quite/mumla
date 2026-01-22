@@ -94,4 +94,7 @@
     <string name="togglePtt">Pulsante Push-to-talk bloccato</string>
     <string name="togglePttSum">La pressione del pulsante push-to-talk attiva o disattiva la trasmissione. Non è necessario tenerlo premuto.</string>
     <string name="pttButtonHeight">Altezza pulsante push-to-talk</string>
+    <string name="theme_system">Predefinito di sistema</string>
+    <string name="language_system">Predefinito di sistema</string>
+    <string name="language">Lingua</string>
 </resources>
