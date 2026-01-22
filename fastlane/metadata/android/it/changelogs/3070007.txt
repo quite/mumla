@@ -1,0 +1,4 @@
+Molto lavoro è stato fatto per aggiornare Mumla per Android 15 e 16 (API 35 e 36). Come conseguenza Android 5.0 (API 21) o successivo è ora richiesto. I temi sono stati aggiornati per supportare le modalità chiaro/scuro di sistema. La schermata Impostazioni è stata adattata alle nuove API. Aggiunte le preferenze lingua in-app.
+
+Le lingue disponibili in Mumla sono quelle che hanno raggiunto il 40% di traduzioni o più.
+Puoi aiutare a tradurre Mumla su https://hosted.weblate.org/engage/mumla/

@@ -1,0 +1,3 @@
+Questo rilascio contiene alcune correzioni per potenziali interruzioni.
+
+Mumla è stato recentemente adattato per avviarsi su Android 14 (SDK 34). Con la speranza che non sia meno stabile di prima.

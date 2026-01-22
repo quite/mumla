@@ -1,0 +1,1 @@
+Questo rilascio aggiunge la richiesta per i permessi per inviare notifiche, richiesti su Android 13.
