@@ -210,4 +210,17 @@
     <string name="chat_message_tts_short_link">(Collegamento a %1$s)</string>
     <string name="image_confirm_send">Inviare questa immagine\?</string>
     <string name="grant_perm_notifications">Concedere l\'autorizzazione per inviare le notifiche.</string>
+    <string name="no_ptt_key">Nessuna chiave</string>
+    <string name="app_news">Cosa c\'è di nuovo</string>
+    <string name="app_news_summary">Vedi gli ultimi aggiornamenti</string>
+    <string name="app_news_footer_on_startup">Queste novità possono essere visualizzate di nuovo dalla pagina \"Riguardo a\".</string>
+    <string name="app_news_items_v3_7_0">• Molto lavoro è stato fatto per aggiornare Mumla per Android 15 e 16 (API 35 e 36).\n • Come conseguenza Android 5.0 (API 21) o successivo è ora richiesto.\n • Il tema è stato aggiornato per supportare le modalità chiaro/scuro di sistema.\n • La schermata impostazioni è stata adattata alle nuove API.\n • Aggiunte preferenza lingua in app.\n</string>
+    <string name="app_news_items_v3_7_1">• Rilascio minore con al più aggiornamenti di traduzione, grazie a tutti i traduttori!\n</string>
+    <string name="donate_dialog_title_goog">Ti piace Mumla?</string>
+    <string name="donate_dialog_message_goog">Grazie per usare Mumla! Per favore considera di fare una piccola donazione per aiutare a mantenere Mumla in vita — e per rimuovere questo messaggio.</string>
+    <string name="donate_dialog_positivebutton_goog">Supporta Mumla</string>
+    <string name="donate_dialog_negativebutton_goog">Più tardi</string>
+    <string name="donate_purchase_pending_goog">La tua donazione è in sospeso e potrebbe essere pronta ad un riavvio successivo. Grazie!</string>
+    <string name="donate_thanks_goog">Grazie per il tuo supporto!</string>
+    <string name="donate_foss">Dona</string>
 </resources>
