@@ -39,11 +39,16 @@ public class StartupAction implements IStartupAction {
     private BillingClient billingClient;
 
     private void showToast(Activity activity, String text) {
-        activity.runOnUiThread(() -> Toast.makeText(activity, text, Toast.LENGTH_LONG).show());
+        activity.runOnUiThread(() -> {
+            if (activity.isFinishing() || activity.isDestroyed()) {
+                return;
+            }
+            Toast.makeText(activity, text, Toast.LENGTH_LONG).show();
+        });
     }
 
     @Override
-    public void execute(Activity activity) {
+    public void execute(@NonNull Activity activity) {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(activity);
 
         final int oldStartupCount = preferences.getInt(PREF_STARTUP_COUNT, 0);
@@ -164,6 +169,9 @@ public class StartupAction implements IStartupAction {
 
     private void showDonationDialog(Activity activity) {
         activity.runOnUiThread(() -> {
+            if (activity.isFinishing() || activity.isDestroyed()) {
+                return;
+            }
             int[] icons = {
                     R.drawable.ic_donate_heart_goog,
                     R.drawable.ic_donate_tag_faces_goog,
