@@ -205,4 +205,5 @@
     <string name="donate_thanks_goog">感谢您的支持！</string>
     <string name="donate_foss">捐赠</string>
     <string name="app_news_items_v3_7_1">• 这个小版本主要是翻译更新，感谢所有翻译者！\n</string>
+    <string name="app_news_items_v3_7_2">• 修复在启动时可能的崩溃。\n • 添加一些翻译，感谢所有翻译者！\n</string>
 </resources>
