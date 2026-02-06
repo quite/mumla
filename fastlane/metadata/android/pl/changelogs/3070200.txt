@@ -1,0 +1,4 @@
+Włożono dużo pracy w aktualizację Mumli dla Androida 15 i 16 (API 35 i 36). W związku z tym wymagany jest system Android 5.0 (API 21) lub nowszy. Zmodernizowano motywy, aby obsługiwać tryb jasny i ciemny. Ekran ustawień musiał zostać dostosowany do nowszych interfejsów API. Dodano preferencje językowe w aplikacji.
+
+Języki dostępne w Mumli to te, które zostały przetłumaczone w co najmniej 40%.
+Możesz pomóc w tłumaczeniu Mumli na stronie https://hosted.weblate.org/engage/mumla/

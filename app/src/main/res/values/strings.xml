@@ -223,6 +223,8 @@
 • The settings screen had to be adapted to newer APIs.\n
 • Added in-app language preference.\n</string>
     <string name="app_news_items_v3_7_1">• Minor release with mostly translation updates, thank you all translators!\n</string>
+    <string name="app_news_items_v3_7_2">• Fix potential crash on startup.\n
+• Add some translations, thank you all translators!\n</string>
 
     <!-- Used only by flavor "goog" -->
     <string name="donate_dialog_title_goog">Enjoying Mumla?</string>
