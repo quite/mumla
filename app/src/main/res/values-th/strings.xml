@@ -183,7 +183,7 @@
     <string name="drawer_not_connected">เชื่อมต่อไม่ได้</string>
     <string name="drawer_close">ปิดดรอเวอร์</string>
     <string name="drawer_open">เปิดดรอเวอร์</string>
-    <string name="no_ptt_key">ปุ่มว่าง</string>
+    <string name="no_ptt_key">คีย์ว่าง</string>
     <string name="grant_perm_notifications">โปรดอนุญาตให้เราส่งการแจ้งเตือน.</string>
     <string name="image_confirm_send">ส่งภาพนี้ไหม?</string>
     <string name="app_news">มีอะไรใหม่บ้าง</string>
@@ -198,4 +198,5 @@
     <string name="donate_foss">บริจาค</string>
     <string name="donate_dialog_title_goog">มีความสุขกับ Mumla?</string>
     <string name="app_news_items_v3_7_0">• มีการปรับปรุงแอป Mumla สำหรับ Android 15 และ 16 (API 35 และ 36).\n• ด้วยเหตุนี้ จึงจำเป็นต้องใช้ Android 5.0 (API 21) หรือเวอร์ชันที่ใหม่กว่า.\n• ปรับปรุงธีมให้รองรับโหมดสว่าง/มืดของระบบ.\n• หน้าจอการตั้งค่าต้องปรับให้เข้ากับ API เวอร์ชันใหม่กว่า.\n• เพิ่มการตั้งค่าภาษาภายในแอป.\n</string>
+    <string name="app_news_items_v3_7_2">• แก้ไขปัญหาที่อาจทำให้โปรแกรมหยุดทำงานขณะเริ่มต้นระบบ.\n• เพิ่มคำแปลบางส่วน, ขอขอบคุณนักแปลทุกท่าน!\n</string>
 </resources>
