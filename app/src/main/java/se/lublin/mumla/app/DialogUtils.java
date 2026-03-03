@@ -35,6 +35,7 @@ public final class DialogUtils {
         NEWS_ITEMS.put("3.7.0", R.string.app_news_items_v3_7_0);
         NEWS_ITEMS.put("3.7.1", R.string.app_news_items_v3_7_1);
         NEWS_ITEMS.put("3.7.2", R.string.app_news_items_v3_7_2);
+        NEWS_ITEMS.put("3.7.3", R.string.app_news_items_v3_7_3);
         RELEVANT_VERSIONS = new ArrayList<>();
         for (String candidate : NEWS_ITEMS.keySet()) {
             // Relevant as long as candidate-version <= build-version; otherwise break

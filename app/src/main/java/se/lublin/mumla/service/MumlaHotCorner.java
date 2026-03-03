@@ -28,6 +28,8 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Toast;
 
+import androidx.core.content.ContextCompat;
+
 import se.lublin.mumla.R;
 
 /**
@@ -61,7 +63,7 @@ public class MumlaHotCorner implements View.OnTouchListener {
                 WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE | WindowManager.LayoutParams.FLAG_WATCH_OUTSIDE_TOUCH,
                 PixelFormat.TRANSLUCENT);
         mParams.gravity = gravity;
-        mHighlightColour = mContext.getResources().getColor(R.color.hot_corner_highlight);
+        mHighlightColour = ContextCompat.getColor(mContext, R.color.hot_corner_highlight);
     }
 
     /**

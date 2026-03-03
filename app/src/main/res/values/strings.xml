@@ -225,6 +225,7 @@
     <string name="app_news_items_v3_7_1">• Minor release with mostly translation updates, thank you all translators!\n</string>
     <string name="app_news_items_v3_7_2">• Fix potential crash on startup.\n
 • Add some translations, thank you all translators!\n</string>
+    <string name="app_news_items_v3_7_3">• Make PTT hot corner visible on Android 12 and later, and on dark and light background\n</string>
 
     <!-- Used only by flavor "goog" -->
     <string name="donate_dialog_title_goog">Enjoying Mumla?</string>
