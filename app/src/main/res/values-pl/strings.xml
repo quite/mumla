@@ -210,4 +210,5 @@
 • Dodano preferencje językowe w aplikacji.\n</string>
     <string name="app_news_items_v3_7_1">• Drobne wydanie zawierające głównie aktualizacje tłumaczeń, dziękujemy wszystkim tłumaczom!\n</string>
     <string name="app_news_items_v3_7_2">• Naprawiono potencjalny błąd powodujący awarię podczas uruchamiania.\n• Dodano kilka tłumaczeń, dziękujemy wszystkim tłumaczom!\n</string>
+    <string name="app_news_items_v3_7_3">• Uwidoczniono narożnik PTT na urządzeniach z systemem Android 12 i nowszych, a także na ciemnym i jasnym tle.\n</string>
 </resources>
