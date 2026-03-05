@@ -46,6 +46,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -134,7 +135,6 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
 
     private AlertDialog mConnectingDialog;
     private AlertDialog mErrorDialog;
-    private MaterialAlertDialogBuilder mDisconnectPromptBuilder;
 
     /**
      * List of fragments to be notified about service state changes.
@@ -270,6 +270,26 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                if (mService != null && mService.isConnected()) {
+                    new MaterialAlertDialogBuilder(MumlaActivity.this)
+                            .setMessage(getString(R.string.disconnectSure, mService.getTargetServer().getName()))
+                            .setPositiveButton(R.string.confirm, (dialog, which) -> {
+                                mService.disconnect();
+                                loadDrawerFragment(DrawerAdapter.ITEM_FAVOURITES);
+                            })
+                            .setNegativeButton(android.R.string.cancel, null)
+                            .show();
+                } else {
+                    setEnabled(false);
+                    getOnBackPressedDispatcher().onBackPressed();
+                    setEnabled(true);
+                }
+            }
+        });
+
         setStayAwake(mSettings.shouldStayAwake());
 
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
@@ -328,13 +348,6 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
         mDrawerLayout.setDrawerListener(mDrawerToggle);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
-
-        mDisconnectPromptBuilder = new MaterialAlertDialogBuilder(this)
-                .setPositiveButton(R.string.confirm, (dialog, which) -> {
-                    if (mService != null) mService.disconnect();
-                    loadDrawerFragment(DrawerAdapter.ITEM_FAVOURITES);
-                })
-                .setNegativeButton(android.R.string.cancel, null);
 
         if (savedInstanceState == null) {
             if (getIntent() != null && getIntent().hasExtra(EXTRA_DRAWER_FRAGMENT)) {
@@ -463,17 +476,6 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
             return true;
         }
         return super.onKeyUp(keyCode, event);
-    }
-
-    @Override
-    public void onBackPressed() {
-        if (mService != null && mService.isConnected()) {
-            mDisconnectPromptBuilder.setMessage(getString(R.string.disconnectSure,
-                    mService.getTargetServer().getName()));
-            mDisconnectPromptBuilder.show();
-            return;
-        }
-        super.onBackPressed();
     }
 
     @Override
