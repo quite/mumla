@@ -63,6 +63,7 @@ import androidx.preference.PreferenceManager;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
+import org.jetbrains.annotations.NotNull;
 import org.spongycastle.util.encoders.Hex;
 
 import java.net.InetSocketAddress;
@@ -125,7 +126,6 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
 
     private ActionBarDrawerToggle mDrawerToggle;
     private DrawerLayout mDrawerLayout;
-    private ListView mDrawerList;
     private DrawerAdapter mDrawerAdapter;
 
     private static final int PERMISSIONS_REQUEST_RECORD_AUDIO = 1;
@@ -139,9 +139,9 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
     /**
      * List of fragments to be notified about service state changes.
      */
-    private List<HumlaServiceFragment> mServiceFragments = new ArrayList<HumlaServiceFragment>();
+    private final List<HumlaServiceFragment> mServiceFragments = new ArrayList<HumlaServiceFragment>();
 
-    private ServiceConnection mConnection = new ServiceConnection() {
+    private final ServiceConnection mConnection = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
             mService = ((MumlaService.MumlaBinder) service).getService();
@@ -150,11 +150,11 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
             mService.clearChatNotifications(); // Clear chat notifications on resume.
             mDrawerAdapter.notifyDataSetChanged();
 
-            for(HumlaServiceFragment fragment : mServiceFragments)
+            for (HumlaServiceFragment fragment : mServiceFragments)
                 fragment.setServiceBound(true);
 
             // Re-show server list if we're showing a fragment that depends on the service.
-            if(getSupportFragmentManager().findFragmentById(R.id.content_frame) instanceof HumlaServiceFragment &&
+            if (getSupportFragmentManager().findFragmentById(R.id.content_frame) instanceof HumlaServiceFragment &&
                     !mService.isConnected()) {
                 loadDrawerFragment(DrawerAdapter.ITEM_FAVOURITES);
             }
@@ -167,7 +167,7 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
         }
     };
 
-    private HumlaObserver mObserver = new HumlaObserver() {
+    private final HumlaObserver mObserver = new HumlaObserver() {
         @Override
         public void onConnected() {
             if (mSettings.shouldStartUpInPinnedMode()) {
@@ -190,7 +190,7 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
         @Override
         public void onDisconnected(HumlaException e) {
             // Re-show server list if we're showing a fragment that depends on the service.
-            if(getSupportFragmentManager().findFragmentById(R.id.content_frame) instanceof HumlaServiceFragment) {
+            if (getSupportFragmentManager().findFragmentById(R.id.content_frame) instanceof HumlaServiceFragment) {
                 loadDrawerFragment(DrawerAdapter.ITEM_FAVOURITES);
             }
             mDrawerAdapter.notifyDataSetChanged();
@@ -299,7 +299,7 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
         mDatabase.open();
 
         mDrawerLayout = findViewById(R.id.drawer_layout);
-        mDrawerList = findViewById(R.id.left_drawer);
+        ListView mDrawerList = findViewById(R.id.left_drawer);
 
         View headerView = getLayoutInflater().inflate(R.layout.list_drawer_headerlogo, mDrawerList, false);
         mDrawerList.addHeaderView(headerView, null, false);
@@ -444,7 +444,7 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(@NotNull MenuItem item) {
         if (mDrawerToggle.onOptionsItemSelected(item))
             return true;
         if (item.getItemId() == R.id.action_disconnect) {
@@ -455,7 +455,7 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
     }
 
     @Override
-    public void onConfigurationChanged(Configuration newConfig) {
+    public void onConfigurationChanged(@NotNull Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
         mDrawerToggle.onConfigurationChanged(newConfig);
     }
@@ -862,9 +862,9 @@ public class MumlaActivity extends AppCompatActivity implements ListView.OnItemC
 
     @Override
     public String getConnectedServerName() {
-        if(mService != null && mService.isConnected()) {
+        if (mService != null && mService.isConnected()) {
             Server server = mService.getTargetServer();
-            return server.getName().equals("") ? server.getHost() : server.getName();
+            return server.getName().isEmpty() ? server.getHost() : server.getName();
         }
         if (BuildConfig.DEBUG)
             throw new RuntimeException("getConnectedServerName should only be called if connected!");
