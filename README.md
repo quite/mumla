@@ -71,9 +71,9 @@ submodule(s) in place after cloning:
 
 ## Building on GNU/Linux
 
-Building is verified to work using JDK 17. So you typically want to
+Building is verified to work using JDK 21. So you typically want to
 set and export the JAVA_HOME environment variable like `export
-JAVA_HOME=/usr/lib/jvm/java-17-openjdk`.
+JAVA_HOME=/usr/lib/jvm/java-21-openjdk`.
 
 The Android SDK need to be specified as usual, for example by setting
 `ANDROID_SDK_ROOT`, or writing it to local.properties as `echo
