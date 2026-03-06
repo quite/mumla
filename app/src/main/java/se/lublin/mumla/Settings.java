@@ -25,6 +25,7 @@ import androidx.annotation.NonNull;
 import androidx.preference.PreferenceManager;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
@@ -392,7 +393,12 @@ public class Settings {
     public void addNewsShownVersions(@NonNull List<String> versions) {
         // Making a copy; getStringSet docs states that the returned set must not be modified
         Set<String> shownVersions = new HashSet<>(preferences.getStringSet(PREF_NEWS_SHOWN_VERSIONS, new HashSet<>()));
-        versions.removeIf(s -> s == null || s.isEmpty());
+        for (Iterator<String> it = versions.iterator(); it.hasNext(); ) {
+            String s = it.next();
+            if (s == null || s.isEmpty()) {
+                it.remove();
+            }
+        }
         if (shownVersions.addAll(versions)) {
             preferences.edit().putStringSet(PREF_NEWS_SHOWN_VERSIONS, shownVersions).apply();
         }
