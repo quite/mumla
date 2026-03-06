@@ -213,7 +213,7 @@
     <string name="no_ptt_key">Nessuna chiave</string>
     <string name="app_news">Cosa c\'è di nuovo</string>
     <string name="app_news_summary">Vedi gli ultimi aggiornamenti</string>
-    <string name="app_news_footer_on_startup">Queste novità possono essere visualizzate di nuovo dalla pagina \"Riguardo a\".</string>
+    <string name="app_news_footer_on_startup">Queste novità possono essere visualizzate di nuovo dalla pagina \"Info su\".</string>
     <string name="app_news_items_v3_7_0">• Molto lavoro è stato fatto per aggiornare Mumla per Android 15 e 16 (API 35 e 36).\n • Come conseguenza Android 5.0 (API 21) o successivo è ora richiesto.\n • Il tema è stato aggiornato per supportare le modalità chiaro/scuro di sistema.\n • La schermata impostazioni è stata adattata alle nuove API.\n • Aggiunte preferenza lingua in app.\n</string>
     <string name="app_news_items_v3_7_1">• Rilascio minore con al più aggiornamenti di traduzione, grazie a tutti i traduttori!\n</string>
     <string name="donate_dialog_title_goog">Ti piace Mumla?</string>
@@ -223,4 +223,6 @@
     <string name="donate_purchase_pending_goog">La tua donazione è in sospeso e potrebbe essere pronta ad un riavvio successivo. Grazie!</string>
     <string name="donate_thanks_goog">Grazie per il tuo supporto!</string>
     <string name="donate_foss">Dona</string>
+    <string name="app_news_items_v3_7_2">• Corrette potenziali interruzioni all\'avvio\n • Aggiunte alcune traduzioni, grazie a tutti i traduttori!\n</string>
+    <string name="app_news_items_v3_7_3">• L\'angolo PTT è visibile su Android 12 e successivi, e su sfondo chiaro e scuro\n • Il pulsante Indietro ora chiede nuovamente conferma di disconnessione dal server su Android 16+\n</string>
 </resources>
