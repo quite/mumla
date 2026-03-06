@@ -1,4 +1,4 @@
-image: docker.io/quite/android-sdk-ndk:9
+image: docker.io/quite/android-sdk-ndk:10
 
 variables:
   # get those pesky submodules
