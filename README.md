@@ -115,6 +115,12 @@ installed by using the SDK Manager:
 - Check 25.1.8937393
 - Click OK
 
+### Container image
+
+I'm also maintaining a container image that is used to build Mumla in
+[.gitlab-ci.yml](.gitlab-ci.yml). Source at
+https://gitlab.com/quite/android-sdk-ndk
+
 ## License
 
 Mumla's [LICENSE](LICENSE) is GNU GPL v3.
