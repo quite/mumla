@@ -19,8 +19,8 @@
     <string name="acknowledgementsSum">ดูรายชื่อผู้มีส่วนร่วมในการพัฒนา Mumla (ลิงก์เว็บไซต์)</string>
     <string name="licenses">ใบอนุญาต</string>
     <string name="authentication">การตรวจสอบสิทธิ์</string>
-    <string name="audioInputMethodSum">วิธีการเปิดใช้งานการสั่งงานด้วยเสียง.</string>
-    <string name="audioInputMethod">โหมดส่งสัญญาณ</string>
+    <string name="audioInputMethodSum">วิธีการเปิดใช้งานการส่งสัญญาณเสียง.</string>
+    <string name="audioInputMethod">โหมดการส่ง</string>
     <string name="audioInputVolume">ระดับเสียงไมโครโฟน</string>
     <string name="audioInputVolumeSum">ระดับที่จะใช้ในการปรับระดับเสียงให้เป็นมาตรฐาน</string>
     <string name="detectionThreshold">เกณฑ์การตรวจจับ</string>
