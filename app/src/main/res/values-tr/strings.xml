@@ -217,4 +217,6 @@
     <string name="donate_thanks_goog">Desteğiniz için teşekkür ederiz!</string>
     <string name="donate_foss">Bağış yap</string>
     <string name="app_news_items_v3_7_1">• Çoğunlukla çeviri güncellemeleri içeren küçük bir sürüm, tüm çevirmenlere teşekkürler!\n</string>
+    <string name="app_news_items_v3_7_2">• Başlangıçta meydana gelebilecek çökme sorunu giderildi.\n • Bazı çeviriler eklendi, tüm çevirmenlere teşekkürler!\n</string>
+    <string name="app_news_items_v3_7_3">• Android 12 ve sonraki sürümlerde, ayrıca koyu ve açık arka planlarda PTT kısayol köşesi görünür hale getirildi\n • Android 16 ve sonraki sürümlerde, Geri düğmesine basıldığında sunucuyla bağlantının kesilip kesilmeyeceği sorulur hale getirildi\n</string>
 </resources>
