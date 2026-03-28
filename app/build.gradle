@@ -21,7 +21,7 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.13.2'
+        classpath 'com.android.tools.build:gradle:8.3.2'
     }
 }
 apply plugin: 'com.android.application'
@@ -45,11 +45,11 @@ allprojects {
 
 android {
     namespace = 'se.lublin.mumla'
-    compileSdk = 36
+    compileSdk = 35
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_21
-        targetCompatibility JavaVersion.VERSION_21
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 
     base {
@@ -67,8 +67,8 @@ android {
     }.standardOutput.asText.get().trim()
 
     defaultConfig {
-        minSdkVersion 21
-        targetSdk 36
+        minSdkVersion 23
+        targetSdk 34
 
         applicationId "se.lublin.mumla"
         // Remember: app_news_items_vX_Y_Z in src/main/res/values/strings.xml

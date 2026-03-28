@@ -88,6 +88,18 @@
             android:enabled="true"
             android:foregroundServiceType="microphone" />
 
+        <service
+            android:name=".service.PttKeyAccessibilityService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/ptt_key_accessibility_service" />
+        </service>
+
         <activity
             android:name=".app.MumlaActivity"
             android:label="@string/app_name"
