@@ -148,11 +148,18 @@ public class MumlaService extends HumlaService implements
 
         @Override
         public void onDisconnected(HumlaException e) {
-            if (mNotification != null) {
+            if (e != null && isReconnecting()) {
+                if (mNotification != null && !mSuppressNotifications) {
+                    mNotification.setCustomTicker(getString(R.string.mumlaDisconnected));
+                    mNotification.setCustomContentText(getString(R.string.attempting_reconnect, e.getMessage()));
+                    mNotification.setActionsShown(false);
+                    mNotification.show();
+                }
+            } else if (mNotification != null) {
                 mNotification.hide();
                 mNotification = null;
             }
-            if (e != null && !mSuppressNotifications) {
+            if (e != null && !mSuppressNotifications && !isReconnecting()) {
                 mReconnectNotification =
                         MumlaReconnectNotification.show(MumlaService.this,
                                 e.getMessage() + (mSettings.isTorEnabled() ? " (Tor)" : ""),
@@ -319,6 +326,13 @@ public class MumlaService extends HumlaService implements
             mTTS = new TextToSpeech(this, mTTSInitListener);
 
         mTalkReceiver = new TalkBroadcastReceiver(this);
+    }
+
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        super.onStartCommand(intent, flags, startId);
+        // Keep the service restartable from the app side without changing HumlaService.
+        return START_STICKY;
     }
 
     @Override

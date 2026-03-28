@@ -21,7 +21,7 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.13.2'
+        classpath 'com.android.tools.build:gradle:8.3.2'
     }
 }
 apply plugin: 'com.android.application'
@@ -48,8 +48,8 @@ android {
     compileSdk = 36
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_21
-        targetCompatibility JavaVersion.VERSION_21
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 
     base {
@@ -67,7 +67,7 @@ android {
     }.standardOutput.asText.get().trim()
 
     defaultConfig {
-        minSdkVersion 21
+        minSdkVersion 23
         targetSdk 36
 
         applicationId "se.lublin.mumla"
