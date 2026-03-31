@@ -66,7 +66,7 @@
     <string name="mute">Wycisz</string>
     <string name="deafen">Ogłusz</string>
     <string name="disconnect">Rozłącz</string>
-    <string name="disconnectSure">Czy na pewno chcesz rozłączyć się z %s?</string>
+    <string name="disconnectSure">Czy na pewno chcesz się rozłączyć z %s?</string>
     <string name="save">Zapisz</string>
     <string name="add">Dodaj</string>
     <string name="chat">Czat</string>
