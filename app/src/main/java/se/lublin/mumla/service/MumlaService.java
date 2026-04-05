@@ -128,7 +128,6 @@ public class MumlaService extends HumlaService implements
             final String tor = mSettings.isTorEnabled() ? " (Tor)" : "";
             mNotification = MumlaConnectionNotification.create(MumlaService.this,
                     getString(R.string.mumlaConnecting) + tor,
-                    getString(R.string.connecting) + tor,
                     MumlaService.this);
             mNotification.show();
 
@@ -139,7 +138,6 @@ public class MumlaService extends HumlaService implements
         public void onConnected() {
             if (mNotification != null) {
                 final String tor = mSettings.isTorEnabled() ? " (Tor)" : "";
-                mNotification.setCustomTicker(getString(R.string.mumlaConnected) + tor);
                 mNotification.setCustomContentText(getString(R.string.connected) + tor);
                 mNotification.setActionsShown(true);
                 mNotification.show();
@@ -266,7 +264,6 @@ public class MumlaService extends HumlaService implements
         @Override
         public void onPermissionDenied(String reason) {
             if(mNotification != null && !mSuppressNotifications) {
-                mNotification.setCustomTicker(reason);
                 mNotification.show();
             }
         }

@@ -51,7 +51,6 @@ public class MumlaConnectionNotification {
 
     private Service mService;
     private OnActionListener mListener;
-    private String mCustomTicker;
     private String mCustomContentText;
     private boolean mActionsShown;
 
@@ -74,22 +73,17 @@ public class MumlaConnectionNotification {
      * @param listener An listener for notification actions.
      * @return A new MumlaNotification instance.
      */
-    public static MumlaConnectionNotification create(Service service, String ticker, String contentText,
+    public static MumlaConnectionNotification create(Service service, String contentText,
                                                      OnActionListener listener) {
-        return new MumlaConnectionNotification(service, ticker, contentText, listener);
+        return new MumlaConnectionNotification(service, contentText, listener);
     }
 
-    private MumlaConnectionNotification(Service service, String ticker, String contentText,
+    private MumlaConnectionNotification(Service service, String contentText,
                                         OnActionListener listener) {
         mService = service;
         mListener = listener;
-        mCustomTicker = ticker;
         mCustomContentText = contentText;
         mActionsShown = false;
-    }
-
-    public void setCustomTicker(String ticker) {
-        mCustomTicker = ticker;
     }
 
     public void setCustomContentText(String text) {

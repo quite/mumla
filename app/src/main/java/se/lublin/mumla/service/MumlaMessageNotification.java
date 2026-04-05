@@ -94,7 +94,6 @@ public class MumlaMessageNotification {
                 .setSmallIcon(R.drawable.ic_stat_notify)
                 .setContentIntent(pendingIntent)
                 .setAutoCancel(true)
-                .setTicker(message.getActorName())
                 .setContentTitle(message.getActorName())
                 .setContentText(message.getMessage())
                 .setVibrate(VIBRATION_PATTERN)

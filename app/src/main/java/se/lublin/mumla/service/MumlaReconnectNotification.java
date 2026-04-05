@@ -110,7 +110,6 @@ public class MumlaReconnectNotification {
         builder.setDefaults(NotificationCompat.DEFAULT_VIBRATE | NotificationCompat.DEFAULT_LIGHTS);
         builder.setContentTitle(mContext.getString(R.string.mumlaDisconnected));
         builder.setContentText(error);
-        builder.setTicker(mContext.getString(R.string.mumlaDisconnected));
 
         Intent dismissIntent = new Intent(BROADCAST_DISMISS);
         dismissIntent.setPackage(mContext.getPackageName());
