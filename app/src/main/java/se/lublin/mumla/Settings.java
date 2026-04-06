@@ -144,6 +144,9 @@ public class Settings {
     public static final String PREF_PREPROCESSOR_ENABLED = "preprocessor_enabled";
     public static final boolean DEFAULT_PREPROCESSOR_ENABLED = true;
 
+    public static final String PREF_ECHO_CANCELLATION_METHOD = "echo_cancellation_method";
+    public static final String DEFAULT_ECHO_CANCELLATION_METHOD = "none";
+
     public static final String PREF_STAY_AWAKE = "stay_awake";
     public static final boolean DEFAULT_STAY_AWAKE = false;
 
@@ -357,6 +360,10 @@ public class Settings {
 
     public boolean isPreprocessorEnabled() {
         return preferences.getBoolean(PREF_PREPROCESSOR_ENABLED, DEFAULT_PREPROCESSOR_ENABLED);
+    }
+
+    public String getEchoCancellationMethod() {
+        return preferences.getString(PREF_ECHO_CANCELLATION_METHOD, DEFAULT_ECHO_CANCELLATION_METHOD);
     }
 
     public boolean shouldStayAwake() {

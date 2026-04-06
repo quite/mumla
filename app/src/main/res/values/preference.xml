@@ -76,6 +76,10 @@
     <string name="voiceActivitySettings">Voice activity settings</string>
     <string name="disableOpus">Avoid Opus codec</string>
     <string name="disableOpusSum">Turn off Opus support for Mumble 1.2.4 servers.</string>
+    <string name="echoCancellationMethod">Echo Cancellation</string>
+    <string name="echoCancellationMethodSum">Reduce echo from your device\'s speaker while talking. Quality depends on the device.</string>
+    <string name="echoCancellationDisabled">Disabled</string>
+    <string name="echoCancellationSystem">System</string>
     <string name="hidePtt">Hide push-to-talk button</string>
     <string name="hidePttSum">Only useful if you use Push-to-talk corner or physical key.</string>
     <string name="useTts">Text-to-speech</string>

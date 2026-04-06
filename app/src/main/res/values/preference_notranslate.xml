@@ -87,6 +87,16 @@
         <item>6</item>
     </string-array>
 
+    <string-array name="echoCancellationNames">
+        <item>@string/echoCancellationDisabled</item>
+        <item>@string/echoCancellationSystem</item>
+    </string-array>
+
+    <string-array name="echoCancellationValues">
+        <item>none</item>
+        <item>system</item>
+    </string-array>
+
     <string name="copyright">Copyright &#169; Daniel Lublin mumla@lublin.se\nCopyright &#169; 2014–2017 Andrew Comminos\nhttps://mumla-app.gitlab.io</string>
     <string name="project_link">https://mumla-app.gitlab.io</string>
     <string name="acknowledgements_link">https://gitlab.com/quite/mumla/-/graphs/master</string>
