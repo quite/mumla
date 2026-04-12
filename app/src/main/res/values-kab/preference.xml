@@ -13,4 +13,22 @@
     <string name="defaultUsernameDefault">Aseqdac_n_Mumla</string>
     <string name="version">Lqem</string>
     <string name="pref_certificate_title">Aselkin</string>
+    <string name="theme_light">Aceɛlal</string>
+    <string name="theme_dark">Ubrik</string>
+    <string name="certificateGenerate">Sarew-d aselkin</string>
+    <string name="chatNotifications">Ilɣa n udiwenni</string>
+    <string name="defaultUsername">Isem n useqdac amezwer</string>
+    <string name="pref_import_certificate_title">Kter-d aselkin</string>
+    <string name="pref_export_certificate_title">Sifeḍ aselkin</string>
+    <string name="language_system">Tutlayt</string>
+    <string name="chatNotificationsSum">Ad yettwaskan i yiznan imaynuten n udiwenni.</string>
+    <string name="inputMethodVoice">Armud aɣectan</string>
+    <string name="inputMethodPtt">Tekki akken ad temmeslayeḍ</string>
+    <string name="inputMethodContinuous">Yettkemmil</string>
+    <string name="theme_system">Asentel n unagraw</string>
+    <string name="hot_corner_none">D arurmid</string>
+    <string name="autoReconnect">Allus n tuqqna s wudem awurman</string>
+    <string name="echoCancellationDisabled">Arurmid</string>
+    <string name="echoCancellationSystem">Anagraw</string>
+    <string name="forceTcp">TCP kan</string>
 </resources>
