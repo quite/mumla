@@ -97,4 +97,8 @@
     <string name="theme_system">系统默认</string>
     <string name="language">语言</string>
     <string name="language_system">系统默认</string>
+    <string name="echoCancellationMethod">回声消除</string>
+    <string name="echoCancellationMethodSum">在讲话时减少来自设备扬声器的回声。质量取决于设备。</string>
+    <string name="echoCancellationDisabled">禁用</string>
+    <string name="echoCancellationSystem">系统</string>
 </resources>
