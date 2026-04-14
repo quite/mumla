@@ -93,6 +93,9 @@ public class Settings {
     public static final String PREF_AUTO_RECONNECT = "autoReconnect";
     public static final Boolean DEFAULT_AUTO_RECONNECT = true;
 
+    public static final String PREF_RECONNECT_TO_LAST_CHANNEL = "reconnectToLastChannel";
+    public static final boolean DEFAULT_RECONNECT_TO_LAST_CHANNEL = true;
+
     public static final String PREF_THEME = "theme";
     public static final String PREF_LANGUAGE = "language";
 
@@ -301,6 +304,10 @@ public class Settings {
 
     public boolean isAutoReconnectEnabled() {
         return preferences.getBoolean(PREF_AUTO_RECONNECT, DEFAULT_AUTO_RECONNECT);
+    }
+
+    public boolean isReconnectToLastChannelEnabled() {
+        return preferences.getBoolean(PREF_RECONNECT_TO_LAST_CHANNEL, DEFAULT_RECONNECT_TO_LAST_CHANNEL);
     }
 
     public boolean isTcpForced() {

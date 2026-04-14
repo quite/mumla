@@ -90,6 +90,8 @@
     <string name="togglePttSum">Push-to-talk button toggles transmission on/off. No need to hold it.</string>
     <string name="autoReconnect">Auto-reconnect</string>
     <string name="autoReconnectSum">Re-establishes connection to server when lost.</string>
+    <string name="reconnectToLastChannel">Rejoin previous channel</string>
+    <string name="reconnectToLastChannelSum">After reconnecting, automatically rejoin the channel you were in before disconnecting.</string>
     <string name="useTor">Connect via Tor</string>
     <string name="useTorSum">Requires the Orbot app.</string>
     <string name="inputQuality">Microphone input quality</string>

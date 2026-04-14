@@ -18,15 +18,22 @@
 package se.lublin.mumla.service;
 
 import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.media.AudioManager;
+import android.net.ConnectivityManager;
+import android.net.Network;
+import android.net.NetworkCapabilities;
+import android.net.NetworkRequest;
 import android.net.Uri;
 import android.os.Binder;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.IBinder;
+import android.os.Looper;
 import android.os.PowerManager;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
@@ -45,6 +52,7 @@ import java.util.List;
 import se.lublin.humla.Constants;
 import se.lublin.humla.HumlaService;
 import se.lublin.humla.exception.AudioException;
+import se.lublin.humla.model.IChannel;
 import se.lublin.humla.model.IMessage;
 import se.lublin.humla.model.IUser;
 import se.lublin.humla.model.Message;
@@ -90,6 +98,17 @@ public class MumlaService extends HumlaService implements
     private boolean mErrorShown;
     private List<IChatMessage> mMessageLog;
     private boolean mSuppressNotifications;
+
+    /**
+     * The channel ID the user was in before the last unexpected disconnection.
+     * -1 means unknown / no channel to restore.
+     */
+    private int mLastChannelId = -1;
+    /** True when we should attempt to rejoin mLastChannelId after the next successful sync. */
+    private boolean mShouldRestoreChannel = false;
+
+    private final Handler mMainHandler = new Handler(Looper.getMainLooper());
+    private ConnectivityManager.NetworkCallback mNetworkCallback;
 
     private TextToSpeech mTTS;
     private TextToSpeech.OnInitListener mTTSInitListener = new TextToSpeech.OnInitListener() {
@@ -150,11 +169,31 @@ public class MumlaService extends HumlaService implements
                 mNotification.hide();
                 mNotification = null;
             }
-            if (e != null && !mSuppressNotifications) {
-                mReconnectNotification =
-                        MumlaReconnectNotification.show(MumlaService.this,
-                                e.getMessage() + (mSettings.isTorEnabled() ? " (Tor)" : ""),
-                                isReconnecting(), MumlaService.this);
+            if (e != null) {
+                // Unexpected disconnect — remember that we should restore the channel on reconnect.
+                mShouldRestoreChannel = true;
+                if (!mSuppressNotifications) {
+                    mReconnectNotification =
+                            MumlaReconnectNotification.show(MumlaService.this,
+                                    e.getMessage() + (mSettings.isTorEnabled() ? " (Tor)" : ""),
+                                    isReconnecting(), MumlaService.this);
+                }
+            } else {
+                // User-initiated disconnect — clear restore state.
+                mShouldRestoreChannel = false;
+                mLastChannelId = -1;
+            }
+        }
+
+        @Override
+        public void onUserJoinedChannel(IUser user, IChannel newChannel, IChannel oldChannel) {
+            // Track the local user's current channel so we can restore it on reconnect.
+            try {
+                if (newChannel != null && user.getSession() == getSessionId()) {
+                    mLastChannelId = newChannel.getId();
+                }
+            } catch (IllegalStateException e) {
+                // Not yet synchronised; ignore.
             }
         }
 
@@ -316,6 +355,19 @@ public class MumlaService extends HumlaService implements
             mTTS = new TextToSpeech(this, mTTSInitListener);
 
         mTalkReceiver = new TalkBroadcastReceiver(this);
+
+        registerNetworkCallback();
+    }
+
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        if (intent != null && HumlaService.ACTION_CONNECT.equals(intent.getAction())) {
+            // The user is explicitly connecting to a (possibly different) server.
+            // Reset channel-restore state so we don't try to join a stale channel.
+            mShouldRestoreChannel = false;
+            mLastChannelId = -1;
+        }
+        return super.onStartCommand(intent, flags, startId);
     }
 
     @Override
@@ -333,6 +385,8 @@ public class MumlaService extends HumlaService implements
             mReconnectNotification.hide();
             mReconnectNotification = null;
         }
+
+        unregisterNetworkCallback();
 
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         preferences.unregisterOnSharedPreferenceChangeListener(this);
@@ -386,6 +440,17 @@ public class MumlaService extends HumlaService implements
         if (mSettings.isHandsetMode()) {
             setProximitySensorOn(true);
         }
+
+        // Restore the last channel the user was in, if this is a reconnect.
+        if (mShouldRestoreChannel && mLastChannelId != -1
+                && mSettings.isReconnectToLastChannelEnabled()) {
+            try {
+                HumlaSession().joinChannel(mLastChannelId);
+            } catch (Exception e) {
+                Log.w(TAG, "Failed to restore last channel " + mLastChannelId + ": " + e);
+            }
+        }
+        mShouldRestoreChannel = false;
     }
 
     @Override
@@ -659,6 +724,43 @@ public class MumlaService extends HumlaService implements
     @Override
     public void setSuppressNotifications(boolean suppressNotifications) {
         mSuppressNotifications = suppressNotifications;
+    }
+
+    private void registerNetworkCallback() {
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        if (cm == null) return;
+        NetworkRequest request = new NetworkRequest.Builder()
+                .addCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET)
+                .build();
+        mNetworkCallback = new ConnectivityManager.NetworkCallback() {
+            @Override
+            public void onAvailable(Network network) {
+                // Called on a binder thread; post to main thread.
+                mMainHandler.post(() -> {
+                    // Only reconnect when auto-reconnect is enabled, we have a target server,
+                    // and we are not already connected or in the middle of reconnecting.
+                    if (mSettings.isAutoReconnectEnabled()
+                            && getTargetServer() != null
+                            && !isConnected()
+                            && !isReconnecting()) {
+                        Log.d(TAG, "Network available — triggering reconnect");
+                        reconnect();
+                    }
+                });
+            }
+        };
+        cm.registerNetworkCallback(request, mNetworkCallback);
+    }
+
+    private void unregisterNetworkCallback() {
+        if (mNetworkCallback != null) {
+            ConnectivityManager cm =
+                    (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+            if (cm != null) {
+                cm.unregisterNetworkCallback(mNetworkCallback);
+            }
+            mNetworkCallback = null;
+        }
     }
 
     public static class MumlaBinder extends Binder {
