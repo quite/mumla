@@ -131,4 +131,6 @@
     <string name="drawer_pinned">Ibuda untiḍen</string>
     <string name="invalid_host">Asenneftaɣ arameɣtu</string>
     <string name="cancel_reconnect">Ḥbes allus n tuqqna</string>
+    <string name="invalid_port_range">Tawwurt tarameɣtut (1-65535)</string>
+    <string name="server_match_not_found">Ur nufi ara aqeddac-nni</string>
 </resources>
