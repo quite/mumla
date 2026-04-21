@@ -94,4 +94,11 @@
     <string name="pref_show_user_count_summary">Показывать количество пользователей в дереве каналов.</string>
     <string name="pref_start_up_in_pinned_mode">Режим \"Только закрепленные\"</string>
     <string name="pref_start_upIn_pinned_mode_sum">Показывать только закрепленные каналы после подключения к серверу (остальные скрыты).</string>
+    <string name="theme_system">Системная</string>
+    <string name="language">Язык</string>
+    <string name="echoCancellationMethod">Эхоподавление</string>
+    <string name="echoCancellationMethodSum">Снижает эхо от динамика вашего устройства во время разговора. Качество работы зависит от устройства.</string>
+    <string name="echoCancellationDisabled">Отключено</string>
+    <string name="echoCancellationSystem">Системное</string>
+    <string name="language_system">Системный</string>
 </resources>
