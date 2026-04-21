@@ -199,4 +199,18 @@
     <string name="image_confirm_send">Отправить это изображение\?</string>
     <string name="no_ptt_key">Кнопка не выбрана</string>
     <string name="grant_perm_notifications">Пожалуйста, дайте разрешение на отправку уведомлений.</string>
+    <string name="app_news">Что нового</string>
+    <string name="app_news_summary">Посмотреть последние изменения</string>
+    <string name="app_news_footer_on_startup">Эти новости можно посмотреть еще раз на странице \"О программе\".</string>
+    <string name="donate_dialog_title_goog">Нравится Mumla?</string>
+    <string name="donate_dialog_message_goog">Спасибо, что используете Mumla! Пожалуйста, рассмотрите возможность сделать небольшое пожертвование, чтобы помочь Mumla продолжить свою работу и скрыть данное сообщение.</string>
+    <string name="donate_dialog_positivebutton_goog">Поддержите Mumla</string>
+    <string name="donate_dialog_negativebutton_goog">Позже</string>
+    <string name="donate_purchase_pending_goog">Ваше пожертвование обрабатывается и может вступить в силу после перезапуска приложения. Спасибо!</string>
+    <string name="donate_thanks_goog">Спасибо за вашу поддержку!</string>
+    <string name="donate_foss">Поддержать</string>
+    <string name="app_news_items_v3_7_0">• Была проделана большая работа по обновлению Mumla для Android 15 и 16 (API 35 и 36).\n• В связи с этим теперь требуется Android 5.0 (API 21) или выше.\n• Оформление было модернизировано для поддержки системной светлой и тёмной тем.\n• Экран настроек пришлось адаптировать под новые API.\n• Добавлена настройка языка внутри приложения.\n</string>
+    <string name="app_news_items_v3_7_1">• Незначительное обновление, в основном касающееся переводов. Спасибо всем переводчикам!\n</string>
+    <string name="app_news_items_v3_7_2">• Исправление возможного сбоя при запуске.\n• Добавлены новые переводы, спасибо всем переводчикам!\n</string>
+    <string name="app_news_items_v3_7_3">• Активный угол PTT теперь отображается на Android 12 и выше, а также на светлом и темном фоне\n• На Android 16 и выше кнопка \"Назад\" снова запрашивает подтверждение перед отключением от сервера\n</string>
 </resources>
