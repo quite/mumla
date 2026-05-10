@@ -94,4 +94,8 @@
     <string name="togglePtt">สลับการใช้งานปุ่มกดเพื่อพูด</string>
     <string name="hidePttSum">มีประโยชน์หากคุณใช้มุมลัดหรือปุ่มฮาร์ดแวร์เพียงอย่างเดียว.</string>
     <string name="handsetMode">โหมดโทรศัพท์มือถือ</string>
+    <string name="echoCancellationSystem">ระบบ</string>
+    <string name="echoCancellationDisabled">ปิดการใช้งาน</string>
+    <string name="echoCancellationMethodSum">ลดเสียงสะท้อนจากลำโพงของอุปกรณ์ขณะพูดคุย. คุณภาพขึ้นอยู่กับอุปกรณ์.</string>
+    <string name="echoCancellationMethod">การตัดเสียงสะท้อน</string>
 </resources>
