@@ -120,7 +120,7 @@
     <string name="status_notify_muted_and_deafened">Silenciat i ensordit.</string>
     <string name="shareMessage">Accediu a aquest servidor amb el Mumla. %s</string>
     <string name="share">Comparteix</string>
-    <string name="generateCertSuccess">El vostre certificat s\'ha generat y s\'ha guardar com a %s!</string>
+    <string name="generateCertSuccess">El vostre certificat s\'ha generat i desat com a %s!</string>
     <string name="cancelled">Cancel·lat</string>
     <string name="trust_cleared">S\'ha buidat la Base de dades de confiança</string>
     <string name="trust_add_failed">No s\'ha pogut afegir el certificat a la base de dades de confiança.</string>
@@ -201,4 +201,17 @@
     <string name="image_confirm_send">Enviar aquesta imatge\?</string>
     <string name="grant_perm_notifications">Doneu permís per enviar les notificacions, si us plau.</string>
     <string name="no_ptt_key">Cap Clau</string>
+    <string name="app_news">Què hi ha de nou</string>
+    <string name="app_news_summary">Darreres actualitzacions</string>
+    <string name="app_news_footer_on_startup">Aquestes notícies es poden tornar a veure des de la pàgina Quant a.</string>
+    <string name="app_news_items_v3_7_1">• Llançament menor majoritàriament amb actualitzacions de traducció, gràcies a tots els traductors!\n</string>
+    <string name="app_news_items_v3_7_2">• Corregeix la possible caiguda a l\'inici.\n • Afegeix algunes traduccions, gràcies a tots els traductors!\n</string>
+    <string name="app_news_items_v3_7_3">• Fa visible la cantonada PTT a Android 12 i posterior, i sobre fons fosc i clar\n • Fa que el botó Torna demani desconnectar del servidor de nou a Android 16 +\n</string>
+    <string name="donate_dialog_title_goog">Gaudiu del Mumla?</string>
+    <string name="donate_dialog_message_goog">Gràcies per fer servir el Mumla! Si us plau, considereu fer una petita donació per ajudar a mantenir Mumla viu i eliminar aquest missatge.</string>
+    <string name="donate_dialog_positivebutton_goog">Suport Mumla</string>
+    <string name="donate_dialog_negativebutton_goog">Més tard</string>
+    <string name="donate_purchase_pending_goog">La vostra donació està pendent i pot estar a punt en un reinici posterior. Gràcies!</string>
+    <string name="donate_thanks_goog">Gràcies pel vostre suport!</string>
+    <string name="donate_foss">Donació</string>
 </resources>
