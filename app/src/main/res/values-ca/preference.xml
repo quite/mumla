@@ -91,4 +91,11 @@
     <string name="stay_awake">Manté despert</string>
     <string name="pref_start_up_in_pinned_mode">Mode de canals fixats</string>
     <string name="inputQuality">Qualitat d\'entrada del micròfon</string>
+    <string name="theme_system">Opció per omissió</string>
+    <string name="language_system">Idioma</string>
+    <string name="language">Idioma</string>
+    <string name="echoCancellationMethod">Anul·lació de l\'echo</string>
+    <string name="echoCancellationMethodSum">Redueix l\'eco de l\'altaveu del dispositiu mentre parleu. La qualitat depèn del dispositiu.</string>
+    <string name="echoCancellationDisabled">Desactivat</string>
+    <string name="echoCancellationSystem">Sistema</string>
 </resources>
