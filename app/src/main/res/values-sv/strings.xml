@@ -210,4 +210,5 @@
     <string name="donate_dialog_negativebutton_goog">Senare</string>
     <string name="donate_purchase_pending_goog">Din donation behandlas och kan vara klar vid en senare omstart. Tack!</string>
     <string name="donate_thanks_goog">Tack för ditt stöd!</string>
+    <string name="app_news_footer_on_startup">Dessa nyheter kan ses igen på Om sidan.</string>
 </resources>
