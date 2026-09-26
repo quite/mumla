@@ -91,4 +91,9 @@
     <string name="pref_export_certificate_summary">Експортувати до зовнішнього сховища.</string>
     <string name="pref_show_user_count">Показувати кількість користувачів каналу</string>
     <string name="pref_start_up_in_pinned_mode">Режим закріплених каналів</string>
+    <string name="theme_system">Як на пристрої</string>
+    <string name="language_system">Як на пристрої</string>
+    <string name="language">Мова</string>
+    <string name="echoCancellationMethod">Шумоусунення</string>
+    <string name="echoCancellationDisabled">Вимкнено</string>
 </resources>
