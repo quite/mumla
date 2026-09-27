@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="drawer_close">Закрити меню</string>
+    <string name="drawer_close">Закрити Меню</string>
     <string name="drawer_not_connected">Не підключено</string>
-    <string name="drawer_server">Всі канали</string>
+    <string name="drawer_server">Усі канали</string>
     <string name="drawer_tokens">Токени доступу</string>
     <string name="drawer_header_servers">Сервери</string>
     <string name="drawer_favorites">Обрані</string>
     <string name="drawer_public">Публічні сервери</string>
-    <string name="drawer_open">Відкрити меню</string>
+    <string name="drawer_open">Відкрити Меню</string>
     <string name="drawer_pinned">Закріплені канали</string>
     <string name="user_menu_local_mute">Заглушити локально</string>
     <string name="user_menu_change_comment">Змінити коментар</string>
@@ -20,8 +20,8 @@
     <string name="chat_message_tts_short_link">(Посилання на %1$s)</string>
     <string name="user_menu_kick">Вигнати</string>
     <string name="user_menu_ban">Заблокувати</string>
-    <string name="user_menu_mute">Приглушити</string>
-    <string name="user_menu_deafen">Оглушити</string>
+    <string name="user_menu_mute">Вимкнути мікрофон</string>
+    <string name="user_menu_deafen">Вимкнути звук</string>
     <string name="user_menu_move">Перемістити</string>
     <string name="user_menu_priority_speaker">Пріоритетний оратор</string>
     <string name="channel_menu_pin">Закріпити</string>
@@ -41,7 +41,7 @@
     <string name="server_info_latency">Затримка %.2f мс</string>
     <string name="server_info_host">Віддалений вузол %1$s (порт %2$d)</string>
     <string name="server_info_codec">Кодек: %s</string>
-    <string name="server_info_max_bandwidth">Максимальна %.1f кбіт/с</string>
+    <string name="server_info_max_bandwidth">Максимальнаа %.1f кбіт/с</string>
     <string name="server_info_current_bandwidth">Поточна %.1f кбіт/с</string>
     <string name="server_match">Знайти сервер</string>
     <string name="server_match_progress">Пошук сервера…</string>
@@ -60,8 +60,8 @@
     <string name="connecting">Підключення</string>
     <string name="connecting_to_server">Підключення до %s…</string>
     <string name="ptt">Натисни-щоб-говорити</string>
-    <string name="mute">Приглушити</string>
-    <string name="deafen">Заглушити</string>
+    <string name="mute">Вимкнути мікрофон</string>
+    <string name="deafen">Вимкнути звук</string>
     <string name="disconnect">Відключитися</string>
     <string name="disconnectSure">Ви дійсно хочете відключитися від %s?</string>
     <string name="save">Зберегти</string>
@@ -204,5 +204,11 @@
     <string name="shareMessage">Приєднайтеся до цього Mumble-сервера за допомогою Mumla. %s</string>
     <string name="status_notify_muted_and_deafened">Звук та мікрофон вимкнені.</string>
     <string name="status_notify_muted">Мікрофон вимкнено.</string>
-    <string name="no_ptt_key">Кнопка не обрана</string>
+    <string name="no_ptt_key">Клавішу не обрано</string>
+    <string name="app_news">Що Нового</string>
+    <string name="app_news_summary">Переглянути останні оновлення</string>
+    <string name="app_news_footer_on_startup">Ці новини можна переглянути пізніше на сторінці Про Нас.</string>
+    <string name="donate_dialog_negativebutton_goog">Потім</string>
+    <string name="donate_thanks_goog">Дякую за вашу підтримку!</string>
+    <string name="app_news_items_v3_7_1">• Невелмчкий реліз, переважно з оновленнями перекладу, дякую усім перекладачам!\n</string>
 </resources>
