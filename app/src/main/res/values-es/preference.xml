@@ -94,4 +94,11 @@
     <string name="pttButtonHeightSum">Cambia la longitud vertical del botón de pulsar para hablar.</string>
     <string name="pref_export_certificate_summary">Exporta uno a un almacenamiento externo.</string>
     <string name="pref_start_up_in_pinned_mode">Modo de canales fijos</string>
+    <string name="theme_system">Predeterminado del sistema</string>
+    <string name="language_system">Predeterminado del sistema</string>
+    <string name="language">Lenguaje</string>
+    <string name="echoCancellationMethod">Cancelación de eco</string>
+    <string name="echoCancellationMethodSum">Reduce el eco del altavoz de tu dispositivo mientras hablas. La calidad depende del dispositivo.</string>
+    <string name="echoCancellationDisabled">Desactivado</string>
+    <string name="echoCancellationSystem">Sistema</string>
 </resources>
