@@ -2,7 +2,7 @@
 <resources>
     <string name="inputMethodVoice">Actividad de voz</string>
     <string name="inputMethodPtt">Presionar-para-hablar</string>
-    <string name="inputMethodContinuous">Contínuo </string>
+    <string name="inputMethodContinuous">Continuo</string>
     <!--Theme names-->
     <string name="theme_light">Claro</string>
     <string name="theme_dark">Oscuro</string>
@@ -14,7 +14,7 @@
     <string name="hot_corner_bottom_right">inferior derecha ↘</string>
     <!--About-->
     <string name="about">Acerca de</string>
-    <string name="acknowledgements">Contribuidores</string>
+    <string name="acknowledgements">Contribuyentes</string>
     <string name="acknowledgementsSum">Mira quién ha contribuido a Mumla (enlace web)</string>
     <string name="licenses">Licencias</string>
     <string name="authentication">Autenticación</string>
@@ -33,7 +33,7 @@
     <string name="themeSum">Cambia la apariencia de la aplicación.</string>
     <string name="theme">Tema</string>
     <string name="advancedAudio">Avanzado</string>
-    <string name="forceTcp">Sólo usar TCP</string>
+    <string name="forceTcp">Sólo TCP</string>
     <string name="forceTcpSum">Desactiva el uso de UDP para comunicaciones.</string>
     <string name="audio">Audio</string>
     <string name="audioSampleRate">Frecuencia de muestreo de la entrada</string>
@@ -47,7 +47,7 @@
     <string name="certificateGenerateSum">Genera un nuevo certificado de Mumla auto-firmado. Recomendado para principiantes.</string>
     <string name="pttSettings">Opciones de pulsar-para-hablar</string>
     <string name="voiceActivitySettings">Opciones de actividad de voz</string>
-    <string name="disableOpus">No usar códec Opus</string>
+    <string name="disableOpus">No usar codificación Opus</string>
     <string name="disableOpusSum">Desactiva el soporte de Opus para servidores Mumble 1.2.4.</string>
     <string name="hidePtt">Ocultar botón de pulsar-para-hablar</string>
     <string name="hidePttSum">Únicamente es útil si utilizas las esquinas de la pantalla o una tecla física.</string>
